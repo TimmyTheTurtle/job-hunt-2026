@@ -19,7 +19,7 @@ C - Distributed Simulation
 Review cadence:
 Every 10 applications → Pattern analysis
 
-job-hunt/
+```job-hunt/
 │
 ├── README.md
 ├── master_tracker.md
