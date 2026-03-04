@@ -2,6 +2,8 @@
 
 This repository tracks all job applications, resume versions, cover letters, and lessons learned.
 
+**📖 New to this repo? See [HOW_TO_ADD_A_FOLDER.md](HOW_TO_ADD_A_FOLDER.md) for detailed instructions on adding new job applications.**
+
 Goal:
 - Practice interview reps
 - Refine narrative
