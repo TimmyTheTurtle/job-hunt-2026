@@ -44,3 +44,10 @@ Every 10 applications → Pattern analysis
     │   ├── submission_snapshot.md
     │   └── interview_prep.md
     └── ...
+
+# Search string
+("C++" OR Cpp OR "C Plus Plus")
+AND (engineer OR developer OR "software engineer" OR "software developer")
+AND (simulation OR modeling OR physics OR "real-time" OR "numerical" OR "high performance" OR "HPC")
+NOT (senior OR sr OR lead OR principal OR architect OR staff OR junior OR jr)
+NOT (python OR scripting OR script OR "shell script" OR bash)
