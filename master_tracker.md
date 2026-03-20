@@ -6,6 +6,7 @@
 | 2026-03-04 | RedBeard Solutions | Design Engineer | C | 6 | 3 | sim_v1 | Applied | Energized | 2026-03-18 |
 | 2026-03-11 | Spacex | Software Engineer Simulations | C | 6 | 3 | sim_v1 | Applied | Energized | 2026-03-25 |
 | 2026-03-16 | Sharif Shaik | Recruiter outreach | C | 6 | 3 | sim_v1 | Applied | Energized | NA |
+| 2026-03-20 | Google | Data Infrastructure Engineer, Google Customer Solutions | C | 6 | 3 | sim_v1 | Applied | Energized | 2026-03-30 |
 
 ## Status Legend
 - Drafting
@@ -26,3 +27,4 @@ C - Distributed Simulation
 - modeling software engineer
 - systems C++ engineer
 - automotive simulation developer
+

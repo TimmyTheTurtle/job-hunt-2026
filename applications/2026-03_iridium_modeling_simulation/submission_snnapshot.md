@@ -9,8 +9,8 @@ Referral?:
 ## Exact Text Submitted
 
 Dorian Klingenberg
-[Troy, Michigan]
-[306.361.7692] | [Email] | [GitHub]
+Troy, Michigan
+306.361.7692 | dorian.k@hotmail.com
 
 Dear Hiring Manager,
 
