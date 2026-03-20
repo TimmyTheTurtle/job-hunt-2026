@@ -4,7 +4,7 @@
 |------|----------|------|----------------|------------------|----------------|----------------|--------|----------------|-----------|
 | 2026-03-03 | Iridium | Modeling & Simulation Systems Engineer II | A | 8 | 6 | sim_v1 | Applied | Energized | 2026-03-17 |
 | 2026-03-04 | RedBeard Solutions | Design Engineer | C | 6 | 3 | sim_v1 | Applied | Energized | 2026-03-18 |
-| 2026-03-11 | Spacex | Simulation Systems Engineer | C | 6 | 3 | sim_v1 | Applied | Energized | 2026-03-25 |
+| 2026-03-11 | Spacex | Software Engineer Simulations | C | 6 | 3 | sim_v1 | Applied | Energized | 2026-03-25 |
 | 2026-03-16 | Sharif Shaik | Recruiter outreach | C | 6 | 3 | sim_v1 | Applied | Energized | NA |
 
 ## Status Legend
