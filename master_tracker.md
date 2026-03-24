@@ -7,7 +7,7 @@
 | 2026-03-11 | Spacex | Software Engineer Simulations | C | 6 | 3 | sim_v1 | Applied | Energized | 2026-03-25 |
 | 2026-03-16 | Sharif Shaik | Recruiter outreach | C | 6 | 3 | sim_v1 | Applied | Energized | NA |
 | 2026-03-20 | Google | Data Infrastructure Engineer, Google Customer Solutions | C | 6 | 3 | sim_v1 | Applied | Energized | 2026-03-30 |
-| 2026-03-24 | [Talant Advantage Group](https://thetagit.com/) | .Net, porting VB | C | 6 | 3 | sim_v1 | Interview | Energized | 2026-04-03 |
+| 2026-03-24 | [Talant Advantage Group](https://thetagit.com/) | .Net, porting VB | C | 6 | 3 | sim_v1 | Contact Employer | Energized | 2026-04-03 |
 
 ## Status Legend
 - Drafting
