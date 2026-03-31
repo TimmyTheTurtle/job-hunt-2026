@@ -34,6 +34,7 @@ core_priorities:
 - runway value
 - reduced burnout risk
 - preserve UI audit recordkeeping
+- keep machine search ledger separate from manual tracker updates
 
 long_term_vector:
 - modern C++

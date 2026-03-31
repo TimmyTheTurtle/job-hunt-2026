@@ -42,6 +42,7 @@ Only read the full source file when the current task actually needs that detail.
 - Do not fabricate employers, titles, certifications, years of experience, clearance, or unsupported domain expertise.
 - Optimize for coherent direction, not application spam.
 - Protect runway, learning time, and long-term systems/C++/simulation positioning.
+- Keep machine-managed search bookkeeping in `job_search/ledger/`; do not auto-update `master_tracker.md` from search runs.
 
 ## Workflow Requirement
 

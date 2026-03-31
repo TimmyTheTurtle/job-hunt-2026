@@ -7,6 +7,7 @@ It is designed to:
 - generate a shortlist for later review
 - include posting URLs for manual follow-up
 - avoid auto-applying
+- feed the machine-managed search ledger without auto-editing `master_tracker.md`
 
 ## What It Does
 
@@ -101,8 +102,141 @@ Recommended workflow:
 1. Open the newest markdown file in `job_search/output/`.
 2. Skim the `Apply First` section first.
 3. Open promising posting URLs in the browser.
-4. If you decide to pursue one, create the standard application folder and record the exact posting URL in `job_description.md`.
-5. Add or update the row in [master_tracker.md](master_tracker.md).
+4. Record `applied`, `dismissed`, or `saved` decisions in the search ledger.
+5. If you decide to pursue one, create the standard application folder and record the exact posting URL in `job_description.md`.
+6. Add or update the row in [master_tracker.md](master_tracker.md) only when you intentionally want that manual/UI-facing record updated.
+
+See also:
+- [How to use the search ledger](HOW_TO_USE_SEARCH_LEDGER.md)
+
+## How to Record Decisions
+
+From WSL, you can record review decisions directly into the search ledger.
+
+Mark one or more jobs as applied:
+
+```bash
+cd /mnt/d/Repos/job-hunt-2026
+./job_search/.venv/bin/python job_search/record_decisions.py \
+  --applied "https://example.com/job-1" \
+  --applied "https://example.com/job-2" \
+  --note "applied after review"
+```
+
+Mark jobs as dismissed:
+
+```bash
+cd /mnt/d/Repos/job-hunt-2026
+./job_search/.venv/bin/python job_search/record_decisions.py \
+  --dismissed "https://example.com/job-3" \
+  --dismissed "https://example.com/job-4" \
+  --note "too senior or wrong fit"
+```
+
+Mark jobs as saved for later:
+
+```bash
+cd /mnt/d/Repos/job-hunt-2026
+./job_search/.venv/bin/python job_search/record_decisions.py \
+  --saved "https://example.com/job-5" \
+  --saved "https://example.com/job-6" \
+  --note "interesting, revisit later"
+```
+
+Record a mixed batch in one transaction:
+
+```bash
+cd /mnt/d/Repos/job-hunt-2026
+cat <<'JSON' | ./job_search/.venv/bin/python job_search/record_decisions.py --actor chat_update
+{
+  "metadata": {
+    "source": "manual review session"
+  },
+  "decisions": [
+    {
+      "status": "applied",
+      "job_url": "https://example.com/job-1",
+      "note": "Applied after shortlist review"
+    },
+    {
+      "status": "dismissed",
+      "job_url": "https://example.com/job-2",
+      "note": "Not aligned enough"
+    },
+    {
+      "status": "saved",
+      "job_url": "https://example.com/job-3",
+      "note": "Possible later follow-up"
+    }
+  ]
+}
+JSON
+```
+
+After recording decisions, check:
+
+- [job_search/ledger/summary.md](job_search/ledger/summary.md)
+- [job_search/ledger/transactions.jsonl](job_search/ledger/transactions.jsonl)
+
+## How to Do This Through Chat
+
+Yes, you can tell a chat window to record these updates for you.
+
+Good examples:
+
+- `Please mark our current application as applied in the search ledger.`
+- `Please mark these as dismissed in the search ledger:` followed by a list of posting URLs
+- `Please save these for later in the search ledger:` followed by a list of posting URLs
+- `Please mark these three applied and these two dismissed in one ledger update.`
+
+Best practice:
+- if you have the posting URLs, provide them
+- if you are referring to the current application and the context is unambiguous, saying `current application` is fine
+- if there is any ambiguity, include company, role title, or the posting URL
+
+Recommended chat patterns:
+
+Mark the current application as applied:
+
+```text
+Please mark our current application as applied in the search ledger.
+Do not update master_tracker.md unless I ask separately.
+```
+
+Mark a list as dismissed:
+
+```text
+Please mark these as dismissed in the search ledger:
+- https://example.com/job-1
+- https://example.com/job-2
+- https://example.com/job-3
+```
+
+Mark a list as saved:
+
+```text
+Please save these in the search ledger for later review:
+- https://example.com/job-4
+- https://example.com/job-5
+```
+
+Mixed update:
+
+```text
+Please record this search-ledger update:
+Applied:
+- https://example.com/job-1
+
+Dismissed:
+- https://example.com/job-2
+- https://example.com/job-3
+
+Saved:
+- https://example.com/job-4
+```
+
+By default, those requests should update the search ledger only.
+Ask separately if you also want [master_tracker.md](master_tracker.md) updated.
 
 ## Important Notes
 
@@ -111,6 +245,7 @@ Recommended workflow:
 - Google Jobs is included in the profile, but in live testing here LinkedIn and Indeed produced more usable results than Google.
 - Search systems often handle `C++` badly, so the profile intentionally leans on `c plus plus` phrasing.
 - Generated output and the local virtual environment are ignored by git.
+- The search ledger is separate from [master_tracker.md](master_tracker.md); the runner should update the ledger, not the manual tracker.
 
 ## When You Want to Tune It
 

@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-03-31T12:33:54.499168-04:00",
+  "job_count": 4,
+  "jobs": [
+    {
+      "company": "ASTEC Digital",
+      "first_seen_at": "2026-03-31T12:33:54.493374-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4388412760",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-03-31T12:33:54.493374-04:00",
+      "last_transaction_id": "tx_20260331_123354_b6e32985",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4388412760",
+      "note": "",
+      "query_labels": [
+        "simulation engineer"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Simulation Engineer"
+    },
+    {
+      "company": "Crossing Hurdles",
+      "first_seen_at": "2026-03-31T12:33:54.493374-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4388371065",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-03-31T12:33:54.493374-04:00",
+      "last_transaction_id": "tx_20260331_123354_b6e32985",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4388371065",
+      "note": "",
+      "query_labels": [
+        "simulation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Circuit Simulation Engineer (Ngspice) | Remote"
+    },
+    {
+      "company": "PSC Consulting",
+      "first_seen_at": "2026-03-31T12:33:54.493374-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=1a9aa87fccf53fa1",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-03-31T12:33:54.493374-04:00",
+      "last_transaction_id": "tx_20260331_123354_b6e32985",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=1a9aa87fccf53fa1",
+      "note": "",
+      "query_labels": [
+        "simulation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 14,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Consultant I, Control Systems (E-Terra)"
+    },
+    {
+      "company": "Rand Worldwide",
+      "first_seen_at": "2026-03-31T12:33:54.493374-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4387989309",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-03-31T12:33:54.493374-04:00",
+      "last_transaction_id": "tx_20260331_123354_b6e32985",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4387989309",
+      "note": "",
+      "query_labels": [
+        "simulation engineer"
+      ],
+      "recommendation": "low_priority",
+      "score": 4,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "FEA Consulting Engineer"
+    }
+  ],
+  "recent_transactions": [
+    {
+      "actor": "job_search_runner",
+      "event_count": 4,
+      "kind": "search_run",
+      "timestamp": "2026-03-31T12:33:54.493374-04:00",
+      "transaction_id": "tx_20260331_123354_b6e32985"
+    }
+  ],
+  "status_counts": {
+    "applied": 0,
+    "dismissed": 0,
+    "saved": 0,
+    "surfaced": 4
+  }
+}

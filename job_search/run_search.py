@@ -11,16 +11,15 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import Any
-from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from zoneinfo import ZoneInfo
 
 from jobspy import scrape_jobs
+from ledger import BLOCKING_STATUSES, existing_application_urls, normalize_url, record_transaction, state_map
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PROFILE = ROOT / "job_search" / "search_profile.json"
 DEFAULT_OUTPUT_DIR = ROOT / "job_search" / "output"
-APPLICATIONS_DIR = ROOT / "applications"
 TIMEZONE = ZoneInfo("America/New_York")
 
 TIER_BONUS = {"A": 4, "B": 2, "C": 0}
@@ -120,24 +119,6 @@ def parse_args() -> argparse.Namespace:
 
 def load_profile(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
-
-
-def normalize_url(url: str) -> str:
-    if not url:
-        return ""
-    split = urlsplit(url.strip())
-    query = [(k, v) for k, v in parse_qsl(split.query, keep_blank_values=True) if not k.lower().startswith("utm_")]
-    normalized_path = split.path.rstrip("/") or "/"
-    return urlunsplit((split.scheme.lower(), split.netloc.lower(), normalized_path, urlencode(query), ""))
-
-
-def existing_application_urls() -> set[str]:
-    urls: set[str] = set()
-    for path in APPLICATIONS_DIR.glob("*/job_description.md"):
-        text = path.read_text(encoding="utf-8", errors="ignore")
-        for match in re.findall(r"https?://\S+", text):
-            urls.add(normalize_url(match.rstrip(")]>")))
-    return urls
 
 
 def build_search_specs(profile: dict[str, Any]) -> list[SearchSpec]:
@@ -343,6 +324,7 @@ def write_markdown(
     sites: list[str],
     search_count: int,
     existing_url_count: int,
+    ledger_info: dict[str, Any],
 ) -> None:
     generated = datetime.now(TIMEZONE).strftime("%Y-%m-%d %H:%M %Z")
     grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
@@ -363,6 +345,9 @@ def write_markdown(
         f"- Sites: `{', '.join(sites)}`",
         f"- Search specs run: {search_count}",
         f"- Existing application URLs known: {existing_url_count}",
+        f"- Suppressed by search ledger: {ledger_info['suppressed_by_ledger']}",
+        f"- Suppressed by application folders: {ledger_info['suppressed_by_applications']}",
+        f"- Ledger transaction: `{ledger_info['transaction_id']}`" if ledger_info["transaction_id"] else "- Ledger transaction: none",
         f"- Ranked results: {len(rows)}",
         "",
     ]
@@ -406,8 +391,12 @@ def main() -> int:
     if args.max_searches is not None:
         specs = specs[: args.max_searches]
 
-    known_urls = existing_application_urls()
+    known_application_urls = existing_application_urls()
+    ledger_jobs = state_map()
+    blocked_ledger_urls = {url for url, job in ledger_jobs.items() if job.get("status") in BLOCKING_STATUSES}
     aggregated: dict[str, dict[str, Any]] = {}
+    suppressed_by_ledger = 0
+    suppressed_by_applications = 0
 
     for spec in specs:
         try:
@@ -422,7 +411,11 @@ def main() -> int:
 
             score, reasons, rejected = classify(row, spec)
             job_url = normalize_url(safe_str(row.get("job_url")))
-            if job_url and job_url in known_urls:
+            if job_url and job_url in known_application_urls:
+                suppressed_by_applications += 1
+                continue
+            if job_url and job_url in blocked_ledger_urls:
+                suppressed_by_ledger += 1
                 continue
 
             key = key_for_candidate(row)
@@ -471,16 +464,56 @@ def main() -> int:
     ranked = [row for row in ranked if row["recommendation"] != "skip"]
     ranked = ranked[: int(profile["max_report_items"])]
 
+    ledger_events = [
+        {
+            "status": "surfaced",
+            "job_url": row["job_url"],
+            "company": row["company"],
+            "title": row["title"],
+            "location": row["location"],
+            "sites": [item.strip() for item in row["sites"].split(",") if item.strip()],
+            "query_labels": [item.strip() for item in row["query_labels"].split(",") if item.strip()],
+            "score": row["score"],
+            "recommendation": row["recommendation"],
+        }
+        for row in ranked
+        if row["job_url"]
+    ]
+    ledger_result = record_transaction(
+        actor="job_search_runner",
+        kind="search_run",
+        events=ledger_events,
+        metadata={
+            "profile_name": profile["profile_name"],
+            "sites": sites,
+            "search_specs_run": len(specs),
+        },
+    ) if ledger_events else {"transaction_id": "", "event_count": 0}
+
     timestamp = datetime.now(TIMEZONE).strftime("%Y-%m-%d_%H%M%S")
     base = output_dir / f"job_search_{timestamp}"
     markdown_path = base.with_suffix(".md")
     csv_path = base.with_suffix(".csv")
 
-    write_markdown(markdown_path, ranked, profile["profile_name"], sites, len(specs), len(known_urls))
+    write_markdown(
+        markdown_path,
+        ranked,
+        profile["profile_name"],
+        sites,
+        len(specs),
+        len(known_application_urls),
+        {
+            "suppressed_by_ledger": suppressed_by_ledger,
+            "suppressed_by_applications": suppressed_by_applications,
+            "transaction_id": ledger_result["transaction_id"],
+        },
+    )
     write_csv(csv_path, ranked)
 
     print(f"Markdown report: {markdown_path}")
     print(f"CSV export: {csv_path}")
+    if ledger_result["transaction_id"]:
+        print(f"Ledger transaction: {ledger_result['transaction_id']}")
     print(f"Ranked results: {len(ranked)}")
     return 0
 

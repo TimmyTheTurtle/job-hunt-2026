@@ -1,6 +1,7 @@
 # Job Search Runner
 
 Quick start doc: [../HOW_TO_RUN_JOB_SEARCH.md](../HOW_TO_RUN_JOB_SEARCH.md)
+Ledger doc: [../HOW_TO_USE_SEARCH_LEDGER.md](../HOW_TO_USE_SEARCH_LEDGER.md)
 
 Manual one-shot search tooling for preferred roles.
 
@@ -13,6 +14,7 @@ The runner:
 - uses search strings tuned for C++ / simulation / systems roles
 - prefers `c plus plus` phrasing because many search systems handle `C++` poorly
 - de-dupes results against existing application posting URLs already recorded in this repo
+- records surfaced jobs into the search ledger
 - writes a markdown shortlist and a CSV file to `job_search/output/`
 
 ## Why Google Is Included Carefully
@@ -31,6 +33,10 @@ If results are weak, tune the `google_search_term_template` values in `search_pr
   Main search and ranking script.
 - `run_search.sh`
   WSL-friendly wrapper that bootstraps the virtual environment if needed.
+- `record_decisions.py`
+  Ledger update helper for `applied`, `dismissed`, and `saved` decisions.
+- `ledger/`
+  Machine-managed search ledger state and summary files.
 - `output/`
   Generated markdown and CSV reports. Ignored by git.
 

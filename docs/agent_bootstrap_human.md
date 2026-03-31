@@ -44,6 +44,10 @@ Examples:
 
 As part of the default application workflow, agents should also preserve the exact job posting URL in the application's `job_description.md` before drafting. That URL is part of the UI audit trail.
 
+For search bookkeeping, agents should treat the machine-managed search ledger and the manual application tracker as separate systems:
+- `job_search/ledger/` for duplicate suppression and fast decision logging
+- `master_tracker.md` for supervised/manual application logging
+
 ## Source Of Truth
 
 The compact bootstrap is a distilled mirror of these source files:
