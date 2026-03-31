@@ -11,8 +11,11 @@ mkdir -p "applications/$FOLDER_NAME"
 cd "applications/$FOLDER_NAME"
 
 cat > job_description.md << 'EOF'
-job posting[URL]
-company profile[URL]
+job posting:
+[exact posting URL for UI audit]
+
+company profile:
+[company profile or careers URL if useful]
 
 Job Details
 EOF

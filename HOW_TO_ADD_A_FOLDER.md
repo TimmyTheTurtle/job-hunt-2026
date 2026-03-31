@@ -40,12 +40,19 @@ touch interview_prep.md
 #### `job_description.md`
 Copy the job posting URL and details:
 ```markdown
-job posting[URL]
-company profile[URL]
+job posting:
+[exact posting URL for UI audit]
+
+company profile:
+[company profile or careers URL if useful]
 
 Job Details
 [Paste job requirements and description here]
 ```
+
+Important:
+- keep the exact application posting URL, not just the company careers homepage
+- this is part of the UI audit trail
 
 #### `notes.md`
 Use this template to organize your thoughts:
@@ -209,8 +216,11 @@ mkdir -p "applications/$FOLDER_NAME"
 cd "applications/$FOLDER_NAME"
 
 cat > job_description.md << 'EOF'
-job posting[URL]
-company profile[URL]
+job posting:
+[exact posting URL for UI audit]
+
+company profile:
+[company profile or careers URL if useful]
 
 Job Details
 EOF

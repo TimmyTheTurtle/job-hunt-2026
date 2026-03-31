@@ -9,6 +9,7 @@
 | 2026-03-20 | Google | Data Infrastructure Engineer, Google Customer Solutions | C | 6 | 3 | sim_v1 | Applied | Energized | 2026-03-30 |
 | 2026-03-24 | [Talant Advantage Group](https://thetagit.com/) | .Net, porting VB | C | 6 | 3 | sim_v1 | Contact Employer | Energized | 2026-04-03 |
 | 2026-03-25 | [SynergisticIT](https://www1.jobdiva.com/portal/?a=ygjdnwl6apzmff6t82vdutfvbydrtq07d9es5jck4la1ce7huuaom4zlm4i0c94q&click_id=9ca05694c5ca41d493ee9ccdc199c060outc1#/jobs/29981560) | Junior Java/C++ Developer with Cloud | C | 4 | 7 | sim_v1 | Drafting | Measured | 2026-04-08 |
+| 2026-03-31 | Siemens | C++ Software Developer | C | 9 | 7 | sim_v1 | Applied | Energized | 2026-04-14 |
 
 ## Status Legend
 - Drafting
