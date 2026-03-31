@@ -1,0 +1,76 @@
+{
+  "profile_name": "preferred_cpp_roles_v1",
+  "default_sites": [
+    "linkedin",
+    "indeed",
+    "google"
+  ],
+  "country_indeed": "USA",
+  "hours_old": 336,
+  "results_wanted_per_query": 12,
+  "max_report_items": 30,
+  "locations": [
+    {
+      "label": "remote",
+      "location": "Remote",
+      "google_location_phrase": "remote",
+      "is_remote": true
+    },
+    {
+      "label": "michigan",
+      "location": "Michigan",
+      "google_location_phrase": "near Michigan",
+      "is_remote": false
+    }
+  ],
+  "searches": [
+    {
+      "tier": "A",
+      "label": "simulation engineer",
+      "search_term": "simulation engineer",
+      "google_search_term_template": "simulation engineer c plus plus jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
+      "label": "simulation software engineer",
+      "search_term": "simulation software engineer",
+      "google_search_term_template": "simulation software engineer c plus plus jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
+      "label": "modeling and simulation engineer",
+      "search_term": "modeling and simulation engineer",
+      "google_search_term_template": "modeling and simulation engineer c plus plus jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
+      "label": "systems software engineer",
+      "search_term": "systems software engineer",
+      "google_search_term_template": "systems software engineer c plus plus jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
+      "label": "real time software engineer",
+      "search_term": "real time software engineer",
+      "google_search_term_template": "real time software engineer c plus plus jobs {google_location_phrase}"
+    },
+    {
+      "tier": "B",
+      "label": "hpc software engineer",
+      "search_term": "hpc software engineer",
+      "google_search_term_template": "hpc software engineer c plus plus jobs {google_location_phrase}"
+    },
+    {
+      "tier": "B",
+      "label": "scientific computing engineer",
+      "search_term": "scientific computing engineer",
+      "google_search_term_template": "scientific computing engineer c plus plus jobs {google_location_phrase}"
+    },
+    {
+      "tier": "C",
+      "label": "software engineer c plus plus",
+      "search_term": "\"software engineer\" \"c plus plus\" -javascript -java -python",
+      "google_search_term_template": "software engineer c plus plus jobs {google_location_phrase}"
+    }
+  ]
+}

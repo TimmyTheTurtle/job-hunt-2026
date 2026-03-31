@@ -5,6 +5,7 @@ This repository is the canonical record for job-search strategy, applications, r
 ## Start Here
 
 - [How to add a new application](HOW_TO_ADD_A_FOLDER.md)
+- [How to run the manual job search](HOW_TO_RUN_JOB_SEARCH.md)
 - [Current strategy](docs/current_strategy.md)
 - [UI compliance notes](docs/ui_compliance.md)
 - [Agent entry point](AGENTS.md)
@@ -22,6 +23,8 @@ This repository is the canonical record for job-search strategy, applications, r
   Resume versions and notes about positioning changes.
 - `docs/`
   Canonical reference docs for strategy and administrative guidance.
+- `job_search/`
+  Manual one-shot search tooling plus generated review lists under `job_search/output/`.
 - `master_tracker.md`
   Main application ledger.
 - `gaps.md`
