@@ -24,6 +24,10 @@ The reusable process from the March 2026 notes is:
 4. Complete that verification before the relevant certification deadline rather than waiting until the certification date.
 5. Keep any confirmation email or proof of verification.
 
+## Michigan Works / Post Registration Compliance Guidance
+ 1. Go Here (https://miwam.unemployment.state.mi.us/ClmMiWAM/_/)
+ 2. Login
+
 ## Practical Interpretation
 
 - Coverage can begin before payment is released.

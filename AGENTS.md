@@ -12,6 +12,8 @@ Every agent should bootstrap in this order:
 
 Do not begin by loading every context file in the repo.
 
+Preferred CLI: Use WSL for running repository scripts and the `job_search` runner.
+
 ## Bootstrap Rule
 
 The compact bootstrap file is the default machine-facing context layer.

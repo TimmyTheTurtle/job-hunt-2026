@@ -1,7 +1,30 @@
 {
-  "generated_at": "2026-03-31T12:33:54.499168-04:00",
-  "job_count": 4,
+  "generated_at": "2026-04-23T19:45:16.210764-04:00",
+  "job_count": 34,
   "jobs": [
+    {
+      "company": "Asenium Consulting",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4401312098",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4401312098",
+      "note": "",
+      "query_labels": [
+        "simulation engineer"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Simulation Engineer"
+    },
     {
       "company": "ASTEC Digital",
       "first_seen_at": "2026-03-31T12:33:54.493374-04:00",
@@ -24,6 +47,144 @@
       ],
       "status": "surfaced",
       "title": "Simulation Engineer"
+    },
+    {
+      "company": "Black & Veatch",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=1f8c9edbd3844cd9",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Ann Arbor, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=1f8c9edbd3844cd9",
+      "note": "",
+      "query_labels": [
+        "systems software engineer"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Associate Electrical Engineer - Power System Protection"
+    },
+    {
+      "company": "Booz Allen Hamilton",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4402097333",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Aberdeen Proving Ground, MD",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4402097333",
+      "note": "",
+      "query_labels": [
+        "modeling and simulation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 15,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Electromagnetic Modeling and Simulation CAD Support Engineer"
+    },
+    {
+      "company": "Booz Allen Hamilton",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4405496170",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Washington, DC",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4405496170",
+      "note": "",
+      "query_labels": [
+        "modeling and simulation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 15,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Mission Modeling and Simulation Software Engineer, Senior"
+    },
+    {
+      "company": "Booz Allen Hamilton",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4405496168",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "McLean, VA",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4405496168",
+      "note": "",
+      "query_labels": [
+        "modeling and simulation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 15,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Mission Modeling and Simulation Software Engineer, Senior"
+    },
+    {
+      "company": "Booz Allen Hamilton",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4405485752",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Annapolis Junction, MD",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4405485752",
+      "note": "",
+      "query_labels": [
+        "modeling and simulation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 15,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Mission Modeling and Simulation Software Engineer, Senior"
+    },
+    {
+      "company": "Booz Allen Hamilton",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4402609062",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Charlottesville, VA",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4402609062",
+      "note": "",
+      "query_labels": [
+        "modeling and simulation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 15,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Modeling and Simulation Engineer"
     },
     {
       "company": "Crossing Hurdles",
@@ -49,6 +210,447 @@
       "title": "Circuit Simulation Engineer (Ngspice) | Remote"
     },
     {
+      "company": "Crossing Hurdles",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4403617076",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4403617076",
+      "note": "",
+      "query_labels": [
+        "simulation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Circuit Simulation Engineer (Ngspice) | Remote"
+    },
+    {
+      "company": "Crossing Hurdles",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4404278686",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4404278686",
+      "note": "",
+      "query_labels": [
+        "simulation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Circuit Simulation Engineer (Qucs-S) | Remote"
+    },
+    {
+      "company": "Crossing Hurdles",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4404276827",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Florida, United States",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4404276827",
+      "note": "",
+      "query_labels": [
+        "simulation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Simulation Engineer | $61/hr Remote"
+    },
+    {
+      "company": "DataAnnotation",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4391928017",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Michigan, United States",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4391928017",
+      "note": "",
+      "query_labels": [
+        "simulation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Simulation Engineer - AI Trainer"
+    },
+    {
+      "company": "DataAnnotation",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4391928020",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "California, United States",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4391928020",
+      "note": "",
+      "query_labels": [
+        "simulation engineer"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Simulation Engineer - AI Trainer"
+    },
+    {
+      "company": "Engtal",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4402180764",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4402180764",
+      "note": "",
+      "query_labels": [
+        "simulation engineer"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Simulation Engineer"
+    },
+    {
+      "company": "Ford Motor Company",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=2e7e00de56aa8558",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Redford, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=2e7e00de56aa8558",
+      "note": "",
+      "query_labels": [
+        "real time software engineer",
+        "systems software engineer"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Software Engineer"
+    },
+    {
+      "company": "Ford Motor Company",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=8560e0d2486340d5",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Dearborn, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=8560e0d2486340d5",
+      "note": "",
+      "query_labels": [
+        "modeling and simulation engineer",
+        "simulation engineer",
+        "simulation software engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Sr. Systems Development Engineer"
+    },
+    {
+      "company": "General Motors",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4403533756",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Milford, MI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4403533756",
+      "note": "",
+      "query_labels": [
+        "real time software engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Software Engineer - HIL Battery & Propulsion Simulation and Integration"
+    },
+    {
+      "company": "General Motors",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4403102887",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Warren, MI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4403102887",
+      "note": "",
+      "query_labels": [
+        "simulation engineer"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Vehicle Dynamics Simulation Engineer"
+    },
+    {
+      "company": "General Motors",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4403102886",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Milford, MI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4403102886",
+      "note": "",
+      "query_labels": [
+        "simulation engineer"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Vehicle Dynamics Simulation Engineer"
+    },
+    {
+      "company": "Indeed",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=f769fa811cfaff87",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=f769fa811cfaff87",
+      "note": "",
+      "query_labels": [
+        "real time software engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Software Engineer III"
+    },
+    {
+      "company": "KLA",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=f879a184ee12ee88",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Ann Arbor, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=f879a184ee12ee88",
+      "note": "",
+      "query_labels": [
+        "hpc software engineer"
+      ],
+      "recommendation": "review",
+      "score": 11,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "HPC Storage Engineer"
+    },
+    {
+      "company": "Mission Technologies, a division of HII",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4387759536",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Nellis AFB, NV",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4387759536",
+      "note": "",
+      "query_labels": [
+        "modeling and simulation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 14,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Software Developer (Real\u2011Time Simulation & Dev Lab) (Engineer Software 3) - 27824"
+    },
+    {
+      "company": "Motional",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=e6f64c8821c56e3c",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=e6f64c8821c56e3c",
+      "note": "",
+      "query_labels": [
+        "modeling and simulation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Software Engineer - Autonomy Integrations"
+    },
+    {
+      "company": "nan",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=46bee6ddd9661f84",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=46bee6ddd9661f84",
+      "note": "",
+      "query_labels": [
+        "modeling and simulation engineer",
+        "scientific computing engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Scientist / Engineer: Advanced Physical, Computational & Imaging Systems"
+    },
+    {
+      "company": "nSCALE",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=baf91abd52ff876f",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=baf91abd52ff876f",
+      "note": "",
+      "query_labels": [
+        "hpc software engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Systems Engineer"
+    },
+    {
+      "company": "Pacific Northwest National Laboratory",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4401847141",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4401847141",
+      "note": "",
+      "query_labels": [
+        "modeling and simulation engineer"
+      ],
+      "recommendation": "review",
+      "score": 11,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Power Systems Research Engineer \u2013 Energy Infrastructure Modeling"
+    },
+    {
+      "company": "Pacific Northwest National Laboratory",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4401843269",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4401843269",
+      "note": "",
+      "query_labels": [
+        "modeling and simulation engineer"
+      ],
+      "recommendation": "review",
+      "score": 11,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Power Systems Research Engineer \u2013 Grid Modeling & Planning"
+    },
+    {
       "company": "PSC Consulting",
       "first_seen_at": "2026-03-31T12:33:54.493374-04:00",
       "job_url": "https://www.indeed.com/viewjob?jk=1a9aa87fccf53fa1",
@@ -72,6 +674,31 @@
       "title": "Senior Consultant I, Control Systems (E-Terra)"
     },
     {
+      "company": "Quest Defense",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=01f2653892a486c6",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=01f2653892a486c6",
+      "note": "",
+      "query_labels": [
+        "modeling and simulation engineer",
+        "simulation engineer",
+        "simulation software engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Software Build, Tools & Infrastructure Engineer"
+    },
+    {
       "company": "Rand Worldwide",
       "first_seen_at": "2026-03-31T12:33:54.493374-04:00",
       "job_url": "https://www.linkedin.com/jobs/view/4387989309",
@@ -93,6 +720,77 @@
       ],
       "status": "surfaced",
       "title": "FEA Consulting Engineer"
+    },
+    {
+      "company": "Re:Build Manufacturing",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=a72b3326943ea639",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=a72b3326943ea639",
+      "note": "",
+      "query_labels": [
+        "modeling and simulation engineer",
+        "simulation engineer",
+        "simulation software engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 16,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Software Engineer \u2013 CAD/CAM Services"
+    },
+    {
+      "company": "Zillow",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=6400f683019b83c8",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_192207_6f370d13",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=6400f683019b83c8",
+      "note": "",
+      "query_labels": [
+        "systems software engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Software Development Engineer"
+    },
+    {
+      "company": "Mission Technologies, a division of HII",
+      "first_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4404462085",
+      "last_actor": "chat_update",
+      "last_decision_at": "2026-04-23T19:45:16.201953-04:00",
+      "last_seen_at": "2026-04-23T19:22:07.806442-04:00",
+      "last_transaction_id": "tx_20260423_194516_d03b742f",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4404462085",
+      "note": "Applied via LinkedIn; materials in applications/2026-04_mission_technologies_HII_28298/",
+      "query_labels": [
+        "modeling and simulation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 16,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "applied",
+      "title": "REMOTE Software Developer (Real\u2011Time Simulation & Dev Lab) - 28298"
     }
   ],
   "recent_transactions": [
@@ -102,12 +800,33 @@
       "kind": "search_run",
       "timestamp": "2026-03-31T12:33:54.493374-04:00",
       "transaction_id": "tx_20260331_123354_b6e32985"
+    },
+    {
+      "actor": "job_search_runner",
+      "event_count": 30,
+      "kind": "search_run",
+      "timestamp": "2026-04-23T19:22:07.806442-04:00",
+      "transaction_id": "tx_20260423_192207_6f370d13"
+    },
+    {
+      "actor": "chat_update",
+      "event_count": 1,
+      "kind": "decision_update",
+      "timestamp": "2026-04-23T19:44:56.010698-04:00",
+      "transaction_id": "tx_20260423_194456_9c1c0a4d"
+    },
+    {
+      "actor": "chat_update",
+      "event_count": 1,
+      "kind": "decision_update",
+      "timestamp": "2026-04-23T19:45:16.201953-04:00",
+      "transaction_id": "tx_20260423_194516_d03b742f"
     }
   ],
   "status_counts": {
-    "applied": 0,
+    "applied": 1,
     "dismissed": 0,
     "saved": 0,
-    "surfaced": 4
+    "surfaced": 33
   }
 }
