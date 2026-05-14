@@ -3,7 +3,8 @@
   "default_sites": [
     "linkedin",
     "indeed",
-    "google"
+    "google",
+    "cybercoders"
   ],
   "country_indeed": "USA",
   "hours_old": 336,
