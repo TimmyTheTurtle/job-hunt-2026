@@ -1,6 +1,6 @@
 # Current Strategy
 
-Canonical strategy as of 2026-03-31.
+Canonical strategy as of 2026-05-21.
 
 ## Core Outcome
 
@@ -125,5 +125,6 @@ Game development is only useful here when it supports simulation depth rather th
 - Durable strategy belongs here in `docs/`.
 - Applications belong in `applications/`.
 - Ongoing status belongs in [master_tracker.md](../master_tracker.md).
+- Companies to revisit before applying belong in [company_watchlist.md](../company_watchlist.md).
 - Skill gaps belong in [gaps.md](../gaps.md).
 - GitHub issues should represent actions, not be the only home for reference material.

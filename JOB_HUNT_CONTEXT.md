@@ -38,6 +38,12 @@ Applications should generally optimize for:
 - roles that strengthen systems, C++, simulation, or technical credibility
 - roles that do not permanently trap him in a weak niche
 
+## Company watchlist
+
+Some employers should be tracked before Dorian is ready to apply.
+Use `company_watchlist.md` to keep those names, URLs, and current public hiring signals in one place.
+If the user says "look for a job now" and a company is on that watchlist, check whether it is hiring before treating the request like a fresh application search.
+
 ## Candidate summary
 
 Dorian is a systems-oriented software engineer with a strong bias toward:

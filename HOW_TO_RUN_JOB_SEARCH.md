@@ -182,6 +182,8 @@ After recording decisions, check:
 
 Yes, you can tell a chat window to record these updates for you.
 
+If the user names a company that is already on `company_watchlist.md`, "look for a job now" means checking that company for current hiring signals first, even if no application is being prepared.
+
 Good examples:
 
 - `Please mark our current application as applied in the search ledger.`

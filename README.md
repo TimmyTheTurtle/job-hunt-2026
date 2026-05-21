@@ -11,6 +11,7 @@ This repository is the canonical record for job-search strategy, applications, r
 - [UI compliance notes](docs/ui_compliance.md)
 - [Agent entry point](AGENTS.md)
 - [Agent bootstrap guide](docs/agent_bootstrap_human.md)
+- [Company watchlist](company_watchlist.md)
 - [Master tracker](master_tracker.md)
 - [Skills gap ledger](gaps.md)
 
@@ -26,6 +27,8 @@ This repository is the canonical record for job-search strategy, applications, r
   Canonical reference docs for strategy and administrative guidance.
 - `job_search/`
   Manual one-shot search tooling, generated review lists under `job_search/output/`, and the machine-managed search ledger under `job_search/ledger/`.
+- `company_watchlist.md`
+  Durable watchlist for employers to monitor before applying.
 - `master_tracker.md`
   Main application ledger.
 - `gaps.md`

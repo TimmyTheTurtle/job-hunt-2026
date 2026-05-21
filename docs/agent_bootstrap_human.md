@@ -16,6 +16,11 @@ The goal is to let agents load only the minimum durable context needed at startu
 `AGENT_BOOTSTRAP_COMPACT.md` should carry the actual startup context.
 Detailed policy and maintenance explanation belongs here or in the source docs, not duplicated in both startup files.
 
+Company monitoring follows the same layered approach:
+- `company_watchlist.md` is for employers Dorian wants to revisit before applying
+- `master_tracker.md` is for actual applications
+- `job_search/ledger/` is for machine-managed search bookkeeping
+
 ## Why This Exists
 
 Without a compact bootstrap layer, agents tend to:
@@ -70,6 +75,7 @@ Keep in the compact file:
 - truth constraints
 - default workflow
 - critical recordkeeping requirements like preserving the exact posting URL
+- company watchlist checks for employers Dorian wants to revisit
 - short reminders about tone and strategy
 
 Do not put in the compact file:

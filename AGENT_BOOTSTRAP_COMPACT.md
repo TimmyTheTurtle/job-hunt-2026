@@ -35,6 +35,7 @@ core_priorities:
 - reduced burnout risk
 - preserve UI audit recordkeeping
 - keep machine search ledger separate from manual tracker updates
+- keep company watchlist records separate from application tracking
 
 long_term_vector:
 - modern C++
@@ -66,6 +67,12 @@ growth_areas_safe_language:
 - actively developing
 - focused on strengthening
 - recent hands-on work includes
+
+company_watchlist:
+- use `company_watchlist.md` for employers Dorian wants to revisit before applying
+- record company name, location, website, latest public hiring signal, posting URL if any, last checked date, and next check
+- when user says "look for a job now," check the watchlist too
+- do not create an application folder unless the user actually applies
 
 role_tiers:
 - Tier 1: C++, simulation, systems, graphics, real-time, technical R&D

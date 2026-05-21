@@ -45,6 +45,7 @@ Only read the full source file when the current task actually needs that detail.
 - Optimize for coherent direction, not application spam.
 - Protect runway, learning time, and long-term systems/C++/simulation positioning.
 - Keep machine-managed search bookkeeping in `job_search/ledger/`; do not auto-update `master_tracker.md` from search runs.
+- Keep company watchlist updates in `company_watchlist.md`; do not fold watchlist checks into `master_tracker.md`.
 
 ## Workflow Requirement
 
@@ -52,6 +53,10 @@ For application work:
 1. bootstrap from the compact context
 2. record the exact posting URL in the application's `job_description.md`
 3. follow the default workflow in [APPLICATION_WORKFLOW.md](APPLICATION_WORKFLOW.md)
+
+For company monitoring:
+- record the company, URL, and latest public hiring signal in `company_watchlist.md`
+- treat "look for a job now" as including watchlist check-ins when the user has named a company
 
 Do not restate the detailed workflow here unless the startup contract itself changes.
 
