@@ -6,6 +6,8 @@ import argparse
 import csv
 import json
 import re
+import urllib.parse
+import urllib.request
 from collections import defaultdict
 from dataclasses import dataclass
 from datetime import datetime
@@ -23,6 +25,21 @@ DEFAULT_OUTPUT_DIR = ROOT / "job_search" / "output"
 TIMEZONE = ZoneInfo("America/New_York")
 
 TIER_BONUS = {"A": 4, "B": 2, "C": 0}
+
+JOBSPY_SITES = {
+    "linkedin",
+    "indeed",
+    "zip_recruiter",
+    "glassdoor",
+    "google",
+    "bayt",
+    "naukri",
+    "bdjobs",
+}
+CUSTOM_SITES = {"cybercoders"}
+CYBERCODERS_SEARCH_URL = "https://www.cybercoders.com/ccv5-jobs/search"
+CYBERCODERS_JOB_BASE_URL = "https://www.cybercoders.com/job/"
+CYBERCODERS_BUSINESS_UNIT = "1"
 
 POSITIVE_TITLE_PATTERNS = [
     (re.compile(r"\bsoftware\b"), 2, "software"),
@@ -242,6 +259,111 @@ def date_to_str(value: Any) -> str:
     return text.replace("T", " ")
 
 
+def joined_items(value: Any) -> str:
+    if not isinstance(value, list):
+        return safe_str(value)
+
+    items = []
+    for item in value:
+        text = safe_str(item)
+        if text and text not in items:
+            items.append(text)
+    return "; ".join(items)
+
+
+def cybercoders_days_posted(hours_old: int) -> str:
+    if hours_old <= 0:
+        return "0"
+    if hours_old <= 24:
+        return "1"
+    if hours_old <= 72:
+        return "3"
+    if hours_old <= 168:
+        return "7"
+    if hours_old <= 336:
+        return "14"
+    return "0"
+
+
+def cybercoders_job_url(job: dict[str, Any]) -> str:
+    slug = safe_str(job.get("JobURL"))
+    if not slug:
+        return ""
+    if slug.startswith(("http://", "https://")):
+        return slug
+    return urllib.parse.urljoin(CYBERCODERS_JOB_BASE_URL, slug.lstrip("/"))
+
+
+def cybercoders_is_remote(job: dict[str, Any]) -> bool:
+    return (
+        safe_str(job.get("WorkLocationTypeId")) == "3"
+        or safe_str(job.get("Telecommute")).lower() in {"true", "1", "yes"}
+    )
+
+
+def cybercoders_description(job: dict[str, Any]) -> str:
+    parts = [safe_str(job.get("ShortDescription"))]
+    tags = joined_items(job.get("tags"))
+    if tags:
+        parts.append(f"Tags: {tags}")
+    salary_min = safe_str(job.get("SalaryMin"))
+    salary_max = safe_str(job.get("SalaryMax"))
+    salary_type = safe_str(job.get("SalaryType"))
+    if salary_min or salary_max:
+        salary = " - ".join(item for item in [salary_min, salary_max] if item)
+        parts.append(f"Salary: {salary} {salary_type}".strip())
+    return "\n".join(part for part in parts if part)
+
+
+def cybercoders_row(job: dict[str, Any]) -> dict[str, Any]:
+    remote = cybercoders_is_remote(job)
+    return {
+        "site": "cybercoders",
+        "title": safe_str(job.get("JobTitleThirdParty")) or safe_str(job.get("jobTitle")),
+        "company": safe_str(job.get("CompanyName")) or "CyberCoders",
+        "location": "Remote" if remote else "",
+        "city": "" if remote else joined_items(job.get("City")),
+        "state": "" if remote else joined_items(job.get("StateCode")),
+        "country": "US",
+        "description": cybercoders_description(job),
+        "job_url": cybercoders_job_url(job),
+        "date_posted": safe_str(job.get("DatePost")),
+        "is_remote": remote,
+    }
+
+
+def scrape_cybercoders(spec: SearchSpec, hours_old: int, results_per_query: int) -> list[dict[str, Any]]:
+    params = {
+        "keyword": spec.search_term,
+        "rows": str(results_per_query),
+        "page": "1",
+        "termOption": "PERM",
+        "sortType": "relevance",
+        "daysPosted": cybercoders_days_posted(hours_old),
+        "buid": CYBERCODERS_BUSINESS_UNIT,
+    }
+    if spec.is_remote:
+        params["workLocationTypeId"] = "3"
+    elif spec.location:
+        params["locationKeyword"] = spec.location
+
+    url = f"{CYBERCODERS_SEARCH_URL}?{urllib.parse.urlencode(params)}"
+    request = urllib.request.Request(
+        url,
+        headers={
+            "Accept": "application/json",
+            "User-Agent": "Mozilla/5.0 (compatible; job-hunt-2026/1.0)",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        data = json.loads(response.read().decode("utf-8"))
+
+    jobs = data.get("jobs")
+    if not isinstance(jobs, list):
+        return []
+    return [cybercoders_row(job) for job in jobs if isinstance(job, dict)]
+
+
 def is_allowed_location(row: dict[str, Any]) -> bool:
     country = safe_str(row.get("country")).lower()
     if country and country not in {"us", "usa", "united states", "united states of america"}:
@@ -266,24 +388,44 @@ def is_allowed_location(row: dict[str, Any]) -> bool:
 
 
 def scrape_spec(spec: SearchSpec, profile: dict[str, Any], sites: list[str], hours_old: int, results_per_query: int) -> list[dict[str, Any]]:
-    effective_sites = list(sites)
-    kwargs: dict[str, Any] = {
-        "site_name": effective_sites,
-        "search_term": spec.search_term,
-        "google_search_term": spec.google_search_term,
-        "location": spec.location,
-        "results_wanted": results_per_query,
-        "hours_old": hours_old,
-        "country_indeed": profile["country_indeed"],
-        "verbose": 0,
-    }
-    if spec.is_remote:
-        kwargs["is_remote"] = True
+    requested_sites = [safe_str(site).lower() for site in sites if safe_str(site)]
+    jobspy_sites = [site for site in requested_sites if site in JOBSPY_SITES]
+    unsupported_sites = sorted(
+        {site for site in requested_sites if site not in JOBSPY_SITES and site not in CUSTOM_SITES}
+    )
+    rows: list[dict[str, Any]] = []
 
-    jobs = scrape_jobs(**kwargs)
-    if jobs is None or len(jobs) == 0:
-        return []
-    return jobs.to_dict(orient="records")
+    for site in unsupported_sites:
+        print(f"[warn] unsupported site skipped for {spec.label} / {spec.location_label}: {site}")
+
+    if jobspy_sites:
+        kwargs: dict[str, Any] = {
+            "site_name": jobspy_sites,
+            "search_term": spec.search_term,
+            "google_search_term": spec.google_search_term,
+            "location": spec.location,
+            "results_wanted": results_per_query,
+            "hours_old": hours_old,
+            "country_indeed": profile["country_indeed"],
+            "verbose": 0,
+        }
+        if spec.is_remote:
+            kwargs["is_remote"] = True
+
+        try:
+            jobs = scrape_jobs(**kwargs)
+            if jobs is not None and len(jobs) > 0:
+                rows.extend(jobs.to_dict(orient="records"))
+        except Exception as exc:
+            print(f"[warn] jobspy search failed for {spec.label} / {spec.location_label}: {exc}")
+
+    if "cybercoders" in requested_sites:
+        try:
+            rows.extend(scrape_cybercoders(spec, hours_old, results_per_query))
+        except Exception as exc:
+            print(f"[warn] cybercoders search failed for {spec.label} / {spec.location_label}: {exc}")
+
+    return rows
 
 
 def key_for_candidate(row: dict[str, Any]) -> str:

@@ -1,0 +1,74 @@
+# CLAUDE.md
+
+## Single Entry Point
+
+This file is the single entry point for Claude when working in this repository.
+It mirrors the startup contract in [AGENTS.md](AGENTS.md).
+
+Bootstrap in this order:
+1. Read this file
+2. Read [AGENT_BOOTSTRAP_COMPACT.md](AGENT_BOOTSTRAP_COMPACT.md)
+3. Read only the specific supporting docs needed for the current task
+
+Do not begin by loading every context file in the repo.
+
+## Bootstrap Rule
+
+The compact bootstrap file is the default machine-facing context layer.
+It should stay short, dense, and optimized for quick agent loading.
+
+The human-readable explanation of that bootstrap lives in:
+- [docs/agent_bootstrap_human.md](docs/agent_bootstrap_human.md)
+
+Whenever the compact bootstrap changes, update the human-readable document in the same change.
+
+## Source Context Files
+
+The compact bootstrap is derived from these source files:
+- [JOB_HUNT_CONTEXT.md](JOB_HUNT_CONTEXT.md)
+- [COVER_LETTER_RULES.md](COVER_LETTER_RULES.md)
+- [ROLE_EVAL_CHECKLIST.md](ROLE_EVAL_CHECKLIST.md)
+- [RECRUITER_RESPONSE_RULES.md](RECRUITER_RESPONSE_RULES.md)
+- [RESUME_BULLET_RULES.md](RESUME_BULLET_RULES.md)
+- [APPLICATION_WORKFLOW.md](APPLICATION_WORKFLOW.md)
+
+Only read the full source file when the current task actually needs that detail.
+
+## Working Rules
+
+- Keep employer-facing writing truthful, restrained, and role-specific.
+- Keep Dorian-facing analysis honest, structured, and strategically useful.
+- Prefer the narrower defensible claim over the broader impressive claim.
+- Do not fabricate employers, titles, certifications, years of experience, clearance, or unsupported domain expertise.
+- Optimize for coherent direction, not application spam.
+- Protect runway, learning time, and long-term systems/C++/simulation positioning.
+- Keep machine-managed search bookkeeping in `job_search/ledger/`; do not auto-update `master_tracker.md` from search runs.
+- Keep company watchlist updates in `company_watchlist.md`; do not fold watchlist checks into `master_tracker.md`.
+
+## Workflow Requirement
+
+For application work:
+1. Bootstrap from the compact context
+2. Record the exact posting URL in the application's `job_description.md`
+3. Follow the default workflow in [APPLICATION_WORKFLOW.md](APPLICATION_WORKFLOW.md)
+
+For company monitoring:
+- Record the company, URL, and latest public hiring signal in `company_watchlist.md`
+- Treat "look for a job now" as including watchlist check-ins when the user has named a company
+
+## Maintenance Rule
+
+If you change:
+- Candidate positioning
+- Role hierarchy
+- Truth constraints
+- Writing rules
+- Workflow expectations
+
+Then update all three layers that apply:
+- Source context file(s)
+- [AGENT_BOOTSTRAP_COMPACT.md](AGENT_BOOTSTRAP_COMPACT.md)
+- [docs/agent_bootstrap_human.md](docs/agent_bootstrap_human.md)
+
+Keep the compact layer minimal.
+Keep the human layer understandable.
