@@ -36,6 +36,7 @@ core_priorities:
 - preserve UI audit recordkeeping
 - keep machine search ledger separate from manual tracker updates
 - keep company watchlist records separate from application tracking
+- never mark `Applied` without updating application folder records, `master_tracker.md`, and ledger `decision_update`
 
 long_term_vector:
 - modern C++
@@ -119,3 +120,10 @@ default_workflow:
 6. draft materials
 7. truthfulness audit
 8. strategy audit
+
+applied_status_required_artifacts:
+- applications/YYYY-MM_<company>_<role>/job_description.md
+- applications/YYYY-MM_<company>_<role>/submission_snapshot.md
+- applications/YYYY-MM_<company>_<role>/notes.md
+- master_tracker.md row update
+- job_search/ledger/transactions.jsonl decision_update with actor chat_update and status applied

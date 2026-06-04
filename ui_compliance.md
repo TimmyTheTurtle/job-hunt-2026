@@ -26,7 +26,7 @@ The reusable process from the March 2026 notes is:
 
 ## Michigan Works / Post Registration Compliance Guidance
 
-### To report timely, you must report between 18-May-2026 and 23-May-2026
+### To report timely, you must report between 15-June-2026 and 19-June-2026
 
  1. Go Here (https://miwam.unemployment.state.mi.us/ClmMiWAM/_/)
  2. Login

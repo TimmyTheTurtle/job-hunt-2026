@@ -54,11 +54,29 @@ For application work:
 2. record the exact posting URL in the application's `job_description.md`
 3. follow the default workflow in [APPLICATION_WORKFLOW.md](APPLICATION_WORKFLOW.md)
 
+Mandatory when status is `Applied`:
+- update or create `applications/YYYY-MM_<company>_<role>/job_description.md`
+- update or create `applications/YYYY-MM_<company>_<role>/submission_snapshot.md`
+- update or create `applications/YYYY-MM_<company>_<role>/notes.md`
+- update `master_tracker.md` with the applied row details
+- append a `decision_update` event in `job_search/ledger/transactions.jsonl` with:
+	- `actor: "chat_update"`
+	- `status: "applied"`
+	- canonical job URL and company/role context
+
+Before finishing any "Applied" update, run a final verification pass that confirms all five artifacts above exist and are consistent.
+
 For company monitoring:
 - record the company, URL, and latest public hiring signal in `company_watchlist.md`
 - treat "look for a job now" as including watchlist check-ins when the user has named a company
 
 Do not restate the detailed workflow here unless the startup contract itself changes.
+
+## Canonical Consistency Rule
+
+- `AGENTS.md` is the canonical startup contract.
+- `CLAUDE.md` and `.github/copilot-instructions.md` must remain semantically identical to this contract, with only path-prefix differences where required.
+- If any startup rule changes here, mirror it in both files in the same change.
 
 ## Maintenance Rule
 
