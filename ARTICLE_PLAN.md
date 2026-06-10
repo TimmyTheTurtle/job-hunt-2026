@@ -69,22 +69,37 @@ doesn't reduce the concentration — it increases output velocity in the highest
 
 ### Article 3 — I Shipped More and Felt Worse
 
-**The burnout article.** The sharpest claim in this one needs to be more precise than the generic
-"AI burnout" framing, which is already crowded. The specific thesis: AI-assisted development creates
-a new burnout pattern distinct from overwork burnout. It's not "too much to do." It's the gap between
-the rate of output and the rate of understanding. You ship things you don't understand at a pace
-that prevents you from ever catching up. The competence signal degrades. You lose the feedback loop
-that makes engineering feel meaningful.
+**The burnout article — reframed around cognitive decline.** The generic "AI burnout" angle is
+crowded and mostly about workload. The stronger claim: AI-assisted development done wrong causes
+measurable cognitive decline. Not fatigue. Decline. The same mechanism as doomscrolling — passive
+consumption replacing active construction — applied to the cognitive work of engineering.
 
-Evil Martians documented this directly: 30–50% productivity gains, but engineers reporting reduced
-satisfaction and burnout specifically from AI delegation of the parts of work that provided the
-learning signal.
+Social media is engineered to replace active engagement (forming an opinion, sitting with
+discomfort) with passive reception (scroll, react, move on). Vibe coding does the same to
+engineering cognition: replace active problem-solving (hold the problem, try approaches, feel
+where they break) with passive acceptance (generate, skim, approve, move on). The research
+supports this — cognitive offloading reduces retention and reasoning depth over time. The
+"Google effect" (knowing you can look something up reduces encoding depth) is the mild version.
+Vibe coding is the aggressive version applied to the skills that make you an engineer.
+
+The personal counter-move: starting the day with vector math, calculus, or physics problems
+before the AI tools come on. Not because the problems are professionally necessary, but because
+the *capacity* to do them is what's being protected. Active problem-solving as a daily practice
+in the age of AI assistance — protecting cognitive capability deliberately, not by accident.
+
+The practical technique: have the AI create a lesson on what you're about to build, then build
+it yourself. Lesson-first, build-second inverts the vibe coding default. The AI teaches; you
+construct. The build loop is the comprehension check — you can't fake your way through
+implementing something you don't understand. This habit compounds capability over time in a
+way that generate-and-accept never does.
 
 **Key claims:**
-- Vibe coding burns out engineers not through overwork but through competence erosion
-- The feedback loop that makes work meaningful (understand → build → verify) is broken by AI
-shortcutting the understand phase
-- This is a different burnout than deadline burnout and won't respond to the same interventions
+- Vibe coding causes cognitive decline through the same mechanism as doomscrolling — passive
+reception replacing active construction
+- The competence erosion is gradual and invisible until the capability is needed and isn't there
+- The counter-move is deliberate: protect active reasoning as a daily practice
+- Lesson-first, build-second is the practical inversion of the vibe coding default
+- Morning math/physics/calculus is a legitimate engineering practice, not a hobby
 
 **Links:**
 - [AI-assisted engineers are burning out (Evil Martians)](https://evilmartians.com/chronicles/ai-assisted-engineers-are-burning-out-is-this-fine)
