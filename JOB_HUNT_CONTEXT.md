@@ -73,6 +73,26 @@ Avoid positioning him primarily as:
 Strongest brand:
 > A systems-first engineer who learns deeply, debugs aggressively, and builds practical software while growing toward more advanced simulation, C++, and technical architecture work.
 
+## Contractor pitch
+
+Target: AI engineering contracts in legal, compliance, insurance, and document-heavy domains.
+
+One-liner:
+> I build AI pipelines that turn unstructured legal and compliance documents into structured findings — automated detection, LLM-assisted triage, and human-readable reports — using systems engineering discipline throughout.
+
+SE discipline angle:
+> Unlike most AI contractors who wire up APIs and move on, I apply systems engineering discipline: requirements traceability, deterministic boundaries, human verification gates, and evidence trails. Every AI component has an explicit scope, a defined boundary with the deterministic system, and documented architectural decisions. Clients get systems that can be audited, debugged, and extended — not black boxes that worked once in a demo.
+
+The repeatable pattern:
+- Ingest: parse domain documents (PDF, HTML, filings, contracts) into structured form
+- Model: build a graph or schema that captures the domain's relationships
+- Detect: write deterministic rules for known defect patterns
+- Triage: LLM pipeline to annotate, classify, and prioritize findings
+- Report: structured output for the relevant audience (executive, analyst, legal)
+- Govern: artifact contracts, evidence bundles, human gates, and SDLC/runtime separation
+
+Applicable domains: legal tech, insurance, regulatory compliance, contract review, financial filings, audit evidence assembly.
+
 ## Current life/career strategy context
 
 Dorian is balancing:
@@ -293,3 +313,7 @@ Safe phrasing for growth areas:
 ## Default candidate narrative
 
 Dorian Klingenberg is a systems-oriented software engineer with experience building practical business software, configuration and workflow systems, and deployed web applications in real operating environments. His work has combined software delivery with strong ownership, business awareness, and hands-on problem solving. He is especially motivated by roles that value technical rigor, structured thinking, and deeper engineering growth, and he is intentionally steering toward opportunities that build on those strengths while expanding further into modern C++ and systems-level development.
+
+## AI contractor narrative
+
+Dorian builds AI pipelines for legal, compliance, and document-heavy domains — systems that ingest unstructured documents, extract structured knowledge, run automated defect detection, and surface findings in human-readable reports. He applies systems engineering discipline throughout: explicit AI/deterministic boundaries, requirements traceability, human verification gates, and documented architectural decisions. The result is systems that can be audited, debugged, and extended, not black boxes that worked once in a demo.

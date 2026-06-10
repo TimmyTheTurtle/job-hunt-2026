@@ -26,6 +26,19 @@ positioning_avoid:
 - prompt engineer
 - AI enthusiast without technical substance
 
+contractor_pitch:
+  target: AI engineering contracts in legal, compliance, insurance, and document-heavy domains
+  one_liner: >
+    I build AI pipelines that turn unstructured legal and compliance documents into structured
+    findings — automated detection, LLM-assisted triage, and human-readable reports —
+    using systems engineering discipline throughout.
+  se_discipline_angle: >
+    Unlike most AI contractors who wire up APIs and move on, I apply systems engineering
+    discipline: requirements traceability, deterministic boundaries, human verification gates,
+    and evidence trails. Clients get systems that can be audited, debugged, and extended —
+    not black boxes that worked once in a demo.
+  full_pitch: see JOB_HUNT_CONTEXT.md contractor_pitch section
+
 core_priorities:
 - truthful claims
 - coherent career direction
