@@ -121,6 +121,14 @@ Week 23:  S1-A10  The Architecture I'm Building
 
 ---
 
+## Candidate Articles (Not Yet Scheduled)
+
+| Candidate | Thesis | Home |
+|---|---|---|
+| The Complete Cognitive Stack | The positive version of S1-A3 — full operating model: morning reasoning, six-mode rotation, review as first-class mode, daily walk. Nobody in AI dev is writing about the physical layer. | Could extend S1-A3 or be a standalone S1 article. Decide when drafting S1-A3. |
+
+---
+
 ## What This Is Not
 
 This is not a tutorial series. Not "how to use ChatGPT." Not vendor content.

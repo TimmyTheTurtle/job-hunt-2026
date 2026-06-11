@@ -72,14 +72,48 @@ the moment where understanding is built, the moment that protects cognitive capa
 Workflows with no review artifacts force passivity. Vibe coding has no review artifacts.
 That is not a coincidence — it is the same failure mode as the rest of the article.
 
+### The Complete Cognitive Stack
+
+The full counter-model to the burnout and decline pattern this article diagnoses. Nobody
+in the AI development space is writing about this — the conversation is all workflow tools,
+focus techniques, and prompt strategies. The physical and rotational layers are absent.
+
+1. **Morning active reasoning** — math, physics, calculus before AI tools come on. Protects
+   the reasoning faculty deliberately. Non-negotiable.
+2. **Cognitive rotation through the day** — six modes: abstract reasoning, structured intake
+   (lectures, papers), implementation, play (simulations, experiments), writing, review.
+   When one saturates, switch. This is not multi-tasking — it is sequential cycling through
+   modes that use different mental muscles. It is how 12-hour days are sustainable.
+3. **Review as a first-class mode** — not administrative overhead. The mode that turns
+   activity into understanding. Never blocked; there is always something to review.
+4. **Documentation as wait-time strategy** — structured review artifacts mean agent pauses
+   are consumed by the previous run's review, not by context-switching or passive waiting.
+5. **Daily walk (3–5 miles)** — the seventh element, outside the rotation pool entirely.
+   Not a cognitive mode — the physical reset that allows the pool to keep running. Walking
+   promotes diffuse thinking; stuck problems resolve on the walk in ways they don't at the desk.
+
+This is a complete operating model, not a productivity tip. The vibe coder has one mode
+(implementation) and no physical reset. When implementation is blocked or the agent is
+running, they are stuck. The engineer with a full rotation pool and a daily walk is never
+stuck — they are always in a mode that is productive, and the hard problems solve themselves
+on mile three.
+
+**Note for writing:** This section may deserve its own article — the positive version of
+this one. S1-A3 is the diagnosis. The treatment article would be its natural companion.
+Flag for placement decision when drafting begins.
+
+---
+
 ## Solution Hints to Seed
 
 - Guardrails that reduce oversight burden
 - Process that filters low-quality output before the human has to babysit it
-- Deliberate daily practice of active reasoning (math, physics, hard problems without AI)
+- Morning active reasoning practice (math, physics) — protect cognitive capability deliberately
 - Lesson-first workflow: get the conceptual map first, then build yourself
-- Structured review artifacts (journals, ADRs, handoffs) that give the wait time a job —
-  reading the last run's output instead of switching contexts or staring at a spinner
+- Cognitive rotation pool: six modes, switch when saturated, never stuck
+- Review as a first-class daily mode — journals, ADRs, agent output, previous builds
+- Structured review artifacts that give agent wait time a job
+- Daily walk — diffuse mode reset, the physical layer nobody is talking about
 
 ---
 
