@@ -134,6 +134,20 @@ That is how it builds an audience worth having.
 
 ---
 
+## Series 3 — Product Discovery in the AI Age
+
+**Audience:** Product engineers, technical founders, engineering leads tired of the MVP treadmill.
+**Arc:** Reframe product discovery as a scientific experiment program, not a single-bet pivot game.
+**Platform:** LinkedIn and personal site. Cross-links to Series 1 and 2.
+
+| # | File | Title | Status |
+|---|------|-------|--------|
+| 1 | [s3-a01](series-3/s3-a01-mvp-one-bet-strategy.md) | The MVP Is a One-Bet Strategy | Not started |
+| 2 | [s3-a02](series-3/s3-a02-experimentation-is-requirements.md) | Experimentation IS Requirements Gathering | Not started |
+| 3 | [s3-a03](series-3/s3-a03-derive-the-product.md) | Derive the Product from the Path of Least Resistance | Not started |
+
+---
+
 ## Supporting Files
 
 - [research.md](research.md) — all source links organized by topic
