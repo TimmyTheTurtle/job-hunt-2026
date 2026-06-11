@@ -60,6 +60,8 @@ long_term_vector:
 - eventual HPC-caliber rigor
 
 usable_background:
+- SED Systems: mission ops software for CSA CASSIOPE satellite (2007–2010); secret clearance Canada, lapsed
+- Areva Resources: automated compliance reporting for Canadian government regulatory review (2004–2005)
 - RenoNerd ownership and practical delivery
 - CPQ/configuration and workflow systems
 - web deployment, IIS, Azure, plugin integration

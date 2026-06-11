@@ -71,7 +71,7 @@ Avoid positioning him primarily as:
 - AI enthusiast without technical substance
 
 Strongest brand:
-> A systems-first engineer who learns deeply, debugs aggressively, and builds practical software while growing toward more advanced simulation, C++, and technical architecture work.
+> A systems-first engineer with aerospace mission operations roots, who learns deeply, debugs aggressively, and builds practical software — now applying that same SE discipline to AI pipelines and document intelligence systems.
 
 ## Contractor pitch
 
@@ -136,6 +136,44 @@ Secondary pragmatic direction:
 - business software roles that still reward structured problem solving
 
 ## Professional background and usable experience
+
+### SED Systems — Aerospace / Space Systems (2007–2010)
+
+Dorian worked as a Junior Programmer at SED Systems in Saskatoon developing mission operations
+system (MOS) components for the **Canadian Space Agency's CASSIOPE science satellite mission**.
+This is real aerospace software engineering experience on a production space mission.
+
+Specifics:
+- Developed and maintained mission operations system components for an operational CSA satellite
+- Completed hardware configurations to house the entire MOS system
+- Graphical components for a PCI card-based Decimator Spectrum Analyzer (Java applet UI)
+- Rapid prototyping of JWT-based near-earth object tracking UI
+- Held **Secret security clearance (Canada)** — lapsed, but held and verifiable
+- Took on increasing responsibility as senior developers left the team
+
+This shows:
+- Genuine aerospace/space systems engineering background — not adjacent, not peripheral
+- Familiarity with mission-critical software environments where discipline is non-negotiable
+- The credible origin of SE discipline instincts — this is where they came from
+- Prior clearance eligibility (Canadian Secret)
+
+Framing note: This is the experiential root of the SE discipline angle in the contractor pitch.
+"I apply systems engineering discipline" is not a methodology Dorian adopted from reading — it's
+an instinct developed working on a satellite mission operations system. Use that origin story when
+the context warrants it.
+
+Clearance note: Canadian Secret clearance, 2007–2010, lapsed. Do not claim active clearance.
+Do not claim US clearance. Can truthfully state: held secret clearance, worked with
+classified/controlled information in a mission operations context.
+
+### Areva Resources — Environmental/Regulatory Reporting (2004–2005)
+
+Intern Programmer. Built fully automated reporting tools for environmental and radiation protection
+departments, submitted to the Canadian government for monthly, quarterly, and annual licensing
+review. Saved up to 160 hours per year of on-site engineer time.
+
+This shows early experience with compliance-sensitive, government-facing automated reporting —
+directly relevant to the document intelligence / compliance pipeline work.
 
 ### RenoNerd Inc.
 

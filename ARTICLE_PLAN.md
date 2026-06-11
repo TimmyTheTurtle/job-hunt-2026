@@ -255,7 +255,9 @@ works for both humans and agents
 ### Article 10 — The Architecture I'm Building
 
 **The closing argument.** Everything prior was diagnosis and theory. This article is the system.
-Agile V: a V-model framework for AI-augmented development. Sandbox005: the working implementation.
+Agile V (ArXiv 2602.20684) is the published V-model framework for AI-augmented development this
+work builds on. Sandbox005 is the working implementation of that framework extended to handle
+non-deterministic LLM outputs.
 The document intelligence pipeline (Ingest → Model → Detect → Triage → Report → Govern) as a
 concrete instance of the architecture in production on real data.
 
@@ -328,6 +330,24 @@ The implication for Agile teams: sprint-based TDD workflows don't map onto LLM c
 The V-model's decomposition-then-integration structure, with explicit verification and validation
 gates, does.
 
+**Attribution note — IMPORTANT:** The term "Agile V" as used in legal-tech-debt and Sandbox 005 is
+**not original to this work**. It comes from a published framework discovered while researching
+V-model application to AI development:
+
+> *Agile V: A Compliance-Ready Framework for AI-Augmented Engineering — From Concept to Audit-Ready
+> Delivery* — [ArXiv 2602.20684](https://arxiv.org/pdf/2602.20684)
+
+The Sandbox 005 work adopts and extends this framework, specifically to address the non-determinism
+gap: the published framework assumes more determinism than LLM systems provide. The extension —
+evals over unit tests, LLM-as-judge as triage not verification, human gates as non-optional — is
+the original contribution.
+
+Before publishing any Series 2 article that references "Agile V":
+1. Read the ArXiv paper in full
+2. Cite it explicitly with authors, title, and ArXiv ID
+3. State clearly where the extension begins and what problem it addresses that the original does not
+4. Do not use the term "Agile V" as if it were invented here
+
 **Links:**
 - [Exploratory study of V-Model in ML-enabled software (ArXiv)](https://arxiv.org/html/2308.05381v3)
 - [Proposed V-Model for AI verification and validation (IEEE)](https://ieeexplore.ieee.org/document/10207641/)
@@ -368,7 +388,53 @@ and requires evals and human gates. Mixing them means applying the wrong discipl
 
 ---
 
-### S2-A5 — LoRA and Behavioral Tuning as Engineering Discipline
+### S2-A5 — Adversarial Agent Testing: Three Idiots in the Garden
+
+Static evals run fixed datasets against an LLM and measure aggregate statistics. That catches known
+failure modes — inputs you thought to include in your dataset. It doesn't find the failure modes you
+didn't know to look for.
+
+The complement is adversarial agent testing: agents with distinct behavioral personalities set loose
+in a system with hidden infrastructure and constrained interventions, with the goal of finding what
+breaks. This is chaos engineering applied to AI systems — not killing servers to find resilience
+gaps, but running behaviorally distinct agents to find semantic and behavioral gaps.
+
+The "three idiots" format from Granny's House Trials is the experimental vehicle for this concept:
+a domestic scenario (yard drainage, hidden hydraulic dependencies) where bad interventions cause
+visible collateral damage. Three agents with different personalities — the naive one who tries the
+obvious solution badly, the aggressive one who pushes every boundary, the cautious one who finds
+edge cases through excessive care — each surface different failure modes. The host judges meaning;
+the system records facts. That separation is the human gate / evidence bundle pattern instantiated
+as a playable format.
+
+The theoretical connection: static evals measure known failure modes against a fixed rubric.
+Adversarial agents explore the unknown failure space through behavioral diversity. Both are
+necessary. A system that passes all your evals but breaks under a naive agent with no malicious
+intent has a real problem that the evals didn't surface.
+
+The eval framework connection: tools like DeepEval and Promptfoo handle the assertion layer.
+The three-idiots format handles the adversarial exploration layer. Together they constitute a
+complete non-deterministic system test methodology.
+
+**Key claims:**
+- Static evals and adversarial agent testing are complementary, not competing methodologies
+- Behavioral diversity in test agents surfaces failure modes that dataset-based evals miss
+- The human-host/system-records-facts structure maps directly to the human gate / evidence bundle
+pattern in the V-model framework
+- Chaos engineering for AI systems requires agents, not just bad inputs
+
+**Note:** This article requires hands-on experimentation with the three-idiots format and evals
+frameworks before it can be written with credibility. Flag for after Granny's House Trials Stage 2
+and initial evals framework work are complete.
+
+**Links:**
+- [Beyond Traditional Testing: Non-Deterministic Software (AWS/dev.to)](https://dev.to/aws/beyond-traditional-testing-addressing-the-challenges-of-non-deterministic-software-583a)
+- [Testing AI Agents: Validating Non-Deterministic Behavior (SitePoint)](https://www.sitepoint.com/testing-ai-agents-deterministic-evaluation-in-a-non-deterministic-world/)
+- [Agentic AI Content Verification — Quality Gates (Pebblous)](https://blog.pebblous.ai/blog/agentic-content-pipeline-verification/en/)
+
+---
+
+### S2-A6 — LoRA and Behavioral Tuning as Engineering Discipline
 
 **Not yet written — flag for 6+ months out.** Fine-tuning and behavioral adaptation of models is
 reaching the point where it belongs in the practitioner's toolkit rather than the research lab.
