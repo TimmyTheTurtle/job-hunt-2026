@@ -117,3 +117,32 @@ Added to solution hints. Added 8 new source links to S1-A3 sources and to resear
 - The wait-time essay remains unwritten by anyone; could be a standalone piece or A3 anchor
 - S1-A3 is the right home for the wait-time argument; the token frugality patterns are
   more naturally S2 material
+
+---
+
+## How Dorian Works — Cognitive Rotation Model
+
+Discussed later in the same session. Load-bearing context for scheduling.
+
+Dorian sustains 12+ hour working days not through discipline over fatigue but through
+cognitive rotation: cycling sequentially through modes that use different mental muscles.
+When one mode saturates, switching to another is the recovery mechanism — not rest, rotation.
+This is how he worked at mine sites, through school, and how he works now.
+
+The rotation pool has six modes:
+
+1. **Abstract reasoning** — physics, linear algebra, ML theory (mornings)
+2. **Structured intake** — SE lectures, reading papers, ArXiv
+3. **Implementation** — building, coding, pipelines
+4. **Play** — Granny's House trials, physics simulations; fun AND cognitive maintenance
+5. **Writing** — articles, documentation, journals
+6. **Review** — journals, ADRs, agent output, previous builds, article drafts
+
+Review is not optional or administrative. It is a full cognitive mode — the one that turns
+activity into understanding and prevents vibe coding from accumulating. Review is never
+blocked. There is always something to review.
+
+Scheduling implication: the roadmap identifies *output targets* per week (demo live by wk 4,
+S1-A1 published wk 1), not prescribed daily focus. On any afternoon when one mode saturates,
+switching to another mode is not a detour — it is the mechanism that gets the target done.
+The only hard constraint is the exit condition for the week, not the path through it.
