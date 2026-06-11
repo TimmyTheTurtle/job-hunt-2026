@@ -138,3 +138,13 @@ All source links organized by topic. Article assignments noted where applicable.
 - [LoRA adapters for embedding models — Superlinked](https://superlinked.com/docs/engine/lora) — S2-A6
 - [LoRA adapters + semantic routing — Red Hat](https://www.redhat.com/en/blog/creating-cost-effective-specialized-ai-solutions-lora-adapters-red-hat-openshift-ai) — S2-A6/S1-A10
 - [LoRA/QLoRA recommendations — Google Cloud](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/lora-qlora) — S2-A6
+
+## Token Frugality / Context Economics
+
+- [Simon Willison — Embracing the parallel coding agent lifestyle](https://simonw.substack.com/p/embracing-the-parallel-coding-agent) — S1-A3; attention cost of parallel agents
+- [Pragmatic Engineer — Programming by kicking off parallel AI agents](https://blog.pragmaticengineer.com/new-trend-programming-by-kicking-off-parallel-ai-agents/) — S1-A3; senior engineer attention ceiling
+- [arXiv 2606.05391 — Human oversight of agentic systems in practice](https://arxiv.org/abs/2606.05391) — S1-A3; empirical study of developer cognitive load during agent runs
+- [arXiv 2511.06428 — Walking the Tightrope: LLMs for Software Development](https://arxiv.org/abs/2511.06428) — S1-A3; flow disruption as LLM cost
+- [arXiv 2507.03156 — Impact of LLM-Assistants on Developer Productivity](https://arxiv.org/html/2507.03156v1) — S1-A3; 23-minute recovery time applied to LLM interruptions
+- [RedMonk — 10 Things Developers Want from Agentic IDEs in 2025](https://redmonk.com/kholterhoff/2025/12/22/10-things-developers-want-from-their-agentic-ides-in-2025/) — S1-A3; fire-and-forget pattern
+- [Stack Overflow — Agents on a leash](https://stackoverflow.blog/2026/05/27/agents-on-a-leash-agentic-ai-remains-mostly-monitored-at-work/) — S1-A3; developer oversight baseline data
