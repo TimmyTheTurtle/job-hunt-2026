@@ -146,3 +146,32 @@ Scheduling implication: the roadmap identifies *output targets* per week (demo l
 S1-A1 published wk 1), not prescribed daily focus. On any afternoon when one mode saturates,
 switching to another mode is not a detour — it is the mechanism that gets the target done.
 The only hard constraint is the exit condition for the week, not the path through it.
+
+---
+
+## The Complete Cognitive Stack — Potential Article
+
+Discussed at end of session. May be article-worthy.
+
+The rotation model has a seventh element that sits outside the pool entirely: a 3-5 mile
+walk every day. Not exercise for health. The physical reset that allows the pool to keep
+running. Walking specifically promotes diffuse thinking — the mode where stuck problems
+resolve without direct effort.
+
+**The complete picture:**
+
+1. Morning active reasoning (math, physics) — protect the reasoning faculty deliberately
+2. Six-mode cognitive rotation through the day — never stuck, never idle, never passive
+3. Daily walk (3-5 miles) — diffuse mode, physical reset, the thing that actually solves hard problems
+4. Review as a first-class mode — closes loops, prevents misunderstanding from accumulating
+5. Documentation as wait-time strategy — agent pauses become productive instead of damaging
+
+Nobody in the AI development space is writing about the physical layer. The conversation
+is all workflow tools, focus techniques, prompt strategies. The walk is absent.
+
+**Possible article framing:** The positive version of S1-A3. S1-A3 diagnoses the disease
+(cognitive decline via vibe coding). This article is the treatment — the complete sustainable
+operating model for AI-assisted development. Could be a standalone S1 article or the strong
+solution section at the end of S1-A3.
+
+Flag: hold this idea, decide placement when writing S1-A3.
