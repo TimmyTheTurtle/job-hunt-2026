@@ -38,13 +38,32 @@ S3-A1, S3-A2, S3-A3
 
 ---
 
+## Two Tracks, One Schedule
+
+**Track A — Contract Sprint (weeks 1–8):** minimum viable credibility stack for a first contract.
+Goal: one paying client by week 8. Low hours, enough to live on, keep learning.
+
+**Track B — Long Game (weeks 1–26):** articles, deep build work, full contractor pitch.
+Goal: inbound-first outreach at week 23 with full credibility stack in place.
+
+Week 2 is a planned light week (family visit). No pressure, no catch-up required.
+
+---
+
 ## Gantt — 26 Weeks
 
 ```
 WEEK  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-SERIES 1 PUBLICATION (every 10–14 days)
+CONTRACT SPRINT (Track A) — 8 week hard target
+Demo live                [=========]  ← target: end of wk 4
+Personal site (1-pager)          [====]  ← target: end of wk 4
+S1-A1 published          ●
+Outreach begins                              ●  ← wk 6
+First contract conversations                      [====]
+
+SERIES 1 PUBLICATION (Track B — audience pacing, every 10–14 days)
 A1        ●
 A2              ●
 A3                    ●
@@ -56,19 +75,20 @@ A8                                                     ●
 A9                                                           ●
 A10                                                                ●
 
-WRITING — Series 1 (write ahead of publication)
-A1–A3   [===]
-A4–A6         [======]
-A7–A8                     [========]  ← blocked on B4/B5/B6
-A9                   [==]
-A10                                         [====]  ← blocked on B4/B5/B6
+WRITING — Series 1 (write well ahead — full days available)
+A1      [=]   ← wk 1, publish immediately
+A2–A3   [==]
+A4–A6      [======]
+A7–A8                  [========]  ← blocked on B4/B5/B6
+A9               [==]
+A10                                      [====]  ← blocked on B4/B5/B6
 
 WRITING — Series 2 (no fixed cadence)
 S2-A1   [==]
 S2-A2    [=]  ← blocked on B1 (read Agile V)
-S2-A3         [==]
-S2-A4         [==]
-S2-A5                                               [====]  ← blocked on B8/B9
+S2-A3      [==]
+S2-A4      [==]
+S2-A5                                            [====]  ← blocked on B8/B9
 S2-A6   ░░░░░░░░░░░░░░░░░░░░░░░░░░░  NOT YET — needs LoRA experience
 
 WRITING — Series 3 (no fixed cadence)
@@ -79,48 +99,89 @@ S3-A3    [==]
 BUILD TRACK
 B1      [=]    read Agile V paper
 B2      [========]    Sandbox 005 Stage 002
-B3          [=]    synthetic dataset design
-B4            [=====]    synthetic dataset build
-B5                  [==]    Claude API to legal-tech-debt
-B6                    [===]    deploy legal-tech-debt demo
-B7                       [====]    legal-tech-debt case study
-B8            [============]    learn evals frameworks
-B9                          [======================]    Granny's Stage 2
-B10                    [=======]    personal site build
+B3      [=]    synthetic dataset design  ← moved to wk 1
+B4       [====]    synthetic dataset build  ← moved to wk 2–3
+B5           [==]    Claude API to legal-tech-debt  ← moved to wk 3
+B6             [=]    deploy legal-tech-debt demo  ← moved to wk 4 (★)
+B7               [====]    legal-tech-debt case study
+B8         [============]    learn evals frameworks
+B9                      [======================]    Granny's Stage 2
+B10      [====]    personal site — 1-pager first  ← moved to wk 1–4 (★)
 
 MILESTONES
 Wk 1:   ★ S1-A1 published — series launches
-Wk 12:  ★ legal-tech-debt demo live with URL
-Wk 15:  ★ personal site live
+Wk 1:   ★ S3-A1, S3-A2, S3-A3 written (argument-only, no blockers)
+Wk 2:   ~ light week (family visit)
+Wk 4:   ★ legal-tech-debt demo live with URL  ← MOVED FROM WK 12
+Wk 4:   ★ personal site (1-pager) live  ← MOVED FROM WK 15
+Wk 6:   ★ first contract outreach (5–10 targets)
+Wk 8:   ★ first contract conversations in progress
 Wk 23:  ★ S1-A10 published — series complete
-Wk 23:  ★ contractor outreach begins
+Wk 23:  ★ full contractor outreach (inbound-first, articles are the pitch)
 Wk 26+: ★ S2-A5 published (evals + three idiots)
 ```
 
 ---
 
-## First Two Weeks — Exact Actions
+## Week-by-Week — First Eight Weeks
 
-Week 1:
-- [ ] Write S1-A1 (Vibe Coding Is the New Doomscrolling) — publish end of week
-- [ ] Write S1-A2 and S1-A3 — in the queue ahead of schedule
-- [ ] Read ArXiv 2602.20684 (Agile V paper) — 2 hours, unblocks S2-A2
-- [ ] Write S3-A1, S3-A2, S3-A3 — all argument-based, no prereqs, clear the backlog
+**Week 1 (full capacity):**
+- [ ] Write and publish S1-A1
+- [ ] Write S1-A2, S1-A3, S3-A1, S3-A2, S3-A3 — clear the no-prereq backlog
+- [ ] Design synthetic demo dataset (B3) — 1 day
+- [ ] Start personal site skeleton (B10)
+- [ ] Read Agile V paper (B1) — 2 hrs, unblocks S2-A2
 
-Week 2:
-- [ ] Begin Sandbox 005 Stage 002
-- [ ] Design synthetic demo dataset (fictional company, defect taxonomy)
-- [ ] Write S1-A4 and S1-A5
-- [ ] Write S2-A1, S2-A2 (if Agile V paper read), S2-A3, S2-A4
+**Week 2 (light — family visit):**
+- Study, reading, no build pressure
+- Write S2-A1 if energy is there
+
+**Week 3:**
+- [ ] Build synthetic dataset (B4)
+- [ ] Wire Claude API into legal-tech-debt pipeline (B5)
+- [ ] Write S1-A4, S1-A5, S2-A2, S2-A3, S2-A4
+
+**Week 4:**
+- [ ] Deploy legal-tech-debt demo with public URL (B6) ← hard target
+- [ ] Personal site 1-pager live with demo link (B10) ← hard target
+- [ ] Begin legal-tech-debt case study write-up (B7)
+
+**Week 5:**
+- [ ] S1-A2 publishes
+- [ ] Begin Sandbox 005 Stage 002 (B2)
+- [ ] Write S1-A6, S1-A9
+
+**Week 6:**
+- [ ] First contract outreach — 5–10 targets, cold but specific
+- [ ] S1-A3 publishes
+- [ ] Learn evals frameworks begins (B8) — background track
+
+**Weeks 7–8:**
+- [ ] Follow up outreach, first conversations
+- [ ] S1-A4 publishes (wk 7)
+- [ ] Continue Series 2 writing, evals learning
 
 ---
 
-## What "Contractor Outreach Begins" Means
+## What "First Contract Outreach" Means at Week 6
+
+Minimum viable pitch at that point:
+- S1-A1 published (shows thinking)
+- Legal-tech-debt demo live (shows capability)
+- Personal site with demo link and contact (shows seriousness)
+
+Outreach is targeted, not spray: legal, compliance, insurance, document-heavy domains.
+5–10 specific targets, direct message or email, one paragraph, link to demo.
+Not a cold resume blast — a specific "I built this, you have this problem" message.
+
+---
+
+## What "Full Contractor Outreach" Means at Week 23
 
 By week 23:
-- 10 Series 1 articles published (full argument arc visible)
+- 10 Series 1 articles published (full argument arc visible to anyone who searches)
 - Legal-tech-debt demo live and linked from S1-A10
-- Personal site live with work, writing, and contact sections
+- Personal site with work, writing, and contact sections fully built out
 - Series 2 and 3 articles published on personal site
 
 At that point outreach is inbound-first: the articles are the pitch, not a cold email.
