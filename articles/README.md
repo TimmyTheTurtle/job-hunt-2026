@@ -22,6 +22,27 @@ The long-range answer is not a single tool. It is an architecture that layers:
 
 ---
 
+## Token Frugality — Series Throughline
+
+Token frugality is not a cost-cutting tip. It is a design discipline, and it runs through
+every layer of the architecture this series describes.
+
+Every architectural decision is simultaneously a token frugality decision:
+- **Constraints and guardrails** — filter bad output before the human reviews it; don't spend
+  attention tokens on noise
+- **RAG** — retrieve the three relevant paragraphs instead of stuffing full docs into context
+  or hoping the model's training knowledge is correct
+- **GraphRAG** — retrieve structured relationships instead of raw text; denser signal per token
+- **SLM routing** — send classification tasks to small cheap models; reserve the frontier model
+  for judgment that actually requires it
+- **Compact bootstraps and summary layers** — every session's context load is a cost; design it
+- **Anti-rampancy** — expire stale context aggressively; don't carry what you don't need
+
+The argument: better context selection produces better outputs AND cheaper runs. These are not
+separate benefits. Precision is frugality. Frugality enforces precision.
+
+---
+
 ## Editorial Principle
 
 **Each article justifies the next.** Each introduced technology or idea appears because the

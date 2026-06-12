@@ -15,6 +15,14 @@ Anthropic's contextual retrieval reduced failed retrievals by 49% (67% with rera
 chunk-specific explanatory context before embedding. This is the engineering discipline behind
 RAG that naive implementations miss.
 
+**Sharper angle (from WindowConfigurator sandbox work):** Load full library documentation —
+framework docs, API references, SDK specs — into structured storage. The agent pulls from
+that knowledge base explicitly rather than relying on training knowledge or hallucinating
+API signatures. This is token frugality in practice: retrieve the exact three paragraphs
+that answer the question instead of stuffing the full docs into context or hoping the model
+remembers correctly. Precise retrieval beats both prompt-stuffing and training-knowledge
+reliance.
+
 ---
 
 ## Key Claims
