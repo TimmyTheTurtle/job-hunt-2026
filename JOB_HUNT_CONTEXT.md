@@ -166,6 +166,36 @@ Clearance note: Canadian Secret clearance, 2007–2010, lapsed. Do not claim act
 Do not claim US clearance. Can truthfully state: held secret clearance, worked with
 classified/controlled information in a mission operations context.
 
+### Contractor Headset Interface — Voice AI Proof of Concept (c. 2009)
+
+Personal R&D project, archived. Not a commercial product, but a working proof of concept
+that demonstrated real technical instincts well ahead of the tooling available at the time.
+
+Built a constrained-vocabulary voice interface intended for contractors on job sites — hands-free
+access to reference information and command execution via a Bluetooth headset on a Linux netbook.
+
+Key technical decisions:
+- Speech recognition via CMU PocketSphinx; achieved reliable recognition from 33+ feet away
+  (outdoors, ambient noise, mowing the lawn) by **constraining the vocabulary to only the
+  terms the system would actually use** — removing vocabulary to improve accuracy, not adding it
+- Bluetooth headset integration using the Linux Bluetooth stack (BlueZ)
+- Use cases: fraction calculator, shell command execution via C wrappers
+- Ran on low-power netbook hardware — resource constraints were a design constraint, not an obstacle
+
+Why this matters now:
+- The constraint-as-feature insight — restrict domain vocabulary to improve recognition — is
+  directly related to token frugality and constrained context design in current LLM work
+- The RenoNerd WindowConfigurator voice input ("58 by 35 right casement picture left casement")
+  is a direct descendant of this same idea: constrain the vocabulary and domain, get reliable
+  recognition, pipe it into a structured system
+- This is a 15-year arc: the instincts were right before the tools existed to prove them
+
+Narrative use: when the context warrants a long-arc origin story, this connects the 2009
+contractor voice interface directly to the current AI pipeline and RAG work. Same problem,
+better tools. Use sparingly — it is context-dependent, not a default talking point.
+
+**Note: archive not yet located — stored on old hardware. Find and review when possible.**
+
 ### Areva Resources — Environmental/Regulatory Reporting (2004–2005)
 
 Intern Programmer. Built fully automated reporting tools for environmental and radiation protection
