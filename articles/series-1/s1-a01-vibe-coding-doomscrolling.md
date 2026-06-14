@@ -43,14 +43,44 @@ engaged.
 
 ---
 
+## Argument Flow
+
+1. **Open with the Karpathy pivot.** He coined the term, the term embarrassed people, he
+   renamed it. That sequence is the article in miniature — name a real behavior, watch the
+   industry flinch, watch it rebrand rather than change. Use it to earn the reader's trust
+   early: you are not going to do the same thing.
+
+2. **Define the loop mechanics honestly.** Vibe coding has a legitimate on-ramp function.
+   When you have no momentum, no inspiration, no clear starting point — the low-friction
+   prompt-response loop gets you into a problem space you might not have entered otherwise.
+   The intermittent reward is doing real work here. Name it. The doomscrolling parallel is
+   not "both are purely harmful." It is "both are useful ignition mechanisms with no built-in
+   exit condition."
+
+3. **Introduce the phase argument.** Exploratory prototyping (pre-requirements, discovery)
+   is categorically different from disciplined engineering (requirements-locked). The Bjarnason
+   PAM model gives this formal vocabulary. Vibe coding is the right fuel for the exploratory
+   engine. The failure mode is running that engine indefinitely.
+
+4. **Drop the empirical floor.** METR: 19% slower, felt 20% faster. Comprehension debt: 17%
+   lower quiz scores. 24.2% of AI-introduced defects never cleaned up. These are not
+   impressions — they are measurements. The cost of staying in exploration mode past the phase
+   boundary is now quantified.
+
+5. **Name what is missing.** Not discipline instead of vibe coding. A phase boundary. An exit
+   condition. The question "are we still exploring, or are we building?" asked and answered
+   explicitly. Tease that the rest of the series is about how to build the structure that makes
+   that question answerable.
+
 ## Main Points to Discuss
 
 - What doomscrolling is and how it works psychologically
 - What vibe coding is: prompt-driven software generation via conversational interfaces
+- The honest case for the engagement loop: it is a valid ignition mechanism, not purely harmful
 - The phase argument: exploratory prototyping is categorically different from disciplined
   engineering; the Bjarnason prototyping model (PAM) provides the formal vocabulary
 - Similarities between social-media engagement loops and chat-based coding loops when
-  the exploratory phase never ends
+  the exploratory phase never ends — same failure mode: no exit condition
 - Why "productivity feels" can be as sticky as entertainment or outrage
 - The empirical record: METR study (19% slower, perceived 20% faster), comprehension
   debt (17% lower quiz scores), 24.2% of AI-introduced defects never cleaned up
@@ -59,7 +89,7 @@ engaged.
 ## Solution Hints to Seed (don't solve yet — tease)
 
 - Phase boundaries with explicit exit criteria
-- Clear stopping conditions for exploration
+- The question "are we still exploring?" asked and answered
 - Memory and constraints that engage when the formal phase begins
 
 ---

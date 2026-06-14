@@ -32,20 +32,56 @@ failing because it's incomplete — it's failing because it was designed for the
 
 ---
 
+## Argument Flow
+
+1. **A3 showed the cognitive cost. A4 shows where the damage lives in the codebase.**
+   The team has been shipping things nobody fully understands. At some point someone asks
+   "why is this designed this way?" and nobody knows. The rationale was in a chat session
+   that closed six weeks ago.
+
+2. **Two failure modes, same root cause.** Underdocumentation: reasoning never recorded,
+   lost on exit. Overdocumentation: journals, summaries, AI-generated handoffs pile up —
+   nobody reads them because reading them costs more than re-deriving. Both produce the
+   same outcome: the reasoning is unavailable when needed. Activity without durable
+   understanding.
+
+3. **Documentation designed for the wrong reader.** Human-facing docs assume a reader who
+   can infer context, scan git history, ask colleagues. Agent-facing context can't do any
+   of that — it has a window. What doesn't make it into that window doesn't exist. Most
+   documentation was designed for humans. It fails agents not because it's wrong but because
+   it wasn't designed for retrieval.
+
+4. **The personal through-line.** Not enough documentation → rationale lost, repeated
+   rediscovery. Overcorrection into journals and AI-generated lessons → too much unfiltered
+   material buries the reasoning it was meant to preserve. This is the author's own arc.
+   It makes the failure modes credible — both are real, and they are sequential.
+
+5. **ADRs as the counter-example.** ADRs work not because they are thorough but because
+   they capture the one thing that matters: WHY. Context, decision, consequences. Compact
+   enough to retrieve. Specific enough to answer the question. That is the design target
+   for agent-facing documentation.
+
+6. **Tease the architecture.** The fix is not better documentation — it is documentation
+   designed as memory infrastructure. What gets written, in what format, indexed for what
+   retrieval. That is A7 and A8.
+
 ## Main Points to Discuss
 
-- Personal documentation failures: not keeping enough durable documentation caused loss of
-  rationale, repeated rediscovery, and confusion during later work
-- The overcorrection: journals, ADRs, handoffs, and AI-generated lessons — spending time
-  reviewing these so the evolving system remains legible
-- Why "more docs" alone does not equal more clarity
-- The need to distinguish authoritative memory from exploratory thinking
-- Documentation as memory infrastructure, not prose exhaust
+- A3 showed cognitive cost; A4 shows where it lives in the artifact layer
+- Two failure modes with the same root: underdocumentation (rationale lost) and
+  overdocumentation (rationale buried) — both produce unavailable reasoning
+- Documentation designed for humans fails agents: wrong reader, wrong format, wrong
+  retrieval assumptions
+- Personal through-line: experienced both failure modes in sequence
+- ADRs as the counter-example: WHY captured compactly enough to survive retrieval
+- Too little documentation and the reasoning is lost; too much unfiltered documentation
+  and it gets buried — the solution is not more notes, it is better memory architecture
 
 ## Solution Hints to Seed
 
-- ADRs for significant decisions only
-- Distinguish canonical truth from scratch notes
+- ADRs for significant decisions only — capture WHY, not WHAT
+- Distinguish canonical truth (ADRs, specs) from scratch notes (journals, drafts)
+- Design documentation for retrieval, not for completeness
 - Retrieval over stuffing
 
 ---

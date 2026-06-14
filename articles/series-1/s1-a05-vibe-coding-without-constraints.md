@@ -32,18 +32,55 @@ can't be worked on atomically by an agent.
 
 ---
 
+## Argument Flow
+
+1. **The pivot article.** A1-A4 diagnosed problems. A5 is where the direction changes.
+   Everything before this showed what goes wrong without structure. This article asks:
+   what does structure actually look like in practice, without making AI-assisted development
+   feel like a compliance exercise?
+
+2. **The wrong objection.** The common pushback against adding structure is that it slows
+   things down. This assumes the metric is generation speed. The right metric is rate of
+   trustworthy delivery — output you can ship, debug, extend, and explain. By that metric,
+   unconstrained generation is slow because it produces things you cannot trust.
+
+3. **Constraints change what the agent generates.** "Make it work" prompts produce sloppy
+   code because the agent has no definition of "work." Constraint-first prompts — with
+   preconditions, postconditions, and testable invariants — give the agent a target. The
+   same model produces materially different output when it has something specific to satisfy.
+   This is not about discipline as philosophy. It is about prompt engineering that produces
+   verifiable results.
+
+4. **Some clean code principles become hard requirements.** For humans, function size is a
+   readability guideline. For agents, a function that doesn't fit in a single tool call can't
+   be worked on atomically — it becomes a context management problem. The principle didn't
+   change. The reason it matters changed.
+
+5. **The mini V per feature.** You don't need to adopt a full systems engineering process.
+   A lightweight version — left-side requirements before generation, right-side verification
+   before acceptance — is enough to catch the failure mode where the agent produces confident
+   wrong output. This is practical, not theoretical.
+
+6. **Hooks as constraint enforcement infrastructure.** PreToolUse hooks make constraints
+   enforceable rather than aspirational. The agent cannot bypass them by generating confident
+   output. This is the first concrete architecture element the series introduces.
+
 ## Main Points to Discuss
 
-- Why generic "make it better" prompts produce sloppy code
-- Constraint-first generation: preconditions, postconditions, testable invariants
-- Why constraints are not anti-creativity — they channel creativity into safety and predictability
-- Agile V: combining agile iteration with V-model verification discipline
-- Hooks and approval steps for critical transitions as lightweight constraint enforcement
+- The pivot: A1-A4 diagnosed, A5 changes direction toward what structure looks like
+- The wrong objection: speed of generation is not the metric; rate of trustworthy delivery is
+- Constraint-first prompting: preconditions, postconditions, invariants change output quality
+- Clean code principles that were guidelines for humans become hard requirements for agents
+  (function size, atomicity, single responsibility)
+- The mini V per feature: lightweight left-side/right-side discipline without full process overhead
+- PreToolUse hooks as enforceable constraint infrastructure — not aspirational, automated
+- Agile V: the formal framing (ArXiv 2602.20684) — cite with attribution
 
 ## Solution Hints to Seed
 
-- Treat tests and ADRs as guardrails
-- Use a left-side/right-side life-cycle mentality — mini V per feature
+- Constraint-first prompting as standard practice
+- Mini V per feature: specify before generating, verify before accepting
+- ADRs as guardrails the agent operates within
 - PreToolUse hooks as automated constraint enforcement
 
 ---

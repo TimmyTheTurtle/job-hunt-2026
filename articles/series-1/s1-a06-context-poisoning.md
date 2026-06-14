@@ -29,21 +29,57 @@ version — accumulated debt and drift — is less dramatic but more pervasive.
 
 ---
 
+## Argument Flow
+
+1. **A5 introduced constraints as the answer to unconstrained generation. A6 introduces
+   the next problem:** even with constraints, the context the agent operates in degrades
+   over time. Constraints help. But what if the context itself is contaminated?
+
+2. **Two forms of poisoning — organic and adversarial.** Organic: accumulated debt, stale
+   ADRs, outdated architecture notes, duplicate summaries. The agent was given good
+   documentation once. It has since been steered by the residue of decisions that were
+   reversed, names that were changed, designs that were replaced. The context fights the
+   engineer's current intent using their own past thoughts.
+   Adversarial: XOXO attacks achieve 75%+ success rates by injecting malicious instructions
+   through documents the agent reads. The organic and adversarial cases are the same
+   mechanism — the agent mirrors its context, including context it should not trust.
+
+3. **The U-shaped accuracy problem.** Models perform better on content at the start and end
+   of context windows. Middle content is systematically deprioritized. This means a long
+   context is not just expensive — it is actively unreliable. The critical information you
+   carefully placed in the middle may not be influencing the output at all.
+
+4. **More context is not always better context.** This is the counterintuitive claim the
+   article earns. The instinct when AI output degrades is to add more information. The correct
+   diagnosis is often the opposite: the context has too much, and the wrong things are in it.
+   Context poisoning is a signal to clean and curate, not to add.
+
+5. **The Janitor concept.** A process that periodically scans context stores for entropy —
+   stale notes, duplicate summaries, expired decisions. Not a human review task. An automated
+   hygiene pass. This is what makes context management scalable.
+
+6. **Tease the solution architecture.** Retrieval over stuffing. Fresh summaries over raw
+   history. Canonical vs. scratch distinction enforced structurally. That is what A7 builds
+   on — selective retrieval as the answer to context that cannot be trusted at scale.
+
 ## Main Points to Discuss
 
-- Context distraction and context overflow
-- Why accumulated AI-generated notes become stale: old ADRs, duplicate summaries, historical
-  residue steering the model after they should have expired
-- The feeling that the system fights your current intent with your own past thoughts
-- XOXO attacks as the adversarial extreme of the same phenomenon
-- The U-shaped accuracy problem: models perform better on content at the start and end of
-  context windows — middle content is systematically deprioritized
+- A5 introduced constraints; A6 introduces the next layer: context itself degrades
+- Organic poisoning: stale ADRs, duplicate summaries, reversed decisions still in context
+- The feeling of the system fighting your intent using your own past thoughts
+- Adversarial poisoning: XOXO attacks (75%+ success rate) — same mechanism, deliberate
+- The U-shaped accuracy problem: middle context is systematically deprioritized by models
+- More context is not better context — poisoning is a signal to curate, not accumulate
+- The Janitor concept: automated entropy scanning, not manual review overhead
+- Connection to token frugality: context hygiene and cost efficiency are the same discipline
 
 ## Solution Hints to Seed
 
-- Retrieval over stuffing
-- Fresh summaries over raw history
-- Explicitly separating canonical, reference, and scratch notes
+- Retrieval over stuffing — selective, not comprehensive
+- Fresh summaries over raw accumulated history
+- Canonical vs. scratch separation enforced structurally, not by convention
+- Automated Janitor process for entropy detection and expiry
+- TTLs on unverified knowledge
 
 ---
 
