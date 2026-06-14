@@ -40,6 +40,9 @@ engaged.
 - The cost is deferred, invisible, and measured — not just felt
 - Karpathy's pivot is the honest signal: even the inventor recognized the phase boundary
 - The fix is not discipline instead of vibe coding — it is discipline about when to stop
+- Handwriting code when a well-spec'd agent could generate it is waste, not virtue
+- The quality of AI-generated code is a function of the spec and coded behaviors given to
+  the agent — not of whether a human typed the characters
 
 ---
 
@@ -67,10 +70,12 @@ engaged.
    impressions — they are measurements. The cost of staying in exploration mode past the phase
    boundary is now quantified.
 
-5. **Name what is missing.** Not discipline instead of vibe coding. A phase boundary. An exit
-   condition. The question "are we still exploring, or are we building?" asked and answered
-   explicitly. Tease that the rest of the series is about how to build the structure that makes
-   that question answerable.
+5. **Name what is missing — and what is not the problem.** Handwriting code when a
+   well-spec'd agent could generate it is waste, not virtue. The point is not to return to
+   manual implementation. The point is that AI-generated code is only as good as the spec
+   and coded behaviors the agent was given. With those in place, generation is correct and
+   fast. Without them, generation is fast and unreliable. The phase boundary is what produces
+   the spec. That is what is missing — not human keystrokes.
 
 ## Main Points to Discuss
 
