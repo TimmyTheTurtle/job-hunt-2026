@@ -94,6 +94,37 @@ engaged.
 
 ---
 
+## Concrete Example — Watershed (Granny's House Trials)
+
+The strongest counter to "vibe coding is always harmful" is a worked positive case. Watershed
+(D3D12 puzzle game, formerly Granny's House Trials) is pre-phase A exploration done right.
+
+**What happened:** Started with no requirements — a 30-year-imagined world, a rough sense of
+puzzle mechanics, no game design document. AI-assisted vibe coding drove a series of bounded
+throwaway experiments:
+- grass-field-001 through grass-field-004: four column raycast renderer prototypes, each
+  named as a disposable stage, each answering a specific visual/technical question
+- RAII module extraction (renderer phases 1-3): bounded, completable, not open-ended
+- WFC encounter design: Wave Function Collapse + scalar field simulation + formal solvability
+  model — the destination the exploration was navigating toward, not the starting point
+
+**The phase discipline was implicit but real:** The staged naming convention is itself evidence.
+When grass-field-002 answered its question, a new number started. The WFC notes in
+`future-wfc-encounter-notes.md` are a requirements document for the puzzle system. They could
+not have been written without the exploration. They are what the exploratory phase crystallized
+into when it was done.
+
+**The point for A1:** Watershed is the positive case the article needs. Exploration that
+produced a coherent system design (WFC + scalar fields + solvability gate) and a running demo.
+The exploratory phase ended. Something definite emerged. The argument isn't "vibe coding always
+works" — it's "vibe coding with an implicit exit condition works, and here is evidence."
+
+**Caution when writing:** Don't lean on the game being a passion project. The structural
+argument is what matters: bounded experiments, named throwaway stages, crystallized requirements
+document at the end. The subject being a game is interesting color, not the point.
+
+---
+
 ## Sources
 
 - [Andrej Karpathy coins "vibe coding" — Simon Willison](https://simonwillison.net/2025/Mar/19/vibe-coding/)

@@ -92,6 +92,44 @@ side of the V with confidence. Then the formal process begins.
 
 ---
 
+## Concrete Example — Watershed WFC Encounter Design
+
+Watershed (D3D12 puzzle game) is the article's worked example for the disciplined version of
+experimentation-as-requirements-discovery.
+
+**The experiments:** Four named throwaway renderers (grass-field-001 through 004) answered a
+specific question: can the column raycast approach produce the visual feel a water-control
+puzzle needs? Each was bounded. Each was disposable. Each produced a finding. They are not
+in-progress work — they are closed experiments with outcomes.
+
+**The crystallized requirements output:** `experiments/scalar-field-flooding/future-wfc-encounter-notes.md`
+is the direct artifact. A formal design for the WFC encounter generation pipeline:
+- WFC layer for spatial coherence (tile placements obey adjacency rules)
+- Scalar field layer for per-move simulation (water flow, pressure, drainage)
+- Discrete solvability model (Physical state / Puzzle state / Safety state) as a hard reject gate
+- Encounter generation pipeline: WFC → anchor placement → scalar field init → abstract
+  puzzle state → branch simulation → reject dead seeds → score survivors
+
+This document could not have been written before the experiments. The WFC + scalar field
+combination was not chosen because it sounded good. It was chosen because the grass-field
+experiments revealed what the physics model needed to do, and WFC was the spatial coherence
+mechanism that survived contact with those constraints.
+
+**The experiment-requirement-candidate pattern in practice:**
+- Hypothesis: WFC can produce spatially coherent layouts that scalar field simulation can
+  resolve into meaningful puzzle states without human review of each result
+- Exit criteria: solvability model rejects dead seeds automatically
+- Finding: yes — anchor placement is the required bridge between the spatial and simulation layers
+- Formalized requirement: the encounter generation pipeline as specified in the notes
+
+**Why this works for S3-A2:** The article's core claim is that disciplined exploration looks
+different from vibe coding — you can audit the difference. Watershed is the worked case: the
+grass-field experiments (bounded hypothesis tests) and the WFC notes (formal requirements
+output) are both in the repo. The experiment history is readable. The requirement that came
+out of it is specific and falsifiable.
+
+---
+
 ## Sources
 
 - [Discovery-Driven Planning — McGrath & MacMillan, HBR 1995](https://hbr.org/1995/07/discovery-driven-planning)
