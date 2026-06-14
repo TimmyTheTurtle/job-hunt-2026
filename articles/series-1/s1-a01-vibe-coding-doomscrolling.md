@@ -14,6 +14,14 @@
   hand-written was a phase-boundary decision, not an anti-AI statement.
 - **Voice register:** 10% Rodney McKay — brief exasperated undercuts, not sustained; stat ->
   short judgment sentence. Positive case before empirical floor.
+- **First person throughout.** "I have been building", "I know what the exit looks like." Do
+  not shift to third person or distanced register. This is a practitioner writing, not a
+  commentator.
+- **Watershed naming:** The project is named Watershed. Use the name in the plan notes freely.
+  In the published article, the author may choose to omit the name and call it "a D3D12 puzzle
+  game I have been building" — this is a personal call about public project visibility, not a
+  writing decision. Do not push for the name in the published draft; leave a TODO comment if
+  in doubt.
 
 ---
 
@@ -325,3 +333,4 @@ doomscrolling with a CI pipeline.
 *Systems Engineering Applied to Agentic Systems is a series about making that stop signal
 explicit before the whole team ends up wandering the hallway insisting everything feels
 productive while the walls quietly catch fire.*
+
