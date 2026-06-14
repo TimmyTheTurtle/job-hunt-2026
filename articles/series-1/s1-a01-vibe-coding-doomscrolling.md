@@ -1,6 +1,6 @@
 # S1-A1 — Vibe Coding Is the New Doomscrolling
 
-**Status:** Draft v1
+**Status:** Plan locked — ready to draft
 **Series position:** 1 of 10 — the lead. Everything depends on how well this one lands.
 
 ---
