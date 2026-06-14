@@ -194,3 +194,4 @@ That is how it builds an audience worth having.
 ## Supporting Files
 
 - [research.md](research.md) — all source links organized by topic
+- [PREREQUISITES.md](PREREQUISITES.md) — per-article project prerequisites, SE management requirements, and parallel work map
