@@ -5,6 +5,18 @@
 
 ---
 
+## Voice and Tone
+
+- **Karpathy and all practitioners are treated with full respect.** Never raise the hypocrisy
+  reading. Never imply the rename was a cover-up or embarrassment-management. His distinction
+  between vibe coding (raises the floor) and agentic engineering (raises the ceiling) is a
+  genuine contribution — a useful clarification made more precise over time. nanochat being
+  hand-written was a phase-boundary decision, not an anti-AI statement.
+- **Voice register:** 10% Rodney McKay — brief exasperated undercuts, not sustained; stat ->
+  short judgment sentence. Positive case before empirical floor.
+
+---
+
 ## Thesis
 
 Vibe coding is a valid tool applied to the wrong phase, indefinitely. That is what makes it
@@ -18,17 +30,19 @@ find out. Applying engineering discipline at that stage is premature.
 The problem is when you never exit that phase. Vibe coding that continues through design, build,
 and deployment reproduces the engagement mechanics of doomscrolling: infinite continuation,
 variable rewards, a persistent "just one more" interaction loop that feels productive and
-compounds debt invisibly. Andrej Karpathy coined the term in February 2025, renamed it
-"agentic engineering" a year later, and admitted his own new project was basically hand-written.
-That pivot is the opening — not because vibe coding is bad, but because even its inventor
-recognized it needs a phase boundary.
+compounds debt invisibly. Andrej Karpathy coined the term in February 2025 to describe a real
+behavior — generating software by feel, through conversation, without reading the output closely
+enough to understand it. A year later he sharpened the vocabulary: vibe coding raises the floor
+(anyone can build something); agentic engineering raises the ceiling (experienced practitioners
+using AI rigorously). That distinction is the article in miniature — the same technology, two
+different relationships to it, and the phase boundary is what separates them.
 
-The empirical record is now clear: a METR controlled trial with 16 experienced developers found
-AI tools made them 19% slower while they believed they were 20% faster — a 39-point
-perception-reality gap. Research on comprehension debt found engineers using AI completed tasks
-in similar time but scored 17% lower on comprehension quizzes. These are not vibes. They are
-measured outcomes of staying in exploration mode past the point where discipline should have
-engaged.
+The evidence is accumulating: a METR controlled trial with 16 experienced developers found AI
+tools made them 19% slower while they believed they were 20% faster — a 39-point
+perception-reality gap. Anthropic's January 2026 comprehension study (Shen & Tamkin) found
+developers using AI assistance scored 17% lower on comprehension quizzes about code they'd just
+written. These are not vibes. They are measured outcomes of staying in exploration mode past the
+point where discipline should have engaged.
 
 ---
 
@@ -38,7 +52,8 @@ engaged.
 - The harm comes from never exiting the exploratory phase, not from the tool itself
 - The loop mechanics are structurally identical to social media attention mechanics
 - The cost is deferred, invisible, and measured — not just felt
-- Karpathy's pivot is the honest signal: even the inventor recognized the phase boundary
+- Karpathy's floor/ceiling distinction is the honest vocabulary: same tool, different
+  relationship to it, and the phase boundary is what determines which you're in
 - The fix is not discipline instead of vibe coding — it is discipline about when to stop
 - Handwriting code when a well-spec'd agent could generate it is waste, not virtue
 - The quality of AI-generated code is a function of the spec and coded behaviors given to
@@ -48,10 +63,13 @@ engaged.
 
 ## Argument Flow
 
-1. **Open with the Karpathy pivot.** He coined the term, the term embarrassed people, he
-   renamed it. That sequence is the article in miniature — name a real behavior, watch the
-   industry flinch, watch it rebrand rather than change. Use it to earn the reader's trust
-   early: you are not going to do the same thing.
+1. **Open with the Karpathy arc.** He coined the term in February 2025, described a real
+   behavior, and a year later refined the vocabulary: vibe coding raises the floor (exploration,
+   low stakes, anyone can start); agentic engineering raises the ceiling (rigorous AI-assisted
+   engineering by experienced practitioners). His nanochat project being hand-written is not a
+   contradiction — it is a phase-boundary decision: for something he wanted to fully understand
+   and own, he chose a different mode. That is the discipline the article is about. Not avoiding
+   AI. Knowing which mode the work requires.
 
 2. **Define the loop mechanics honestly.** Vibe coding has a legitimate on-ramp function.
    When you have no momentum, no inspiration, no clear starting point — the low-friction
@@ -65,10 +83,13 @@ engaged.
    PAM model gives this formal vocabulary. Vibe coding is the right fuel for the exploratory
    engine. The failure mode is running that engine indefinitely.
 
-4. **Drop the empirical floor.** METR: 19% slower, felt 20% faster. Comprehension debt: 17%
-   lower quiz scores. 24.2% of AI-introduced defects never cleaned up. These are not
-   impressions — they are measurements. The cost of staying in exploration mode past the phase
-   boundary is now quantified.
+4. **Drop the empirical floor.** METR: 19% slower, felt 20% faster (note: a February 2026
+   update suggests late-2025 tooling may produce modest speedups; the honest claim is that
+   productivity triumphalism is no longer defensible, not that AI universally slows developers).
+   Shen & Tamkin (Anthropic, January 2026): 17% lower comprehension quiz scores. A study of
+   304,362 AI-authored commits: 24.2% of AI-introduced issues (code smells, bugs, security
+   vulnerabilities) survived to the latest revision. These are not impressions — they are
+   measurements.
 
 5. **Name what is missing — and what is not the problem.** Handwriting code when a
    well-spec'd agent could generate it is waste, not virtue. The point is not to return to
@@ -84,11 +105,14 @@ engaged.
 - The honest case for the engagement loop: it is a valid ignition mechanism, not purely harmful
 - The phase argument: exploratory prototyping is categorically different from disciplined
   engineering; the Bjarnason prototyping model (PAM) provides the formal vocabulary
+- Karpathy's floor/ceiling distinction (vibe coding raises the floor; agentic engineering raises
+  the ceiling) — the phase boundary is what separates the two modes
 - Similarities between social-media engagement loops and chat-based coding loops when
   the exploratory phase never ends — same failure mode: no exit condition
 - Why "productivity feels" can be as sticky as entertainment or outrage
-- The empirical record: METR study (19% slower, perceived 20% faster), comprehension
-  debt (17% lower quiz scores), 24.2% of AI-introduced defects never cleaned up
+- The empirical record: METR study (19% slower, perceived 20% faster; Feb 2026 update nuances
+  this), Shen & Tamkin comprehension study (17% lower quiz scores), 24.2% of AI-introduced
+  issues surviving to latest revision
 - Why the issue is not AI itself but the absent phase boundary
 
 ## Solution Hints to Seed (don't solve yet — tease)
@@ -132,18 +156,18 @@ document at the end. The subject being a game is interesting color, not the poin
 
 ## Sources
 
-- [Andrej Karpathy coins "vibe coding" — Simon Willison](https://simonwillison.net/2025/Mar/19/vibe-coding/)
-- [Karpathy admits he hand-coded his new project — Futurism](https://futurism.com/artificial-intelligence/inventor-vibe-coding-doesnt-work)
+- [Andrej Karpathy coins "vibe coding" — Simon Willison precise definition](https://simonwillison.net/2025/Mar/19/vibe-coding/)
 - [Karpathy renames vibe coding to "agentic engineering" — SD Times](https://sdtimes.com/ai/andrej-karpathy-has-renamed-vibe-coding-heres-what-engineering-leaders-need-to-do-about-it/)
-- [Doomscrolling overview — Wikipedia](https://en.wikipedia.org/wiki/Doomscrolling)
-- [Doomscrolling and feedback loops — Da More Mental Health](https://damorementalhealth.com/doomscrolling/)
-- [Psychology of doomscrolling — Rowan Center LA](https://rowancenterla.com/psychology-of-doom-scrolling-explained/)
+- [Karpathy's nanochat is hand-written — Futurism](https://futurism.com/artificial-intelligence/inventor-vibe-coding-doesnt-work) — note: frame as phase-boundary decision, not anti-AI pivot
 - [Vibe coding overview — Wikipedia](https://en.wikipedia.org/wiki/Vibe_coding)
 - [Replit on vibe coding](https://replit.com/blog/what-is-vibe-coding)
-- [Martin Fowler on humans and agents](https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html)
-- [METR productivity RCT — AI made experienced devs 19% slower, they felt 20% faster](https://arxiv.org/abs/2507.09089) — arXiv:2507.09089; 16 developers, 246 tasks, own mature repos
-- [Comprehension Debt in GenAI-Assisted SE Projects](https://arxiv.org/abs/2604.13277) — arXiv:2604.13277; 17% lower comprehension quiz scores; comprehension debt distinct from technical debt
-- [Debt Behind the AI Boom — large-scale empirical study](https://arxiv.org/abs/2603.28592) — arXiv:2603.28592; 304,362 AI commits, 24.2% of AI-introduced defects never cleaned up
+- [Martin Fowler / Thoughtworks 2026: humans working on the loop, not just in it](https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html)
+- [Doomscrolling overview — Wikipedia](https://en.wikipedia.org/wiki/Doomscrolling)
+- Rixen et al. — peer-reviewed field study on infinite scroll and variable reward mechanics; upgrade from counseling-center sources to this for doomscrolling psychology
+- [METR productivity RCT — AI made experienced devs 19% slower, they felt 20% faster](https://arxiv.org/abs/2507.09089) — arXiv:2507.09089; 16 developers, 246 tasks, own mature repos; February 2026 update nuances this — late-2025 tools may produce modest speedups; honest claim is "kills productivity triumphalism," not "AI universally slows developers"
+- Shen & Tamkin, Anthropic January 2026 — comprehension study; 17% lower quiz scores on AI-assisted code; this is the correct source for the 17% stat (NOT Ahmad et al.)
+- [Comprehension Debt in GenAI-Assisted SE Projects — Ahmad et al.](https://arxiv.org/abs/2604.13277) — arXiv:2604.13277; names mechanisms (black-box acceptance, context mismatch, dependency-induced atrophy, verification bypass); comprehension debt as a concept distinct from technical debt
+- [Debt Behind the AI Boom — large-scale empirical study](https://arxiv.org/abs/2603.28592) — arXiv:2603.28592; 304,362 AI commits; 24.2% of AI-introduced issues (code smells, bugs, security vulnerabilities) surviving to latest revision — not strictly "defects," not "never cleaned up"
 - [Empirically Based Model of Software Prototyping — Bjarnason et al. 2023](https://dl.acm.org/doi/10.1007/s10664-023-10331-w) — formal PAM vocabulary; exploratory vs. evolutionary prototypes are categorically distinct
 - [Vibe Coding in Practice: Flow, Technical Debt, and Guidelines](https://arxiv.org/abs/2512.11922) — arXiv:2512.11922; flow-debt trade-off; proposes phase handoff sustainability guidelines
 
@@ -158,20 +182,18 @@ software by feel, through conversation with an AI, without reading the output cl
 to understand it. The phrase spread immediately because it described something real — something
 a lot of developers were already doing and hadn't named.
 
-Thirteen months later, Karpathy renamed it. "Agentic engineering," he announced. More
-professional. Less awkward at conferences.
+A year later, Karpathy sharpened the vocabulary. Vibe coding raises the floor: anyone can
+start, anything can be prototyped, the barrier to entry effectively disappears. Agentic
+engineering raises the ceiling: disciplined AI-assisted development by experienced practitioners
+who use the tools rigorously. Same technology. Different relationship to it.
 
-Then, sometime after that, he mentioned that his most recent project was mostly hand-written.
+He also mentioned, separately, that his most recent project — nanochat — was mostly
+hand-written. Not because he had turned against AI generation, but because for that particular
+work, at that particular stage, he wanted to fully understand and own every line. The mode
+matched the phase.
 
-That sequence is worth holding onto. Not because Karpathy was wrong to explore the tool, but
-because the rename and the pivot are two different responses to the same discomfort — and only
-one of them is honest.
-
-The rename is the industry's move: take a behavior that feels productive and slightly
-embarrassing, sand down the name, and keep going. The pivot is the practitioner's move: notice
-that something isn't working the way it looked like it was, and quietly change course.
-
-This article is about what the pivot is responding to.
+That arc — name a behavior, clarify what it actually is, demonstrate the discipline required
+to use it well — is the article in miniature. What is the phase, and are you in the right one?
 
 ---
 
@@ -256,19 +278,22 @@ they intend to ship, using practices designed for work they intended to throw aw
 ### The measurements
 
 The industry spent two years arguing about whether AI-assisted coding made developers faster.
-The answer is now quantified.
+The evidence is accumulating.
 
 METR ran a controlled trial with sixteen experienced developers working on their own mature
 repositories — codebases they'd built themselves and knew well. With AI tools, they completed
-tasks 19% slower. They reported feeling 20% faster. That is a 39-point gap between perception
-and reality, in the direction of overconfidence, in people who know the code.
+tasks 19% slower. They reported feeling 20% faster. A 39-point gap between perception and
+reality, in the direction of overconfidence, in people who know the code. A February 2026
+update suggests late-2025 tooling may produce modest speedups in some contexts. Which means
+the argument isn't "AI always slows you down" — it's that productivity triumphalism is no
+longer defensible. The question of whether AI helps or hurts is the wrong question.
 
-Separate comprehension debt research found that developers using AI assistance completed tasks
-in roughly the same wall-clock time as those without, but scored 17% lower on comprehension
-quizzes about the code they'd just written. The output was there. The understanding was not.
+Anthropic's January 2026 comprehension study found that developers using AI assistance scored
+17% lower on quizzes about the code they'd just written. The output was there. The
+understanding was not.
 
-A study of 304,362 AI-authored commits found that 24.2% of AI-introduced defects were never
-cleaned up. Not "introduced and eventually fixed." Introduced and left.
+A study of 304,362 AI-authored commits found that 24.2% of AI-introduced issues — code smells,
+bugs, security vulnerabilities — survived to the latest revision of those files.
 
 These are not impressions. The cost of staying in exploration mode past the point where
 discipline should have engaged is measured.
@@ -293,9 +318,17 @@ What makes the question answerable is an exit condition on the exploration: some
 committing to." Not a feeling that things are going well, but a specific criterion that the
 exploration was designed to satisfy.
 
-Karpathy's pivot to hand-written code was the right move. The work of understanding why that
-move was necessary — and building practices that make it easier to make earlier — is what the
-rest of this series is about.
+Handwriting code when a well-spec'd agent could generate it is waste, not virtue. The point is
+not to return to manual implementation. AI-generated code is exactly as good as the spec and
+coded behaviors the agent was given. With those in place, generation is correct and fast.
+Without them, it is fast and unreliable. The phase boundary is what produces the spec. That is
+what is missing — not human keystrokes.
+
+Karpathy's choice to hand-write nanochat was not a rejection of AI generation. It was a
+demonstration of the discipline the phase argument requires: know what mode you're in, know
+what the mode is for, and be deliberate about which one the work needs. The work of building
+practices that make that decision easier to make earlier — before the debt accumulates — is
+what the rest of this series is about.
 
 ---
 
