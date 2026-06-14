@@ -1,6 +1,6 @@
 # S1-A1 — Vibe Coding Is the New Doomscrolling
 
-**Status:** Not started
+**Status:** Draft v1
 **Series position:** 1 of 10 — the lead. Everything depends on how well this one lands.
 
 ---
@@ -141,3 +141,159 @@ document at the end. The subject being a game is interesting color, not the poin
 - [Debt Behind the AI Boom — large-scale empirical study](https://arxiv.org/abs/2603.28592) — arXiv:2603.28592; 304,362 AI commits, 24.2% of AI-introduced defects never cleaned up
 - [Empirically Based Model of Software Prototyping — Bjarnason et al. 2023](https://dl.acm.org/doi/10.1007/s10664-023-10331-w) — formal PAM vocabulary; exploratory vs. evolutionary prototypes are categorically distinct
 - [Vibe Coding in Practice: Flow, Technical Debt, and Guidelines](https://arxiv.org/abs/2512.11922) — arXiv:2512.11922; flow-debt trade-off; proposes phase handoff sustainability guidelines
+
+---
+
+## Draft
+
+# Vibe Coding Is the New Doomscrolling
+
+Andrej Karpathy coined the term in February 2025. He called it "vibe coding": generating
+software by feel, through conversation with an AI, without reading the output closely enough
+to understand it. The phrase spread immediately because it described something real — something
+a lot of developers were already doing and hadn't named.
+
+Thirteen months later, Karpathy renamed it. "Agentic engineering," he announced. More
+professional. Less awkward at conferences.
+
+Then, sometime after that, he mentioned that his most recent project was mostly hand-written.
+
+That sequence is worth holding onto. Not because Karpathy was wrong to explore the tool, but
+because the rename and the pivot are two different responses to the same discomfort — and only
+one of them is honest.
+
+The rename is the industry's move: take a behavior that feels productive and slightly
+embarrassing, sand down the name, and keep going. The pivot is the practitioner's move: notice
+that something isn't working the way it looked like it was, and quietly change course.
+
+This article is about what the pivot is responding to.
+
+---
+
+### The honest case for the loop
+
+Vibe coding is not a methodology. It is an ignition mechanism.
+
+When you have no momentum — no obvious starting point, no clear first function to write, no
+confident sense of what the architecture should look like — the low-friction prompt-response
+loop of an AI coding assistant gets you into a problem space you might not have entered
+otherwise. You describe what you're trying to build, loosely. The model generates something.
+The something is wrong, or incomplete, or pointed in a direction you didn't intend. But now
+you are inside the problem, looking at a concrete artifact, and your brain starts doing the
+real work of evaluating it. That's the loop doing its job.
+
+The intermittent reward is real. Some prompts produce nothing useful. Some produce exactly what
+you needed and couldn't quite articulate. The variable ratio schedule — the same one that makes
+any exploratory process engaging — is not a defect. You don't know which iteration will break
+something open.
+
+This is a correct use of the tool. When you don't know what you're building, you are not
+supposed to know what you're building yet. The exploratory phase exists to find out. Applying
+engineering discipline at that stage — locking requirements, enforcing architecture decisions,
+writing tests against a specification — is premature. You'd be specifying a building before
+you've walked the land.
+
+The problem is not vibe coding. The problem is the phase.
+
+---
+
+### Why the doomscrolling parallel is not an insult
+
+The structural similarity between vibe coding and doomscrolling is not that both are harmful.
+It is that both are useful ignition mechanisms with no built-in exit condition.
+
+Doomscrolling does something real too. It surfaces information, surfaces social context,
+provides low-grade stimulation. The dopamine hit from a genuinely good find is not imaginary.
+People come for real content and stay in the loop because the loop has no exit condition —
+nothing that says "you've seen enough, stop now."
+
+Vibe coding loops work the same way. Each prompt produces something. Each something suggests
+a next prompt. The continuation is always available, always plausible, always has the texture
+of forward motion. Nothing in the loop signals "you have explored enough; it is time to shift
+into a different mode." The loop is designed to continue.
+
+The difference is that with vibe coding, something real does get built. The productivity
+feeling is not entirely false. That's what makes it stickier — the variable reward actually
+delivers sometimes, so the loop runs longer, the exit feels less necessary, and costs
+accumulate invisibly until they don't.
+
+---
+
+### The phase argument
+
+Bjarnason et al.'s empirically-derived model of software prototyping draws a categorical
+distinction between two types: exploratory prototypes, which are explicitly throwaway — built
+to answer a question, discarded when the question is answered — and evolutionary prototypes,
+which are expected to become the final system.
+
+The engineering practices for each are opposite. An exploratory prototype should be fast and
+cheap. Maintainability is irrelevant; what matters is whether it answers the question. An
+evolutionary prototype must be built on a foundation that can grow. Maintainability,
+testability, architectural coherence — these are not optional.
+
+Vibe coding is the right tool for exploratory work. The speed, the low friction, the
+willingness to generate code you don't fully understand — these are correct behaviors when
+you're trying to find out what you're building. They become dangerous when applied to
+evolutionary work, because the underlying mechanic of AI assistance — continue the pattern in
+context — is neutral about whether the pattern is good.
+
+The failure mode is not using vibe coding. It is never transitioning out of it. The exploratory
+phase has no natural end. It continues as long as you keep prompting. The only thing that
+terminates it is an explicit decision: we have learned what we needed to learn; we are now
+building the real thing.
+
+Most teams never make that decision explicitly. They gradually produce more code without
+noticing that the exploratory phase ended some time ago and they are now building something
+they intend to ship, using practices designed for work they intended to throw away.
+
+---
+
+### The measurements
+
+The industry spent two years arguing about whether AI-assisted coding made developers faster.
+The answer is now quantified.
+
+METR ran a controlled trial with sixteen experienced developers working on their own mature
+repositories — codebases they'd built themselves and knew well. With AI tools, they completed
+tasks 19% slower. They reported feeling 20% faster. That is a 39-point gap between perception
+and reality, in the direction of overconfidence, in people who know the code.
+
+Separate comprehension debt research found that developers using AI assistance completed tasks
+in roughly the same wall-clock time as those without, but scored 17% lower on comprehension
+quizzes about the code they'd just written. The output was there. The understanding was not.
+
+A study of 304,362 AI-authored commits found that 24.2% of AI-introduced defects were never
+cleaned up. Not "introduced and eventually fixed." Introduced and left.
+
+These are not impressions. The cost of staying in exploration mode past the point where
+discipline should have engaged is measured.
+
+The 39-point perception gap is the most consequential number in that set. Developers in the
+wrong phase don't just produce worse outcomes — they believe they are producing better ones.
+The feedback signal that would normally indicate "this isn't working" has been suppressed. The
+loop continues with confidence it hasn't earned.
+
+---
+
+### What is missing
+
+The solution is not discipline instead of vibe coding. It is discipline about when to stop.
+
+The question — "are we still exploring, or are we building?" — sounds straightforward. In
+practice, most teams never ask it. The exploratory phase bleeds into the build phase without a
+boundary, and the practices of one become the habits of the other.
+
+What makes the question answerable is an exit condition on the exploration: something that says
+"we have confirmed these hypotheses, we have rejected those approaches, we have a design we are
+committing to." Not a feeling that things are going well, but a specific criterion that the
+exploration was designed to satisfy.
+
+Karpathy's pivot to hand-written code was the right move. The work of understanding why that
+move was necessary — and building practices that make it easier to make earlier — is what the
+rest of this series is about.
+
+---
+
+*Systems Engineering Applied to Agentic Systems is a series on applying formal engineering
+discipline to AI-assisted software development. Next: what AI does to a codebase that already
+has technical debt.*
