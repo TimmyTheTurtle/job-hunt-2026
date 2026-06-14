@@ -148,3 +148,17 @@ All source links organized by topic. Article assignments noted where applicable.
 - [arXiv 2507.03156 — Impact of LLM-Assistants on Developer Productivity](https://arxiv.org/html/2507.03156v1) — S1-A3; 23-minute recovery time applied to LLM interruptions
 - [RedMonk — 10 Things Developers Want from Agentic IDEs in 2025](https://redmonk.com/kholterhoff/2025/12/22/10-things-developers-want-from-their-agentic-ides-in-2025/) — S1-A3; fire-and-forget pattern
 - [Stack Overflow — Agents on a leash](https://stackoverflow.blog/2026/05/27/agents-on-a-leash-agentic-ai-remains-mostly-monitored-at-work/) — S1-A3; developer oversight baseline data
+
+## Empirical Research — AI-Assisted Development (Phase, Cognition, Quality)
+
+- [METR Productivity RCT — arXiv:2507.09089](https://arxiv.org/abs/2507.09089) — S1-A1, S1-A3; 19% slower, perceived 20% faster; 39-point perception-reality gap; 16 experienced devs, 246 tasks
+- [Comprehension Debt in GenAI SE — arXiv:2604.13277](https://arxiv.org/abs/2604.13277) — S1-A3; 17% comprehension drop; four debt patterns; debt lives in cognition not codebase
+- [Debt Behind the AI Boom — arXiv:2603.28592](https://arxiv.org/abs/2603.28592) — S1-A1, S1-A2; 304,362 AI commits; 24.2% of AI-introduced defects never cleaned up
+- [Fast and Forgettable — arXiv:2604.18538](https://arxiv.org/abs/2604.18538) — S1-A3; Copilot vs. pair programming RCT; worse one-week retention; overestimated learning
+- [Mitigating Epistemic Debt — arXiv:2602.20206](https://arxiv.org/abs/2602.20206) — S1-A3; Explanation Gate intervention restores metacognitive engagement
+- [The Vibe-Check Protocol — arXiv:2601.02410](https://arxiv.org/abs/2601.02410) — S1-A1, S1-A3; acceleration vs. offloading distinction; measurably different outcomes
+- [Enterprise AI Coding Assistants — arXiv:2601.20112](https://arxiv.org/abs/2601.20112) — S1-A3; devs spend ~9% of time reviewing AI output; produce more code, delete more
+- [Vibe Coding in Practice: Flow, Technical Debt — arXiv:2512.11922](https://arxiv.org/abs/2512.11922) — S1-A1; flow-debt trade-off; phase handoff sustainability guidelines
+- [Agentic AI in the SDLC — arXiv:2604.26275](https://arxiv.org/abs/2604.26275) — S2-A4; six-layer A-SDLC reference architecture; economics of attention named as open problem
+- [Bridging the Gap: Transparency and Traceability — arXiv:2605.17675](https://arxiv.org/abs/2605.17675) — S2-A2; V-model traceability requirements in AI-assisted scientific software
+- [Empirically Based Model of Software Prototyping — Bjarnason et al. 2023](https://dl.acm.org/doi/10.1007/s10664-023-10331-w) — S1-A1, S3-A2; PAM vocabulary; exploratory vs. evolutionary prototypes are categorically distinct

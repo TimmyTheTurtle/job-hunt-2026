@@ -22,6 +22,19 @@ The long-range answer is not a single tool. It is an architecture that layers:
 
 ---
 
+## Series 1 and Series 3 Are Connected
+
+Series 1 diagnoses what happens when you never exit the exploratory phase. Series 3 is the
+positive case for what disciplined exploratory phases look like when done right. The Bjarnason
+prototyping model (PAM, 2023) provides the formal academic vocabulary for this distinction:
+exploratory prototypes (pre-requirements, discovery-oriented) are categorically different from
+evolutionary prototypes (requirements-locked). Series 3 is the former done correctly. Series 1
+is the former done indefinitely.
+
+When writing either series, cross-reference the other. The argument is incomplete without both.
+
+---
+
 ## Token Frugality — Series Throughline
 
 Token frugality is not a cost-cutting tip. It is a design discipline, and it runs through
@@ -147,6 +160,7 @@ Week 23:  S1-A10  The Architecture I'm Building
 | Candidate | Thesis | Home |
 |---|---|---|
 | The Complete Cognitive Stack | The positive version of S1-A3 — full operating model: morning reasoning, six-mode rotation, review as first-class mode, daily walk. Nobody in AI dev is writing about the physical layer. | Could extend S1-A3 or be a standalone S1 article. Decide when drafting S1-A3. |
+| Acceleration vs. Offloading | The Vibe-Check Protocol (arXiv:2601.02410) names the key distinction: using AI to go faster while maintaining understanding (acceleration) vs. delegating understanding itself (offloading). These produce measurably different outcomes. This is the line between healthy and harmful AI-assisted development — sharper than "vibe coding bad." | Could be S1-A2 material or a standalone. Connects directly to comprehension debt research. |
 
 ---
 

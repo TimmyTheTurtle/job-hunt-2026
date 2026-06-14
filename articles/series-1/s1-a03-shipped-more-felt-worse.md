@@ -23,10 +23,29 @@ meaningful breaks.
 
 - Vibe coding causes cognitive decline through the same mechanism as doomscrolling
 - The competence erosion is gradual and invisible until the capability is needed and isn't there
+- This is now empirically measured, not just felt: controlled trials show the gap
 - This is a different burnout than deadline burnout and won't respond to the same interventions
 - The counter-move is deliberate: protect active reasoning as a daily practice
 - Lesson-first, build-second is the practical inversion of the vibe coding default
 - Morning math/physics/calculus is a legitimate engineering practice, not a hobby
+
+## Empirical Grounding (cite these — do not soften)
+
+- **METR RCT (arXiv:2507.09089):** 16 experienced developers, 246 tasks in their own
+  mature repos. AI tools produced a 19% increase in task completion *time*. Developers
+  estimated they were 20% *faster*. 39-point perception-reality gap. This is not anecdote.
+- **Comprehension debt (arXiv:2604.13277):** Engineers using AI completed tasks in similar
+  time but scored 17% lower on comprehension quizzes. Names four accumulation patterns:
+  AI-as-black-box acceptance, context-mismatch debt, dependency-induced atrophy,
+  verification-bypass. Comprehension debt is distinct from technical debt — it lives in
+  team cognition, not the codebase. You cannot fix it by refactoring.
+- **Fast and Forgettable (arXiv:2604.18538):** RCT comparing Copilot vs. human pair
+  programming. Lower workload during session, trend toward worse one-week retention.
+  Participants systematically overestimated their own learning when working with AI.
+- **Vibe-Check Protocol (arXiv:2601.02410):** Distinguishes acceleration (AI to go faster,
+  understanding maintained) from offloading (delegating understanding itself). These produce
+  measurably different outcomes. The article should use this distinction — it is the line
+  between healthy and harmful AI-assisted development.
 
 ---
 
@@ -133,3 +152,9 @@ Flag for placement decision when drafting begins.
 - [arXiv 2507.03156 — Impact of LLM-Assistants on Developer Productivity](https://arxiv.org/html/2507.03156v1) — cites 23-minute recovery time after interruption applied to LLM workflows
 - [RedMonk — 10 Things Developers Want from Agentic IDEs in 2025](https://redmonk.com/kholterhoff/2025/12/22/10-things-developers-want-from-their-agentic-ides-in-2025/) — "fire and forget" as dominant developer fantasy; attention cost of that pattern unexamined
 - [Stack Overflow — Agents on a leash: agentic AI remains mostly monitored](https://stackoverflow.blog/2026/05/27/agents-on-a-leash-agentic-ai-remains-mostly-monitored-at-work/) — most developers keep agents on short leashes; baseline for how common the wait-time problem actually is
+- [METR productivity RCT — arXiv:2507.09089](https://arxiv.org/abs/2507.09089) — 19% slower, perceived 20% faster; 39-point gap; 16 experienced devs, own repos
+- [Comprehension Debt in GenAI-Assisted SE — arXiv:2604.13277](https://arxiv.org/abs/2604.13277) — 17% comprehension drop; four debt patterns; debt in cognition not codebase
+- [Fast and Forgettable — arXiv:2604.18538](https://arxiv.org/abs/2604.18538) — Copilot vs. pair programming RCT; worse retention; overestimated learning
+- [The Vibe-Check Protocol — arXiv:2601.02410](https://arxiv.org/abs/2601.02410) — acceleration vs. offloading distinction; measurably different outcomes
+- [Mitigating Epistemic Debt — arXiv:2602.20206](https://arxiv.org/abs/2602.20206) — Explanation Gate intervention; restored metacognitive engagement
+- [Enterprise AI Coding Assistants — arXiv:2601.20112](https://arxiv.org/abs/2601.20112) — devs spend ~9% of time reviewing AI output; produce more code but delete more too
