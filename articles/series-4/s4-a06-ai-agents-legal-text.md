@@ -45,6 +45,20 @@ not defect records. The taxonomy is the schema that makes the output structured 
 
 ---
 
+## Why Retrieval Fails (Quantitative Grounding)
+
+General-purpose LLMs hallucinate on specific legal questions 58–88% of the time (Dahl et al.,
+JLA 2024). Purpose-built legal AI tools (Lexis+ AI, Westlaw AI) hallucinate 17–33% of the time
+on legal research tasks (Magesh et al., JELS 2025). These are retrieval tasks. Defect detection
+is harder — the model must recognize a structural absence, not surface a textual answer.
+
+**GraphCompliance (arXiv:2510.26309, 2025)** demonstrates that graph-based compliance reasoning
+gains +2–6pt macro-F1 and +12–20pt F2 over strong RAG baselines on regulatory multi-hop tasks.
+The architecture described below targets this regime: structured graph traversal over a typed
+obligation graph, not free-form retrieval over raw clause text.
+
+---
+
 ## Architecture
 
 ```
@@ -52,8 +66,13 @@ Input: policy form (PDF or structured text)
 
 Stage 1 — Preprocessing
   - Section segmentation (base form, endorsements, schedules)
+  - Node type classification: distinguish policy-provision nodes from filing-instruction nodes
+    (empirically confirmed: negation-form phrases in smell patterns produce false positives
+    on filing instructions — e.g., "Section II Coverage is not mandatory for the secondary
+    residence policy" — if node type is not classified first)
   - Term extraction and definition binding
   - Authority reference extraction (statutes, bulletins, ISO forms)
+  - Graph encoding: Akoma Ntoso / LegalDocML for structured authority hierarchy
 
 Stage 2 — Smell Detection (per-category passes)
   - Run each of the 10 smell categories as a typed detection task
@@ -120,6 +139,21 @@ a demonstrated result. The field has enough of those.
 - Hendrycks et al. "CUAD." NeurIPS 2021.
 - Merigoux et al. "Catala." ICFP 2021. The nearest working system — executable law formalism
   without the smell detection layer.
+
+**Graph-based compliance reasoning**
+- GraphCompliance. arXiv:2510.26309, 2025. +12–20pt F2 gains over RAG on regulatory
+  multi-hop tasks; +12.8pt macro-F1 over GraphRAG. Direct technical validation of the
+  graph-backed architecture target.
+
+**LLM hallucination in legal contexts**
+- Magesh et al. "Hallucination-Free?" JELS 2025 (Stanford RegLab). 17–33% hallucination
+  rate on purpose-built legal AI tools.
+- Dahl et al. "Large Legal Fictions." JLA 2024. 58–88% hallucination on specific legal
+  questions from general-purpose models.
+
+**Document encoding standards**
+- Akoma Ntoso (LegalDocML): OASIS standard for structured legal document encoding.
+  The graph encoding layer for authority hierarchy representation in Stage 1.
 
 **Architectural references**
 - S4-A3 (RAII schema) — the typed obligation record this pipeline populates.

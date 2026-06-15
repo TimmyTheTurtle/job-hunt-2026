@@ -56,17 +56,34 @@ The smell was always there. The catastrophe just made it visible.
 |---|---|---|
 | Undefined Concurrent Causation | Hurricane Ian/Harvey wind-flood disputes | Hundreds of millions across industry |
 | Overbroad Exclusion Applied | UK FCA BI Test Case (COVID) | £1+ billion paid |
-| Calculation Rule Drift / Magic Valuation Term | State Farm ACV class action (Arkansas, 2026) | $15.6M settlement |
+| Calculation Rule Drift / Magic Valuation Term | State Farm ACV class action — Arkansas auto total-loss (Chadwick v. State Farm, E.D. Ark.) | $15.6M settlement |
 | Undefined Depreciation Logic | Industry-wide labor depreciation class actions (2015–present) | "Hundreds of millions" |
 | Stale Pricing Reference | Marshall Fire underinsurance (Colorado, 2022) | $400K+ gap per household |
 | InvariantViolation — Payment Deadline | Florida OIR Hurricane Ian/Idalia fines (2025) | $2.575M regulatory fines |
 | Blob Adjuster / Hidden State | Farmers "Bring Back a Billion" (North Dakota, 2007) | $750K regulatory fine |
 | Jurisdictional Inheritance in SIU | Huskey v. State Farm (algorithm bias, 2022–present) | Active FHA litigation |
-| Non-deterministic Denial | Louisiana hurricane market conduct exams (2022) | ~$1M proposed fines |
+| Non-deterministic Denial | Louisiana hurricane market conduct exams (2022) | $764,750 proposed fines |
 | Zombie Coverage / Missing Endorsement | Ironshore v. RPG Hospitality (2018) | Up to $26M vs. $250K intended sublimit |
 | Non-deterministic Exclusion | Aviva v. 8262900 Canada (2023) | Half of 80K-person class action uncovered |
 | Magic Number Ambiguity | Pedicini v. Life Insurance Company of Alabama | Bad faith exposure, extracontractual damages |
 | Regulatory Drift in Claim Handling | Florida OIR Ian/Idalia, error rate >80% | Included in $2.575M fines |
+
+---
+
+## Regulatory Delay as Cost (Milliman 2025 Q2)
+
+California homeowners rate filings averaged **293 days** to approval. Colorado personal auto:
+**367 days**. Countrywide homeowners average: 76 days. Source: Milliman, "Regulatory Insurance
+Intelligence: Understanding Rate Filing Average Days to Approval — Q2 2025."
+
+These are not smell-driven costs directly, but they quantify the friction environment in which
+smell-driven defects compound. A form with a Coverage Inversion defect discovered during a
+293-day review cycle produces a very different outcome than one discovered pre-filing.
+
+**Note on enforcement source coverage:** KY/TN/OH/WV DOI market conduct exam findings are not
+publicly indexed — they require open records requests. The cases above (FL OIR, LA DOI, SD DLR)
+are the publicly sourced anchors. Kentucky DOI acknowledges equivalent exam authority on its own
+website; specific findings require a FOIA-style records request.
 
 ---
 

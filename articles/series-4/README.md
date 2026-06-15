@@ -45,6 +45,13 @@ from that repo. Extract insights, write synthetic examples, cite public litigati
 | `insurance_policy_smells.md` | 42 policy-specific smells (form & wording, rating rules, regulatory mapping, spec-to-configurator) |
 | `insurance_claims_smells.md` | 41 claims-specific smells (coverage determination, valuation, notice, adjuster workflow, subrogation, bad faith) |
 | `Real-World Cost Events Mapped to Insurance Legal Code Smells.md` | Named cases, dollar figures, regulatory fines mapped to each smell category |
+| `previous-chats/raii-and-legal-tech-debt.md` | Origin document: first development of the RAII framework, defect class names, typed obligation schema, extended RAII analogs (exception safety, deadlock, borrowing/owning) |
+| `previous-chats/legal-tech-debt-impact.md` | Origin: legal code smells concept (12-smell precursor list), legal refactorings table (12 entries), legal design patterns, CMMI for law, market valuation framing |
+| `lessons/LESSON-2026-06-05-detector-negation-patterns.md` | Empirical pipeline finding: negation-form phrases fire on filing instructions, not policy provisions; node type classification must precede smell detection |
+| `lessons/LESSON-2026-06-05-doi-enforcement-accessibility.md` | Accuracy corrections: State Farm $15.6M = Arkansas auto (not homeowners); Louisiana fines = $764,750; KY/TN/OH/WV behind FOIA walls |
+| `feasibility-studies/client-pivot-synthesis-2026-06-06.md` | Strategic synthesis: incumbent landscape, best first-customer positioning, generic LLM threat framing |
+| `feasibility-studies/external-reports/bull-case-due-diligence-graph-policy-smell-detector.md` | Rich sourcing: GraphCompliance (arXiv:2510.26309), Magesh/Dahl hallucination studies, Insuraviews detail, Harvey AI, SERFF transaction volume |
+| `sandboxes/002-claims-regulatory-automation/002-ROI-CASES-FIVE-SMELLS.md` | Detailed ROI per smell category; service pricing structure; corrected dollar figures |
 
 ---
 
@@ -52,11 +59,16 @@ from that repo. Extract insights, write synthetic examples, cite public litigati
 
 | Work | Relevance |
 |---|---|
-| Coupette et al., "Law Smells," *AI and Law*, 2023 | Only peer-reviewed law smell taxonomy — covers 5 smells. This work covers 87+. |
+| Coupette et al., "Law Smells," *AI and Law*, 2023 | Only peer-reviewed law smell taxonomy — taxonomizes 15, demonstrates 5. This work covers 87. |
 | Grimmelmann, "Programming Languages and Law," arXiv 2022 | "IDE for lawyers" vision; legal design patterns; directly corroborates the approach |
 | Merigoux et al., Catala (ICFP 2021) | Policy compiler — closest thing to a formal executable specification for law |
 | OECD "Cracking the Code," 2020 | Rules as Code government framework — covers 0 smells, no lifecycle management |
 | Stanford CodeX | Global epicenter for computational law — 20 years of adjacent work, same gap |
+| Braz de Souza et al., ScienceDirect 2025 | "Software engineering meets legal texts: LLMs for auto detection of contract smells" — nearest academic neighbor; commercial contracts via LLMs; no regulatory authority hierarchy, no RAII lifecycle |
+| GraphCompliance, arXiv:2510.26309, 2025 | Graph-based compliance reasoning: +12–20pt F2 over RAG on regulatory multi-hop tasks — technical validation for S4-A6 architecture direction |
+| Magesh et al., JELS 2025 (Stanford RegLab) | Purpose-built legal AI tools hallucinate 17–33%; Lexis+ AI 65% accurate, Westlaw AI 42% — quantified failure rate of current tools |
+| Dahl et al., JLA 2024 | General-purpose LLMs hallucinate 58–88% on specific legal questions — baseline for why retrieval alone fails |
+| Milliman, "Rate Filing Average Days to Approval — Q2 2025" | CA homeowners: 293 days avg; CO personal auto: 367 days — quantified regulatory friction cost |
 
 **The gap nobody is filling:** No existing work combines (a) a formal legal defect taxonomy
 rooted in SE, (b) RAII-style obligation lifecycle management, (c) legislative drift detection,

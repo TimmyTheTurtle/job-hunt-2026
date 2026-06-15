@@ -73,6 +73,54 @@ machine-readable form. The defects survive and become executable.
 
 ---
 
+## Commercial Landscape (existing tools — none fill the gap)
+
+Tools active in adjacent spaces as of 2025:
+
+| Tool | What it does | What it doesn't do |
+|---|---|---|
+| SERFF (NAIC) | Filing workflow — 517,571 transactions in 2023 | Not a compliance analysis system; no smell detection |
+| ISO/Verisk | Standard forms and rating content | Not a defect detector; proprietary content, not open audit trail |
+| Wolters Kluwer OneSumX | Regulatory-change tracking and obligation management | Change management, not pre-filing form language analysis |
+| StateFilings.com / Perr&Knight | Rate filing tracking and actuarial support | Filing tracking, not policy language defect detection |
+| Insuraviews (founded 2024, Milwaukee) | Pre-filing DOI objection prediction using public SERFF data | **Rate filings only.** Form-layer language analysis is not in scope. Validates that the market exists. |
+
+**Insuraviews** is the nearest commercial competitor: venture-backed (~$1.6M raised, Gateway
+Capital + Idea Fund), CEO Nick Amundsen. They are solving pre-filing rate-approval prediction.
+They are not solving policy-language defect detection. The gap this series fills is one layer
+down — in the language of the form itself, not in the rate filing's approval trajectory.
+
+**The quantified pain:** California homeowners rate filings averaged 293 days to DOI approval
+(Milliman Q2 2025). Colorado personal auto: 367 days. A form-layer defect discovered during a
+293-day review cycle extends that cycle further — or triggers a rejected filing. The cost of
+undetected language defects is not just litigation exposure; it is regulatory friction measured
+in months.
+
+---
+
+## Why General-Purpose LLMs Don't Close the Gap
+
+Benchmark data on LLM performance on legal tasks:
+- **Magesh et al., JELS 2025 (Stanford RegLab):** Purpose-built legal AI tools hallucinate
+  17–33% of the time. Lexis+ AI accuracy: 65%. Westlaw AI: 42% accurate (~33% hallucination).
+- **Dahl et al., JLA 2024 ("Large Legal Fictions"):** General-purpose models hallucinate on
+  specific legal questions 58–88% of the time (ChatGPT-4 at 58%, Llama 2 at 88%).
+
+These rates are for retrieval tasks — "find me the answer in this legal corpus." A defect
+detection task is harder: the model must recognize the absence of a required property, not
+just retrieve text that contains one. Hallucination in defect detection means false negatives
+(missed defects that become claims exposure) and false positives (flagged non-defects that
+waste reviewer time). Without a typed taxonomy schema as the output target, neither failure
+mode is systematically measurable.
+
+**GraphCompliance (arXiv:2510.26309, 2025):** Graph-based compliance reasoning gains
++2–6pt macro-F1 and +12–20pt F2 over strong RAG baselines on regulatory multi-hop tasks,
+and +12.8pt macro-F1 over GraphRAG. This validates the architecture direction in S4-A6:
+graph-backed reasoning over a structured obligation graph outperforms retrieval on the
+tasks this framework targets.
+
+---
+
 ## Why SE Is the Right Starting Point
 
 Software engineering solved this class of problem for code in the 1990s and 2000s:
@@ -131,6 +179,25 @@ The closest existing bridge:
 - Grimmelmann. "Programming Languages and Law." arXiv 2022.
 - Fowler, Martin. *Refactoring: Improving the Design of Existing Code.* Addison-Wesley, 1999.
   (Primary SE source for smell taxonomy origin.)
+
+**Adjacent commercial work**
+- Braz de Souza et al. "Software engineering meets legal texts: LLMs for auto detection of
+  contract smells." ScienceDirect 2025. Nearest academic neighbor.
+- Insuraviews (founded 2024, Milwaukee). Rate-filing prediction. Not policy-language analysis.
+  Validates the commercial thesis.
+
+**LLM hallucination in legal contexts**
+- Magesh et al. "Hallucination-Free? Assessing the Reliability of Leading AI Legal Research
+  Tools." *Journal of Empirical Legal Studies*, Stanford RegLab, 2025.
+- Dahl et al. "Large Legal Fictions: Profiling Legal Hallucinations in Large Language Models."
+  *Journal of Legal Analysis* 16(1), 2024.
+
+**Graph-based compliance reasoning**
+- GraphCompliance. arXiv:2510.26309, 2025. +12–20pt F2 gain over RAG on regulatory multi-hop tasks.
+
+**Regulatory delay data**
+- Milliman. "Regulatory Insurance Intelligence: Understanding Rate Filing Average Days to
+  Approval — Q2 2025."
 
 **Survey / government documents**
 - OECD "Cracking the Code." 2020. (Government document, treated as authoritative for

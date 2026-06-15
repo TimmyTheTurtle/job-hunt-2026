@@ -30,6 +30,36 @@ This framework is not in any existing legal tech literature. It is original.
 
 ---
 
+## Additional RAII Concepts (for the article's conceptual framing)
+
+Beyond the seven defect classes, three more RAII concepts from the origin framework
+belong in the introductory framing of the article — they explain why the analogy runs
+deeper than just "resource lifecycle":
+
+**Exception Safety → Regulatory Churn Handling.** In C++, exception-safe code guarantees
+that a partially completed operation either succeeds completely or leaves the system in
+a valid prior state (rollback). In legal systems: when an authority update partially applies
+(e.g., a bulletin amends three of five endorsement clauses), the obligation graph must
+remain coherent — no partial-update corruption. The compliance stack must be exception-safe.
+
+**Deadlock / Mutex Discipline → Compliance Deadlocks.** Mutual deadlock in concurrent
+systems: two threads each hold a lock the other needs. Legal analog: Legal won't approve
+a product change until Actuarial reprices it; Actuarial won't reprice until Product signs
+off; Product won't sign off until Legal approves. The approval chain deadlocks. Mutex
+discipline — naming all locks and establishing strict acquisition order — translates to
+named approval dependencies and explicit resolution paths.
+
+**Borrowing vs. Owning → Citation vs. Interpretation.** Rust's borrow checker enforces
+that a reference to a value cannot outlive the value itself. Legal analog: a clause that
+cites an external authority (a statute, a bulletin, an ISO form) is borrowing from it.
+When the authority is amended, the borrow is invalidated unless the clause is revalidated.
+Clauses that re-interpret an authority (rather than citing it) are making their own copy
+of the semantics — they own the interpretation, but that copy can drift from the source.
+The distinction matters for audit: citations are DanglingReference risks; interpretations
+are Calculation Rule Drift risks.
+
+---
+
 ## The Seven RAII Defect Classes
 
 | Defect Class | Description | Software Analog | Legal Consequence |

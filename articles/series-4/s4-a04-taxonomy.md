@@ -7,12 +7,20 @@
 
 ## Thesis
 
-Coupette et al. (2023) named five law smells in academic literature. This taxonomy names 87.
+Coupette et al. (2023) demonstrated five law smells and taxonomized fifteen. This taxonomy
+names 87.
 
 The 83 domain-specific smells across claims and policy language represent the first complete
 smell taxonomy for insurance regulatory documents. The 7 RAII defect classes (S4-A3) apply
 across all regulatory domains. Together they form a unified defect taxonomy for legal text that
 has no equivalent in existing academic literature.
+
+**Academic lineage:** Fowler (1999) introduced the code smell taxonomy and refactoring catalog
+for software. Coupette et al. (2023) applied the concept to legal text (15 smells, non-insurance
+domain). Braz de Souza et al. (ScienceDirect, 2025) applied it to commercial contracts via LLMs
+("Software engineering meets legal texts: LLMs for auto detection of contract smells"). This work
+extends the lineage to insurance regulatory documents — the first domain with a complete taxonomy
+(87 smells) and an obligation lifecycle framework.
 
 ---
 
@@ -58,7 +66,7 @@ Detailed in S4-A3.
 
 Existing literature:
 
-- Coupette et al. 2023: 5 law smells, non-insurance domain
+- Coupette et al. 2023: 15 law smells (5 demonstrated), non-insurance domain
 - Grimmelmann 2022: patterns in legal design, no taxonomy
 - Surden 2014: computational law principles, no defect taxonomy
 - Rules as Code movement: focuses on formalization, not defect detection
@@ -117,7 +125,8 @@ No company name. No state. No form number that matches a real filing.
 ## Sources
 
 **Primary (peer-reviewed)**
-- Coupette, Corinna, et al. "Law Smells." *AI and Law* 31 (2023). The five-smell baseline.
+- Coupette, Corinna, et al. "Law Smells." *AI and Law* 31 (2023). Fifteen smells taxonomized, five demonstrated. The direct baseline.
+- Braz de Souza et al. "Software engineering meets legal texts: LLMs for auto detection of contract smells." *ScienceDirect* 2025. Nearest academic neighbor — contracts via LLMs; no regulatory authority hierarchy, no RAII lifecycle layer.
 - Merigoux, Denis, Nicolas Chataing, and Jonathan Protzenko. "Catala: A Programming Language
   for the Law." ICFP 2021. Best executable law formalism; no smell taxonomy.
 - Grimmelmann, James. "Programming Languages and Law: A Research Agenda." arXiv 2022.
