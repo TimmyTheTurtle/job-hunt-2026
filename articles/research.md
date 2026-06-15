@@ -93,13 +93,21 @@ All source links organized by topic. Article assignments noted where applicable.
 
 ## Agile V / V-Model for AI
 
-- [Agile V: A Compliance-Ready Framework (ArXiv 2602.20684)](https://arxiv.org/pdf/2602.20684) — S1-A10, S2-A2
+**The Agile-V lineage (read in order before writing S2-A2):**
+- [Agile V: A Compliance-Ready Framework (arXiv:2602.20684) — Koch & Wellbrock 2026](https://arxiv.org/abs/2602.20684) — S2-A2, S1-A10. *Addresses V&V of agent-generated artifacts. Does not address V&V of the agentic system as a non-deterministic runtime.*
+- [Agentic Agile-V: From Vibe Coding to Verified Engineering (arXiv:2605.20456) — 2026](https://arxiv.org/abs/2605.20456) — S2-A2. *Extends Agile-V for agentic systems. SCOPE-V loop (Specify, Constrain, Orchestrate, Prove, Evolve, Verify). Risk-adaptive evidence bundles R0–R3. Most current treatment of agentic process control.*
+
+**Agentic system evaluation (Problem 3 — the hard unsolved layer):**
+- [Beyond Task Completion: Assessment Framework for Evaluating Agentic AI Systems (arXiv:2512.12791)](https://arxiv.org/html/2512.12791v2) — S2-A2, S2-A5. *Four-pillar model: LLMs, Memory, Tools, Environment. Key finding: 100% task completion can coexist with 33% policy adherence. Behavioral invariant testing.*
+- [AgentAssay: Token-Efficient Regression Testing for Non-Deterministic AI Agent Workflows (arXiv:2603.02601) — 2026](https://arxiv.org/pdf/2603.02601) — S2-A2, S2-A5. *Sequential hypothesis testing for probabilistic behavioral guarantees. Hard invariants vs. probabilistic confidence bounds. Minimum-runs methodology.*
+
+**V-model foundations:**
 - [Agile V hybrid model — ITEA](https://itea.org/journals/volume-47-1/implementing-agile-v-hybrid-model/) — S1-A5/A10
 - [FHWA systems-engineering life cycle](https://ops.fhwa.dot.gov/seits/sections/section2/2_7.html) — S1-A10
-- [Exploratory study of V-Model in ML-enabled software (ArXiv)](https://arxiv.org/html/2308.05381v3) — S2-A2
-- [Proposed V-Model for AI verification and validation (IEEE)](https://ieeexplore.ieee.org/document/10207641/) — S2-A2
+- [Exploratory study of V-Model in ML-enabled software (ArXiv 2308.05381)](https://arxiv.org/html/2308.05381v3) — S2-A2. *Identifies offline/online testing gap; recommends holdout experiments + continuous monitoring.*
+- [Proposed V-Model for AI verification and validation (IEEE 10207641)](https://ieeexplore.ieee.org/document/10207641/) — S2-A2
 - [Verification and Validation of AI systems — SEBoK](https://sebokwiki.org/wiki/Verification_and_Validation_of_Systems_in_Which_AI_is_a_Key_Element) — S2-A2
-- [The Systems Engineering Approach in Times of LLMs (ArXiv)](https://arxiv.org/pdf/2411.09050) — S2-A2
+- [The Systems Engineering Approach in Times of LLMs (ArXiv 2411.09050)](https://arxiv.org/pdf/2411.09050) — S2-A2
 - [AI Systems Engineering: rescuing AI from the valley of death — OpenChain](https://openchainproject.org/news/2026/03/26/ai-systems-engineering-the-new-discipline-to-rescue-ai-from-the-valley-of-death) — S2-A2
 - [Model-Based Systems Engineering and Agentic AI — MathWorks](https://blogs.mathworks.com/simulink/2026/04/26/model-based-systems-engineering-and-agentic-ai/) — S2-A2
 - [Model-Based Testing of Non-Deterministic Systems (PDF)](https://marcfrappierudes.github.io/Papers/Model_Based_Testing_of_Non_Deterministic_Systems.pdf) — S2-A2

@@ -7,8 +7,9 @@ S1-A1, S1-A2, S1-A3, S1-A4, S1-A5, S1-A6, S1-A9
 S2-A1, S2-A3, S2-A4
 S3-A1, S3-A2, S3-A3
 
-**Blocked — read first:**
-- S2-A2: read ArXiv 2602.20684 (Agile V paper) before writing
+**Blocked — read first (~3–4 hrs total):**
+- S2-A2: read arXiv:2602.20684 (Agile V, Koch & Wellbrock) + arXiv:2605.20456 (Agentic Agile-V, SCOPE-V loop) before writing.
+  Also read: arXiv:2512.12791 (Beyond Task Completion) + arXiv:2603.02601 (AgentAssay) — these are the missing sources for Problem 3.
 
 **Blocked — build first:**
 - S1-A7: RAG implementation running and demoable

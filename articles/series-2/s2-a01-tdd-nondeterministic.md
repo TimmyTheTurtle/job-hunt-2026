@@ -12,6 +12,23 @@ replacement methodology is evals. LLM-as-judge is triage, not verification.
 
 ---
 
+## Scope Boundary — Important
+
+This article covers **single-turn LLM evaluation**: evaluating the outputs a language model
+produces in response to a prompt. Evals, G-Eval, LLM-as-judge, aggregate statistics.
+
+It does **not** cover **agentic system testing** — verification and validation of a system
+that autonomously makes decisions, calls tools, and produces non-deterministic *behavior
+trajectories*, not just non-deterministic outputs. That is a structurally different problem
+and is the subject of S2-A2.
+
+The boundary: if you can evaluate one model response at a time against a rubric, that's
+S2-A1 territory. If the system under test takes sequences of actions across multiple turns
+and tool calls, and you need to test the decision path not just the terminal output, that
+is S2-A2 territory.
+
+---
+
 ## Key Claims
 
 - TDD's red-green-refactor loop requires deterministic outputs — LLM systems are stochastic
