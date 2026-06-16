@@ -31,6 +31,63 @@ replacement methodology is evals. LLM-as-judge is triage, not verification.
 
 ---
 
+## Key Insight — Constraint Architecture Restores TDD (Session note 2026-06-16)
+
+The thesis as written assumes all LLM calls are non-deterministic and therefore TDD-incompatible.
+That is too broad. A tightly constrained LLM call — fixed system prompt, schema-bound output,
+narrow task scope, deterministic inputs — is effectively a pure function from the test's
+perspective. Classical TDD applies cleanly to it.
+
+**The constraint architecture collapses two problems into one solution:**
+
+1. Token frugality (S2-A7): constrained calls are cheap
+2. Testability: constrained calls are deterministic enough for classical assertions
+
+This means the article's scope boundary needs to be more precise. The claim is not "TDD doesn't
+work for LLM systems." It is:
+
+- **Constrained LLM nodes** (schema-bound, narrow task, fixed prompt): TDD applies. Write
+  the failing schema assertion and business logic assertion first, then build the call to
+  satisfy it. These are the edge nodes in a well-designed agentic system.
+- **Orchestration layer** (sequences constrained calls, routes between them, manages state):
+  TDD breaks here. This is where evals, invariants, and terminal conditions replace the
+  red-green-refactor loop.
+
+**The architecture does the work.** Pushing non-determinism up to the orchestration layer —
+and keeping every node below it constrained and deterministic — is not just a token decision.
+It is what makes TDD viable for the parts of the system where TDD is the right tool.
+
+**Three testing layers that follow from this:**
+
+1. **Constrained LLM nodes**: classical TDD, deterministic assertions, cheap, run on every
+   execution. Schema validation, output contract checks, business logic assertions.
+2. **Orchestration invariants**: things that must be true regardless of trajectory — no
+   out-of-scope side effects, schema-valid outputs at every tool boundary, timing and resource
+   constraints. Specified before implementation (V-model left side), verified at runtime.
+3. **Statistical evals**: aggregate metrics over the orchestration layer's behavior across
+   many runs. Human reads the dashboard. Periodic, not continuous.
+
+**Human-in-the-loop is structural, not compensatory.** It belongs at specific V&V gates —
+novel failure modes, out-of-distribution cases, high-stakes decisions. The constraint
+architecture clarifies where human judgment is irreplaceable rather than using it as a
+fallback for weak evals.
+
+**Connection to AgentAssay (arXiv:2603.02601):** Sequential hypothesis testing applies at
+layer 3 — reach statistical confidence with the minimum number of eval runs. Token frugality
+at the eval layer, not just the system-under-test layer.
+
+**Connection to S2-A7:** The constraint decision is architectural. A system designed with
+constrained nodes is simultaneously token-frugal and TDD-compatible. These are not separate
+concerns — they are the same design decision observed from two different angles.
+
+**This is an original claim.** The literature treats TDD-incompatibility as a property of
+LLM systems in general. The constraint architecture argument — that you can recover TDD
+compatibility by design — is not in the existing sources. It should be the article's new
+central claim, with the evals methodology as the answer for the orchestration layer that
+remains genuinely non-deterministic.
+
+---
+
 ## Scope Boundary — Important
 
 This article covers **single-turn LLM evaluation**: evaluating the outputs a language model
