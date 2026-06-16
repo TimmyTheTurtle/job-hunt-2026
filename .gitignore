@@ -3,3 +3,4 @@ job_search/output/
 job_search/__pycache__/
 job_search/ledger/__pycache__/
 secrets/
+articles/papers/*.pdf
