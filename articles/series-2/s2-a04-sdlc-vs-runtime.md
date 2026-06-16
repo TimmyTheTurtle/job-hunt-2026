@@ -25,6 +25,22 @@ This is ADR-012 from legal-tech-debt made into a general principle.
 
 ---
 
+## Token Cost as a Runtime Production Concern (cross-reference S2-A7)
+
+The agentic runtime is where token spend happens. The SDLC does not currently have a "token
+budget" gate analogous to a performance budget or a bundle size limit — but it should. Add
+this to the article's argument:
+
+- Runtime token costs must be planned at SDLC time, not discovered at billing time
+- A token budget per workflow is a first-class production constraint: documented, monitored,
+  alerted on — the same way response latency is
+- The SDLC/runtime separation argument is incomplete without naming who owns the token
+  budget decision. It is not the prompt engineer. It is the systems architect, at design time.
+
+Forward-reference S2-A7 for the full economic argument.
+
+---
+
 ## Sources
 
 - ADR-012 from legal-tech-debt (internal reference)

@@ -71,7 +71,11 @@ version — accumulated debt and drift — is less dramatic but more pervasive.
 - The U-shaped accuracy problem: middle context is systematically deprioritized by models
 - More context is not better context — poisoning is a signal to curate, not accumulate
 - The Janitor concept: automated entropy scanning, not manual review overhead
-- Connection to token frugality: context hygiene and cost efficiency are the same discipline
+- Connection to token frugality: context hygiene and cost efficiency are the same discipline.
+  A poisoned context is expensive and unreliable simultaneously — more tokens in the window,
+  worse outputs, higher bill per call. The Janitor concept is a cost intervention as much as
+  a quality one. Forward-reference S2-A7 explicitly: "This is the quality argument. The cost
+  argument is in S2-A7."
 
 ## Solution Hints to Seed
 

@@ -40,6 +40,11 @@ first-class engineering decisions.
 
 Rule: archive broadly, retrieve narrowly.
 
+Token economics note (cross-reference S2-A7): the canonical/reference/scratch tiering model
+is a frugality architecture as much as a quality architecture. Every token in the context
+window costs money on every call. "Archive broadly, retrieve narrowly" is a cost principle.
+Name this explicitly in the article — the same discipline solves two problems.
+
 ---
 
 ## Sources

@@ -22,6 +22,7 @@ Run `/sync-roadmap` after checking items to reconcile with roadmap-dashboard.htm
 - [ ] S2-A1 — TDD Doesn't Work for Non-Deterministic Systems (And What Does)
 - [ ] S2-A3 — Context Architecture Is the New Software Architecture
 - [ ] S2-A4 — The Prompt Is a Contract
+- [ ] S2-A7 — Token Frugality Is a Design Discipline
 - [ ] S3-A1 — The MVP Is a One-Bet Strategy
 - [ ] S3-A2 — Experimentation IS Requirements Gathering
 - [ ] S3-A3 — Derive the Product from the Path of Least Resistance

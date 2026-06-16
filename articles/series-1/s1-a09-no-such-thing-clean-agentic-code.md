@@ -38,6 +38,10 @@ building a mental model over time. An agent has no prior sessions. Every context
 
 - How humans, machines (compilers/linters), and agents read code differently
 - The context window as the unit of readability — not the file, not the module
+- Token cost as a cleanliness dimension: a verbose prompt that works is not clean at scale.
+  Small files, concise contracts, compressed tool outputs are frugality decisions that are
+  also cleanliness decisions. S2-A7 makes the economic argument; this article notes the
+  overlap without centering it.
 - Names carry the entire semantic load for agents: naming is specification, not readability
 - Consistency is more critical for agents than humans — agents have no out-of-band knowledge
 - The implicit architectural memory that experienced engineers carry must be externalized
