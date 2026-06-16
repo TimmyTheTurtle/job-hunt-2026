@@ -107,6 +107,23 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);display:flex
 .build-effort-val{font-size:13px;color:var(--gold);font-family:var(--serif)}
 .build-effort-lbl{font-size:10px;color:var(--dim);margin-top:2px}
 .crit-badge{font-size:10px;background:rgba(201,168,76,.14);color:var(--gold);padding:1px 6px;border-radius:3px;display:inline-block;margin-top:5px}
+.done-badge{font-size:10px;background:rgba(93,155,132,.10);color:#5d9b84;padding:1px 6px;border-radius:3px;display:inline-block;margin-top:5px;letter-spacing:.03em}
+.bd{background:rgba(93,155,132,.10);color:#5d9b84}
+.art-card.is-done .art-title{opacity:.5;text-decoration:line-through;text-decoration-color:rgba(93,155,132,.4)}
+
+.build-card{background:var(--card);border:1px solid var(--b0);border-radius:8px;overflow:hidden;transition:border-color .15s}
+.build-card:hover{border-color:var(--b1)}
+.build-card.open{border-color:var(--b2)}
+.build-hdr{display:grid;grid-template-columns:52px 1fr 80px;gap:12px;align-items:start;padding:12px 16px;cursor:pointer;user-select:none}
+.build-hdr:hover{background:var(--cardh)}
+.build-body{display:none;padding:0 16px 14px;border-top:1px solid var(--b0)}
+.build-card.open .build-body{display:block}
+.build-body-inner{padding-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.build-links{margin-top:8px}
+.build-link{display:block;font-size:12px;color:var(--sage2);text-decoration:none;padding:3px 0;border-bottom:1px solid var(--b0);line-height:1.4}
+.build-link:last-child{border-bottom:none}
+.build-link:hover{color:var(--text)}
+.build-card.is-done .build-name{opacity:.5;text-decoration:line-through;text-decoration-color:rgba(93,155,132,.4)}
 
 ::-webkit-scrollbar{width:5px}
 ::-webkit-scrollbar-track{background:var(--bg)}
@@ -505,20 +522,93 @@ const ARTICLES = [
 ];
 
 const BUILD = [
-  {id:'B1',title:'Read 4 Agile-V papers (arXiv:2602.20684, 2605.20456, 2512.12791, 2603.02601)',effort:'~3–4 hrs',critical:true,unlocks:['S2-A2'],notes:'Do this in week 1. Read in order: Agile-V → Agentic Agile-V → Beyond Task Completion → AgentAssay.'},
-  {id:'B2',title:'Sandbox 005 Stage 002 — manual pilot',effort:'1–2 weeks',critical:false,unlocks:['internal'],notes:'Internal research. Does not gate any articles directly.'},
-  {id:'B3',title:'Synthetic demo dataset — design',effort:'1 day',critical:true,unlocks:['B4'],notes:'Design the schema and coverage for the synthetic dataset. Week 1.'},
-  {id:'B4',title:'Synthetic demo dataset — build',effort:'~1 week',critical:true,unlocks:['S1-A10','B5'],notes:'The dataset that the legal-tech-debt pipeline runs on. Weeks 2–3.'},
-  {id:'B5',title:'Wire Claude API into legal-tech-debt pipeline',effort:'1–2 days',critical:true,unlocks:['B6','S4-A6 unblock path'],notes:'Adds AI-powered defect detection to the existing pipeline. Week 3.'},
-  {id:'B6',title:'Deploy legal-tech-debt demo with public URL',effort:'2–3 days',critical:true,unlocks:['S1-A10','outreach at wk 6'],notes:'Hard target: week 4. This is the demo link that goes on the personal site and in outreach messages.'},
-  {id:'B7',title:'Legal-tech-debt case study writeup',effort:'~1 week',critical:false,unlocks:['S1-A10 enrichment'],notes:'Documents what the demo shows. Weeks 4–5.'},
-  {id:'B8',title:'Learn evals frameworks (DeepEval / Promptfoo)',effort:'2–4 weeks',critical:false,unlocks:['S2-A5 ramp','B9'],notes:'Background track. Start week 3. Must be hands-on before Granny Stage 2.'},
-  {id:'B9',title:'Granny\'s House Trials — Stage 2',effort:'4–6 weeks',critical:false,unlocks:['S2-A5'],notes:'Requires B8 first. Also requires: extract Granny\'s into own public repo, SE-manage, document Stage 1 fully, write ADR-001. Full SE setup is a prerequisite of Stage 2.'},
-  {id:'B10',title:'Personal site — 1-pager minimum',effort:'1–2 weeks',critical:true,unlocks:['outreach at wk 6'],notes:'Hard target: week 4. Minimum content: demo link, writing link, contact. Does not need to be complete — just live.'},
+  {
+    id:'B1',done:false,critical:true,effort:'~3–4 hrs',unlocks:['S2-A2'],
+    title:'Read 4 Agile-V papers',
+    notes:'Do this in week 1 before writing S2-A2. Read in order — each paper addresses a different layer of the V&V problem.',
+    detail:'P2 (artifact V&V): 2602.20684 addresses compliance gates + audit artifacts; 2605.20456 adds the SCOPE-V loop and risk-adaptive evidence bundles R0–R3. P3 (agentic system as non-deterministic runtime): 2512.12791 proves 100% task completion ≠ correct behavior; 2603.02601 provides sequential hypothesis testing methodology. The three-problem synthesis in S2-A2 draws from all four.',
+    links:[
+      {text:'arXiv:2602.20684 — Agile V: A Compliance-Ready Framework (Koch & Wellbrock, Feb 2026)',url:'https://arxiv.org/abs/2602.20684'},
+      {text:'arXiv:2605.20456 — Agentic Agile-V: From Vibe Coding to Verified Engineering (May 2026)',url:'https://arxiv.org/abs/2605.20456'},
+      {text:'arXiv:2512.12791 — Beyond Task Completion: Assessment Framework for Agentic AI Systems',url:'https://arxiv.org/html/2512.12791v2'},
+      {text:'arXiv:2603.02601 — AgentAssay: Token-Efficient Regression Testing for Non-Deterministic Workflows',url:'https://arxiv.org/pdf/2603.02601'},
+    ]
+  },
+  {
+    id:'B2',done:false,critical:false,effort:'1–2 weeks',unlocks:['internal'],
+    title:'Sandbox 005 Stage 002 — manual pilot',
+    notes:'Internal adversarial agent research. Does not gate any articles directly.',
+    detail:'Stage 1 must be fully SE-managed and documented before Stage 2 begins. Granny\'s House Trials: three agents with different behavioral profiles run in the same environment. Extract to its own repo, write ADR-001, document Stage 1 evidence bundles. This is the prerequisite work that makes Stage 2 publishable.',
+    links:[]
+  },
+  {
+    id:'B3',done:false,critical:true,effort:'1 day',unlocks:['B4'],
+    title:'Synthetic demo dataset — design',
+    notes:'Design the schema and coverage before building. Week 1.',
+    detail:'Define the synthetic policy document set that the legal-tech-debt pipeline will run on. Coverage must include representatives of all 10 smell categories and all 7 RAII defect classes. Schema: document type, jurisdiction, date, intended smell class(es), ground truth labels. Real policy text is never used — all examples are synthetic. Identities of any real-world referents are protected.',
+    links:[
+      {text:'Legal tech debt repo (private)',url:'https://github.com/TimmyTheTurtle/legal-tech-debt'},
+    ]
+  },
+  {
+    id:'B4',done:false,critical:true,effort:'~1 week',unlocks:['S1-A10','B5'],
+    title:'Synthetic demo dataset — build',
+    notes:'The dataset the pipeline runs on. Weeks 2–3.',
+    detail:'Build synthetic policy documents to the schema from B3. Target: enough coverage to demo all major smell categories. Quality bar: a domain expert reading the synthetic text should not immediately identify it as machine-generated. This dataset is what makes the S1-A10 case study and the S4 articles publishable with real examples.',
+    links:[]
+  },
+  {
+    id:'B5',done:false,critical:true,effort:'1–2 days',unlocks:['B6','S4-A6'],
+    title:'Wire Claude API into legal-tech-debt pipeline',
+    notes:'Adds AI-powered defect detection. Week 3.',
+    detail:'Add a Claude API call to the existing legal-tech-debt pipeline so it can classify policy text against the smell taxonomy. This is what turns the repo from a taxonomy project into a working demo. The API call should produce: smell class, confidence, evidence quote, RAII defect type if applicable. Output feeds B6 (the public demo).',
+    links:[
+      {text:'Claude API docs — tool use',url:'https://docs.anthropic.com/en/docs/build-with-claude/tool-use'},
+      {text:'legal-tech-debt repo (private)',url:'https://github.com/TimmyTheTurtle/legal-tech-debt'},
+    ]
+  },
+  {
+    id:'B6',done:false,critical:true,effort:'2–3 days',unlocks:['S1-A10','outreach wk 6'],
+    title:'Deploy legal-tech-debt demo with public URL',
+    notes:'Hard target: week 4. This URL goes on the personal site and in outreach messages.',
+    detail:'Deploy the pipeline (B4 + B5) somewhere with a stable public URL. Minimum: takes a synthetic policy document as input, returns smell classifications with evidence. The URL is the core of the week-6 outreach message: "I built this, you have this problem." Without it, outreach has no artifact to point to.',
+    links:[]
+  },
+  {
+    id:'B7',done:false,critical:false,effort:'~1 week',unlocks:['S1-A10 enrichment'],
+    title:'Legal-tech-debt case study writeup',
+    notes:'Documents what the demo shows. Weeks 4–5.',
+    detail:'Write the narrative behind the demo: what the pipeline detects, why it matters, what the 87 smells represent, what a RAII defect class is. This becomes the case study referenced in S1-A10 and enriches the S4 articles with a concrete worked example. Not a tutorial — a practitioner writeup of what was built and what was learned.',
+    links:[]
+  },
+  {
+    id:'B8',done:false,critical:false,effort:'2–4 weeks',unlocks:['S2-A5 ramp','B9'],
+    title:'Learn evals frameworks (DeepEval / Promptfoo)',
+    notes:'Background track. Start week 3. Must be hands-on before Granny Stage 2.',
+    detail:'Get hands-on with at least one evals framework before running Stage 2 of Granny\'s House Trials. Evals are the measurement infrastructure that makes Granny\'s results publishable — without them, Stage 2 is just anecdote. Target: be able to define behavioral invariants, run N iterations, and produce aggregate statistics against a rubric.',
+    links:[
+      {text:'DeepEval — LLM evaluation framework',url:'https://docs.confident-ai.com/'},
+      {text:'Promptfoo — LLM testing and red-teaming',url:'https://www.promptfoo.dev/docs/intro/'},
+    ]
+  },
+  {
+    id:'B9',done:false,critical:false,effort:'4–6 weeks',unlocks:['S2-A5'],
+    title:'Granny\'s House Trials — Stage 2',
+    notes:'Requires B8. Also requires: own repo, SE-managed, Stage 1 documented, ADR-001 written.',
+    detail:'The empirical demonstration of the S2-A2 framework. Three agents with different behavioral profiles (and personalities) run in the same environment with hidden infrastructure. Evidence bundles are the test artifacts. Behavioral invariants (what the system must never allow) are the hard constraints. Agent-specific variation is the probabilistic layer. Stage 2 adds structured evals, sequential hypothesis testing, and a publishable results section for S2-A5.',
+    links:[]
+  },
+  {
+    id:'B10',done:false,critical:true,effort:'1–2 weeks',unlocks:['outreach wk 6'],
+    title:'Personal site — 1-pager minimum',
+    notes:'Hard target: week 4. Just needs to be live with three things: demo link, writing link, contact.',
+    detail:'The 1-pager is not a portfolio — it is a landing page for outreach. Minimum content: link to the legal-tech-debt demo (B6), link to published articles, email contact. Does not need to be polished. It needs to be live. The full site with project writeups, about section, and additional work can follow in weeks 5–8.',
+    links:[]
+  },
 ];
 
-const STATUS_LABEL = {write:'write now',editing:'editing',read:'read first',blocked:'blocked',never:'not yet'};
-const STATUS_CLASS = {write:'bw',editing:'br',read:'br',blocked:'bb',never:'bg'};
+const STATUS_LABEL = {write:'write now',editing:'editing',read:'read first',blocked:'blocked',never:'not yet',done:'done'};
+const STATUS_CLASS = {write:'bw',editing:'br',read:'br',blocked:'bb',never:'bg',done:'bd'};
 
 function makeArticle(a) {
   const bc = STATUS_CLASS[a.status];
@@ -527,8 +617,9 @@ function makeArticle(a) {
   const claimsHtml = a.claims.map(c=>`<li>${c}</li>`).join('');
   const blockerHtml = a.blocker ? `<div class="blocker-box"><strong>Blocker:</strong> ${a.blocker}</div>` : '';
   const notesHtml = a.notes ? `<div class="ab-sec"><div class="ab-lbl">Notes</div><div class="ab-txt">${a.notes}</div></div>` : '';
+  const doneClass = a.status === 'done' ? ' is-done' : '';
   return `
-<div class="art-card">
+<div class="art-card${doneClass}">
   <div class="art-hdr" onclick="this.parentElement.classList.toggle('open')">
     <span class="art-badge ${bc}">${bl}</span>
     <div class="art-meta">
@@ -565,19 +656,36 @@ function makeArticle(a) {
 
 function makeBuild(b) {
   const crit = b.critical ? '<span class="crit-badge">critical path</span>' : '';
+  const doneTag = b.done ? '<span class="done-badge">&#10003; done</span>' : '';
   const unlocks = b.unlocks.map(u=>`<span style="display:inline-block;margin-right:4px">${u}</span>`).join('');
+  const linksHtml = b.links.length ? `<div class="build-links">${b.links.map(l=>`<a class="build-link" href="${l.url}" target="_blank" rel="noopener">&#8599; ${l.text}</a>`).join('')}</div>` : '';
+  const doneClass = b.done ? ' is-done' : '';
   return `
-<div class="build-item">
-  <div class="build-id">${b.id}</div>
-  <div>
-    <div class="build-name">${b.title}</div>
-    <div class="build-sub">${b.notes}</div>
-    <div class="build-unlocks">&#8594; unlocks: ${unlocks}</div>
-    ${crit}
+<div class="build-card${doneClass}">
+  <div class="build-hdr" onclick="this.parentElement.classList.toggle('open')">
+    <div class="build-id">${b.id}</div>
+    <div>
+      <div class="build-name">${b.title}</div>
+      <div class="build-sub">${b.notes}</div>
+      <div class="build-unlocks">&#8594; unlocks: ${unlocks}</div>
+      ${crit}${doneTag}
+    </div>
+    <div class="build-effort">
+      <div class="build-effort-val">${b.effort}</div>
+      <div class="build-effort-lbl">est. effort</div>
+      <div style="font-size:11px;color:var(--dim);margin-top:6px;text-align:right">&#9654;</div>
+    </div>
   </div>
-  <div class="build-effort">
-    <div class="build-effort-val">${b.effort}</div>
-    <div class="build-effort-lbl">est. effort</div>
+  <div class="build-body">
+    <div class="build-body-inner">
+      <div>
+        <div class="ab-lbl">Detail</div>
+        <div class="ab-txt" style="margin-top:4px">${b.detail}</div>
+      </div>
+      <div>
+        ${linksHtml}
+      </div>
+    </div>
   </div>
 </div>`;
 }
