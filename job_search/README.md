@@ -2,6 +2,7 @@
 
 Quick start doc: [../HOW_TO_RUN_JOB_SEARCH.md](../HOW_TO_RUN_JOB_SEARCH.md)
 Ledger doc: [../HOW_TO_USE_SEARCH_LEDGER.md](../HOW_TO_USE_SEARCH_LEDGER.md)
+Deep-dive workflow: [DEEP_DIVE_WORKFLOW.md](DEEP_DIVE_WORKFLOW.md)
 
 Manual one-shot search tooling for preferred roles.
 
@@ -11,11 +12,13 @@ This is meant to produce a shortlist you can review later, not to auto-apply.
 
 The runner:
 - searches several job boards through `python-jobspy`
-- uses search strings tuned for C++ / simulation / systems roles
-- prefers `c plus plus` phrasing because many search systems handle `C++` poorly
+- uses search strings tuned for Applied AI Systems Engineer roles
+- searches overlapping AI title variants because the market has not settled on one canonical job title
 - de-dupes results against existing application posting URLs already recorded in this repo
 - records surfaced jobs into the search ledger
 - writes a markdown shortlist and a CSV file to `job_search/output/`
+
+The runner does not make final fit decisions. Use the deep-dive workflow after a run to follow posting links, capture compensation, classify current fit versus future roles, and extract resume implications.
 
 ## Why Google Is Included Carefully
 
@@ -35,6 +38,8 @@ If results are weak, tune the `google_search_term_template` values in `search_pr
   WSL-friendly wrapper that bootstraps the virtual environment if needed.
 - `record_decisions.py`
   Ledger update helper for `applied`, `dismissed`, and `saved` decisions.
+- `DEEP_DIVE_WORKFLOW.md`
+  Manual review workflow for turning a raw shortlist into fit buckets, compensation notes, and resume-positioning guidance.
 - `ledger/`
   Machine-managed search ledger state and summary files.
 - `output/`
@@ -53,6 +58,7 @@ Optional flags:
 
 ```bash
 ./job_search/run_search.sh --max-searches 2 --results-per-query 5
+./job_search/run_search.sh --dry-run --max-searches 2 --results-per-query 5
 ```
 
 Useful options:
@@ -64,6 +70,8 @@ Useful options:
   Override the posting-age window.
 - `--sites linkedin,indeed`
   Restrict the job boards used for a run.
+- `--dry-run` / `--no-ledger`
+  Write markdown and CSV reports without recording surfaced jobs in the search ledger.
 
 ## Output
 
@@ -71,16 +79,27 @@ Each run writes:
 - a markdown review list
 - a CSV export of ranked results
 
+Normal runs also record surfaced jobs into `ledger/` for duplicate suppression.
+Dry runs do not mutate the ledger.
+
 The markdown file groups results into:
 - `Apply First`
 - `Review`
 - `Low Priority`
+
+These buckets are heuristic only. For strategic review, run the deep-dive workflow and classify roles as:
+- strong current target
+- current/stretch target
+- future/stretch market signal
+- dismiss/archive
+- noisy/unverified
 
 Each entry includes:
 - company
 - title
 - location
 - site(s)
+- salary/hourly range when available from the source
 - posting URL
 - brief match reasons
 
@@ -89,3 +108,5 @@ Each entry includes:
 - Existing applications are de-duped by normalized posting URL from `applications/*/job_description.md`.
 - The ranking is heuristic and intentionally conservative.
 - This is a search triage tool, not a final decision-maker.
+- If compensation is `Not listed`, open the posting or company careers page during review and capture any salary/hourly range found there.
+- Do not record ledger decisions during a deep dive unless the user explicitly asks.

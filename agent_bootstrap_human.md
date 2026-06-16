@@ -6,8 +6,8 @@ This document explains the compact agent bootstrap layer and how it should be ma
 
 The repository now uses a layered context model for agents:
 
-1. [AGENTS.md](../AGENTS.md) is the single entry point.
-2. [AGENT_BOOTSTRAP_COMPACT.md](../AGENT_BOOTSTRAP_COMPACT.md) is the compact machine-facing bootstrap context.
+1. [AGENTS.md](AGENTS.md) is the single entry point.
+2. [AGENT_BOOTSTRAP_COMPACT.md](AGENT_BOOTSTRAP_COMPACT.md) is the compact machine-facing bootstrap context.
 3. The fuller policy and candidate docs remain available as source material.
 
 The goal is to let agents load only the minimum durable context needed at startup while still keeping a human-readable explanation in the repo.
@@ -20,6 +20,28 @@ Company monitoring follows the same layered approach:
 - `company_watchlist.md` is for employers Dorian wants to revisit before applying
 - `master_tracker.md` is for actual applications
 - `job_search/ledger/` is for machine-managed search bookkeeping
+
+## Current Positioning Paradigm
+
+As of 2026-06-16, the primary job-search identity is:
+
+> Applied AI Systems Engineer
+
+This replaces the earlier simulation/C++-first positioning as the default identity. The older systems, C++, simulation, graphics, and real-time systems vector remains useful technical depth, but it is secondary unless a role directly calls for that background.
+
+The new default story is:
+
+> A systems-oriented software engineer moving into applied AI systems for document-heavy, compliance-sensitive workflows, with emphasis on traceability, validation, deterministic boundaries, human review, and audit-ready evidence.
+
+The preferred voice explains this by following the positive pattern rather than defining Dorian by what he is not. A good short version is:
+
+> I build systems that turn messy domain material into structured, reviewable evidence. Right now, AI is becoming part of that system.
+
+Agents should not overclaim. Dorian should not be presented as a finished ML researcher, production LLM platform veteran, lawyer, compliance officer, or legal-domain authority. The honest current stage is a transition/proof-building phase backed by:
+- WindowConfigurator/RenoNerd as emerging production-minded .NET configurator evidence, not production-adjacent yet
+- legal-tech-debt as applied AI/document intelligence prototype evidence
+- Areva as early compliance-sensitive reporting automation evidence
+- SED Systems as the origin of mission/system discipline
 
 ## Why This Exists
 
@@ -38,14 +60,14 @@ The compact bootstrap is meant to solve that by keeping the default startup cont
 
 Every agent should:
 
-1. read [AGENTS.md](../AGENTS.md)
-2. read [AGENT_BOOTSTRAP_COMPACT.md](../AGENT_BOOTSTRAP_COMPACT.md)
+1. read [AGENTS.md](AGENTS.md)
+2. read [AGENT_BOOTSTRAP_COMPACT.md](AGENT_BOOTSTRAP_COMPACT.md)
 3. read only the specific detailed source docs needed for the active task
 
 Examples:
-- For a cover letter, read the compact bootstrap plus [COVER_LETTER_RULES.md](../COVER_LETTER_RULES.md).
-- For role triage, read the compact bootstrap plus [ROLE_EVAL_CHECKLIST.md](../ROLE_EVAL_CHECKLIST.md).
-- For recruiter replies, read the compact bootstrap plus [RECRUITER_RESPONSE_RULES.md](../RECRUITER_RESPONSE_RULES.md).
+- For a cover letter, read the compact bootstrap plus [COVER_LETTER_RULES.md](COVER_LETTER_RULES.md).
+- For role triage, read the compact bootstrap plus [ROLE_EVAL_CHECKLIST.md](ROLE_EVAL_CHECKLIST.md).
+- For recruiter replies, read the compact bootstrap plus [RECRUITER_RESPONSE_RULES.md](RECRUITER_RESPONSE_RULES.md).
 
 As part of the default application workflow, agents should also preserve the exact job posting URL in the application's `job_description.md` before drafting. That URL is part of the UI audit trail.
 
@@ -53,16 +75,19 @@ For search bookkeeping, agents should treat the machine-managed search ledger an
 - `job_search/ledger/` for duplicate suppression and fast decision logging
 - `master_tracker.md` for supervised/manual application logging
 
+For search-result analysis, agents should use [job_search/DEEP_DIVE_WORKFLOW.md](job_search/DEEP_DIVE_WORKFLOW.md) when the user asks to follow links, classify surfaced jobs, compare current fit against future/stretch roles, capture compensation, or extract resume implications. This keeps the deep-dive step separate from the raw search runner and from ledger decision updates.
+
 ## Source Of Truth
 
 The compact bootstrap is a distilled mirror of these source files:
 
-- [JOB_HUNT_CONTEXT.md](../JOB_HUNT_CONTEXT.md)
-- [COVER_LETTER_RULES.md](../COVER_LETTER_RULES.md)
-- [ROLE_EVAL_CHECKLIST.md](../ROLE_EVAL_CHECKLIST.md)
-- [RECRUITER_RESPONSE_RULES.md](../RECRUITER_RESPONSE_RULES.md)
-- [RESUME_BULLET_RULES.md](../RESUME_BULLET_RULES.md)
-- [APPLICATION_WORKFLOW.md](../APPLICATION_WORKFLOW.md)
+- [JOB_HUNT_CONTEXT.md](JOB_HUNT_CONTEXT.md)
+- [current_strategy.md](current_strategy.md)
+- [COVER_LETTER_RULES.md](COVER_LETTER_RULES.md)
+- [ROLE_EVAL_CHECKLIST.md](ROLE_EVAL_CHECKLIST.md)
+- [RECRUITER_RESPONSE_RULES.md](RECRUITER_RESPONSE_RULES.md)
+- [RESUME_BULLET_RULES.md](RESUME_BULLET_RULES.md)
+- [APPLICATION_WORKFLOW.md](APPLICATION_WORKFLOW.md)
 
 The compact file should not become the only place where meaning lives. It is a compressed operational summary.
 
@@ -74,6 +99,7 @@ Keep in the compact file:
 - role hierarchy summary
 - truth constraints
 - default workflow
+- search deep-dive trigger and ledger boundary
 - critical recordkeeping requirements like preserving the exact posting URL
 - company watchlist checks for employers Dorian wants to revisit
 - short reminders about tone and strategy
@@ -90,7 +116,7 @@ Do not put in the compact file:
 
 Whenever any agent changes underlying meaning in the source context, that agent should update:
 - the relevant source context file(s)
-- [AGENT_BOOTSTRAP_COMPACT.md](../AGENT_BOOTSTRAP_COMPACT.md)
+- [AGENT_BOOTSTRAP_COMPACT.md](AGENT_BOOTSTRAP_COMPACT.md)
 - this file
 
 This includes changes to:

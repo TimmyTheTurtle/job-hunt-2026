@@ -1,574 +1,170 @@
-# Job Search Operating System (C++ Simulation / Systems / Game / Defense Track)
+# Job Search Operating System (Applied AI Systems Engineer Track)
 
 ## Purpose
 
-A **repeatable, low-noise system** to:
+A repeatable, low-noise system to:
 
-* Satisfy UI compliance (Michigan)
-* Land a ≥$80k C++ role that **compounds toward simulation mastery**
-* Perform **market reconnaissance for course correction**
-* Preserve time for **C++ training + simulation/game development**
+- satisfy UI compliance in Michigan
+- pursue roles aligned with the Applied AI Systems Engineer identity
+- support employer outreach and market reconnaissance
+- preserve learning/building time for portfolio proof
 
----
+This is not an application-volume system. It is an identity, evidence, and market-learning system that still keeps compliance handled.
 
-# Core Identity
+## Core Identity
 
-Do NOT position as:
+Primary one-liner:
 
-* "Indie Game Developer"
+> Applied AI Systems Engineer
 
-Position as:
+Working definition:
 
-* C++ Simulation Engineer
-* Systems Engineer (Real-Time / Interactive)
-* Graphics & Simulation Developer
+> A systems-oriented software engineer building applied AI systems for document-heavy, compliance-sensitive workflows, with emphasis on traceability, validation, deterministic boundaries, human review, and audit-ready evidence.
 
-Core identity:
+Do not position Dorian as:
 
-> Systems-first engineer who builds and debugs complex, emergent simulations
+- an ML researcher
+- a prompt engineer as the whole identity
+- a lawyer or compliance officer
+- a production LLM platform veteran
+- a generic AI enthusiast
 
----
+Honest stage:
 
-# Core Principles
+> Transition/proof-building. The direction is real and supported by current projects, but employer-facing claims should stay grounded in evidence.
 
-* Apply with intent, not volume
-* Separate roles by purpose (A/B/C)
-* No binary resume churn (current resume = v0.7 stable)
-* Timebox job search
-* Log everything (audit-ready)
-* Protect training time at all costs
+## Evidence Base
 
----
+Use these projects as the current identity anchors:
 
-# Strategic Career Path
+- `legal-tech-debt`: applied AI/document intelligence prototype work, including legal/compliance document ingestion, source provenance, evidence modeling, deterministic detectors, LLM-assisted triage, and human-reviewable outputs.
+- `renonerd/WindowConfigurator`: emerging production-minded .NET configurator evidence, including domain-constrained CPQ/configuration behavior, validation/pricing direction, APIs/integration planning, and business workflow design. Do not present it as production-adjacent yet.
+- Areva: early compliance-sensitive reporting automation experience.
+- SED Systems: systems discipline, mission context, and exactness around technical workflows.
 
-systems C++ → simulation → real-time systems → autonomy → AI
+The point is not "AI magic." The point is engineering around ambiguity, evidence, workflow, validation, and review.
 
-Game development is NOT separate:
+## Strategic Career Path
 
-> Build a simulation platform that can also become a game
+Old default path:
 
----
+> systems C++ -> simulation -> real-time systems -> autonomy -> AI
 
-# Role Taxonomy
+New default path:
 
-| Tier                    | Purpose                     | Outcome               |
-| ----------------------- | --------------------------- | --------------------- |
-| **A – Target**          | Landable, compounding roles | Interviews / offers   |
-| **B – Stretch / Recon** | Above-level calibration     | Skill gap clarity     |
-| **C – Compliance**      | UI maintenance              | Eligibility preserved |
+> systems software + domain workflows + compliance/document experience -> applied AI systems -> document intelligence and evidence workflows -> production-minded AI engineering
 
----
+C++, simulation, graphics, and real-time systems remain valuable secondary depth. Use them when a role directly calls for that background, not as the default story.
 
-# Weekly Budget
+## Role Taxonomy
 
-* Applications: **4–5 total**
-* Search time: **≤ 1 hour per session**
-* Training: **non-negotiable priority**
+| Tier | Purpose | Good Examples |
+| --- | --- | --- |
+| A - Primary | Direct identity fit | Applied AI Systems Engineer, AI Solutions Engineer, LLM/RAG Engineer, Document Intelligence Engineer, AI Workflow Automation Engineer |
+| B - Adjacent | Strong bridge roles | Software Engineer - AI Systems, Solutions/Implementation Engineer with real engineering ownership, Compliance AI Engineer, Legal AI Engineer, workflow automation/platform roles |
+| C - Compliance/Stability | UI and runway | General software, .NET/C#, SaaS, business systems, implementation roles that are quick to evaluate and defensible to apply to |
 
----
+## Tier A Signals
 
-# Tier A — Target Roles (Primary Path)
+Prioritize roles that mention:
 
-## Goal
+- applied AI systems
+- LLM workflows, RAG, retrieval, vector search, or semantic search
+- document intelligence, document automation, extraction, review, or evidence workflows
+- traceability, auditability, human-in-loop review, and future eval/quality-gate work once hands-on evidence exists
+- legal, compliance, insurance, regulatory, financial, healthcare, or other document-heavy domains
+- software ownership rather than only chatbot prompt tuning
 
-Secure a role that:
+## Tier B Signals
 
-* Uses C++
-* Involves simulation / real-time / performance
-* Pays ≥ $80k
-* Reinforces your simulation trajectory
+Consider roles that do not have the perfect title but build the same direction:
 
-## Game Compatibility
+- workflow automation
+- integrations and APIs
+- implementation engineering with real code ownership
+- data/document pipelines
+- C#/.NET SaaS engineering
+- platform or internal-tools roles in compliance-heavy environments
+- systems/simulation roles with meaningful technical depth
 
-**High** — directly supports your simulation/game engine work
+## Skip Or Deprioritize Signals
 
-## Target Titles
+Usually skip:
 
-* Simulation Engineer
-* Simulation Software Engineer
-* Modeling & Simulation Engineer
-* Engine Programmer
-* Graphics / Rendering Engineer
-* Physics / Systems Engineer
-* Systems Software Engineer
-* Real-Time Software Engineer
-* Simulation Tools Engineer
+- pure prompt engineer roles with no software/system ownership
+- AI content QA, labeling, or annotation as the main job
+- pure ML research roles requiring advanced research credentials
+- sales-heavy or customer-success-heavy AI roles
+- legal/compliance authority roles where Dorian would be expected to provide expert regulatory judgment
+- generic CRUD roles with no useful AI, workflow, compliance, document, or systems-depth value unless needed for compliance/runway
 
----
+## Weekly Operating Loop
 
-## Dice-Compatible Search Strings
+1. Run the search tool with the current Applied AI profile.
+2. Triage results into A/B/C based on identity fit and compliance value.
+3. Check salary/hourly range in the generated report; when missing, open the posting or company page before deciding.
+4. For named companies, check direct careers pages and update `company_watchlist.md` when there is a public hiring signal.
+5. Apply only when the role is defensible and the exact posting URL can be recorded.
+6. Preserve search bookkeeping in `job_search/ledger/`; update `master_tracker.md` only for actual applications.
 
-simulation engineer c plus plus
-simulation software engineer c plus plus
-modeling simulation engineer c plus plus
-engine programmer c plus plus
-graphics engineer c plus plus
-rendering engineer c plus plus
-physics systems engineer c plus plus
-real time software engineer c plus plus
-systems software engineer c plus plus
-simulation tools engineer c plus plus
+## Search Strings
 
----
+Use overlapping title language because the market has not standardized this career path:
 
-## Good Signals
+```text
+"applied AI" "systems engineer"
+"AI systems engineer"
+"AI solutions engineer" LLM workflow automation
+"LLM" "RAG" engineer document intelligence
+"document intelligence" engineer
+"AI" "workflow automation" engineer
+"legal AI" engineer document automation
+"compliance" "AI engineer"
+"software engineer" "AI systems"
+"software engineer" "workflow automation"
+```
 
-* simulation
-* real-time
-* physics
-* modeling
-* performance
-* rendering
-* systems
+## Portfolio Strategy
 
-## Skip Signals
+The portfolio should make the identity legible:
 
-* CRUD
-* REST APIs only
-* business workflows
-* enterprise forms
+- one document-heavy AI workflow
+- clear source provenance
+- structured extraction or evidence modeling
+- deterministic validation boundaries
+- visible human-review checkpoints
+- simple eval or quality-gate story
+- honest notes about what is prototype, what is deterministic, and what is LLM-assisted
 
----
+The strongest portfolio message is:
 
-## What You Extract
+> I build AI-adjacent systems that remain inspectable, bounded, and useful in real workflows.
 
-* Expected C++ depth
-* Tooling and frameworks
-* Performance expectations
-* Missing skills to prioritize
+## Resume Discipline
 
----
+Do not revise the resume just because the identity has changed.
 
-# Tier B — Stretch / Recon (Calibration)
+Revise only after:
 
-## Goal
+- enough role-market research confirms the language employers use
+- portfolio evidence is ready to support the claim
+- several high-signal postings show a stable pattern
+- interview feedback suggests a specific messaging gap
 
-Understand:
+## Hard Rules
 
-* What elite simulation roles require
-* Where your trajectory is heading
-* What to study next
+- Prefer narrower defensible claims over broader impressive claims.
+- Do not fabricate domain authority, credentials, production AI ownership, or legal/compliance expertise.
+- Do not let job search replace skill-building.
+- Do not chase every AI role; chase roles where engineering judgment matters.
+- Treat compliance as necessary, but not as the strategy.
 
-## Game Compatibility
-
-**Very High (conceptual)**
-
----
-
-## Target Titles
-
-* Computational Software Engineer
-* Scientific Computing Engineer
-* HPC Software Engineer
-* Autonomous Systems Engineer
-* Robotics Software Engineer
-* UAV Software Engineer
-* ADAS Software Engineer
-
----
-
-## Dice-Compatible Search Strings
-
-computational software engineer simulation
-scientific computing engineer c plus plus
-high performance computing software engineer
-autonomous systems engineer c plus plus
-robotics software engineer c plus plus
-uav software engineer c plus plus
-adas software engineer simulation
-
----
-
-## What You Look For
-
-* PDEs
-* numerical methods
-* solvers
-* parallelization
-* distributed systems
-* robotics frameworks
-
----
-
-## What You Extract
-
-* Vocabulary of the field
-* Required math depth
-* Missing knowledge areas
-* Ideas for simulation project extensions
-
----
-
-# Tier C — Compliance Roles (UI Maintenance)
-
-## Goal
-
-* Maintain unemployment eligibility
-* Demonstrate active job search
-* Minimize time spent
-
-## Game Compatibility
-
-**Neutral**
-
----
-
-## Dice-Compatible Search Strings
-
-software engineer c plus plus
-junior software developer c plus plus
-entry level software engineer c plus plus
-systems developer c plus plus
-software developer detroit
-
----
-
-## Rules
-
-* < 10 minutes per application
-* No heavy customization
-* No emotional investment
-
----
-
-# Optional Track — Canadian Defense / Autonomy
-
-## Goal
-
-Leverage:
-
-* Prior Secret clearance
-* Systems experience
-* Interest in drones / AI
-
-## Game Compatibility
-
-**Very High**
-
----
-
-## Target Titles
-
-* Autonomous Systems Engineer
-* Robotics Software Engineer
-* UAV Software Engineer
-* Defense Simulation Engineer
-* Sensor Fusion Engineer
-
----
-
-## Dice-Compatible Search Strings
-
-autonomous systems engineer c plus plus canada
-robotics software engineer c plus plus canada
-uav software engineer c plus plus canada
-defense simulation engineer canada c plus plus
-modeling simulation engineer defense canada
-sensor fusion engineer c plus plus canada
-
----
-
-## What You’re Looking For
-
-* real-time systems
-* robotics / autonomy
-* simulation environments
-* sensor integration
-
----
-
-# Portfolio Strategy
-
-Use your simulation project as a **career accelerator**.
-
-## Required Artifacts
-
-* Demo videos (**critical**)
-* GitHub repository (clean architecture)
-* Technical writeups
-
-## Key Demonstration Areas
-
-* Multi-layer simulation
-* Control systems (logic, thresholds)
-* Emergent behavior
-* Debugging tools and overlays
-* Performance instrumentation
-
----
-
-# Contracting Strategy (Future Phase)
-
-Focus on niche specialization:
-
-* Simulation systems
-* Performance optimization
-* Engine architecture
-* Rendering / visualization
-* Debugging complex failures
-
-Goal:
-
-> Become the engineer called when systems stop behaving correctly
-
----
-
-# Decision Matrix
-
-| Situation                        | Action                      |
-| -------------------------------- | --------------------------- |
-| Strong simulation/system signals | Apply (Tier A)              |
-| Too advanced but interesting     | Save or apply (Tier B)      |
-| Low signal but quick apply       | Use for compliance (Tier C) |
-| Pure business / CRUD             | Skip                        |
-
----
-
-# Weekly Execution Loop
-
-## Monday
-
-* Tier A search
-* Apply to 2 roles
-
-## Wednesday
-
-* Tier B reconnaissance
-* Apply to 1 role
-
-## Friday
-
-* Tier C compliance
-* Apply to 1–2 roles
-
----
-
-# Hard Rules
-
-* Do not scroll endlessly
-* Do not over-customize resumes
-* Do not chase perfect matches
-* Do not let job search replace training
-
----
-
-# What Actually Matters
-
-Your long-term success depends on:
-
-* mastering C++ deeply
-* building simulation artifacts
-* understanding system behavior
-* debugging complex interactions
-
----
-
-# Resume Discipline
-
-Current resume:
-
-> v0.7 (stable)
-
-Do NOT modify until:
-
-* major project milestone complete
-* or consistent interview feedback received
-
----
-
-# End State
+## End State
 
 A controlled job search that:
 
-* satisfies UI requirements
-* builds market awareness
-* reinforces your simulation trajectory
-* preserves focus on real skill development
-
-Perfect.
-This is where things start to compound.
-
-You don’t need 1,000 job postings.
-You need **20–40 high-signal companies** in the ecosystems you care about.
-
-I’m going to give you a **curated target list**, organized by how well they align with your A + B + C trajectory:
-
-* A = Space systems modeling
-* B = Computational physics
-* C = Distributed simulation
-
----
-
-# 🚀 🛰️ Tier 1 — Direct Alignment (Apply + Monitor Closely)
-
-These are **high-value targets** for your trajectory.
-
-## Space / Satellite / Constellation (A + C)
-
-* Iridium Communications
-* Planet Labs
-* Maxar Technologies
-* Rocket Lab
-* Blue Origin
-* SpaceX
-* Relativity Space
-* Sierra Space
-
-👉 These companies deal with:
-
-* Constellations
-* Orbital modeling
-* Network simulation
-* Real system constraints
-
----
-
-## Defense / Modeling / Simulation (A + B + C)
-
-* Booz Allen Hamilton
-* MITRE
-* The Aerospace Corporation
-* Leidos
-* Northrop Grumman
-* Lockheed Martin
-* Raytheon Technologies
-
-👉 These are where:
-
-* Real modeling work happens
-* Trade studies matter
-* Simulation is mission-critical
-
----
-
-# 🧠 Tier 2 — Strong Simulation / Engineering Signal (Very Good Targets)
-
-## Simulation Software / Engineering Tools (B)
-
-* Ansys
-* MathWorks
-* Altair Engineering
-* COMSOL
-
-👉 These companies:
-
-* Build the tools simulation engineers use
-* Value numerical thinking
-* Care about modeling correctness
-
----
-
-## Robotics / Autonomy Simulation (B + C)
-
-* Aurora Innovation
-* Zoox
-* Nuro
-* Boston Dynamics
-
-👉 These roles often involve:
-
-* Simulation environments
-* Sensor modeling
-* Distributed systems behavior
-
----
-
-# 🔧 Tier 3 — Hidden Gems (Lower Competition, Good Entry Points)
-
-## Industrial / Digital Twin / Infrastructure
-
-* Siemens
-* GE Aerospace
-* Schneider Electric
-
-👉 These often have:
-
-* Modeling teams
-* Simulation infrastructure
-* Less flashy hiring pipelines
-
----
-
-## Space Startups / Mid-Tier
-
-* Spire Global
-* BlackSky
-* Capella Space
-
-👉 These are often:
-
-* More accessible
-* More hands-on
-* Faster-moving
-
----
-
-# 🎯 How to Use This List (Important)
-
-Don’t mass apply.
-
-Instead:
-
-## Weekly Workflow
-
-1. Pick 5 companies
-2. Go directly to their careers page
-3. Search:
-
-   * “simulation”
-   * “modeling”
-   * “systems”
-   * “C++”
-4. Apply to **1–3 high-quality roles**
-5. Log everything in your repo
-
----
-
-# 🔍 Search Strategy (Refined for You)
-
-Use queries like:
-
-```
-"modeling and simulation" C++
-"physics simulation engineer"
-"systems modeling engineer"
-"computational modeling C++"
-"real-time simulation engineer"
-```
-
-Avoid:
-
-```
-ADAS
-embedded ECU
-controls PLC
-```
-
----
-
-# 🧠 Final Strategic Insight
-
-You are building:
-
-> A *network of companies* aligned with your future identity.
-
-Not chasing postings.
-
-This is how you move from:
-
-❌ reacting to job boards
-→
-✅ navigating an ecosystem
-
----
-
-# 🚀 If You Want Next
-
-I can:
-
-* Rank these companies by **best entry probability for you**
-* Or identify **specific roles currently open that match your 2–4 month trajectory**
-* Or build a **weekly execution plan tied to your simulation project**
-
-You’ve crossed an important threshold here.
+- satisfies UI requirements
+- makes the Applied AI Systems Engineer identity coherent
+- gathers market evidence about real role language
+- uses current projects as proof instead of aspiration
+- preserves runway and learning time

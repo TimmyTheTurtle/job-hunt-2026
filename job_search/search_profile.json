@@ -1,5 +1,5 @@
 {
-  "profile_name": "preferred_cpp_roles_v1",
+  "profile_name": "applied_ai_systems_v1",
   "default_sites": [
     "linkedin",
     "indeed",
@@ -27,51 +27,63 @@
   "searches": [
     {
       "tier": "A",
-      "label": "simulation engineer",
-      "search_term": "simulation engineer",
-      "google_search_term_template": "simulation engineer c plus plus jobs {google_location_phrase}"
+      "label": "applied ai systems engineer",
+      "search_term": "\"applied ai\" \"systems engineer\"",
+      "google_search_term_template": "applied AI systems engineer jobs {google_location_phrase}"
     },
     {
       "tier": "A",
-      "label": "simulation software engineer",
-      "search_term": "simulation software engineer",
-      "google_search_term_template": "simulation software engineer c plus plus jobs {google_location_phrase}"
+      "label": "ai systems engineer",
+      "search_term": "\"ai systems engineer\"",
+      "google_search_term_template": "AI systems engineer LLM RAG jobs {google_location_phrase}"
     },
     {
       "tier": "A",
-      "label": "modeling and simulation engineer",
-      "search_term": "modeling and simulation engineer",
-      "google_search_term_template": "modeling and simulation engineer c plus plus jobs {google_location_phrase}"
+      "label": "ai solutions engineer",
+      "search_term": "\"AI solutions engineer\"",
+      "google_search_term_template": "AI solutions engineer LLM workflow automation jobs {google_location_phrase}"
     },
     {
       "tier": "A",
-      "label": "systems software engineer",
-      "search_term": "systems software engineer",
-      "google_search_term_template": "systems software engineer c plus plus jobs {google_location_phrase}"
+      "label": "llm rag engineer",
+      "search_term": "\"LLM\" \"RAG\" engineer",
+      "google_search_term_template": "LLM RAG engineer document intelligence jobs {google_location_phrase}"
     },
     {
       "tier": "A",
-      "label": "real time software engineer",
-      "search_term": "real time software engineer",
-      "google_search_term_template": "real time software engineer c plus plus jobs {google_location_phrase}"
+      "label": "document intelligence engineer",
+      "search_term": "\"document intelligence\" engineer",
+      "google_search_term_template": "document intelligence engineer AI jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
+      "label": "ai workflow automation engineer",
+      "search_term": "\"AI\" \"workflow automation\" engineer",
+      "google_search_term_template": "AI workflow automation engineer jobs {google_location_phrase}"
     },
     {
       "tier": "B",
-      "label": "hpc software engineer",
-      "search_term": "hpc software engineer",
-      "google_search_term_template": "hpc software engineer c plus plus jobs {google_location_phrase}"
+      "label": "legal ai engineer",
+      "search_term": "\"legal AI\" engineer",
+      "google_search_term_template": "legal AI engineer document automation jobs {google_location_phrase}"
     },
     {
       "tier": "B",
-      "label": "scientific computing engineer",
-      "search_term": "scientific computing engineer",
-      "google_search_term_template": "scientific computing engineer c plus plus jobs {google_location_phrase}"
+      "label": "compliance ai engineer",
+      "search_term": "\"compliance\" \"AI engineer\"",
+      "google_search_term_template": "compliance AI engineer automation jobs {google_location_phrase}"
+    },
+    {
+      "tier": "B",
+      "label": "software engineer ai systems",
+      "search_term": "\"software engineer\" \"AI systems\"",
+      "google_search_term_template": "software engineer AI systems LLM jobs {google_location_phrase}"
     },
     {
       "tier": "C",
-      "label": "software engineer c plus plus",
-      "search_term": "\"software engineer\" \"c plus plus\" -javascript -java -python",
-      "google_search_term_template": "software engineer c plus plus jobs {google_location_phrase}"
+      "label": "software engineer workflow automation",
+      "search_term": "\"software engineer\" \"workflow automation\"",
+      "google_search_term_template": "software engineer workflow automation SaaS integration jobs {google_location_phrase}"
     }
   ]
 }

@@ -42,12 +42,19 @@ CYBERCODERS_JOB_BASE_URL = "https://www.cybercoders.com/job/"
 CYBERCODERS_BUSINESS_UNIT = "1"
 
 POSITIVE_TITLE_PATTERNS = [
+    (re.compile(r"\bai\b|\bartificial intelligence\b"), 4, "ai"),
+    (re.compile(r"\bllm\b|\blarge language model"), 4, "llm"),
+    (re.compile(r"\brag\b|\bretrieval[ -]?augmented\b"), 4, "rag"),
+    (re.compile(r"\bdocument intelligence\b"), 4, "document intelligence"),
+    (re.compile(r"\bautomation\b|\bworkflow\b"), 3, "workflow automation"),
+    (re.compile(r"\bsolutions?\b"), 2, "solutions"),
     (re.compile(r"\bsoftware\b"), 2, "software"),
     (re.compile(r"\bdeveloper\b"), 2, "developer"),
     (re.compile(r"\bprogrammer\b"), 2, "programmer"),
+    (re.compile(r"\bcompliance\b|\blegal\b|\bregulatory\b|\binsurance\b"), 3, "compliance domain"),
+    (re.compile(r"\bsystems?\b"), 3, "systems"),
     (re.compile(r"\bsimulation\b"), 4, "simulation"),
     (re.compile(r"\bmodel(?:ing)?\b"), 3, "modeling"),
-    (re.compile(r"\bsystems?\b"), 2, "systems"),
     (re.compile(r"\breal[ -]?time\b"), 3, "real-time"),
     (re.compile(r"\bengine\b"), 2, "engine"),
     (re.compile(r"\bgraphics?\b"), 3, "graphics"),
@@ -60,6 +67,13 @@ POSITIVE_TITLE_PATTERNS = [
 ]
 
 POSITIVE_TEXT_PATTERNS = [
+    (re.compile(r"\bllm\b|\blarge language model|\bgenerative ai\b|\bgenai\b"), 3, "llm"),
+    (re.compile(r"\brag\b|\bretrieval[ -]?augmented\b|\bvector search\b|\bsemantic search\b"), 3, "rag"),
+    (re.compile(r"\bdocument intelligence\b|\bdocument automation\b|\bdocument processing\b"), 3, "document intelligence"),
+    (re.compile(r"\bevals?\b|\bevaluation\b|\bquality gate\b|\bhuman[ -]in[ -]the[ -]loop\b"), 3, "evals"),
+    (re.compile(r"\btraceability\b|\baudit trail\b|\bevidence\b|\bgovernance\b"), 2, "traceability"),
+    (re.compile(r"\bworkflow automation\b|\bautomation\b|\bagentic\b|\bagents?\b"), 2, "workflow automation"),
+    (re.compile(r"\bcompliance\b|\blegal\b|\bregulatory\b|\binsurance\b"), 2, "compliance domain"),
     (re.compile(r"c\+\+|c plus plus|\bcpp\b"), 3, "c++"),
     (re.compile(r"\bsimulation\b"), 2, "simulation"),
     (re.compile(r"\bmodel(?:ing)?\b"), 2, "modeling"),
@@ -81,8 +95,7 @@ HARD_REJECT_TITLE_PATTERNS = [
     re.compile(r"\bmarketing\b"),
     re.compile(r"\bproduct manager\b"),
     re.compile(r"\bdata scientist\b"),
-    re.compile(r"\bmachine learning\b"),
-    re.compile(r"\bml\b"),
+    re.compile(r"\bprompt engineer\b"),
     re.compile(r"\bbusiness intelligence\b"),
     re.compile(r"\bfrontend\b"),
     re.compile(r"\bbackend\b"),
@@ -131,6 +144,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--results-per-query", type=int)
     parser.add_argument("--max-searches", type=int)
     parser.add_argument("--sites", help="Comma-separated override, e.g. google,indeed")
+    parser.add_argument(
+        "--dry-run",
+        "--no-ledger",
+        dest="dry_run",
+        action="store_true",
+        help="Write reports without recording surfaced jobs in the search ledger.",
+    )
     return parser.parse_args()
 
 
@@ -259,6 +279,72 @@ def date_to_str(value: Any) -> str:
     return text.replace("T", " ")
 
 
+def is_missing(value: Any) -> bool:
+    if value is None:
+        return True
+    try:
+        if value != value:  # NaN
+            return True
+    except TypeError:
+        pass
+    return safe_str(value).lower() in {"", "nan", "none", "null"}
+
+
+def compensation_interval(value: Any) -> str:
+    text = safe_str(value).lower()
+    if not text:
+        return ""
+    if "hour" in text:
+        return "hourly"
+    if "year" in text or "annual" in text:
+        return "yearly"
+    if "month" in text:
+        return "monthly"
+    if "week" in text:
+        return "weekly"
+    if "day" in text:
+        return "daily"
+    return text
+
+
+def format_amount(value: Any, currency: str) -> str:
+    if is_missing(value):
+        return ""
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return safe_str(value)
+
+    symbol = "$" if currency.upper() in {"", "USD"} else f"{currency.upper()} "
+    if number.is_integer():
+        return f"{symbol}{int(number):,}"
+    return f"{symbol}{number:,.2f}"
+
+
+def format_compensation(row: dict[str, Any]) -> str:
+    min_amount = row.get("min_amount")
+    max_amount = row.get("max_amount")
+    if is_missing(min_amount) and is_missing(max_amount):
+        return ""
+
+    currency = safe_str(row.get("currency")) or "USD"
+    interval = compensation_interval(row.get("interval"))
+    source = safe_str(row.get("salary_source"))
+    low = format_amount(min_amount, currency)
+    high = format_amount(max_amount, currency)
+    if low and high and low != high:
+        amount = f"{low} - {high}"
+    else:
+        amount = low or high
+
+    pieces = [amount]
+    if interval:
+        pieces.append(interval)
+    if source:
+        pieces.append(f"source: {source}")
+    return " ".join(pieces)
+
+
 def joined_items(value: Any) -> str:
     if not isinstance(value, list):
         return safe_str(value)
@@ -317,6 +403,7 @@ def cybercoders_description(job: dict[str, Any]) -> str:
 
 def cybercoders_row(job: dict[str, Any]) -> dict[str, Any]:
     remote = cybercoders_is_remote(job)
+    salary_type = safe_str(job.get("SalaryType"))
     return {
         "site": "cybercoders",
         "title": safe_str(job.get("JobTitleThirdParty")) or safe_str(job.get("jobTitle")),
@@ -329,6 +416,11 @@ def cybercoders_row(job: dict[str, Any]) -> dict[str, Any]:
         "job_url": cybercoders_job_url(job),
         "date_posted": safe_str(job.get("DatePost")),
         "is_remote": remote,
+        "interval": compensation_interval(salary_type),
+        "min_amount": safe_str(job.get("SalaryMin")),
+        "max_amount": safe_str(job.get("SalaryMax")),
+        "currency": "USD",
+        "salary_source": "cybercoders_direct",
     }
 
 
@@ -448,6 +540,7 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "location",
         "sites",
         "posted",
+        "compensation",
         "job_url",
         "query_labels",
         "reasons",
@@ -489,7 +582,11 @@ def write_markdown(
         f"- Existing application URLs known: {existing_url_count}",
         f"- Suppressed by search ledger: {ledger_info['suppressed_by_ledger']}",
         f"- Suppressed by application folders: {ledger_info['suppressed_by_applications']}",
-        f"- Ledger transaction: `{ledger_info['transaction_id']}`" if ledger_info["transaction_id"] else "- Ledger transaction: none",
+        "- Ledger transaction: dry run (not recorded)"
+        if ledger_info.get("dry_run")
+        else f"- Ledger transaction: `{ledger_info['transaction_id']}`"
+        if ledger_info["transaction_id"]
+        else "- Ledger transaction: none",
         f"- Ranked results: {len(rows)}",
         "",
     ]
@@ -510,6 +607,7 @@ def write_markdown(
             lines.append(f"- Site(s): {row['sites']}")
             if row["posted"]:
                 lines.append(f"- Posted: {row['posted']}")
+            lines.append(f"- Compensation: {row['compensation'] or 'Not listed'}")
             lines.append(f"- Query labels: {row['query_labels']}")
             lines.append(f"- Match notes: {row['reasons']}")
             lines.append(f"- Posting URL: {row['job_url']}")
@@ -570,6 +668,7 @@ def main() -> int:
                 "location": build_location(row),
                 "sites": safe_str(row.get("site")),
                 "posted": date_to_str(row.get("date_posted")),
+                "compensation": format_compensation(row),
                 "job_url": job_url or safe_str(row.get("job_url")),
                 "query_labels": spec.label,
                 "reasons": ", ".join(reasons),
@@ -617,20 +716,26 @@ def main() -> int:
             "query_labels": [item.strip() for item in row["query_labels"].split(",") if item.strip()],
             "score": row["score"],
             "recommendation": row["recommendation"],
+            "compensation": row["compensation"],
         }
         for row in ranked
         if row["job_url"]
     ]
-    ledger_result = record_transaction(
-        actor="job_search_runner",
-        kind="search_run",
-        events=ledger_events,
-        metadata={
-            "profile_name": profile["profile_name"],
-            "sites": sites,
-            "search_specs_run": len(specs),
-        },
-    ) if ledger_events else {"transaction_id": "", "event_count": 0}
+    if args.dry_run:
+        ledger_result = {"transaction_id": "", "event_count": 0, "dry_run": True}
+    elif ledger_events:
+        ledger_result = record_transaction(
+            actor="job_search_runner",
+            kind="search_run",
+            events=ledger_events,
+            metadata={
+                "profile_name": profile["profile_name"],
+                "sites": sites,
+                "search_specs_run": len(specs),
+            },
+        )
+    else:
+        ledger_result = {"transaction_id": "", "event_count": 0, "dry_run": False}
 
     timestamp = datetime.now(TIMEZONE).strftime("%Y-%m-%d_%H%M%S")
     base = output_dir / f"job_search_{timestamp}"
@@ -648,13 +753,16 @@ def main() -> int:
             "suppressed_by_ledger": suppressed_by_ledger,
             "suppressed_by_applications": suppressed_by_applications,
             "transaction_id": ledger_result["transaction_id"],
+            "dry_run": bool(ledger_result.get("dry_run")),
         },
     )
     write_csv(csv_path, ranked)
 
     print(f"Markdown report: {markdown_path}")
     print(f"CSV export: {csv_path}")
-    if ledger_result["transaction_id"]:
+    if args.dry_run:
+        print("Ledger transaction: dry run (not recorded)")
+    elif ledger_result["transaction_id"]:
         print(f"Ledger transaction: {ledger_result['transaction_id']}")
     print(f"Ranked results: {len(ranked)}")
     return 0

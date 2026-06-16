@@ -2,29 +2,35 @@
 
 intent:
 - produce honest, tactically strong, strategically coherent job-hunt materials
-- support UI compliance, runway preservation, and long-term systems/C++ growth
+- support EA/UI compliance, runway preservation, employer outreach, market research, and applied AI systems identity-building
 
 candidate_default:
-- systems-oriented software engineer
+- Applied AI Systems Engineer
+- systems-oriented software engineer moving into applied AI systems
 - practical builder
 - strong debugger
 - business-aware technical problem solver
-- growth path toward deeper C++ / simulation / systems work
+- growth path toward document intelligence, compliance-sensitive AI workflows, RAG/retrieval, future eval work, and production-minded AI boundaries
 
 positioning_preferred:
-- software engineer
-- systems engineer
-- C++ / simulation engineer
-- real-time / interactive systems developer
+- applied AI systems engineer
+- AI solutions engineer
+- LLM / RAG systems engineer
+- document intelligence engineer
+- AI workflow / automation engineer
+- software engineer, AI systems
+- compliance AI engineer when engineering-heavy
 - technical solutions / implementation engineer
-- applied software engineer
-- graphics / simulation developer
+- systems-minded software engineer
 
 positioning_avoid:
 - indie game developer
 - vague generalist hacker
 - prompt engineer
 - AI enthusiast without technical substance
+- ML researcher
+- lawyer, compliance officer, or regulatory expert
+- production LLM platform veteran
 
 contractor_pitch:
   target: AI engineering contracts in legal, compliance, insurance, and document-heavy domains
@@ -49,19 +55,29 @@ core_priorities:
 - preserve UI audit recordkeeping
 - keep machine search ledger separate from manual tracker updates
 - keep company watchlist records separate from application tracking
+- treat job-search deep dives as market research plus resume calibration, not only application triage
 - never mark `Applied` without updating application folder records, `master_tracker.md`, and ledger `decision_update`
 
 long_term_vector:
+- applied AI systems engineering
+- document intelligence
+- compliance-sensitive workflow automation
+- RAG / retrieval / structured extraction
+- future eval work and human-review gates
+- traceable evidence pipelines
+- production-minded AI boundaries
 - modern C++
 - simulation
 - graphics
 - real-time systems
 - performance-aware engineering
-- eventual HPC-caliber rigor
+- eventual deeper systems/HPC-caliber rigor as secondary technical depth
 
 usable_background:
 - SED Systems: mission ops software for CSA CASSIOPE satellite (2007–2010); secret clearance Canada, lapsed
 - Areva Resources: automated compliance reporting for Canadian government regulatory review (2004–2005)
+- legal-tech-debt: prototype AI/document intelligence evidence pipeline for insurance/legal/compliance text
+- WindowConfigurator/RenoNerd: emerging .NET CPQ/configurator work with production-minded architecture direction; not production-adjacent yet
 - RenoNerd ownership and practical delivery
 - CPQ/configuration and workflow systems
 - web deployment, IIS, Azure, plugin integration
@@ -73,10 +89,18 @@ strongest_strengths:
 - debugging
 - software engineering fundamentals
 - translating messy needs into structure
+- turning messy domain documents into structured artifacts
+- traceability, validation, schemas, and audit-ready evidence
 - independent learning
 - ownership
 - cross technical/business fluency
 - strong written reasoning
+
+identity_voice:
+- define the identity through the positive through-line, not defensive negation
+- preferred framing: Dorian keeps working in messy domains where documents, workflows, edge cases, old systems, or forgotten decisions need to become structured enough to reason about
+- short version: "I build systems that turn messy domain material into structured, reviewable evidence. Right now, AI is becoming part of that system."
+- use this for resume summaries, About Me drafts, LinkedIn copy, and portfolio language
 
 growth_areas_safe_language:
 - currently building
@@ -91,8 +115,8 @@ company_watchlist:
 - do not create an application folder unless the user actually applies
 
 role_tiers:
-- Tier 1: C++, simulation, systems, graphics, real-time, technical R&D
-- Tier 2: pragmatic software, solutions, consulting, internal tools, applied reporting
+- Tier 1: applied AI systems, LLM/RAG, document intelligence, AI workflow automation, compliance/legal/insurance AI engineering
+- Tier 2: pragmatic software, C#/.NET/SaaS, solutions, consulting, internal tools, applied reporting, systems/simulation roles with strong technical depth
 - Tier 3: temporary stabilization roles only if needed for runway/UI compliance
 
 cover_letter_rules:
@@ -135,6 +159,11 @@ default_workflow:
 6. draft materials
 7. truthfulness audit
 8. strategy audit
+
+job_search_deep_dive:
+- after a search run, use `job_search/DEEP_DIVE_WORKFLOW.md` when asked to follow links, classify surfaced roles, capture compensation, identify current vs future targets, or extract resume implications
+- do not treat generated `Apply First` buckets as final recommendations
+- do not record ledger decisions during a deep dive unless the user explicitly asks
 
 applied_status_required_artifacts:
 - applications/YYYY-MM_<company>_<role>/job_description.md

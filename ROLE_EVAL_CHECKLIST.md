@@ -16,7 +16,15 @@ Can Dorian credibly get traction here without obvious mismatch?
 
 ### 2. Learning value
 
-Will this role build skills useful for his long-term systems/C++/simulation direction?
+Will this role build skills useful for his applied AI systems direction?
+
+Strong learning value includes:
+- document intelligence
+- RAG / retrieval / structured extraction
+- workflow automation
+- evals, traceability, and quality gates
+- compliance-sensitive or document-heavy systems
+- production software boundaries around nondeterministic AI components
 
 ### 3. Runway value
 
@@ -48,6 +56,11 @@ Watch for:
 - obvious burnout environments
 - jobs that would be hard to explain as a coherent next step
 - roles requiring credentials or domain history he does not have
+- vague AI roles with no engineering ownership
+- pure prompt-writing, labeling, or content QA roles
+- pure ML research roles that expect advanced research credentials
+- compliance/legal roles that require professional authority rather than software engineering
+- sales/customer-success-heavy AI roles disguised as technical work
 
 ## Green flags
 
@@ -57,8 +70,11 @@ Prefer roles with:
 - systems complexity
 - technically serious teams
 - performance or architecture concerns
-- room to grow toward C++, simulation, infrastructure, or deeper technical work
+- room to grow toward applied AI systems, document intelligence, retrieval, workflow automation, infrastructure, or deeper technical work
 - compensation that meaningfully extends runway
+- traceability, auditability, evals, or human-in-the-loop review
+- legal, insurance, regulatory, or compliance contexts with real software ownership
+- production-minded AI boundaries rather than black-box automation
 
 ## Decision rule
 
@@ -78,7 +94,7 @@ When evaluating a role, output:
 - title
 - company
 - location
-- compensation if known
+- compensation if listed; if the generated search report says `Not listed`, open the posting or company page and check for salary/hourly range
 
 ### Scores
 
@@ -105,3 +121,14 @@ Give a short paragraph explaining the judgment.
 ### Positioning angle
 
 State the most credible angle for Dorian if applying.
+
+Default identity to test:
+
+> Applied AI Systems Engineer
+
+Use role-specific variants when useful:
+- systems-oriented software engineer moving into applied AI
+- AI workflow / automation engineer
+- document intelligence systems engineer
+- AI solutions engineer for compliance-sensitive workflows
+- production-minded software engineer with applied AI prototype evidence

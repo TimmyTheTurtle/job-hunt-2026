@@ -127,13 +127,14 @@ def materialize_state(transactions: list[dict[str, Any]]) -> dict[str, Any]:
                     "query_labels": [],
                     "score": None,
                     "recommendation": "",
+                    "compensation": "",
                     "note": "",
                     "last_actor": actor,
                     "last_transaction_id": tx_id,
                 },
             )
 
-            for field in ("job_url", "company", "title", "location", "recommendation"):
+            for field in ("job_url", "company", "title", "location", "recommendation", "compensation"):
                 value = safe_str(event.get(field))
                 if value:
                     job[field] = value
@@ -228,6 +229,8 @@ def write_summary(state: dict[str, Any]) -> None:
                 lines.append(f"- Last recommendation: {job['recommendation']}")
             if job.get("score") is not None:
                 lines.append(f"- Last score: {job['score']}")
+            if job.get("compensation"):
+                lines.append(f"- Compensation: {job['compensation']}")
             if job.get("sites"):
                 lines.append(f"- Sites: {', '.join(job['sites'])}")
             if job.get("query_labels"):
@@ -297,6 +300,7 @@ def record_transaction(
                 "query_labels": list(event.get("query_labels", [])),
                 "score": event.get("score"),
                 "recommendation": safe_str(event.get("recommendation")),
+                "compensation": safe_str(event.get("compensation")),
                 "status": status,
                 "note": safe_str(event.get("note")),
             }
@@ -321,4 +325,3 @@ def record_transaction(
         "event_count": len(normalized_events),
         "state": state,
     }
-

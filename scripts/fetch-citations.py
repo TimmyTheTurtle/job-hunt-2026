@@ -68,11 +68,28 @@ SEEDS: list[dict] = [
 
 S2_BASE = "https://api.semanticscholar.org/graph/v1"
 S2_FIELDS = "title,authors,year,externalIds,openAccessPdf,venue,abstract"
-DELAY = 1.0  # seconds between API calls — S2 free tier allows ~100 req/5 min
+DELAY = 3.0  # seconds between API calls — S2 free tier: ~100 req/5 min without key
 
 
 def s2_id_from_arxiv(arxiv_id: str) -> str:
     return f"ARXIV:{arxiv_id}"
+
+
+def _get_with_retry(session: requests.Session, url: str, params: dict, timeout: int) -> requests.Response:
+    """GET with exponential backoff on 429. Retries indefinitely up to ~10 min total wait."""
+    backoff = 15
+    for attempt in range(10):
+        resp = session.get(url, params=params, timeout=timeout)
+        if resp.status_code == 429:
+            wait = min(backoff * (2 ** attempt), 300)  # cap at 5 min
+            print(f"\n  429 rate-limited — waiting {wait}s ...", end=" ", flush=True)
+            time.sleep(wait)
+            continue
+        return resp
+    # Last attempt
+    resp = session.get(url, params=params, timeout=timeout)
+    resp.raise_for_status()
+    return resp
 
 
 def fetch_paper(s2_id: str, session: requests.Session, cache_dir: Path, force: bool) -> dict | None:
@@ -82,7 +99,7 @@ def fetch_paper(s2_id: str, session: requests.Session, cache_dir: Path, force: b
 
     url = f"{S2_BASE}/paper/{s2_id}"
     params = {"fields": S2_FIELDS}
-    resp = session.get(url, params=params, timeout=15)
+    resp = _get_with_retry(session, url, params, timeout=15)
     if resp.status_code == 404:
         return None
     resp.raise_for_status()
@@ -99,7 +116,7 @@ def fetch_references(s2_id: str, session: requests.Session, cache_dir: Path, for
 
     url = f"{S2_BASE}/paper/{s2_id}/references"
     params = {"fields": S2_FIELDS, "limit": 500}
-    resp = session.get(url, params=params, timeout=30)
+    resp = _get_with_retry(session, url, params, timeout=30)
     if resp.status_code == 404:
         return []
     resp.raise_for_status()

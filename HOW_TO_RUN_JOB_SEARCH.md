@@ -14,16 +14,18 @@ It is designed to:
 The search tool:
 - runs from WSL
 - searches selected job boards through `python-jobspy`
-- uses role queries tuned for your preferred C++ / simulation / systems direction
+- uses role queries tuned for the Applied AI Systems Engineer direction
 - de-dupes against posting URLs already recorded in this repo
 - writes a markdown shortlist and CSV export to `job_search/output/`
 
 Current default emphasis:
-- simulation engineer
-- modeling and simulation engineer
-- systems software engineer
-- real-time software engineer
-- HPC / scientific computing stretch roles
+- applied AI systems engineer
+- AI solutions engineer
+- LLM / RAG engineer
+- document intelligence engineer
+- AI workflow automation engineer
+- legal/compliance/insurance AI engineering roles
+- software engineering roles around AI systems and workflow automation
 
 ## Where It Lives
 
@@ -60,6 +62,13 @@ cd /mnt/d/Repos/job-hunt-2026
 ./job_search/run_search.sh --max-searches 2 --results-per-query 5
 ```
 
+Preview results without recording surfaced jobs in the ledger:
+
+```bash
+cd /mnt/d/Repos/job-hunt-2026
+./job_search/run_search.sh --dry-run --max-searches 2 --results-per-query 5
+```
+
 Restrict to specific sites:
 
 ```bash
@@ -87,10 +96,14 @@ It groups results into:
 - `Review`
 - `Low Priority`
 
+Normal runs record surfaced jobs in the search ledger for duplicate suppression.
+Dry runs still write markdown and CSV reports, but they do not record a ledger transaction.
+
 Each entry includes:
 - company
 - role title
 - location
+- salary/hourly range when the source exposes it
 - site source
 - posting URL
 - match notes
@@ -101,13 +114,14 @@ Recommended workflow:
 
 1. Open the newest markdown file in `job_search/output/`.
 2. Skim the `Apply First` section first.
-3. Open promising posting URLs in the browser.
-4. Record `applied`, `dismissed`, or `saved` decisions in the search ledger.
+3. For serious review, follow [the deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md): open each posting, capture compensation, classify fit, and extract resume implications.
+4. Record `applied`, `dismissed`, or `saved` decisions in the search ledger only after review.
 5. If you decide to pursue one, create the standard application folder and record the exact posting URL in `job_description.md`.
 6. Add or update the row in [master_tracker.md](master_tracker.md) only when you intentionally want that manual/UI-facing record updated.
 
 See also:
 - [How to use the search ledger](HOW_TO_USE_SEARCH_LEDGER.md)
+- [Job search deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md)
 
 ## How to Record Decisions
 
@@ -243,9 +257,10 @@ Ask separately if you also want [master_tracker.md](master_tracker.md) updated.
 ## Important Notes
 
 - This is a triage tool, not a final decision-maker.
+- The generated `Apply First` bucket is only a heuristic starting point. For serious review, follow [the deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md).
 - The ranking is heuristic and will still surface some imperfect results.
 - Google Jobs is included in the profile, but in live testing here LinkedIn and Indeed produced more usable results than Google.
-- Search systems often handle `C++` badly, so the profile intentionally leans on `c plus plus` phrasing.
+- Search systems handle AI job titles inconsistently, so the profile uses several overlapping phrases rather than assuming one canonical title.
 - Generated output and the local virtual environment are ignored by git.
 - The search ledger is separate from [master_tracker.md](master_tracker.md); the runner should update the ledger, not the manual tracker.
 
@@ -271,3 +286,9 @@ If you only want one file to remember, use:
 - [job_search/output/](job_search/output/)
 
 That folder is the inbox.
+
+If you want the next layer after the inbox, use:
+
+- [job_search/DEEP_DIVE_WORKFLOW.md](job_search/DEEP_DIVE_WORKFLOW.md)
+
+That workflow turns a run into current targets, future/stretch roles, dismiss/archive recommendations, compensation notes, and resume-positioning guidance.

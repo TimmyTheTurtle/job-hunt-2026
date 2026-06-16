@@ -27,7 +27,7 @@ The compact bootstrap file is the default machine-facing context layer.
 It should stay short, dense, and optimized for quick agent loading.
 
 The human-readable explanation of that bootstrap lives in:
-- [docs/agent_bootstrap_human.md](docs/agent_bootstrap_human.md)
+- [agent_bootstrap_human.md](agent_bootstrap_human.md)
 
 Whenever the compact bootstrap changes, update the human-readable document in the same change.
 
@@ -35,6 +35,7 @@ Whenever the compact bootstrap changes, update the human-readable document in th
 
 The compact bootstrap is derived from these source files:
 - [JOB_HUNT_CONTEXT.md](JOB_HUNT_CONTEXT.md)
+- [current_strategy.md](current_strategy.md)
 - [COVER_LETTER_RULES.md](COVER_LETTER_RULES.md)
 - [ROLE_EVAL_CHECKLIST.md](ROLE_EVAL_CHECKLIST.md)
 - [RECRUITER_RESPONSE_RULES.md](RECRUITER_RESPONSE_RULES.md)
@@ -50,7 +51,7 @@ Only read the full source file when the current task actually needs that detail.
 - Prefer the narrower defensible claim over the broader impressive claim.
 - Do not fabricate employers, titles, certifications, years of experience, clearance, or unsupported domain expertise.
 - Optimize for coherent direction, not application spam.
-- Protect runway, learning time, and long-term systems/C++/simulation positioning.
+- Protect runway, learning time, and the Applied AI Systems Engineer positioning.
 - Keep machine-managed search bookkeeping in `job_search/ledger/`; do not auto-update `master_tracker.md` from search runs.
 - Keep company watchlist updates in `company_watchlist.md`; do not fold watchlist checks into `master_tracker.md`.
 
@@ -97,7 +98,7 @@ If you change:
 then update all three layers that apply:
 - source context file(s)
 - [AGENT_BOOTSTRAP_COMPACT.md](AGENT_BOOTSTRAP_COMPACT.md)
-- [docs/agent_bootstrap_human.md](docs/agent_bootstrap_human.md)
+- [agent_bootstrap_human.md](agent_bootstrap_human.md)
 
 Keep the compact layer minimal.
 Keep the human layer understandable.

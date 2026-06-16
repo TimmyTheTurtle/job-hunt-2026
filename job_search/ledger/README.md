@@ -17,3 +17,8 @@ Files:
 
 The search runner writes `surfaced` entries here.
 Manual or chat-driven review can write `saved`, `dismissed`, and `applied` decisions here.
+
+Archive:
+- `archive/2026-06-16_pre_applied_ai_pivot/`
+  Previous simulation/C++-oriented search ledger snapshot archived when the
+  active search profile pivoted to Applied AI Systems Engineer.

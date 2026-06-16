@@ -1,438 +1,315 @@
 # Search Ledger Summary
 
-- Generated: 2026-05-29T11:02:52.045988-04:00
-- Total tracked jobs: 127
-- Surfaced: 125
+- Generated: 2026-06-16T11:38:58.395077-04:00
+- Total tracked jobs: 30
+- Surfaced: 30
 - Saved: 0
-- Applied: 2
+- Applied: 0
 - Dismissed: 0
 
 Source of truth: `transactions.jsonl`
 
 ## Open Surfaced Jobs
 
-### AMD - Systems Software Engineer - Data Center GPU
-- Location: Austin, TX
-- Last recommendation: review
-- Last score: 8
-- Sites: linkedin
-- Query labels: systems software engineer
-- First seen: 2026-05-29T11:02:52.039059-04:00
-- Last seen: 2026-05-29T11:02:52.039059-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4356472703
-
-### Applied Intuition - C++ Software Engineer (Autonomous Systems)
-- Location: Ann Arbor, MI
-- Last recommendation: review
-- Last score: 11
-- Sites: linkedin
-- Query labels: real time software engineer
-- First seen: 2026-05-29T11:02:52.039059-04:00
-- Last seen: 2026-05-29T11:02:52.039059-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4407956894
-
-### Applied Intuition - Software Engineer (C++)
-- Location: Ann Arbor, MI
-- Last recommendation: review
-- Last score: 9
-- Sites: linkedin
-- Query labels: hpc software engineer, real time software engineer, simulation software engineer, software engineer c plus plus
-- First seen: 2026-05-29T11:02:52.039059-04:00
-- Last seen: 2026-05-29T11:02:52.039059-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4415725384
-
-### Asenium Consulting - Simulation Engineer
-- Last recommendation: review
-- Last score: 10
-- Sites: linkedin
-- Query labels: simulation engineer
-- First seen: 2026-04-23T19:22:07.806442-04:00
-- Last seen: 2026-04-23T19:22:07.806442-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4401312098
-
-### ASTEC Digital - Simulation Engineer
-- Last recommendation: review
-- Last score: 10
-- Sites: linkedin
-- Query labels: simulation engineer
-- First seen: 2026-03-31T12:33:54.493374-04:00
-- Last seen: 2026-03-31T12:33:54.493374-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4388412760
-
-### Astera Labs - Distinguished Engineer – System & Rack Hardware Architecture
+### Aline - Engineering - Agentic AI Engineer (Junior)
 - Location: Remote, US
 - Last recommendation: apply_first
-- Last score: 12
+- Last score: 23
 - Sites: indeed
-- Query labels: hpc software engineer
-- First seen: 2026-05-29T10:52:29.594296-04:00
-- Last seen: 2026-05-29T10:52:29.594296-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=ff7e88621714d06f
+- Query labels: compliance ai engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=731dfd555cf56cb1
 
-### Astrion - Flight Software Engineer
-- Location: Remote, US
-- Last recommendation: review
-- Last score: 8
+### Ally Financial - Principal - Software Engineer
+- Location: Detroit, MI, US
+- Last recommendation: apply_first
+- Last score: 23
 - Sites: indeed
-- Query labels: real time software engineer, systems software engineer
-- First seen: 2026-05-29T11:02:52.039059-04:00
-- Last seen: 2026-05-29T11:02:52.039059-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=1879373d3634b699
+- Query labels: document intelligence engineer, llm rag engineer, software engineer ai systems
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=231b952cd2e83d79
 
-### Atarus - Software Engineer - Remote
-- Last recommendation: review
-- Last score: 8
-- Sites: linkedin
-- Query labels: real time software engineer
-- First seen: 2026-05-29T11:02:52.039059-04:00
-- Last seen: 2026-05-29T11:02:52.039059-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4420281820
-
-### Auria - RF Simulation SW Engineer
+### ASHC, Inc. - Contract Senior Healthcare Software Development Consultant
 - Location: Remote, US
 - Last recommendation: apply_first
-- Last score: 12
+- Last score: 25
 - Sites: indeed
-- Query labels: simulation engineer, simulation software engineer
-- First seen: 2026-05-29T10:52:29.594296-04:00
-- Last seen: 2026-05-29T10:52:29.594296-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=adc4e738c0a31e04
+- Query labels: ai workflow automation engineer, llm rag engineer, software engineer workflow automation
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=eccaa11cc264bb84
 
-### Berkshire Grey - Principal Modeling and Simulation Engineer (Industrial Automation)
-- Last recommendation: review
-- Last score: 10
+### Brillian - Senior Software Engineer (AI Products)
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 25
+- Sites: indeed
+- Query labels: software engineer ai systems
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=2675163ecf3d056a
+
+### Chickasaw Nation Industries - AI Engineer
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 23
+- Sites: indeed
+- Query labels: compliance ai engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=ce9889ce51319f1e
+
+### City of Hope - Intelligent Automation Developer
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 30
+- Sites: indeed
+- Query labels: document intelligence engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=16b49fe6e0399a27
+
+### Cotiviti - Senior Software Engineer (AI)
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 18
+- Sites: indeed
+- Query labels: software engineer workflow automation
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=bc5dc92fff82a2a4
+
+### Crowe LLP - Senior AI Engineer
+- Location: Grand Rapids, MI, US
+- Last recommendation: apply_first
+- Last score: 25
+- Sites: indeed
+- Query labels: compliance ai engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=aebc369e1dedd710
+
+### DataRobot - Senior AI Solutions Engineer
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 21
+- Sites: indeed
+- Query labels: ai solutions engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=b0649df2d7483964
+
+### Deloitte - Agentic AI Engineer — Healthcare AI
+- Location: Grand Rapids, MI, US
+- Last recommendation: apply_first
+- Last score: 25
+- Sites: indeed
+- Query labels: llm rag engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=007eb750c2feb2d6
+
+### Deloitte - Agentic AI Engineer — Healthcare AI
+- Location: Detroit, MI, US
+- Last recommendation: apply_first
+- Last score: 25
+- Sites: indeed
+- Query labels: llm rag engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=dbe9955f440d88ca
+
+### Ethos Life - AI Red Team Security Engineer
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 24
+- Sites: indeed
+- Query labels: llm rag engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=969b8246fa60a633
+
+### Fabric Health - Staff Software Engineer (Artificial Intelligence)
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 18
+- Sites: indeed
+- Query labels: software engineer ai systems
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=cae7bbc4d5c0f8ea
+
+### Ford Motor Company - Software Engineer - Vehicle Connectivity & mobility (VC&M)
+- Location: Dearborn, MI, US
+- Last recommendation: apply_first
+- Last score: 20
+- Sites: indeed
+- Query labels: llm rag engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=d0ee7590b8ddcee3
+
+### General Motors (GM) - Senior Software Engineer (.NET )
+- Location: Warren, MI, US
+- Last recommendation: apply_first
+- Last score: 23
+- Sites: indeed
+- Query labels: llm rag engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=a8fae101fea70214
+
+### Instacart - Senior Software Engineer II, AI Labs & Foundations
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 24
+- Sites: indeed
+- Query labels: llm rag engineer, software engineer ai systems
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=373129946e19ecda
+
+### Jobgether - AI Solutions Engineer (Document Intelligence & Generative AI)
+- Last recommendation: apply_first
+- Last score: 20
 - Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-05-29T10:52:29.594296-04:00
-- Last seen: 2026-05-29T10:52:29.594296-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4404357878
+- Query labels: ai solutions engineer, document intelligence engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4426186603
 
-### Black & Veatch - Associate Electrical Engineer - Power System Protection
+### KLA - Sr. AI/ML Engineer - Systems
 - Location: Ann Arbor, MI, US
-- Last recommendation: review
-- Last score: 10
+- Last recommendation: apply_first
+- Last score: 18
 - Sites: indeed
-- Query labels: systems software engineer
-- First seen: 2026-04-23T19:22:07.806442-04:00
-- Last seen: 2026-04-23T19:22:07.806442-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=1f8c9edbd3844cd9
+- Query labels: software engineer ai systems
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=c2ea11c3a57a7712
 
-### Booz Allen Hamilton - Electromagnetic Modeling and Simulation CAD Support Engineer
-- Location: Aberdeen Proving Ground, MD
-- Last recommendation: apply_first
-- Last score: 15
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-04-23T19:22:07.806442-04:00
-- Last seen: 2026-04-23T19:22:07.806442-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4402097333
-
-### Booz Allen Hamilton - Electromagnetic Modeling and Simulation CAD Support Engineer
-- Location: Aberdeen Proving Ground, MD
-- Last recommendation: apply_first
-- Last score: 15
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-05-14T10:03:06.333867-04:00
-- Last seen: 2026-05-14T10:03:06.333867-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4413283202
-
-### Booz Allen Hamilton - Mission Modeling and Simulation Software Engineer, Senior
-- Location: Washington, DC
-- Last recommendation: apply_first
-- Last score: 15
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-04-23T19:22:07.806442-04:00
-- Last seen: 2026-04-23T19:22:07.806442-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4405496170
-
-### Booz Allen Hamilton - Mission Modeling and Simulation Software Engineer, Senior
-- Location: McLean, VA
-- Last recommendation: apply_first
-- Last score: 15
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-04-23T19:22:07.806442-04:00
-- Last seen: 2026-04-23T19:22:07.806442-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4405496168
-
-### Booz Allen Hamilton - Mission Modeling and Simulation Software Engineer, Senior
-- Location: Annapolis Junction, MD
-- Last recommendation: apply_first
-- Last score: 15
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-04-23T19:22:07.806442-04:00
-- Last seen: 2026-04-23T19:22:07.806442-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4405485752
-
-### Booz Allen Hamilton - Modeling and Simulation Engineer
-- Location: Charlottesville, VA
-- Last recommendation: apply_first
-- Last score: 15
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-04-23T19:22:07.806442-04:00
-- Last seen: 2026-04-23T19:22:07.806442-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4402609062
-
-### Booz Allen Hamilton - Modeling and Simulation Engineer
-- Location: Dayton, OH
-- Last recommendation: apply_first
-- Last score: 15
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-05-14T10:03:06.333867-04:00
-- Last seen: 2026-05-14T10:03:06.333867-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4413284170
-
-### Booz Allen Hamilton - Modeling and Simulation Engineer
-- Location: Washington, DC
-- Last recommendation: apply_first
-- Last score: 15
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-05-14T10:03:06.333867-04:00
-- Last seen: 2026-05-14T10:03:06.333867-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4413284081
-
-### Booz Allen Hamilton - Modeling and Simulation Engineer
-- Location: Beavercreek, OH
-- Last recommendation: apply_first
-- Last score: 15
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-05-14T10:03:06.333867-04:00
-- Last seen: 2026-05-14T10:03:06.333867-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4413276984
-
-### Booz Allen Hamilton - Modeling and Simulation Engineer
-- Location: Patterson, OH
-- Last recommendation: apply_first
-- Last score: 15
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-05-14T10:03:06.333867-04:00
-- Last seen: 2026-05-14T10:03:06.333867-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4413284057
-
-### Booz Allen Hamilton - Modeling and Simulation Engineer
-- Location: Patterson, OH
-- Last recommendation: apply_first
-- Last score: 15
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-05-14T10:03:06.333867-04:00
-- Last seen: 2026-05-14T10:03:06.333867-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4413282090
-
-### Booz Allen Hamilton - Modeling and Simulation Engineer
-- Location: Patterson, OH
-- Last recommendation: apply_first
-- Last score: 15
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-05-14T10:03:06.333867-04:00
-- Last seen: 2026-05-14T10:03:06.333867-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4413279257
-
-### Booz Allen Hamilton - Modeling and Simulation Engineer
-- Location: Beavercreek, OH
-- Last recommendation: apply_first
-- Last score: 15
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-05-14T10:03:06.333867-04:00
-- Last seen: 2026-05-14T10:03:06.333867-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4413282073
-
-### Booz Allen Hamilton - Modeling and Simulation Engineer, Mid
-- Location: Arlington, VA
-- Last recommendation: apply_first
-- Last score: 15
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-05-14T10:03:06.333867-04:00
-- Last seen: 2026-05-14T10:03:06.333867-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4413296014
-
-### Booz Allen Hamilton - Modeling and Simulation Software Engineer
-- Location: Patterson, OH
-- Last recommendation: apply_first
-- Last score: 17
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-05-14T10:03:06.333867-04:00
-- Last seen: 2026-05-14T10:03:06.333867-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4413279499
-
-### Booz Allen Hamilton - Modeling and Simulation Software Engineer
-- Location: Beavercreek, OH
-- Last recommendation: apply_first
-- Last score: 17
-- Sites: linkedin
-- Query labels: modeling and simulation engineer
-- First seen: 2026-05-14T10:03:06.333867-04:00
-- Last seen: 2026-05-14T10:03:06.333867-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4413286040
-
-### Capgemini - NVH Performance Engineer
-- Location: Auburn Hills, MI, US
-- Last recommendation: apply_first
-- Last score: 12
-- Sites: indeed
-- Query labels: modeling and simulation engineer, simulation engineer, simulation software engineer
-- First seen: 2026-05-14T10:03:06.333867-04:00
-- Last seen: 2026-05-14T10:03:06.333867-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=dfc6378b56691de2
-
-### Caterpillar Inc. - NVH Simulation Engineer
-- Last recommendation: review
-- Last score: 10
-- Sites: linkedin
-- Query labels: simulation engineer
-- First seen: 2026-05-29T11:02:52.039059-04:00
-- Last seen: 2026-05-29T11:02:52.039059-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4414997545
-
-### CLANDICA - Scientific Computing Platform Engineer / Software Engineer
-- Location: Remote, US
-- Last recommendation: review
-- Last score: 10
-- Sites: indeed
-- Query labels: hpc software engineer, scientific computing engineer
-- First seen: 2026-05-29T10:52:29.594296-04:00
-- Last seen: 2026-05-29T10:52:29.594296-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=f0bedd4c72317aa5
-
-### COLSA - ServiceNow Developer
+### Marco Technologies - AI Solutions - Agent Engineer
 - Location: Remote, US
 - Last recommendation: apply_first
-- Last score: 16
+- Last score: 23
 - Sites: indeed
-- Query labels: modeling and simulation engineer, simulation engineer
-- First seen: 2026-05-14T10:03:06.333867-04:00
-- Last seen: 2026-05-14T10:03:06.333867-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=c9a2282eb317eda0
+- Query labels: ai solutions engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=69d16d2622bc8bec
 
-### CPMC LLC - Senior Software Engineer / Research Engineer – Large‑Scale Statistical Systems
+### micro1 - Member of Technical Staff, Legal Research
 - Location: Remote, US
 - Last recommendation: apply_first
-- Last score: 12
+- Last score: 19
 - Sites: indeed
-- Query labels: hpc software engineer, scientific computing engineer
-- First seen: 2026-05-14T10:03:06.333867-04:00
-- Last seen: 2026-05-14T10:03:06.333867-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=880f2613413386ea
+- Query labels: ai workflow automation engineer, legal ai engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=92ff0634662cd99e
 
-### Crossing Hurdles - 3D Simulation Engineer - O3DE | Remote
+### micro1 - Software Engineer (Human Data Platforms)
+- Location: Remote, US
 - Last recommendation: apply_first
-- Last score: 12
-- Sites: linkedin
-- Query labels: simulation engineer
-- First seen: 2026-05-29T10:52:29.594296-04:00
-- Last seen: 2026-05-29T10:52:29.594296-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4418265933
+- Last score: 21
+- Sites: indeed
+- Query labels: software engineer ai systems
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=b904670da54f4354
 
-### Crossing Hurdles - Aerospace Simulation Engineer | $19/hr Remote
+### Newpage Digital Healthcare solutions - AI Solution Engineer
+- Location: Remote, US
 - Last recommendation: apply_first
-- Last score: 12
-- Sites: linkedin
-- Query labels: simulation engineer
-- First seen: 2026-05-29T10:52:29.594296-04:00
-- Last seen: 2026-05-29T10:52:29.594296-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4418561951
+- Last score: 29
+- Sites: indeed
+- Query labels: ai solutions engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=f647259c84954990
 
-### Crossing Hurdles - Circuit Simulation Engineer (Ngspice) | Remote
+### Patch My PC - Software Engineer, AI
+- Location: Remote, US
 - Last recommendation: apply_first
-- Last score: 12
-- Sites: linkedin
-- Query labels: simulation engineer
-- First seen: 2026-03-31T12:33:54.493374-04:00
-- Last seen: 2026-03-31T12:33:54.493374-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4388371065
+- Last score: 19
+- Sites: indeed
+- Query labels: software engineer ai systems
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=05fd2b9f3d1f55b1
 
-### Crossing Hurdles - Circuit Simulation Engineer (Ngspice) | Remote
+### Patsnap - AI Solutions Lead – IP Legal / Patent Drafting
+- Location: Remote, US
 - Last recommendation: apply_first
-- Last score: 12
-- Sites: linkedin
-- Query labels: simulation engineer
-- First seen: 2026-04-23T19:22:07.806442-04:00
-- Last seen: 2026-04-23T19:22:07.806442-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4403617076
+- Last score: 25
+- Sites: indeed
+- Query labels: ai workflow automation engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=c8749c60eddb7de3
 
-### Crossing Hurdles - Circuit Simulation Engineer (Qucs-S) | Remote
+### Risepoint - Principal AI Engineer
+- Location: Remote, US
 - Last recommendation: apply_first
-- Last score: 12
-- Sites: linkedin
-- Query labels: simulation engineer
-- First seen: 2026-04-23T19:22:07.806442-04:00
-- Last seen: 2026-04-23T19:22:07.806442-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4404278686
+- Last score: 18
+- Sites: indeed
+- Query labels: compliance ai engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=600c894784be55f5
 
-### Crossing Hurdles - Entry-Level Software Engineer | Remote
-- Last recommendation: review
-- Last score: 8
-- Sites: linkedin
-- Query labels: simulation software engineer
-- First seen: 2026-05-29T11:02:52.039059-04:00
-- Last seen: 2026-05-29T11:02:52.039059-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4417553585
-
-### Crossing Hurdles - Simulation Engineer | $61/hr Remote
-- Location: Florida, United States
+### savantys solutions - AI Engineer
+- Location: Remote, US
 - Last recommendation: apply_first
-- Last score: 12
-- Sites: linkedin
-- Query labels: simulation engineer
-- First seen: 2026-04-23T19:22:07.806442-04:00
-- Last seen: 2026-04-23T19:22:07.806442-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4404276827
+- Last score: 23
+- Sites: indeed
+- Query labels: llm rag engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=161f2b67fee23393
 
-### Crossing Hurdles - Simulation Engineer | $61/hr Remote
-- Location: Florida, United States
+### Stylitics - Senior AI Software Engineer, Labs
+- Location: Remote, US
 - Last recommendation: apply_first
-- Last score: 12
-- Sites: linkedin
-- Query labels: simulation engineer
-- First seen: 2026-05-29T10:52:29.594296-04:00
-- Last seen: 2026-05-29T10:52:29.594296-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4417114427
+- Last score: 21
+- Sites: indeed
+- Query labels: software engineer ai systems
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=6c836e974f885fa5
 
-## Applied Jobs
-
-### Blue Chip Talent - Simulation Engineer #26007
-- Location: Plymouth, MI
-- Last recommendation: review
-- Last score: 10
-- Sites: linkedin
-- Query labels: simulation engineer
-- Note: Applied via LinkedIn; no cover letter required.
-- First seen: 2026-05-14T10:03:06.333867-04:00
-- Last seen: 2026-05-14T10:03:06.333867-04:00
-- Last decision: 2026-05-14T10:20:00.000000-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4410724527
-
-### Mission Technologies, a division of HII - REMOTE Software Developer (Real‑Time Simulation & Dev Lab) - 28298
+### Towa Software - AI Solutions Engineer (Document Intelligence & Generative AI) - Remote Bilingual
+- Location: Mexico City, Mexico
 - Last recommendation: apply_first
-- Last score: 16
+- Last score: 22
 - Sites: linkedin
-- Query labels: modeling and simulation engineer
-- Note: Applied via LinkedIn; materials in applications/2026-04_mission_technologies_HII_28298/
-- First seen: 2026-04-23T19:22:07.806442-04:00
-- Last seen: 2026-04-23T19:22:07.806442-04:00
-- Last decision: 2026-04-23T19:45:16.201953-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4404462085
+- Query labels: document intelligence engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4426136782
+
+### Towa Software - AI Solutions Engineer (Document Intelligence & Generative AI) - Remoto Bilingüe
+- Location: Mexico City, Mexico
+- Last recommendation: apply_first
+- Last score: 20
+- Sites: linkedin
+- Query labels: ai solutions engineer, document intelligence engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4426055285
+
+### TRADESTATION - Principal AI Solutions Engineer
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 24
+- Sites: indeed
+- Query labels: ai solutions engineer, llm rag engineer
+- First seen: 2026-06-16T11:38:58.387588-04:00
+- Last seen: 2026-06-16T11:38:58.387588-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=0776d776fd15b724
 
 ## Recent Transactions
 
-- `2026-05-29T11:02:52.039059-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260529_110252_df7aa169]
-- `2026-05-29T11:00:43.626610-04:00` `search_run` by `job_search_runner`: 3 event(s) [tx_20260529_110043_ec4bf4f3]
-- `2026-05-29T10:52:29.594296-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260529_105229_6e7e9f8d]
-- `2026-05-14T10:20:00.000000-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260514_102000_abc12345]
-- `2026-05-14T10:03:06.333867-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260514_100306_ef2040e3]
-- `2026-04-23T19:45:16.201953-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260423_194516_d03b742f]
-- `2026-04-23T19:44:56.010698-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260423_194456_9c1c0a4d]
-- `2026-04-23T19:22:07.806442-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260423_192207_6f370d13]
-- `2026-03-31T12:33:54.493374-04:00` `search_run` by `job_search_runner`: 4 event(s) [tx_20260331_123354_b6e32985]
+- `2026-06-16T11:38:58.387588-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260616_113858_c88a1b11]

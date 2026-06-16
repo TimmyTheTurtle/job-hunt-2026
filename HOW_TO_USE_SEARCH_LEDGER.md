@@ -28,6 +28,10 @@ The search system should not auto-edit `master_tracker.md`.
 - Human-readable summary: [job_search/ledger/summary.md](job_search/ledger/summary.md)
 - Notes: [job_search/ledger/README.md](job_search/ledger/README.md)
 
+Historical note:
+- The pre-pivot simulation/C++ search ledger was archived under `job_search/ledger/archive/2026-06-16_pre_applied_ai_pivot/`.
+- The active ledger now starts fresh for the Applied AI Systems Engineer search profile.
+
 ## How It Works
 
 When you run the search:

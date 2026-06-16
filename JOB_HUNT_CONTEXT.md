@@ -35,8 +35,10 @@ Applications should generally optimize for:
 - transferable skill growth
 - decent compensation
 - reduced burnout risk
-- roles that strengthen systems, C++, simulation, or technical credibility
+- roles that strengthen applied AI systems, document intelligence, compliance workflow, or technical credibility
 - roles that do not permanently trap him in a weak niche
+
+Search-result deep dives are part of the strategy, not a clerical afterthought. After a search run, agents should use the surfaced postings to classify current targets versus future/stretch roles and to extract resume-positioning lessons. The durable procedure lives in `job_search/DEEP_DIVE_WORKFLOW.md`.
 
 ## Company watchlist
 
@@ -46,22 +48,31 @@ If the user says "look for a job now" and a company is on that watchlist, check 
 
 ## Candidate summary
 
-Dorian is a systems-oriented software engineer with a strong bias toward:
+Dorian's current one-line identity is:
+
+> Applied AI Systems Engineer
+
+This is an identity under construction, not a claim of finished expert status. Present him as a systems-oriented software engineer moving deliberately into applied AI systems, especially for document-heavy and compliance-sensitive workflows.
+
+Dorian has a strong bias toward:
 - structured thinking
 - technical rigor
 - debugging
 - modeling
 - complex problem decomposition
 - learning by building real things
+- traceability, validation, and human-reviewable outputs
 
 Position him as one or more of the following depending on the role:
-- Software Engineer
-- Systems Engineer
-- C++ / Simulation Engineer
-- Real-Time / Interactive Systems Developer
+- Applied AI Systems Engineer
+- AI Solutions Engineer
+- AI Workflow / Automation Engineer
+- Document Intelligence Engineer
+- LLM / RAG Systems Engineer
+- Software Engineer, AI Systems
+- Compliance AI Engineer, when the role is engineering-heavy rather than legal-credential-heavy
+- Systems-minded Software Engineer
 - Technical Solutions / Implementation Engineer
-- Applied Software Engineer
-- Graphics / Simulation Developer
 - Full-Stack Engineer with strong systems instincts
 
 Avoid positioning him primarily as:
@@ -69,9 +80,36 @@ Avoid positioning him primarily as:
 - vague generalist hacker
 - prompt engineer
 - AI enthusiast without technical substance
+- ML researcher
+- lawyer, compliance officer, or regulatory expert
+- production LLM platform veteran
 
 Strongest brand:
-> A systems-first engineer with aerospace mission operations roots, who learns deeply, debugs aggressively, and builds practical software — now applying that same SE discipline to AI pipelines and document intelligence systems.
+> An applied AI systems engineer in transition: a systems-first software engineer with aerospace mission operations roots, strong domain-modeling instincts, and hands-on prototype work in AI-assisted document intelligence, evidence pipelines, and compliance-sensitive workflows.
+
+## Voice and identity framing
+
+Dorian's natural voice does not usually define itself by saying what he is not trying to do.
+When explaining the identity, start from the positive through-line:
+
+> I keep ending up in messy domains where important information is buried in documents,
+> workflows, edge cases, old systems, or decisions nobody quite remembers. The work is to
+> turn that into something structured enough to reason about.
+
+Then connect that through-line to the current AI direction:
+
+> AI can now touch parts of the problem that used to be too unstructured to automate cleanly.
+> The useful work is the surrounding system: retrieval, constraints, evidence trails, human
+> review points, and the practical pieces that make the result usable.
+
+Short version:
+
+> I build systems that turn messy domain material into structured, reviewable evidence.
+> Right now, AI is becoming part of that system.
+
+Use this voice for resume summaries, About Me drafts, LinkedIn copy, and portfolio language.
+Avoid leading with defensive negations such as "I am not trying to be..." unless the context
+requires a truthfulness boundary.
 
 ## Contractor pitch
 
@@ -108,18 +146,18 @@ Important implications:
 - Applications should sound intentional and grounded.
 - He is trying to avoid falling in love with the first company that shows interest.
 - He prefers disciplined evaluation over emotional attachment to employers.
-- He wants roles that either genuinely move him toward systems/simulation/HPC/C++ goals, or stabilize income without destroying his ability to keep building toward those goals.
+- He wants roles that either genuinely move him toward applied AI systems, document intelligence, evidence workflows, and production-minded AI engineering, or stabilize income without destroying his ability to keep building toward those goals.
 
 ## Long-term direction
 
 Primary long-term direction:
-- modern C++
-- simulation
-- graphics
-- real-time systems
-- performance-aware engineering
-- eventually HPC-caliber rigor
-- potentially neuro-symbolic AI or advanced technical work later
+- applied AI systems engineering
+- document intelligence
+- RAG / retrieval / evidence pipelines
+- LLM-assisted workflow automation
+- future eval work, human review gates, and audit trails
+- compliance-sensitive systems in insurance, legal, regulatory, and document-heavy domains
+- production-minded AI boundaries: deterministic core, AI assistance around it
 
 He values:
 - strongly typed compiled languages
@@ -127,13 +165,27 @@ He values:
 - explicit architecture
 - performance awareness
 - technical depth over buzzword churn
+- traceable evidence over black-box output
+- human verification where automation cannot be trusted
 
 Secondary pragmatic direction:
+- production software engineering roles with strong systems boundaries
+- C#/.NET, workflow, integration, and SaaS platform work
+- insurance/compliance/document-heavy software
 - practical software engineering roles
 - implementation/solutions roles if sufficiently technical
 - technical consulting
 - data/reporting/compliance-sensitive engineering if credible
 - business software roles that still reward structured problem solving
+
+Preserved technical vector:
+- modern C++
+- simulation
+- graphics
+- real-time systems
+- performance-conscious programming
+
+This vector remains useful, but it is no longer the primary job-search identity unless a role clearly connects it to applied AI systems, simulation, autonomy, or high-rigor engineering.
 
 ## Professional background and usable experience
 
@@ -274,6 +326,9 @@ Lean on these most confidently:
 - systems thinking
 - debugging
 - translating messy real-world needs into software structure
+- turning messy domain documents into structured artifacts
+- evidence modeling, schemas, and traceable outputs
+- deterministic boundaries around AI-assisted workflows
 - independent learning
 - practical architecture instincts
 - ownership and initiative
@@ -284,13 +339,12 @@ Lean on these most confidently:
 ### Active growth areas
 
 Describe accurately:
-- modern C++
-- CMake
-- simulation architecture
-- DirectX / graphics experimentation
-- scalar-field and emergent-system experiments
-- performance-conscious programming
-- portfolio building around simulation and systems work
+- LLM/RAG production patterns
+- AI evals and regression testing for nondeterministic systems (not yet hands-on; active future growth area)
+- document parsing and retrieval architecture
+- graph-backed evidence models
+- agentic workflow boundaries and orchestration
+- modern C++ / simulation / performance-conscious programming as a secondary technical vector
 
 Use phrases like:
 - actively building
@@ -302,24 +356,26 @@ Use phrases like:
 
 ### Tier 1: strong alignment roles
 
-- C++ Software Engineer
-- Simulation Engineer
-- Systems Engineer
-- Graphics / Rendering Engineer
-- Real-Time Systems Developer
-- Engine Programmer
-- Technical R&D software roles
-- Infrastructure/software roles with serious engineering depth
+- Applied AI Systems Engineer
+- AI Solutions Engineer, when the role includes real software delivery
+- LLM / RAG Systems Engineer
+- Document Intelligence Engineer
+- AI Workflow / Automation Engineer
+- Software Engineer, AI Systems
+- AI Engineer for legal, insurance, compliance, or document-heavy workflows
+- AI Governance / Controls Engineer, when the role is implementation/control-system oriented rather than policy-only
+- Forward Deployed AI Engineer / AI Automation Engineer, when the work involves building bounded systems in real workflows
 
 ### Tier 2: pragmatic but useful roles
 
-- Software Engineer (general but technical)
+- Software Engineer (general but technical, especially C#/.NET, workflow, SaaS, integrations, or platform)
 - Solutions Engineer / Implementation Engineer
 - Technical Consultant
-- Applied Data / Reporting Engineer
+- Applied Data / Reporting Engineer in compliance or operations contexts
 - Business systems developer
 - Internal tools engineer
 - Technical product/automation roles with real coding
+- C++ / simulation / real-time systems roles when they preserve the technical-depth vector
 
 ### Tier 3: temporary stabilization roles
 
@@ -352,8 +408,9 @@ Avoid:
 - discussing starting a business someday unless directly relevant
 
 Reusable themes:
-- systems + delivery
-- practical builder with depth trajectory
+- applied AI systems + delivery
+- practical builder with AI-systems trajectory
+- document intelligence, workflow automation, and evidence trails
 - business-aware engineer
 - learning-forward but credible
 
@@ -367,6 +424,8 @@ Do not fabricate:
 - production-scale HPC experience
 - deep professional game-industry experience
 - advanced AI research experience
+- production-scale LLM platform ownership
+- legal, actuarial, or compliance credentials
 - security clearance
 - leadership titles not actually held
 - technologies not meaningfully used
@@ -380,7 +439,7 @@ Safe phrasing for growth areas:
 
 ## Default candidate narrative
 
-Dorian Klingenberg is a systems-oriented software engineer with experience building practical business software, configuration and workflow systems, and deployed web applications in real operating environments. His work has combined software delivery with strong ownership, business awareness, and hands-on problem solving. He is especially motivated by roles that value technical rigor, structured thinking, and deeper engineering growth, and he is intentionally steering toward opportunities that build on those strengths while expanding further into modern C++ and systems-level development.
+Dorian Klingenberg is a systems-oriented software engineer building toward applied AI systems engineering. His strongest through-line is turning messy domain workflows into structured, testable software: configuration systems, compliance-sensitive reporting, document/evidence pipelines, and production-minded integration boundaries. He is especially interested in AI roles where LLMs, retrieval, automation, and human review meet real operational constraints, and he should be presented as learning-forward but technically grounded rather than as a finished ML researcher or compliance expert.
 
 ## AI contractor narrative
 
