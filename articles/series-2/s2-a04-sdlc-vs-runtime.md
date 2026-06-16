@@ -28,5 +28,5 @@ This is ADR-012 from legal-tech-debt made into a general principle.
 ## Sources
 
 - ADR-012 from legal-tech-debt (internal reference)
-- [Automated Self-Testing as a Quality Gate for LLM Applications (ArXiv)](https://arxiv.org/html/2603.15676v1)
+- [Automated Self-Testing as a Quality Gate for LLM Applications (ArXiv)](../papers/arxiv-2603.15676-automated-self-testing-quality-gate.pdf)
 - [LLM Observability: The Ultimate 2026 Guide — FutureAGI](https://futureagi.com/blog/what-is-llm-observability-ultimate-guide-2026/)

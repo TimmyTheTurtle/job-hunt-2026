@@ -48,7 +48,7 @@ Each layer is justified by the limits of the previous one.
 The term "Agile V" is **not original to this work**. It comes from:
 
 > *Agile V: A Compliance-Ready Framework for AI-Augmented Engineering* —
-> [ArXiv 2602.20684](https://arxiv.org/pdf/2602.20684)
+> [ArXiv 2602.20684](../papers/arxiv-2602.20684-agile-v-koch-wellbrock.pdf)
 
 The Sandbox 005 work adopts and extends this framework to address the non-determinism gap:
 the published framework assumes more determinism than LLM systems provide. The extension —
@@ -73,7 +73,7 @@ One quiet paragraph. Not a services page. Something like:
 
 ## Sources
 
-- [Agile V: A Compliance-Ready Framework for AI-Augmented Engineering (ArXiv 2602.20684)](https://arxiv.org/pdf/2602.20684)
+- [Agile V: A Compliance-Ready Framework for AI-Augmented Engineering (ArXiv 2602.20684)](../papers/arxiv-2602.20684-agile-v-koch-wellbrock.pdf)
 - [Agile V hybrid model — ITEA](https://itea.org/journals/volume-47-1/implementing-agile-v-hybrid-model/)
 - [FHWA systems-engineering life cycle](https://ops.fhwa.dot.gov/seits/sections/section2/2_7.html)
 - [SwarmForge repo — Uncle Bob](https://github.com/unclebob/swarm-forge)

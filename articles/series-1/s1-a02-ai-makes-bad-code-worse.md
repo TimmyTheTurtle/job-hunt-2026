@@ -106,6 +106,6 @@ next time.
 - [CodeScene code biomarkers research](https://codescene.com/blog/code-biomarkers/)
 - [Adam Tornhill on psychology of code quality — Tech Lead Journal ep. 241](https://techleadjournal.dev/episodes/241/)
 - [CodeScene guardrails for AI-assisted coding](https://codescene.com/blog/implement-guardrails-for-ai-assisted-coding)
-- [Debt Behind the AI Boom — arXiv:2603.28592](https://arxiv.org/abs/2603.28592) — 304,362 AI commits; 24.2% of introduced defects never cleaned up
-- [The Vibe-Check Protocol — arXiv:2601.02410](https://arxiv.org/abs/2601.02410) — acceleration vs. offloading; context quality determines which mode is even possible
-- [Comprehension Debt in GenAI SE — arXiv:2604.13277](https://arxiv.org/abs/2604.13277) — debt accumulates in cognition and codebase simultaneously
+- [Debt Behind the AI Boom — arXiv:2603.28592](../papers/arxiv-2603.28592-debt-behind-ai-boom.pdf) — 304,362 AI commits; 24.2% of introduced defects never cleaned up
+- [The Vibe-Check Protocol — arXiv:2601.02410](../papers/arxiv-2601.02410-vibe-check-protocol.pdf) — acceleration vs. offloading; context quality determines which mode is even possible
+- [Comprehension Debt in GenAI SE — arXiv:2604.13277](../papers/arxiv-2604.13277-comprehension-debt.pdf) — debt accumulates in cognition and codebase simultaneously

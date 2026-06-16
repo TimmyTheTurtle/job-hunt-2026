@@ -18,7 +18,7 @@ All source links organized by topic. Article assignments noted where applicable.
 - [Doomscrolling overview — Wikipedia](https://en.wikipedia.org/wiki/Doomscrolling) — S1-A1
 - [Doomscrolling and feedback loops — Da More Mental Health](https://damorementalhealth.com/doomscrolling/) — S1-A1
 - [Psychology of doomscrolling — Rowan Center LA](https://rowancenterla.com/psychology-of-doom-scrolling-explained/) — S1-A1
-- [Programming by Chat study (ArXiv)](https://arxiv.org/html/2604.00436v1) — S1-A1/A2
+- [Programming by Chat study (ArXiv)](papers/arxiv-2604.00436-programming-by-chat.pdf) — S1-A1/A2
 - [AI fatigue essay — Siddhant Khare](https://siddhantkhare.com/writing/ai-fatigue-is-real) — S1-A3
 
 ## Burnout / Cognitive Effects
@@ -61,7 +61,7 @@ All source links organized by topic. Article assignments noted where applicable.
 
 ## Context Poisoning
 
-- [XOXO: Cross-Origin Context Poisoning attacks (ArXiv)](https://arxiv.org/html/2503.14281v1) — S1-A6
+- [XOXO: Cross-Origin Context Poisoning attacks (ArXiv)](papers/arxiv-2503.14281-xoxo-context-poisoning.pdf) — S1-A6
 - [Context rot is slowing down your AI agent — LogRocket](https://blog.logrocket.com/context-rot-slowing-down-your-ai-agent-how-fix/) — S1-A6
 - [Context Rot: Why LLMs degrade as context grows — Morph](https://www.morphllm.com/context-rot) — S1-A6
 - [How Long Contexts Fail and How to Fix Them — dbreunig](https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html) — S1-A6
@@ -87,27 +87,27 @@ All source links organized by topic. Article assignments noted where applicable.
 - [GraphRAG GitHub repo](https://github.com/microsoft/graphrag) — S1-A8
 - [How Microsoft GraphRAG works step-by-step — Bertelsmann](https://tech.bertelsmann.com/en/blog/articles/how-microsoft-graphrag-works-step-by-step-part-12) — S1-A8
 - [KG-guided RAG — ACL Anthology](https://aclanthology.org/2025.naacl-long.449/) — S1-A8
-- [RAG + knowledge graphs (ArXiv)](https://arxiv.org/abs/2404.17723) — S1-A8
+- [RAG + knowledge graphs (ArXiv)](papers/arxiv-2404.17723-rag-knowledge-graphs.pdf) — S1-A8
 - [Memgraph GraphRAG overview](https://memgraph.com/docs/ai-ecosystem/graph-rag) — S1-A8
 - [GraphRAG for developers — Memgraph](https://memgraph.com/blog/graphrag-for-devs-coding-assistant) — S1-A8/A9
 
 ## Agile V / V-Model for AI
 
 **The Agile-V lineage (read in order before writing S2-A2):**
-- [Agile V: A Compliance-Ready Framework (arXiv:2602.20684) — Koch & Wellbrock 2026](https://arxiv.org/abs/2602.20684) — S2-A2, S1-A10. *Addresses V&V of agent-generated artifacts. Does not address V&V of the agentic system as a non-deterministic runtime.*
-- [Agentic Agile-V: From Vibe Coding to Verified Engineering (arXiv:2605.20456) — 2026](https://arxiv.org/abs/2605.20456) — S2-A2. *Extends Agile-V for agentic systems. SCOPE-V loop (Specify, Constrain, Orchestrate, Prove, Evolve, Verify). Risk-adaptive evidence bundles R0–R3. Most current treatment of agentic process control.*
+- [Agile V: A Compliance-Ready Framework (arXiv:2602.20684) — Koch & Wellbrock 2026](papers/arxiv-2602.20684-agile-v-koch-wellbrock.pdf) — S2-A2, S1-A10. *Addresses V&V of agent-generated artifacts. Does not address V&V of the agentic system as a non-deterministic runtime.*
+- [Agentic Agile-V: From Vibe Coding to Verified Engineering (arXiv:2605.20456) — 2026](papers/arxiv-2605.20456-agentic-agile-v-scope-v.pdf) — S2-A2. *Extends Agile-V for agentic systems. SCOPE-V loop (Specify, Constrain, Orchestrate, Prove, Evolve, Verify). Risk-adaptive evidence bundles R0–R3. Most current treatment of agentic process control.*
 
 **Agentic system evaluation (Problem 3 — the hard unsolved layer):**
-- [Beyond Task Completion: Assessment Framework for Evaluating Agentic AI Systems (arXiv:2512.12791)](https://arxiv.org/html/2512.12791v2) — S2-A2, S2-A5. *Four-pillar model: LLMs, Memory, Tools, Environment. Key finding: 100% task completion can coexist with 33% policy adherence. Behavioral invariant testing.*
-- [AgentAssay: Token-Efficient Regression Testing for Non-Deterministic AI Agent Workflows (arXiv:2603.02601) — 2026](https://arxiv.org/pdf/2603.02601) — S2-A2, S2-A5. *Sequential hypothesis testing for probabilistic behavioral guarantees. Hard invariants vs. probabilistic confidence bounds. Minimum-runs methodology.*
+- [Beyond Task Completion: Assessment Framework for Evaluating Agentic AI Systems (arXiv:2512.12791)](papers/arxiv-2512.12791-beyond-task-completion.pdf) — S2-A2, S2-A5. *Four-pillar model: LLMs, Memory, Tools, Environment. Key finding: 100% task completion can coexist with 33% policy adherence. Behavioral invariant testing.*
+- [AgentAssay: Token-Efficient Regression Testing for Non-Deterministic AI Agent Workflows (arXiv:2603.02601) — 2026](papers/arxiv-2603.02601-agentassay.pdf) — S2-A2, S2-A5. *Sequential hypothesis testing for probabilistic behavioral guarantees. Hard invariants vs. probabilistic confidence bounds. Minimum-runs methodology.*
 
 **V-model foundations:**
 - [Agile V hybrid model — ITEA](https://itea.org/journals/volume-47-1/implementing-agile-v-hybrid-model/) — S1-A5/A10
 - [FHWA systems-engineering life cycle](https://ops.fhwa.dot.gov/seits/sections/section2/2_7.html) — S1-A10
-- [Exploratory study of V-Model in ML-enabled software (ArXiv 2308.05381)](https://arxiv.org/html/2308.05381v3) — S2-A2. *Identifies offline/online testing gap; recommends holdout experiments + continuous monitoring.*
+- [Exploratory study of V-Model in ML-enabled software (ArXiv 2308.05381)](papers/arxiv-2308.05381-v-model-ml-software.pdf) — S2-A2. *Identifies offline/online testing gap; recommends holdout experiments + continuous monitoring.*
 - [Proposed V-Model for AI verification and validation (IEEE 10207641)](https://ieeexplore.ieee.org/document/10207641/) — S2-A2
 - [Verification and Validation of AI systems — SEBoK](https://sebokwiki.org/wiki/Verification_and_Validation_of_Systems_in_Which_AI_is_a_Key_Element) — S2-A2
-- [The Systems Engineering Approach in Times of LLMs (ArXiv 2411.09050)](https://arxiv.org/pdf/2411.09050) — S2-A2
+- [The Systems Engineering Approach in Times of LLMs (ArXiv 2411.09050)](papers/arxiv-2411.09050-systems-engineering-llms.pdf) — S2-A2
 - [AI Systems Engineering: rescuing AI from the valley of death — OpenChain](https://openchainproject.org/news/2026/03/26/ai-systems-engineering-the-new-discipline-to-rescue-ai-from-the-valley-of-death) — S2-A2
 - [Model-Based Systems Engineering and Agentic AI — MathWorks](https://blogs.mathworks.com/simulink/2026/04/26/model-based-systems-engineering-and-agentic-ai/) — S2-A2
 - [Model-Based Testing of Non-Deterministic Systems (PDF)](https://marcfrappierudes.github.io/Papers/Model_Based_Testing_of_Non_Deterministic_Systems.pdf) — S2-A2
@@ -115,7 +115,7 @@ All source links organized by topic. Article assignments noted where applicable.
 ## Evals / LLM-as-Judge
 
 - [LLM as a Judge: guide and best practices — Agenta](https://agenta.ai/blog/llm-as-a-judge-guide-to-llm-evaluation-best-practices) — S2-A1
-- [LLMs-as-Judges: comprehensive survey (ArXiv)](https://arxiv.org/pdf/2412.05579) — S2-A1
+- [LLMs-as-Judges: comprehensive survey (ArXiv)](papers/arxiv-2412.05579-llms-as-judges-survey.pdf) — S2-A1
 - [LLM judge cookbook — Hugging Face](https://huggingface.co/learn/cookbook/en/llm_judge) — S2-A1
 - [Beyond vibe checks: complete guide to evals — Lenny's Newsletter](https://www.lennysnewsletter.com/p/beyond-vibe-checks-a-pms-complete) — S2-A1
 - [A pragmatic guide to LLM evals — Pragmatic Engineer](https://newsletter.pragmaticengineer.com/p/evals) — S2-A1/S1-A7
@@ -127,14 +127,14 @@ All source links organized by topic. Article assignments noted where applicable.
 
 - [SwarmForge repo — Uncle Bob](https://github.com/unclebob/swarm-forge) — S1-A10
 - [Managing a swarm of 20 AI agents — Zach Wills](https://zachwills.net/i-managed-a-swarm-of-20-ai-agents-for-a-week-here-are-the-8-rules-i-learned/) — S1-A10
-- [Agentic Software Engineering: Foundational Pillars (ArXiv)](https://arxiv.org/pdf/2509.06216) — S2-A3
+- [Agentic Software Engineering: Foundational Pillars (ArXiv)](papers/arxiv-2509.06216-agentic-se-foundational-pillars.pdf) — S2-A3
 
 ## Context Architecture / Governance
 
 - [AI-Infused Development Needs More Than Prompts — O'Reilly](https://www.oreilly.com/radar/ai-infused-development-needs-more-than-prompts/) — S2-A3
 - [Agentic AI Content Verification — Quality Gates (Pebblous)](https://blog.pebblous.ai/blog/agentic-content-pipeline-verification/en/) — S2-A3/A5
 - [AI Agent Governance — Policy and Compliance 2026](https://www.digitalapplied.com/blog/ai-agent-governance-policy-compliance-2026) — S2-A3
-- [Automated Self-Testing as a Quality Gate for LLM Applications (ArXiv)](https://arxiv.org/html/2603.15676v1) — S2-A4
+- [Automated Self-Testing as a Quality Gate for LLM Applications (ArXiv)](papers/arxiv-2603.15676-automated-self-testing-quality-gate.pdf) — S2-A4
 - [LLM Observability: The Ultimate 2026 Guide — FutureAGI](https://futureagi.com/blog/what-is-llm-observability-ultimate-guide-2026/) — S2-A4
 
 ## LoRA
@@ -151,22 +151,22 @@ All source links organized by topic. Article assignments noted where applicable.
 
 - [Simon Willison — Embracing the parallel coding agent lifestyle](https://simonw.substack.com/p/embracing-the-parallel-coding-agent) — S1-A3; attention cost of parallel agents
 - [Pragmatic Engineer — Programming by kicking off parallel AI agents](https://blog.pragmaticengineer.com/new-trend-programming-by-kicking-off-parallel-ai-agents/) — S1-A3; senior engineer attention ceiling
-- [arXiv 2606.05391 — Human oversight of agentic systems in practice](https://arxiv.org/abs/2606.05391) — S1-A3; empirical study of developer cognitive load during agent runs
-- [arXiv 2511.06428 — Walking the Tightrope: LLMs for Software Development](https://arxiv.org/abs/2511.06428) — S1-A3; flow disruption as LLM cost
-- [arXiv 2507.03156 — Impact of LLM-Assistants on Developer Productivity](https://arxiv.org/html/2507.03156v1) — S1-A3; 23-minute recovery time applied to LLM interruptions
+- [arXiv 2606.05391 — Human oversight of agentic systems in practice](papers/arxiv-2606.05391-human-oversight-agentic-systems.pdf) — S1-A3; empirical study of developer cognitive load during agent runs
+- [arXiv 2511.06428 — Walking the Tightrope: LLMs for Software Development](papers/arxiv-2511.06428-walking-the-tightrope.pdf) — S1-A3; flow disruption as LLM cost
+- [arXiv 2507.03156 — Impact of LLM-Assistants on Developer Productivity](papers/arxiv-2507.03156-llm-assistant-developer-productivity.pdf) — S1-A3; 23-minute recovery time applied to LLM interruptions
 - [RedMonk — 10 Things Developers Want from Agentic IDEs in 2025](https://redmonk.com/kholterhoff/2025/12/22/10-things-developers-want-from-their-agentic-ides-in-2025/) — S1-A3; fire-and-forget pattern
 - [Stack Overflow — Agents on a leash](https://stackoverflow.blog/2026/05/27/agents-on-a-leash-agentic-ai-remains-mostly-monitored-at-work/) — S1-A3; developer oversight baseline data
 
 ## Empirical Research — AI-Assisted Development (Phase, Cognition, Quality)
 
-- [METR Productivity RCT — arXiv:2507.09089](https://arxiv.org/abs/2507.09089) — S1-A1, S1-A3; 19% slower, perceived 20% faster; 39-point perception-reality gap; 16 experienced devs, 246 tasks
-- [Comprehension Debt in GenAI SE — arXiv:2604.13277](https://arxiv.org/abs/2604.13277) — S1-A3; 17% comprehension drop; four debt patterns; debt lives in cognition not codebase
-- [Debt Behind the AI Boom — arXiv:2603.28592](https://arxiv.org/abs/2603.28592) — S1-A1, S1-A2; 304,362 AI commits; 24.2% of AI-introduced defects never cleaned up
-- [Fast and Forgettable — arXiv:2604.18538](https://arxiv.org/abs/2604.18538) — S1-A3; Copilot vs. pair programming RCT; worse one-week retention; overestimated learning
-- [Mitigating Epistemic Debt — arXiv:2602.20206](https://arxiv.org/abs/2602.20206) — S1-A3; Explanation Gate intervention restores metacognitive engagement
-- [The Vibe-Check Protocol — arXiv:2601.02410](https://arxiv.org/abs/2601.02410) — S1-A1, S1-A3; acceleration vs. offloading distinction; measurably different outcomes
-- [Enterprise AI Coding Assistants — arXiv:2601.20112](https://arxiv.org/abs/2601.20112) — S1-A3; devs spend ~9% of time reviewing AI output; produce more code, delete more
-- [Vibe Coding in Practice: Flow, Technical Debt — arXiv:2512.11922](https://arxiv.org/abs/2512.11922) — S1-A1; flow-debt trade-off; phase handoff sustainability guidelines
-- [Agentic AI in the SDLC — arXiv:2604.26275](https://arxiv.org/abs/2604.26275) — S2-A4; six-layer A-SDLC reference architecture; economics of attention named as open problem
-- [Bridging the Gap: Transparency and Traceability — arXiv:2605.17675](https://arxiv.org/abs/2605.17675) — S2-A2; V-model traceability requirements in AI-assisted scientific software
+- [METR Productivity RCT — arXiv:2507.09089](papers/arxiv-2507.09089-metr-productivity-rct.pdf) — S1-A1, S1-A3; 19% slower, perceived 20% faster; 39-point perception-reality gap; 16 experienced devs, 246 tasks
+- [Comprehension Debt in GenAI SE — arXiv:2604.13277](papers/arxiv-2604.13277-comprehension-debt.pdf) — S1-A3; 17% comprehension drop; four debt patterns; debt lives in cognition not codebase
+- [Debt Behind the AI Boom — arXiv:2603.28592](papers/arxiv-2603.28592-debt-behind-ai-boom.pdf) — S1-A1, S1-A2; 304,362 AI commits; 24.2% of AI-introduced defects never cleaned up
+- [Fast and Forgettable — arXiv:2604.18538](papers/arxiv-2604.18538-fast-and-forgettable.pdf) — S1-A3; Copilot vs. pair programming RCT; worse one-week retention; overestimated learning
+- [Mitigating Epistemic Debt — arXiv:2602.20206](papers/arxiv-2602.20206-mitigating-epistemic-debt.pdf) — S1-A3; Explanation Gate intervention restores metacognitive engagement
+- [The Vibe-Check Protocol — arXiv:2601.02410](papers/arxiv-2601.02410-vibe-check-protocol.pdf) — S1-A1, S1-A3; acceleration vs. offloading distinction; measurably different outcomes
+- [Enterprise AI Coding Assistants — arXiv:2601.20112](papers/arxiv-2601.20112-enterprise-ai-coding-assistants.pdf) — S1-A3; devs spend ~9% of time reviewing AI output; produce more code, delete more
+- [Vibe Coding in Practice: Flow, Technical Debt — arXiv:2512.11922](papers/arxiv-2512.11922-vibe-coding-in-practice.pdf) — S1-A1; flow-debt trade-off; phase handoff sustainability guidelines
+- [Agentic AI in the SDLC — arXiv:2604.26275](papers/arxiv-2604.26275-agentic-ai-sdlc.pdf) — S2-A4; six-layer A-SDLC reference architecture; economics of attention named as open problem
+- [Bridging the Gap: Transparency and Traceability — arXiv:2605.17675](papers/arxiv-2605.17675-transparency-traceability-v-model.pdf) — S2-A2; V-model traceability requirements in AI-assisted scientific software
 - [Empirically Based Model of Software Prototyping — Bjarnason et al. 2023](https://dl.acm.org/doi/10.1007/s10664-023-10331-w) — S1-A1, S3-A2; PAM vocabulary; exploratory vs. evolutionary prototypes are categorically distinct

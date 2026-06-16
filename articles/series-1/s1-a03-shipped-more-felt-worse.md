@@ -147,14 +147,14 @@ Flag for placement decision when drafting begins.
 - [Snyk guardrails for AI coding assistants](https://snyk.io/blog/build-fast-stay-secure-guardrails-for-ai-coding-assistants/)
 - [Simon Willison — Embracing the parallel coding agent lifestyle](https://simonw.substack.com/p/embracing-the-parallel-coding-agent) — calls parallel agents "a thermonuclear ADHD amplifier"; notes he can only usefully review one output at a time
 - [Pragmatic Engineer — Programming by kicking off parallel AI agents](https://blog.pragmaticengineer.com/new-trend-programming-by-kicking-off-parallel-ai-agents/) — Armin Ronacher: "it's only so much my mind can review"; attention ceiling named but not analyzed
-- [arXiv 2606.05391 — Human oversight of agentic systems in practice](https://arxiv.org/abs/2606.05391) — 17 developer interviews; documents cognitive load of monitoring agents; closest academic treatment of what developers do while agents run
-- [arXiv 2511.06428 — Walking the Tightrope: LLMs for Software Development](https://arxiv.org/abs/2511.06428) — 22 practitioner interviews; names flow disruption as a cost of LLM tools
-- [arXiv 2507.03156 — Impact of LLM-Assistants on Developer Productivity](https://arxiv.org/html/2507.03156v1) — cites 23-minute recovery time after interruption applied to LLM workflows
+- [arXiv 2606.05391 — Human oversight of agentic systems in practice](../papers/arxiv-2606.05391-human-oversight-agentic-systems.pdf) — 17 developer interviews; documents cognitive load of monitoring agents; closest academic treatment of what developers do while agents run
+- [arXiv 2511.06428 — Walking the Tightrope: LLMs for Software Development](../papers/arxiv-2511.06428-walking-the-tightrope.pdf) — 22 practitioner interviews; names flow disruption as a cost of LLM tools
+- [arXiv 2507.03156 — Impact of LLM-Assistants on Developer Productivity](../papers/arxiv-2507.03156-llm-assistant-developer-productivity.pdf) — cites 23-minute recovery time after interruption applied to LLM workflows
 - [RedMonk — 10 Things Developers Want from Agentic IDEs in 2025](https://redmonk.com/kholterhoff/2025/12/22/10-things-developers-want-from-their-agentic-ides-in-2025/) — "fire and forget" as dominant developer fantasy; attention cost of that pattern unexamined
 - [Stack Overflow — Agents on a leash: agentic AI remains mostly monitored](https://stackoverflow.blog/2026/05/27/agents-on-a-leash-agentic-ai-remains-mostly-monitored-at-work/) — most developers keep agents on short leashes; baseline for how common the wait-time problem actually is
-- [METR productivity RCT — arXiv:2507.09089](https://arxiv.org/abs/2507.09089) — 19% slower, perceived 20% faster; 39-point gap; 16 experienced devs, own repos
-- [Comprehension Debt in GenAI-Assisted SE — arXiv:2604.13277](https://arxiv.org/abs/2604.13277) — 17% comprehension drop; four debt patterns; debt in cognition not codebase
-- [Fast and Forgettable — arXiv:2604.18538](https://arxiv.org/abs/2604.18538) — Copilot vs. pair programming RCT; worse retention; overestimated learning
-- [The Vibe-Check Protocol — arXiv:2601.02410](https://arxiv.org/abs/2601.02410) — acceleration vs. offloading distinction; measurably different outcomes
-- [Mitigating Epistemic Debt — arXiv:2602.20206](https://arxiv.org/abs/2602.20206) — Explanation Gate intervention; restored metacognitive engagement
-- [Enterprise AI Coding Assistants — arXiv:2601.20112](https://arxiv.org/abs/2601.20112) — devs spend ~9% of time reviewing AI output; produce more code but delete more too
+- [METR productivity RCT — arXiv:2507.09089](../papers/arxiv-2507.09089-metr-productivity-rct.pdf) — 19% slower, perceived 20% faster; 39-point gap; 16 experienced devs, own repos
+- [Comprehension Debt in GenAI-Assisted SE — arXiv:2604.13277](../papers/arxiv-2604.13277-comprehension-debt.pdf) — 17% comprehension drop; four debt patterns; debt in cognition not codebase
+- [Fast and Forgettable — arXiv:2604.18538](../papers/arxiv-2604.18538-fast-and-forgettable.pdf) — Copilot vs. pair programming RCT; worse retention; overestimated learning
+- [The Vibe-Check Protocol — arXiv:2601.02410](../papers/arxiv-2601.02410-vibe-check-protocol.pdf) — acceleration vs. offloading distinction; measurably different outcomes
+- [Mitigating Epistemic Debt — arXiv:2602.20206](../papers/arxiv-2602.20206-mitigating-epistemic-debt.pdf) — Explanation Gate intervention; restored metacognitive engagement
+- [Enterprise AI Coding Assistants — arXiv:2601.20112](../papers/arxiv-2601.20112-enterprise-ai-coding-assistants.pdf) — devs spend ~9% of time reviewing AI output; produce more code but delete more too

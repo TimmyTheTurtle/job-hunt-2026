@@ -125,7 +125,7 @@ The key object to study is not just “AI assistance” but the attention loop i
 
 ### Useful source links
 
-- Programming by Chat study: <https://arxiv.org/html/2604.00436v1> [cite:47]
+- Programming by Chat study: <papers/arxiv-2604.00436-programming-by-chat.pdf> [cite:47]
 - Axios on agentic-tool addiction/brain effects: <https://www.axios.com/2026/04/04/ai-agents-burnout-addiction-claude-code-openclaw> [cite:37]
 - AI fatigue essay: <https://siddhantkhare.com/writing/ai-fatigue-is-real> [cite:51]
 - PreToolUse hooks: <https://www.linkedin.com/posts/lanemik_building-guardrails-for-ai-coding-assistants-activity-7418782309803544576-oSVd> [cite:35]
@@ -303,7 +303,7 @@ Software and architecture knowledge is inherently relational, so graph-backed re
 - GraphRAG GitHub repo: <https://github.com/microsoft/graphrag> [cite:197]
 - How GraphRAG works step-by-step: <https://tech.bertelsmann.com/en/blog/articles/how-microsoft-graphrag-works-step-by-step-part-12> [cite:195]
 - KG-guided RAG paper: <https://aclanthology.org/2025.naacl-long.449/> [cite:144]
-- RAG + knowledge graphs paper: <https://arxiv.org/abs/2404.17723> [cite:162]
+- RAG + knowledge graphs paper: <papers/arxiv-2404.17723-rag-knowledge-graphs.pdf> [cite:162]
 - Memgraph GraphRAG overview: <https://memgraph.com/docs/ai-ecosystem/graph-rag> [cite:138]
 
 ---

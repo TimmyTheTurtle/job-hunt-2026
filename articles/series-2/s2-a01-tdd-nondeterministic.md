@@ -58,7 +58,7 @@ is S2-A2 territory.
 ## Sources
 
 - [LLM as a Judge: guide and best practices — Agenta](https://agenta.ai/blog/llm-as-a-judge-guide-to-llm-evaluation-best-practices)
-- [LLMs-as-Judges: comprehensive survey (ArXiv)](https://arxiv.org/pdf/2412.05579)
+- [LLMs-as-Judges: comprehensive survey (ArXiv)](../papers/arxiv-2412.05579-llms-as-judges-survey.pdf)
 - [LLM judge cookbook — Hugging Face](https://huggingface.co/learn/cookbook/en/llm_judge)
 - [Beyond vibe checks: complete guide to evals — Lenny's Newsletter](https://www.lennysnewsletter.com/p/beyond-vibe-checks-a-pms-complete)
 - [A pragmatic guide to LLM evals — Pragmatic Engineer](https://newsletter.pragmaticengineer.com/p/evals)

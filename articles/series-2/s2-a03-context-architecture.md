@@ -44,7 +44,7 @@ Rule: archive broadly, retrieve narrowly.
 
 ## Sources
 
-- [Agentic Software Engineering: Foundational Pillars (ArXiv)](https://arxiv.org/pdf/2509.06216)
+- [Agentic Software Engineering: Foundational Pillars (ArXiv)](../papers/arxiv-2509.06216-agentic-se-foundational-pillars.pdf)
 - [AI-Infused Development Needs More Than Prompts — O'Reilly](https://www.oreilly.com/radar/ai-infused-development-needs-more-than-prompts/)
 - [Agentic AI Content Verification — Quality Gates (Pebblous)](https://blog.pebblous.ai/blog/agentic-content-pipeline-verification/en/)
 - [Why Your AI Agent Needs a Quality Gate — dev.to](https://dev.to/yurukusa/why-your-ai-agent-needs-a-quality-gate-not-just-tests-42eo)

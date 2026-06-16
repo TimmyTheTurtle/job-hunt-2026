@@ -85,7 +85,7 @@ version — accumulated debt and drift — is less dramatic but more pervasive.
 
 ## Sources
 
-- [XOXO: Cross-Origin Context Poisoning attacks on AI coding assistants (ArXiv)](https://arxiv.org/html/2503.14281v1)
+- [XOXO: Cross-Origin Context Poisoning attacks on AI coding assistants (ArXiv)](../papers/arxiv-2503.14281-xoxo-context-poisoning.pdf)
 - [Context rot is slowing down your AI agent — LogRocket](https://blog.logrocket.com/context-rot-slowing-down-your-ai-agent-how-fix/)
 - [Context Rot: Why LLMs degrade as context grows — Morph](https://www.morphllm.com/context-rot)
 - [How Long Contexts Fail and How to Fix Them — dbreunig](https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html)

@@ -177,12 +177,12 @@ document at the end. The subject being a game is interesting color, not the poin
 - Rixen et al. 2023 — peer-reviewed field study on infinite scroll; users "caught in a loop," sessions "regretfully elongating"; use instead of counseling-center sources
 - Variable reward / social media engagement review literature (2025) — ties engagement to variable rewards, personalized feeds, endless continuation
 - Doomscrolling + anxiety/pessimism/work-engagement literature (2024) — peer-reviewed associations
-- [METR productivity RCT](https://arxiv.org/abs/2507.09089) — arXiv:2507.09089; 16 developers, 246 tasks, own mature repos; 19% slower, felt 20–24% faster; Feb 2026 update: late-2025 tools may show modest speedups; honest claim = "kills productivity triumphalism"
+- [METR productivity RCT](../papers/arxiv-2507.09089-metr-productivity-rct.pdf) — arXiv:2507.09089; 16 developers, 246 tasks, own mature repos; 19% slower, felt 20–24% faster; Feb 2026 update: late-2025 tools may show modest speedups; honest claim = "kills productivity triumphalism"
 - Shen & Tamkin, Anthropic January 2026 — 17% lower mastery quiz scores using AI assistance; correct source for this stat (NOT Ahmad et al.)
-- [Comprehension Debt — Ahmad et al., April 2026](https://arxiv.org/abs/2604.13277) — arXiv:2604.13277; names mechanisms: black-box acceptance, context mismatch, dependency-induced atrophy, verification bypass
-- [Debt Behind the AI Boom — Liu et al., March 2026](https://arxiv.org/abs/2603.28592) — arXiv:2603.28592; 304,362 AI commits; 484,606 issues identified; 24.2% surviving to latest revision (code smells, bugs, security — not strictly "defects")
+- [Comprehension Debt — Ahmad et al., April 2026](../papers/arxiv-2604.13277-comprehension-debt.pdf) — arXiv:2604.13277; names mechanisms: black-box acceptance, context mismatch, dependency-induced atrophy, verification bypass
+- [Debt Behind the AI Boom — Liu et al., March 2026](../papers/arxiv-2603.28592-debt-behind-ai-boom.pdf) — arXiv:2603.28592; 304,362 AI commits; 484,606 issues identified; 24.2% surviving to latest revision (code smells, bugs, security — not strictly "defects")
 - [Empirically Based Model of Software Prototyping — Bjarnason et al. 2023](https://dl.acm.org/doi/10.1007/s10664-023-10331-w) — PAM; exploratory vs. evolutionary prototypes categorically distinct
-- [Vibe Coding in Practice: Flow, Technical Debt, and Guidelines — Waseem et al. Dec 2025](https://arxiv.org/abs/2512.11922) — arXiv:2512.11922; flow-debt trade-off; powerful for MVPs/prototypes, increasingly risky without lifecycle safeguards
+- [Vibe Coding in Practice: Flow, Technical Debt, and Guidelines — Waseem et al. Dec 2025](../papers/arxiv-2512.11922-vibe-coding-in-practice.pdf) — arXiv:2512.11922; flow-debt trade-off; powerful for MVPs/prototypes, increasingly risky without lifecycle safeguards
 - June 2026 interview study (17 experienced developers using software agents) — oversight breaks into a priori control, co-planning, real-time monitoring, post hoc review
 
 ---

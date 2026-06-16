@@ -57,6 +57,6 @@ depend on this interface?" rather than "what does this interface do?"
 - [GraphRAG GitHub repo](https://github.com/microsoft/graphrag)
 - [How Microsoft GraphRAG works step-by-step — Bertelsmann](https://tech.bertelsmann.com/en/blog/articles/how-microsoft-graphrag-works-step-by-step-part-12)
 - [KG-guided RAG paper — ACL Anthology](https://aclanthology.org/2025.naacl-long.449/)
-- [RAG + knowledge graphs paper — ArXiv](https://arxiv.org/abs/2404.17723)
+- [RAG + knowledge graphs paper — ArXiv](../papers/arxiv-2404.17723-rag-knowledge-graphs.pdf)
 - [Memgraph GraphRAG overview](https://memgraph.com/docs/ai-ecosystem/graph-rag)
 - [GraphRAG for developers coding assistant — Memgraph](https://memgraph.com/blog/graphrag-for-devs-coding-assistant)
