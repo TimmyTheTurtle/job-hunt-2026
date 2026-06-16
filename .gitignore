@@ -4,3 +4,9 @@ job_search/__pycache__/
 job_search/ledger/__pycache__/
 secrets/
 articles/papers/*.pdf
+articles/refs/
+articles/graph.db/
+articles/papers/citations.json
+.cache/s2/
+__pycache__/
+*.pyc
