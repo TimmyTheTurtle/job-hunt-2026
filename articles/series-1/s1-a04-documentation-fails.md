@@ -5,6 +5,24 @@
 
 ---
 
+## Voice and Tone
+
+- **This is the personal arc article.** Point 4 of the argument flow says so explicitly: the
+  author's own trajectory through under-documentation, then overcorrection into unfiltered
+  journals, is the through-line. Write it in first person without apology. The credibility
+  comes from having made both mistakes.
+- **Register:** reflective but precise. Not confessional — the emotional content is in the
+  structure of the argument, not in explicit feeling-statements. "The reasoning was in a chat
+  session that closed six weeks ago" is the right register.
+- **Do not lecture about documentation.** The argument is that most teams are doing the
+  wrong kind, not that they are lazy. Respect the effort before redirecting it.
+- **The "wrong reader" reframe is the article's core move.** Write toward it early. Everything
+  else is consequence.
+- **ADRs should be introduced as a discovery**, not as a recommendation. "Here is what
+  actually works and why" rather than "you should write ADRs."
+
+---
+
 ## Thesis
 
 Missing documentation and vibe coding share a common failure mode: they produce activity without

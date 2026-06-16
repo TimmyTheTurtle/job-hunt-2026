@@ -5,6 +5,26 @@
 
 ---
 
+## Voice and Tone
+
+- **Register:** product strategist who has also read the academic literature. Not a startup
+  evangelist, not an academic. Someone who has built things and thought carefully about what
+  the evidence actually says.
+- **Respect the Ries/Blank/Torres lineage.** The argument is not that lean startup is wrong
+  — it is that it was optimized for a constraint that no longer exists. Credit the tradition
+  before updating it.
+- **First person where the economics are concrete.** If you have run 50 experiments with AI
+  in an afternoon, say so. The claim that "prototype cost approaches zero" is more credible
+  with a first-person data point.
+- **Don't oversell the inversion.** The pivot cost (team morale, investor patience) stays
+  constant. That asymmetry is the article's most honest moment — name it early and let it
+  do its work. The many-MVPs model saves pivots, it doesn't eliminate them.
+- **The information problem is the article's structural heart.** The many-MVPs model only
+  works if the history accumulates. Lead the reader toward that problem before offering
+  the solution.
+
+---
+
 ## Thesis
 
 The lean startup MVP model is a one-bet strategy. You build the minimum thing, observe the

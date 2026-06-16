@@ -5,6 +5,27 @@
 
 ---
 
+## Voice and Tone
+
+- **Most personal article in Series 1.** The morning math, the walk, the cognitive rotation
+  model — these are Dorian's actual practices. Write in first person without hedging. "I start
+  with vector math before anything else" is more credible than "some engineers find it useful
+  to..."
+- **The title is a confession, not a complaint.** Own it. The piece works because it admits
+  the experience before explaining it. Don't back away from the personal register when the
+  empirical section arrives — carry the first person through.
+- **Tone:** serious and calm, not wounded. The argument is about a structural pattern that
+  causes real harm. Naming it clearly is not melodrama — it is precision.
+- **The cognitive rotation model and the walk are earned opinion, not advice.** Present them
+  as "what I do and why" not "what you should do." The reader can draw their own conclusion.
+- **Do not catastrophize.** The floor is bad enough without amplification. Let the 39-point
+  perception gap speak without editorial. The facts are dramatic. The prose should be composed.
+- **The wait-time attention section is original.** Nobody has written a clean essay on this
+  yet (article plan says so). Write it like you know that — with the quiet confidence of
+  someone saying something that should have been said already.
+
+---
+
 ## Thesis
 
 AI-assisted development done wrong causes measurable cognitive decline — not fatigue, decline.

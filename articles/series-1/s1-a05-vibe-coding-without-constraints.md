@@ -5,6 +5,27 @@
 
 ---
 
+## Voice and Tone
+
+- **The pivot article.** The tone shifts here from diagnostic to constructive. After four
+  articles naming problems, this one changes direction. The register should feel like a gear
+  change — still composed, but forward-moving. Not cheerful. Purposeful.
+- **"Constraint-first" is not a compliance argument.** Do not let this article sound like
+  a process document. The argument is pragmatic: constraints change what the agent generates.
+  That is an engineering observation, not a methodology pitch.
+- **Uncle Bob Martin reference:** engage with the argument, not the authority. The point is
+  that function size stopped being a style guideline and became a context management constraint
+  — the underlying principle didn't change, the stakes did. Credit the observation, then own
+  the extension.
+- **First person selectively.** The examples of constraint-first prompts that actually worked
+  differently should be in first person if drawn from experience. The theoretical framing
+  can be third person.
+- **Do not over-promise.** "Mini V per feature" is a lightweight discipline, not a
+  transformation. Present it as a practical unit of structure, not a silver bullet.
+  The composure of the claim is part of its credibility.
+
+---
+
 ## Thesis
 
 LLM-assisted development becomes more accurate and more maintainable when constrained by

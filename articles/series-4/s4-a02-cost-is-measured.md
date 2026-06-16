@@ -5,6 +5,26 @@
 
 ---
 
+## Voice and Tone
+
+- **This is the evidence article.** The register is controlled and precise. Every claim has
+  a number behind it. Don't editorialize — let the figures do it.
+- **"The smell was always there. The catastrophe just made it visible."** That sentence from
+  the thesis is the article's emotional core. Return to it. The point is not that disasters
+  happen — it is that they were predictable, and the instrument for predicting them exists.
+- **Tone on the dollar figures:** matter-of-fact, not alarming. "$30–67B in annual claims
+  leakage" is not a number to perform shock around. State it, source it, move on.
+- **Security constraint:** real litigation numbers from public court records are acceptable.
+  Proprietary policy language is never published, even synthetic-looking versions of it.
+  All examples that show document structure must be clearly synthetic.
+- **Do not moralize about the insurance industry.** The argument is about identifiable,
+  preventable technical failures — not about bad actors. The framing is engineering, not
+  critique.
+- **The absent cases (smells that resolve quietly) are as important as the named cases.**
+  Give that asymmetry its due — the silence is evidence of a different kind.
+
+---
+
 ## Thesis
 
 Legal tech debt is not a theoretical problem. The cost events are named, the dollar figures

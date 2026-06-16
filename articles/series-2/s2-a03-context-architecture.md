@@ -4,6 +4,26 @@
 
 ---
 
+## Voice and Tone
+
+- **Register:** serious and architectural. This is the article that argues context architecture
+  is a real discipline with a real name. The tone should match that ambition — precise,
+  grounded, not breathless.
+- **"Not metaphorically, but operationally"** is the hinge phrase in the thesis. Write toward
+  it. The whole article's credibility rests on making that distinction stick.
+- **Draw on information architecture and knowledge management traditions without being
+  academic about it.** These are real fields with real vocabulary. Use the vocabulary without
+  explaining it at length — this audience can keep up.
+- **The tiered memory model (Canonical / Reference / Scratch) should feel discovered,
+  not announced.** Build to it through the argument before naming it.
+- **First person where the context architecture decisions were made in real systems** —
+  legal-tech-debt, Watershed, Granny's House. These are concrete. Use them.
+- **The token economics note (cross-ref S2-A7) should land as a consequence**, not a detour.
+  "Archive broadly, retrieve narrowly is a cost principle" — one sentence, no expansion needed
+  in this article.
+
+---
+
 ## Thesis
 
 If the agent is a mirror of its context, then the design of the context is the design of the

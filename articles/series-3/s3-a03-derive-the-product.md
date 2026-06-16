@@ -5,6 +5,25 @@
 
 ---
 
+## Voice and Tone
+
+- **The synthesis article.** Series 3 builds to this. The tone should feel like arrival, not
+  conclusion — the reader has earned the concept by this point, so the writing can be more
+  direct and assured.
+- **"Path of least resistance" is a loaded phrase.** Acknowledge it. The article's first job
+  is to redefine it: not "easiest to build" but "where the evidence converges." Make that
+  distinction in the opening paragraph before the reader imports the wrong meaning.
+- **Register:** calm authority. This is the author's own framework — not a citation, not a
+  borrowed concept. Write it that way. The confidence is earned.
+- **The preserved history is the asset.** Not the prototypes. Not the insights in someone's
+  head. The structured record. Be specific about what "structured" means — hypothesis, build,
+  result, revelation, change. Vague gestures at "documentation" will not land.
+- **First person throughout.** Watershed is the concrete example that makes this real.
+  Use it if needed — the staged experiments, the WFC notes crystallizing as a requirements
+  document. The theory is credible because the practice existed first.
+
+---
+
 ## Thesis
 
 Most teams throw prototypes away. A working thing ran, revealed something, then was deleted.

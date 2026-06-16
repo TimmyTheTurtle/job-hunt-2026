@@ -4,6 +4,25 @@
 
 ---
 
+## Voice and Tone
+
+- **Register:** technical and direct. Series 2 is a step up in assumed reader sophistication —
+  this audience knows TDD. Don't explain it; build on it. The argument is "here is where the
+  familiar thing breaks and here is what replaces it."
+- **The title makes a bold claim. Earn it without hedging it to death.** "TDD doesn't work"
+  is the thesis. The nuance is in why and what does work instead — not in retreating to
+  "well, it depends." Make the case.
+- **First person only where you have operated evals yourself.** The article can be largely
+  in analytical voice. Personal experience earns its place when describing what it actually
+  feels like to see an 8-point accuracy drop and have no red test to point at.
+- **LLM-as-judge:** treat it with precision, not dismissal. It reduces review volume — that
+  is real. It cannot verify — that is also real. Both are true simultaneously.
+- **Do not make this a methodology pitch.** The argument is structural. Evals aren't "better"
+  than TDD in the sense of being superior engineering discipline — they are the appropriate
+  tool for a different class of system. Make that distinction clearly.
+
+---
+
 ## Thesis
 
 TDD rests on three assumptions LLM systems violate: determinism (same input always produces

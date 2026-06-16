@@ -5,6 +5,27 @@
 
 ---
 
+## Voice and Tone
+
+- **Register:** the reframe article. This one has permission to be a little more intellectually
+  playful than the rest of Series 1. The thesis is surprising — "clean code is a category error
+  for agents" — and the prose should carry that energy without overselling it.
+- **"Probably a category error"** is the right hedge. Don't be more certain than the argument
+  earns. The article's strength is the reframe, not the certainty.
+- **First person:** yes, selectively. The moments where the argument is drawn from direct
+  experience with agents should be first person. The compiler analogy and the category error
+  framing can be in the cleaner analytical register.
+- **Do not dismiss Uncle Bob or the clean code tradition.** The argument is not that they were
+  wrong. It is that their target was human readers, and agents are a categorically different
+  reader. Respect the tradition before redirecting it.
+- **"Every context window is day one"** — this is the line the article hinges on. Write toward
+  it. Everything before it is setup; everything after is consequence.
+- **The economic dimension (S2-A7 cross-reference) should feel like a discovery**, not a
+  footnote. "A verbose prompt that works is not clean at scale" is the kind of line that lands
+  when it arrives without telegraphing.
+
+---
+
 ## Thesis
 
 "Clean code for agents" is probably a category error — the same way "clean code for a compiler"

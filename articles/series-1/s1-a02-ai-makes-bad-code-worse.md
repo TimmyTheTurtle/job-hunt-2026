@@ -5,6 +5,22 @@
 
 ---
 
+## Voice and Tone
+
+- **Register:** cooler and more analytical than A1, but with edge. The exasperation is at the
+  mechanism, not at practitioners. The system is doing exactly what it was designed to do —
+  that is the problem.
+- **First person:** yes, but restrained. "I have seen this" rather than "I feel this." The
+  practitioner writing about a structural trap they have diagnosed, not confessed to.
+- **The `/compact` line is a keeper.** That's the voice — technically precise, slightly wry,
+  earned. Write toward more moments like it.
+- **Do not moralize.** The argument is structural, not ethical. Developers are not doing
+  something wrong. The pattern is wrong. Keep the blame on the architecture, not the people.
+- **Positive case before the floor** — same rule as A1. Name what good looks like before
+  laying out the empirical damage.
+
+---
+
 ## Thesis
 
 AI accelerates output in proportion to the quality of the context it's given. Give it clean,

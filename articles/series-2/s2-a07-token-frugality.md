@@ -4,6 +4,28 @@
 
 ---
 
+## Voice and Tone
+
+- **This is a favorite topic — write like it.** Not enthusiastically, but with the fluency of
+  someone who has thought about this longer than most. The five levers should feel like
+  the product of real experience, not a literature review.
+- **Register:** precise and slightly wry. "A single `model: "opus"` hardcoded in the agent
+  config" — that level of specificity is the voice. Technical, concrete, slightly exasperated
+  at the avoidable waste.
+- **First person on the organizational blind spot section.** "Development teams burn tokens
+  freely" is fine analytically, but "I have watched this happen" is more credible and more
+  useful for a reader who is currently doing it.
+- **The cloud compute parallel is the thesis anchor.** Write toward it from the opening.
+  Everyone has seen a surprise cloud bill. This is that bill, happening slower and invisibly.
+- **Do not make this a pricing lecture.** The economics are evidence, not the point. The point
+  is that frugality is a design discipline. Cite the numbers once, precisely, then move on.
+- **The retrofitting section is the article's strongest original claim.** Give it the room it
+  deserves. The five levers interact — a system designed without any of them cannot be fixed
+  by adding them one at a time. That compounding is what makes this architectural rather than
+  operational.
+
+---
+
 ## Thesis
 
 Token spend is the new cloud compute bill. It accumulates invisibly, scales with every

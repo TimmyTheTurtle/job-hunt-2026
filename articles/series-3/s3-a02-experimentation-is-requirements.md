@@ -5,6 +5,25 @@
 
 ---
 
+## Voice and Tone
+
+- **Register:** the title already has the voice — direct and slightly sharp. "But Only If You
+  Do It Like a Scientist" is the edge that keeps this from being a vibe coding apologia. Carry
+  that tone into the article. The distinction between disciplined experimentation and enthusiasm
+  without a plan is the article's moral center.
+- **The "kid with a chemistry set" line from the thesis is good.** Keep it. It is specific
+  enough to be funny without being mean.
+- **Jobs to Be Done and the observed-vs-stated distinction** should be introduced as
+  practitioner knowledge, not academic citation. Name the framework, move on.
+- **First person on the failure mode.** Workshops that produce requirements nobody actually
+  uses — this is a universal experience. Own it. "I have sat in those workshops" is the
+  sentence that makes the rest of the article land.
+- **Do not allow this article to sound like a methodology.** It is an argument about what
+  requirements actually are, derived from experience. The scientist framing is the discipline
+  check, not a process prescription.
+
+---
+
 ## Thesis
 
 The traditional requirements process — elicit, specify, validate, then build — assumes you can

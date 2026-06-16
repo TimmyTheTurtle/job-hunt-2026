@@ -5,6 +5,26 @@
 
 ---
 
+## Voice and Tone
+
+- **Register:** diagnostic. This article names a mechanism that most readers have experienced
+  but not yet identified. The tone is the tone of someone who has found the word for the thing.
+- **"The system fighting your intent using your own past thoughts"** — this phrase from the
+  argument flow is the emotional core. Write toward it. That is the specific experience this
+  article is naming, and it is distinctive enough to anchor the piece.
+- **First person where you have seen it.** The organic poisoning pattern — accumulated debt,
+  stale ADRs, reversed decisions still in context — this is something any practitioner who has
+  worked in a long-running system has lived. Own that.
+- **Do not sensationalize the adversarial angle.** XOXO attacks are real and the 75% number
+  is striking, but the organic version is the article's main argument. The adversarial section
+  earns its place by showing the same mechanism operating deliberately — not by being alarming.
+- **The Janitor is a systems concept, not a metaphor.** Introduce it as a named architectural
+  pattern with a job description, not as an analogy. Precision > color.
+- **Tone on the U-shaped accuracy problem:** matter-of-fact, not alarming. This is a
+  documented model behavior. State it and move on.
+
+---
+
 ## Thesis
 
 At some point, accumulated AI-generated notes, summaries, and memory artifacts stop helping and

@@ -5,6 +5,29 @@
 
 ---
 
+## Voice and Tone
+
+- **This is the most original piece in the series. Write like you know that — without
+  announcing it.** The confidence shows in precision, not in claims about originality.
+- **Explain RAII to someone who doesn't know C++.** The article plan says "not in any existing
+  legal tech literature" — which means the primary audience hasn't seen RAII before. One clean
+  paragraph on what the pattern does before the mapping begins. Don't assume the legal reader
+  knows it. Don't bore the C++ reader by over-explaining it.
+- **Each defect class should land with recognition.** "Oh, that's the pattern I've seen and
+  didn't have a word for." Write toward that moment for each of the seven classes.
+- **DanglingReference as use-after-free:** this is the article's most elegant mapping. Give
+  it the most space. It is specific enough and counterintuitive enough to be genuinely
+  memorable.
+- **First person:** yes, on the "this framework is not in any existing legal tech literature."
+  Own the original contribution directly. "I have not found this framing elsewhere" is more
+  credible than "this framework appears to be novel."
+- **Security constraint:** synthetic examples only for all policy/clause demonstrations.
+  Real obligation structures (regulatory citations, public statutes) are fine.
+- **Do not write this as a research paper.** It is a practitioner article that happens to
+  have an original contribution at its center. The register is practitioner throughout.
+
+---
+
 ## Thesis
 
 Resource Acquisition Is Initialization (RAII) is a C++ pattern for ensuring resources are

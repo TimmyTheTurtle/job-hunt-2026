@@ -5,6 +5,29 @@
 
 ---
 
+## Voice and Tone
+
+- **Register:** the person who has read all three adjacent literatures and is naming the
+  structural reason they don't connect. Not dismissive of any of them — each field has done
+  real work. The gap is not from neglect. It is from starting assumptions that make the
+  defect-detection problem invisible from inside each field.
+- **Treat each adjacent field with full respect before naming its limit.** Legal NLP,
+  contract AI, Rules as Code — each gets a fair summary before the gap is identified.
+  The argument is structural, not a criticism of the researchers.
+- **"The gap is structurally unavoidable"** is the thesis's strongest claim. Earn it. Show
+  why each field's starting assumptions preclude arriving at this problem, not just that they
+  haven't gotten there yet.
+- **First person on the software engineering direction:** "I came to this from software
+  engineering, which is why I could see what wasn't there" — that positioning is what makes
+  the contribution legible. Name it without false modesty.
+- **The article is positioning, not polemic.** The reader who finishes it should understand
+  where this work sits in the landscape and why nobody else was going to do it. That is a
+  calm, confident claim. Not a competitive attack.
+- **Security constraint:** all examples synthetic. Real litigation numbers from public records
+  are fine. Proprietary corpus documents never quoted or shown.
+
+---
+
 ## Thesis
 
 Legal NLP, contract analysis AI, and the Rules as Code movement are three adjacent fields

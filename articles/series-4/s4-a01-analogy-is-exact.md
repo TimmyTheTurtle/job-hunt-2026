@@ -5,6 +5,28 @@
 
 ---
 
+## Voice and Tone
+
+- **"The analogy is exact" is a provocation and a promise.** The article's entire credibility
+  rests on delivering a precise structural mapping, not a loose metaphor. Write every analogy
+  as a one-to-one correspondence, not a resemblance.
+- **Register:** the two-domain practitioner. The reader is either a software engineer who
+  doesn't know legal systems, or a legal professional who doesn't know software. Write for
+  both simultaneously — introduce each concept as if the other-domain reader hasn't heard it.
+  That discipline will make the article legible to everyone and condescending to no one.
+- **The title does half the work — let the opening paragraph do the other half.** Don't
+  circle the thesis. State the mapping in the first 100 words and then prove it.
+- **Real cases with dollar figures.** The argument is that this is measurable. If it stays
+  abstract, the "exact" claim dies. Names, numbers, jurisdictions.
+- **Security constraints:** all published examples must be synthetic. Real policy text is
+  never published, even if in a public repository. Real litigation numbers from public court
+  records are fine.
+- **Do not apologize for crossing disciplines.** The crossing is the contribution. Write from
+  the position of someone who has worked in both domains and is tired of watching them not
+  talk to each other.
+
+---
+
 ## Thesis
 
 Legal systems accumulate technical debt in exactly the same way software codebases do.
