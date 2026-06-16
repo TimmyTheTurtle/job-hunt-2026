@@ -41,10 +41,10 @@ $idToFile = [ordered]@{
   "2401.01301" = "arxiv-2401.01301-dahl-large-legal-fictions.pdf"
 }
 
-# Target files
+# Target files — markdown only. HTML files are excluded because browsers treat
+# local file:// PDF links as downloads; the dashboard keeps arXiv URLs instead.
 $targets = @(
-  Get-ChildItem -Path $articlesDir -Filter "*.md"  -File
-  Get-ChildItem -Path $articlesDir -Filter "*.html" -File
+  Get-ChildItem -Path $articlesDir -Filter "*.md" -File
   Get-ChildItem -Path (Join-Path $articlesDir "series-1") -Filter "*.md" -File -ErrorAction SilentlyContinue
   Get-ChildItem -Path (Join-Path $articlesDir "series-2") -Filter "*.md" -File -ErrorAction SilentlyContinue
   Get-ChildItem -Path (Join-Path $articlesDir "series-3") -Filter "*.md" -File -ErrorAction SilentlyContinue
