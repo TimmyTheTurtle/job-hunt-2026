@@ -31,60 +31,67 @@ replacement methodology is evals. LLM-as-judge is triage, not verification.
 
 ---
 
-## Key Insight — Constraint Architecture Restores TDD (Session note 2026-06-16)
+## Key Insight — Constraint Architecture and Contract Testing (Session note 2026-06-16)
 
 The thesis as written assumes all LLM calls are non-deterministic and therefore TDD-incompatible.
 That is too broad. A tightly constrained LLM call — fixed system prompt, schema-bound output,
-narrow task scope, deterministic inputs — is effectively a pure function from the test's
-perspective. Classical TDD applies cleanly to it.
+narrow task scope — admits *property-based contract testing*, and the red-green-refactor loop
+is intact at the contract level.
 
-**The constraint architecture collapses two problems into one solution:**
+**What the literature establishes:**
 
-1. Token frugality (S2-A7): constrained calls are cheap
-2. Testability: constrained calls are deterministic enough for classical assertions
+AgentAssay (arXiv:2603.02601) explicitly rejects classical TDD for agents and proposes
+stochastic test semantics with confidence intervals. LMQL (arXiv:2212.06094) demonstrates
+that grammar-constrained decoding reduces output variance substantially — 15-25 pp improvement
+on structured tasks — without eliminating it. Record & Replay (arXiv:2505.17716) frames
+constrained workflow + check functions as addressing "inherent uncertainty," with a validation
+layer still required. None of these papers claim full determinism from constraints.
 
-This means the article's scope boundary needs to be more precise. The claim is not "TDD doesn't
-work for LLM systems." It is:
+**The gap the literature has not filled:**
 
-- **Constrained LLM nodes** (schema-bound, narrow task, fixed prompt): TDD applies. Write
-  the failing schema assertion and business logic assertion first, then build the call to
-  satisfy it. These are the edge nodes in a well-designed agentic system.
+The field knows that schema constraints reduce variance. It knows that schema validation is a
+deterministic check. It has not connected these observations and said: the *testable unit* is
+the contract — schema conformance + business logic invariant — and that contract can be written
+as a failing assertion before the node is built. That is the red-green loop, applied to the
+contract rather than to the output string.
+
+**The precise claim (not "pure function", not classical TDD):**
+
+A schema-bound LLM node with fixed prompt and narrow scope is testable via *property-based
+contract assertions*. The property is: "output satisfies schema AND satisfies business logic
+invariant." That is weaker than "same input, same output," but it is enough to run
+red-green-refactor. Write the failing contract assertion first, build the node to satisfy it.
+
+This is the correct scope boundary:
+
+- **Constrained LLM nodes** (schema-bound, narrow task, fixed prompt): property-based contract
+  testing applies. The assertion is the schema + invariant. PydanticAI TestModel and
+  FunctionModel are the practical tools. These are the edge nodes in a well-designed agentic
+  system. See S2-A8 for the full treatment.
 - **Orchestration layer** (sequences constrained calls, routes between them, manages state):
-  TDD breaks here. This is where evals, invariants, and terminal conditions replace the
-  red-green-refactor loop.
-
-**The architecture does the work.** Pushing non-determinism up to the orchestration layer —
-and keeping every node below it constrained and deterministic — is not just a token decision.
-It is what makes TDD viable for the parts of the system where TDD is the right tool.
+  classical TDD breaks here. This is where evals, invariants, and terminal conditions replace
+  the red-green-refactor loop.
 
 **Three testing layers that follow from this:**
 
-1. **Constrained LLM nodes**: classical TDD, deterministic assertions, cheap, run on every
-   execution. Schema validation, output contract checks, business logic assertions.
+1. **Constrained LLM nodes**: property-based contract testing. Assertion = schema + invariant.
+   Cheap, fast, run on every commit. Tools: PydanticAI TestModel/FunctionModel, Pydantic
+   schema validation, pytest assertions against output contracts.
 2. **Orchestration invariants**: things that must be true regardless of trajectory — no
    out-of-scope side effects, schema-valid outputs at every tool boundary, timing and resource
    constraints. Specified before implementation (V-model left side), verified at runtime.
 3. **Statistical evals**: aggregate metrics over the orchestration layer's behavior across
    many runs. Human reads the dashboard. Periodic, not continuous.
 
-**Human-in-the-loop is structural, not compensatory.** It belongs at specific V&V gates —
-novel failure modes, out-of-distribution cases, high-stakes decisions. The constraint
-architecture clarifies where human judgment is irreplaceable rather than using it as a
-fallback for weak evals.
-
 **Connection to AgentAssay (arXiv:2603.02601):** Sequential hypothesis testing applies at
-layer 3 — reach statistical confidence with the minimum number of eval runs. Token frugality
-at the eval layer, not just the system-under-test layer.
+layer 3 — reach statistical confidence with the minimum number of eval runs.
 
 **Connection to S2-A7:** The constraint decision is architectural. A system designed with
-constrained nodes is simultaneously token-frugal and TDD-compatible. These are not separate
-concerns — they are the same design decision observed from two different angles.
+constrained nodes is simultaneously token-frugal and contract-testable. Same design decision,
+two angles.
 
-**This is an original claim.** The literature treats TDD-incompatibility as a property of
-LLM systems in general. The constraint architecture argument — that you can recover TDD
-compatibility by design — is not in the existing sources. It should be the article's new
-central claim, with the evals methodology as the answer for the orchestration layer that
-remains genuinely non-deterministic.
+**Connection to S2-A8:** This article names the three layers and sets the scope boundary.
+S2-A8 develops the contract testing methodology for constrained nodes fully.
 
 ---
 
@@ -141,3 +148,7 @@ is S2-A2 territory.
 - [LLM testing frameworks and tools — TestOmat](https://testomat.io/blog/llm-test/)
 - [Beyond Traditional Testing: Non-Deterministic Software — AWS/dev.to](https://dev.to/aws/beyond-traditional-testing-addressing-the-challenges-of-non-deterministic-software-583a)
 - [Testing AI Agents: Validating Non-Deterministic Behavior — SitePoint](https://www.sitepoint.com/testing-ai-agents-deterministic-evaluation-in-a-non-deterministic-world/)
+- [AgentAssay: Token-Efficient Regression Testing (arXiv:2603.02601)](../papers/arxiv-2603.02601-agentassay.pdf) — establishes stochastic test semantics; basis for layer 3
+- [LMQL: Prompting Is Programming (arXiv:2212.06094)](../papers/arxiv-2212.06094-lmql-prompting-is-programming.pdf) — grammar-constrained decoding reduces output variance; evidence for constraint value
+- [Record & Replay for LLM Agents (arXiv:2505.17716)](../papers/arxiv-2505.17716-record-replay-llm-agents.pdf) — check functions as trust anchors on constrained workflows
+- [Automated Self-Testing as Quality Gate (arXiv:2603.15676)](../papers/arxiv-2603.15676-automated-self-testing-quality-gate.pdf) — schema checks as deterministic gates alongside probabilistic evaluators

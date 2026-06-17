@@ -166,7 +166,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);display:flex
     <div class="stat-row">
       <div class="stat">
         <div class="stat-lbl">write now</div>
-        <div class="stat-val" style="color:var(--sage2)">16</div>
+        <div class="stat-val" style="color:var(--sage2)">17</div>
         <div class="stat-sub">articles, no blockers</div>
       </div>
       <div class="stat">
@@ -377,12 +377,12 @@ const ARTICLES = [
   },
   {
     id:'S2-A1',s:2,status:'write',pub:null,
-    title:'TDD doesn\'t work for non-deterministic systems',
-    thesis:'Test-driven development assumes deterministic outputs. AI systems are non-deterministic. The testing discipline that works for agentic systems is behavioral testing against invariants, not unit testing against expected outputs.',
-    claims:['A test that passes 98% of the time is not a passing test for a safety-critical behavior','The failure mode of TDD applied to AI: tests that pass during development, fail in production, and cannot be debugged','Behavioral invariants replace expected outputs as the test specification'],
-    arc:'Opens Series 2. Establishes why SE discipline must be adapted, not abandoned.',
+    title:'TDD doesn\'t work for non-deterministic systems (and what does)',
+    thesis:'TDD breaks on LLM systems because the oracle assumption fails. But the picture is more precise than "TDD is dead": constrained LLM nodes admit property-based contract testing; orchestration layers require evals and invariant specification. The architecture determines the testing methodology.',
+    claims:['Three testing layers: (1) constrained nodes → contract assertions, (2) orchestration → invariant specification, (3) system behavior → statistical evals (AgentAssay)','The claim is not "TDD doesn\'t work" — it is "TDD doesn\'t work at the orchestration layer, and here\'s what does"','Schema-bound nodes are testable at the contract level; the stochastic output is inside the boundary, not outside it (see S2-A8)','LLM-as-judge reduces review volume but cannot verify — it introduces a second stochastic layer on top of the first'],
+    arc:'Opens Series 2. Establishes the three-layer model. S2-A8 develops the contract testing methodology; S2-A2 maps the V-model onto agentic V&V.',
     blocker:null,
-    notes:null
+    notes:'Key sources: arXiv:2603.02601 (AgentAssay — rejects classical TDD, provides layer 3 methodology), arXiv:2212.06094 (LMQL — constraints reduce variance), arXiv:2603.15676 (schema checks as deterministic gates).'
   },
   {
     id:'S2-A2',s:2,status:'read',pub:null,
@@ -419,6 +419,15 @@ const ARTICLES = [
     arc:'Series 2 finale. Requires the most build work.',
     blocker:'Granny\'s House Trials: extract to own public repo, SE-manage, document Stage 1 fully, complete Stage 2 with evals framework (B8+B9). Estimated 6–10 weeks of build work.',
     notes:null
+  },
+  {
+    id:'S2-A8',s:2,status:'write',pub:null,
+    title:'Contract testing for constrained LLM nodes',
+    thesis:'A tightly constrained LLM node — fixed system prompt, schema-bound output, narrow task scope — is testable via property-based contract assertions. The testable unit is the contract (schema conformance + business logic invariant), not the output string. The red-green loop is intact at the contract level.',
+    claims:['Hard to test means poorly bounded — test pain is a design smell, not an infrastructure problem','Schema-bound + narrow-scope = testable contract; the stochastic output is inside the contract boundary, not outside it','PydanticAI TestModel/FunctionModel enable contract testing with zero token spend during development','The testing pyramid follows: contract tests on every commit, evals periodically; AgentAssay sequential hypothesis testing minimizes eval runs','The literature gap: LMQL shows constraints reduce variance, AgentAssay rejects classical TDD, but nobody connects these into a contract testing methodology'],
+    arc:'Extends S2-A1 layer 1 into a full methodology. Grounded in the WindowConfigurator AI additions (voice-to-spec, vision measurement) as the concrete instance.',
+    blocker:null,
+    notes:'Original claim — the contract testing methodology for constrained LLM nodes is not in any existing paper. Requires honest framing: proposed framework, not validated study. Sources: arXiv:2603.02601 (AgentAssay), arXiv:2212.06094 (LMQL), arXiv:2505.17716 (Record & Replay), arXiv:2603.15676 (Automated Self-Testing), arXiv:2605.20456 (SCOPE-V).'
   },
   {
     id:'S2-A6',s:2,status:'never',pub:null,
