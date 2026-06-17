@@ -80,6 +80,43 @@ For company monitoring:
 
 Do not restate the detailed workflow here unless the startup contract itself changes.
 
+## Knowledge Graph Pipeline
+
+The repo has a research pipeline that supports the article series at `articles/series-*/`.
+It fetches citation metadata from Semantic Scholar, downloads PDFs, parses them with Docling, and builds a queryable Kuzu graph database.
+
+Run all scripts from repo root via WSL:
+
+```sh
+# 1. Fetch citation metadata for seed papers
+SEMANTIC_SCHOLAR_API_KEY=$(grep SAMANTIC secrets/credentials.txt | cut -d= -f2) \
+  python3 scripts/fetch-citations.py
+# → writes articles/papers/citations.json
+
+# 2. Download ref PDFs (optional; requires human review before parsing)
+python3 scripts/download-refs.py
+
+# 3. Ingest: parse seed PDFs fully; register refs as metadata-only nodes
+python3 scripts/ingest.py --seeds-only
+# → writes articles/graph.kuzu
+
+# 4. Query the graph
+python3 scripts/query.py hot-refs                    # refs cited by multiple seeds
+python3 scripts/query.py search "test-driven"        # full-text across parsed sections
+python3 scripts/query.py explore "retrieval"         # keyword search on ref titles/abstracts
+python3 scripts/query.py for-article S2-A8           # papers supporting a specific article plan
+python3 scripts/query.py who-cites "agentassay"      # which seeds cite a paper (title keyword)
+python3 scripts/query.py citing 2603.02601           # papers citing a given arXiv ID
+```
+
+Key facts:
+- API key is in `secrets/credentials.txt` under key name `SAMANTIC_SCHOLAR_API_KEY` (typo — 'A' not 'E'; do not fix the grep, just use as-is)
+- `articles/graph.kuzu` is a **single file** on NTFS/WSL (not a directory) — this is expected Kuzu behaviour
+- `articles/papers/citations.json`, `articles/papers/*.pdf`, `articles/refs/*.pdf`, `articles/graph.kuzu` are all gitignored
+- Do not run `ingest.py` without `--seeds-only` unless ref parsing has been approved — 586 PDFs, ~8 hours of Docling runtime
+- `search` is case-sensitive substring matching — use hyphens: `"test-driven"` not `"test driven"`
+- If ingest crashes mid-run (Kuzu `unordered_map::at` error): delete `articles/graph.kuzu` and `articles/graph.kuzu.wal` before rerunning
+
 ## Canonical Consistency Rule
 
 - `AGENTS.md` is the canonical startup contract.

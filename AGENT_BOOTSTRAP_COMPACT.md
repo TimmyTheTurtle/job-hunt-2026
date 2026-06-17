@@ -162,8 +162,21 @@ default_workflow:
 
 job_search_deep_dive:
 - after a search run, use `job_search/DEEP_DIVE_WORKFLOW.md` when asked to follow links, classify surfaced roles, capture compensation, identify current vs future targets, or extract resume implications
+- for serious discovery, pair the runner with `job_search/ATS_SWEEP_WORKFLOW.md` to check Ashby, Greenhouse, Lever, YC, HN, and direct company career pages
+- for contracting/consulting/fractional searches, use `job_search/CONTRACT_SEARCH_WORKFLOW.md` and the `job_search/search_profile_contracting.json` profile; capture rate, contract length, W2/1099/C2C status, weekly hours, timezone constraints, and portfolio value
 - do not treat generated `Apply First` buckets as final recommendations
 - do not record ledger decisions during a deep dive unless the user explicitly asks
+
+knowledge_graph_pipeline:
+- article research lives in articles/series-*/; graph DB at articles/graph.kuzu (Kuzu, gitignored)
+- pipeline: fetch-citations.py → download-refs.py → ingest.py --seeds-only → query.py
+- API key in secrets/credentials.txt under SAMANTIC_SCHOLAR_API_KEY (typo — keep as-is)
+- inline usage: SEMANTIC_SCHOLAR_API_KEY=$(grep SAMANTIC secrets/credentials.txt | cut -d= -f2) python3 scripts/fetch-citations.py
+- query commands: search, explore, hot-refs, for-article, who-cites, citing
+- search is case-sensitive substring; use hyphens ("test-driven" not "test driven")
+- do not parse ref PDFs without explicit approval; use --seeds-only
+- if ingest crashes: delete articles/graph.kuzu and articles/graph.kuzu.wal before rerunning
+- full command reference in AGENTS.md Knowledge Graph Pipeline section
 
 applied_status_required_artifacts:
 - applications/YYYY-MM_<company>_<role>/job_description.md
