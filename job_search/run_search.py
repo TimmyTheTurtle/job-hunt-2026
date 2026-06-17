@@ -46,6 +46,7 @@ POSITIVE_TITLE_PATTERNS = [
     (re.compile(r"\bllm\b|\blarge language model"), 4, "llm"),
     (re.compile(r"\brag\b|\bretrieval[ -]?augmented\b"), 4, "rag"),
     (re.compile(r"\bdocument intelligence\b"), 4, "document intelligence"),
+    (re.compile(r"\bcontract(?:or)?\b|\bcontract[ -]?to[ -]?hire\b|\b1099\b|\bc2c\b|\bw2\b"), 2, "contract"),
     (re.compile(r"\bautomation\b|\bworkflow\b"), 3, "workflow automation"),
     (re.compile(r"\bsolutions?\b"), 2, "solutions"),
     (re.compile(r"\bsoftware\b"), 2, "software"),
@@ -70,6 +71,7 @@ POSITIVE_TEXT_PATTERNS = [
     (re.compile(r"\bllm\b|\blarge language model|\bgenerative ai\b|\bgenai\b"), 3, "llm"),
     (re.compile(r"\brag\b|\bretrieval[ -]?augmented\b|\bvector search\b|\bsemantic search\b"), 3, "rag"),
     (re.compile(r"\bdocument intelligence\b|\bdocument automation\b|\bdocument processing\b"), 3, "document intelligence"),
+    (re.compile(r"\bcontract(?:or)?\b|\bcontract[ -]?to[ -]?hire\b|\b1099\b|\bc2c\b|\bw2\b"), 2, "contract"),
     (re.compile(r"\bevals?\b|\bevaluation\b|\bquality gate\b|\bhuman[ -]in[ -]the[ -]loop\b"), 3, "evals"),
     (re.compile(r"\btraceability\b|\baudit trail\b|\bevidence\b|\bgovernance\b"), 2, "traceability"),
     (re.compile(r"\bworkflow automation\b|\bautomation\b|\bagentic\b|\bagents?\b"), 2, "workflow automation"),
@@ -92,9 +94,14 @@ HARD_REJECT_TITLE_PATTERNS = [
     re.compile(r"\barchitect\b"),
     re.compile(r"\brecruiter\b"),
     re.compile(r"\bsales\b"),
+    re.compile(r"\bbusiness development\b"),
+    re.compile(r"\bcommission\b"),
     re.compile(r"\bmarketing\b"),
     re.compile(r"\bproduct manager\b"),
     re.compile(r"\bdata scientist\b"),
+    re.compile(r"\battorney\b"),
+    re.compile(r"\bparalegal\b"),
+    re.compile(r"\blegal research analyst\b"),
     re.compile(r"\bprompt engineer\b"),
     re.compile(r"\bbusiness intelligence\b"),
     re.compile(r"\bfrontend\b"),
@@ -114,6 +121,7 @@ HARD_REJECT_TEXT_PATTERNS = [
     re.compile(r"\bwordpress\b"),
     re.compile(r"\bcrm\b"),
     re.compile(r"\binsurance sales\b"),
+    re.compile(r"\bcommission based\b"),
 ]
 
 SENIORITY_PENALTIES = [
@@ -130,6 +138,7 @@ class SearchSpec:
     label: str
     search_term: str
     google_search_term: str
+    job_type: str
     location_label: str
     location: str
     google_location_phrase: str
@@ -160,6 +169,7 @@ def load_profile(path: Path) -> dict[str, Any]:
 
 def build_search_specs(profile: dict[str, Any]) -> list[SearchSpec]:
     specs: list[SearchSpec] = []
+    default_job_type = safe_str(profile.get("job_type"))
     for location in profile["locations"]:
         for search in profile["searches"]:
             specs.append(
@@ -170,6 +180,7 @@ def build_search_specs(profile: dict[str, Any]) -> list[SearchSpec]:
                     google_search_term=search["google_search_term_template"].format(
                         google_location_phrase=location["google_location_phrase"]
                     ),
+                    job_type=safe_str(search.get("job_type")) or default_job_type,
                     location_label=location["label"],
                     location=location["location"],
                     google_location_phrase=location["google_location_phrase"],
@@ -472,6 +483,20 @@ def is_allowed_location(row: dict[str, Any]) -> bool:
         "portugal",
         "malaysia",
         "canada",
+        "mexico",
+        "mexico city",
+        "united kingdom",
+        " uk",
+        "london",
+        "england",
+        "northern ireland",
+        "belfast",
+        "france",
+        "paris",
+        "qatar",
+        "doha",
+        "netherlands",
+        "eindhoven",
         "singapore",
         "sao paulo",
         "pune",
@@ -501,6 +526,8 @@ def scrape_spec(spec: SearchSpec, profile: dict[str, Any], sites: list[str], hou
             "country_indeed": profile["country_indeed"],
             "verbose": 0,
         }
+        if spec.job_type:
+            kwargs["job_type"] = spec.job_type
         if spec.is_remote:
             kwargs["is_remote"] = True
 

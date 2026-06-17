@@ -1,7 +1,7 @@
 # Dorian Klingenberg
 
 Troy, Michigan  
-306.361.7692 | klingenberg.d@gmail.com  
+248.989.4160 | klingenberg.d@gmail.com  
 LinkedIn: www.linkedin.com/in/dorian-klingenberg  
 GitHub: https://github.com/Dorian-Klingenberg
 
@@ -81,7 +81,7 @@ Saskatoon, Saskatchewan | 2007 to 2010
 - Worked with classified/controlled information under Canadian Secret clearance, now lapsed.
 - Supported hardware configuration for the mission operations system environment.
 - Built graphical components for a PCI card-based Decimator Spectrum Analyzer in a web-based Java applet UI.
-- Assisted with early rapid prototyping of a JWT-based near-earth-object tracking UI.
+- Assisted with early rapid prototyping of a GWT-based near-earth-object tracking UI.
 
 ### Areva Resources - Intern Programmer
 

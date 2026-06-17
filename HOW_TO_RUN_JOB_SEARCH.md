@@ -27,11 +27,21 @@ Current default emphasis:
 - legal/compliance/insurance AI engineering roles
 - software engineering roles around AI systems and workflow automation
 
+There is also a separate contracting profile for AI engineering contract, consulting, and fractional work:
+
+- AI engineer contract
+- LLM / RAG engineer contract
+- AI automation consultant
+- AI solutions engineer contract
+- document intelligence contractor
+- legal/compliance automation consultant
+
 ## Where It Lives
 
 - Runner: [job_search/run_search.sh](job_search/run_search.sh)
 - Main script: [job_search/run_search.py](job_search/run_search.py)
 - Search profile: [job_search/search_profile.json](job_search/search_profile.json)
+- Contracting profile: [job_search/search_profile_contracting.json](job_search/search_profile_contracting.json)
 - Detailed subsystem notes: [job_search/README.md](job_search/README.md)
 
 ## Quick Start
@@ -55,6 +65,13 @@ cd /mnt/d/Repos/job-hunt-2026
 ./job_search/run_search.sh
 ```
 
+Run the contracting search:
+
+```bash
+cd /mnt/d/Repos/job-hunt-2026
+./job_search/run_contract_search.sh
+```
+
 Run a smaller test pass:
 
 ```bash
@@ -67,6 +84,13 @@ Preview results without recording surfaced jobs in the ledger:
 ```bash
 cd /mnt/d/Repos/job-hunt-2026
 ./job_search/run_search.sh --dry-run --max-searches 2 --results-per-query 5
+```
+
+Preview contract results without recording surfaced jobs in the ledger:
+
+```bash
+cd /mnt/d/Repos/job-hunt-2026
+./job_search/run_contract_search.sh --dry-run --max-searches 3 --results-per-query 5
 ```
 
 Restrict to specific sites:
@@ -114,14 +138,17 @@ Recommended workflow:
 
 1. Open the newest markdown file in `job_search/output/`.
 2. Skim the `Apply First` section first.
-3. For serious review, follow [the deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md): open each posting, capture compensation, classify fit, and extract resume implications.
-4. Record `applied`, `dismissed`, or `saved` decisions in the search ledger only after review.
-5. If you decide to pursue one, create the standard application folder and record the exact posting URL in `job_description.md`.
-6. Add or update the row in [master_tracker.md](master_tracker.md) only when you intentionally want that manual/UI-facing record updated.
+3. For serious discovery, follow [the ATS and startup sweep workflow](job_search/ATS_SWEEP_WORKFLOW.md) to check Ashby, Greenhouse, Lever, YC, HN, and direct company sources.
+4. For contracting work, follow [the contract search workflow](job_search/CONTRACT_SEARCH_WORKFLOW.md) and capture rate, contract length, W2/1099/C2C status, weekly hours, timezone constraints, and portfolio value.
+5. For serious review, follow [the deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md): open each posting, capture compensation, classify fit, and extract resume implications.
+6. Record `applied`, `dismissed`, or `saved` decisions in the search ledger only after review.
+7. If you decide to pursue one, create the standard application folder and record the exact posting URL in `job_description.md`.
+8. Add or update the row in [master_tracker.md](master_tracker.md) only when you intentionally want that manual/UI-facing record updated.
 
 See also:
 - [How to use the search ledger](HOW_TO_USE_SEARCH_LEDGER.md)
 - [Job search deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md)
+- [ATS and startup sweep workflow](job_search/ATS_SWEEP_WORKFLOW.md)
 
 ## How to Record Decisions
 
@@ -258,6 +285,7 @@ Ask separately if you also want [master_tracker.md](master_tracker.md) updated.
 
 - This is a triage tool, not a final decision-maker.
 - The generated `Apply First` bucket is only a heuristic starting point. For serious review, follow [the deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md).
+- For serious discovery, pair the runner with [the ATS and startup sweep workflow](job_search/ATS_SWEEP_WORKFLOW.md); many applied-AI roles are posted directly on Ashby, Greenhouse, Lever, YC, HN, or company career pages.
 - The ranking is heuristic and will still surface some imperfect results.
 - Google Jobs is included in the profile, but in live testing here LinkedIn and Indeed produced more usable results than Google.
 - Search systems handle AI job titles inconsistently, so the profile uses several overlapping phrases rather than assuming one canonical title.
@@ -290,5 +318,6 @@ That folder is the inbox.
 If you want the next layer after the inbox, use:
 
 - [job_search/DEEP_DIVE_WORKFLOW.md](job_search/DEEP_DIVE_WORKFLOW.md)
+- [job_search/ATS_SWEEP_WORKFLOW.md](job_search/ATS_SWEEP_WORKFLOW.md)
 
-That workflow turns a run into current targets, future/stretch roles, dismiss/archive recommendations, compensation notes, and resume-positioning guidance.
+The ATS sweep widens discovery beyond the runner. The deep-dive workflow turns a run into current targets, future/stretch roles, dismiss/archive recommendations, compensation notes, and resume-positioning guidance.

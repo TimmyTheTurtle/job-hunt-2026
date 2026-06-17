@@ -1,0 +1,89 @@
+{
+  "profile_name": "applied_ai_systems_contracting_v1",
+  "default_sites": [
+    "linkedin",
+    "indeed",
+    "google"
+  ],
+  "country_indeed": "USA",
+  "job_type": "contract",
+  "hours_old": 336,
+  "results_wanted_per_query": 12,
+  "max_report_items": 30,
+  "locations": [
+    {
+      "label": "remote",
+      "location": "Remote",
+      "google_location_phrase": "remote",
+      "is_remote": true
+    },
+    {
+      "label": "michigan",
+      "location": "Michigan",
+      "google_location_phrase": "near Michigan",
+      "is_remote": false
+    }
+  ],
+  "searches": [
+    {
+      "tier": "A",
+      "label": "ai engineer contract",
+      "search_term": "\"AI engineer\" contract",
+      "google_search_term_template": "AI engineer contract jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
+      "label": "llm engineer contract",
+      "search_term": "\"LLM engineer\" contract",
+      "google_search_term_template": "LLM engineer contract RAG jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
+      "label": "rag engineer contract",
+      "search_term": "\"RAG engineer\" contract",
+      "google_search_term_template": "RAG engineer contract document intelligence jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
+      "label": "ai automation consultant",
+      "search_term": "\"AI automation\" consultant",
+      "google_search_term_template": "AI automation consultant workflow jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
+      "label": "ai solutions engineer contract",
+      "search_term": "\"AI solutions engineer\" contract",
+      "google_search_term_template": "AI solutions engineer contract implementation jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
+      "label": "document intelligence contractor",
+      "search_term": "\"document intelligence\" contractor",
+      "google_search_term_template": "document intelligence contractor AI jobs {google_location_phrase}"
+    },
+    {
+      "tier": "B",
+      "label": "workflow automation contractor",
+      "search_term": "\"workflow automation\" contractor",
+      "google_search_term_template": "workflow automation contractor AI jobs {google_location_phrase}"
+    },
+    {
+      "tier": "B",
+      "label": "legal ai consultant",
+      "search_term": "\"legal AI\" consultant",
+      "google_search_term_template": "legal AI consultant contract jobs {google_location_phrase}"
+    },
+    {
+      "tier": "B",
+      "label": "compliance automation consultant",
+      "search_term": "\"compliance automation\" consultant",
+      "google_search_term_template": "compliance automation consultant AI jobs {google_location_phrase}"
+    },
+    {
+      "tier": "C",
+      "label": "fractional ai engineer",
+      "search_term": "\"fractional AI engineer\"",
+      "google_search_term_template": "fractional AI engineer contract jobs {google_location_phrase}"
+    }
+  ]
+}

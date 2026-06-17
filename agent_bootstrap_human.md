@@ -77,6 +77,10 @@ For search bookkeeping, agents should treat the machine-managed search ledger an
 
 For search-result analysis, agents should use [job_search/DEEP_DIVE_WORKFLOW.md](job_search/DEEP_DIVE_WORKFLOW.md) when the user asks to follow links, classify surfaced jobs, compare current fit against future/stretch roles, capture compensation, or extract resume implications. This keeps the deep-dive step separate from the raw search runner and from ledger decision updates.
 
+For serious search discovery, agents should pair the normal runner with [job_search/ATS_SWEEP_WORKFLOW.md](job_search/ATS_SWEEP_WORKFLOW.md). That sweep covers Ashby, Greenhouse, Lever, YC Work at a Startup, Hacker News "Who is hiring?", and direct company career pages, which often contain sharper applied-AI roles than the broad job boards.
+
+For contracting, consulting, or fractional work, agents should use [job_search/CONTRACT_SEARCH_WORKFLOW.md](job_search/CONTRACT_SEARCH_WORKFLOW.md) and the dedicated contracting profile at [job_search/search_profile_contracting.json](job_search/search_profile_contracting.json). Contract review should capture rate, duration, W2/1099/C2C status, expected weekly hours, timezone constraints, client-facing load, and whether the work creates useful portfolio evidence.
+
 ## Source Of Truth
 
 The compact bootstrap is a distilled mirror of these source files:
@@ -100,6 +104,8 @@ Keep in the compact file:
 - truth constraints
 - default workflow
 - search deep-dive trigger and ledger boundary
+- ATS/startup sweep trigger for serious job discovery
+- contract-search trigger and contract-specific review fields
 - critical recordkeeping requirements like preserving the exact posting URL
 - company watchlist checks for employers Dorian wants to revisit
 - short reminders about tone and strategy
