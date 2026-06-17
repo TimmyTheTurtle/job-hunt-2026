@@ -19,6 +19,7 @@ Requires:
 
 import argparse
 import json
+import os
 import time
 from pathlib import Path
 
@@ -59,6 +60,9 @@ SEEDS: list[dict] = [
     {"arxiv_id": "2509.06216", "file": "arxiv-2509.06216-agentic-se-foundational-pillars.pdf",      "articles": ["S2-A3"]},
     {"arxiv_id": "2603.15676", "file": "arxiv-2603.15676-automated-self-testing-quality-gate.pdf",  "articles": ["S2-A4"]},
     {"arxiv_id": "2604.26275", "file": "arxiv-2604.26275-agentic-ai-sdlc.pdf",                      "articles": ["S2-A4"]},
+    # Series 2 — new (added 2026-06-16)
+    {"arxiv_id": "2212.06094", "file": "arxiv-2212.06094-lmql-prompting-is-programming.pdf",        "articles": ["S2-A8"]},
+    {"arxiv_id": "2505.17716", "file": "arxiv-2505.17716-record-replay-llm-agents.pdf",             "articles": ["S2-A8"]},
     # Series 4
     {"arxiv_id": "2510.26309", "file": "arxiv-2510.26309-graphcompliance.pdf",                      "articles": ["S4-A5", "S4-A6"]},
     {"arxiv_id": "2110.11984", "file": "arxiv-2110.11984-coupette-law-smells.pdf",                  "articles": ["S4-A1", "S4-A3", "S4-A4", "S4-A5", "S4-A7"]},
@@ -68,7 +72,7 @@ SEEDS: list[dict] = [
 
 S2_BASE = "https://api.semanticscholar.org/graph/v1"
 S2_FIELDS = "title,authors,year,externalIds,openAccessPdf,venue,abstract"
-DELAY = 3.0  # seconds between API calls — S2 free tier: ~100 req/5 min without key
+DELAY = 1.0  # seconds between API calls — 1 req/sec with API key, 3+ without
 
 
 def s2_id_from_arxiv(arxiv_id: str) -> str:
@@ -169,6 +173,12 @@ def main() -> None:
 
     session = requests.Session()
     session.headers["User-Agent"] = "job-hunt-2026-research/1.0 (personal research corpus)"
+    api_key = os.environ.get("SEMANTIC_SCHOLAR_API_KEY")
+    if api_key:
+        session.headers["x-api-key"] = api_key
+        print(f"Using S2 API key ({api_key[:8]}...)")
+    else:
+        print("WARNING: SEMANTIC_SCHOLAR_API_KEY not set — running unauthenticated (slow)")
 
     seed_nodes: list[dict] = []
     ref_nodes:  dict[str, dict] = {}  # s2_id → node (deduped)

@@ -34,7 +34,7 @@ except ImportError:
     raise SystemExit("ERROR: pip install kuzu")
 
 REPO_ROOT  = Path(__file__).parent.parent
-DEFAULT_DB = REPO_ROOT / "articles" / "graph.db"
+DEFAULT_DB = REPO_ROOT / "articles" / "graph.kuzu"
 
 
 def get_conn(db_path: Path) -> kuzu.Connection:

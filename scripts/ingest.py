@@ -47,7 +47,7 @@ REPO_ROOT   = Path(__file__).parent.parent
 PAPERS_DIR  = REPO_ROOT / "articles" / "papers"
 REFS_DIR    = REPO_ROOT / "articles" / "refs"
 CITATIONS   = PAPERS_DIR / "citations.json"
-DEFAULT_DB  = REPO_ROOT / "articles" / "graph.db"
+DEFAULT_DB  = REPO_ROOT / "articles" / "graph.kuzu"
 
 
 # ---------------------------------------------------------------------------
@@ -98,7 +98,7 @@ CREATE REL TABLE IF NOT EXISTS REFERENCES(FROM ArticlePlan TO Paper);
 
 
 def open_db(db_path: Path) -> kuzu.Database:
-    db_path.mkdir(parents=True, exist_ok=True)
+    db_path.parent.mkdir(parents=True, exist_ok=True)
     db = kuzu.Database(str(db_path))
     conn = kuzu.Connection(db)
     for stmt in SCHEMA.strip().split(";"):
@@ -273,9 +273,10 @@ def parse_paper(pdf_path: Path, paper_pid: str, conn: kuzu.Connection) -> int:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Ingest papers into the Kuzu graph.")
-    parser.add_argument("--db",       default=str(DEFAULT_DB), help="Kuzu DB directory")
-    parser.add_argument("--force",    action="store_true",     help="Re-ingest already-processed papers")
-    parser.add_argument("--no-parse", action="store_true",     help="Skip Docling; only update graph structure")
+    parser.add_argument("--db",          default=str(DEFAULT_DB), help="Kuzu DB directory")
+    parser.add_argument("--force",       action="store_true",     help="Re-ingest already-processed papers")
+    parser.add_argument("--no-parse",    action="store_true",     help="Skip Docling; only update graph structure")
+    parser.add_argument("--seeds-only",  action="store_true",     help="Parse seeds fully; register refs as metadata nodes only (no Docling on refs)")
     args = parser.parse_args()
 
     db_path = Path(args.db)
@@ -327,6 +328,7 @@ def main() -> None:
                 print(f"{n} chunks")
             else:
                 print(f"  skip   {local_file}  (already ingested)")
+
         else:
             if not Path(local_path).exists():
                 print(f"  MISSING {local_file}")
@@ -348,7 +350,7 @@ def main() -> None:
             upsert_author(conn, author)
             link_authored_by(conn, pid, author)
 
-        if not args.no_parse and local_path and Path(local_path).exists():
+        if not args.no_parse and not args.seeds_only and local_path and Path(local_path).exists():
             if pid not in ingested or args.force:
                 print(f"  parse  {local_file} ...", end=" ", flush=True)
                 n = parse_paper(Path(local_path), pid, conn)
