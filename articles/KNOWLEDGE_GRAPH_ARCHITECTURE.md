@@ -284,3 +284,17 @@ The `SEEDS` list in `fetch-citations.py` is the single source of truth for which
 | Article plans tracked | varies by series |
 
 Refs are registered as metadata-only nodes. Ref PDFs exist in `articles/refs/` but have not been parsed with Docling — parsing 586 PDFs takes ~8 hours and requires human review of which refs are worth the cost. Run `query.py hot-refs` to prioritize.
+
+---
+
+## Future Work: On-Demand Ref Parsing
+
+Currently, refs are either all parsed or all skipped. The right model is on-demand: parse a ref when it has earned it — cited by multiple seeds, surfaced by a query, or needed for a specific article draft.
+
+Desired behaviour: given a paper ID or arXiv ID, parse just that paper and integrate its sections into the graph without a full re-ingest.
+
+This would probably look like:
+- `ingest.py --paper <arxiv_id>` — parse a single ref PDF and upsert its sections
+- or a small `parse-paper.py` script that takes a path or arXiv ID and integrates it
+
+`query.py hot-refs` is already the right tool for identifying candidates. The missing piece is the targeted ingest path.
