@@ -10,4 +10,4 @@ If the user says "look for a job now," check this file too:
 
 | Company | Location | Website | Status | Current opening | Last checked | Next check | Notes |
 |---------|----------|---------|--------|-----------------|--------------|------------|-------|
-| Jaseci Labs | Detroit, MI 48226 | https://www.jasecilabs.com/ | Watching; open role surfaced | AI Software Engineer: https://www.indeed.com/viewjob?jk=2574920c31d9cf2e | 2026-05-21 | 2026-06-04 | Michigan AI company to monitor for future fit. Public check surfaced a current hybrid Detroit role. |
+| Jaseci Labs | Detroit, MI 48226 | https://www.jasecilabs.com/ | Watching; open role still public | AI Software Engineer: https://www.indeed.com/viewjob?jk=2574920c31d9cf2e | 2026-06-26 | 2026-07-26 | Michigan AI company to monitor for future fit. Current public signal remains a hybrid Detroit AI Software Engineer role with $60,000-$115,000 listed range. |

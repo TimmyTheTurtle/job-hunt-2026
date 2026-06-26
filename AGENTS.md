@@ -44,6 +44,16 @@ The compact bootstrap is derived from these source files:
 
 Only read the full source file when the current task actually needs that detail.
 
+## Repo State (as of 2026-06-26)
+
+This repo was refactored on 2026-06-26 to a single positioning: **Applied AI Systems Engineer**.
+
+- All simulation, HPC, defense, and generic cloud/Java application history is in `archive/pre-ai-pivot-2026-06/`. Do not reference it in new work.
+- `master_tracker.md` is clean. Two applications are on record (Ikuto 2026-06-18, CyberCoders portfolio co. 2026-06-25).
+- `applications/` contains only AI-relevant applications.
+- `cover_letters/` is empty — ready for first AI-era cover letter.
+- UI reporting week of 2026-06-23/06-29 has one qualifying application (CyberCoders 2026-06-25). UI submission due week of June 30.
+
 ## Working Rules For Agents
 
 - Keep employer-facing writing truthful, restrained, and role-specific.
@@ -54,6 +64,7 @@ Only read the full source file when the current task actually needs that detail.
 - Protect runway, learning time, and the Applied AI Systems Engineer positioning.
 - Keep machine-managed search bookkeeping in `job_search/ledger/`; do not auto-update `master_tracker.md` from search runs.
 - Keep company watchlist updates in `company_watchlist.md`; do not fold watchlist checks into `master_tracker.md`.
+- Do not draw from or reference `archive/` in new applications or materials.
 
 ## Workflow Requirement
 
