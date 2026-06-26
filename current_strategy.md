@@ -113,7 +113,6 @@ Examples:
 - Compliance, insurance, legaltech, regtech, or document-workflow software engineer
 - Internal tools engineer for document, reporting, or operations workflows
 - Data/reporting engineer in compliance-sensitive environments
-- Systems engineer or simulation engineer when the role reinforces rigor, traceability, or AI-adjacent autonomy/simulation work
 
 ### C - Compliance / Runway
 
@@ -140,7 +139,7 @@ Examples:
 - Do not let "AI" become vague branding; anchor it in documents, workflows, evidence, validation, and human review.
 - Keep applications real and credible.
 - Preserve learning time for AI systems, retrieval, future eval work, document processing, and production software boundaries.
-- Keep C++/simulation as a secondary technical vector, not the main story unless the role demands it.
+- Do not lead with C++/simulation background; it is archived context, not current positioning.
 - Log every meaningful application.
 
 ## Energy and Fit Signals

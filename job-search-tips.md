@@ -46,15 +46,7 @@ The point is not "AI magic." The point is engineering around ambiguity, evidence
 
 ## Strategic Career Path
 
-Old default path:
-
-> systems C++ -> simulation -> real-time systems -> autonomy -> AI
-
-New default path:
-
-> systems software + domain workflows + compliance/document experience -> applied AI systems -> document intelligence and evidence workflows -> production-minded AI engineering
-
-C++, simulation, graphics, and real-time systems remain valuable secondary depth. Use them when a role directly calls for that background, not as the default story.
+> systems software + domain workflows + compliance/document experience → applied AI systems → document intelligence and evidence workflows → production-minded AI engineering
 
 ## Role Taxonomy
 
@@ -85,7 +77,7 @@ Consider roles that do not have the perfect title but build the same direction:
 - data/document pipelines
 - C#/.NET SaaS engineering
 - platform or internal-tools roles in compliance-heavy environments
-- systems/simulation roles with meaningful technical depth
+- systems roles with meaningful technical depth in document, workflow, or compliance-adjacent environments
 
 ## Skip Or Deprioritize Signals
 

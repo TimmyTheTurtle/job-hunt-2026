@@ -93,7 +93,7 @@ Given the body of a single email, classify it into exactly one category:
   roles building production-minded AI boundaries.
 - Tier2: Strong adjacent software, solutions, implementation, or platform roles,
   especially C#/.NET/SaaS, workflow, integration, compliance, or document-heavy
-  systems; also systems/simulation roles with real technical depth.
+  systems with meaningful engineering depth.
 - Tier3: Broad web, reporting, configuration, business systems, or
   operations-adjacent technical work without meaningful AI, document workflow,
   compliance, or systems-depth value.
