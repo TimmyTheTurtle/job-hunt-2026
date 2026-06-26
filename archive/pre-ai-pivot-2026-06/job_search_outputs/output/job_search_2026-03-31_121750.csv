@@ -1,0 +1,8 @@
+recommendation,score,tier,company,title,location,sites,posted,job_url,query_labels,reasons
+apply_first,14,A,PSC Consulting,"Senior Consultant I, Control Systems (E-Terra)","Remote, US",indeed,2026-03-25,https://www.indeed.com/viewjob?jk=1a9aa87fccf53fa1,"simulation engineer, simulation software engineer","distributed, modeling, performance, remote, senior, simulation, systems"
+apply_first,12,A,Crossing Hurdles,Circuit Simulation Engineer (Ngspice) | Remote,,linkedin,2026-03-20,https://www.linkedin.com/jobs/view/4388371065,simulation engineer,"remote, simulation"
+apply_first,12,A,Crossing Hurdles,Circuit Simulation Engineer (Qucs-S) | Remote,,linkedin,2026-03-19,https://www.linkedin.com/jobs/view/4387333048,simulation engineer,"remote, simulation"
+apply_first,12,A,Quest Defense,"Software Build, Tools & Infrastructure Engineer","Remote, US",indeed,2026-03-30,https://www.indeed.com/viewjob?jk=09de2b4a454d64c7,"simulation engineer, simulation software engineer","modeling, remote, simulation, software"
+review,10,A,ASTEC Digital,Simulation Engineer,,linkedin,2026-03-24,https://www.linkedin.com/jobs/view/4388412760,simulation engineer,simulation
+low_priority,6,A,Microsoft,Software Engineer,,linkedin,2026-03-18,https://www.linkedin.com/jobs/view/4371847705,simulation software engineer,software
+low_priority,4,A,Rand Worldwide,FEA Consulting Engineer,,linkedin,2026-03-20,https://www.linkedin.com/jobs/view/4387989309,simulation engineer,weak_title_match

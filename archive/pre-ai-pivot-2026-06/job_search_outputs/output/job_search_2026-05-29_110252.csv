@@ -1,0 +1,31 @@
+recommendation,score,tier,company,title,location,sites,posted,job_url,query_labels,reasons
+apply_first,12,A,Google,"System Software and Performance Engineer, Silicon","Portland, OR",linkedin,2026-05-23,https://www.linkedin.com/jobs/view/4398106084,systems software engineer,"performance, software, systems"
+review,11,A,Applied Intuition,C++ Software Engineer (Autonomous Systems),"Ann Arbor, MI",linkedin,2026-05-23,https://www.linkedin.com/jobs/view/4407956894,real time software engineer,"c++, software, systems"
+review,11,B,Hewlett Packard Enterprise,HPC & AI Performance Engineer,"Bloomington, MN",linkedin,2026-05-19,https://www.linkedin.com/jobs/view/4416442193,scientific computing engineer,"hpc, performance"
+review,10,A,Caterpillar Inc.,NVH Simulation Engineer,,linkedin,2026-05-20,https://www.linkedin.com/jobs/view/4414997545,simulation engineer,simulation
+review,10,A,FAAC Incorporated,Air Warfare Simulation Associate Engineer,"Ann Arbor, MI",linkedin,2026-05-26,https://www.linkedin.com/jobs/view/4418511464,simulation software engineer,simulation
+review,10,A,Joyson Safety Systems,System Performance Engineer AB,"Auburn Hills, MI",linkedin,2026-05-21,https://www.linkedin.com/jobs/view/4395996624,simulation software engineer,"performance, systems"
+review,10,A,JR Automation,Simulation Engineer,"Holland, MI",linkedin,nan,https://www.linkedin.com/jobs/view/4407526384,simulation engineer,simulation
+review,10,A,UL Solutions,"AI / Simulation Engineer, Finite Element Analysis",,linkedin,2026-05-22,https://www.linkedin.com/jobs/view/4414078691,simulation engineer,simulation
+review,9,A,Applied Intuition,Software Engineer (C++),"Ann Arbor, MI",linkedin,2026-05-18,https://www.linkedin.com/jobs/view/4415725384,"hpc software engineer, real time software engineer, simulation software engineer, software engineer c plus plus","c++, software"
+review,9,A,Ford Motor Company,CAE Model Development and Automation,"Allen Park, MI",linkedin,2026-05-26,https://www.linkedin.com/jobs/view/4419530942,"modeling and simulation engineer, simulation engineer",modeling
+review,9,A,General Motors,Senior Software Engineer - Vehicle Modeling,"Warren, MI",linkedin,2026-05-22,https://www.linkedin.com/jobs/view/4378078787,simulation software engineer,"modeling, senior, software"
+review,9,A,Stellantis,xIL Plant Modeling and Integration,"Auburn Hills, MI",linkedin,2026-05-22,https://www.linkedin.com/jobs/view/4418058771,modeling and simulation engineer,modeling
+review,9,B,Techbridge,Software Engineer (C++) Remote,,linkedin,2026-05-19,https://www.linkedin.com/jobs/view/4416628724,hpc software engineer,"c++, remote, software"
+review,9,A,Torc Robotics,Software Engineer II - MCU Applications (C++/Linux),"Ann Arbor, MI",linkedin,2026-05-28,https://www.linkedin.com/jobs/view/4389842395,"real time software engineer, software engineer c plus plus","c++, software"
+review,8,A,AMD,Systems Software Engineer - Data Center GPU,"Austin, TX",linkedin,2026-05-16,https://www.linkedin.com/jobs/view/4356472703,systems software engineer,"software, systems"
+review,8,A,Astrion,Flight Software Engineer,"Remote, US",indeed,2026-04-08,https://www.indeed.com/viewjob?jk=1879373d3634b699,"real time software engineer, systems software engineer","remote, software"
+review,8,A,Atarus,Software Engineer - Remote,,linkedin,2026-05-28,https://www.linkedin.com/jobs/view/4420281820,real time software engineer,"remote, software"
+review,8,A,Crossing Hurdles,Entry-Level Software Engineer | Remote,,linkedin,2026-05-23,https://www.linkedin.com/jobs/view/4417553585,simulation software engineer,"remote, software"
+review,8,B,Deloitte,Senior AI Engineer - SFL Scientific,"Detroit, MI, US",indeed,2026-05-28,https://www.indeed.com/viewjob?jk=79977c8ace4ee985,"hpc software engineer, scientific computing engineer","hpc, modeling, performance, scientific, senior"
+review,8,A,Enlyte,Senior Software QA Engineer,"Remote, US",indeed,2026-04-23,https://www.indeed.com/viewjob?jk=e6b7a4a7789821a7,"real time software engineer, systems software engineer","performance, remote, senior, software"
+review,8,A,Ford Motor Company,"Software Engineer, Platform Systems","Dearborn, MI",linkedin,2026-05-26,https://www.linkedin.com/jobs/view/4419531783,systems software engineer,"software, systems"
+review,8,A,General Motors,Senior Robotics Simulation Engineer,"Warren, MI",linkedin,2026-05-27,https://www.linkedin.com/jobs/view/4419959897,simulation software engineer,"senior, simulation"
+review,8,A,Google,"Software Engineer, Silicon Systems Software or Mountain View","San Diego, CA",linkedin,2026-05-28,https://www.linkedin.com/jobs/view/4419063421,systems software engineer,"software, systems"
+review,8,A,Hewlett Packard Enterprise,Systems Software Expert,,linkedin,2026-05-20,https://www.linkedin.com/jobs/view/4416978187,systems software engineer,"software, systems"
+review,8,A,Mercor,Software Engineer - Fully Remote,,linkedin,2026-05-19,https://www.linkedin.com/jobs/view/4412857634,simulation software engineer,"remote, software"
+review,8,A,"Perfect Path, LLC, d/b/a Trajector Services",Senior Software Engineer,"Remote, US",indeed,2026-03-18,https://www.indeed.com/viewjob?jk=21a0bf48b6619f48,real time software engineer,"distributed, remote, senior, software"
+review,8,A,Relativity,Software Engineer,"Michigan, United States",linkedin,2026-05-22,https://www.linkedin.com/jobs/view/4418067042,systems software engineer,"michigan, software"
+review,8,B,SLB,High Performance Computing Engineer,"Houston, TX",linkedin,2026-05-22,https://www.linkedin.com/jobs/view/4406752043,scientific computing engineer,"hpc, performance"
+review,8,A,TDS Telecom,Senior Software Engineer - Python,"Remote, US",indeed,2026-05-28,https://www.indeed.com/viewjob?jk=2e40219b99525f7e,systems software engineer,"modeling, remote, senior, software"
+review,8,A,Tesla,"System Software Engineer, AI Platforms","Palo Alto, CA",linkedin,2026-05-26,https://www.linkedin.com/jobs/view/4419125321,systems software engineer,"software, systems"

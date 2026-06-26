@@ -47,7 +47,7 @@ Troy, Michigan | 2019 to 2023
 - Reverse engineered black-box behavior across application and database layers to extend platform capabilities beyond previously supported use cases.
 - Designed and optimized SQL logic against a highly transactional ledger-style database, reconstructing derived state from atomic records where reporting abstractions did not exist.
 - Maintained correctness and data consistency across service and database boundaries in production feature work.
-- Delivered high-risk feature enhancements within the first 90 days, accelerating expansion of core system capabilities.
+- Delivered high-risk feature enhancements within the first 180 days, accelerating expansion of core system capabilities.
 
 ### RenoNerd Inc. - Software Engineer / Deployment Specialist / Owner-Operator
 

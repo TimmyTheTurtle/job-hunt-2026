@@ -1,0 +1,14 @@
+recommendation,score,tier,company,title,location,sites,posted,compensation,job_url,query_labels,reasons
+apply_first,14,A,Riverbed Technology,Performance Consultant,"Remote, US",indeed,2026-06-09,,https://www.indeed.com/viewjob?jk=ba520df99a62e08e,ai automation consultant,"compliance domain, performance, remote, workflow automation"
+review,11,A,IC Resources,Python / LLM Engineer (Contract or Permanent),,linkedin,2026-06-10,,https://www.linkedin.com/jobs/view/4426746074,llm engineer contract,llm
+review,10,A,Gozio,Solutions Consultant,"Remote, US",indeed,2026-06-01,,https://www.indeed.com/viewjob?jk=5e96dc4bc4163b88,ai automation consultant,"remote, solutions, workflow automation"
+review,9,A,Elbit Systems of America,Principal Algorithm/AI Engineer,"Remote, US",indeed,2026-06-04,,https://www.indeed.com/viewjob?jk=05468a735b42d926,ai engineer contract,"ai, compliance domain, performance, principal, remote"
+review,8,A,Cavendish Professionals,Artificial Intelligence Engineer,,linkedin,2026-06-15,,https://www.linkedin.com/jobs/view/4426402062,ai engineer contract,ai
+review,8,A,"Holistic Partners, Inc",Artificial Intelligence Engineer,,linkedin,2026-06-11,,https://www.linkedin.com/jobs/view/4426630327,ai engineer contract,ai
+review,8,A,InterEx Group,Artificial Intelligence Engineer,,linkedin,2026-06-09,,https://www.linkedin.com/jobs/view/4422753862,ai engineer contract,ai
+review,8,A,InterEx Group,Artificial Intelligence Engineer,,linkedin,2026-06-09,,https://www.linkedin.com/jobs/view/4422748912,ai engineer contract,ai
+review,8,A,"Presto Phoenix, Inc.",AI Engineer (Contract),,linkedin,2026-06-11,,https://www.linkedin.com/jobs/view/4426608544,ai engineer contract,ai
+low_priority,4,A,Creative Circle,Reputation Management Consultant,,linkedin,2026-06-04,,https://www.linkedin.com/jobs/view/4420194199,ai automation consultant,weak_title_match
+low_priority,4,A,Next Ventures,SAP Transformation Consultant,,linkedin,2026-06-08,,https://www.linkedin.com/jobs/view/4421961642,ai automation consultant,weak_title_match
+low_priority,4,A,Optomi,Business Analyst,,linkedin,2026-06-09,,https://www.linkedin.com/jobs/view/4425828403,ai automation consultant,weak_title_match
+low_priority,4,A,Umbrex,Lean Operations - Value Stream Mapping,,linkedin,2026-06-11,,https://www.linkedin.com/jobs/view/4427570822,ai automation consultant,weak_title_match
