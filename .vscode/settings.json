@@ -1,4 +1,6 @@
 {
   "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.autofetchPeriod": 60,
   "git.postCommitCommand": "sync"
 }
