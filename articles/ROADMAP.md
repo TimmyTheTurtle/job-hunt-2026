@@ -7,7 +7,7 @@ Run `/sync-roadmap` after checking items to reconcile with roadmap-dashboard.htm
 
 ## Articles — Editing
 
-- [ ] S1-A1 — Vibe Coding Is the New Doomscrolling
+- [ ] S1-A1 — Vibe Coding Is Gamified Work (Draft 4 ready; doomscrolling retained as hook)
 
 ---
 

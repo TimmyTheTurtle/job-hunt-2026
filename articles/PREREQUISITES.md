@@ -36,7 +36,7 @@ An SE-managed project has all of the following:
 
 | Article | Status | Project Prerequisites | SE Doc Requirements |
 |---|---|---|---|
-| S1-A1 Vibe Coding Is the New Doomscrolling | Out for editing | None — Watershed positive case inline | None needed for current draft |
+| S1-A1 Vibe Coding Is Gamified Work | Draft 4 ready for editing | None - Watershed positive case inline; downloaded papers in `articles/papers/` support the gamification pivot | None needed for current draft |
 | S1-A2 AI Makes Bad Code Worse | Write now | None | — |
 | S1-A3 I Shipped More and Felt Worse | Write now | None | — |
 | S1-A4 Why Documentation Fails | Write now | Optional: legal-tech-debt HANDOFF pattern as enrichment | legal-tech-debt already SE-managed ✓ |

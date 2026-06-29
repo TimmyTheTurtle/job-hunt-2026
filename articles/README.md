@@ -1,6 +1,6 @@
 # Articles
 
-Two series. Different tents. Same mission.
+Four series. Different tents. Same mission.
 
 > Bringing sanity to agentic development before we're all buried in magical nonsense.
 
@@ -8,10 +8,7 @@ Two series. Different tents. Same mission.
 
 ## Mission
 
-The central thesis: vibe coding reproduces the engagement dynamics of social media feeds —
-prompt-response-reprompt loops that deliver intermittent rewards, low-friction continuation,
-and a misleading feeling of progress. The point is not that AI coding tools are bad. The point
-is that they become engagement systems unless bounded by software and systems engineering discipline.
+The central thesis: AI coding tools increasingly behave like gamified work systems. Doomscrolling remains a useful opening image because it names the felt continuation loop, but gamification and persuasive design explain the mechanism: immediate rewards, low-friction continuation, progress cues, usage metrics, and weak phase boundaries. The point is not that AI coding tools are bad. The point is that they become phase-misaligned incentive systems unless bounded by software and systems engineering discipline.
 
 The long-range answer is not a single tool. It is an architecture that layers:
 - disciplined loops and constraints
@@ -62,7 +59,7 @@ separate benefits. Precision is frugality. Frugality enforces precision.
 previous layer stops paying off or reveals a new failure mode. The series has a staircase
 structure, not a random list of AI topics:
 
-1. Identify attention and engagement problems
+1. Identify gamified incentive loops and phase-slippage
 2. Show cognitive and burnout consequences
 3. Show memory and documentation consequences
 4. Introduce constraints and guardrails
@@ -108,7 +105,7 @@ This through-line connects Articles 4, 6, 7, and 8.
 
 | # | File | Title | Status |
 |---|------|-------|--------|
-| 1 | [s1-a01](series-1/s1-a01-vibe-coding-doomscrolling.md) | Vibe Coding Is the New Doomscrolling | Not started |
+| 1 | [s1-a01](series-1/s1-a01-vibe-coding-doomscrolling.md) / [Draft 4](series-1/s1-a01-draft-04.md) | Vibe Coding Is Gamified Work | Draft 4 ready for editing |
 | 2 | [s1-a02](series-1/s1-a02-ai-makes-bad-code-worse.md) | AI Makes Bad Code Worse | Not started |
 | 3 | [s1-a03](series-1/s1-a03-shipped-more-felt-worse.md) | I Shipped More and Felt Worse | Not started |
 | 4 | [s1-a04](series-1/s1-a04-documentation-fails.md) | Why Documentation Fails in AI-Assisted Development | Not started |
@@ -141,7 +138,7 @@ This through-line connects Articles 4, 6, 7, and 8.
 ## Publication Schedule (Series 1)
 
 ```
-Week 1:   S1-A1   Vibe Coding Is the New Doomscrolling     ← Lead. Everything depends on this.
+Week 1:   S1-A1   Vibe Coding Is Gamified Work             ← Lead. Draft 4 ready; gamification is the frame, doomscrolling is the hook.
 Week 3:   S1-A2   AI Makes Bad Code Worse
 Week 5:   S1-A3   I Shipped More and Felt Worse
 Week 7:   S1-A4   Why Documentation Fails

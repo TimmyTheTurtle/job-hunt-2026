@@ -15,11 +15,20 @@ All source links organized by topic. Article assignments noted where applicable.
 
 ## Doomscrolling / Attention Loops
 
-- [Doomscrolling overview — Wikipedia](https://en.wikipedia.org/wiki/Doomscrolling) — S1-A1
-- [Doomscrolling and feedback loops — Da More Mental Health](https://damorementalhealth.com/doomscrolling/) — S1-A1
-- [Psychology of doomscrolling — Rowan Center LA](https://rowancenterla.com/psychology-of-doom-scrolling-explained/) — S1-A1
+- [Doomscrolling overview — Wikipedia](https://en.wikipedia.org/wiki/Doomscrolling) — S1-A1; hook only, not the causal frame
 - [Programming by Chat study (ArXiv)](papers/arxiv-2604.00436-programming-by-chat.pdf) — S1-A1/A2
 - [AI fatigue essay — Siddhant Khare](https://siddhantkhare.com/writing/ai-fatigue-is-real) — S1-A3
+
+## Gamification / Persuasive Design
+
+- [Fogg Behavior Model / persuasive design](https://dl.acm.org/doi/10.1145/1541948.1541999) - S1-A1; motivation + ability + prompt convergence
+- [Do Persuasive Designs Make Smartphones More Addictive? - arXiv:2106.02604](papers/arxiv-2106.02604-persuasive-design-smartphones.pdf) - S1-A1; persuasive design prolongs use and reinforces checking habits
+- [Design Frictions on Social Media - arXiv:2407.18803](papers/arxiv-2407.18803-design-frictions-social-media.pdf) - S1-A1; friction improves recall and reduces mindless continuation
+- [Beyond Intrinsic Motivation - arXiv:2410.12991](papers/arxiv-2410.12991-autonomous-motivation-ux.pdf) - S1-A1; distinguishes autonomous engagement from compulsive use
+- [Achievement Unlocked - arXiv:2208.05860](papers/arxiv-2208.05860-achievement-unlocked-devops-gamification.pdf) - S1-A1; software-engineering gamification can steer behavior, with mixed downstream outcomes
+- [Negative Effects of Gamification in Education Software - arXiv:2305.08346](papers/arxiv-2305.08346-negative-effects-gamification.pdf) - S1-A1; adverse effects include performance, motivation, understanding, and gaming the system
+- [Health Wearables, Gamification, and Healthful Activity - arXiv:2301.02767](papers/arxiv-2301.02767-health-wearables-gamification.pdf) - S1-A1; leaderboard effects vary by user population
+- [Defending Against the Dark Arts - arXiv:2305.13154](papers/arxiv-2305.13154-dark-patterns-social-media.pdf) - S1-A1; vocabulary for manipulative or behaviorally sticky interface patterns
 
 ## Burnout / Cognitive Effects
 
@@ -159,14 +168,17 @@ All source links organized by topic. Article assignments noted where applicable.
 
 ## Empirical Research — AI-Assisted Development (Phase, Cognition, Quality)
 
+- [Impact of AI on Developer Productivity / GitHub Copilot — arXiv:2302.06590](papers/arxiv-2302.06590-copilot-productivity.pdf) — S1-A1; constrained-task speedup; explains why the reward loop is compelling
 - [METR Productivity RCT — arXiv:2507.09089](papers/arxiv-2507.09089-metr-productivity-rct.pdf) — S1-A1, S1-A3; 19% slower, perceived 20% faster; 39-point perception-reality gap; 16 experienced devs, 246 tasks
-- [Comprehension Debt in GenAI SE — arXiv:2604.13277](papers/arxiv-2604.13277-comprehension-debt.pdf) — S1-A3; 17% comprehension drop; four debt patterns; debt lives in cognition not codebase
+- [How AI Impacts Skill Formation — arXiv:2601.20245](papers/arxiv-2601.20245-ai-skill-formation.pdf) — S1-A1, S1-A3; AI assistance can impair conceptual understanding, code reading, and debugging
+- [Comprehension Debt in GenAI SE — arXiv:2604.13277](papers/arxiv-2604.13277-comprehension-debt.pdf) — S1-A1, S1-A3; four debt patterns; debt lives in cognition not codebase
 - [Debt Behind the AI Boom — arXiv:2603.28592](papers/arxiv-2603.28592-debt-behind-ai-boom.pdf) — S1-A1, S1-A2; 304,362 AI commits; 24.2% of AI-introduced defects never cleaned up
 - [Fast and Forgettable — arXiv:2604.18538](papers/arxiv-2604.18538-fast-and-forgettable.pdf) — S1-A3; Copilot vs. pair programming RCT; worse one-week retention; overestimated learning
 - [Mitigating Epistemic Debt — arXiv:2602.20206](papers/arxiv-2602.20206-mitigating-epistemic-debt.pdf) — S1-A3; Explanation Gate intervention restores metacognitive engagement
 - [The Vibe-Check Protocol — arXiv:2601.02410](papers/arxiv-2601.02410-vibe-check-protocol.pdf) — S1-A1, S1-A3; acceleration vs. offloading distinction; measurably different outcomes
 - [Enterprise AI Coding Assistants — arXiv:2601.20112](papers/arxiv-2601.20112-enterprise-ai-coding-assistants.pdf) — S1-A3; devs spend ~9% of time reviewing AI output; produce more code, delete more
 - [Vibe Coding in Practice: Flow, Technical Debt — arXiv:2512.11922](papers/arxiv-2512.11922-vibe-coding-in-practice.pdf) — S1-A1; flow-debt trade-off; phase handoff sustainability guidelines
+- [Generative AI productivity and learning meta-analysis — arXiv:2605.04779](papers/arxiv-2605.04779-genai-productivity-learning-meta-analysis.pdf) — S1-A1; productivity effects are heterogeneous and learning effects are not reliably positive
 - [Agentic AI in the SDLC — arXiv:2604.26275](papers/arxiv-2604.26275-agentic-ai-sdlc.pdf) — S2-A4; six-layer A-SDLC reference architecture; economics of attention named as open problem
 - [Bridging the Gap: Transparency and Traceability — arXiv:2605.17675](papers/arxiv-2605.17675-transparency-traceability-v-model.pdf) — S2-A2; V-model traceability requirements in AI-assisted scientific software
 - [Empirically Based Model of Software Prototyping — Bjarnason et al. 2023](https://dl.acm.org/doi/10.1007/s10664-023-10331-w) — S1-A1, S3-A2; PAM vocabulary; exploratory vs. evolutionary prototypes are categorically distinct

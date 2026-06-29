@@ -208,8 +208,8 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);display:flex
     <div class="ms-row">
       <div class="ms" style="border-left-color:var(--gold)">
         <div class="ms-wk" style="color:var(--gold)">Week 1</div>
-        <div class="ms-d">S1-A1 published</div>
-        <div class="ms-sub">Series launches. Credibility clock starts.</div>
+        <div class="ms-d">S1-A1 Draft 4 ready</div>
+        <div class="ms-sub">Gamification pivot in place; final edit/publish next.</div>
       </div>
       <div class="ms" style="border-left-color:var(--sage2)">
         <div class="ms-wk" style="color:var(--sage2)">Week 4</div>
@@ -242,13 +242,13 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);display:flex
     <div style="position:relative;width:100%;height:680px">
       <canvas id="gantt-chart" role="img" aria-label="Gantt chart showing 15 work streams across 26 weeks"></canvas>
     </div>
-    <p style="font-size:11px;color:var(--dim);margin-top:8px">Milestone lines: wk 1 (publish S1-A1) · wk 4 (demo + site live) · wk 6 (first outreach) · wk 23 (full outreach). Hover bars for week range.</p>
+    <p style="font-size:11px;color:var(--dim);margin-top:8px">Milestone lines: wk 1 (finish/publish S1-A1) · wk 4 (demo + site live) · wk 6 (first outreach) · wk 23 (full outreach). Hover bars for week range.</p>
   </section>
 
   <section class="sec" id="s1">
     <h2 class="sec-title">Series 1 — The Vibe Coding Problem</h2>
     <p class="sec-desc">Audience: engineering leaders, senior engineers, CTOs. Platform: LinkedIn primary, personal site canonical. Cadence: one article every 10–14 days.</p>
-    <div class="series-intro">The central thesis: vibe coding reproduces the engagement dynamics of social media feeds. The argument runs ten articles from diagnosis through architecture — each article justifies the next. Do not publish out of order.</div>
+    <div class="series-intro">The central thesis: AI coding tools can behave like gamified work systems when exploration loops continue into engineering phases. Doomscrolling is the hook; gamification and phase-misaligned incentives are the mechanism. Do not publish out of order.</div>
     <div class="art-list" id="list-s1"></div>
   </section>
 
@@ -287,12 +287,12 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);display:flex
 const ARTICLES = [
   {
     id:'S1-A1',s:1,status:'editing',pub:'wk 1',
-    title:'Vibe coding is the new doomscrolling',
-    thesis:'Prompt-response-reprompt loops in AI coding tools reproduce the engagement mechanics of social media feeds: intermittent rewards, low-friction continuation, and a misleading feeling of progress.',
-    claims:['The dopamine loop is structurally identical to infinite scroll','Feeling productive is not the same as making progress','The antidote is not avoiding AI tools — it is bounding them with SE discipline'],
-    arc:'Series lead. Establishes the central diagnosis. Everything else in S1 extends from this. Publish immediately once editing is done.',
+    title:'Vibe coding is gamified work',
+    thesis:'Doomscrolling names the felt continuation loop, but gamification explains the mechanism: AI coding tools reward momentum, visible progress, and cheap continuation even after the work has crossed from exploration into specification, verification, and maintenance.',
+    claims:['Doomscrolling is the hook; gamification is the causal frame','The failure mode is phase-slippage, not tool use or developer laziness','The antidote is explicit phase control: specs, tests, invariants, review gates, and intentional friction before continuation'],
+    arc:'Series lead. Establishes the central diagnosis: AI coding tools are most dangerous when exploration incentives govern engineering work. Draft 4 is ready for final edit/publish.',
     blocker:null,
-    notes:'Out for editing. Cross-references the Watershed positive case inline.'
+    notes:'Draft 4 exists at articles/series-1/s1-a01-draft-04.md. Local paper PDFs are in articles/papers/. Cross-references the Watershed positive case inline.'
   },
   {
     id:'S1-A2',s:1,status:'write',pub:'wk 3',
@@ -760,7 +760,7 @@ new Chart(gctx,{
       annotation:{
         annotations:{
           l1:{type:'line',scaleID:'x',value:1,borderColor:'rgba(201,168,76,.4)',borderWidth:1,borderDash:[4,3],
-            label:{content:'★ wk 1: publish S1-A1',display:true,position:'start',backgroundColor:'rgba(30,28,20,.92)',color:'#c9a84c',font:{size:10},padding:{x:5,y:3},yAdjust:6}},
+            label:{content:'★ wk 1: finish S1-A1',display:true,position:'start',backgroundColor:'rgba(30,28,20,.92)',color:'#c9a84c',font:{size:10},padding:{x:5,y:3},yAdjust:6}},
           l4:{type:'line',scaleID:'x',value:4,borderColor:'rgba(93,155,132,.4)',borderWidth:1,borderDash:[4,3],
             label:{content:'★ wk 4: demo + site',display:true,position:'end',backgroundColor:'rgba(20,30,26,.92)',color:'#7dc4a4',font:{size:10},padding:{x:5,y:3},yAdjust:-6}},
           l6:{type:'line',scaleID:'x',value:6,borderColor:'rgba(201,123,107,.4)',borderWidth:1,borderDash:[4,3],
