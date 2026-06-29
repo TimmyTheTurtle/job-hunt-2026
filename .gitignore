@@ -6,7 +6,6 @@ secrets/
 articles/papers/*.pdf
 articles/refs/
 articles/graph.kuzu/
-articles/papers/citations.json
 .cache/s2/
 __pycache__/
 *.pyc

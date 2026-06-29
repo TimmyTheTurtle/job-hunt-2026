@@ -81,6 +81,8 @@ For serious search discovery, agents should pair the normal runner with [job_sea
 
 For contracting, consulting, or fractional work, agents should use [job_search/CONTRACT_SEARCH_WORKFLOW.md](job_search/CONTRACT_SEARCH_WORKFLOW.md) and the dedicated contracting profile at [job_search/search_profile_contracting.json](job_search/search_profile_contracting.json). Contract review should capture rate, duration, W2/1099/C2C status, expected weekly hours, timezone constraints, client-facing load, and whether the work creates useful portfolio evidence.
 
+For article and research work, agents should treat citation integrity as part of the work, not as a cleanup detail. A resolving markdown link is not enough. The source must actually support the article claim, local PDF links must point to the exact named paper, and DOI-only or web-only sources should be marked honestly rather than replaced with a convenient unrelated PDF. When article citations change, the tracked `articles/papers/citations.json` should include the current article-specific truth: title, authors, year, URL/DOI/arXiv ID, local file when present, verification status, and why the source is germane.
+
 ## Source Of Truth
 
 The compact bootstrap is a distilled mirror of these source files:
@@ -106,6 +108,7 @@ Keep in the compact file:
 - search deep-dive trigger and ledger boundary
 - ATS/startup sweep trigger for serious job discovery
 - contract-search trigger and contract-specific review fields
+- article citation integrity requirements
 - critical recordkeeping requirements like preserving the exact posting URL
 - company watchlist checks for employers Dorian wants to revisit
 - short reminders about tone and strategy
@@ -132,6 +135,7 @@ This includes changes to:
 - role tier logic
 - writing constraints
 - default workflow
+- article citation/source integrity workflow
 
 The compact file should remain optimized for startup.
 This file should remain optimized for humans who need to understand the system.

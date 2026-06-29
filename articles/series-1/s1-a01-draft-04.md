@@ -252,7 +252,7 @@ Ahmad's Comprehension Debt paper gives useful vocabulary for this. Black-box acc
 
 That matters because software is not done when code appears. Software has to be changed. It has to be debugged under pressure. It has to be explained to someone else. It has to survive a handoff. It has to be modified after the original conversation has vanished from working memory.
 
-Liu et al.'s large-scale repository study pushes the point into production. Across 304,362 verified AI-authored commits in 6,275 repositories, they identified 484,606 introduced issues - code smells, bugs, and security vulnerabilities - and 24.2% of those issues survived to the latest revision. That is not a vibes-based objection. It is a durability signal. Some of the issues introduced by AI-authored commits did not get cleaned up by the ordinary churn of future work.
+Liu et al.'s large-scale repository study pushes the point into production. Across 302.6K verified AI-authored commits in 6,299 repositories, they identified 484,366 introduced issues - code smells, bugs, and security vulnerabilities - and 22.7% of tracked AI-introduced issues survived to the latest revision. That is not a vibes-based objection. It is a durability signal. Some of the issues introduced by AI-authored commits did not get cleaned up by the ordinary churn of future work.
 
 The meta-analysis evidence is useful too because it keeps the piece from overclaiming. The broad picture is not doom. Generative AI can have positive productivity effects. But the effects are heterogeneous, and learning benefits are not reliably positive. That is exactly the nuance the article needs. Benefits are real, but context-sensitive. The question is not whether AI helps. The question is under what phase, with what constraints, measured by what outcomes.
 
@@ -492,7 +492,7 @@ Everything else is evidence, vocabulary, and practical consequence.
 - Andrej Karpathy / Simon Willison, "vibe coding" definition and context:
   [Simon Willison](https://simonwillison.net/2025/Mar/19/vibe-coding/)
 - Karpathy's floor/ceiling distinction and agentic engineering framing:
-  [SD Times](https://sdtimes.com/ai/andrej-karpathy-has-renamed-vibe-coding-heres-what-engineering-leaders-need-to-do-about-it/)
+  [Karpathy](https://karpathy.bearblog.dev/sequoia-ascent-2026/)
 - Karpathy on nanochat being handwritten:
   [Futurism](https://futurism.com/artificial-intelligence/inventor-vibe-coding-doesnt-work)
 - B. J. Fogg, "A Behavior Model for Persuasive Design":
