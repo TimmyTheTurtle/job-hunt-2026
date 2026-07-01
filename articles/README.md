@@ -6,6 +6,41 @@ Four series. Different tents. Same mission.
 
 ---
 
+## Research Asset Policy
+
+The article research corpus uses two different storage models:
+
+- `articles/papers/*.pdf` are the seed PDFs for the knowledge graph and are intended to live in Git LFS.
+- `articles/refs/` is local-only working storage for ref PDFs and should stay out of normal git history.
+
+That means:
+
+- ordinary clones should be allowed to skip downloading seed PDFs until they are actually needed
+- the knowledge graph at `articles/graph.kuzu` is a local build artifact, not source-of-truth
+- refs can be re-downloaded or manually copied in later without changing the repository model
+
+Recommended clone flow when you do not want the seed PDFs immediately:
+
+```bash
+GIT_LFS_SKIP_SMUDGE=1 git clone <repo>
+```
+
+Then fetch only the seed PDFs you want:
+
+```bash
+git lfs pull --include="articles/papers/*.pdf"
+git lfs pull --include="articles/papers/arxiv-2603.02601-agentassay.pdf"
+```
+
+For the knowledge graph pipeline:
+
+- rebuild metadata with `scripts/fetch-citations.py`
+- keep seed PDFs in `articles/papers/`
+- treat `articles/refs/` as optional local enrichment
+- rebuild `articles/graph.kuzu` from local assets as needed
+
+---
+
 ## Mission
 
 The central thesis: AI coding tools increasingly behave like gamified work systems. Doomscrolling remains a useful opening image because it names the felt continuation loop, but gamification and persuasive design explain the mechanism: immediate rewards, low-friction continuation, progress cues, usage metrics, and weak phase boundaries. The point is not that AI coding tools are bad. The point is that they become phase-misaligned incentive systems unless bounded by software and systems engineering discipline.
