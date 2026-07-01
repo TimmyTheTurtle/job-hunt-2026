@@ -9,6 +9,7 @@ This repository is the canonical record for job-search strategy, applications, r
 - [Job search deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md)
 - [How to use the search ledger](HOW_TO_USE_SEARCH_LEDGER.md)
 - [Current strategy](current_strategy.md)
+- [Applied AI engineering learning plan](APPLIED_AI_ENGINEERING_LEARNING_PLAN.md)
 - [UI compliance notes](ui_compliance.md)
 - [Agent entry point](AGENTS.md)
 - [Agent bootstrap guide](agent_bootstrap_human.md)

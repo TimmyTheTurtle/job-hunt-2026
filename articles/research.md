@@ -4,6 +4,49 @@ All source links organized by topic. Article assignments noted where applicable.
 
 ---
 
+## Applied AI Engineering - Core Voices to Read
+
+These are not listed because they are flattering or trendy. They are here because they are useful
+for a professional trying to build a real mental model of applied AI engineering as a discipline:
+systems, evals, retrieval, context architecture, standards, runtime boundaries, and anti-hype
+operational thinking.
+
+### Primary voices
+
+- [Chip Huyen](https://huyenchip.com/) - production AI systems, AI engineering, platform thinking, agents, practical architecture
+  - [Blog](https://huyenchip.com/blog/)
+- [Hamel Husain](https://hamel.dev/) - evals, measurement, debugging AI products, anti-hype product reality
+- [Eugene Yan](https://eugeneyan.com/) - LLM systems patterns, productized AI, evals, guardrails, user-facing failure modes
+  - [Patterns for Building LLM-based Systems & Products](https://eugeneyan.com/writing/llm-patterns/)
+- [Simon Willison](https://simonwillison.net/) - independent skeptical voice on LLM tooling, prompt injection, agents, model behavior, and MCP/tool-use implications
+  - [LLMs tag](https://simonwillison.net/tags/llms/)
+- [Jason Liu](https://jxnl.co/) - structured outputs, constrained interfaces, context engineering, agentic RAG, schema-first practice
+  - [Context Engineering Index](https://jxnl.co/writing/2025/08/28/context-engineering-index/)
+- [Shreya Shankar](https://shreyashankar.com/) - research-backed rigor around evals, unstructured data systems, validation, and human-in-the-loop AI engineering
+
+### Best shared starting point
+
+- [Applied LLMs - What We've Learned From A Year of Building with LLMs](https://applied-llms.org/)
+  - Best single starting document for practical applied AI engineering tradeoffs:
+    prompting, retrieval, evals, structured outputs, monitoring, UX, and production lessons.
+
+### How to use this section
+
+- Read Chip Huyen for systems worldview and production architecture.
+- Read Hamel Husain for measurement discipline and anti-BS instincts.
+- Read Eugene Yan for engineering/product patterns that survive contact with users.
+- Read Simon Willison to keep skepticism, security awareness, and tool realism intact.
+- Read Jason Liu for structured-output discipline, context engineering, and constrained-node design.
+- Read Shreya Shankar for research-grade grounding and stronger validation instincts.
+
+### What to deprioritize
+
+- Demo-first AI influencers with little operational depth
+- Framework evangelists whose writing mostly sells their own stack
+- Prompt-trick content with weak systems, eval, or deployment thinking
+
+---
+
 ## Vibe Coding
 
 - [Andrej Karpathy coins "vibe coding" — Simon Willison](https://simonwillison.net/2025/Mar/19/vibe-coding/) — S1-A1

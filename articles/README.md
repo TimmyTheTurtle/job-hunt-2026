@@ -19,6 +19,25 @@ The long-range answer is not a single tool. It is an architecture that layers:
 
 ---
 
+## Current Publication Rule
+
+Drafting can begin immediately.
+
+Publication does not.
+
+Before releasing new articles, complete the six-week Applied AI engineering curriculum in:
+- [../APPLIED_AI_ENGINEERING_LEARNING_PLAN.md](../APPLIED_AI_ENGINEERING_LEARNING_PLAN.md)
+
+Reason:
+- the article series needs stronger grounding in shared open tooling, workflow patterns, observability, retrieval practice, and standards-based integration
+- the goal is to publish from a more informed base, not to pause writing entirely
+
+Working rule:
+- draft in parallel during the curriculum
+- hold releases until the curriculum gate is complete
+
+---
+
 ## Series 1 and Series 3 Are Connected
 
 Series 1 diagnoses what happens when you never exit the exploratory phase. Series 3 is the
@@ -138,16 +157,17 @@ This through-line connects Articles 4, 6, 7, and 8.
 ## Publication Schedule (Series 1)
 
 ```
-Week 1:   S1-A1   Vibe Coding Is Gamified Work             ← Lead. Draft 4 ready; gamification is the frame, doomscrolling is the hook.
-Week 3:   S1-A2   AI Makes Bad Code Worse
-Week 5:   S1-A3   I Shipped More and Felt Worse
-Week 7:   S1-A4   Why Documentation Fails
-Week 9:   S1-A5   Vibe Coding Without Constraints
-Week 11:  S1-A6   Context Poisoning
-Week 14:  S1-A7   RAG as Engineering Memory
-Week 17:  S1-A8   GraphRAG and Architectural Memory
-Week 20:  S1-A9   There Is No Such Thing as Clean Agentic Code
-Week 23:  S1-A10  The Architecture I'm Building
+Weeks 1-6: Curriculum gate + article drafting in parallel   ← No releases during this window.
+Week 7:    S1-A1   Vibe Coding Is Gamified Work             ← First release after curriculum completion.
+Week 9:    S1-A2   AI Makes Bad Code Worse
+Week 11:   S1-A3   I Shipped More and Felt Worse
+Week 13:   S1-A4   Why Documentation Fails
+Week 15:   S1-A5   Vibe Coding Without Constraints
+Week 17:   S1-A6   Context Poisoning
+Week 19:   S1-A7   RAG as Engineering Memory
+Week 21:   S1-A8   GraphRAG and Architectural Memory
+Week 23:   S1-A9   There Is No Such Thing as Clean Agentic Code
+Week 25:   S1-A10  The Architecture I'm Building
 ```
 
 ---

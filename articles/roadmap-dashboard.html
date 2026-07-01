@@ -2,30 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<title>Roadmap — Dorian Klingenberg</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roadmap Dashboard - Dorian Klingenberg</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
   --bg:#12100a;--surf:#1c1912;--card:#221f15;--cardh:#2a271c;
   --b0:rgba(210,195,155,.09);--b1:rgba(210,195,155,.16);--b2:rgba(210,195,155,.26);
   --text:#e2ddc8;--muted:#968e7e;--dim:#645e52;
-  --gold:#c9a84c;--gold2:#8a6c2a;
-  --sage:#5d9b84;--sage2:#7dc4a4;
-  --purple:#8a6f9e;--purple2:#a882d8;
-  --coral:#c97b6b;--blue:#4a7090;
-  --serif:'Playfair Display',Georgia,serif;
-  --sans:system-ui,-apple-system,sans-serif;
+  --gold:#c9a84c;--sage:#5d9b84;--sage2:#7dc4a4;--purple2:#a882d8;--coral:#c97b6b;--blue:#4a7090;
+  --serif:'Playfair Display',Georgia,serif;--sans:system-ui,-apple-system,sans-serif;
 }
 html{scroll-behavior:smooth}
 body{font-family:var(--sans);background:var(--bg);color:var(--text);display:flex;min-height:100vh;font-size:14px;line-height:1.6}
-
-#sidebar{
-  width:230px;min-width:230px;background:var(--surf);border-right:1px solid var(--b0);
-  position:fixed;top:0;left:0;bottom:0;overflow-y:auto;padding:1.5rem 0;z-index:100
-}
+#sidebar{width:240px;min-width:240px;background:var(--surf);border-right:1px solid var(--b0);position:fixed;top:0;left:0;bottom:0;overflow-y:auto;padding:1.5rem 0;z-index:100}
 .sb-logo{padding:0 1.25rem 1.25rem;border-bottom:1px solid var(--b0);margin-bottom:1rem}
 .sb-logo-title{font-family:var(--serif);font-size:15px;color:var(--gold);line-height:1.35}
 .sb-logo-sub{font-size:11px;color:var(--dim);margin-top:3px}
@@ -36,703 +28,459 @@ body{font-family:var(--sans);background:var(--bg);color:var(--text);display:flex
 .sb-a.active{color:var(--gold);border-left-color:var(--gold);background:rgba(201,168,76,.06)}
 .sb-ct{font-size:10px;background:var(--b0);color:var(--dim);padding:1px 6px;border-radius:10px}
 .sb-div{height:1px;background:var(--b0);margin:.5rem 1.25rem}
-
-#main{margin-left:230px;flex:1;padding:2.5rem 2.5rem 5rem;max-width:880px}
-
+#main{margin-left:240px;flex:1;padding:2.5rem 2.5rem 5rem;max-width:980px}
 .sec{margin-bottom:3.5rem;scroll-margin-top:1.5rem}
 .sec-title{font-family:var(--serif);font-size:22px;font-weight:400;color:var(--text);margin-bottom:.4rem;padding-bottom:.75rem;border-bottom:1px solid var(--b1)}
 .sec-desc{font-size:13.5px;color:var(--muted);margin-bottom:1.25rem;font-style:italic;font-family:var(--serif)}
-
-.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:1.75rem}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:1.5rem}
 .stat{background:var(--card);border:1px solid var(--b0);border-radius:8px;padding:16px 18px}
 .stat-lbl{font-size:11px;color:var(--muted);letter-spacing:.04em;margin-bottom:6px}
 .stat-val{font-size:36px;font-weight:400;line-height:1;font-family:var(--serif);margin-bottom:4px}
 .stat-sub{font-size:11px;color:var(--dim)}
-
-.mode-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:1.75rem}
-.mode-card{background:var(--card);border:1px solid var(--b0);border-radius:8px;padding:14px 16px}
-.mode-head{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid var(--b0)}
-.mode-row-item{font-size:12px;color:var(--muted);padding:4px 0;border-bottom:1px solid var(--b0);line-height:1.4}
-.mode-row-item:last-child{border-bottom:none}
-.mode-row-item strong{color:var(--text);font-weight:500}
-
-.ms-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:1.75rem}
+.panel-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:1.5rem}
+.panel{background:var(--card);border:1px solid var(--b0);border-radius:8px;padding:14px 16px}
+.panel-head{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid var(--b0)}
+.panel-item{font-size:12px;color:var(--muted);padding:4px 0;border-bottom:1px solid var(--b0);line-height:1.4}
+.panel-item:last-child{border-bottom:none}
+.panel-item strong{color:var(--text);font-weight:500}
+.ms-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:1.5rem}
 .ms{background:var(--card);border-radius:8px;padding:12px 14px;border-left:2px solid}
 .ms-wk{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:5px}
 .ms-d{font-size:12px;color:var(--text);line-height:1.4}
 .ms-sub{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.35}
-
 .gantt-legend{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:10px}
 .leg-i{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted)}
 .leg-sq{width:11px;height:11px;border-radius:2px;flex-shrink:0}
-
 .series-intro{background:var(--card);border:1px solid var(--b0);border-left:2px solid var(--gold);border-radius:0 8px 8px 0;padding:12px 16px;margin-bottom:1.25rem;font-style:italic;font-size:13.5px;color:var(--muted);line-height:1.55;font-family:var(--serif)}
-
-.art-list{display:flex;flex-direction:column;gap:5px}
+.list{display:flex;flex-direction:column;gap:5px}
 .art-card{background:var(--card);border:1px solid var(--b0);border-radius:8px;overflow:hidden;transition:border-color .15s}
 .art-card:hover{border-color:var(--b1)}
 .art-card.open{border-color:var(--b2)}
 .art-hdr{display:flex;align-items:flex-start;gap:10px;padding:10px 14px;cursor:pointer;user-select:none}
 .art-hdr:hover{background:var(--cardh)}
-.art-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:3px;white-space:nowrap;flex-shrink:0;margin-top:2px;letter-spacing:.03em}
+.badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:3px;white-space:nowrap;letter-spacing:.03em}
 .bw{background:rgba(93,155,132,.16);color:#7dc4a4}
 .bb{background:rgba(138,111,158,.16);color:#a882d8}
 .br{background:rgba(201,168,76,.16);color:#d4a84c}
 .bg{background:rgba(100,94,82,.18);color:#7a7468}
 .art-meta{flex:1;min-width:0}
-.art-id{font-size:10.5px;color:var(--dim);margin-bottom:2px;letter-spacing:.03em}
-.art-title{font-size:14px;color:var(--text);line-height:1.3;font-family:var(--serif)}
+.item-id{font-size:10.5px;color:var(--dim);margin-bottom:2px;letter-spacing:.03em}
+.item-title{font-size:14px;color:var(--text);line-height:1.3;font-family:var(--serif)}
 .art-chev{font-size:11px;color:var(--dim);margin-top:4px;transition:transform .2s;flex-shrink:0}
 .art-card.open .art-chev{transform:rotate(90deg)}
 .art-body{display:none;padding:0 14px 14px;border-top:1px solid var(--b0)}
 .art-card.open .art-body{display:block}
 .art-body-inner{padding-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.art-body-inner.full{grid-template-columns:1fr}
 .ab-sec{margin-bottom:8px}
 .ab-lbl{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
 .ab-txt{font-size:13px;color:var(--muted);line-height:1.5;font-family:var(--serif)}
-.ab-txt strong{color:var(--text);font-weight:500}
 .ab-ul{font-size:12.5px;color:var(--muted);padding-left:1rem;line-height:1.6;font-family:var(--serif)}
 .ab-ul li{margin-bottom:2px}
 .blocker-box{background:rgba(138,111,158,.09);border:1px solid rgba(138,111,158,.22);border-radius:6px;padding:8px 12px;font-size:12.5px;color:#a882d8;line-height:1.5;font-family:var(--serif)}
-.pub-chip{display:inline-block;font-size:11px;background:rgba(93,155,132,.12);color:#7dc4a4;padding:2px 8px;border-radius:3px;margin-top:4px}
-
-.build-list{display:flex;flex-direction:column;gap:8px}
-.build-item{background:var(--card);border:1px solid var(--b0);border-radius:8px;padding:12px 16px;display:grid;grid-template-columns:52px 1fr 80px;gap:12px;align-items:start}
-.build-id{font-family:var(--serif);font-size:20px;color:var(--gold);font-weight:400;line-height:1;padding-top:2px}
-.build-name{font-size:13.5px;color:var(--text);line-height:1.35;font-family:var(--serif)}
-.build-sub{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.4}
-.build-unlocks{font-size:11px;color:var(--sage2);margin-top:5px}
-.build-effort{text-align:right}
-.build-effort-val{font-size:13px;color:var(--gold);font-family:var(--serif)}
-.build-effort-lbl{font-size:10px;color:var(--dim);margin-top:2px}
-.crit-badge{font-size:10px;background:rgba(201,168,76,.14);color:var(--gold);padding:1px 6px;border-radius:3px;display:inline-block;margin-top:5px}
-.done-badge{font-size:10px;background:rgba(93,155,132,.10);color:#5d9b84;padding:1px 6px;border-radius:3px;display:inline-block;margin-top:5px;letter-spacing:.03em}
-.bd{background:rgba(93,155,132,.10);color:#5d9b84}
-.art-card.is-done .art-title{opacity:.5;text-decoration:line-through;text-decoration-color:rgba(93,155,132,.4)}
-
+.chip{display:inline-block;font-size:11px;background:rgba(93,155,132,.12);color:#7dc4a4;padding:2px 8px;border-radius:3px;margin-top:6px}
+.build-grid{display:flex;flex-direction:column;gap:8px}
 .build-card{background:var(--card);border:1px solid var(--b0);border-radius:8px;overflow:hidden;transition:border-color .15s}
 .build-card:hover{border-color:var(--b1)}
 .build-card.open{border-color:var(--b2)}
-.build-hdr{display:grid;grid-template-columns:52px 1fr 80px;gap:12px;align-items:start;padding:12px 16px;cursor:pointer;user-select:none}
+.build-hdr{display:grid;grid-template-columns:56px 1fr 110px;gap:12px;align-items:start;padding:12px 16px;cursor:pointer;user-select:none}
 .build-hdr:hover{background:var(--cardh)}
+.build-id{font-family:var(--serif);font-size:20px;color:var(--gold);line-height:1;padding-top:2px}
+.build-name{font-size:13.5px;color:var(--text);line-height:1.35;font-family:var(--serif)}
+.build-sub{font-size:12px;color:var(--muted);margin-top:4px;line-height:1.45}
+.build-unlocks{font-size:11px;color:var(--sage2);margin-top:6px;line-height:1.4}
+.build-links{margin-top:8px}
+.build-link{display:block;font-size:12px;color:var(--sage2);text-decoration:none;padding:2px 0}
+.build-link:hover{color:var(--text)}
+.build-side{text-align:right}
+.build-effort{font-size:13px;color:var(--gold);font-family:var(--serif)}
+.build-side-sub{font-size:10px;color:var(--dim);margin-top:2px}
+.crit-badge{font-size:10px;background:rgba(201,168,76,.14);color:var(--gold);padding:1px 6px;border-radius:3px;display:inline-block;margin-top:6px}
 .build-body{display:none;padding:0 16px 14px;border-top:1px solid var(--b0)}
 .build-card.open .build-body{display:block}
 .build-body-inner{padding-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.build-links{margin-top:8px}
-.build-link{display:block;font-size:12px;color:var(--sage2);text-decoration:none;padding:3px 0;border-bottom:1px solid var(--b0);line-height:1.4}
-.build-link:last-child{border-bottom:none}
-.build-link:hover{color:var(--text)}
-.build-card.is-done .build-name{opacity:.5;text-decoration:line-through;text-decoration-color:rgba(93,155,132,.4)}
-
+.build-detail-label{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
+.build-detail-text{font-size:13px;color:var(--muted);line-height:1.55;font-family:var(--serif)}
+.build-chevron{font-size:11px;color:var(--dim);margin-top:8px}
 ::-webkit-scrollbar{width:5px}
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:var(--b1);border-radius:3px}
+@media (max-width:1000px){
+  #sidebar{display:none}
+  #main{margin-left:0;padding:1.25rem}
+  .stat-row,.panel-row,.ms-row{grid-template-columns:1fr}
+  .art-body-inner,.build-hdr,.build-body-inner{grid-template-columns:1fr}
+  .build-side{text-align:left}
+}
 </style>
 </head>
 <body>
-
 <nav id="sidebar">
   <div class="sb-logo">
-    <div class="sb-logo-title">Article &amp; Build<br>Roadmap</div>
+    <div class="sb-logo-title">Curriculum, Articles,<br>and Build Roadmap</div>
     <div class="sb-logo-sub">Dorian Klingenberg · 2026</div>
   </div>
   <div class="sb-grp">
     <div class="sb-lbl">Overview</div>
     <a href="#overview" class="sb-a">Dashboard</a>
-    <a href="#gantt" class="sb-a">Gantt — 26 weeks</a>
+    <a href="#gantt" class="sb-a">Gantt - 26 weeks</a>
+  </div>
+  <div class="sb-div"></div>
+  <div class="sb-grp">
+    <div class="sb-lbl">Curriculum</div>
+    <a href="#curriculum" class="sb-a">C1-C8 release gate <span class="sb-ct">8</span></a>
   </div>
   <div class="sb-div"></div>
   <div class="sb-grp">
     <div class="sb-lbl">Series</div>
-    <a href="#s1" class="sb-a">S1 — Vibe Coding Problem <span class="sb-ct">10</span></a>
-    <a href="#s2" class="sb-a">S2 — AI Systems Eng <span class="sb-ct">6</span></a>
-    <a href="#s3" class="sb-a">S3 — Product Discovery <span class="sb-ct">3</span></a>
-    <a href="#s4" class="sb-a">S4 — Legal Tech Debt <span class="sb-ct">7</span></a>
+    <a href="#s1" class="sb-a">S1 - Vibe Coding Problem <span class="sb-ct">10</span></a>
+    <a href="#s2" class="sb-a">S2 - AI Systems Eng <span class="sb-ct">8</span></a>
+    <a href="#s3" class="sb-a">S3 - Product Discovery <span class="sb-ct">3</span></a>
+    <a href="#s4" class="sb-a">S4 - Legal Tech Debt <span class="sb-ct">7</span></a>
   </div>
   <div class="sb-div"></div>
   <div class="sb-grp">
     <div class="sb-lbl">Build</div>
-    <a href="#build" class="sb-a">Build items B1–B10</a>
+    <a href="#build" class="sb-a">B1-B10 unlock work <span class="sb-ct">10</span></a>
   </div>
 </nav>
 
 <main id="main">
-
   <section class="sec" id="overview">
     <h1 class="sec-title">Dashboard</h1>
-    <p class="sec-desc">26 articles across 4 series · you are here: week 1–2</p>
+    <p class="sec-desc">The new rule is simple: draft articles now, finish the Applied AI engineering curriculum first, then publish from a stronger base.</p>
 
     <div class="stat-row">
       <div class="stat">
-        <div class="stat-lbl">write now</div>
-        <div class="stat-val" style="color:var(--sage2)">17</div>
-        <div class="stat-sub">articles, no blockers</div>
+        <div class="stat-lbl">draft in parallel</div>
+        <div class="stat-val" style="color:var(--sage2)">18</div>
+        <div class="stat-sub">articles you can draft during weeks 1-6</div>
       </div>
       <div class="stat">
-        <div class="stat-lbl">2 hrs unlocks</div>
-        <div class="stat-val" style="color:var(--gold)">1</div>
-        <div class="stat-sub">read 4 papers (~3–4 hrs) → S2-A2 ready</div>
+        <div class="stat-lbl">curriculum gate</div>
+        <div class="stat-val" style="color:var(--gold)">8</div>
+        <div class="stat-sub">Pluralsight-backed Applied AI engineering courses</div>
       </div>
       <div class="stat">
         <div class="stat-lbl">build-blocked</div>
-        <div class="stat-val" style="color:var(--purple2)">8</div>
-        <div class="stat-sub">articles need project work first</div>
+        <div class="stat-val" style="color:var(--purple2)">7</div>
+        <div class="stat-sub">articles still waiting on project work</div>
       </div>
     </div>
 
-    <div class="mode-row">
-      <div class="mode-card">
-        <div class="mode-head" style="color:var(--sage2)">Write now</div>
-        <div class="mode-row-item"><strong>S1:</strong> A2, A3, A4, A5, A6, A9</div>
-        <div class="mode-row-item"><strong>S2:</strong> A1, A3, A4</div>
-        <div class="mode-row-item"><strong>S3:</strong> A1, A2, A3</div>
-        <div class="mode-row-item"><strong>S4:</strong> A1, A2, A3, A5</div>
+    <div class="panel-row">
+      <div class="panel">
+        <div class="panel-head" style="color:var(--sage2)">Draft Now</div>
+        <div class="panel-item"><strong>S1:</strong> A1, A2, A3, A4, A5, A6, A9</div>
+        <div class="panel-item"><strong>S2:</strong> A1, A3, A4, A7, A8</div>
+        <div class="panel-item"><strong>S3:</strong> A1, A2, A3</div>
+        <div class="panel-item"><strong>S4:</strong> A1, A2, A3, A5</div>
       </div>
-      <div class="mode-card">
-        <div class="mode-head" style="color:var(--gold)">Research / Build (wks 1–4)</div>
-        <div class="mode-row-item"><strong>B1</strong> Read 4 Agile-V papers — 3–4 hrs → unlocks S2-A2</div>
-        <div class="mode-row-item"><strong>B10</strong> Personal site 1-pager — hard target wk 4</div>
-        <div class="mode-row-item"><strong>B3–B4</strong> Synthetic demo dataset — ~1 week</div>
-        <div class="mode-row-item"><strong>B5–B6</strong> Claude API + demo deploy — hard target wk 4</div>
+      <div class="panel">
+        <div class="panel-head" style="color:var(--gold)">Curriculum Gate</div>
+        <div class="panel-item"><strong>Weeks 1-2:</strong> FastAPI, Pydantic, schema-first extraction</div>
+        <div class="panel-item"><strong>Weeks 2-4:</strong> RAG, LlamaIndex, LangChain, LangGraph</div>
+        <div class="panel-item"><strong>Weeks 4-6:</strong> MCP, OpenAPI, OpenTelemetry, eval discipline</div>
+        <div class="panel-item"><strong>Rule:</strong> no releases before C1-C8 are complete</div>
       </div>
-      <div class="mode-card">
-        <div class="mode-head" style="color:var(--purple2)">Build-blocked (start later)</div>
-        <div class="mode-row-item"><strong>S1-A7, A8</strong> WindowConfig RAG/GraphRAG needed</div>
-        <div class="mode-row-item"><strong>S1-A10</strong> Demo live + dataset + all projects SE-managed</div>
-        <div class="mode-row-item"><strong>S2-A5</strong> Granny Stage 2 + evals hands-on</div>
-        <div class="mode-row-item"><strong>S4-A4, A6, A7</strong> Synthetic examples + pipeline</div>
+      <div class="panel">
+        <div class="panel-head" style="color:var(--purple2)">Build Later</div>
+        <div class="panel-item"><strong>B1:</strong> Agile-V reading unlocks S2-A2</div>
+        <div class="panel-item"><strong>B3-B6:</strong> synthetic dataset plus demo unlock S1-A10 and S4 pipeline work</div>
+        <div class="panel-item"><strong>B8-B9:</strong> evals plus Granny Stage 2 unlock S2-A5</div>
+        <div class="panel-item"><strong>S1-A7/A8:</strong> still depend on real RAG and GraphRAG experiments</div>
       </div>
     </div>
 
     <div class="ms-row">
       <div class="ms" style="border-left-color:var(--gold)">
         <div class="ms-wk" style="color:var(--gold)">Week 1</div>
-        <div class="ms-d">S1-A1 Draft 4 ready</div>
-        <div class="ms-sub">Gamification pivot in place; final edit/publish next.</div>
+        <div class="ms-d">Curriculum starts and article drafting starts</div>
+        <div class="ms-sub">Work both tracks, but hold release.</div>
       </div>
       <div class="ms" style="border-left-color:var(--sage2)">
         <div class="ms-wk" style="color:var(--sage2)">Week 4</div>
-        <div class="ms-d">Demo live · Personal site live</div>
-        <div class="ms-sub">Minimum viable pitch assembled.</div>
+        <div class="ms-d">Demo and site target</div>
+        <div class="ms-sub">Build proof still matters alongside coursework.</div>
       </div>
       <div class="ms" style="border-left-color:var(--coral)">
         <div class="ms-wk" style="color:var(--coral)">Week 6</div>
-        <div class="ms-d">First contract outreach</div>
-        <div class="ms-sub">5–10 targeted, direct, specific messages.</div>
+        <div class="ms-d">Curriculum complete, release gate opens</div>
+        <div class="ms-sub">Publishing can begin after this checkpoint.</div>
       </div>
       <div class="ms" style="border-left-color:var(--purple2)">
-        <div class="ms-wk" style="color:var(--purple2)">Week 23</div>
-        <div class="ms-d">S1-A10 published · Full inbound</div>
-        <div class="ms-sub">Articles are the pitch. Outreach is inbound-first.</div>
+        <div class="ms-wk" style="color:var(--purple2)">Week 7</div>
+        <div class="ms-d">First release window: S1-A1</div>
+        <div class="ms-sub">Move from drafting to public cadence.</div>
       </div>
     </div>
   </section>
 
   <section class="sec" id="gantt">
-    <h2 class="sec-title">Gantt — 26 weeks</h2>
+    <h2 class="sec-title">Gantt - 26 weeks</h2>
     <div class="gantt-legend">
-      <span class="leg-i"><span class="leg-sq" style="background:#5d9b84"></span>write now</span>
+      <span class="leg-i"><span class="leg-sq" style="background:#c97b6b"></span>curriculum gate</span>
+      <span class="leg-i"><span class="leg-sq" style="background:#5d9b84"></span>draft in parallel</span>
       <span class="leg-i"><span class="leg-sq" style="background:#a8835a"></span>read first</span>
-      <span class="leg-i"><span class="leg-sq" style="background:#c9a84c"></span>build: critical path</span>
-      <span class="leg-i"><span class="leg-sq" style="background:#7b5030"></span>build: long game</span>
-      <span class="leg-i"><span class="leg-sq" style="background:#4a7090"></span>S1 publish cadence</span>
-      <span class="leg-i"><span class="leg-sq" style="background:#7b5f9e"></span>blocked → unlocking</span>
+      <span class="leg-i"><span class="leg-sq" style="background:#c9a84c"></span>build critical path</span>
+      <span class="leg-i"><span class="leg-sq" style="background:#7b5030"></span>build long game</span>
+      <span class="leg-i"><span class="leg-sq" style="background:#4a7090"></span>S1 release cadence</span>
+      <span class="leg-i"><span class="leg-sq" style="background:#7b5f9e"></span>blocked to unlocking</span>
     </div>
-    <div style="position:relative;width:100%;height:680px">
-      <canvas id="gantt-chart" role="img" aria-label="Gantt chart showing 15 work streams across 26 weeks"></canvas>
+    <div style="position:relative;width:100%;height:620px">
+      <canvas id="gantt-chart" role="img" aria-label="Gantt chart showing curriculum, drafting, build work, and release windows across 26 weeks"></canvas>
     </div>
-    <p style="font-size:11px;color:var(--dim);margin-top:8px">Milestone lines: wk 1 (finish/publish S1-A1) · wk 4 (demo + site live) · wk 6 (first outreach) · wk 23 (full outreach). Hover bars for week range.</p>
+    <p style="font-size:11px;color:var(--dim);margin-top:8px">Milestones: week 1 starts curriculum and drafting, week 4 aims for demo and site, week 6 opens the release gate, week 7 starts article publication.</p>
+  </section>
+
+  <section class="sec" id="curriculum">
+    <h2 class="sec-title">Curriculum C1-C8</h2>
+    <p class="sec-desc">This is the strongest Pluralsight-backed Applied AI engineering coverage track. It is the explicit publication gate for the article series.</p>
+    <div class="build-grid" id="curriculum-list"></div>
   </section>
 
   <section class="sec" id="s1">
-    <h2 class="sec-title">Series 1 — The Vibe Coding Problem</h2>
-    <p class="sec-desc">Audience: engineering leaders, senior engineers, CTOs. Platform: LinkedIn primary, personal site canonical. Cadence: one article every 10–14 days.</p>
-    <div class="series-intro">The central thesis: AI coding tools can behave like gamified work systems when exploration loops continue into engineering phases. Doomscrolling is the hook; gamification and phase-misaligned incentives are the mechanism. Do not publish out of order.</div>
-    <div class="art-list" id="list-s1"></div>
+    <h2 class="sec-title">Series 1 - The Vibe Coding Problem</h2>
+    <p class="sec-desc">Draft in parallel during the curriculum. Release begins after week 6, with S1-A1 first.</p>
+    <div class="series-intro">Series 1 still leads the public narrative, but now from a stronger base. The curriculum is there to make the technical prescriptions more grounded before these pieces go live.</div>
+    <div class="list" id="s1-list"></div>
   </section>
 
   <section class="sec" id="s2">
-    <h2 class="sec-title">Series 2 — AI Systems Engineering</h2>
-    <p class="sec-desc">Audience: senior engineers, technical leads, AI practitioners. Platform: personal site primary. No fixed cadence — write in parallel with Series 1, publish when ready.</p>
-    <div class="series-intro">The technical counterpart to Series 1. Where S1 diagnoses the problem, S2 names the engineering disciplines that address it. TDD, V-model, context architecture, SDLC separation, adversarial testing.</div>
-    <div class="art-list" id="list-s2"></div>
+    <h2 class="sec-title">Series 2 - AI Systems Engineering</h2>
+    <p class="sec-desc">This series benefits the most from the curriculum gate because it is where shared AI-engineering patterns and standards matter most.</p>
+    <div class="series-intro">Use the six-week curriculum to sharpen the claims here. That is especially true for workflow state, retrieval, MCP, observability, and eval-related articles.</div>
+    <div class="list" id="s2-list"></div>
   </section>
 
   <section class="sec" id="s3">
-    <h2 class="sec-title">Series 3 — Product Discovery in the AI Age</h2>
-    <p class="sec-desc">Audience: product engineers, technical founders, engineering leads. Platform: LinkedIn and personal site. Cross-links to Series 1 and 2.</p>
-    <div class="series-intro">All three articles draw from the Watershed exploration phase, which is complete. They can be written without waiting for Watershed to reach Phase A. Write these this week — no blockers.</div>
-    <div class="art-list" id="list-s3"></div>
+    <h2 class="sec-title">Series 3 - Product Discovery in the AI Age</h2>
+    <p class="sec-desc">These can still be drafted immediately. They are less blocked by tooling than Series 2, but publication still waits for the gate.</p>
+    <div class="list" id="s3-list"></div>
   </section>
 
   <section class="sec" id="s4">
-    <h2 class="sec-title">Series 4 — Legal Tech Debt</h2>
-    <p class="sec-desc">Audience: insurance carriers, legal tech practitioners, RegTech engineers, computational law researchers. Building toward a peer-reviewed paper. Articles are excerpts and proof-of-concept publications.</p>
-    <div class="series-intro">All examples are synthetic. Real corpus analysis informs the taxonomy; real policy text is never published. Primary sources: peer-reviewed academic work, court records, regulatory filings, NAIC data. The identities of the guilty parties have been protected.</div>
-    <div class="art-list" id="list-s4"></div>
+    <h2 class="sec-title">Series 4 - Legal Tech Debt</h2>
+    <p class="sec-desc">The curriculum does not replace legal-tech-debt research, but it improves the AI-systems framing around extraction, retrieval, telemetry, and eval discipline.</p>
+    <div class="list" id="s4-list"></div>
   </section>
 
   <section class="sec" id="build">
-    <h2 class="sec-title">Build items B1–B10</h2>
-    <p class="sec-desc">Project work that unlocks blocked articles. Critical path items gate first outreach at week 6. Long-game items gate Series 1 late articles and S2-A5.</p>
-    <div class="build-list" id="list-build"></div>
+    <h2 class="sec-title">Build Items B1-B10</h2>
+    <p class="sec-desc">These continue in parallel and after the curriculum. They unlock the blocked articles and the stronger demo-backed end of the roadmap.</p>
+    <div class="build-grid" id="build-list"></div>
   </section>
-
 </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
 <script>
+const CURRICULUM = [
+  {id:'C1',title:'FastAPI Fundamentals',effort:'wk 1',note:'Typed service foundation for AI workflows.',links:[{text:'Course',url:'https://www.pluralsight.com/courses/fastapi-fundamentals'}]},
+  {id:'C2',title:'Validate Data Classes with Pydantic',effort:'wk 1',note:'Schema-first outputs and artifact validation.',links:[{text:'Course',url:'https://www.pluralsight.com/courses/validate-data-classes-pydantic-demo'}]},
+  {id:'C3',title:'Observability with OpenTelemetry and Grafana',effort:'wk 5',note:'Tracing and debuggable AI-system behavior.',links:[{text:'Course',url:'https://www.pluralsight.com/courses/opentelemetry-grafana-observability'}]},
+  {id:'C4',title:'LangChain Development',effort:'wk 3',note:'Current workflow vocabulary and baseline orchestration.',links:[{text:'Course',url:'https://www.pluralsight.com/courses/langchain-development'}]},
+  {id:'C5',title:'Retrieval Augmented Generation (RAG) for Developers',effort:'wk 2',note:'Retrieval plumbing and RAG mental models.',links:[{text:'Path',url:'https://www.pluralsight.com/paths/retrieval-augmented-generation-rag-for-developers'}]},
+  {id:'C6',title:'Implementing Vector Search with LlamaIndex',effort:'wk 2',note:'Hands-on retrieval stack practice.',links:[{text:'Course',url:'https://www.pluralsight.com/courses/implementing-vector-search-llamaindex'}]},
+  {id:'C7',title:'Introduction to LangGraph',effort:'wk 3',note:'Stateful workflow and human-in-loop orchestration.',links:[{text:'Course',url:'https://www.pluralsight.com/courses/langgraph-introduction'}]},
+  {id:'C8',title:'Model Context Protocol in Practice',effort:'wk 4',note:'Open integration patterns and tool boundaries.',links:[{text:'Course',url:'https://www.pluralsight.com/courses/model-context-protocol-practice'}]},
+];
+
 const ARTICLES = [
-  {
-    id:'S1-A1',s:1,status:'editing',pub:'wk 1',
-    title:'Vibe coding is gamified work',
-    thesis:'Doomscrolling names the felt continuation loop, but gamification explains the mechanism: AI coding tools reward momentum, visible progress, and cheap continuation even after the work has crossed from exploration into specification, verification, and maintenance.',
-    claims:['Doomscrolling is the hook; gamification is the causal frame','The failure mode is phase-slippage, not tool use or developer laziness','The antidote is explicit phase control: specs, tests, invariants, review gates, and intentional friction before continuation'],
-    arc:'Series lead. Establishes the central diagnosis: AI coding tools are most dangerous when exploration incentives govern engineering work. Draft 4 is ready for final edit/publish.',
-    blocker:null,
-    notes:'Draft 4 exists at articles/series-1/s1-a01-draft-04.md. Local paper PDFs are in articles/papers/. Cross-references the Watershed positive case inline.'
-  },
-  {
-    id:'S1-A2',s:1,status:'write',pub:'wk 3',
-    title:'AI makes bad code worse',
-    thesis:'AI coding tools amplify the quality characteristics of the surrounding codebase. In a well-structured system with good tests, AI accelerates. In a poorly structured system, it accelerates the accumulation of entropy.',
-    claims:['AI output quality is bounded by the quality of the surrounding context','The same prompt produces better output in a well-engineered repo than a chaotic one','This is not a model limitation — it is a structural property of in-context learning'],
-    arc:'Follows S1-A1 by showing the mechanism: AI amplifies, it does not correct. Sets up the argument for constraints and guardrails.',
-    blocker:null,
-    notes:null
-  },
-  {
-    id:'S1-A3',s:1,status:'write',pub:'wk 5',
-    title:'I shipped more and felt worse',
-    thesis:'Higher shipping velocity without durable understanding produces cognitive debt alongside technical debt. The burnout pattern is distinct from overwork — it comes from activity without closure.',
-    claims:['Shipping without understanding is not progress — it is deferred confusion','The cognitive cost compounds: each unexplained behavior adds to the mental load','The through-line: documentation friction + AI generation = more noise, not more signal'],
-    arc:'Personal through-line article. Sets up the documentation failure argument in S1-A4. May expand into The Complete Cognitive Stack if the personal angle warrants it.',
-    blocker:null,
-    notes:'Consider whether to include the six-mode cognitive rotation model here or in a candidate article.'
-  },
-  {
-    id:'S1-A4',s:1,status:'write',pub:'wk 7',
-    title:'Why documentation fails in AI-assisted development',
-    thesis:'AI-generated documentation creates the appearance of coverage while hiding the absence of rationale. Too little documentation loses the reasoning. Too much unfiltered documentation buries it. The solution is not more notes — it is better memory architecture.',
-    claims:['AI documentation optimizes for completeness, not signal','Unfiltered documentation creates the same failure mode as no documentation','The legal-tech-debt HANDOFF pattern is a concrete working example of the alternative'],
-    arc:'Introduces the memory architecture theme that S1-A7 and S1-A8 address technically.',
-    blocker:null,
-    notes:'Optional enrichment: legal-tech-debt HANDOFF format as a positive example. Already SE-managed so usable.'
-  },
-  {
-    id:'S1-A5',s:1,status:'write',pub:'wk 9',
-    title:'Vibe coding without constraints is just vibe coding',
-    thesis:'Constraints are not friction — they are the mechanism that converts AI output velocity into engineering value. A codebase without guardrails turns an AI coding tool into a faster way to accumulate entropy.',
-    claims:['The constraint is not a limit on the AI — it is a promise to the codebase','CLAUDE_CONSTRAINTS.md is a concrete working example of this in production','Guardrails and quality gates are the first architectural layer'],
-    arc:'Pivots from diagnosis to prescription. Introduces constraints as the first solution layer.',
-    blocker:null,
-    notes:'legal-tech-debt CLAUDE_CONSTRAINTS.md exists as a concrete working example.'
-  },
-  {
-    id:'S1-A6',s:1,status:'write',pub:'wk 11',
-    title:'Context poisoning',
-    thesis:'Stale, irrelevant, or contradictory context in an AI session degrades output quality in ways that are invisible to the model. The model will confidently produce output consistent with poisoned context. Context hygiene is an engineering discipline.',
-    claims:['The model cannot distinguish fresh context from stale context — only the engineer can','Context poisoning is cumulative and compounds across a session','The legal-tech-debt AGENT_OPERATING_MODEL is a positive architecture example: shared truth sources, explicit priority order, drift prevention'],
-    arc:'Bridges constraints (S1-A5) to retrieval (S1-A7). Sets up why RAG is a context hygiene solution.',
-    blocker:null,
-    notes:'Optional enrichment: AGENT_OPERATING_MODEL.md as positive example.'
-  },
-  {
-    id:'S1-A7',s:1,status:'blocked',pub:'wk 14',
-    title:'RAG as engineering memory',
-    thesis:'Retrieval-augmented generation is not a search improvement — it is an engineering memory architecture. The retrieval layer is the interface between the AI and the accumulated knowledge of the project.',
-    claims:['RAG retrieves the three relevant paragraphs instead of stuffing full docs','The quality of retrieval determines the quality of the output','Token frugality: better selection produces better outputs AND cheaper runs'],
-    arc:'Technical solution to the context poisoning problem. Requires a working demo.',
-    blocker:'WindowConfigurator: at least one RAG experiment running and demoable. WindowConfigurator must be SE-managed before drawing from it.',
-    notes:null
-  },
-  {
-    id:'S1-A8',s:1,status:'blocked',pub:'wk 17',
-    title:'GraphRAG and architectural memory',
-    thesis:'Graph-structured knowledge retrieval over a codebase or document corpus encodes relationships that flat vector search cannot capture. Architectural memory requires graph-backed reasoning.',
-    claims:['Graph retrieval surfaces structural relationships, not just semantic similarity','GraphRAG produces denser signal per token than flat RAG','The architecture: graph-backed engineering memory is the layer after RAG'],
-    arc:'Extension of S1-A7. The second retrieval layer.',
-    blocker:'WindowConfigurator: GraphRAG experiment running and demoable.',
-    notes:null
-  },
-  {
-    id:'S1-A9',s:1,status:'write',pub:'wk 20',
-    title:'There is no such thing as clean agentic code',
-    thesis:'Agentic systems are inherently non-deterministic. The concept of "clean code" — well-named, readable, testable — does not transfer unchanged. Agentic code requires a different quality framework.',
-    claims:['Non-determinism makes traditional quality signals unreliable','Clean agentic code is defined by constraint compliance, not readability','The quality gate is behavioral, not structural'],
-    arc:'Structural argument piece. Can be written now and enriched with accumulated project experience. No project prerequisites.',
-    blocker:null,
-    notes:'Write now as a theory piece. Enrich with examples from accumulated project work before publishing.'
-  },
-  {
-    id:'S1-A10',s:1,status:'blocked',pub:'wk 23',
-    title:'The architecture I\'m building',
-    thesis:'A synthesis of the full Series 1 argument: the layered architecture that converts AI coding tools from engagement systems into engineering infrastructure. Constraints → guardrails → RAG → GraphRAG → behavioral tuning.',
-    claims:['Each layer addresses the failure mode the previous layer exposes','The architecture is not hypothetical — it is running in the legal-tech-debt project','This is the pitch: not "I know this" but "I built this"'],
-    arc:'Series finale. The entire S1 argument is a staircase leading to this article.',
-    blocker:'legal-tech-debt demo deployed with public URL (B6). Synthetic demo dataset built (B4). All source projects SE-managed.',
-    notes:'S1-A10 is the anchor for full contractor outreach at week 23. The demo must be live before this publishes.'
-  },
-  {
-    id:'S2-A1',s:2,status:'write',pub:null,
-    title:'TDD doesn\'t work for non-deterministic systems (and what does)',
-    thesis:'TDD breaks on LLM systems because the oracle assumption fails. But the picture is more precise than "TDD is dead": constrained LLM nodes admit property-based contract testing; orchestration layers require evals and invariant specification. The architecture determines the testing methodology.',
-    claims:['Three testing layers: (1) constrained nodes → contract assertions, (2) orchestration → invariant specification, (3) system behavior → statistical evals (AgentAssay)','The claim is not "TDD doesn\'t work" — it is "TDD doesn\'t work at the orchestration layer, and here\'s what does"','Schema-bound nodes are testable at the contract level; the stochastic output is inside the boundary, not outside it (see S2-A8)','LLM-as-judge reduces review volume but cannot verify — it introduces a second stochastic layer on top of the first'],
-    arc:'Opens Series 2. Establishes the three-layer model. S2-A8 develops the contract testing methodology; S2-A2 maps the V-model onto agentic V&V.',
-    blocker:null,
-    notes:'Key sources: arXiv:2603.02601 (AgentAssay — rejects classical TDD, provides layer 3 methodology), arXiv:2212.06094 (LMQL — constraints reduce variance), arXiv:2603.15676 (schema checks as deterministic gates).'
-  },
-  {
-    id:'S2-A2',s:2,status:'read',pub:null,
-    title:'The V-model was built for this problem',
-    thesis:'The V-model maps cleanly onto agentic AI — but needs adaptation at two layers existing literature does not fully address: (1) V&V of agent-generated artifacts (Problem 2, addressed by Agile-V), and (2) V&V of the agentic system itself as a non-deterministic runtime (Problem 3, the hard unsolved layer). These are structurally different problems requiring different machinery.',
-    claims:['Three-problem distinction: deterministic SW (P1, solved), agent-generated artifacts (P2, Agile-V covers this), agentic system as non-deterministic runtime (P3, the new problem)','Two-tier acceptance criteria: hard invariants (schema, safety, side effects, timing) + probabilistic assertions (behavioral criterion holds ≥95% confidence)','100% task completion can coexist with 33% policy adherence — outcome testing is insufficient (arXiv:2512.12791)','SCOPE-V loop (Specify/Constrain/Orchestrate/Prove/Evolve/Verify) is the best current process-level treatment of P3','The three-problem synthesis and layered adaptation are the original contributions; Agile-V and SCOPE-V are prior work'],
-    arc:'Follows S2-A1 by naming the V&V framework for the agentic system level, not just single-turn outputs. Connects forward to S2-A5 (Granny\'s House Trials) as the empirical demonstration.',
-    blocker:'Read 4 papers before writing (~3–4 hrs total): arXiv:2602.20684 (Agile-V), arXiv:2605.20456 (Agentic Agile-V/SCOPE-V), arXiv:2512.12791 (Beyond Task Completion), arXiv:2603.02601 (AgentAssay).',
-    notes:'The three-problem distinction is the key structural contribution. Attribution is critical: be explicit about what is original synthesis vs. prior work.'
-  },
-  {
-    id:'S2-A3',s:2,status:'write',pub:null,
-    title:'Context architecture is the new software architecture',
-    thesis:'In agentic systems, the design of the context — what goes in, what stays out, in what order — is as consequential as the design of the code. Context architecture is a first-class engineering discipline.',
-    claims:['Every architectural decision is simultaneously a context decision','The compact bootstrap is the architectural expression of context discipline','Context architecture governs cost, quality, and coherence simultaneously'],
-    arc:'Bridges S2-A1/A2 (testing) to S2-A4 (runtime separation).',
-    blocker:null,
-    notes:null
-  },
-  {
-    id:'S2-A4',s:2,status:'write',pub:null,
-    title:'Separating the SDLC stack from the agentic runtime',
-    thesis:'The software development lifecycle toolchain and the agentic runtime are two distinct systems with different quality guarantees, different failure modes, and different governance requirements. Conflating them produces systems that are neither reliable nor auditable.',
-    claims:['The SDLC stack: git, CI/CD, linting, tests — deterministic, auditable, reproducible','The agentic runtime: prompts, context, retrieval, model calls — probabilistic, session-bound','ADR-012 from legal-tech-debt is the primary source — a live architectural decision in production'],
-    arc:'The architectural prescription that S2-A3 sets up.',
-    blocker:null,
-    notes:'legal-tech-debt ADR-012 is the primary source. Already SE-managed.'
-  },
-  {
-    id:'S2-A5',s:2,status:'blocked',pub:'wk 26+',
-    title:'Adversarial agent testing: three idiots in the garden',
-    thesis:'Three agents with different personalities are placed in a system with hidden infrastructure and instructed to explore it. They break it in different ways. The evidence bundles are reviewed by a human host. This is the shape of adversarial agent testing.',
-    claims:['Adversarial testing reveals failure modes that happy-path testing cannot','Different agent personalities expose different attack surfaces','The evals framework is the instrumentation that makes the evidence bundle meaningful'],
-    arc:'Series 2 finale. Requires the most build work.',
-    blocker:'Granny\'s House Trials: extract to own public repo, SE-manage, document Stage 1 fully, complete Stage 2 with evals framework (B8+B9). Estimated 6–10 weeks of build work.',
-    notes:null
-  },
-  {
-    id:'S2-A8',s:2,status:'write',pub:null,
-    title:'Contract testing for constrained LLM nodes',
-    thesis:'A tightly constrained LLM node — fixed system prompt, schema-bound output, narrow task scope — is testable via property-based contract assertions. The testable unit is the contract (schema conformance + business logic invariant), not the output string. The red-green loop is intact at the contract level.',
-    claims:['Hard to test means poorly bounded — test pain is a design smell, not an infrastructure problem','Schema-bound + narrow-scope = testable contract; the stochastic output is inside the contract boundary, not outside it','PydanticAI TestModel/FunctionModel enable contract testing with zero token spend during development','The testing pyramid follows: contract tests on every commit, evals periodically; AgentAssay sequential hypothesis testing minimizes eval runs','The literature gap: LMQL shows constraints reduce variance, AgentAssay rejects classical TDD, but nobody connects these into a contract testing methodology'],
-    arc:'Extends S2-A1 layer 1 into a full methodology. Grounded in the WindowConfigurator AI additions (voice-to-spec, vision measurement) as the concrete instance.',
-    blocker:null,
-    notes:'Original claim — the contract testing methodology for constrained LLM nodes is not in any existing paper. Requires honest framing: proposed framework, not validated study. Sources: arXiv:2603.02601 (AgentAssay), arXiv:2212.06094 (LMQL), arXiv:2505.17716 (Record & Replay), arXiv:2603.15676 (Automated Self-Testing), arXiv:2605.20456 (SCOPE-V).'
-  },
-  {
-    id:'S2-A6',s:2,status:'never',pub:null,
-    title:'LoRA and behavioral tuning as engineering discipline',
-    thesis:'Low-rank adaptation of foundation models is a behavioral engineering tool, not a performance optimization. The decision to fine-tune is an architectural decision with long-term maintenance implications.',
-    claims:['LoRA is the tool of last resort — prompt and retrieval must reach their ceiling first','Fine-tuning locks behavioral assumptions into weights; those assumptions must be documented','This article requires hands-on LoRA tuning experience to write credibly'],
-    arc:'Hypothetical Series 2 finale if LoRA experience exists.',
-    blocker:'Do not start. Requires 6+ months of hands-on LoRA tuning experience. Write this in late 2026 at the earliest.',
-    notes:'This blocker is not build work — it is experience. It cannot be shortcut.'
-  },
-  {
-    id:'S3-A1',s:3,status:'write',pub:null,
-    title:'The MVP is a one-bet strategy',
-    thesis:'The minimum viable product framing commits a team to a single product hypothesis before the exploration phase is complete. It mistakes the first plausible answer for the correct one.',
-    claims:['One MVP is one bet; one lost bet is a pivot; pivots are expensive','The alternative is an experiment portfolio: multiple small bets run in parallel','Watershed exploration phase is the concrete example — multiple competing product directions explored before any one is locked'],
-    arc:'Opens Series 3. Establishes the problem with the standard MVP playbook.',
-    blocker:null,
-    notes:'Watershed exploration phase is done. All three S3 articles can be written this week.'
-  },
-  {
-    id:'S3-A2',s:3,status:'write',pub:null,
-    title:'Experimentation IS requirements gathering',
-    thesis:'In a novel domain with uncertain user needs, running experiments is not a substitute for requirements gathering — it is requirements gathering. The PAM model (Bjarnason 2023) provides the formal vocabulary.',
-    claims:['Exploratory prototypes are discovery tools, not commitments','The experiment defines the requirement by revealing what users actually need, not what they say they need','Watershed: the experiment program that derived the product from the path of least resistance'],
-    arc:'Middle of Series 3. Reframes the product discovery process.',
-    blocker:null,
-    notes:'Cross-references Series 1 (S1 is the former done indefinitely; S3 is the former done correctly).'
-  },
-  {
-    id:'S3-A3',s:3,status:'write',pub:null,
-    title:'Derive the product from the path of least resistance',
-    thesis:'The right product is not the one you intended to build — it is the one that the market, the technology, and your current capabilities converge on. Follow the path of least resistance through the experiment space.',
-    claims:['Resistance is information: where friction is high, the product hypothesis is wrong','Path of least resistance: where experiments succeed cheaply, product-market fit exists','Watershed: the window configurator AI idea emerged from this process, not from a requirements document'],
-    arc:'Series 3 finale. The positive case that S3-A1 sets up.',
-    blocker:null,
-    notes:null
-  },
-  {
-    id:'S4-A1',s:4,status:'write',pub:null,
-    title:'Legal systems accumulate tech debt — the analogy is exact',
-    thesis:'The accumulation of technical debt in software codebases and the accumulation of defects in legal corpora are not analogous in a loose metaphorical sense — the mechanisms are identical: deferred maintenance, reference decay, scope creep, and the absence of a decommissioning process.',
-    claims:['Code smells and law smells arise from the same structural failure modes','The absence of a refactoring culture in law has the same consequences as in software','The cost is measurable — S4-A2 is the evidence'],
-    arc:'Series 4 lead. Establishes the structural claim.',
-    blocker:null,
-    notes:'legal-tech-debt taxonomy exists. litigation mapping is in progress.'
-  },
-  {
-    id:'S4-A2',s:4,status:'write',pub:null,
-    title:'The cost is measured',
-    thesis:'Legal tech debt is not a theoretical problem. The cost events are named, the dollar figures are on the record, and the underlying smell is identifiable in each case.',
-    claims:['UK FCA BI Test Case: £1B+ (Overbroad Exclusion Applied)','State Farm ACV: $15.6M Arkansas auto (Calculation Rule Drift) — Chadwick v. State Farm, E.D. Ark.','Louisiana hurricane market conduct: $764,750 (not "~$1M"). FL OIR fines: $2.575M. Ironshore: $26M vs. $250K sublimit.','CA homeowners filings: avg 293 days to DOI approval (Milliman Q2 2025). CO personal auto: 367 days.','KY/TN/OH/WV DOI enforcement behind FOIA walls — FL/LA/SD are the publicly sourced anchors'],
-    arc:'Evidentiary backbone. Each named case maps to a specific smell.',
-    blocker:null,
-    notes:'Accuracy-critical. All dollar figures verified against source documents. Louisiana = $764,750 exactly.'
-  },
-  {
-    id:'S4-A3',s:4,status:'write',pub:null,
-    title:'RAII applied to legal obligations',
-    thesis:'Resource Acquisition Is Initialization applied to legal obligations: every obligation has a defined lifecycle, an owner, a scope, and an explicit decommissioning process. When those properties are absent, predictable failures follow — failures that have direct software engineering analogs.',
-    claims:['DanglingReference (clause citing repealed authority) = use-after-free','ZombiePolicy (active obligation, repealed authority) = use-after-free that never faults','MissingDestructor (no decommissioning) = memory leak. InvariantViolation = assertion failure','Exception Safety: partial authority updates must not corrupt the obligation graph','Deadlock: compliance approval chains can deadlock the same way concurrent threads do','Borrowing vs Owning: citations must not outlive their authority version'],
-    arc:'Most original piece in the series. This framework does not exist in any legal tech literature.',
-    blocker:null,
-    notes:'Origin document: legal-tech-debt/previous-chats/raii-and-legal-tech-debt.md. Full typed obligation schema in the article plan.'
-  },
-  {
-    id:'S4-A4',s:4,status:'blocked',pub:null,
-    title:'The taxonomy: 87 named legal code smells',
-    thesis:'Coupette et al. (2023) taxonomized 15 law smells and demonstrated 5. This taxonomy names 87 across 10 categories. The gap between 15 and 87 is not a refinement — it is the first systematic catalog of a domain that has existed for over a century.',
-    claims:['83 domain-specific smells across 10 categories (insurance corpus)','7 RAII defect classes as a cross-layer — live across document boundaries','Braz de Souza et al. (ScienceDirect 2025) is the nearest academic neighbor: contract smells via LLMs','Academic lineage: Fowler (1999) → law smells (Coupette 2023, 15) → contract smells (2025) → policy smells (87)'],
-    arc:'The full taxonomy. Publication requires synthetic examples for all 87.',
-    blocker:'All 87 smells must have synthetic examples (purpose-built, non-corpus text) before publishing. This is several weeks of work in legal-tech-debt.',
-    notes:null
-  },
-  {
-    id:'S4-A5',s:4,status:'write',pub:null,
-    title:'The gap nobody is filling',
-    thesis:'Legal NLP, contract analysis AI, and the Rules as Code movement are three adjacent fields that have all been working near this problem for years. None of them have solved it. The gap is structural.',
-    claims:['Legal NLP: classification ≠ diagnosis. ContractNLI classifies; it does not detect InvariantViolation.','Contract AI (Kira, Luminance, Ironclad): commercial contracts, not regulatory filings with authority hierarchies','Rules as Code: formalizes without prior defect detection — encodes the smells into machine-readable form','Insuraviews (founded 2024, Milwaukee): nearest commercial competitor — rate filings only, not form-layer review. Validates the market.','GraphCompliance (arXiv:2510.26309, 2025): +12–20pt F2 over RAG on regulatory multi-hop tasks — validates architecture direction','LLM hallucination: Magesh et al. JELS 2025 (17–33%); Dahl et al. JLA 2024 (58–88% general-purpose)'],
-    arc:'Positions the paper in the academic and commercial landscape.',
-    blocker:null,
-    notes:'No proprietary sources needed. Competitive landscape derived from public academic literature and public company information.'
-  },
-  {
-    id:'S4-A6',s:4,status:'blocked',pub:null,
-    title:'AI agents reading legal text',
-    thesis:'A language model reading legal text without a defect taxonomy is doing keyword search with extra steps. The taxonomy is the schema an AI agent needs to move from retrieval to diagnosis.',
-    claims:['Four-stage pipeline: Preprocessing → Smell Detection → RAII Lifecycle Check → Defect Report','Stage 1 must classify policy-provision nodes vs. filing-instruction nodes (empirically confirmed false-positive source)','Graph-backed reasoning (GraphCompliance) outperforms RAG by +12–20pt F2 on regulatory multi-hop','Output: typed defect record (smell class, severity, failing clause, remediation) — not a summary'],
-    arc:'The architecture article. Requires a working pipeline to publish credibly.',
-    blocker:'Working AI pipeline reading the legal corpus must exist and produce real typed defect records. Do not publish until the pipeline runs.',
-    notes:'Architecture is fully planned. Akoma Ntoso/LegalDocML for graph encoding. Negation-pattern lesson (filing instructions) already documented in lessons/.'
-  },
-  {
-    id:'S4-A7',s:4,status:'blocked',pub:null,
-    title:'What refactoring looks like in a regulated corpus',
-    thesis:'Legal refactoring follows Fowler\'s catalog structure: smell → canonical refactoring → precondition → risk. The refactorings are real engineering operations, not suggestions.',
-    claims:['GodClause → decompose into scoped sub-clauses (precondition: no cross-endorsement dependencies)','DanglingReference → update or retire authority reference (precondition: current authority is identified)','InvariantViolation → resolve conflicting triggers in base form or endorsement (highest risk: requires regulatory review)'],
-    arc:'Series 4 finale. Most research-intensive.',
-    blocker:'Substantially more corpus research needed. At least one worked remediation example required — show the before/after of an actual (synthetic) refactoring.',
-    notes:null
-  },
+  {id:'S1-A1',s:1,status:'editing',pub:'wk 7',title:'Vibe Coding Is Gamified Work',thesis:'Prompt-response-reprompt loops in AI coding tools reproduce gamified work dynamics: intermittent rewards, low-friction continuation, and a misleading feeling of progress.',claims:['The continuation loop matters more than the individual prompt','Feeling productive is not the same as making progress','The antidote is not avoiding AI tools but bounding them with engineering discipline'],arc:'Series lead. Establishes the diagnosis that the rest of Series 1 progressively explains and contains.',blocker:null,notes:'Draft 4 exists. This remains the first release after the curriculum gate opens.'},
+  {id:'S1-A2',s:1,status:'write',pub:'wk 9',title:'AI Makes Bad Code Worse',thesis:'AI coding tools amplify the quality characteristics of the surrounding codebase. In a well-structured system they accelerate; in a chaotic system they accelerate entropy.',claims:['AI output quality is bounded by codebase quality and context quality','The same prompt behaves differently in disciplined and undisciplined repos','This is a structural property of in-context work, not just a model weakness'],arc:'Follows S1-A1 by naming amplification as the core mechanism. Sets up the need for constraints and guardrails.',blocker:null,notes:'Draft now.'},
+  {id:'S1-A3',s:1,status:'write',pub:'wk 11',title:'I Shipped More and Felt Worse',thesis:'Higher shipping velocity without durable understanding produces cognitive debt alongside technical debt. The burnout comes from activity without closure, not just from hours worked.',claims:['Shipping without understanding is deferred confusion','The cognitive load compounds with every unexplained behavior','Documentation friction plus AI generation creates more noise, not more signal'],arc:'Personal through-line article. Sets up the documentation and memory architecture argument.',blocker:null,notes:'Draft now.'},
+  {id:'S1-A4',s:1,status:'write',pub:'wk 13',title:'Why Documentation Fails in AI-Assisted Development',thesis:'AI-generated documentation creates the appearance of coverage while hiding the absence of rationale. Too little documentation loses the reasoning; too much unfiltered documentation buries it.',claims:['Completeness is not the same thing as usable reasoning','Bad documentation and missing documentation converge on the same failure mode','What is needed is better memory architecture, not more notes'],arc:'Introduces the memory-architecture theme that later retrieval articles solve technically.',blocker:null,notes:'Draft now. Optional enrichment from legal-tech-debt handoff patterns.'},
+  {id:'S1-A5',s:1,status:'write',pub:'wk 15',title:'Vibe Coding Without Constraints Is Just Vibe Coding',thesis:'Constraints are not friction. They are the mechanism that converts AI output velocity into engineering value.',claims:['Guardrails turn raw generation into something reviewable','Without constraints, AI assistance becomes a faster entropy engine','Constraint design is part of architecture, not an afterthought'],arc:'This is the turning point from diagnosis to disciplined intervention.',blocker:null,notes:'Draft now.'},
+  {id:'S1-A6',s:1,status:'write',pub:'wk 17',title:'Context Poisoning',thesis:'Agentic systems degrade when stale, irrelevant, or misleading context accumulates faster than it is pruned. Context can poison output long before the underlying model changes.',claims:['More context is often worse context','Stale rationale and low-signal notes create compounding failure','Selection discipline matters more than accumulation discipline'],arc:'Bridges from guardrails into retrieval and context architecture.',blocker:null,notes:'Draft now.'},
+  {id:'S1-A7',s:1,status:'blocked',pub:'wk 19',title:'RAG as Engineering Memory',thesis:'RAG is not just a chatbot feature. It is a selective memory architecture for engineering systems that need the right rationale at the right time instead of all rationale all the time.',claims:['Retrieval beats indiscriminate context stuffing','Engineering memory should surface evidence, not dump archives','The value is precision, traceability, and reduced cognitive load'],arc:'Introduces selective retrieval as the first serious answer to documentation overload.',blocker:'Needs a real RAG experiment running and demoable before the article should go live.',notes:'Still needs a real RAG experiment.'},
+  {id:'S1-A8',s:1,status:'blocked',pub:'wk 21',title:'GraphRAG and Architectural Memory',thesis:'Graph-backed retrieval is the next step after basic RAG because architectural memory is relational, not just textual.',claims:['Architecture lives in relationships between artifacts, not in isolated paragraphs','Graph retrieval can surface dependency and rationale paths plain RAG misses','This is about denser signal per token, not novelty for its own sake'],arc:'Extends S1-A7 from selective text retrieval to structured architectural memory.',blocker:'Needs a real GraphRAG experiment and demoable artifact before publication.',notes:'Still needs a real GraphRAG experiment.'},
+  {id:'S1-A9',s:1,status:'write',pub:'wk 23',title:'There Is No Such Thing as Clean Agentic Code',thesis:'Agentic systems are not clean in the classic sense because the runtime includes prompts, tools, context, policies, and probabilistic behavior outside the source tree.',claims:['The system boundary is wider than the repo','Traditional cleanliness metrics miss the real failure surface','The goal is managed mess with strong boundaries, not imagined purity'],arc:'Late-series realism check before the final architecture article.',blocker:null,notes:'Draft now.'},
+  {id:'S1-A10',s:1,status:'blocked',pub:'wk 25',title:'The Architecture I\'m Building',thesis:'The answer to gamified AI-assisted development is a layered architecture: constraints, guardrails, retrieval, graph-backed memory, and eventually deeper tuning where justified.',claims:['Each layer addresses the failure exposed by the previous layer','The architecture should be demonstrated, not merely described','This is the article where the work becomes a pitch through evidence'],arc:'Series 1 finale. The entire staircase leads here.',blocker:'Needs B4, B6, and B7 strong enough that the architecture is backed by a real demo and case study.',notes:'Needs live demo, dataset, and case study work.'},
+  {id:'S2-A1',s:2,status:'write',pub:null,title:'TDD Doesn\'t Work for Non-Deterministic Systems',thesis:'Classical TDD assumes deterministic outputs. Agentic systems need behavioral testing against invariants rather than single expected outputs.',claims:['A test that passes most of the time may still be an unacceptable test','Expected-output testing breaks down under probabilistic behavior','Behavioral invariants are the right replacement for many AI-runtime checks'],arc:'Series 2 opener. Adapts software engineering discipline instead of discarding it.',blocker:null,notes:'Draft now.'},
+  {id:'S2-A2',s:2,status:'read',pub:null,title:'The V-Model Was Built for This Problem',thesis:'The V-model maps surprisingly well onto agentic AI once you separate deterministic software, agent-generated artifacts, and the agentic runtime itself as three different verification problems.',claims:['Artifact verification and runtime verification are not the same problem','Agile-V and adjacent work help at the artifact layer','The runtime layer needs stronger invariant and evidence thinking'],arc:'Names the V&V framework that follows from S2-A1 and supports later eval work.',blocker:'Read the four B1 papers before drafting so the synthesis is grounded and attribution stays clean.',notes:'Needs B1 reading first.'},
+  {id:'S2-A3',s:2,status:'write',pub:null,title:'Context Architecture Is the New Software Architecture',thesis:'In agentic systems, context design is as consequential as code design. What goes in, what stays out, and in what order are first-class architecture decisions.',claims:['Every architecture decision is also a context decision','Cost, quality, and coherence all flow through context selection','Compact bootstraps and selective memory are architecture, not convenience'],arc:'Bridges testing and runtime separation into a broader systems-engineering frame.',blocker:null,notes:'Draft now, strengthened by curriculum.'},
+  {id:'S2-A4',s:2,status:'write',pub:null,title:'Separating the SDLC Stack from the Agentic Runtime',thesis:'The stack used to build agentic systems is not the same as the stack that runs them. Confusing the two causes design mistakes and bad operational reasoning.',claims:['Build-time tooling and runtime orchestration have different responsibilities','Tooling complexity should not leak directly into runtime decisions','A clean separation improves traceability and debugging'],arc:'Clarifies the system boundary after S2-A3.',blocker:null,notes:'Draft now.'},
+  {id:'S2-A5',s:2,status:'blocked',pub:'wk 26+',title:'Adversarial Agent Testing: Three Idiots in the Garden',thesis:'Agentic systems need adversarial testing under repeated variation, not one-off demos. The point is to measure behavioral failure modes under pressure.',claims:['One successful run proves almost nothing','Adversarial profiles reveal hidden coupling and safety gaps','Evidence bundles and eval harnesses make the results publishable'],arc:'Empirical payoff article for the Series 2 testing argument.',blocker:'Needs Granny Stage 2 plus hands-on eval work strong enough to support real results.',notes:'Needs Granny Stage 2 plus evals.'},
+  {id:'S2-A6',s:2,status:'never',pub:null,title:'LoRA and Behavioral Tuning as Engineering Discipline',thesis:'Behavioral tuning only becomes the next engineering layer after prompts, retrieval, and runtime boundaries have stopped paying off.',claims:['Tuning is not the first answer to weak architecture','Hands-on experience matters more here than concept familiarity','This article needs lived evidence, not synthesis alone'],arc:'Future-capstone article for a later stage of the learning path.',blocker:'Experience-blocked. Do not start until there is meaningful hands-on tuning experience.',notes:'Experience-blocked. Do not start yet.'},
+  {id:'S2-A7',s:2,status:'write',pub:null,title:'Token Frugality Is a Design Discipline',thesis:'Token frugality is not a cost trick. It is a design discipline that forces precision in retrieval, routing, guardrails, and context management.',claims:['Precision and frugality are the same design virtue','Cheaper runs often come from better architecture, not weaker capability','Token discipline improves quality by narrowing noise'],arc:'A cross-cutting systems principle that links retrieval, routing, and observability.',blocker:null,notes:'Draft now.'},
+  {id:'S2-A8',s:2,status:'write',pub:null,title:'Contract Testing for Constrained LLM Nodes',thesis:'Once LLM calls are bounded by schemas, tools, and explicit failure rules, they can be tested more like constrained system components than like free-form chat.',claims:['The prompt is only one part of the contract','Schemas, tool boundaries, and failure semantics define testable behavior','Open standards and constrained interfaces make agent nodes more engineering-like'],arc:'This is where MCP, OpenAPI, and schema-first thinking strengthen the article series directly.',blocker:null,notes:'Draft now, but more informed after the curriculum.'},
+  {id:'S3-A1',s:3,status:'write',pub:null,title:'The MVP Is a One-Bet Strategy',thesis:'The classic MVP frame encourages premature commitment to one product bet when early work should often stay exploratory longer.',claims:['An MVP is often a commitment before enough is known','Exploration and validation are distinct phases','AI changes the economics of trying more than one path'],arc:'Series 3 opener. Reframes product discovery as disciplined exploration.',blocker:null,notes:'Draft now.'},
+  {id:'S3-A2',s:3,status:'write',pub:null,title:'Experimentation IS Requirements Gathering',thesis:'In AI product work, experimentation is not separate from requirements gathering. It is often the mechanism by which real requirements become visible.',claims:['You discover requirements by probing ambiguity, not by pretending it is gone','Exploratory prototypes and delivery prototypes are not the same artifact','The wrong lesson from fast prototyping is false certainty'],arc:'Builds the positive case for structured experimentation after S3-A1.',blocker:null,notes:'Draft now.'},
+  {id:'S3-A3',s:3,status:'write',pub:null,title:'Derive the Product from the Path of Least Resistance',thesis:'The best early product direction is often the one revealed by what repeatedly works, not by what was most confidently imagined at the start.',claims:['Repeatable traction beats elegant intent','Learning loops should shape the product, not just decorate it','Constraint-aware discovery is more durable than vision-only discovery'],arc:'Series 3 closes by turning experimentation into product direction.',blocker:null,notes:'Draft now.'},
+  {id:'S4-A1',s:4,status:'write',pub:null,title:'Legal Systems Accumulate Tech Debt - the Analogy Is Exact',thesis:'Legal and regulatory document systems fail in ways that map directly onto software debt patterns because both are structured systems that degrade under change, ambiguity, and neglected lifecycle management.',claims:['The analogy is structural, not rhetorical','Document defects accumulate like code defects under change pressure','The engineering lens clarifies remediation work without pretending law is software'],arc:'Series 4 opener and framing article.',blocker:null,notes:'Draft now.'},
+  {id:'S4-A2',s:4,status:'write',pub:null,title:'The Cost Is Measured',thesis:'The cost of legal-tech debt is not abstract. It appears in filing friction, review burden, defect propagation, and avoidable remediation effort.',claims:['The debt creates measurable operational drag','Detection and remediation costs compound over time','Naming the cost makes the taxonomy strategically legible'],arc:'Quantifies why the taxonomy matters before the deeper technical pieces.',blocker:null,notes:'Draft now.'},
+  {id:'S4-A3',s:4,status:'write',pub:null,title:'RAII Applied to Legal Obligations',thesis:'Legal obligations behave like managed resources: they have lifecycles, scopes, owners, and failure modes that look surprisingly similar to software resource-management failures.',claims:['Dangling references, leaks, and invariant violations all have legal analogs','Lifecycle thinking gives the taxonomy stronger structure','The value is operational clarity, not analogy theater'],arc:'One of the most original pieces in the whole roadmap.',blocker:null,notes:'Draft now.'},
+  {id:'S4-A4',s:4,status:'blocked',pub:null,title:'The Taxonomy: 87 Named Legal Code Smells',thesis:'The taxonomy becomes persuasive when each named smell is backed by clear synthetic examples and a defensible classification frame rather than a long ungrounded list.',claims:['Naming defects changes what can be discussed and measured','Synthetic examples make the taxonomy publishable without exposing real corpus text','Coverage matters because isolated examples understate the system'],arc:'This is the catalogue article that underpins the rest of Series 4.',blocker:'Needs synthetic examples for all 87 before publication.',notes:'Needs synthetic examples for all 87.'},
+  {id:'S4-A5',s:4,status:'write',pub:null,title:'The Gap Nobody Is Filling',thesis:'Adjacent fields keep circling this problem without solving it because the gap is structural: classification, extraction, and formalization each solve only part of the real workflow problem.',claims:['Legal NLP, contract AI, and rules-as-code all stop short of the full diagnosis problem','The market gap is visible in both academia and product landscapes','The architecture direction is validated precisely because the gap remains open'],arc:'Positions the work in relation to both research and market landscape.',blocker:null,notes:'Draft now.'},
+  {id:'S4-A6',s:4,status:'blocked',pub:null,title:'AI Agents Reading Legal Text',thesis:'A language model reading legal text without a defect taxonomy and typed output structure is still doing keyword search with extra steps. The real move is from retrieval to diagnosis.',claims:['The taxonomy is the schema that turns reading into detection','Graph-backed and typed reasoning beat vague summarization for this domain','The output must be a defect record, not a prose impression'],arc:'Architecture article for the legal-tech-debt pipeline.',blocker:'Needs working pipeline output before the claims are credible.',notes:'Needs working pipeline output.'},
+  {id:'S4-A7',s:4,status:'blocked',pub:null,title:'What Refactoring Looks Like in a Regulated Corpus',thesis:'Refactoring in a regulated corpus follows the same logic as software refactoring: smell, remediation pattern, preconditions, and risk. The difference is the document-governance surface.',claims:['Regulated text still has repeatable remediation patterns','Preconditions and review risk matter as much as the smell itself','A worked example is needed to make the argument real'],arc:'Series 4 finale and most research-intensive article.',blocker:'Needs more corpus work and at least one strong worked remediation example.',notes:'Needs more corpus work and worked examples.'},
 ];
 
 const BUILD = [
-  {
-    id:'B1',done:false,critical:true,effort:'~3–4 hrs',unlocks:['S2-A2'],
-    title:'Read 4 Agile-V papers',
-    notes:'Do this in week 1 before writing S2-A2. Read in order — each paper addresses a different layer of the V&V problem.',
-    detail:'P2 (artifact V&V): 2602.20684 addresses compliance gates + audit artifacts; 2605.20456 adds the SCOPE-V loop and risk-adaptive evidence bundles R0–R3. P3 (agentic system as non-deterministic runtime): 2512.12791 proves 100% task completion ≠ correct behavior; 2603.02601 provides sequential hypothesis testing methodology. The three-problem synthesis in S2-A2 draws from all four.',
-    links:[
-      {text:'arXiv:2602.20684 — Agile V: A Compliance-Ready Framework (Koch & Wellbrock, Feb 2026)',url:'https://arxiv.org/pdf/2602.20684'},
-      {text:'arXiv:2605.20456 — Agentic Agile-V: From Vibe Coding to Verified Engineering (May 2026)',url:'https://arxiv.org/pdf/2605.20456'},
-      {text:'arXiv:2512.12791 — Beyond Task Completion: Assessment Framework for Agentic AI Systems',url:'https://arxiv.org/pdf/2512.12791'},
-      {text:'arXiv:2603.02601 — AgentAssay: Token-Efficient Regression Testing for Non-Deterministic Workflows',url:'https://arxiv.org/pdf/2603.02601'},
-    ]
-  },
-  {
-    id:'B2',done:false,critical:false,effort:'1–2 weeks',unlocks:['internal'],
-    title:'Sandbox 005 Stage 002 — manual pilot',
-    notes:'Internal adversarial agent research. Does not gate any articles directly.',
-    detail:'Stage 1 must be fully SE-managed and documented before Stage 2 begins. Granny\'s House Trials: three agents with different behavioral profiles run in the same environment. Extract to its own repo, write ADR-001, document Stage 1 evidence bundles. This is the prerequisite work that makes Stage 2 publishable.',
-    links:[]
-  },
-  {
-    id:'B3',done:false,critical:true,effort:'1 day',unlocks:['B4'],
-    title:'Synthetic demo dataset — design',
-    notes:'Design the schema and coverage before building. Week 1.',
-    detail:'Define the synthetic policy document set that the legal-tech-debt pipeline will run on. Coverage must include representatives of all 10 smell categories and all 7 RAII defect classes. Schema: document type, jurisdiction, date, intended smell class(es), ground truth labels. Real policy text is never used — all examples are synthetic. Identities of any real-world referents are protected.',
-    links:[
-      {text:'Legal tech debt repo (private)',url:'https://github.com/TimmyTheTurtle/legal-tech-debt'},
-    ]
-  },
-  {
-    id:'B4',done:false,critical:true,effort:'~1 week',unlocks:['S1-A10','B5'],
-    title:'Synthetic demo dataset — build',
-    notes:'The dataset the pipeline runs on. Weeks 2–3.',
-    detail:'Build synthetic policy documents to the schema from B3. Target: enough coverage to demo all major smell categories. Quality bar: a domain expert reading the synthetic text should not immediately identify it as machine-generated. This dataset is what makes the S1-A10 case study and the S4 articles publishable with real examples.',
-    links:[]
-  },
-  {
-    id:'B5',done:false,critical:true,effort:'1–2 days',unlocks:['B6','S4-A6'],
-    title:'Wire Claude API into legal-tech-debt pipeline',
-    notes:'Adds AI-powered defect detection. Week 3.',
-    detail:'Add a Claude API call to the existing legal-tech-debt pipeline so it can classify policy text against the smell taxonomy. This is what turns the repo from a taxonomy project into a working demo. The API call should produce: smell class, confidence, evidence quote, RAII defect type if applicable. Output feeds B6 (the public demo).',
-    links:[
-      {text:'Claude API docs — tool use',url:'https://docs.anthropic.com/en/docs/build-with-claude/tool-use'},
-      {text:'legal-tech-debt repo (private)',url:'https://github.com/TimmyTheTurtle/legal-tech-debt'},
-    ]
-  },
-  {
-    id:'B6',done:false,critical:true,effort:'2–3 days',unlocks:['S1-A10','outreach wk 6'],
-    title:'Deploy legal-tech-debt demo with public URL',
-    notes:'Hard target: week 4. This URL goes on the personal site and in outreach messages.',
-    detail:'Deploy the pipeline (B4 + B5) somewhere with a stable public URL. Minimum: takes a synthetic policy document as input, returns smell classifications with evidence. The URL is the core of the week-6 outreach message: "I built this, you have this problem." Without it, outreach has no artifact to point to.',
-    links:[]
-  },
-  {
-    id:'B7',done:false,critical:false,effort:'~1 week',unlocks:['S1-A10 enrichment'],
-    title:'Legal-tech-debt case study writeup',
-    notes:'Documents what the demo shows. Weeks 4–5.',
-    detail:'Write the narrative behind the demo: what the pipeline detects, why it matters, what the 87 smells represent, what a RAII defect class is. This becomes the case study referenced in S1-A10 and enriches the S4 articles with a concrete worked example. Not a tutorial — a practitioner writeup of what was built and what was learned.',
-    links:[]
-  },
-  {
-    id:'B8',done:false,critical:false,effort:'2–4 weeks',unlocks:['S2-A5 ramp','B9'],
-    title:'Learn evals frameworks (DeepEval / Promptfoo)',
-    notes:'Background track. Start week 3. Must be hands-on before Granny Stage 2.',
-    detail:'Get hands-on with at least one evals framework before running Stage 2 of Granny\'s House Trials. Evals are the measurement infrastructure that makes Granny\'s results publishable — without them, Stage 2 is just anecdote. Target: be able to define behavioral invariants, run N iterations, and produce aggregate statistics against a rubric.',
-    links:[
-      {text:'DeepEval — LLM evaluation framework',url:'https://docs.confident-ai.com/'},
-      {text:'Promptfoo — LLM testing and red-teaming',url:'https://www.promptfoo.dev/docs/intro/'},
-    ]
-  },
-  {
-    id:'B9',done:false,critical:false,effort:'4–6 weeks',unlocks:['S2-A5'],
-    title:'Granny\'s House Trials — Stage 2',
-    notes:'Requires B8. Also requires: own repo, SE-managed, Stage 1 documented, ADR-001 written.',
-    detail:'The empirical demonstration of the S2-A2 framework. Three agents with different behavioral profiles (and personalities) run in the same environment with hidden infrastructure. Evidence bundles are the test artifacts. Behavioral invariants (what the system must never allow) are the hard constraints. Agent-specific variation is the probabilistic layer. Stage 2 adds structured evals, sequential hypothesis testing, and a publishable results section for S2-A5.',
-    links:[]
-  },
-  {
-    id:'B10',done:false,critical:true,effort:'1–2 weeks',unlocks:['outreach wk 6'],
-    title:'Personal site — 1-pager minimum',
-    notes:'Hard target: week 4. Just needs to be live with three things: demo link, writing link, contact.',
-    detail:'The 1-pager is not a portfolio — it is a landing page for outreach. Minimum content: link to the legal-tech-debt demo (B6), link to published articles, email contact. Does not need to be polished. It needs to be live. The full site with project writeups, about section, and additional work can follow in weeks 5–8.',
-    links:[]
-  },
+  {id:'B1',title:'Read 4 Agile-V papers',effort:'3-4 hrs',note:'Unblocks S2-A2 with a shared systems-engineering frame.',detail:'Read 2602.20684, 2605.20456, 2512.12791, and 2603.02601. The output is a usable synthesis that separates artifact verification, non-deterministic runtime behavior, and token-efficient regression testing into one article-ready frame.',unlocks:['S2-A2'],critical:false,links:[{text:'arXiv 2602.20684',url:'https://arxiv.org/abs/2602.20684'},{text:'arXiv 2605.20456',url:'https://arxiv.org/abs/2605.20456'},{text:'arXiv 2512.12791',url:'https://arxiv.org/html/2512.12791v2'},{text:'arXiv 2603.02601',url:'https://arxiv.org/pdf/2603.02601'}]},
+  {id:'B2',title:'Sandbox 005 Stage 002 - manual pilot',effort:'1-2 wks',note:'Internal adversarial-agent research track.',detail:'This is the evidence-building step for later empirical agent-testing work. Stage 1 needs to be fully documented, extracted into its own repo, and grounded with a methodology ADR before Stage 2 becomes a credible source for publication-quality claims.',unlocks:['internal'],critical:false,links:[]},
+  {id:'B3',title:'Synthetic demo dataset - design',effort:'1 day',note:'Define the schema and coverage before implementation drifts.',detail:'Design the synthetic policy dataset that powers the legal-tech-debt demo. Include document type, jurisdiction, date, intended smell classes, RAII defect coverage, and ground-truth labels. All examples must remain synthetic; no real policy text is allowed.',unlocks:['B4'],critical:true,links:[]},
+  {id:'B4',title:'Synthetic demo dataset - build',effort:'~1 wk',note:'Create the actual document set the pipeline can run on.',detail:'Build believable synthetic policy material that covers the major smell categories and RAII defect classes. This is the concrete artifact that makes S1-A10 and the later legal-tech-debt pieces demonstrable rather than purely conceptual.',unlocks:['S1-A10','B5'],critical:true,links:[]},
+  {id:'B5',title:'Wire Claude API into legal-tech-debt pipeline',effort:'1-2 days',note:'Turn the taxonomy into a working AI-assisted diagnosis step.',detail:'Add the AI classification stage so the pipeline can emit smell class, confidence, evidence quote, and RAII defect type when applicable. This is the bridge between a static taxonomy and a real demo.',unlocks:['B6','S4-A6'],critical:true,links:[]},
+  {id:'B6',title:'Deploy legal-tech-debt demo with public URL',effort:'2-3 days',note:'Hard target week 4. This becomes the outward-facing proof artifact.',detail:'Deploy a stable public demo that accepts synthetic policy text and returns typed findings with evidence. This is the key artifact for S1-A10, the personal site, and later outreach because it gives the work a real surface instead of a description.',unlocks:['S1-A10','outreach','public demo'],critical:true,links:[]},
+  {id:'B7',title:'Legal-tech-debt case study writeup',effort:'~1 wk',note:'Explain what the demo proves and what it does not.',detail:'Write the practitioner case study behind the demo: what the pipeline detects, why the taxonomy matters, what the RAII defect classes add, and what was learned from the synthetic worked example. This strengthens S1-A10 and Series 4 substantially.',unlocks:['S1-A10 enrichment','Series 4 support'],critical:false,links:[]},
+  {id:'B8',title:'Learn evals frameworks: DeepEval / Promptfoo',effort:'2-4 wks',note:'Build hands-on measurement discipline before stronger eval claims.',detail:'The goal is not abstract familiarity. The goal is being able to define behavioral invariants, run repeated trials, and summarize aggregate outcomes against a rubric. That turns future adversarial-agent writing into evidence-backed analysis instead of anecdote.',unlocks:['B9','S2-A5 ramp'],critical:false,links:[{text:'DeepEval docs',url:'https://docs.confident-ai.com/'},{text:'Promptfoo docs',url:'https://www.promptfoo.dev/docs/intro/'}]},
+  {id:'B9',title:'Granny\'s House Trials - Stage 2',effort:'4-6 wks',note:'Empirical adversarial-testing results track.',detail:'This is the publishable experimental layer for S2-A5. It should combine agent-profile variation, structured eval runs, evidence bundles, and a hypothesis-testing posture. B8 needs to be complete enough first that the results are measured rather than narrated.',unlocks:['S2-A5'],critical:false,links:[]},
+  {id:'B10',title:'Personal site - 1-pager minimum',effort:'1-2 wks',note:'Hard target week 4. Live first, polished later.',detail:'This is a landing page, not a full portfolio. Minimum content is simple: demo link, writing link, and contact path. The important thing is to have a live surface that can carry the demo and article series once the curriculum gate opens.',unlocks:['outreach','public writing surface'],critical:true,links:[]},
 ];
 
-const STATUS_LABEL = {write:'write now',editing:'editing',read:'read first',blocked:'blocked',never:'not yet',done:'done'};
-const STATUS_CLASS = {write:'bw',editing:'br',read:'br',blocked:'bb',never:'bg',done:'bd'};
+const STATUS_LABEL = {write:'draft now',editing:'editing',read:'read first',blocked:'blocked',never:'not yet'};
+const STATUS_CLASS = {write:'bw',editing:'br',read:'br',blocked:'bb',never:'bg'};
 
-function makeArticle(a) {
-  const bc = STATUS_CLASS[a.status];
-  const bl = STATUS_LABEL[a.status];
-  const pubLine = a.pub ? `<span class="pub-chip">publish ${a.pub}</span>` : '';
-  const claimsHtml = a.claims.map(c=>`<li>${c}</li>`).join('');
-  const blockerHtml = a.blocker ? `<div class="blocker-box"><strong>Blocker:</strong> ${a.blocker}</div>` : '';
-  const notesHtml = a.notes ? `<div class="ab-sec"><div class="ab-lbl">Notes</div><div class="ab-txt">${a.notes}</div></div>` : '';
-  const doneClass = a.status === 'done' ? ' is-done' : '';
-  return `
-<div class="art-card${doneClass}">
-  <div class="art-hdr" onclick="this.parentElement.classList.toggle('open')">
-    <span class="art-badge ${bc}">${bl}</span>
-    <div class="art-meta">
-      <div class="art-id">${a.id}</div>
-      <div class="art-title">${a.title}</div>
+function renderCourse(c){
+  return `<div class="build-card">
+    <div class="build-id">${c.id}</div>
+    <div>
+      <div class="build-name">${c.title}</div>
+      <div class="build-sub">${c.note}</div>
+      <div class="build-links">${c.links.map(l=>`<a class="build-link" href="${l.url}" target="_blank" rel="noopener">↗ ${l.text}</a>`).join('')}</div>
     </div>
-    <span class="art-chev">&#9654;</span>
-  </div>
-  <div class="art-body">
-    <div class="art-body-inner">
-      <div>
-        <div class="ab-sec">
-          <div class="ab-lbl">Thesis</div>
-          <div class="ab-txt">${a.thesis}</div>
-          ${pubLine}
-        </div>
-        <div class="ab-sec">
-          <div class="ab-lbl">Key claims</div>
-          <ul class="ab-ul">${claimsHtml}</ul>
-        </div>
-      </div>
-      <div>
-        <div class="ab-sec">
-          <div class="ab-lbl">Series arc</div>
-          <div class="ab-txt">${a.arc}</div>
-        </div>
-        ${blockerHtml}
-        ${notesHtml}
-      </div>
+    <div class="build-side">
+      <div class="build-effort">${c.effort}</div>
+      <div class="build-side-sub">planned focus</div>
     </div>
-  </div>
-</div>`;
+  </div>`;
 }
 
-function makeBuild(b) {
+function renderArticle(a){
+  const badge = STATUS_CLASS[a.status];
+  const label = STATUS_LABEL[a.status];
+  const pub = a.pub ? `<div class="chip">release target ${a.pub}</div>` : '';
+  const claims = a.claims ? a.claims.map(c => `<li>${c}</li>`).join('') : '';
+  const blocker = a.blocker ? `<div class="blocker-box"><strong>Blocker:</strong> ${a.blocker}</div>` : '';
+  const notes = a.notes ? `<div class="ab-sec"><div class="ab-lbl">Notes</div><div class="ab-txt">${a.notes}</div></div>` : '';
+  return `<div class="art-card">
+    <div class="art-hdr" onclick="this.parentElement.classList.toggle('open')">
+      <span class="badge ${badge}">${label}</span>
+      <div class="art-meta">
+        <div class="item-id">${a.id}</div>
+        <div class="item-title">${a.title}</div>
+      </div>
+      <span class="art-chev">▶</span>
+    </div>
+    <div class="art-body">
+      <div class="art-body-inner">
+        <div>
+          <div class="ab-sec">
+            <div class="ab-lbl">Thesis</div>
+            <div class="ab-txt">${a.thesis}</div>
+            ${pub}
+          </div>
+          <div class="ab-sec">
+            <div class="ab-lbl">Key Claims</div>
+            <ul class="ab-ul">${claims}</ul>
+          </div>
+        </div>
+        <div>
+          <div class="ab-sec">
+            <div class="ab-lbl">Series Arc</div>
+            <div class="ab-txt">${a.arc}</div>
+          </div>
+          ${blocker}
+          ${notes}
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderBuild(b){
   const crit = b.critical ? '<span class="crit-badge">critical path</span>' : '';
-  const doneTag = b.done ? '<span class="done-badge">&#10003; done</span>' : '';
-  const unlocks = b.unlocks.map(u=>`<span style="display:inline-block;margin-right:4px">${u}</span>`).join('');
-  const linksHtml = b.links.length ? `<div class="build-links">${b.links.map(l=>`<a class="build-link" href="${l.url}" target="_blank" rel="noopener">&#8599; ${l.text}</a>`).join('')}</div>` : '';
-  const doneClass = b.done ? ' is-done' : '';
-  return `
-<div class="build-card${doneClass}">
-  <div class="build-hdr" onclick="this.parentElement.classList.toggle('open')">
+  return `<div class="build-card">
     <div class="build-id">${b.id}</div>
     <div>
       <div class="build-name">${b.title}</div>
-      <div class="build-sub">${b.notes}</div>
-      <div class="build-unlocks">&#8594; unlocks: ${unlocks}</div>
-      ${crit}${doneTag}
+      <div class="build-sub">${b.note}</div>
+      ${crit}
+      <div class="build-links">${b.links.map(l=>`<a class="build-link" href="${l.url}" target="_blank" rel="noopener">↗ ${l.text}</a>`).join('')}</div>
     </div>
-    <div class="build-effort">
-      <div class="build-effort-val">${b.effort}</div>
-      <div class="build-effort-lbl">est. effort</div>
-      <div style="font-size:11px;color:var(--dim);margin-top:6px;text-align:right">&#9654;</div>
+    <div class="build-side">
+      <div class="build-effort">${b.effort}</div>
+      <div class="build-side-sub">est. effort</div>
     </div>
-  </div>
-  <div class="build-body">
-    <div class="build-body-inner">
-      <div>
-        <div class="ab-lbl">Detail</div>
-        <div class="ab-txt" style="margin-top:4px">${b.detail}</div>
-      </div>
-      <div>
-        ${linksHtml}
-      </div>
-    </div>
-  </div>
-</div>`;
+  </div>`;
 }
 
-[1,2,3,4].forEach(s=>{
-  document.getElementById('list-s'+s).innerHTML =
-    ARTICLES.filter(a=>a.s===s).map(makeArticle).join('');
-});
-document.getElementById('list-build').innerHTML = BUILD.map(makeBuild).join('');
+function renderBuildDetailed(b){
+  const crit = b.critical ? '<span class="crit-badge">critical path</span>' : '';
+  const unlocks = b.unlocks && b.unlocks.length ? `<div class="build-unlocks">unlocks: ${b.unlocks.join(', ')}</div>` : '';
+  const links = b.links && b.links.length
+    ? `<div class="build-links">${b.links.map(l=>`<a class="build-link" href="${l.url}" target="_blank" rel="noopener">-> ${l.text}</a>`).join('')}</div>`
+    : '<div class="build-detail-text">No external links needed.</div>';
+  return `<div class="build-card">
+    <div class="build-hdr" onclick="this.parentElement.classList.toggle('open')">
+      <div class="build-id">${b.id}</div>
+      <div>
+        <div class="build-name">${b.title}</div>
+        <div class="build-sub">${b.note}</div>
+        ${unlocks}
+        ${crit}
+      </div>
+      <div class="build-side">
+        <div class="build-effort">${b.effort}</div>
+        <div class="build-side-sub">est. effort</div>
+        <div class="build-chevron">open</div>
+      </div>
+    </div>
+    <div class="build-body">
+      <div class="build-body-inner">
+        <div>
+          <div class="build-detail-label">Artifact Detail</div>
+          <div class="build-detail-text">${b.detail}</div>
+        </div>
+        <div>
+          <div class="build-detail-label">Links</div>
+          ${links}
+        </div>
+      </div>
+    </div>
+  </div>`;
+}
 
-// GANTT
+document.getElementById('curriculum-list').innerHTML = CURRICULUM.map(renderCourse).join('');
+document.getElementById('build-list').innerHTML = BUILD.map(renderBuildDetailed).join('');
+[1,2,3,4].forEach(s => {
+  document.getElementById(`s${s}-list`).innerHTML = ARTICLES.filter(a => a.s === s).map(renderArticle).join('');
+});
+
 const ganttLabels = [
-  '16 no-blocker articles',
-  'B1: read Agile V paper',
+  'Curriculum C1-C8',
+  'Draft no-blocker articles',
+  'B1: Agile-V reading',
   'B10: personal site',
-  'B3–B4: synthetic dataset',
-  'B5–B6: API + deploy',
-  'S2-A2 (after B1)',
-  'S1 publish cadence A2→A10',
+  'B3-B4: synthetic dataset',
+  'B5-B6: pipeline and deploy',
+  'S1 release cadence',
   'B8: learn evals',
-  'WindowConfig + RAG',
+  'WindowConfig RAG work',
   'B9: Granny Stage 2',
-  'S4-A4: taxonomy article',
-  'S4-A6: AI pipeline article',
-  'S1-A7, A8 (RAG/GraphRAG)',
-  'S2-A5: Three Idiots',
-  'S1-A10: series finale',
+  'S4-A4 taxonomy article',
+  'S4-A6 legal pipeline article',
+  'S1-A7 and A8',
+  'S2-A5 finale',
+  'S1-A10 finale'
 ];
+
 const N = ganttLabels.length;
-function sp(entries){const a=Array(N).fill(null);entries.forEach(([i,v])=>a[i]=v);return a;}
-const BT=20;
-const ganttDatasets=[
-  {label:'Write now',backgroundColor:'rgba(93,155,132,.88)',data:sp([[0,[1,4]],[5,[1,2]]]),barThickness:BT},
-  {label:'Read first',backgroundColor:'rgba(168,131,90,.88)',data:sp([[1,[1,1.6]]]),barThickness:BT},
-  {label:'Build: critical path',backgroundColor:'rgba(201,168,76,.88)',data:sp([[2,[1,4]],[3,[1,3]],[4,[3,4]]]),barThickness:BT},
-  {label:'Build: long game',backgroundColor:'rgba(123,80,48,.88)',data:sp([[7,[3,10]],[8,[10,14]],[9,[8,20]]]),barThickness:BT},
-  {label:'S1 publish cadence',backgroundColor:'rgba(74,112,144,.80)',data:sp([[6,[1,23]]]),barThickness:BT},
-  {label:'Blocked → unlocking',backgroundColor:'rgba(123,95,158,.88)',data:sp([[10,[8,12]],[11,[10,14]],[12,[14,18]],[13,[20,26]],[14,[21,23]]]),barThickness:BT},
+function sparse(entries){
+  const arr = Array(N).fill(null);
+  entries.forEach(([i,v]) => arr[i] = v);
+  return arr;
+}
+
+const ganttDatasets = [
+  {label:'Curriculum gate',backgroundColor:'rgba(201,123,107,.88)',data:sparse([[0,[1,6]]]),barThickness:20},
+  {label:'Draft in parallel',backgroundColor:'rgba(93,155,132,.88)',data:sparse([[1,[1,6]],[5,[1,2]]]),barThickness:20},
+  {label:'Read first',backgroundColor:'rgba(168,131,90,.88)',data:sparse([[2,[1,1.6]]]),barThickness:20},
+  {label:'Build critical path',backgroundColor:'rgba(201,168,76,.88)',data:sparse([[3,[1,4]],[4,[1,3]],[5,[3,4]]]),barThickness:20},
+  {label:'Build long game',backgroundColor:'rgba(123,80,48,.88)',data:sparse([[7,[4,10]],[8,[10,14]],[9,[9,20]]]),barThickness:20},
+  {label:'S1 release cadence',backgroundColor:'rgba(74,112,144,.80)',data:sparse([[6,[7,25]]]),barThickness:20},
+  {label:'Blocked to unlocking',backgroundColor:'rgba(123,95,158,.88)',data:sparse([[10,[8,12]],[11,[10,14]],[12,[14,21]],[13,[20,26]],[14,[21,25]]]),barThickness:20},
 ];
 
 const gctx = document.getElementById('gantt-chart').getContext('2d');
@@ -743,50 +491,37 @@ new Chart(gctx,{
     indexAxis:'y',responsive:true,maintainAspectRatio:false,
     layout:{padding:{right:16,top:8,bottom:4}},
     scales:{
-      x:{type:'linear',min:1,max:26,
-        ticks:{color:'#9a9080',font:{size:11},stepSize:2,autoSkip:false,callback:v=>Number.isInteger(v)?'wk '+v:''},
-        grid:{color:'rgba(200,190,170,.07)'},border:{color:'rgba(200,190,170,.12)'}},
-      y:{ticks:{color:'#c0b8a8',font:{size:11},crossAlign:'far'},
-        grid:{color:'rgba(200,190,170,.05)'},border:{color:'rgba(200,190,170,.1)'},
-        afterFit:axis=>{axis.width=190;}}
+      x:{type:'linear',min:1,max:26,ticks:{color:'#9a9080',font:{size:11},stepSize:2,autoSkip:false,callback:v=>Number.isInteger(v)?'wk '+v:''},grid:{color:'rgba(200,190,170,.07)'},border:{color:'rgba(200,190,170,.12)'}},
+      y:{ticks:{color:'#c0b8a8',font:{size:11},crossAlign:'far'},grid:{color:'rgba(200,190,170,.05)'},border:{color:'rgba(200,190,170,.1)'},afterFit:axis=>{axis.width=190;}}
     },
     plugins:{
       legend:{display:false},
-      tooltip:{
-        callbacks:{label:c=>{const d=c.raw;return d&&Array.isArray(d)?' wk '+Math.round(d[0])+' → wk '+Math.round(d[1]):''}},
-        backgroundColor:'#1e1c14',titleColor:'#e0dac8',bodyColor:'#a09880',
-        borderColor:'#c9a84c',borderWidth:.5,padding:8
-      },
+      tooltip:{callbacks:{label:c=>{const d=c.raw;return d&&Array.isArray(d)?' wk '+Math.round(d[0])+' -> wk '+Math.round(d[1]):'';}},backgroundColor:'#1e1c14',titleColor:'#e0dac8',bodyColor:'#a09880',borderColor:'#c9a84c',borderWidth:.5,padding:8},
       annotation:{
         annotations:{
-          l1:{type:'line',scaleID:'x',value:1,borderColor:'rgba(201,168,76,.4)',borderWidth:1,borderDash:[4,3],
-            label:{content:'★ wk 1: finish S1-A1',display:true,position:'start',backgroundColor:'rgba(30,28,20,.92)',color:'#c9a84c',font:{size:10},padding:{x:5,y:3},yAdjust:6}},
-          l4:{type:'line',scaleID:'x',value:4,borderColor:'rgba(93,155,132,.4)',borderWidth:1,borderDash:[4,3],
-            label:{content:'★ wk 4: demo + site',display:true,position:'end',backgroundColor:'rgba(20,30,26,.92)',color:'#7dc4a4',font:{size:10},padding:{x:5,y:3},yAdjust:-6}},
-          l6:{type:'line',scaleID:'x',value:6,borderColor:'rgba(201,123,107,.4)',borderWidth:1,borderDash:[4,3],
-            label:{content:'★ wk 6: outreach',display:true,position:'center',backgroundColor:'rgba(30,20,18,.92)',color:'#c97b6b',font:{size:10},padding:{x:5,y:3}}},
-          l23:{type:'line',scaleID:'x',value:23,borderColor:'rgba(168,130,216,.4)',borderWidth:1,borderDash:[4,3],
-            label:{content:'★ wk 23: full outreach',display:true,position:'start',backgroundColor:'rgba(24,20,36,.92)',color:'#a882d8',font:{size:10},padding:{x:5,y:3},yAdjust:6}},
+          l1:{type:'line',scaleID:'x',value:1,borderColor:'rgba(201,168,76,.4)',borderWidth:1,borderDash:[4,3],label:{content:'wk 1: start curriculum + drafting',display:true,position:'start',backgroundColor:'rgba(30,28,20,.92)',color:'#c9a84c',font:{size:10},padding:{x:5,y:3},yAdjust:6}},
+          l4:{type:'line',scaleID:'x',value:4,borderColor:'rgba(93,155,132,.4)',borderWidth:1,borderDash:[4,3],label:{content:'wk 4: demo + site target',display:true,position:'end',backgroundColor:'rgba(20,30,26,.92)',color:'#7dc4a4',font:{size:10},padding:{x:5,y:3},yAdjust:-6}},
+          l6:{type:'line',scaleID:'x',value:6,borderColor:'rgba(201,123,107,.4)',borderWidth:1,borderDash:[4,3],label:{content:'wk 6: curriculum complete',display:true,position:'center',backgroundColor:'rgba(30,20,18,.92)',color:'#c97b6b',font:{size:10},padding:{x:5,y:3}}},
+          l7:{type:'line',scaleID:'x',value:7,borderColor:'rgba(168,130,216,.4)',borderWidth:1,borderDash:[4,3],label:{content:'wk 7: first release window',display:true,position:'start',backgroundColor:'rgba(24,20,36,.92)',color:'#a882d8',font:{size:10},padding:{x:5,y:3},yAdjust:6}}
         }
       }
     }
   }
 });
 
-// ACTIVE NAV
 const sections = document.querySelectorAll('.sec');
 const navLinks = document.querySelectorAll('.sb-a');
-const obs = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      navLinks.forEach(l=>l.classList.remove('active'));
-      const id=e.target.id;
-      const active=document.querySelector(`.sb-a[href="#${id}"]`);
-      if(active)active.classList.add('active');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(l => l.classList.remove('active'));
+      const id = e.target.id;
+      const active = document.querySelector(`.sb-a[href="#${id}"]`);
+      if (active) active.classList.add('active');
     }
   });
 },{rootMargin:'-30% 0px -60% 0px'});
-sections.forEach(s=>obs.observe(s));
+sections.forEach(s => obs.observe(s));
 </script>
 </body>
 </html>
