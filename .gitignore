@@ -4,6 +4,7 @@ job_search/__pycache__/
 job_search/ledger/__pycache__/
 secrets/
 articles/refs/
+articles/papers/
 articles/graph.kuzu
 articles/graph.kuzu.wal
 articles/papers/citations.json
