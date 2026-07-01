@@ -174,9 +174,19 @@ knowledge_graph_pipeline:
 - inline usage: SEMANTIC_SCHOLAR_API_KEY=$(grep SAMANTIC secrets/credentials.txt | cut -d= -f2) python3 scripts/fetch-citations.py
 - query commands: search, explore, hot-refs, for-article, who-cites, citing
 - search is case-sensitive substring; use hyphens ("test-driven" not "test driven")
+- citations.json is tracked when it contains curated citation truth; PDFs, refs PDFs, and graph DB artifacts are ignored
 - do not parse ref PDFs without explicit approval; use --seeds-only
 - if ingest crashes: delete articles/graph.kuzu and articles/graph.kuzu.wal before rerunning
 - full command reference in AGENTS.md Knowledge Graph Pipeline section
+
+article_citation_integrity:
+- citation validity requires source relevance, not just a resolving link
+- local PDF citations must point to the exact named paper and should live in articles/papers/
+- verify local PDFs by PDF header plus title/first-page text or reliable metadata
+- do not substitute adjacent or loosely related papers for missing sources
+- DOI-only/web-only sources must be recorded honestly as no-local-file
+- when article citations change, update articles/papers/citations.json with title, authors, year, URL/DOI/arXiv ID, local file if present, verification status, and article relevance
+- if a paper becomes an article citation, update the citation manifest and relevant script seed lists
 
 applied_status_required_artifacts:
 - applications/YYYY-MM_<company>_<role>/job_description.md

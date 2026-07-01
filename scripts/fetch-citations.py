@@ -34,10 +34,19 @@ except ImportError:
 
 SEEDS: list[dict] = [
     # Series 1
+    {"arxiv_id": "2106.02604", "file": "arxiv-2106.02604-persuasive-design-smartphones.pdf",             "articles": ["S1-A1"]},
+    {"arxiv_id": "2208.05860", "file": "arxiv-2208.05860-achievement-unlocked-devops-gamification.pdf",  "articles": ["S1-A1"]},
+    {"arxiv_id": "2301.02767", "file": "arxiv-2301.02767-health-wearables-gamification.pdf",             "articles": ["S1-A1"]},
+    {"arxiv_id": "2302.06590", "file": "arxiv-2302.06590-copilot-productivity.pdf",                      "articles": ["S1-A1"]},
+    {"arxiv_id": "2305.08346", "file": "arxiv-2305.08346-negative-effects-gamification.pdf",             "articles": ["S1-A1"]},
+    {"arxiv_id": "2407.18803", "file": "arxiv-2407.18803-design-frictions-social-media.pdf",             "articles": ["S1-A1"]},
+    {"arxiv_id": "2410.12991", "file": "arxiv-2410.12991-autonomous-motivation-ux.pdf",                  "articles": ["S1-A1"]},
     {"arxiv_id": "2507.09089", "file": "arxiv-2507.09089-metr-productivity-rct.pdf",                "articles": ["S1-A1", "S1-A3"]},
     {"arxiv_id": "2604.13277", "file": "arxiv-2604.13277-comprehension-debt.pdf",                   "articles": ["S1-A1", "S1-A2", "S1-A3"]},
     {"arxiv_id": "2603.28592", "file": "arxiv-2603.28592-debt-behind-ai-boom.pdf",                  "articles": ["S1-A1", "S1-A2"]},
     {"arxiv_id": "2512.11922", "file": "arxiv-2512.11922-vibe-coding-in-practice.pdf",              "articles": ["S1-A1"]},
+    {"arxiv_id": "2601.20245", "file": "arxiv-2601.20245-ai-skill-formation.pdf",                   "articles": ["S1-A1"]},
+    {"arxiv_id": "2605.04779", "file": "arxiv-2605.04779-genai-productivity-learning-meta-analysis.pdf", "articles": ["S1-A1"]},
     {"arxiv_id": "2604.00436", "file": "arxiv-2604.00436-programming-by-chat.pdf",                  "articles": ["S1-A1", "S1-A2"]},
     {"arxiv_id": "2601.02410", "file": "arxiv-2601.02410-vibe-check-protocol.pdf",                  "articles": ["S1-A1", "S1-A3"]},
     {"arxiv_id": "2604.18538", "file": "arxiv-2604.18538-fast-and-forgettable.pdf",                 "articles": ["S1-A3"]},

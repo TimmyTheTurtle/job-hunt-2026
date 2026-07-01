@@ -123,10 +123,22 @@ python3 scripts/query.py citing 2603.02601           # papers citing a given arX
 Key facts:
 - API key is in `secrets/credentials.txt` under key name `SAMANTIC_SCHOLAR_API_KEY` (typo — 'A' not 'E'; do not fix the grep, just use as-is)
 - `articles/graph.kuzu` is a **single file** on NTFS/WSL (not a directory) — this is expected Kuzu behaviour
-- `articles/papers/citations.json`, `articles/papers/*.pdf`, `articles/refs/*.pdf`, `articles/graph.kuzu` are all gitignored
+- `articles/papers/citations.json` is tracked when it contains curated citation truth; `articles/papers/*.pdf`, `articles/refs/*.pdf`, and `articles/graph.kuzu` are gitignored
 - Do not run `ingest.py` without `--seeds-only` unless ref parsing has been approved — 586 PDFs, ~8 hours of Docling runtime
 - `search` is case-sensitive substring matching — use hyphens: `"test-driven"` not `"test driven"`
 - If ingest crashes mid-run (Kuzu `unordered_map::at` error): delete `articles/graph.kuzu` and `articles/graph.kuzu.wal` before rerunning
+
+## Article Citation Integrity
+
+For article work under `articles/series-*/`, do not treat a citation as valid merely because a link resolves.
+
+- Every cited source must be germane to the article claim it supports.
+- Every local PDF link in an article must point to the exact paper named in the citation, and referenced local PDFs should live in `articles/papers/`.
+- Verify local PDFs by checking the PDF header plus title/first-page text or reliable metadata before declaring links fixed.
+- Do not substitute adjacent, loosely related, or convenient papers for missing sources.
+- For DOI-only or web-only sources, record them honestly as having no local file instead of inventing or mislabeling a PDF.
+- When citation sources change, update `articles/papers/citations.json` so the article-specific citation record reflects the current truth: title, authors, year, URL/DOI/arXiv ID, local file when present, verification status, and article relevance.
+- If a paper is promoted from supporting background to an article citation, add it to the citation manifest and relevant script seed lists so future graph runs do not erase the source relationship.
 
 ## Canonical Consistency Rule
 
