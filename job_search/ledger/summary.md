@@ -1,8 +1,8 @@
 # Search Ledger Summary
 
-- Generated: 2026-06-26T14:50:39.779158-04:00
-- Total tracked jobs: 120
-- Surfaced: 120
+- Generated: 2026-07-13T14:13:03.855632-04:00
+- Total tracked jobs: 180
+- Surfaced: 180
 - Saved: 0
 - Applied: 0
 - Dismissed: 0
@@ -21,6 +21,48 @@ Source of truth: `transactions.jsonl`
 - First seen: 2026-06-16T13:45:37.745982-04:00
 - Last seen: 2026-06-16T13:45:37.745982-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=6b3f49141bb0c45d
+
+### AABM Clouds Data Solutions - AI Engineer
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 20
+- Compensation: $50 - $55 hourly source: direct_data
+- Sites: indeed
+- Query labels: compliance ai engineer, llm rag engineer
+- First seen: 2026-07-13T14:06:28.172158-04:00
+- Last seen: 2026-07-13T14:06:28.172158-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=73c6029c853b122e
+
+### Accenture - AI & HPC Infrastructure Engineer
+- Location: Detroit, MI, US
+- Last recommendation: apply_first
+- Last score: 29
+- Compensation: $87,400 - $266,300 yearly source: direct_data
+- Sites: indeed
+- Query labels: llm rag engineer
+- First seen: 2026-07-13T14:06:28.172158-04:00
+- Last seen: 2026-07-13T14:06:28.172158-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=2c833b7991f12017
+
+### Accenture - AI & HPC Infrastructure Engineer
+- Location: St Louis, MO
+- Last recommendation: apply_first
+- Last score: 13
+- Sites: linkedin
+- Query labels: ai systems engineer
+- First seen: 2026-07-13T14:13:03.847710-04:00
+- Last seen: 2026-07-13T14:13:03.847710-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4436895649
+
+### Accenture - Google Agentic AI Delivery Specialist
+- Location: Detroit, MI
+- Last recommendation: review
+- Last score: 10
+- Sites: linkedin
+- Query labels: ai solutions engineer
+- First seen: 2026-07-13T14:13:03.847710-04:00
+- Last seen: 2026-07-13T14:13:03.847710-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4437959260
 
 ### Acquia - Staff AI Engineer (Acquia DAM)
 - Location: Remote, US
@@ -41,6 +83,55 @@ Source of truth: `transactions.jsonl`
 - First seen: 2026-06-16T13:45:37.745982-04:00
 - Last seen: 2026-06-16T13:45:37.745982-04:00
 - Posting URL: https://www.linkedin.com/jobs/view/4426805481
+
+### Advantive - AI Software Developer
+- Last recommendation: apply_first
+- Last score: 12
+- Sites: linkedin
+- Query labels: ai workflow automation engineer, software engineer ai systems
+- First seen: 2026-07-13T14:13:03.847710-04:00
+- Last seen: 2026-07-13T14:13:03.847710-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4434352903
+
+### Affirm - AI Solutions Engineer
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 21
+- Compensation: $195,000 - $280,000 yearly source: direct_data
+- Sites: indeed
+- Query labels: ai solutions engineer
+- First seen: 2026-07-13T14:06:28.172158-04:00
+- Last seen: 2026-07-13T14:06:28.172158-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=b1bc8a615a0f7346
+
+### Affirm - AI Solutions Engineer
+- Location: Detroit, MI
+- Last recommendation: review
+- Last score: 10
+- Sites: linkedin
+- Query labels: ai solutions engineer, ai workflow automation engineer, applied ai systems engineer, software engineer ai systems, software engineer workflow automation
+- First seen: 2026-07-13T14:13:03.847710-04:00
+- Last seen: 2026-07-13T14:13:03.847710-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4435001879
+
+### Agree Realty Corporation - AI & Power Platform Developer
+- Location: Royal Oak, MI
+- Last recommendation: review
+- Last score: 10
+- Sites: linkedin
+- Query labels: compliance ai engineer, document intelligence engineer
+- First seen: 2026-07-13T14:13:03.847710-04:00
+- Last seen: 2026-07-13T14:13:03.847710-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4434322693
+
+### AI Acquisition - AI Systems Engineer - Forward-Deployed Builder
+- Last recommendation: review
+- Last score: 11
+- Sites: linkedin
+- Query labels: ai systems engineer
+- First seen: 2026-07-13T14:13:03.847710-04:00
+- Last seen: 2026-07-13T14:13:03.847710-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4428901891
 
 ### Aline - Engineering - Agentic AI Engineer (Junior)
 - Location: Remote, US
@@ -63,6 +154,17 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-06-26T14:48:55.701606-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=50d2ba05ea2b7777
 
+### Allstate Insurance - AI Software Engineer
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 26
+- Compensation: $110,000 - $150,000 yearly source: direct_data
+- Sites: indeed
+- Query labels: software engineer ai systems
+- First seen: 2026-07-13T14:06:28.172158-04:00
+- Last seen: 2026-07-13T14:06:28.172158-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=929c63c7b49d2a3b
+
 ### Allstate Insurance - Lead AI & Technology Risk Auditor
 - Location: Remote, US
 - Last recommendation: apply_first
@@ -84,6 +186,16 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-06-16T11:38:58.387588-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=231b952cd2e83d79
 
+### Altimetrik Corp - Forward Deployed AI Engineer – Lead
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 22
+- Sites: indeed
+- Query labels: compliance ai engineer, llm rag engineer, software engineer ai systems
+- First seen: 2026-07-13T14:06:28.172158-04:00
+- Last seen: 2026-07-13T14:06:28.172158-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=ed9c173d869faa67
+
 ### Amgen - Principal Software Engineer
 - Location: Remote, US
 - Last recommendation: apply_first
@@ -104,6 +216,16 @@ Source of truth: `transactions.jsonl`
 - First seen: 2026-06-26T14:50:39.772093-04:00
 - Last seen: 2026-06-26T14:50:39.772093-04:00
 - Posting URL: https://www.linkedin.com/jobs/view/4428297661
+
+### ASG - ASG - AI Systems Engineer
+- Location: San Francisco, CA
+- Last recommendation: review
+- Last score: 11
+- Sites: linkedin
+- Query labels: ai systems engineer
+- First seen: 2026-07-13T14:13:03.847710-04:00
+- Last seen: 2026-07-13T14:13:03.847710-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4436436320
 
 ### ASHC, Inc. - Contract Senior Healthcare Software Development Consultant
 - Location: Remote, US
@@ -155,6 +277,25 @@ Source of truth: `transactions.jsonl`
 - First seen: 2026-06-16T13:45:37.745982-04:00
 - Last seen: 2026-06-16T13:45:37.745982-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=98165a55dbc70539
+
+### Bamboo Works - AI Automation Engineer
+- Location: Cebu, Central Visayas, Philippines
+- Last recommendation: apply_first
+- Last score: 13
+- Sites: linkedin
+- Query labels: ai workflow automation engineer
+- First seen: 2026-07-13T14:06:28.172158-04:00
+- Last seen: 2026-07-13T14:06:28.172158-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4435469047
+
+### Bamboo Works - AI Automation Engineer (Claude Code & AI Agents)
+- Last recommendation: apply_first
+- Last score: 13
+- Sites: linkedin
+- Query labels: ai workflow automation engineer
+- First seen: 2026-07-13T14:13:03.847710-04:00
+- Last seen: 2026-07-13T14:13:03.847710-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4436496266
 
 ### BlackLine - AI Engineer
 - Location: Remote, US
@@ -229,6 +370,17 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-06-26T14:48:55.701606-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=24b448b6b31cd3a0
 
+### Chemours - Senior AI Engineer
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 25
+- Compensation: $126,067 - $196,980 yearly source: direct_data
+- Sites: indeed
+- Query labels: compliance ai engineer
+- First seen: 2026-07-13T14:06:28.172158-04:00
+- Last seen: 2026-07-13T14:06:28.172158-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=40758ce122074d1a
+
 ### Chickasaw Nation Industries - AI Engineer
 - Location: Remote, US
 - Last recommendation: apply_first
@@ -249,6 +401,16 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-06-16T11:38:58.387588-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=16b49fe6e0399a27
 
+### CNA Search - Senior AI / ML Engineers (LLMs, RAG, Production Systems)
+- Location: Michigan, United States
+- Last recommendation: apply_first
+- Last score: 18
+- Sites: linkedin
+- Query labels: llm rag engineer
+- First seen: 2026-07-13T14:13:03.847710-04:00
+- Last seen: 2026-07-13T14:13:03.847710-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4437852152
+
 ### Confidential - AI Systems Engineer
 - Last recommendation: review
 - Last score: 11
@@ -258,171 +420,12 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-06-16T13:45:37.745982-04:00
 - Posting URL: https://www.linkedin.com/jobs/view/4429131100
 
-### Cordia LLC - Principal AI Transformation Lead
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 18
-- Compensation: $135,000 - $155,000 yearly source: direct_data
-- Sites: indeed
-- Query labels: compliance ai engineer
-- First seen: 2026-06-26T14:48:55.701606-04:00
-- Last seen: 2026-06-26T14:48:55.701606-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=61fa34e62d0afed9
-
-### Cotiviti - Senior Software Engineer (AI)
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 18
-- Sites: indeed
-- Query labels: software engineer workflow automation
-- First seen: 2026-06-16T11:38:58.387588-04:00
-- Last seen: 2026-06-16T11:38:58.387588-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=bc5dc92fff82a2a4
-
-### Crowe LLP - Senior AI Engineer
-- Location: Grand Rapids, MI, US
-- Last recommendation: apply_first
-- Last score: 25
-- Sites: indeed
-- Query labels: compliance ai engineer
-- First seen: 2026-06-16T11:38:58.387588-04:00
-- Last seen: 2026-06-16T11:38:58.387588-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=aebc369e1dedd710
-
-### DataAnnotation - Software Developer - AI Trainer
-- Location: Michigan, United States
-- Last recommendation: apply_first
-- Last score: 12
-- Sites: linkedin
-- Query labels: software engineer ai systems
-- First seen: 2026-06-16T13:45:37.745982-04:00
-- Last seen: 2026-06-16T13:45:37.745982-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4397387852
-
-### DataRobot - Senior AI Solutions Engineer
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 21
-- Sites: indeed
-- Query labels: ai solutions engineer
-- First seen: 2026-06-16T11:38:58.387588-04:00
-- Last seen: 2026-06-16T11:38:58.387588-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=b0649df2d7483964
-
-### Deloitte - Agentic AI Engineer — Healthcare AI
-- Location: Grand Rapids, MI, US
-- Last recommendation: apply_first
-- Last score: 25
-- Sites: indeed
-- Query labels: llm rag engineer
-- First seen: 2026-06-16T11:38:58.387588-04:00
-- Last seen: 2026-06-16T11:38:58.387588-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=007eb750c2feb2d6
-
-### Deloitte - Agentic AI Engineer — Healthcare AI
-- Location: Detroit, MI, US
-- Last recommendation: apply_first
-- Last score: 25
-- Sites: indeed
-- Query labels: llm rag engineer
-- First seen: 2026-06-16T11:38:58.387588-04:00
-- Last seen: 2026-06-16T11:38:58.387588-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=dbe9955f440d88ca
-
-### Deloitte - AI Solutions Engineer - Life Sciences
-- Location: Detroit, MI, US
-- Last recommendation: apply_first
-- Last score: 25
-- Compensation: $141,200 - $278,300 yearly source: direct_data
-- Sites: indeed
-- Query labels: ai solutions engineer, llm rag engineer
-- First seen: 2026-06-26T14:48:55.701606-04:00
-- Last seen: 2026-06-26T14:48:55.701606-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=24cdd46aabc5ac19
-
-### DEVVISION - AI Automation Engineer
-- Last recommendation: apply_first
-- Last score: 13
-- Sites: linkedin
-- Query labels: ai workflow automation engineer
-- First seen: 2026-06-16T13:45:37.745982-04:00
-- Last seen: 2026-06-16T13:45:37.745982-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4426810117
-
-### E Source - AI / ML Engineer
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 27
-- Compensation: $115,000 - $145,000 yearly source: direct_data
-- Sites: indeed
-- Query labels: software engineer ai systems
-- First seen: 2026-06-26T14:48:55.701606-04:00
-- Last seen: 2026-06-26T14:48:55.701606-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=ea91413547821117
-
-### edari - AI Agent Engineer
-- Location: Dubai, United Arab Emirates
-- Last recommendation: review
-- Last score: 10
-- Sites: linkedin
-- Query labels: llm engineer contract
-- First seen: 2026-06-26T14:50:39.772093-04:00
-- Last seen: 2026-06-26T14:50:39.772093-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4430409662
-
-### EdConnective - Professional Learning Developer (Multilingual Learners/ESOL)
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 12
-- Sites: indeed
-- Query labels: workflow automation contractor
-- First seen: 2026-06-26T14:50:39.772093-04:00
-- Last seen: 2026-06-26T14:50:39.772093-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=f9eaf716796e348d
-
-### Ethos Life - AI Red Team Security Engineer
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 24
-- Sites: indeed
-- Query labels: llm rag engineer
-- First seen: 2026-06-16T11:38:58.387588-04:00
-- Last seen: 2026-06-16T11:38:58.387588-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=969b8246fa60a633
-
-### Fabric Health - Staff Software Engineer (Artificial Intelligence)
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 18
-- Sites: indeed
-- Query labels: software engineer ai systems
-- First seen: 2026-06-16T11:38:58.387588-04:00
-- Last seen: 2026-06-16T11:38:58.387588-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=cae7bbc4d5c0f8ea
-
-### Flexday - AI Engineer
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 26
-- Sites: indeed
-- Query labels: document intelligence engineer, llm rag engineer
-- First seen: 2026-06-26T14:48:55.701606-04:00
-- Last seen: 2026-06-26T14:48:55.701606-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=95cbc1c146d97972
-
-### Flock Safety - Staff Software Engineer, Agents
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 16
-- Compensation: $200,000 - $220,000 yearly source: direct_data
-- Sites: indeed
-- Query labels: software engineer ai systems
-- First seen: 2026-06-16T13:45:37.745982-04:00
-- Last seen: 2026-06-16T13:45:37.745982-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=945a5f4007dbea78
-
 ## Recent Transactions
 
+- `2026-07-13T14:13:03.847710-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260713_141303_07e57e4f]
+- `2026-07-13T14:06:28.172158-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260713_140628_c83a0f92]
+- `2026-06-25T00:00:00Z` `` by `chat_update`: 0 event(s) []
+- `2026-06-18T00:00:00Z` `` by `chat_update`: 0 event(s) []
 - `2026-06-26T14:50:39.772093-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260626_145039_2163f5bb]
 - `2026-06-26T14:48:55.701606-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260626_144855_136f0ab4]
 - `2026-06-16T13:45:37.745982-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260616_134537_f1b07d60]

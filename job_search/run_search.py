@@ -368,6 +368,34 @@ def joined_items(value: Any) -> str:
     return "; ".join(items)
 
 
+def clean_multiline(value: Any) -> str:
+    text = safe_str(value)
+    if not text:
+        return ""
+    parts = [part.strip() for part in re.split(r"[\r\n]+", text) if part.strip()]
+    return ", ".join(parts)
+
+
+def company_website(row: dict[str, Any]) -> str:
+    direct_raw = row.get("company_url_direct")
+    if is_missing(direct_raw):
+        direct_raw = ""
+    direct = normalize_url(safe_str(direct_raw))
+    if direct:
+        return direct
+    fallback_raw = row.get("company_url")
+    if is_missing(fallback_raw):
+        fallback_raw = ""
+    return normalize_url(safe_str(fallback_raw))
+
+
+def company_address(row: dict[str, Any]) -> str:
+    raw = row.get("company_addresses")
+    if is_missing(raw):
+        return ""
+    return clean_multiline(raw)
+
+
 def cybercoders_days_posted(hours_old: int) -> str:
     if hours_old <= 0:
         return "0"
@@ -563,6 +591,8 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "score",
         "tier",
         "company",
+        "company_website",
+        "company_address",
         "title",
         "location",
         "sites",
@@ -632,6 +662,8 @@ def write_markdown(
             lines.append(f"- Tier: {row['tier']}")
             lines.append(f"- Location: {row['location'] or 'Unknown'}")
             lines.append(f"- Site(s): {row['sites']}")
+            lines.append(f"- Company website: {row['company_website'] or 'Not found'}")
+            lines.append(f"- Employer address: {row['company_address'] or 'Not found'}")
             if row["posted"]:
                 lines.append(f"- Posted: {row['posted']}")
             lines.append(f"- Compensation: {row['compensation'] or 'Not listed'}")
@@ -691,6 +723,8 @@ def main() -> int:
                 "score": score,
                 "tier": spec.tier,
                 "company": safe_str(row.get("company")),
+                "company_website": company_website(row),
+                "company_address": company_address(row),
                 "title": safe_str(row.get("title")),
                 "location": build_location(row),
                 "sites": safe_str(row.get("site")),
