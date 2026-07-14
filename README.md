@@ -10,6 +10,7 @@ This repository is the canonical record for job-search strategy, applications, r
 - [How to use the search ledger](HOW_TO_USE_SEARCH_LEDGER.md)
 - [Current strategy](current_strategy.md)
 - [Applied AI engineering learning plan](APPLIED_AI_ENGINEERING_LEARNING_PLAN.md)
+- [Production-aligned portfolio organization](portfolio/README.md)
 - [UI compliance notes](ui_compliance.md)
 - [Agent entry point](AGENTS.md)
 - [Agent bootstrap guide](agent_bootstrap_human.md)
@@ -25,6 +26,12 @@ This repository is the canonical record for job-search strategy, applications, r
   Reusable templates and role-specific letters.
 - `resumes/`
   Resume versions and notes about positioning changes.
+- `portfolio/`
+  Production-aligned portfolio organization, readiness checklist, and project briefs.
+- `articles/`
+  Article series, research roadmap, and publication prerequisites.
+- `reading/`
+  Local reading material and course/reference PDFs that support the applied AI pivot.
 - `docs/`
   Canonical reference docs for strategy and administrative guidance.
 - `job_search/`
@@ -46,6 +53,7 @@ This repository is the canonical record for job-search strategy, applications, r
 
 - Keep job-search administration lightweight and consistent.
 - Establish the Applied AI Systems Engineer identity honestly and consistently.
+- Organize portfolio work as production-aligned commercial skeletons, not disposable demos.
 - Use job search as EA/UI compliance, employer outreach, and market research.
 - Prioritize roles that compound toward applied AI systems, document intelligence, compliance-sensitive workflow automation, RAG/retrieval, evals, and production-minded AI boundaries.
 - Preserve C++/simulation/systems depth as a secondary technical vector, not the default identity.

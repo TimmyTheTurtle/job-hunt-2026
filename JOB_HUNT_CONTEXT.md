@@ -131,6 +131,26 @@ The repeatable pattern:
 
 Applicable domains: legal tech, insurance, regulatory compliance, contract review, financial filings, audit evidence assembly.
 
+## Portfolio production standard
+
+Dorian wants portfolio projects to be production-aligned, not merely impressive local demos.
+
+The desired bar is: if a real client appeared, the system should already have the shape of a commercial product. In practical terms, the project should be close to "flip the deployment switch, configure real credentials, onboard a user or tenant, and issue an invoice" rather than "rewrite the demo into an app later."
+
+That means portfolio projects should increasingly show:
+- deployable application boundaries,
+- environment-based configuration and secret handling,
+- authentication and authorization design,
+- user/tenant separation where relevant,
+- billing or invoicing integration path,
+- audit logs and traceable evidence for important actions,
+- observability and failure records,
+- explicit human-review gates for AI outputs,
+- synthetic/demo-safe data by default,
+- and a documented production cutover checklist.
+
+Truth boundary: do not claim live production usage, production-scale reliability, customer revenue, or mature security/compliance posture unless the repo and real usage support it. The honest claim is production-aligned engineering discipline.
+
 ## Current life/career strategy context
 
 Dorian is balancing:

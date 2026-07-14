@@ -51,12 +51,19 @@ core_priorities:
 - realistic fit
 - learning value
 - runway value
+- portfolio projects should be production-aligned commercial skeletons, not disposable demos
 - reduced burnout risk
 - preserve UI audit recordkeeping
 - keep machine search ledger separate from manual tracker updates
 - keep company watchlist records separate from application tracking
 - treat job-search deep dives as market research plus resume calibration, not only application triage
 - never mark `Applied` without updating application folder records, `master_tracker.md`, and ledger `decision_update`
+
+portfolio_proof_standard:
+- target "flip the deployment switch, configure real credentials, onboard a user/tenant, and send an invoice" shape
+- include deployability, env config, secure secrets, auth/authz, user or tenant boundaries, billing/invoicing path, audit logs, observability, human review gates, and synthetic/demo-safe data boundaries
+- organize project-specific portfolio proof in `portfolio/`
+- do not claim live customers, production scale, mature security/compliance, or revenue unless true
 
 long_term_vector:
 - applied AI systems engineering

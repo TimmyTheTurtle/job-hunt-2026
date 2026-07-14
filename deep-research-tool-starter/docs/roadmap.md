@@ -1,5 +1,21 @@
 # Roadmap
 
+## Cross-Cutting Commercial Readiness
+
+These concerns should be designed from the beginning and implemented when the project moves beyond local proof:
+
+- environment-based deployment configuration
+- secure secret handling
+- authentication and authorization
+- user or tenant/workspace separation
+- billing or invoicing integration path
+- audit logs for important user, source, AI, and evidence-promotion actions
+- observability for parsing, retrieval, model calls, validation failures, and workflow state
+- synthetic/demo-safe public dataset
+- production cutover checklist
+
+Do not let these concerns force premature infrastructure into Phase 0. Do keep interfaces and data models from assuming a single-user toy forever.
+
 ## Phase 0: Corpus Discipline
 
 Goal:
@@ -113,4 +129,3 @@ Deliverables:
 - bounded research loops
 - researcher/synthesizer role separation
 - review checkpoints
-

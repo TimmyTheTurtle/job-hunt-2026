@@ -13,6 +13,16 @@ The intended architecture is:
 - evaluation layer
 - artifact promotion layer
 
+The architecture should stay local-first early, but production-aligned. Avoid decisions that make it impossible to add:
+
+- real authentication and authorization,
+- user or tenant/workspace isolation,
+- billing or invoicing integration,
+- secure secret handling,
+- audit trails for important actions,
+- deployment-specific configuration,
+- and operational observability.
+
 ## Canonical Truth
 
 Canonical truth should live in repo-visible artifacts such as:
@@ -86,4 +96,3 @@ Ranking should combine:
 - optional recency weighting
 
 Do not rely on nearest-neighbor similarity alone.
-

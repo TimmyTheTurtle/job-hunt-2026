@@ -49,3 +49,19 @@ It should help the user:
 - review semantic suggestions
 - promote durable findings into project memory
 
+## Commercial Skeleton Standard
+
+This project is a portfolio project, but it should be shaped like something that could become paid work without a rewrite.
+
+The target is a production-aligned skeleton:
+- deployable with environment-based configuration,
+- authentication and authorization ready,
+- user or tenant boundaries where research workspaces need separation,
+- billing or invoicing integration path,
+- secure secret handling,
+- audit log for source ingestion, evidence promotion, report generation, and human approvals,
+- observability for parsing, retrieval, model calls, validation failures, and workflow state,
+- synthetic/demo-safe data as the default public mode,
+- and a cutover checklist for moving from portfolio demo to real client use.
+
+The project should remain honest about stage. Until it has real customers and operational history, describe it as production-aligned or production-ready-in-shape, not as a proven production service.

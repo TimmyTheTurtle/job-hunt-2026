@@ -43,6 +43,8 @@ Agents should not overclaim. Dorian should not be presented as a finished ML res
 - Areva as early compliance-sensitive reporting automation evidence
 - SED Systems as the origin of mission/system discipline
 
+Portfolio projects should be evaluated against a production-aligned commercial skeleton standard. The goal is not a toy demo or notebook. The target shape is: deployable app, environment-based configuration, secure secret handling, authentication/authorization, user or tenant boundaries, billing or invoicing path, audit logs, observability, human-review gates for AI outputs, demo-safe data boundaries, and a documented cutover checklist. Project-specific portfolio proof belongs under [portfolio/](portfolio/). Agents should describe this as production-aligned engineering discipline unless live production customers, revenue, scale, or mature compliance controls are actually present.
+
 ## Why This Exists
 
 Without a compact bootstrap layer, agents tend to:

@@ -14,11 +14,29 @@ It is a six-week build-and-learn sequence meant to produce:
 - repeated exposure to real AI-system failure modes
 - better language for job positioning
 - stronger raw material for future articles
+- production-aligned portfolio artifacts that show deployability, user boundaries, auditability, and commercial readiness
 
 Pluralsight is the certificate-bearing support layer for this plan.
 Use it to document structured study for UI and to accelerate the open-tooling work, but do not let the courses replace the small projects.
 
 ---
+
+## Portfolio Build Standard
+
+The small projects should be designed as commercial skeletons, not disposable demos.
+
+Where a project is intended for portfolio use, it should have a credible path to:
+- deploy with environment-specific configuration,
+- connect real authentication and authorization,
+- separate users, tenants, or workspaces when relevant,
+- support billing or invoicing without re-architecting,
+- protect secrets and customer data,
+- preserve audit trails and evidence records,
+- expose health, error, and workflow-state observability,
+- use synthetic/demo-safe data until live-data controls exist,
+- and document the cutover checklist for real use.
+
+This does not mean every learning slice needs full SaaS infrastructure on day one. It means the architecture should avoid choices that would make commercial use a rewrite.
 
 ## Core Principle
 

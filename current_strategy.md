@@ -181,6 +181,24 @@ The next useful proof should connect them:
 - human review gates
 - evals or regression checks for nondeterministic components, once hands-on work begins
 
+## Portfolio Production Standard
+
+Portfolio projects should not stop at interesting notebooks, static demos, or local-only prototypes.
+
+The target bar is a **production-aligned commercial skeleton**:
+- deployable through a documented environment/configuration path,
+- user and tenant boundaries designed up front,
+- authentication and authorization ready to connect to a real provider,
+- billing or invoicing path designed so a real customer could be onboarded without re-architecting,
+- audit logs, evidence trails, and operational observability for important actions,
+- secure secret handling and configuration separation,
+- synthetic or demo-safe data by default, with clear boundaries before any real customer data,
+- and a cutover checklist that explains what must change before live use.
+
+Do not overclaim these projects as already serving production customers unless they are. The intended signal is stronger and more precise:
+
+> This is built like a system that could become commercial work, not like a disposable portfolio toy.
+
 ## What This Phase Should Teach
 
 - which market titles map to real applied AI systems work
@@ -195,6 +213,7 @@ The next useful proof should connect them:
 ## Repo Usage Rules
 
 - Durable strategy belongs here in `current_strategy.md`.
+- Production-aligned portfolio organization belongs in `portfolio/`.
 - Candidate/source context belongs in `JOB_HUNT_CONTEXT.md`.
 - Application records belong in `applications/`.
 - Ongoing application status belongs in `master_tracker.md`.
