@@ -16,6 +16,7 @@ This does not mean every project is already production deployed or commercially 
 ## Folder Map
 
 - [production-readiness-checklist.md](production-readiness-checklist.md) - reusable checklist for every portfolio project.
+- [projects/ai-engineering-enablement-prospects.md](projects/ai-engineering-enablement-prospects.md) - five portfolio prospects for AI engineering enablement and internal AI tooling roles.
 - [projects/legal-tech-debt.md](projects/legal-tech-debt.md) - applied AI/document intelligence evidence workbench path.
 - [projects/deep-research-tool.md](projects/deep-research-tool.md) - research evidence engine path.
 - [projects/window-configurator.md](projects/window-configurator.md) - production-minded domain configurator path.
