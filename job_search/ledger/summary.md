@@ -1,8 +1,8 @@
 # Search Ledger Summary
 
-- Generated: 2026-07-14T10:25:13.542832-04:00
-- Total tracked jobs: 210
-- Surfaced: 210
+- Generated: 2026-07-14T11:48:10.434159-04:00
+- Total tracked jobs: 240
+- Surfaced: 240
 - Saved: 0
 - Applied: 0
 - Dismissed: 0
@@ -42,6 +42,15 @@ Source of truth: `transactions.jsonl`
 - First seen: 2026-07-13T14:06:28.172158-04:00
 - Last seen: 2026-07-13T14:06:28.172158-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=73c6029c853b122e
+
+### AbroadWorks - AI Solutions Engineer
+- Last recommendation: review
+- Last score: 10
+- Sites: linkedin
+- Query labels: ai solutions engineer
+- First seen: 2026-07-14T11:48:10.430163-04:00
+- Last seen: 2026-07-14T11:48:10.430163-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4410754312
 
 ### Accenture - AI & HPC Infrastructure Engineer
 - Location: Detroit, MI, US
@@ -408,18 +417,9 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-06-26T14:48:55.701606-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=f03c5058699b33f7
 
-### Brillian - Senior Software Engineer (AI Products)
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 25
-- Sites: indeed
-- Query labels: software engineer ai systems
-- First seen: 2026-06-16T11:38:58.387588-04:00
-- Last seen: 2026-06-16T11:38:58.387588-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=2675163ecf3d056a
-
 ## Recent Transactions
 
+- `2026-07-14T11:48:10.430163-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260714_114810_9b0988f0]
 - `2026-07-14T10:25:13.536835-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260714_102513_f733ad9c]
 - `2026-07-13T14:13:03.847710-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260713_141303_07e57e4f]
 - `2026-07-13T14:06:28.172158-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260713_140628_c83a0f92]

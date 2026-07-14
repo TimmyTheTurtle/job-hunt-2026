@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-14T10:25:13.542832-04:00",
-  "job_count": 210,
+  "generated_at": "2026-07-14T11:48:10.434159-04:00",
+  "job_count": 240,
   "jobs": [
     {
       "company": "10x National Security",
@@ -74,6 +74,30 @@
       ],
       "status": "surfaced",
       "title": "AI Engineer"
+    },
+    {
+      "company": "AbroadWorks",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4410754312",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4410754312",
+      "note": "",
+      "query_labels": [
+        "ai solutions engineer"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Solutions Engineer"
     },
     {
       "company": "Accenture",
@@ -1101,6 +1125,30 @@
       "title": "AI Engineer"
     },
     {
+      "company": "Chainguard",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4423153811",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4423153811",
+      "note": "",
+      "query_labels": [
+        "ai solutions engineer"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Solutions Engineer"
+    },
+    {
       "company": "Chemours",
       "compensation": "$126,067 - $196,980 yearly source: direct_data",
       "first_seen_at": "2026-07-13T14:06:28.172158-04:00",
@@ -1318,6 +1366,30 @@
     },
     {
       "company": "CVS Health",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4437170844",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Hartford, CT",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4437170844",
+      "note": "",
+      "query_labels": [
+        "document intelligence engineer"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Engineer - Microsoft Power Platform"
+    },
+    {
+      "company": "CVS Health",
       "compensation": "$144,200 - $288,400 yearly source: direct_data",
       "first_seen_at": "2026-07-13T14:06:28.172158-04:00",
       "job_url": "https://www.indeed.com/viewjob?jk=33da3186bb8d7201",
@@ -1339,6 +1411,31 @@
       ],
       "status": "surfaced",
       "title": "Principal Software Engineer"
+    },
+    {
+      "company": "Dart Container",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4434697096",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Mason, MI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4434697096",
+      "note": "",
+      "query_labels": [
+        "compliance ai engineer",
+        "software engineer ai systems"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Developer"
     },
     {
       "company": "DataAnnotation",
@@ -1363,6 +1460,30 @@
       ],
       "status": "surfaced",
       "title": "Android Developer - AI Trainer"
+    },
+    {
+      "company": "DataAnnotation",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4334690272",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Michigan, United States",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4334690272",
+      "note": "",
+      "query_labels": [
+        "software engineer ai systems"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Android Software Engineer - AI Trainer"
     },
     {
       "company": "DataAnnotation",
@@ -1435,6 +1556,30 @@
       ],
       "status": "surfaced",
       "title": "Senior AI Solutions Engineer"
+    },
+    {
+      "company": "DataRobot",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4437633093",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Dubai, Dubai, United Arab Emirates",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4437633093",
+      "note": "",
+      "query_labels": [
+        "ai solutions engineer"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Senior AI Solutions Engineer - UAE"
     },
     {
       "company": "Deloitte",
@@ -1586,6 +1731,31 @@
     },
     {
       "company": "Deloitte",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4419852383",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Detroit, MI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4419852383",
+      "note": "",
+      "query_labels": [
+        "ai solutions engineer",
+        "ai systems engineer"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Forward Deployed Engineer, Microsoft AI & Data"
+    },
+    {
+      "company": "Deloitte",
       "compensation": "$118,700 - $243,700 yearly source: direct_data",
       "first_seen_at": "2026-07-13T14:06:28.172158-04:00",
       "job_url": "https://www.indeed.com/viewjob?jk=e026bfdfbdfe3ea8",
@@ -1655,6 +1825,33 @@
       ],
       "status": "surfaced",
       "title": "Lead Applied AI Engineer II"
+    },
+    {
+      "company": "Dematic",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4425328685",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Grand Rapids, MI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4425328685",
+      "note": "",
+      "query_labels": [
+        "ai systems engineer",
+        "ai workflow automation engineer",
+        "applied ai systems engineer",
+        "software engineer ai systems"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Application Engineer"
     },
     {
       "company": "DEVVISION",
@@ -1753,6 +1950,30 @@
       "title": "AI / ML Engineer"
     },
     {
+      "company": "Eaton",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4379862764",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Southfield, MI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4379862764",
+      "note": "",
+      "query_labels": [
+        "applied ai systems engineer"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Engineering Specialist, Digitalization & AI"
+    },
+    {
       "company": "edari",
       "compensation": "",
       "first_seen_at": "2026-06-26T14:50:39.772093-04:00",
@@ -1823,6 +2044,30 @@
       ],
       "status": "surfaced",
       "title": "Lead Machine Learning Engineer, Inference & Performance"
+    },
+    {
+      "company": "ElevenLabs",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4409030746",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4409030746",
+      "note": "",
+      "query_labels": [
+        "ai workflow automation engineer"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Engineering - Internal AI Transformation"
     },
     {
       "company": "Ensign Services",
@@ -2019,6 +2264,30 @@
     },
     {
       "company": "Ford Motor Company",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4419538775",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Dearborn, MI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4419538775",
+      "note": "",
+      "query_labels": [
+        "compliance ai engineer"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Machine Learning and AI Developer"
+    },
+    {
+      "company": "Ford Motor Company",
       "compensation": "$97,140 - $192,900 yearly source: direct_data",
       "first_seen_at": "2026-07-13T14:06:28.172158-04:00",
       "job_url": "https://www.indeed.com/viewjob?jk=7dab1f5392ab6e32",
@@ -2112,6 +2381,30 @@
       ],
       "status": "surfaced",
       "title": "Systems Engineer \u2013 End-to-End Software Diagnostics & Observability"
+    },
+    {
+      "company": "Forte Group",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4438587985",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4438587985",
+      "note": "",
+      "query_labels": [
+        "document intelligence engineer"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Product Engineer"
     },
     {
       "company": "FTE Factory Advisors",
@@ -2338,6 +2631,30 @@
       "title": "Principal Software Engineer, Enterprise AI Platform"
     },
     {
+      "company": "Go Digital Technology Consulting LLP",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4437117404",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Michigan, United States",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4437117404",
+      "note": "",
+      "query_labels": [
+        "llm rag engineer"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Senior Gen AI Engineer"
+    },
+    {
       "company": "GoFan",
       "compensation": "",
       "first_seen_at": "2026-07-13T14:06:28.172158-04:00",
@@ -2384,6 +2701,30 @@
       ],
       "status": "surfaced",
       "title": "Compliance, New York, Vice President, AI/ML Engineer"
+    },
+    {
+      "company": "Google",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4435215227",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Detroit, MI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4435215227",
+      "note": "",
+      "query_labels": [
+        "ai solutions engineer"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Outcome Customer Engineer, Forward Deployed Engineering"
     },
     {
       "company": "Google",
@@ -2529,6 +2870,30 @@
       ],
       "status": "surfaced",
       "title": "AI Engineer (GenAI & RAG)"
+    },
+    {
+      "company": "Huntington National Bank",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4438820353",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Detroit, MI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4438820353",
+      "note": "",
+      "query_labels": [
+        "ai workflow automation engineer"
+      ],
+      "recommendation": "review",
+      "score": 9,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Automation Engineer 3"
     },
     {
       "company": "Hyly.AI",
@@ -2921,6 +3286,30 @@
       "title": "Junior AI & Automation Engineer (copy)"
     },
     {
+      "company": "K Group Companies",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4439352593",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Grand Rapids, MI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4439352593",
+      "note": "",
+      "query_labels": [
+        "ai workflow automation engineer"
+      ],
+      "recommendation": "review",
+      "score": 9,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Junior Automation Engineer - Onsite"
+    },
+    {
       "company": "Kaizen Global Technologies",
       "compensation": "",
       "first_seen_at": "2026-06-26T14:50:39.772093-04:00",
@@ -2969,6 +3358,78 @@
       "title": "AI Systems Engineer"
     },
     {
+      "company": "Kirkland & Ellis",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4364198651",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "New York, NY",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4364198651",
+      "note": "",
+      "query_labels": [
+        "legal ai engineer"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Innovation AI Developer"
+    },
+    {
+      "company": "Kirkland & Ellis",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4364485010",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Chicago, IL",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4364485010",
+      "note": "",
+      "query_labels": [
+        "legal ai engineer"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Innovation AI Developer"
+    },
+    {
+      "company": "KLA",
+      "compensation": "$111,100 - $188,900 yearly source: direct_data",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=4f660ff58dc1061f",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Ann Arbor, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=4f660ff58dc1061f",
+      "note": "",
+      "query_labels": [
+        "llm rag engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 25,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "AI Software Engineer"
+    },
+    {
       "company": "KLA",
       "compensation": "",
       "first_seen_at": "2026-06-16T11:38:58.387588-04:00",
@@ -3015,6 +3476,35 @@
       ],
       "status": "surfaced",
       "title": "Principal Software Engineer, AI & Platform"
+    },
+    {
+      "company": "Kobie",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4428757346",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Detroit, MI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4428757346",
+      "note": "",
+      "query_labels": [
+        "ai systems engineer",
+        "ai workflow automation engineer",
+        "compliance ai engineer",
+        "document intelligence engineer",
+        "legal ai engineer",
+        "software engineer ai systems"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Engineer"
     },
     {
       "company": "Kobie Marketing",
@@ -3089,6 +3579,30 @@
       "title": "Custom Tools Developer (REMOTE)"
     },
     {
+      "company": "Ladders",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4437263374",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4437263374",
+      "note": "",
+      "query_labels": [
+        "ai solutions engineer"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Solutions Engineer"
+    },
+    {
       "company": "Lineage",
       "compensation": "",
       "first_seen_at": "2026-07-13T14:13:03.847710-04:00",
@@ -3135,6 +3649,54 @@
       ],
       "status": "surfaced",
       "title": "Forward Deployed Engineer (AI COE)"
+    },
+    {
+      "company": "Lineage",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4439469317",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Novi, MI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4439469317",
+      "note": "",
+      "query_labels": [
+        "ai solutions engineer"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Forward Deployed Engineer (AI COE)"
+    },
+    {
+      "company": "LK Group (Melbourne)",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4439827233",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Cremorne, Victoria, Australia",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4439827233",
+      "note": "",
+      "query_labels": [
+        "ai workflow automation engineer"
+      ],
+      "recommendation": "review",
+      "score": 8,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Artificial Intelligence Engineer"
     },
     {
       "company": "Marco Technologies",
@@ -3743,6 +4305,30 @@
       "title": "AI Solutions Lead \u2013 IP Legal / Patent Drafting"
     },
     {
+      "company": "Pinterest",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4387218136",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4387218136",
+      "note": "",
+      "query_labels": [
+        "ai solutions engineer"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Solutions Engineer"
+    },
+    {
       "company": "Platform Engineering",
       "compensation": "",
       "first_seen_at": "2026-06-16T13:45:37.745982-04:00",
@@ -3839,6 +4425,30 @@
       "title": "AI Solutions Engineer (Google Cloud)"
     },
     {
+      "company": "Precisely",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4436215153",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4436215153",
+      "note": "",
+      "query_labels": [
+        "ai solutions engineer"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Solutions Engineer - Professional Services"
+    },
+    {
       "company": "Primeritus Financial Services Inc",
       "compensation": "",
       "first_seen_at": "2026-06-16T13:45:37.745982-04:00",
@@ -3933,6 +4543,30 @@
       ],
       "status": "surfaced",
       "title": "Principal AI Engineer"
+    },
+    {
+      "company": "Robert Half",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4435376120",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Albuquerque, NM",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4435376120",
+      "note": "",
+      "query_labels": [
+        "ai systems engineer"
+      ],
+      "recommendation": "review",
+      "score": 11,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Artificial Intelligence (AI) System Engineer"
     },
     {
       "company": "SAFRAN LIMITED",
@@ -4419,6 +5053,30 @@
       "title": "Senior AI Software Engineer, Labs"
     },
     {
+      "company": "Summerset Retirement Villages",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4439758745",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "Wellington, Wellington, New Zealand",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4439758745",
+      "note": "",
+      "query_labels": [
+        "ai workflow automation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 13,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI & Automation Engineer"
+    },
+    {
       "company": "Suvia Technologies Ltd",
       "compensation": "$70 - $75 hourly source: direct_data",
       "first_seen_at": "2026-07-13T14:06:28.172158-04:00",
@@ -4879,6 +5537,30 @@
       "title": "AI Solutions Engineer"
     },
     {
+      "company": "Valsoft Corporation",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4389406741",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4389406741",
+      "note": "",
+      "query_labels": [
+        "ai workflow automation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 13,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Automation Engineer"
+    },
+    {
       "company": "Velents.ai",
       "compensation": "",
       "first_seen_at": "2026-07-13T14:13:03.847710-04:00",
@@ -5048,6 +5730,54 @@
       "title": "Legal Subject Matter Expert (SME)"
     },
     {
+      "company": "WorkGenius Group",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4439465772",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4439465772",
+      "note": "",
+      "query_labels": [
+        "ai solutions engineer"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Solutions Engineer"
+    },
+    {
+      "company": "Xinference",
+      "compensation": "",
+      "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4439106936",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-14T11:48:10.430163-04:00",
+      "last_transaction_id": "tx_20260714_114810_9b0988f0",
+      "location": "San Francisco, CA",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4439106936",
+      "note": "",
+      "query_labels": [
+        "ai solutions engineer"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Solutions Engineer"
+    },
+    {
       "company": "XpertDirect",
       "compensation": "",
       "first_seen_at": "2026-07-13T14:13:03.847710-04:00",
@@ -5159,12 +5889,19 @@
       "kind": "search_run",
       "timestamp": "2026-07-14T10:25:13.536835-04:00",
       "transaction_id": "tx_20260714_102513_f733ad9c"
+    },
+    {
+      "actor": "job_search_runner",
+      "event_count": 30,
+      "kind": "search_run",
+      "timestamp": "2026-07-14T11:48:10.430163-04:00",
+      "transaction_id": "tx_20260714_114810_9b0988f0"
     }
   ],
   "status_counts": {
     "applied": 0,
     "dismissed": 0,
     "saved": 0,
-    "surfaced": 210
+    "surfaced": 240
   }
 }
