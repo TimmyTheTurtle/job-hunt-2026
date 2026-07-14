@@ -41,7 +41,7 @@ Emerging product and workflow-system work around custom PVC window configuration
 
 ### Finys Inc. - Software Engineer
 
-Troy, Michigan | 2019 to 2023
+Troy, Michigan | 2023 to 2026
 
 - Implemented custom functionality in a layered enterprise C# platform, integrating with undocumented legacy components and third-party subsystems.
 - Reverse engineered black-box behavior across application and database layers to extend platform capabilities beyond previously supported use cases.
@@ -51,7 +51,7 @@ Troy, Michigan | 2019 to 2023
 
 ### RenoNerd Inc. - Software Engineer / Deployment Specialist / Owner-Operator
 
-Saskatoon, Saskatchewan / Troy, Michigan | 2023 to 2026
+Saskatoon, Saskatchewan  | 2019 to 2023
 
 - Built and iterated .NET MVC tools for custom window configuration, estimating, quoting, and pricing workflows.
 - Translated ambiguous product, measurement, and installation constraints into domain-specific software used in operational quoting and planning.
