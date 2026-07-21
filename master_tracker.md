@@ -9,6 +9,9 @@
 | 2026-07-14 | Blue Chip Talent | Recruiter Outreach | - | - | - | applied_ai_systems_v1 | - | - | - |
 | 2026-07-14 | Pluralsight | GenAI System Architecture Overview | - | - | - | applied_ai_systems_v1 | - | https://app.pluralsight.com/learner/user/courses/v2/e1501e92-e5b0-48c7-ba9f-660e4d06cab9/certificate | - |
 | 2026-07-14 | Pluralsight | GenAI Inference and Serving Architecture | - | - | - | applied_ai_systems_v1 | - | https://app.pluralsight.com/learner/user/courses/v2/7bc49e14-91f5-4ecf-94aa-6ae74af8b724/certificate | - |
+| 2026-07-20 | Pluralsight | Developing Task-specific Agents with
+CrewAI | - | - | - | applied_ai_systems_v1 | - | https://app.pluralsight.com/learner/user/courses/v2/5d41f93d-43fe-48b2-a507-86550d55bcb9/certificate | - |
+| 2026-07-14 | ZipRecruiter | Resume and Profile Update | - | - | - | applied_ai_systems_v1 | - | - | - |
 
 ## Status Legend
 - Drafting
