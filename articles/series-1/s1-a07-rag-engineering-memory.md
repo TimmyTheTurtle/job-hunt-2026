@@ -7,9 +7,11 @@
 
 ## Thesis
 
-RAG is not a product feature — it is an engineering memory pattern. Archive broadly, retrieve
-narrowly. A large archive of documentation becomes usable engineering memory through selective
-retrieval: the agent doesn't get everything, it gets the right things.
+RAG is not a product feature — it is an engineering memory pattern. Once AI workflows generate
+more context than humans or models can safely carry, retrieval becomes the discipline that turns
+archives into usable memory. Archive broadly, retrieve narrowly. A large archive of
+documentation becomes usable engineering memory through selective retrieval: the agent doesn't
+get everything, it gets the right things.
 
 Anthropic's contextual retrieval reduced failed retrievals by 49% (67% with reranking) by adding
 chunk-specific explanatory context before embedding. This is the engineering discipline behind
@@ -28,6 +30,7 @@ reliance.
 ## Key Claims
 
 - RAG is not a product feature — it's an engineering memory pattern
+- Selective retrieval is the answer to context overload and context poisoning
 - The quality of what you index determines the quality of agent output
 - Contextual retrieval (Anthropic's approach) is meaningfully better than naive chunking
 - A system should distinguish canonical truth from scratch notes before indexing either
@@ -36,6 +39,7 @@ reliance.
 
 ## Main Points to Discuss
 
+- A6 showed that accumulation stops helping once context becomes overloaded or untrustworthy
 - Plain RAG basics: why retrieval beats prompt stuffing
 - Contextual retrieval and reranking: adding chunk-specific context before embedding
 - Why metadata matters: authority, freshness, document type

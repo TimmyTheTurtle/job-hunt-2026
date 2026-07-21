@@ -28,10 +28,10 @@
 
 ## Thesis
 
-AI-assisted development done wrong causes measurable cognitive decline — not fatigue, decline.
-The same mechanism as doomscrolling: passive consumption replacing active construction, applied
-to the cognitive work of engineering. The burnout is not from overwork. It is from competence
-erosion.
+AI-assisted development done wrong preserves the feeling of momentum while degrading the
+competence signal that makes engineering feel real. The problem is not just fatigue. It is
+reward without mastery: output arrives, tasks close, diffs land, but understanding does not
+keep pace.
 
 The specific pattern: AI-assisted development creates a gap between the rate of output and the
 rate of understanding. You ship things you don't understand at a pace that prevents you from
@@ -42,7 +42,7 @@ meaningful breaks.
 
 ## Key Claims
 
-- Vibe coding causes cognitive decline through the same mechanism as doomscrolling
+- Gamified AI workflows can preserve momentum while eroding mastery
 - The competence erosion is gradual and invisible until the capability is needed and isn't there
 - This is now empirically measured, not just felt: controlled trials show the gap
 - This is a different burnout than deadline burnout and won't respond to the same interventions
@@ -77,6 +77,7 @@ meaningful breaks.
   writing code produces a different kind of cognitive strain
 - Hypervigilance and decision fatigue from rapid-fire AI outputs
 - Why more assistance can paradoxically mean more mental strain
+- Reward without mastery: visible progress survives even when comprehension stops accumulating
 - The cognitive offloading research: knowing you can look something up reduces encoding depth
   (the "Google effect") — vibe coding is the aggressive version applied to engineering skills
 - The personal counter-move: starting the day with vector math, calculus, or physics problems

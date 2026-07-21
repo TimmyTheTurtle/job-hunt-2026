@@ -31,6 +31,11 @@
 LLM-assisted development becomes more accurate and more maintainable when constrained by
 explicit requirements, invariants, tests, and design conditions rather than vague intent.
 
+If A1 is right that current AI coding tools are continuation-optimized systems with weak
+stopping cues, then constraints are not bureaucratic overhead. They are intentional friction.
+They are how a team restores phase boundaries once the tool would otherwise keep rewarding
+"one more pass."
+
 The common objection to adding structure to AI workflows is that it slows things down. That
 objection treats speed of generation as the metric. The right metric is rate of trustworthy
 delivery.
@@ -46,7 +51,7 @@ can't be worked on atomically by an agent.
 ## Key Claims
 
 - The case against constraints assumes the wrong success metric
-- Constraints are not friction — they are the mechanism by which AI output becomes trustworthy
+- Constraints are intentional friction in service of trustworthy delivery
 - Some clean code principles that were guidelines for humans become hard requirements for agents
 - A mini V-model per feature (left-side requirements → right-side verification) is a practical
   unit of discipline that doesn't require changing your entire workflow
@@ -65,24 +70,28 @@ can't be worked on atomically by an agent.
    trustworthy delivery — output you can ship, debug, extend, and explain. By that metric,
    unconstrained generation is slow because it produces things you cannot trust.
 
-3. **Constraints change what the agent generates.** "Make it work" prompts produce sloppy
+3. **Constraints restore the phase boundary by design.** If the tool keeps rewarding
+   continuation, the workflow has to make stopping, specifying, and verifying first-class
+   actions again. Constraints are the friction that turns exploration into engineering.
+
+4. **Constraints change what the agent generates.** "Make it work" prompts produce sloppy
    code because the agent has no definition of "work." Constraint-first prompts — with
    preconditions, postconditions, and testable invariants — give the agent a target. The
    same model produces materially different output when it has something specific to satisfy.
    This is not about discipline as philosophy. It is about prompt engineering that produces
    verifiable results.
 
-4. **Some clean code principles become hard requirements.** For humans, function size is a
+5. **Some clean code principles become hard requirements.** For humans, function size is a
    readability guideline. For agents, a function that doesn't fit in a single tool call can't
    be worked on atomically — it becomes a context management problem. The principle didn't
    change. The reason it matters changed.
 
-5. **The mini V per feature.** You don't need to adopt a full systems engineering process.
+6. **The mini V per feature.** You don't need to adopt a full systems engineering process.
    A lightweight version — left-side requirements before generation, right-side verification
    before acceptance — is enough to catch the failure mode where the agent produces confident
    wrong output. This is practical, not theoretical.
 
-6. **Hooks as constraint enforcement infrastructure.** PreToolUse hooks make constraints
+7. **Hooks as constraint enforcement infrastructure.** PreToolUse hooks make constraints
    enforceable rather than aspirational. The agent cannot bypass them by generating confident
    output. This is the first concrete architecture element the series introduces.
 
@@ -90,6 +99,7 @@ can't be worked on atomically by an agent.
 
 - The pivot: A1-A4 diagnosed, A5 changes direction toward what structure looks like
 - The wrong objection: speed of generation is not the metric; rate of trustworthy delivery is
+- Constraints as intentional friction that restore phase boundaries
 - Constraint-first prompting: preconditions, postconditions, invariants change output quality
 - Clean code principles that were guidelines for humans become hard requirements for agents
   (function size, atomicity, single responsibility)

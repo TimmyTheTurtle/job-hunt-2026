@@ -27,10 +27,15 @@ AI accelerates output in proportion to the quality of the context it's given. Gi
 well-structured code and it extends that. Give it accumulated technical debt and it extends
 that too — faster. The amplification is symmetric. Productive vibes, compounding debt.
 
+The A1 mechanism matters here: continuation-friendly tooling keeps engineers in extension mode
+after the phase where extension is safe. Once the loop is rewarding "one more pass" rather than
+"stop and specify," the agent keeps extending whatever context exists. In clean code it extends
+good patterns. In debt-heavy code it extends the debt.
+
 There is a second mechanism that runs alongside amplification: silent accumulation. Technical
 debt generated during vibe coding is invisible until it isn't. There is no review gate that
-surfaces it. The code works. It passes the vibe check. The debt accumulates beneath the
-surface until the codebase is the problem.
+surfaces it. The code works. It passes the continuation loop's reward checks. The debt
+accumulates beneath the surface until the codebase is the problem.
 
 Context windows can be reset. Codebases cannot. When the context gets poisoned you start a
 new session. When the codebase gets poisoned you have to live in it. That asymmetry makes
@@ -69,10 +74,10 @@ next time.
    concentrates in exactly the zones where amplification does the most damage.
 
 4. **Silent accumulation — the second mechanism.** Amplification is what happens in a single
-   session with existing debt. Accumulation is what happens over time when there is no review
-   gate. Vibe coding produces no artifacts that would surface the debt — no ADR asking "was
-   this the right design?", no review step asking "do we understand what this does?". The
-   debt lands and stays.
+   session with existing debt. Accumulation is what happens over time when the reward loop
+   keeps privileging continuation over review. Vibe coding produces no artifacts that would
+   surface the debt — no ADR asking "was this the right design?", no review step asking "do
+   we understand what this does?". The debt lands and stays.
 
    Context windows can be reset. When a session gets too long or too confused, you /compact
    or start fresh. Codebases have no equivalent. The debt from yesterday's session is the
@@ -97,6 +102,7 @@ next time.
 - A1 established the loop mechanics; A2 shows what the codebase looks like afterward
 - Two mechanisms: amplification (agent extends bad patterns) and accumulation (debt lands
   silently with no review gate to surface it)
+- Continuation-friendly tooling keeps the team in extension mode after extension stopped being safe
 - Codebases cannot be /compact'd — context windows reset, codebases don't; the debt from
   yesterday is the context for today
 - The amplification is statistical, not malicious — the agent mirrors its context

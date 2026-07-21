@@ -75,8 +75,10 @@ Working rule:
 
 ## Series 1 and Series 3 Are Connected
 
-Series 1 diagnoses what happens when you never exit the exploratory phase. Series 3 is the
-positive case for what disciplined exploratory phases look like when done right. The Bjarnason
+Series 1 diagnoses what happens when exploratory AI-assisted development turns into a
+continuation-optimized work system with weak stopping cues. Series 3 is the positive case for
+what disciplined exploratory phases look like when done right: many cheap experiments,
+preserved evidence, explicit learning, and a clear exit into requirements. The Bjarnason
 prototyping model (PAM, 2023) provides the formal academic vocabulary for this distinction:
 exploratory prototypes (pre-requirements, discovery-oriented) are categorically different from
 evolutionary prototypes (requirements-locked). Series 3 is the former done correctly. Series 1
@@ -114,11 +116,11 @@ previous layer stops paying off or reveals a new failure mode. The series has a 
 structure, not a random list of AI topics:
 
 1. Identify gamified incentive loops and phase-slippage
-2. Show cognitive and burnout consequences
+2. Show debt amplification and competence-signal erosion
 3. Show memory and documentation consequences
-4. Introduce constraints and guardrails
-5. Introduce selective retrieval
-6. Introduce graph-structured memory
+4. Introduce friction, constraints, and guardrails
+5. Introduce selective retrieval as the answer to context overload
+6. Introduce graph-structured memory when plain retrieval stops being enough
 7. Only later, when those gains flatten, consider model adaptation (LoRA)
 
 ---
@@ -154,6 +156,9 @@ This through-line connects Articles 4, 6, 7, and 8.
 ## Series 1 — The Vibe Coding Problem
 
 **Audience:** Engineering leaders, senior engineers, CTOs evaluating AI-assisted development.
+**Arc:** Exploratory AI-assisted development becomes a continuation-optimized work system with
+weak stopping cues; the series diagnoses the consequences, then builds the answer through
+friction, memory hygiene, retrieval, and context architecture.
 **Platform:** LinkedIn primary, personal site canonical.
 **Cadence:** One article every 10–14 days.
 
@@ -232,7 +237,8 @@ That is how it builds an audience worth having.
 ## Series 3 — Product Discovery in the AI Age
 
 **Audience:** Product engineers, technical founders, engineering leads tired of the MVP treadmill.
-**Arc:** Reframe product discovery as a scientific experiment program, not a single-bet pivot game.
+**Arc:** The healthy version of exploration: treat product discovery as a disciplined experiment
+program with preserved evidence, explicit learning, and a clear exit into requirements.
 **Platform:** LinkedIn and personal site. Cross-links to Series 1 and 2.
 
 | # | File | Title | Status |
