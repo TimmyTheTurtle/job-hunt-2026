@@ -249,6 +249,26 @@ program with preserved evidence, explicit learning, and a clear exit into requir
 
 ---
 
+## Series 5 — Neuro-Symbolic AI
+
+**Audience:** Applied AI engineers, researchers, and practitioners interested in reasoning,
+structure, and trustworthy AI systems beyond pure black-box scaling.
+**Arc:** Examine what neuro-symbolic AI actually means in 2026, where the research energy is
+real, and where symbolic structure is genuinely earning its cost in modern AI systems.
+**Platform:** Personal site canonical; LinkedIn for lead and bridge articles.
+
+| # | File | Title | Status |
+|---|------|-------|--------|
+| 1 | [s5-a01](series-5/s5-a01-why-neuro-symbolic-ai-is-back.md) | Why Neuro-Symbolic AI Is Back | Skeleton |
+| 2 | [s5-a02](series-5/s5-a02-what-counts-as-neurosymbolic-now.md) | What Counts as Neuro-Symbolic AI Now? | Skeleton |
+| 3 | [s5-a03](series-5/s5-a03-llms-solvers-and-reasoning.md) | LLMs, Solvers, and the New Reasoning Stack | Skeleton |
+| 4 | [s5-a04](series-5/s5-a04-knowledge-graphs-typed-memory.md) | Knowledge Graphs, Typed Memory, and Explicit World Models | Skeleton |
+| 5 | [s5-a05](series-5/s5-a05-programs-constraints-and-control.md) | Programs, Constraints, and Control Surfaces | Skeleton |
+| 6 | [s5-a06](series-5/s5-a06-trustworthiness-and-bounded-autonomy.md) | Trustworthiness, Verification, and Bounded Autonomy | Skeleton |
+| 7 | [s5-a07](series-5/s5-a07-where-i-think-this-lands.md) | Where I Think Neuro-Symbolic AI Actually Lands | Skeleton |
+
+---
+
 ## Supporting Files
 
 - [research.md](research.md) — all source links organized by topic
