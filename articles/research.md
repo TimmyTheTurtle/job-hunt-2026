@@ -80,11 +80,11 @@ operational thinking.
 - [AI agents, burnout and addiction — Axios](https://www.axios.com/2026/04/04/ai-agents-burnout-addiction-claude-code-openclaw) — S1-A3
 - [The hidden penalty of using AI at work — HBR](https://hbr.org/2025/08/research-the-hidden-penalty-of-using-ai-at-work) — S1-A3
 
-## Technical Debt / Code Health
+## Technical Debt / Verification Debt
 
-- [CodeScene code biomarkers research](https://codescene.com/blog/code-biomarkers/) — S1-A2
+- [Agile V: A Compliance-Ready Framework (arXiv:2602.20684) — Koch & Wellbrock 2026](papers/arxiv-2602.20684-agile-v-koch-wellbrock.pdf) — S1-A2/A4/A5/A10. *Machine-speed delivery needs built-in verification, traceability, decision logs, and human approval gates.*
+- [Agentic Agile-V: From Vibe Coding to Verified Engineering (arXiv:2605.20456) — 2026](papers/arxiv-2605.20456-agentic-agile-v-scope-v.pdf) — S1-A2/A3/A4/A6/S2-A2. *Names verification debt, conversation-to-contract gates, minimal-context principle, and risk-adaptive evidence bundles.*
 - [Adam Tornhill on psychology of code quality — Tech Lead Journal ep. 241](https://techleadjournal.dev/episodes/241/) — S1-A2
-- [CodeScene guardrails for AI-assisted coding](https://codescene.com/blog/implement-guardrails-for-ai-assisted-coding) — S1-A2/A5
 
 ## Guardrails and Constraints
 
@@ -97,8 +97,8 @@ operational thinking.
 ## Documentation and ADRs
 
 - [Documentation: diminishing returns — Allan Kelly](https://www.allankelly.net/archives/5516/documentation-another-case-of-rapidly-diminishing-returns/) — S1-A4
-- [ADR best practices — AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/master-architecture-decision-records-adrs-best-practices-for-effective-decision-making/) — S1-A4
-- [ADR guidance — Microsoft Azure Well-Architected](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record) — S1-A4
+- [Agile V: A Compliance-Ready Framework (arXiv:2602.20684) — Koch & Wellbrock 2026](papers/arxiv-2602.20684-agile-v-koch-wellbrock.pdf) — S1-A4/A10
+- [Agentic Agile-V: From Vibe Coding to Verified Engineering (arXiv:2605.20456) — 2026](papers/arxiv-2605.20456-agentic-agile-v-scope-v.pdf) — S1-A4/S2-A2
 - [ADR creation practices — Olaf Zimmermann](https://ozimmer.ch/practices/2023/04/03/ADRCreation.html) — S1-A4
 - [Martin Fowler on humans and agents](https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html) — S1-A1/A5
 
@@ -114,11 +114,10 @@ operational thinking.
 ## Context Poisoning
 
 - [XOXO: Cross-Origin Context Poisoning attacks (ArXiv)](papers/arxiv-2503.14281-xoxo-context-poisoning.pdf) — S1-A6
-- [Context rot is slowing down your AI agent — LogRocket](https://blog.logrocket.com/context-rot-slowing-down-your-ai-agent-how-fix/) — S1-A6
+- [Agile V: A Compliance-Ready Framework (arXiv:2602.20684) — Koch & Wellbrock 2026](papers/arxiv-2602.20684-agile-v-koch-wellbrock.pdf) — S1-A6. *Phase-separated agent roles and validation gates reduce stale-context carryover.*
+- [Agentic Agile-V: From Vibe Coding to Verified Engineering (arXiv:2605.20456) — 2026](papers/arxiv-2605.20456-agentic-agile-v-scope-v.pdf) — S1-A6. *Minimal-context principle, conversation-to-contract gate, and curated persistent memory.*
 - [Context Rot: Why LLMs degrade as context grows — Morph](https://www.morphllm.com/context-rot) — S1-A6
 - [How Long Contexts Fail and How to Fix Them — dbreunig](https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html) — S1-A6
-- [Context poisoning in LLMs — Elastic](https://www.elastic.co/search-labs/blog/context-poisoning-llm) — S1-A6
-- [LLM context window limitations — Atlan](https://atlan.com/know/llm-context-window-limitations/) — S1-A6
 
 ## RAG and Contextual Retrieval
 

@@ -257,7 +257,7 @@ Primary papers from the Series 1 corpus:
 
 Supporting sources already attached to the outline:
 
-- [CodeScene code biomarkers research](https://codescene.com/blog/code-biomarkers/)
-- [CodeScene guardrails for AI-assisted coding](https://codescene.com/blog/implement-guardrails-for-ai-assisted-coding)
+- [Agile V: A Compliance-Ready Framework for AI-Augmented Engineering](https://arxiv.org/abs/2602.20684)
+- [Agentic Agile-V: From Vibe Coding to Verified Engineering](https://arxiv.org/abs/2605.20456)
 - [The Vibe-Check Protocol: Quantifying Cognitive Offloading in AI Programming](https://arxiv.org/abs/2601.02410)
 

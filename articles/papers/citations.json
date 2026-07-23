@@ -372,6 +372,9 @@
       "cited_by_seeds": [],
       "file": "arxiv-2602.20684-agile-v-koch-wellbrock.pdf",
       "articles": [
+        "S1-A2",
+        "S1-A4",
+        "S1-A5",
         "S2-A2",
         "S1-A10"
       ]
@@ -392,6 +395,10 @@
       "cited_by_seeds": [],
       "file": "arxiv-2605.20456-agentic-agile-v-scope-v.pdf",
       "articles": [
+        "S1-A2",
+        "S1-A3",
+        "S1-A4",
+        "S1-A6",
         "S2-A2"
       ]
     },

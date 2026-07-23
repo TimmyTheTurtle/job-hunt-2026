@@ -110,9 +110,8 @@ version — accumulated debt and drift — is less dramatic but more pervasive.
 ## Sources
 
 - [XOXO: Cross-Origin Context Poisoning attacks on AI coding assistants (ArXiv)](../papers/arxiv-2503.14281-xoxo-context-poisoning.pdf)
-- [Context rot is slowing down your AI agent — LogRocket](https://blog.logrocket.com/context-rot-slowing-down-your-ai-agent-how-fix/)
+- [Agile V: A Compliance-Ready Framework for AI-Augmented Engineering — arXiv:2602.20684](../papers/arxiv-2602.20684-agile-v-koch-wellbrock.pdf) — separates agent roles and validation phases so stale build context does not automatically flow forward
+- [Agentic Agile-V: From Vibe Coding to Verified Engineering — arXiv:2605.20456](../papers/arxiv-2605.20456-agentic-agile-v-scope-v.pdf) — minimal-context principle, conversation-to-contract, and persistent-memory curation as countermeasures
 - [Context Rot: Why LLMs degrade as context grows — Morph](https://www.morphllm.com/context-rot)
 - [How Long Contexts Fail and How to Fix Them — dbreunig](https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html)
-- [Context poisoning in LLMs — Elastic](https://www.elastic.co/search-labs/blog/context-poisoning-llm)
-- [LLM context window limitations — Atlan](https://atlan.com/know/llm-context-window-limitations/)
 - [Contextual Retrieval — Anthropic](https://www.anthropic.com/engineering/contextual-retrieval)

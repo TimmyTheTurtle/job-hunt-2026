@@ -165,7 +165,7 @@ Flag for placement decision when drafting begins.
 - [AI agents, burnout and addiction — Axios](https://www.axios.com/2026/04/04/ai-agents-burnout-addiction-claude-code-openclaw)
 - [AI fatigue essay — Siddhant Khare](https://siddhantkhare.com/writing/ai-fatigue-is-real)
 - [The hidden penalty of using AI at work — HBR](https://hbr.org/2025/08/research-the-hidden-penalty-of-using-ai-at-work)
-- [CodeScene guardrails](https://codescene.com/blog/implement-guardrails-for-ai-assisted-coding)
+- [Agentic Agile-V: From Vibe Coding to Verified Engineering — arXiv:2605.20456](../papers/arxiv-2605.20456-agentic-agile-v-scope-v.pdf) — evidence bundles and human approval gates reduce review chaos by giving oversight work a structure
 - [Snyk guardrails for AI coding assistants](https://snyk.io/blog/build-fast-stay-secure-guardrails-for-ai-coding-assistants/)
 - [Simon Willison — Embracing the parallel coding agent lifestyle](https://simonw.substack.com/p/embracing-the-parallel-coding-agent) — calls parallel agents "a thermonuclear ADHD amplifier"; notes he can only usefully review one output at a time
 - [Pragmatic Engineer — Programming by kicking off parallel AI agents](https://blog.pragmaticengineer.com/new-trend-programming-by-kicking-off-parallel-ai-agents/) — Armin Ronacher: "it's only so much my mind can review"; attention ceiling named but not analyzed

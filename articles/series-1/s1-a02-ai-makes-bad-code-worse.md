@@ -68,10 +68,13 @@ next time.
    what it was designed to do. The problem is that "continue the pattern" is neutral about
    whether the pattern is good. In debt-heavy zones it is actively dangerous.
 
-3. **The CodeScene empirical angle.** Code health scores predict bug concentration. Low health
-   zones are where most defects live. They are also the zones where developers are most likely
-   to reach for AI help — because they are the hardest, most confusing code. So AI assistance
-   concentrates in exactly the zones where amplification does the most damage.
+3. **The Agile-V process angle.** Agile V starts from the premise that AI-assisted engineering
+   without built-in verification and traceability creates machine-speed delivery with no
+   reliable gate. Agentic Agile-V sharpens that into verification debt: output volume grows
+   faster than verification capacity, so weak tests, broad patches, unvalidated dependencies,
+   undocumented behavior, and reviewer burden accumulate. That is the same trap this article
+   is naming from the codebase side. When continuation is easy and evidence is optional, the
+   system extends debt faster than the team can see it.
 
 4. **Silent accumulation — the second mechanism.** Amplification is what happens in a single
    session with existing debt. Accumulation is what happens over time when the reward loop
@@ -106,8 +109,8 @@ next time.
 - Codebases cannot be /compact'd — context windows reset, codebases don't; the debt from
   yesterday is the context for today
 - The amplification is statistical, not malicious — the agent mirrors its context
-- CodeScene research: low health code zones are where bugs concentrate AND where AI help
-  is most requested — a compounding trap
+- Agile-V / Agentic Agile-V framing: machine-speed generation without built-in verification
+  creates verification debt and reviewer overload — a compounding trap
 - Large-scale evidence: 24.2% of AI-introduced defects never cleaned up (arXiv:2603.28592)
 - The self-reinforcing loop: vibe coding produces debt → debt contaminates future context →
   contaminated context produces more debt
@@ -117,17 +120,16 @@ next time.
 
 ## Solution Hints to Seed
 
-- Code health as a prerequisite for AI assistance, not an afterthought
+- Verification gates and scoped evidence as a prerequisite for AI assistance, not an afterthought
 - Context management — what the agent sees determines what it produces
-- Health gates before AI assistance in high-risk zones
+- Risk-adaptive gates before AI assistance in high-risk zones
 
 ---
 
 ## Sources
 
-- [CodeScene code biomarkers research](https://codescene.com/blog/code-biomarkers/)
-- [Adam Tornhill on psychology of code quality — Tech Lead Journal ep. 241](https://techleadjournal.dev/episodes/241/)
-- [CodeScene guardrails for AI-assisted coding](https://codescene.com/blog/implement-guardrails-for-ai-assisted-coding)
+- [Agile V: A Compliance-Ready Framework for AI-Augmented Engineering — arXiv:2602.20684](../papers/arxiv-2602.20684-agile-v-koch-wellbrock.pdf) — machine-speed delivery needs built-in verification, traceability, and human approval gates
+- [Agentic Agile-V: From Vibe Coding to Verified Engineering — arXiv:2605.20456](../papers/arxiv-2605.20456-agentic-agile-v-scope-v.pdf) — names verification debt, conversation-to-contract gates, and risk-adaptive evidence bundles
 - [Debt Behind the AI Boom — arXiv:2603.28592](../papers/arxiv-2603.28592-debt-behind-ai-boom.pdf) — 304,362 AI commits; 24.2% of introduced defects never cleaned up
 - [The Vibe-Check Protocol — arXiv:2601.02410](../papers/arxiv-2601.02410-vibe-check-protocol.pdf) — acceleration vs. offloading; context quality determines which mode is even possible
 - [Comprehension Debt in GenAI SE — arXiv:2604.13277](../papers/arxiv-2604.13277-comprehension-debt.pdf) — debt accumulates in cognition and codebase simultaneously

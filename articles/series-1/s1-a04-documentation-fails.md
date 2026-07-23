@@ -108,6 +108,6 @@ failing because it's incomplete — it's failing because it was designed for the
 
 - [Vibe coding in style.md — AGENTS.md as discipline framework (Evil Martians)](https://evilmartians.com/chronicles/vibe-coding-in-style-dot-md)
 - [Documentation: diminishing returns — Allan Kelly](https://www.allankelly.net/archives/5516/documentation-another-case-of-rapidly-diminishing-returns/)
-- [ADR best practices — AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/master-architecture-decision-records-adrs-best-practices-for-effective-decision-making/)
-- [ADR guidance — Microsoft Azure Well-Architected](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record)
+- [Agile V: A Compliance-Ready Framework for AI-Augmented Engineering — arXiv:2602.20684](../papers/arxiv-2602.20684-agile-v-koch-wellbrock.pdf) — audit-ready artifacts, decision logs, and traceability as a by-product of the workflow
+- [Agentic Agile-V: From Vibe Coding to Verified Engineering — arXiv:2605.20456](../papers/arxiv-2605.20456-agentic-agile-v-scope-v.pdf) — conversation-to-contract gate; reviewed briefs before implementation; evidence controls acceptance
 - [ADR creation practices — Olaf Zimmermann](https://ozimmer.ch/practices/2023/04/03/ADRCreation.html)
