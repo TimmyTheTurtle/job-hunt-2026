@@ -1,8 +1,8 @@
 # Search Ledger Summary
 
-- Generated: 2026-07-14T11:48:10.434159-04:00
-- Total tracked jobs: 240
-- Surfaced: 240
+- Generated: 2026-07-24T14:56:59.058753-04:00
+- Total tracked jobs: 300
+- Surfaced: 300
 - Saved: 0
 - Applied: 0
 - Dismissed: 0
@@ -43,6 +43,16 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-07-13T14:06:28.172158-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=73c6029c853b122e
 
+### ABB - Legal Counsel Digital, AI and Cyber Law, Robotics
+- Location: Auburn Hills, MI
+- Last recommendation: review
+- Last score: 11
+- Sites: linkedin
+- Query labels: legal ai consultant
+- First seen: 2026-07-24T14:46:50.863192-04:00
+- Last seen: 2026-07-24T14:46:50.863192-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4436437266
+
 ### AbroadWorks - AI Solutions Engineer
 - Last recommendation: review
 - Last score: 10
@@ -72,6 +82,17 @@ Source of truth: `transactions.jsonl`
 - First seen: 2026-07-13T14:13:03.847710-04:00
 - Last seen: 2026-07-13T14:13:03.847710-04:00
 - Posting URL: https://www.linkedin.com/jobs/view/4436895649
+
+### Accenture - AI Engineering Consultant - Utilities
+- Location: Detroit, MI, US
+- Last recommendation: apply_first
+- Last score: 25
+- Compensation: $59,100 - $205,800 yearly source: direct_data
+- Sites: indeed
+- Query labels: llm rag engineer
+- First seen: 2026-07-24T14:56:59.054181-04:00
+- Last seen: 2026-07-24T14:56:59.054181-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=6673909c75697ee3
 
 ### Accenture - AI Native Software Engineer
 - Location: Albany, New York Metropolitan Area
@@ -122,6 +143,38 @@ Source of truth: `transactions.jsonl`
 - First seen: 2026-06-16T13:45:37.745982-04:00
 - Last seen: 2026-06-16T13:45:37.745982-04:00
 - Posting URL: https://www.linkedin.com/jobs/view/4426805481
+
+### Aditi Consulting - AI & Digital Automation Solutions Developer
+- Location: Hartford, CT
+- Last recommendation: apply_first
+- Last score: 15
+- Sites: linkedin
+- Query labels: workflow automation contractor
+- First seen: 2026-07-24T14:46:50.863192-04:00
+- Last seen: 2026-07-24T14:46:50.863192-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4444707662
+
+### Advanced Monitored Caregiving - Senior Software Engineer Applied AI
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 27
+- Compensation: $125,000 - $180,000 yearly source: direct_data
+- Sites: indeed
+- Query labels: software engineer ai systems
+- First seen: 2026-07-24T14:56:59.054181-04:00
+- Last seen: 2026-07-24T14:56:59.054181-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=a27191428f07715d
+
+### Advanced Monitored Caregiving - Senior Software Engineer Applied AI
+- Location: Lansing, MI, US
+- Last recommendation: apply_first
+- Last score: 25
+- Compensation: $125,000 - $180,000 yearly source: direct_data
+- Sites: indeed
+- Query labels: software engineer ai systems
+- First seen: 2026-07-24T14:56:59.054181-04:00
+- Last seen: 2026-07-24T14:56:59.054181-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=34608c2b5e44a069
 
 ### Advantive - AI Software Developer
 - Last recommendation: apply_first
@@ -286,6 +339,27 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-06-16T13:45:37.745982-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=8eb52795b3e4a218
 
+### Ampstek - Generative AI Engineer
+- Location: County Dublin, Ireland
+- Last recommendation: review
+- Last score: 11
+- Sites: linkedin
+- Query labels: rag engineer contract
+- First seen: 2026-07-24T14:46:50.863192-04:00
+- Last seen: 2026-07-24T14:46:50.863192-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4442661299
+
+### Amway - Sr AI Engineer
+- Location: Ada, MI, US
+- Last recommendation: apply_first
+- Last score: 19
+- Compensation: $115,419 - $142,576 yearly source: direct_data
+- Sites: indeed
+- Query labels: llm rag engineer
+- First seen: 2026-07-24T14:56:59.054181-04:00
+- Last seen: 2026-07-24T14:56:59.054181-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=8fda396b569e01bb
+
 ### Anagh Technologies Inc - Generative AI Engineer
 - Location: Jersey City, NJ
 - Last recommendation: review
@@ -295,6 +369,16 @@ Source of truth: `transactions.jsonl`
 - First seen: 2026-06-26T14:50:39.772093-04:00
 - Last seen: 2026-06-26T14:50:39.772093-04:00
 - Posting URL: https://www.linkedin.com/jobs/view/4428297661
+
+### Aquent - AI Software Developer [211339]
+- Location: Ann Arbor, MI
+- Last recommendation: apply_first
+- Last score: 12
+- Sites: linkedin
+- Query labels: rag engineer contract
+- First seen: 2026-07-24T14:46:50.863192-04:00
+- Last seen: 2026-07-24T14:46:50.863192-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4438416069
 
 ### ARA - Senior AI Systems Engineer
 - Location: Raleigh, NC
@@ -337,88 +421,10 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-06-26T14:50:39.772093-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=94a1577c8c4f5f86
 
-### Autodesk - Digital Support Intelligent Automation Solutions Engineer
-- Location: Michigan, United States
-- Last recommendation: review
-- Last score: 11
-- Sites: linkedin
-- Query labels: workflow automation contractor
-- First seen: 2026-06-26T14:50:39.772093-04:00
-- Last seen: 2026-06-26T14:50:39.772093-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4433243493
-
-### Avalara - Senior Software Engineer
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 25
-- Sites: indeed
-- Query labels: ai workflow automation engineer, software engineer workflow automation
-- First seen: 2026-06-26T14:48:55.701606-04:00
-- Last seen: 2026-06-26T14:48:55.701606-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=877aa4d2da15f605
-
-### Avalara - Solution Engineers - Versori
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 12
-- Sites: indeed
-- Query labels: ai workflow automation engineer
-- First seen: 2026-06-16T13:45:37.745982-04:00
-- Last seen: 2026-06-16T13:45:37.745982-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=98165a55dbc70539
-
-### Bamboo Works - AI Automation Engineer
-- Location: Cebu, Central Visayas, Philippines
-- Last recommendation: apply_first
-- Last score: 13
-- Sites: linkedin
-- Query labels: ai workflow automation engineer
-- First seen: 2026-07-13T14:06:28.172158-04:00
-- Last seen: 2026-07-13T14:06:28.172158-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4435469047
-
-### Bamboo Works - AI Automation Engineer (Claude Code & AI Agents)
-- Last recommendation: apply_first
-- Last score: 13
-- Sites: linkedin
-- Query labels: ai workflow automation engineer
-- First seen: 2026-07-13T14:13:03.847710-04:00
-- Last seen: 2026-07-13T14:13:03.847710-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4436496266
-
-### BlackLine - AI Engineer
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 27
-- Compensation: $128,000 - $160,000 yearly source: direct_data
-- Sites: indeed
-- Query labels: compliance ai engineer, llm rag engineer
-- First seen: 2026-06-26T14:48:55.701606-04:00
-- Last seen: 2026-06-26T14:48:55.701606-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=d06a7b2204e3186e
-
-### Blue Cross Blue Shield of Michigan - Artificial Intelligence Engineer II
-- Location: Detroit, MI
-- Last recommendation: review
-- Last score: 8
-- Sites: linkedin
-- Query labels: llm rag engineer, software engineer ai systems
-- First seen: 2026-07-14T10:25:13.536835-04:00
-- Last seen: 2026-07-14T10:25:13.536835-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4429345525
-
-### Bosch - Senior AI Software Engineer
-- Location: Plymouth, MI, US
-- Last recommendation: apply_first
-- Last score: 25
-- Sites: indeed
-- Query labels: llm rag engineer, software engineer ai systems
-- First seen: 2026-06-26T14:48:55.701606-04:00
-- Last seen: 2026-06-26T14:48:55.701606-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=f03c5058699b33f7
-
 ## Recent Transactions
 
+- `2026-07-24T14:56:59.054181-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260724_145659_b731cc84]
+- `2026-07-24T14:46:50.863192-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260724_144650_3cea8266]
 - `2026-07-14T11:48:10.430163-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260714_114810_9b0988f0]
 - `2026-07-14T10:25:13.536835-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260714_102513_f733ad9c]
 - `2026-07-13T14:13:03.847710-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260713_141303_07e57e4f]
@@ -427,5 +433,3 @@ Source of truth: `transactions.jsonl`
 - `2026-06-18T00:00:00Z` `` by `chat_update`: 0 event(s) []
 - `2026-06-26T14:50:39.772093-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260626_145039_2163f5bb]
 - `2026-06-26T14:48:55.701606-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260626_144855_136f0ab4]
-- `2026-06-16T13:45:37.745982-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260616_134537_f1b07d60]
-- `2026-06-16T11:38:58.387588-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260616_113858_c88a1b11]

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-14T11:48:10.434159-04:00",
-  "job_count": 240,
+  "generated_at": "2026-07-24T14:56:59.058753-04:00",
+  "job_count": 300,
   "jobs": [
     {
       "company": "10x National Security",
@@ -76,6 +76,30 @@
       "title": "AI Engineer"
     },
     {
+      "company": "ABB",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4436437266",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Auburn Hills, MI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4436437266",
+      "note": "",
+      "query_labels": [
+        "legal ai consultant"
+      ],
+      "recommendation": "review",
+      "score": 11,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Legal Counsel Digital, AI and Cyber Law, Robotics"
+    },
+    {
       "company": "AbroadWorks",
       "compensation": "",
       "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
@@ -146,6 +170,30 @@
       ],
       "status": "surfaced",
       "title": "AI & HPC Infrastructure Engineer"
+    },
+    {
+      "company": "Accenture",
+      "compensation": "$59,100 - $205,800 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=6673909c75697ee3",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Detroit, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=6673909c75697ee3",
+      "note": "",
+      "query_labels": [
+        "llm rag engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 25,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "AI Engineering Consultant - Utilities"
     },
     {
       "company": "Accenture",
@@ -267,6 +315,78 @@
       ],
       "status": "surfaced",
       "title": "Generative AI Engineer"
+    },
+    {
+      "company": "Aditi Consulting",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4444707662",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Hartford, CT",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4444707662",
+      "note": "",
+      "query_labels": [
+        "workflow automation contractor"
+      ],
+      "recommendation": "apply_first",
+      "score": 15,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI & Digital Automation Solutions Developer"
+    },
+    {
+      "company": "Advanced Monitored Caregiving",
+      "compensation": "$125,000 - $180,000 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=a27191428f07715d",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=a27191428f07715d",
+      "note": "",
+      "query_labels": [
+        "software engineer ai systems"
+      ],
+      "recommendation": "apply_first",
+      "score": 27,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Software Engineer Applied AI"
+    },
+    {
+      "company": "Advanced Monitored Caregiving",
+      "compensation": "$125,000 - $180,000 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=34608c2b5e44a069",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Lansing, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=34608c2b5e44a069",
+      "note": "",
+      "query_labels": [
+        "software engineer ai systems"
+      ],
+      "recommendation": "apply_first",
+      "score": 25,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Software Engineer Applied AI"
     },
     {
       "company": "Advantive",
@@ -663,6 +783,54 @@
       "title": "Principal Software Engineer"
     },
     {
+      "company": "Ampstek",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4442661299",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "County Dublin, Ireland",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4442661299",
+      "note": "",
+      "query_labels": [
+        "rag engineer contract"
+      ],
+      "recommendation": "review",
+      "score": 11,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Generative AI Engineer"
+    },
+    {
+      "company": "Amway",
+      "compensation": "$115,419 - $142,576 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=8fda396b569e01bb",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Ada, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=8fda396b569e01bb",
+      "note": "",
+      "query_labels": [
+        "llm rag engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 19,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Sr AI Engineer"
+    },
+    {
       "company": "Anagh Technologies Inc",
       "compensation": "",
       "first_seen_at": "2026-06-26T14:50:39.772093-04:00",
@@ -685,6 +853,30 @@
       ],
       "status": "surfaced",
       "title": "Generative AI Engineer"
+    },
+    {
+      "company": "Aquent",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4438416069",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Ann Arbor, MI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4438416069",
+      "note": "",
+      "query_labels": [
+        "rag engineer contract"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Software Developer [211339]"
     },
     {
       "company": "ARA",
@@ -906,6 +1098,78 @@
       "title": "AI Automation Engineer (Claude Code & AI Agents)"
     },
     {
+      "company": "Barton Malow Company",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=b295bc193e0e8f98",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Southfield, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=b295bc193e0e8f98",
+      "note": "",
+      "query_labels": [
+        "ai engineer contract"
+      ],
+      "recommendation": "apply_first",
+      "score": 18,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Sr. AI Engineer"
+    },
+    {
+      "company": "Benzinga",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=a52f044b0c00d9c9",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=a52f044b0c00d9c9",
+      "note": "",
+      "query_labels": [
+        "llm rag engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 22,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "AI Machine Learning Engineer (AI / ML: Python / Go)"
+    },
+    {
+      "company": "Blackbaud",
+      "compensation": "$117,200 - $157,500 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=31962f2bf23dc495",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=31962f2bf23dc495",
+      "note": "",
+      "query_labels": [
+        "compliance ai engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 19,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "AI Platform Technical Lead"
+    },
+    {
       "company": "BlackLine",
       "compensation": "$128,000 - $160,000 yearly source: direct_data",
       "first_seen_at": "2026-06-26T14:48:55.701606-04:00",
@@ -956,6 +1220,30 @@
       "title": "Artificial Intelligence Engineer II"
     },
     {
+      "company": "Blue Cross Blue Shield of Michigan",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=cbf2ac51465db6c2",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Detroit, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=cbf2ac51465db6c2",
+      "note": "",
+      "query_labels": [
+        "compliance ai engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 18,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Technical Lead I-AI Engineer"
+    },
+    {
       "company": "Bosch",
       "compensation": "",
       "first_seen_at": "2026-06-26T14:48:55.701606-04:00",
@@ -979,6 +1267,31 @@
       ],
       "status": "surfaced",
       "title": "Senior AI Software Engineer"
+    },
+    {
+      "company": "Boston Medical Center",
+      "compensation": "$89,500 - $130,000 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=c7b96f6d08eb2e5b",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=c7b96f6d08eb2e5b",
+      "note": "",
+      "query_labels": [
+        "compliance ai engineer",
+        "llm rag engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 26,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "AWS Cloud AI Engineer"
     },
     {
       "company": "Brillian",
@@ -1221,6 +1534,30 @@
       "title": "Intelligent Automation Developer"
     },
     {
+      "company": "Cliff Services Inc",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4441477776",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Jersey City, NJ",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4441477776",
+      "note": "",
+      "query_labels": [
+        "llm engineer contract"
+      ],
+      "recommendation": "apply_first",
+      "score": 15,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI/LLM Eng"
+    },
+    {
       "company": "CNA Search",
       "compensation": "",
       "first_seen_at": "2026-07-13T14:13:03.847710-04:00",
@@ -1317,6 +1654,31 @@
       "title": "Principal AI Transformation Lead"
     },
     {
+      "company": "Coterie Insurance",
+      "compensation": "$115,000 - $145,000 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=24d15a2e39a59d2f",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=24d15a2e39a59d2f",
+      "note": "",
+      "query_labels": [
+        "compliance ai engineer",
+        "software engineer ai systems"
+      ],
+      "recommendation": "apply_first",
+      "score": 21,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "AI Engineer"
+    },
+    {
       "company": "Cotiviti",
       "compensation": "",
       "first_seen_at": "2026-06-16T11:38:58.387588-04:00",
@@ -1341,6 +1703,79 @@
       "title": "Senior Software Engineer (AI)"
     },
     {
+      "company": "Credit Acceptance",
+      "compensation": "$154,837 - $227,095 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=aefc8e044f7d0658",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=aefc8e044f7d0658",
+      "note": "",
+      "query_labels": [
+        "document intelligence engineer",
+        "software engineer ai systems"
+      ],
+      "recommendation": "apply_first",
+      "score": 26,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Staff/Senior Staff Software Engineer, Enterprise AI Enablement"
+    },
+    {
+      "company": "Crossing Hurdles",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4441162894",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4441162894",
+      "note": "",
+      "query_labels": [
+        "workflow automation contractor"
+      ],
+      "recommendation": "review",
+      "score": 11,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Automation Specialist"
+    },
+    {
+      "company": "Crossing Hurdles",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4441167805",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4441167805",
+      "note": "",
+      "query_labels": [
+        "workflow automation contractor"
+      ],
+      "recommendation": "review",
+      "score": 11,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Automation Specialist"
+    },
+    {
       "company": "Crowe LLP",
       "compensation": "",
       "first_seen_at": "2026-06-16T11:38:58.387588-04:00",
@@ -1363,6 +1798,30 @@
       ],
       "status": "surfaced",
       "title": "Senior AI Engineer"
+    },
+    {
+      "company": "CRYOPORT SYSTEMS",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=4916281cb23bdef3",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=4916281cb23bdef3",
+      "note": "",
+      "query_labels": [
+        "llm rag engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 21,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Staff Software Engineer (Contingent)"
     },
     {
       "company": "CVS Health",
@@ -1436,6 +1895,31 @@
       ],
       "status": "surfaced",
       "title": "AI Developer"
+    },
+    {
+      "company": "Data Innovations",
+      "compensation": "$164,847 - $210,598 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=dff8c4427790c8ed",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=dff8c4427790c8ed",
+      "note": "",
+      "query_labels": [
+        "ai automation consultant",
+        "ai engineer contract"
+      ],
+      "recommendation": "apply_first",
+      "score": 17,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior AI Engineer IV"
     },
     {
       "company": "DataAnnotation",
@@ -2214,6 +2698,30 @@
       "title": "Lead ML Ops/DevOps Engineer - AI Engineering"
     },
     {
+      "company": "Filevine",
+      "compensation": "$185,000 - $225,000 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=589f6dac8944d7e7",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=589f6dac8944d7e7",
+      "note": "",
+      "query_labels": [
+        "legal ai engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 17,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Legal Solutions Engineer"
+    },
+    {
       "company": "Flexday",
       "compensation": "",
       "first_seen_at": "2026-06-26T14:48:55.701606-04:00",
@@ -2261,6 +2769,31 @@
       ],
       "status": "surfaced",
       "title": "Staff Software Engineer, Agents"
+    },
+    {
+      "company": "Focus Cloud Group",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4443147497",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4443147497",
+      "note": "",
+      "query_labels": [
+        "ai engineer contract",
+        "ai solutions engineer contract"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Engineer - remote"
     },
     {
       "company": "Ford Motor Company",
@@ -2482,6 +3015,31 @@
       "title": "AI Engineer - ICAM"
     },
     {
+      "company": "General Dynamics Information Technology",
+      "compensation": "$146,200 - $197,800 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=9c2c20c21a380bdb",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=9c2c20c21a380bdb",
+      "note": "",
+      "query_labels": [
+        "compliance ai engineer",
+        "llm rag engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 29,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "AI Engineer - ICAM"
+    },
+    {
       "company": "General Dynamics Mission Systems",
       "compensation": "$124,397 - $138,003 yearly source: direct_data",
       "first_seen_at": "2026-07-14T10:25:13.536835-04:00",
@@ -2555,6 +3113,54 @@
       ],
       "status": "surfaced",
       "title": "Sr. Software Engineer - AI Engineering and Productivity"
+    },
+    {
+      "company": "General Motors (GM)",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=63604ed4d03bd4dc",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Warren, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=63604ed4d03bd4dc",
+      "note": "",
+      "query_labels": [
+        "ai workflow automation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 19,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Automation Platform and AI Integration Engineer"
+    },
+    {
+      "company": "General Motors (GM)",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=35f9f23de7b43548",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Warren, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=35f9f23de7b43548",
+      "note": "",
+      "query_labels": [
+        "ai workflow automation engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 17,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "CAE Modeling Lead"
     },
     {
       "company": "General Motors (GM)",
@@ -2800,6 +3406,30 @@
       "title": "Payroll Specialist (Contractor)"
     },
     {
+      "company": "HARVEY",
+      "compensation": "$133,500 - $200,300 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=870acb1544ba0eba",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=870acb1544ba0eba",
+      "note": "",
+      "query_labels": [
+        "ai engineer contract"
+      ],
+      "recommendation": "apply_first",
+      "score": 26,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Sr. AI Enablement Engineer"
+    },
+    {
       "company": "Healthcare Retroactive Audits, Inc",
       "compensation": "$98,698 - $118,862 yearly source: direct_data",
       "first_seen_at": "2026-07-13T14:06:28.172158-04:00",
@@ -2846,6 +3476,55 @@
       ],
       "status": "surfaced",
       "title": "Artificial Intelligence Engineer"
+    },
+    {
+      "company": "Honeycomb.io",
+      "compensation": "$183,340 - $206,000 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=c363aab66b7b6017",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=c363aab66b7b6017",
+      "note": "",
+      "query_labels": [
+        "software engineer ai systems"
+      ],
+      "recommendation": "apply_first",
+      "score": 20,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Software Engineer II - LLM Observability"
+    },
+    {
+      "company": "Houseful",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4433167427",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4433167427",
+      "note": "",
+      "query_labels": [
+        "ai engineer contract",
+        "workflow automation contractor"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Engineer (Contract)"
     },
     {
       "company": "HTC Global Services",
@@ -2920,6 +3599,30 @@
       "title": "AI Systems Engineer - 100% Remote"
     },
     {
+      "company": "I8IS INC.",
+      "compensation": "$55 - $60 hourly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=f301f6da7627ad01",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=f301f6da7627ad01",
+      "note": "",
+      "query_labels": [
+        "compliance ai engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 23,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Engineer \u2013 Google Agentic AI (ADK, Agent Development & Deployment"
+    },
+    {
       "company": "ImagineX Consulting",
       "compensation": "",
       "first_seen_at": "2026-06-26T14:48:55.701606-04:00",
@@ -2944,6 +3647,54 @@
       "title": "Senior Python & Agentic AI Engineer"
     },
     {
+      "company": "InApp",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=51de185bf5cf654d",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=51de185bf5cf654d",
+      "note": "",
+      "query_labels": [
+        "compliance ai engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 24,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "AI Technical Lead"
+    },
+    {
+      "company": "Included Health",
+      "compensation": "$159,780 - $238,080 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=d966d7a73e051e48",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=d966d7a73e051e48",
+      "note": "",
+      "query_labels": [
+        "ai solutions engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 24,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Staff AI Solutions Engineer"
+    },
+    {
       "company": "Infosys",
       "compensation": "",
       "first_seen_at": "2026-07-14T10:25:13.536835-04:00",
@@ -2966,6 +3717,30 @@
       ],
       "status": "surfaced",
       "title": "AI/ML Developer"
+    },
+    {
+      "company": "Insight Global",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4443845981",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4443845981",
+      "note": "",
+      "query_labels": [
+        "ai automation consultant"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI Solutions Consultant"
     },
     {
       "company": "Instacart",
@@ -3039,6 +3814,30 @@
       ],
       "status": "surfaced",
       "title": "Senior AI Engineer \u2014 RAG Applications (Azure / Kubernetes) JP053929"
+    },
+    {
+      "company": "JDA TSG",
+      "compensation": "$100,000 - $110,000 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=da1ee63b7f6405be",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=da1ee63b7f6405be",
+      "note": "",
+      "query_labels": [
+        "document intelligence engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 26,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "AI-Powered Business Apps & Automation (Power Platform) Customer Engineer"
     },
     {
       "company": "Jobgether",
@@ -3160,6 +3959,30 @@
       ],
       "status": "surfaced",
       "title": "AI Solutions Engineer (Document Intelligence & Generative AI)"
+    },
+    {
+      "company": "Jobgether",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4443353456",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4443353456",
+      "note": "",
+      "query_labels": [
+        "ai engineer contract"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Senior AI Engineer, Contract To Hire"
     },
     {
       "company": "Jobgether",
@@ -3747,6 +4570,55 @@
       "title": "AI Solutions - Agent Engineer"
     },
     {
+      "company": "Mastronardi Produce",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=0792fd5401905dca",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Livonia, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=0792fd5401905dca",
+      "note": "",
+      "query_labels": [
+        "compliance ai engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 22,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "AI & Automation Analyst"
+    },
+    {
+      "company": "Mastronardi Produce",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=d23fb94d56b86606",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Livonia, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=d23fb94d56b86606",
+      "note": "",
+      "query_labels": [
+        "compliance ai engineer",
+        "llm rag engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 27,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "AI Engineer"
+    },
+    {
       "company": "Mault",
       "compensation": "",
       "first_seen_at": "2026-06-26T14:50:39.772093-04:00",
@@ -4065,6 +4937,30 @@
     {
       "company": "nan",
       "compensation": "",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=80c62548a6630d96",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Detroit, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=80c62548a6630d96",
+      "note": "",
+      "query_labels": [
+        "compliance ai engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 20,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Applied AI Engineer"
+    },
+    {
+      "company": "nan",
+      "compensation": "",
       "first_seen_at": "2026-07-13T14:13:03.847710-04:00",
       "job_url": "https://www.indeed.com/viewjob?jk=88e29879d8018a5d",
       "last_actor": "job_search_runner",
@@ -4160,6 +5056,30 @@
       "title": "AI Solution Engineer"
     },
     {
+      "company": "Northwestern Mutual",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4442776948",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Milwaukee, WI",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4442776948",
+      "note": "",
+      "query_labels": [
+        "compliance automation consultant"
+      ],
+      "recommendation": "review",
+      "score": 10,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Compliance Systems Consultant"
+    },
+    {
       "company": "Now100",
       "compensation": "",
       "first_seen_at": "2026-06-26T14:50:39.772093-04:00",
@@ -4182,6 +5102,103 @@
       ],
       "status": "surfaced",
       "title": "AI Developer"
+    },
+    {
+      "company": "Om Group Inc",
+      "compensation": "$125,000 - $150,000 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=b1dc3a1ea5508eb0",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=b1dc3a1ea5508eb0",
+      "note": "",
+      "query_labels": [
+        "ai engineer contract",
+        "ai solutions engineer contract"
+      ],
+      "recommendation": "apply_first",
+      "score": 30,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "AI Solutions Engineer"
+    },
+    {
+      "company": "Omada Health",
+      "compensation": "$156,000 - $224,300 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=94f84eddf97cd2cd",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=94f84eddf97cd2cd",
+      "note": "",
+      "query_labels": [
+        "software engineer workflow automation"
+      ],
+      "recommendation": "apply_first",
+      "score": 22,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Software Engineer, Data & AI Platform"
+    },
+    {
+      "company": "Omada Health",
+      "compensation": "$156,000 - $224,300 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=0663114dfd06c9eb",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=0663114dfd06c9eb",
+      "note": "",
+      "query_labels": [
+        "software engineer workflow automation"
+      ],
+      "recommendation": "apply_first",
+      "score": 17,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Software Engineer, Data Engineering"
+    },
+    {
+      "company": "OneDigital",
+      "compensation": "$90,000 - $115,000 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=166ff0127056a800",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=166ff0127056a800",
+      "note": "",
+      "query_labels": [
+        "llm rag engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 24,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "AI Builder - Remote"
     },
     {
       "company": "osp labs hiring for us based mnc",
@@ -4497,6 +5514,222 @@
       "title": "AI/LLM Safety Engineer"
     },
     {
+      "company": "Provectus",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=5e6f6690ffab0886",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=5e6f6690ffab0886",
+      "note": "",
+      "query_labels": [
+        "ai engineer contract"
+      ],
+      "recommendation": "apply_first",
+      "score": 22,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Forward Deployed AI Engineer (GenAI, AWS)"
+    },
+    {
+      "company": "Provectus",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=549b6d84346bde29",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=549b6d84346bde29",
+      "note": "",
+      "query_labels": [
+        "ai engineer contract"
+      ],
+      "recommendation": "apply_first",
+      "score": 22,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Forward Deployed AI Engineer (GenAI, AWS)"
+    },
+    {
+      "company": "Provectus",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=24afdf8094fcbe03",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=24afdf8094fcbe03",
+      "note": "",
+      "query_labels": [
+        "ai engineer contract"
+      ],
+      "recommendation": "apply_first",
+      "score": 22,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Forward Deployed AI Engineer (GenAI, AWS)"
+    },
+    {
+      "company": "Provectus",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=20f982c8cf710692",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=20f982c8cf710692",
+      "note": "",
+      "query_labels": [
+        "ai engineer contract"
+      ],
+      "recommendation": "apply_first",
+      "score": 22,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Forward Deployed AI Engineer (GenAI, AWS)"
+    },
+    {
+      "company": "Provectus",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=8ee379c221d450f9",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=8ee379c221d450f9",
+      "note": "",
+      "query_labels": [
+        "ai engineer contract"
+      ],
+      "recommendation": "apply_first",
+      "score": 22,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Forward Deployed AI Engineer (GenAI, AWS)"
+    },
+    {
+      "company": "Provectus",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=7d674fa8df62555e",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=7d674fa8df62555e",
+      "note": "",
+      "query_labels": [
+        "ai engineer contract"
+      ],
+      "recommendation": "apply_first",
+      "score": 22,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Forward Deployed AI Engineer (GenAI, AWS)"
+    },
+    {
+      "company": "Provectus",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=04dd605f7e6b4f24",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=04dd605f7e6b4f24",
+      "note": "",
+      "query_labels": [
+        "ai engineer contract"
+      ],
+      "recommendation": "apply_first",
+      "score": 22,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Forward Deployed AI Engineer (GenAI, AWS)"
+    },
+    {
+      "company": "Provectus",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=274f0a30f871228a",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=274f0a30f871228a",
+      "note": "",
+      "query_labels": [
+        "ai engineer contract"
+      ],
+      "recommendation": "apply_first",
+      "score": 22,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Forward Deployed AI Engineer (GenAI, AWS)"
+    },
+    {
+      "company": "Pyramid Consulting, Inc",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4444471168",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4444471168",
+      "note": "",
+      "query_labels": [
+        "llm engineer contract"
+      ],
+      "recommendation": "apply_first",
+      "score": 20,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Senior Generative AI / LLM Engineer (RAG, Python, SQL)"
+    },
+    {
       "company": "Re:Build Manufacturing",
       "compensation": "",
       "first_seen_at": "2026-06-26T14:50:39.772093-04:00",
@@ -4519,6 +5752,31 @@
       ],
       "status": "surfaced",
       "title": "Automation Engineer IT and Business Systems"
+    },
+    {
+      "company": "Rippling",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=c109cc80608f152e",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=c109cc80608f152e",
+      "note": "",
+      "query_labels": [
+        "llm rag engineer",
+        "software engineer ai systems"
+      ],
+      "recommendation": "apply_first",
+      "score": 33,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Software Engineer .Net/AI Developer"
     },
     {
       "company": "Risepoint",
@@ -4567,6 +5825,30 @@
       ],
       "status": "surfaced",
       "title": "Artificial Intelligence (AI) System Engineer"
+    },
+    {
+      "company": "Rocket",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=b014340ac407769f",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Detroit, MI, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=b014340ac407769f",
+      "note": "",
+      "query_labels": [
+        "llm rag engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 23,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Senior Software Engineer (Agentic AI Applications)"
     },
     {
       "company": "SAFRAN LIMITED",
@@ -4883,6 +6165,30 @@
       "title": "AI Engineer / AI Developer"
     },
     {
+      "company": "Spectrum Software Technology",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=d83b89b1a1d98504",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=d83b89b1a1d98504",
+      "note": "",
+      "query_labels": [
+        "workflow automation contractor"
+      ],
+      "recommendation": "apply_first",
+      "score": 14,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Microsoft Power Platform Developer (Part-Time, 100% Remote)"
+    },
+    {
       "company": "Stellantis",
       "compensation": "",
       "first_seen_at": "2026-06-26T14:48:55.701606-04:00",
@@ -5005,6 +6311,30 @@
       "title": "AI Engineer - Automotive AI Systems"
     },
     {
+      "company": "Stellar Green Solar Solutions",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4440495060",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4440495060",
+      "note": "",
+      "query_labels": [
+        "ai automation consultant"
+      ],
+      "recommendation": "apply_first",
+      "score": 12,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "Business Systems & Automation Consultant"
+    },
+    {
       "company": "Stratus",
       "compensation": "",
       "first_seen_at": "2026-07-13T14:06:28.172158-04:00",
@@ -5124,6 +6454,54 @@
       ],
       "status": "surfaced",
       "title": "Palantir Foundry Developer (Contract - Nashville TN | Remote | Michigan)"
+    },
+    {
+      "company": "Syscort Technologies",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4444499999",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Dubai, Dubai, United Arab Emirates",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4444499999",
+      "note": "",
+      "query_labels": [
+        "ai automation consultant"
+      ],
+      "recommendation": "apply_first",
+      "score": 13,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI & Automation"
+    },
+    {
+      "company": "Syscort Technologies",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4444992080",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Dubai, Dubai, United Arab Emirates",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4444992080",
+      "note": "",
+      "query_labels": [
+        "ai automation consultant"
+      ],
+      "recommendation": "apply_first",
+      "score": 13,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "surfaced",
+      "title": "AI And Automation"
     },
     {
       "company": "Talkiatry",
@@ -5319,6 +6697,30 @@
       "title": "Mid-Level AI Software Test Engineer"
     },
     {
+      "company": "The Phia Group",
+      "compensation": "",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=c9f821eb0bdcab14",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=c9f821eb0bdcab14",
+      "note": "",
+      "query_labels": [
+        "software engineer ai systems"
+      ],
+      "recommendation": "apply_first",
+      "score": 29,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "AI Software Engineer (GenAI/RAG/Azure AI Foundry) - REMOTE"
+    },
+    {
       "company": "Towa Software",
       "compensation": "",
       "first_seen_at": "2026-06-16T11:38:58.387588-04:00",
@@ -5463,6 +6865,30 @@
       ],
       "status": "surfaced",
       "title": "API Workflow Developer (R-00180)"
+    },
+    {
+      "company": "turing",
+      "compensation": "$200 - $300 hourly source: direct_data",
+      "first_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=ecdae3dd4e3593fb",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:56:59.054181-04:00",
+      "last_transaction_id": "tx_20260724_145659_b731cc84",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=ecdae3dd4e3593fb",
+      "note": "",
+      "query_labels": [
+        "software engineer ai systems"
+      ],
+      "recommendation": "apply_first",
+      "score": 20,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Software Engineer"
     },
     {
       "company": "UltraCon Consultoria",
@@ -5754,6 +7180,30 @@
       "title": "AI Solutions Engineer"
     },
     {
+      "company": "World Wide Technology",
+      "compensation": "$117,000 - $146,000 yearly source: direct_data",
+      "first_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=a554996e94433586",
+      "last_actor": "job_search_runner",
+      "last_decision_at": "",
+      "last_seen_at": "2026-07-24T14:46:50.863192-04:00",
+      "last_transaction_id": "tx_20260724_144650_3cea8266",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=a554996e94433586",
+      "note": "",
+      "query_labels": [
+        "ai automation consultant"
+      ],
+      "recommendation": "apply_first",
+      "score": 34,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "surfaced",
+      "title": "Sr. Infrastructure AI Automation Consultant"
+    },
+    {
       "company": "Xinference",
       "compensation": "",
       "first_seen_at": "2026-07-14T11:48:10.430163-04:00",
@@ -5896,12 +7346,26 @@
       "kind": "search_run",
       "timestamp": "2026-07-14T11:48:10.430163-04:00",
       "transaction_id": "tx_20260714_114810_9b0988f0"
+    },
+    {
+      "actor": "job_search_runner",
+      "event_count": 30,
+      "kind": "search_run",
+      "timestamp": "2026-07-24T14:46:50.863192-04:00",
+      "transaction_id": "tx_20260724_144650_3cea8266"
+    },
+    {
+      "actor": "job_search_runner",
+      "event_count": 30,
+      "kind": "search_run",
+      "timestamp": "2026-07-24T14:56:59.054181-04:00",
+      "transaction_id": "tx_20260724_145659_b731cc84"
     }
   ],
   "status_counts": {
     "applied": 0,
     "dismissed": 0,
     "saved": 0,
-    "surfaced": 240
+    "surfaced": 300
   }
 }
