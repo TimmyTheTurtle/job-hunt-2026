@@ -41,6 +41,10 @@ string" to "the output contract." Schema conformance is deterministic. Business 
 invariants over schema-valid outputs are deterministic. The stochastic part of the LLM call
 is inside the contract boundary, not outside it.
 
+Inside the Series 2 frame, this article should be presented as **layer 1 of evaluation-driven
+development**: the deterministic inner loop that survives when a probabilistic system is designed
+with constrained, contract-shaped nodes.
+
 ---
 
 ## The Literature Gap
@@ -192,6 +196,8 @@ applies.
 ## Connection to Other Articles
 
 - **S2-A1 (TDD Doesn't Work):** sets up the three-layer model; this article develops layer 1 fully
+- **S2-A1 (TDD Doesn't Work):** names evaluation-driven development; this article develops its
+  deterministic contract layer fully
 - **S2-A2 (V-Model):** contract testing for constrained nodes is the unit-test layer of the
   V-model adaptation; orchestration invariants are the integration layer
 - **S2-A7 (Token Frugality):** contract testing with TestModel/FunctionModel costs zero tokens

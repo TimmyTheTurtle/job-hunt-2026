@@ -165,6 +165,10 @@ operational thinking.
 
 ## Evals / LLM-as-Judge
 
+- [What is eval-driven development? — Braintrust](https://www.braintrust.dev/articles/eval-driven-development) — S2-A1. *Strong practitioner framing: evals as executable spec and regression oracle for LLM products.*
+- [Should I practice eval-driven development? — Hamel Husain / Shreya Shankar](https://hamel.dev/blog/posts/evals-faq/should-i-practice-eval-driven-development.html) — S2-A1. *Important corrective: start from error analysis and real failures, not imagined evals everywhere.*
+- [Evaluation-driven development with EvalHub — Red Hat](https://developers.redhat.com/articles/2026/06/02/evaluation-driven-development-evalhub) — S2-A1/A4. *Useful enterprise/practitioner articulation of threshold-based evaluation replacing naive pass/fail.*
+- [Evaluation-Driven Development and Operations of LLM Agents (arXiv:2411.13768 / alphaXiv)](https://www.alphaxiv.org/abs/2411.13768v3) — S2-A1/A2/A4. *Process model and reference architecture for embedding evaluation across development and runtime operations.*
 - [LLM as a Judge: guide and best practices — Agenta](https://agenta.ai/blog/llm-as-a-judge-guide-to-llm-evaluation-best-practices) — S2-A1
 - [LLMs-as-Judges: comprehensive survey (ArXiv)](papers/arxiv-2412.05579-llms-as-judges-survey.pdf) — S2-A1
 - [LLM judge cookbook — Hugging Face](https://huggingface.co/learn/cookbook/en/llm_judge) — S2-A1

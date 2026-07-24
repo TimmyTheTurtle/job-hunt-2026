@@ -27,7 +27,28 @@
 
 TDD rests on three assumptions LLM systems violate: determinism (same input always produces
 same output), binary correctness (pass or fail), and fast cheap feedback (seconds, free). The
-replacement methodology is evals. LLM-as-judge is triage, not verification.
+replacement methodology is **evaluation-driven development**: deterministic contract checks where
+the boundary permits them, eval suites where behavior is probabilistic, and human interpretation
+where meaning and acceptance cannot be reduced to a score. LLM-as-judge is triage, not
+verification.
+
+## Eval-Driven Development Frame
+
+The article should name this directly. What replaces classical TDD for non-deterministic LLM
+behavior is not "just evals" in the abstract, but **evaluation-driven development (EDD)**:
+define what good looks like, encode it as runnable checks, and use those checks to drive system
+changes instead of shipping on vibes.
+
+But the article should also sharpen the term:
+
+- **EDD is the dominant methodology for probabilistic behavior**
+- **Contract testing remains valid for constrained nodes**
+- **Human gates remain necessary for acceptance, governance, and business meaning**
+
+That gives the series a cleaner stack:
+- S2-A1: EDD as the replacement for naive TDD at stochastic boundaries
+- S2-A2: V-model / Agile-V as the lifecycle structure around EDD
+- S2-A8: contract testing as the deterministic inner layer inside EDD
 
 ---
 
@@ -116,7 +137,8 @@ is S2-A2 territory.
 
 - TDD's red-green-refactor loop requires deterministic outputs — LLM systems are stochastic
 - "Correctness" for LLM outputs is a distribution over a rubric, not a boolean
-- Evals are the appropriate methodology: aggregate statistics over labeled datasets
+- Evaluation-driven development is the appropriate methodology: deterministic contracts where
+  possible, aggregate evals where behavior is stochastic
 - LLM-as-judge reduces human review volume but cannot verify — same non-determinism problem,
   plus correlation bias
 - You can automate the running of evals; you cannot automate the interpretation
@@ -126,6 +148,8 @@ is S2-A2 territory.
 ## Main Points to Discuss
 
 - The three TDD assumptions and how each fails for LLM systems
+- Eval-driven development as the replacement frame: check first, build against the check,
+  measure regressions before shipping
 - What evals are: structured evaluation runs against curated datasets with human-labeled
   ground truth, producing aggregate statistics
 - A drop from 87% to 79% accuracy is a signal requiring human interpretation — not a failed
@@ -145,6 +169,8 @@ is S2-A2 territory.
 - [LLM judge cookbook — Hugging Face](https://huggingface.co/learn/cookbook/en/llm_judge)
 - [Beyond vibe checks: complete guide to evals — Lenny's Newsletter](https://www.lennysnewsletter.com/p/beyond-vibe-checks-a-pms-complete)
 - [A pragmatic guide to LLM evals — Pragmatic Engineer](https://newsletter.pragmaticengineer.com/p/evals)
+- [What is eval-driven development? — Braintrust](https://www.braintrust.dev/articles/eval-driven-development)
+- [Should I practice eval-driven development? — Hamel Husain / Shreya Shankar](https://hamel.dev/blog/posts/evals-faq/should-i-practice-eval-driven-development.html)
 - [LLM testing frameworks and tools — TestOmat](https://testomat.io/blog/llm-test/)
 - [Beyond Traditional Testing: Non-Deterministic Software — AWS/dev.to](https://dev.to/aws/beyond-traditional-testing-addressing-the-challenges-of-non-deterministic-software-583a)
 - [Testing AI Agents: Validating Non-Deterministic Behavior — SitePoint](https://www.sitepoint.com/testing-ai-agents-deterministic-evaluation-in-a-non-deterministic-world/)

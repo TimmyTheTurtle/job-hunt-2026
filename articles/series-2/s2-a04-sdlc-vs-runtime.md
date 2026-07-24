@@ -32,6 +32,10 @@ runtime (LLMs, orchestration, retrieval, inference infrastructure) must be kept 
 Conflating them produces systems where a deployment pipeline change can affect model behavior
 and vice versa.
 
+This separation becomes sharper in the eval-driven-development frame: the SDLC stack owns the
+definition, execution, and gating of evaluation evidence, while the runtime stack is the thing
+being measured, monitored, and bounded.
+
 This is ADR-012 from legal-tech-debt made into a general principle.
 
 ---
@@ -39,6 +43,8 @@ This is ADR-012 from legal-tech-debt made into a general principle.
 ## Key Claims
 
 - The SDLC stack is deterministic and can be tested with traditional methods
+- The SDLC stack is where eval-driven development is operationalized: datasets, rubrics, CI gates,
+  regression thresholds, and approval rules
 - The agentic runtime is non-deterministic and requires evals and human gates
 - Mixing them means applying the wrong discipline to each
 - The failure modes are different, the change cadences are different, the verification

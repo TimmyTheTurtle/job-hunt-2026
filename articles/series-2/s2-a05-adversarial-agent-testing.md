@@ -16,11 +16,16 @@ loose in a system with hidden infrastructure and constrained interventions, with
 finding what breaks. Chaos engineering applied to AI systems — not killing servers to find
 resilience gaps, but running behaviorally distinct agents to find semantic and behavioral gaps.
 
+In the new Series 2 framing, this article is not outside evaluation-driven development. It is
+the adversarial-discovery wing of it: the way you expand the eval set when fixed datasets stop
+showing you the unknown failure surface.
+
 ---
 
 ## Key Claims
 
 - Static evals and adversarial agent testing are complementary, not competing methodologies
+- Eval-driven development needs an adversarial discovery loop or it calcifies around known cases
 - Behavioral diversity in test agents surfaces failure modes that dataset-based evals miss
 - The human-host/system-records-facts structure maps directly to human gate / evidence bundle
 - Chaos engineering for AI systems requires agents, not just bad inputs

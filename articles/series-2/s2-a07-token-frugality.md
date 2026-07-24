@@ -52,6 +52,8 @@ bolted on later.
   is the most common and least noticed waste pattern
 - Token frugality and context quality are the same discipline from different angles — S1-A6,
   S2-A3, and S2-A4 all arrive at frugality as a consequence; this article names it directly
+- Eval-driven development is also a cost discipline: better contracts, narrower tasks, and
+  targeted regression suites reduce the number of expensive runs needed to gain confidence
 
 ---
 

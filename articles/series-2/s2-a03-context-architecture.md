@@ -32,11 +32,17 @@ operationally. What artifacts exist for the agent to retrieve, how they are stru
 human gates are placed, how context poisoning is prevented across sessions — these are
 first-class engineering decisions.
 
+In the Series 2 frame, this article should also say plainly: context architecture is the
+substrate on which evaluation-driven development runs. If the system cannot retrieve the right
+contracts, rubrics, ADRs, and evidence artifacts at the right time, the eval loop itself becomes
+noisy and untrustworthy.
+
 ---
 
 ## Key Claims
 
 - Context architecture is a discipline, not a metaphor
+- Good eval-driven development depends on retrievable contracts, rubrics, and evidence context
 - It draws from information architecture, knowledge management, and safety-critical documentation
 - What's new is that these disciplines now have direct operational impact on software quality
 - The implicit knowledge senior engineers carry must be materialized as retrievable artifacts

@@ -11,6 +11,11 @@ systems where behavior can't be fully specified before implementation, requireme
 in natural language with interpretive ambiguity, and failure modes require human judgment to
 evaluate. LLM systems share all three properties. This isn't a coincidence. It's structural.
 
+Series 2 should now make one thing explicit: **evaluation-driven development** is the task-level
+development loop for probabilistic behavior, while the V-model / Agile-V is the lifecycle
+structure that tells teams where evaluation evidence belongs, how it rolls up, and where human
+approval gates sit.
+
 But the V-model needs adaptation at two layers that the existing Agile-V literature does not
 fully address: (1) evaluating agent-generated artifacts, where the output can be tested
 deterministically even if the generation was not; and (2) evaluating the agentic system itself
@@ -50,10 +55,13 @@ This is the hard unsolved problem. The article must name it and propose the adap
 
 - The V-model's *structure* — decomposition, hierarchical testing, explicit V&V gates — is
   exactly right for agentic systems; its *acceptance criteria* are wrong
+- Evaluation-driven development supplies the micro-loop; the V-model supplies the macro-lifecycle
 - Verification (building the system right) is partially automatable for agentic systems
   via behavioral invariants + statistical sampling
 - Validation (building the right system) requires human judgment — always, at every risk level
 - Sprint-based TDD workflows don't map onto LLM component development (S2-A1)
+- Eval-driven development does map onto LLM component development, but it needs to be placed
+  inside a larger lifecycle and governance structure
 - The V-model's decomposition-then-integration structure, with explicit V&V gates, does map —
   but only if acceptance criteria shift from expected outputs to behavioral invariants +
   probabilistic confidence bounds
@@ -77,7 +85,7 @@ This is the hard unsolved problem. The article must name it and propose the adap
 - "Mean task completion rate has not dropped by more than 3pp vs. baseline with p < 0.05"
 - Sequential hypothesis testing to determine minimum runs needed (AgentAssay, arXiv:2603.02601)
 
-### Replace unit tests with eval suites at each level
+### Replace naive unit-test thinking with eval-driven evidence at each level
 
 At every level of the V (component, integration, system): run N iterations, produce aggregate
 statistics, interpret against the acceptance distribution — not a single pass/fail result.

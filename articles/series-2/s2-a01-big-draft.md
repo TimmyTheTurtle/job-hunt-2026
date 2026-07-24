@@ -17,6 +17,7 @@ This draft has to do several jobs:
 - make the title-level claim feel earned rather than clicky
 - explain exactly which assumptions classical TDD depends on
 - show why those assumptions break for non-deterministic LLM behavior
+- explicitly name evaluation-driven development as the emerging replacement frame
 - preserve the important nuance that constrained nodes can still support contract testing
 - distinguish evals, invariants, and human review instead of flattening them into one thing
 - set up S2-A2 and S2-A8 without stealing their full territory
@@ -28,6 +29,14 @@ creates false confidence.
 ---
 
 TDD is not a moral ritual. It is a fit-for-purpose method.
+
+And the thing replacing it at stochastic boundaries has a name now, or at least an emerging one:
+**evaluation-driven development**.
+
+That term matters because it clarifies what this article is really reaching for. The answer to
+"what replaces TDD?" is not merely "more testing" or "some eval dashboard." It is a development
+loop where runnable checks for probabilistic behavior drive changes before release, the same way
+tests once drove deterministic code changes.
 
 That is a useful place to start because it makes the whole article less defensive. Too many
 arguments about TDD become identity arguments. People hear "TDD doesn't work here" as "the old
