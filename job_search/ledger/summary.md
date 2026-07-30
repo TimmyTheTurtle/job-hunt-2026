@@ -1,8 +1,8 @@
 # Search Ledger Summary
 
-- Generated: 2026-07-24T14:56:59.058753-04:00
-- Total tracked jobs: 300
-- Surfaced: 300
+- Generated: 2026-07-30T11:48:45.267176-04:00
+- Total tracked jobs: 360
+- Surfaced: 360
 - Saved: 0
 - Applied: 0
 - Dismissed: 0
@@ -225,6 +225,16 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-07-13T14:13:03.847710-04:00
 - Posting URL: https://www.linkedin.com/jobs/view/4428901891
 
+### Aledade - Senior Software Engineer II - Ingestion AI Engineer
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 18
+- Sites: indeed
+- Query labels: software engineer ai systems
+- First seen: 2026-07-30T11:46:08.776785-04:00
+- Last seen: 2026-07-30T11:46:08.776785-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=d57b1e30b0790fac
+
 ### ALGOMINE - AI Engineer
 - Last recommendation: review
 - Last score: 8
@@ -370,6 +380,16 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-06-26T14:50:39.772093-04:00
 - Posting URL: https://www.linkedin.com/jobs/view/4428297661
 
+### Apex Systems - AI Engineer
+- Location: Dearborn, MI
+- Last recommendation: review
+- Last score: 8
+- Sites: linkedin
+- Query labels: document intelligence contractor, llm engineer contract, rag engineer contract
+- First seen: 2026-07-30T11:48:45.256828-04:00
+- Last seen: 2026-07-30T11:48:45.256828-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4445242770
+
 ### Aquent - AI Software Developer [211339]
 - Location: Ann Arbor, MI
 - Last recommendation: apply_first
@@ -390,39 +410,20 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-07-14T10:25:13.536835-04:00
 - Posting URL: https://www.linkedin.com/jobs/view/4435274370
 
-### ASG - ASG - AI Systems Engineer
-- Location: San Francisco, CA
-- Last recommendation: review
-- Last score: 11
-- Sites: linkedin
-- Query labels: ai systems engineer
-- First seen: 2026-07-13T14:13:03.847710-04:00
-- Last seen: 2026-07-13T14:13:03.847710-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4436436320
-
-### ASHC, Inc. - Contract Senior Healthcare Software Development Consultant
+### ARANGO - Developer Relations
 - Location: Remote, US
 - Last recommendation: apply_first
-- Last score: 25
+- Last score: 21
 - Sites: indeed
-- Query labels: ai workflow automation engineer, llm rag engineer, software engineer workflow automation
-- First seen: 2026-06-16T11:38:58.387588-04:00
-- Last seen: 2026-06-16T11:38:58.387588-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=eccaa11cc264bb84
-
-### ATX Defense - 1099 FedRAMP Consultant
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 14
-- Compensation: $125 - $160 hourly source: direct_data
-- Sites: indeed
-- Query labels: compliance automation consultant
-- First seen: 2026-06-26T14:50:39.772093-04:00
-- Last seen: 2026-06-26T14:50:39.772093-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=94a1577c8c4f5f86
+- Query labels: llm rag engineer
+- First seen: 2026-07-30T11:46:08.776785-04:00
+- Last seen: 2026-07-30T11:46:08.776785-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=27807e5f3e090491
 
 ## Recent Transactions
 
+- `2026-07-30T11:48:45.256828-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260730_114845_4510f39f]
+- `2026-07-30T11:46:08.776785-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260730_114608_086fa3a6]
 - `2026-07-24T14:56:59.054181-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260724_145659_b731cc84]
 - `2026-07-24T14:46:50.863192-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260724_144650_3cea8266]
 - `2026-07-14T11:48:10.430163-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260714_114810_9b0988f0]
@@ -431,5 +432,3 @@ Source of truth: `transactions.jsonl`
 - `2026-07-13T14:06:28.172158-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260713_140628_c83a0f92]
 - `2026-06-25T00:00:00Z` `` by `chat_update`: 0 event(s) []
 - `2026-06-18T00:00:00Z` `` by `chat_update`: 0 event(s) []
-- `2026-06-26T14:50:39.772093-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260626_145039_2163f5bb]
-- `2026-06-26T14:48:55.701606-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260626_144855_136f0ab4]
