@@ -13,6 +13,9 @@
 | 2026-07-22 | ZipRecruiter | Resume and Profile Update | - | - | - | applied_ai_systems_v1 | - | - | - |
 | 2026-07-23 | Dice | Resume and Profile Update | - | - | - | applied_ai_systems_v1 | - | - | - |
 | 2026-07-23 | Cybercoders | Resume and Profile Update | - | - | - | applied_ai_systems_v1 | - | - | - |
+| 2026-07-27 | Pluralsight | GenAI Data and Knowledge Layer | - | - | - | applied_ai_systems_v1 | - | https://app.pluralsight.com/learner/user/courses/v2/ad7c07c4-15a3-4d66-854b-77b1ba9d9cd0/certificate | - |
+| 2026-07-30 | Pluralsight | GenAI Retrieval and Memory Patterns | - | - | - | applied_ai_systems_v1 | - | https://app.pluralsight.com/learner/user/courses/v2/d7a8765f-0451-4c86-9c11-be3936e5837d/certificate | - |
+| 2026-07-30 | Provectus | Senior Forward Deployed AI Engineer (GenAI, AWS) | A | 6 | 8 | applied_ai_systems_v1 | Applied | Remote; OTE displayed $150k–$180k; preferred OTE $150k / base $120k; Indeed SmartApply. **Address:** 447 Sutter Street, Suite 405, San Francisco, CA 94108 | - |
 
 ## Status Legend
 - Drafting

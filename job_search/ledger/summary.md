@@ -1,10 +1,10 @@
 # Search Ledger Summary
 
-- Generated: 2026-07-30T11:48:45.267176-04:00
+- Generated: 2026-07-30T12:59:43.187321-04:00
 - Total tracked jobs: 360
-- Surfaced: 360
+- Surfaced: 359
 - Saved: 0
-- Applied: 0
+- Applied: 1
 - Dismissed: 0
 
 Source of truth: `transactions.jsonl`
@@ -420,8 +420,24 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-07-30T11:46:08.776785-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=27807e5f3e090491
 
+## Applied Jobs
+
+### Provectus - Senior Forward Deployed AI Engineer (GenAI, AWS)
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 26
+- Compensation: $120,000 - $180,000 yearly source: direct_data
+- Sites: indeed
+- Query labels: ai engineer contract
+- Note: Applied to Provectus — Senior Forward Deployed AI Engineer (GenAI, AWS) via Indeed SmartApply on 2026-07-30.
+- First seen: 2026-07-30T11:48:45.256828-04:00
+- Last seen: 2026-07-30T11:48:45.256828-04:00
+- Last decision: 2026-07-30T12:59:43.175759-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=59d1f10b08a4a244
+
 ## Recent Transactions
 
+- `2026-07-30T12:59:43.175759-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260730_125943_7e1e525c]
 - `2026-07-30T11:48:45.256828-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260730_114845_4510f39f]
 - `2026-07-30T11:46:08.776785-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260730_114608_086fa3a6]
 - `2026-07-24T14:56:59.054181-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260724_145659_b731cc84]
@@ -431,4 +447,3 @@ Source of truth: `transactions.jsonl`
 - `2026-07-13T14:13:03.847710-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260713_141303_07e57e4f]
 - `2026-07-13T14:06:28.172158-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260713_140628_c83a0f92]
 - `2026-06-25T00:00:00Z` `` by `chat_update`: 0 event(s) []
-- `2026-06-18T00:00:00Z` `` by `chat_update`: 0 event(s) []
