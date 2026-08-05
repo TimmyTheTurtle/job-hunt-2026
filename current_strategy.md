@@ -88,12 +88,16 @@ This project supports the claim that Dorian is building toward AI-assisted docum
 
 ## Role Taxonomy
 
+Forward-deployed AI engineering is a destination lane, not the exclusive present-tense target. The search should keep it as a smaller current/stretch or future/stretch family while prioritizing attainable applied-AI application, implementation, integration, document-intelligence, workflow-automation, and adjacent systems roles that build the proof needed for forward-deployed work.
+
 ### A - Target
 
 High-signal roles that directly build the new identity.
 
 Examples:
 - Applied AI Systems Engineer
+- Applied AI Engineer / AI Application Engineer
+- AI Implementation Engineer / AI Integration Engineer
 - AI Solutions Engineer
 - LLM / RAG Systems Engineer
 - Document Intelligence Engineer
@@ -101,7 +105,7 @@ Examples:
 - Software Engineer, AI Systems
 - AI Engineer for legal, insurance, compliance, or document-heavy workflows
 - AI Governance / Controls Engineer, when implementation-heavy
-- Forward Deployed AI Engineer, when the work includes real engineering in real workflows
+- Forward Deployed AI Engineer, as a current/stretch or future/stretch target when the work includes real engineering in real workflows
 
 ### B - Strong Adjacent
 

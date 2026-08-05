@@ -1,5 +1,5 @@
 {
-  "profile_name": "applied_ai_systems_v1",
+  "profile_name": "applied_ai_systems_v1_previous_default",
   "default_sites": [
     "linkedin",
     "indeed",
@@ -7,7 +7,6 @@
     "cybercoders"
   ],
   "country_indeed": "USA",
-  "job_type": "fulltime",
   "hours_old": 336,
   "results_wanted_per_query": 12,
   "max_report_items": 30,
@@ -34,51 +33,15 @@
     },
     {
       "tier": "A",
-      "label": "applied ai engineer",
-      "search_term": "\"applied AI engineer\"",
-      "google_search_term_template": "applied AI engineer document workflow LLM jobs {google_location_phrase}"
-    },
-    {
-      "tier": "A",
       "label": "ai systems engineer",
       "search_term": "\"ai systems engineer\"",
       "google_search_term_template": "AI systems engineer LLM RAG jobs {google_location_phrase}"
     },
     {
       "tier": "A",
-      "label": "ai application engineer",
-      "search_term": "\"AI application engineer\"",
-      "google_search_term_template": "AI application engineer LLM workflow jobs {google_location_phrase}"
-    },
-    {
-      "tier": "A",
-      "label": "ai implementation engineer",
-      "search_term": "\"AI implementation engineer\"",
-      "google_search_term_template": "AI implementation engineer AI systems integration jobs {google_location_phrase}"
-    },
-    {
-      "tier": "A",
-      "label": "ai integration engineer",
-      "search_term": "\"AI integration engineer\"",
-      "google_search_term_template": "AI integration engineer LLM workflow integration jobs {google_location_phrase}"
-    },
-    {
-      "tier": "A",
       "label": "ai solutions engineer",
       "search_term": "\"AI solutions engineer\"",
       "google_search_term_template": "AI solutions engineer LLM workflow automation jobs {google_location_phrase}"
-    },
-    {
-      "tier": "B",
-      "label": "agentic ai engineer",
-      "search_term": "\"agentic AI\" engineer",
-      "google_search_term_template": "agentic AI engineer production workflow applications {google_location_phrase}"
-    },
-    {
-      "tier": "B",
-      "label": "forward deployed ai engineer",
-      "search_term": "\"forward deployed\" \"AI engineer\"",
-      "google_search_term_template": "forward deployed AI engineer customer implementation jobs {google_location_phrase}"
     },
     {
       "tier": "A",
@@ -111,7 +74,7 @@
       "google_search_term_template": "compliance AI engineer automation jobs {google_location_phrase}"
     },
     {
-      "tier": "B",
+      "tier": "A",
       "label": "software engineer ai systems",
       "search_term": "\"software engineer\" \"AI systems\"",
       "google_search_term_template": "software engineer AI systems LLM jobs {google_location_phrase}"

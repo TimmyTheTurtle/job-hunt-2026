@@ -374,9 +374,13 @@ Use phrases like:
 
 ## Career target hierarchy
 
+Forward-deployed AI engineering is the intended destination, not the only present-tense target. Keep it in the search as a smaller current/stretch or future/stretch family while building toward it through attainable applied-AI application, implementation, integration, document-intelligence, workflow-automation, and adjacent systems roles.
+
 ### Tier 1: strong alignment roles
 
 - Applied AI Systems Engineer
+- Applied AI Engineer / AI Application Engineer
+- AI Implementation Engineer / AI Integration Engineer
 - AI Solutions Engineer, when the role includes real software delivery
 - LLM / RAG Systems Engineer
 - Document Intelligence Engineer
@@ -384,12 +388,13 @@ Use phrases like:
 - Software Engineer, AI Systems
 - AI Engineer for legal, insurance, compliance, or document-heavy workflows
 - AI Governance / Controls Engineer, when the role is implementation/control-system oriented rather than policy-only
-- Forward Deployed AI Engineer / AI Automation Engineer, when the work involves building bounded systems in real workflows
+- Forward Deployed AI Engineer / AI Automation Engineer, as a current/stretch or future/stretch target when the work involves building bounded systems in real workflows
 
 ### Tier 2: pragmatic but useful roles
 
 - Software Engineer (general but technical, especially C#/.NET, workflow, SaaS, integrations, or platform)
 - Solutions Engineer / Implementation Engineer
+- Technical Integration Engineer with real software delivery
 - Technical Consultant
 - Applied Data / Reporting Engineer in compliance or operations contexts
 - Business systems developer

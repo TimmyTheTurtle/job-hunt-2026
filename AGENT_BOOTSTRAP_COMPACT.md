@@ -125,6 +125,7 @@ role_tiers:
 - Tier 1: applied AI systems, LLM/RAG, document intelligence, AI workflow automation, compliance/legal/insurance AI engineering
 - Tier 2: pragmatic software, C#/.NET/SaaS, solutions, consulting, internal tools, applied reporting, systems/simulation roles with strong technical depth
 - Tier 3: temporary stabilization roles only if needed for runway/UI compliance
+- forward_deployed_balance: forward-deployed AI engineering is the destination/current-stretch lane, not the exclusive current target; keep present searches broad across applied AI application, implementation, integration, document intelligence, workflow automation, and adjacent systems roles
 
 cover_letter_rules:
 - specific

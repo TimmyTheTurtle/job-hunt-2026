@@ -1,10 +1,10 @@
 # Search Ledger Summary
 
-- Generated: 2026-07-30T12:59:43.187321-04:00
-- Total tracked jobs: 360
-- Surfaced: 359
+- Generated: 2026-08-05T17:11:40.859547-04:00
+- Total tracked jobs: 420
+- Surfaced: 418
 - Saved: 0
-- Applied: 1
+- Applied: 2
 - Dismissed: 0
 
 Source of truth: `transactions.jsonl`
@@ -114,6 +114,17 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-07-13T14:13:03.847710-04:00
 - Posting URL: https://www.linkedin.com/jobs/view/4437959260
 
+### Accenture - Sr. Applied AI Engineer (Claude/Codex)
+- Location: Detroit, MI, US
+- Last recommendation: apply_first
+- Last score: 29
+- Compensation: $87,400 - $293,800 yearly source: direct_data
+- Sites: indeed
+- Query labels: applied ai engineer
+- First seen: 2026-08-05T16:48:15.048694-04:00
+- Last seen: 2026-08-05T16:48:15.048694-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=aa9bd360d6f47fdf
+
 ### Ace Recovery Group - Software Developer / Automation Engineer (Full-Time, In-Office)
 - Location: Fort Lauderdale, FL
 - Last recommendation: review
@@ -216,6 +227,17 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-07-13T14:13:03.847710-04:00
 - Posting URL: https://www.linkedin.com/jobs/view/4434322693
 
+### Ahead - ServiceNow Principal Technical Consultant - AI
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 28
+- Compensation: $180,000 - $200,000 yearly source: direct_data
+- Sites: indeed
+- Query labels: ai automation consultant
+- First seen: 2026-08-05T16:52:03.554836-04:00
+- Last seen: 2026-08-05T16:52:03.554836-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=687f017d57400f32
+
 ### AI Acquisition - AI Systems Engineer - Forward-Deployed Builder
 - Last recommendation: review
 - Last score: 11
@@ -275,6 +297,15 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-06-26T14:48:55.701606-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=50d2ba05ea2b7777
 
+### Allolancer - Premium AI Engineer (Remote - EU Only | Solo Business Required)
+- Last recommendation: review
+- Last score: 10
+- Sites: linkedin
+- Query labels: ai engineer contract
+- First seen: 2026-08-05T16:52:03.554836-04:00
+- Last seen: 2026-08-05T16:52:03.554836-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4449628406
+
 ### Allstate Insurance - AI Product Engineer (Copilot & Power Platform) (Remote - US)
 - Location: Remote, US
 - Last recommendation: apply_first
@@ -328,6 +359,16 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-07-13T14:06:28.172158-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=ed9c173d869faa67
 
+### Altimetrik Corp - Google Cloud AI Engineer
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 24
+- Sites: indeed
+- Query labels: compliance ai engineer
+- First seen: 2026-08-05T16:48:15.048694-04:00
+- Last seen: 2026-08-05T16:48:15.048694-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=c0924bc8b8d044fd
+
 ### AMD - Forward Deployed AI Engineer
 - Location: Santa Clara, CA
 - Last recommendation: review
@@ -348,6 +389,17 @@ Source of truth: `transactions.jsonl`
 - First seen: 2026-06-16T13:45:37.745982-04:00
 - Last seen: 2026-06-16T13:45:37.745982-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=8eb52795b3e4a218
+
+### Amgen - Senior Machine Learning Engineer, AI Studio
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 28
+- Compensation: $156,190 - $211,315 yearly source: direct_data
+- Sites: indeed
+- Query labels: ai workflow automation engineer
+- First seen: 2026-08-05T16:48:15.048694-04:00
+- Last seen: 2026-08-05T16:48:15.048694-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=5b420dddcd16bc5e
 
 ### Ampstek - Generative AI Engineer
 - Location: County Dublin, Ireland
@@ -370,57 +422,20 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-07-24T14:56:59.054181-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=8fda396b569e01bb
 
-### Anagh Technologies Inc - Generative AI Engineer
-- Location: Jersey City, NJ
-- Last recommendation: review
-- Last score: 11
-- Sites: linkedin
-- Query labels: rag engineer contract
-- First seen: 2026-06-26T14:50:39.772093-04:00
-- Last seen: 2026-06-26T14:50:39.772093-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4428297661
+## Applied Jobs
 
-### Apex Systems - AI Engineer
-- Location: Dearborn, MI
-- Last recommendation: review
-- Last score: 8
-- Sites: linkedin
-- Query labels: document intelligence contractor, llm engineer contract, rag engineer contract
-- First seen: 2026-07-30T11:48:45.256828-04:00
-- Last seen: 2026-07-30T11:48:45.256828-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4445242770
-
-### Aquent - AI Software Developer [211339]
-- Location: Ann Arbor, MI
-- Last recommendation: apply_first
-- Last score: 12
-- Sites: linkedin
-- Query labels: rag engineer contract
-- First seen: 2026-07-24T14:46:50.863192-04:00
-- Last seen: 2026-07-24T14:46:50.863192-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4438416069
-
-### ARA - Senior AI Systems Engineer
-- Location: Raleigh, NC
-- Last recommendation: review
-- Last score: 9
-- Sites: linkedin
-- Query labels: ai systems engineer
-- First seen: 2026-07-14T10:25:13.536835-04:00
-- Last seen: 2026-07-14T10:25:13.536835-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4435274370
-
-### ARANGO - Developer Relations
+### BV Teck / Bright Vision Technologies - Applied AI Engineer
 - Location: Remote, US
 - Last recommendation: apply_first
-- Last score: 21
+- Last score: 38
+- Compensation: $130,000 - $180,000 yearly
 - Sites: indeed
-- Query labels: llm rag engineer
-- First seen: 2026-07-30T11:46:08.776785-04:00
-- Last seen: 2026-07-30T11:46:08.776785-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=27807e5f3e090491
-
-## Applied Jobs
+- Query labels: applied ai engineer, compliance ai engineer, llm rag engineer, software engineer ai systems
+- Note: Correction: applied via Bright Vision Technologies company application page on 2026-08-05; confirmation reference Za3DGk4YbE; no cover letter requested.
+- First seen: 2026-08-05T16:48:15.048694-04:00
+- Last seen: 2026-08-05T16:48:15.048694-04:00
+- Last decision: 2026-08-05T17:11:40.842744-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=26738974b8469a72
 
 ### Provectus - Senior Forward Deployed AI Engineer (GenAI, AWS)
 - Location: Remote, US
@@ -437,13 +452,13 @@ Source of truth: `transactions.jsonl`
 
 ## Recent Transactions
 
+- `2026-08-05T17:11:40.842744-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260805_171140_d612e752]
+- `2026-08-05T17:11:31.074860-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260805_171131_03e2ea15]
+- `2026-08-05T16:52:03.554836-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260805_165203_bcc9ac4f]
+- `2026-08-05T16:48:15.048694-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260805_164815_e22604e3]
 - `2026-07-30T12:59:43.175759-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260730_125943_7e1e525c]
 - `2026-07-30T11:48:45.256828-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260730_114845_4510f39f]
 - `2026-07-30T11:46:08.776785-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260730_114608_086fa3a6]
 - `2026-07-24T14:56:59.054181-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260724_145659_b731cc84]
 - `2026-07-24T14:46:50.863192-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260724_144650_3cea8266]
 - `2026-07-14T11:48:10.430163-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260714_114810_9b0988f0]
-- `2026-07-14T10:25:13.536835-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260714_102513_f733ad9c]
-- `2026-07-13T14:13:03.847710-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260713_141303_07e57e4f]
-- `2026-07-13T14:06:28.172158-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260713_140628_c83a0f92]
-- `2026-06-25T00:00:00Z` `` by `chat_update`: 0 event(s) []

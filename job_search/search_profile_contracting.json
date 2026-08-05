@@ -33,9 +33,27 @@
     },
     {
       "tier": "A",
+      "label": "applied ai engineer contract",
+      "search_term": "\"applied AI engineer\" contract",
+      "google_search_term_template": "applied AI engineer contract document workflow jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
+      "label": "ai application engineer contract",
+      "search_term": "\"AI application engineer\" contract",
+      "google_search_term_template": "AI application engineer contract LLM workflow jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
       "label": "llm engineer contract",
       "search_term": "\"LLM engineer\" contract",
       "google_search_term_template": "LLM engineer contract RAG jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
+      "label": "llm application engineer contract",
+      "search_term": "\"LLM application engineer\" contract",
+      "google_search_term_template": "LLM application engineer contract production AI jobs {google_location_phrase}"
     },
     {
       "tier": "A",
@@ -45,9 +63,21 @@
     },
     {
       "tier": "A",
+      "label": "ai integration engineer contract",
+      "search_term": "\"AI integration engineer\" contract",
+      "google_search_term_template": "AI integration engineer contract LLM workflow jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
       "label": "ai automation consultant",
       "search_term": "\"AI automation\" consultant",
       "google_search_term_template": "AI automation consultant workflow jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
+      "label": "ai implementation consultant",
+      "search_term": "\"AI implementation\" consultant",
+      "google_search_term_template": "AI implementation consultant applied AI workflow jobs {google_location_phrase}"
     },
     {
       "tier": "A",
@@ -60,6 +90,24 @@
       "label": "document intelligence contractor",
       "search_term": "\"document intelligence\" contractor",
       "google_search_term_template": "document intelligence contractor AI jobs {google_location_phrase}"
+    },
+    {
+      "tier": "A",
+      "label": "document automation consultant",
+      "search_term": "\"document automation\" consultant",
+      "google_search_term_template": "document automation consultant AI contract jobs {google_location_phrase}"
+    },
+    {
+      "tier": "B",
+      "label": "agentic ai engineer contract",
+      "search_term": "\"agentic AI engineer\" contract",
+      "google_search_term_template": "agentic AI engineer contract workflow applications {google_location_phrase}"
+    },
+    {
+      "tier": "B",
+      "label": "forward deployed ai engineer contract",
+      "search_term": "\"forward deployed\" \"AI engineer\" contract",
+      "google_search_term_template": "forward deployed AI engineer contract customer implementation {google_location_phrase}"
     },
     {
       "tier": "B",

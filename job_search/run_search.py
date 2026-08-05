@@ -43,6 +43,12 @@ CYBERCODERS_BUSINESS_UNIT = "1"
 
 POSITIVE_TITLE_PATTERNS = [
     (re.compile(r"\bai\b|\bartificial intelligence\b"), 4, "ai"),
+    (re.compile(r"\bforward[ -]?deployed\b"), 4, "forward deployed"),
+    (re.compile(r"\bapplication engineer\b"), 3, "application engineering"),
+    (re.compile(r"\bimplementation\b|\bintegration\b"), 3, "implementation/integration"),
+    (re.compile(r"\bagentic\b"), 3, "agentic"),
+    (re.compile(r"\bevals?\b|\bevaluation\b"), 2, "evaluation"),
+    (re.compile(r"\bdocument automation\b"), 3, "document automation"),
     (re.compile(r"\bllm\b|\blarge language model"), 4, "llm"),
     (re.compile(r"\brag\b|\bretrieval[ -]?augmented\b"), 4, "rag"),
     (re.compile(r"\bdocument intelligence\b"), 4, "document intelligence"),
@@ -69,6 +75,11 @@ POSITIVE_TITLE_PATTERNS = [
 
 POSITIVE_TEXT_PATTERNS = [
     (re.compile(r"\bllm\b|\blarge language model|\bgenerative ai\b|\bgenai\b"), 3, "llm"),
+    (re.compile(r"\bforward[ -]?deployed\b"), 3, "forward deployed"),
+    (re.compile(r"\bimplementation\b|\bintegration\b"), 2, "implementation/integration"),
+    (re.compile(r"\bagentic\b"), 2, "agentic"),
+    (re.compile(r"\bevals?\b|\bevaluation\b"), 3, "evals"),
+    (re.compile(r"\bdocument automation\b"), 3, "document automation"),
     (re.compile(r"\brag\b|\bretrieval[ -]?augmented\b|\bvector search\b|\bsemantic search\b"), 3, "rag"),
     (re.compile(r"\bdocument intelligence\b|\bdocument automation\b|\bdocument processing\b"), 3, "document intelligence"),
     (re.compile(r"\bcontract(?:or)?\b|\bcontract[ -]?to[ -]?hire\b|\b1099\b|\bc2c\b|\bw2\b"), 2, "contract"),
@@ -109,6 +120,10 @@ HARD_REJECT_TITLE_PATTERNS = [
     re.compile(r"\bfull[ -]?stack\b"),
     re.compile(r"\blow[- ]code\b"),
     re.compile(r"\bdesigner\b"),
+    re.compile(r"\btechnical writer\b"),
+    re.compile(r"\bcontent\b"),
+    re.compile(r"\btrainer\b"),
+    re.compile(r"\bannotation\b"),
     re.compile(r"\bverification\b"),
     re.compile(r"\bmanufacturing\b"),
     re.compile(r"\bmechanical\b"),

@@ -18,6 +18,8 @@ For test runs that should not mutate the ledger:
 
 Target AI engineering contracts in legal, compliance, insurance, regulatory, audit, and document-heavy domains.
 
+Forward-deployed AI engineering is a destination/current-stretch lane, not the only contract target. Also search for attainable applied-AI application, implementation, integration, document-automation, workflow-automation, and systems-integration work that builds the evidence needed for forward-deployed delivery.
+
 Lead with:
 
 > I build AI pipelines that turn unstructured legal and compliance documents into structured findings: automated detection, LLM-assisted triage, and human-readable reports, using systems engineering discipline throughout.
