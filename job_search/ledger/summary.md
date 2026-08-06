@@ -1,10 +1,10 @@
 # Search Ledger Summary
 
-- Generated: 2026-08-05T17:11:40.859547-04:00
+- Generated: 2026-08-06T18:33:17.698728-04:00
 - Total tracked jobs: 420
-- Surfaced: 418
+- Surfaced: 417
 - Saved: 0
-- Applied: 2
+- Applied: 3
 - Dismissed: 0
 
 Source of truth: `transactions.jsonl`
@@ -437,6 +437,19 @@ Source of truth: `transactions.jsonl`
 - Last decision: 2026-08-05T17:11:40.842744-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=26738974b8469a72
 
+### International Telecommunication Union (ITU) - Roster - Internal AI Strategy, Automation and Agentic AI Enablement Consultant
+- Location: Remote / Home Based
+- Last recommendation: apply_first
+- Last score: 13
+- Compensation: $280-$650 per working day
+- Sites: linkedin
+- Query labels: ai automation consultant
+- Note: Applied on 2026-08-06; official vacancy 2379; consultant term 3 months with possible 3-month extension.
+- First seen: 2026-07-30T11:48:45.256828-04:00
+- Last seen: 2026-07-30T11:48:45.256828-04:00
+- Last decision: 2026-08-06T18:33:17.681805-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4444879298
+
 ### Provectus - Senior Forward Deployed AI Engineer (GenAI, AWS)
 - Location: Remote, US
 - Last recommendation: apply_first
@@ -452,6 +465,7 @@ Source of truth: `transactions.jsonl`
 
 ## Recent Transactions
 
+- `2026-08-06T18:33:17.681805-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260806_183317_3937d9e3]
 - `2026-08-05T17:11:40.842744-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260805_171140_d612e752]
 - `2026-08-05T17:11:31.074860-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260805_171131_03e2ea15]
 - `2026-08-05T16:52:03.554836-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260805_165203_bcc9ac4f]
@@ -461,4 +475,3 @@ Source of truth: `transactions.jsonl`
 - `2026-07-30T11:46:08.776785-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260730_114608_086fa3a6]
 - `2026-07-24T14:56:59.054181-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260724_145659_b731cc84]
 - `2026-07-24T14:46:50.863192-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260724_144650_3cea8266]
-- `2026-07-14T11:48:10.430163-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260714_114810_9b0988f0]

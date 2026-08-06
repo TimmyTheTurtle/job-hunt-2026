@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T17:11:40.859547-04:00",
+  "generated_at": "2026-08-06T18:33:17.698728-04:00",
   "job_count": 420,
   "jobs": [
     {
@@ -5400,30 +5400,6 @@
       "title": "AI Solutions Engineer"
     },
     {
-      "company": "International Telecommunication Union",
-      "compensation": "",
-      "first_seen_at": "2026-07-30T11:48:45.256828-04:00",
-      "job_url": "https://www.linkedin.com/jobs/view/4444879298",
-      "last_actor": "job_search_runner",
-      "last_decision_at": "",
-      "last_seen_at": "2026-07-30T11:48:45.256828-04:00",
-      "last_transaction_id": "tx_20260730_114845_4510f39f",
-      "location": "",
-      "normalized_url": "https://www.linkedin.com/jobs/view/4444879298",
-      "note": "",
-      "query_labels": [
-        "ai automation consultant"
-      ],
-      "recommendation": "apply_first",
-      "score": 13,
-      "seen_count": 1,
-      "sites": [
-        "linkedin"
-      ],
-      "status": "surfaced",
-      "title": "Roster - Internal AI Strategy, Automation and Agentic AI Enablement Consultant"
-    },
-    {
       "company": "ISACA",
       "compensation": "$98,679 - $148,020 yearly source: direct_data",
       "first_seen_at": "2026-08-05T16:48:15.048694-04:00",
@@ -10173,6 +10149,30 @@
       "title": "Applied AI Engineer"
     },
     {
+      "company": "International Telecommunication Union (ITU)",
+      "compensation": "$280-$650 per working day",
+      "first_seen_at": "2026-07-30T11:48:45.256828-04:00",
+      "job_url": "https://www.linkedin.com/jobs/view/4444879298",
+      "last_actor": "chat_update",
+      "last_decision_at": "2026-08-06T18:33:17.681805-04:00",
+      "last_seen_at": "2026-07-30T11:48:45.256828-04:00",
+      "last_transaction_id": "tx_20260806_183317_3937d9e3",
+      "location": "Remote / Home Based",
+      "normalized_url": "https://www.linkedin.com/jobs/view/4444879298",
+      "note": "Applied on 2026-08-06; official vacancy 2379; consultant term 3 months with possible 3-month extension.",
+      "query_labels": [
+        "ai automation consultant"
+      ],
+      "recommendation": "apply_first",
+      "score": 13,
+      "seen_count": 1,
+      "sites": [
+        "linkedin"
+      ],
+      "status": "applied",
+      "title": "Roster - Internal AI Strategy, Automation and Agentic AI Enablement Consultant"
+    },
+    {
       "company": "Provectus",
       "compensation": "$120,000 - $180,000 yearly source: direct_data",
       "first_seen_at": "2026-07-30T11:48:45.256828-04:00",
@@ -10330,12 +10330,19 @@
       "kind": "decision_update",
       "timestamp": "2026-08-05T17:11:40.842744-04:00",
       "transaction_id": "tx_20260805_171140_d612e752"
+    },
+    {
+      "actor": "chat_update",
+      "event_count": 1,
+      "kind": "decision_update",
+      "timestamp": "2026-08-06T18:33:17.681805-04:00",
+      "transaction_id": "tx_20260806_183317_3937d9e3"
     }
   ],
   "status_counts": {
-    "applied": 2,
+    "applied": 3,
     "dismissed": 0,
     "saved": 0,
-    "surfaced": 418
+    "surfaced": 417
   }
 }
