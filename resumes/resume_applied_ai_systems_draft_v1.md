@@ -12,7 +12,9 @@ I build systems that turn messy domain material into structured, reviewable evid
 ## Core Strengths
 
 - Applied AI systems: document intelligence, retrieval/RAG patterns, LLM-assisted triage, evidence artifacts, human-in-loop review, traceable AI workflow boundaries
+- AI and document tooling: Python, Docling, OpenAI API, Anthropic API, OpenAI embeddings (`text-embedding-3-small`, `text-embedding-3-large`), Kuzu, exact/BM25 retrieval, graph-expanded retrieval
 - Software engineering: C#, .NET, ASP.NET MVC/Core, REST APIs, SQL, Entity Framework, JavaScript, HTML/CSS, object-oriented design
+- Systems and portfolio tooling: C++23, CMake, Direct3D 12, HLSL, Dear ImGui, Catch2, xUnit, SQLite, webhook delivery and retry workflows
 - Workflow and integration: CPQ/configuration logic, pricing and validation systems, OAuth 2.0, webhooks, CRM/e-commerce integration, deployment workflows
 - Data and operations: transactional data modeling, derived-state reconstruction, reporting automation, provenance, auditability, structured troubleshooting
 - Platforms: Azure Web Apps, IIS/Windows Server, AWS VMs/S3, Windows, Linux
