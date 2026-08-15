@@ -2,25 +2,25 @@
 
 Question: should the Applied AI Systems Engineer search look anywhere beyond the current runner?
 
-Short answer: yes. Keep LinkedIn, Indeed, Google Jobs, and CyberCoders, but add a manual/secondary source layer focused on direct ATS pages, startup boards, and domain-company watchlists.
+Short answer: yes. Keep LinkedIn, Indeed, Google Jobs, CyberCoders, and (as of 2026-08-15) ZipRecruiter as a secondary automated source, while continuing a manual/secondary layer focused on direct ATS pages, startup boards, and domain-company watchlists.
 
 ## Current Runner Coverage
 
 Current default sites in `job_search/search_profile.json`:
 - LinkedIn
 - Indeed
+- ZipRecruiter
 - Google
 - CyberCoders
 
 Supported but not default through JobSpy:
-- ZipRecruiter
 - Glassdoor
 
 Assessment:
 - LinkedIn and Indeed are still necessary for broad coverage and compensation clues.
 - Google is useful for discovery but unstable as a raw source.
 - CyberCoders is worth keeping, especially now that the custom scraper is fixed.
-- ZipRecruiter and SimplyHired-style sources are noisy; use them for occasional targeted sweeps, not as primary truth.
+- ZipRecruiter and SimplyHired-style sources are noisy; include ZipRecruiter for broader coverage, but treat it as secondary evidence and verify postings before applying.
 - The current runner misses many roles posted directly through Ashby, Greenhouse, Lever, and startup-specific boards.
 
 ## Best New Source Layer
@@ -194,8 +194,8 @@ Risks:
 - low-signal contract listings
 
 Recommendation:
-- Do not add to default runner yet.
-- Run occasional `--sites zip_recruiter` dry runs for targeted sweeps.
+- ZipRecruiter is now included in the default full-time and contracting profiles as a secondary source.
+- Continue to verify recruiter-heavy, duplicated, or contract listings against the employer or canonical ATS before treating them as strong targets.
 
 ### Glassdoor
 
@@ -254,7 +254,7 @@ The current runner's title strings are good, but manual searches should include 
 4. Check the current HN "Who is hiring?" thread.
 5. Check company watchlist direct careers pages.
 6. Use RemoteRocketship / TrueUp / Built In / Agentic Engineering Jobs for discovery.
-7. Use ZipRecruiter only as a targeted dry-run source.
+7. Include ZipRecruiter in the automated run, but treat it as a secondary source requiring verification.
 
 ## Practical Recommendation
 

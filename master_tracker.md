@@ -19,6 +19,9 @@
 | 2026-08-04 | Pluralsight | Agentic AI Fundamentals in the Microsoft Ecosystem | - | - | - | applied_ai_systems_v1 | - | https://app.pluralsight.com/learner/user/courses/v2/1f41a3b2-aaec-43a8-a51f-081712fb0af6/certificate | - |
 | 2026-08-05 | BV Teck / Bright Vision Technologies | Applied AI Engineer | A | 6 | 9 | applied_ai_systems_v1 | Applied | Remote; direct W2; $130k–$180k; 10+ years AI/ML listed; applied through company site from Indeed; no cover letter requested. **Address:** #991 Route 22 West, Suite 200, Bridgewater, NJ 08807 | - |
 | 2026-08-06 | International Telecommunication Union (ITU) | Roster - Internal AI Strategy, Automation and Agentic AI Enablement Consultant | A | 6 | 8 | applied_ai_systems_v1 | Applied | Home-based remote consultant; 3 months with possible 3-month extension; USD $280–$650/day; vacancy 2379. **Address:** Place des Nations, 1211 Geneva 20, Switzerland | - |
+| 2026-08-12 | ZipRecruiter | Resume and Profile Update | - | - | - | applied_ai_systems_v1 | - | - | - |
+| 2026-08-15 | General Motors (GM) | Senior Data Engineer - Agentic AI, Automation, and Data Platforms | A | 7 | 7 | applied_ai_systems_v1 | Applied | Warren, MI; $138,700-$173,750 yearly listed. User-confirmed application. Exact posting: https://www.indeed.com/viewjob?jk=25402b211806bc05 | 2026-08-29 |
+| 2026-08-15 | GDH | AI Forward Deployed Engineer | A | 7 | 9 | applied_ai_systems_v1 | Applied | St. Louis, MO; compensation and engagement terms not listed. User-confirmed application. Exact posting: https://www.linkedin.com/jobs/view/4454570418 | 2026-08-29 |
 
 ## Status Legend
 - Drafting

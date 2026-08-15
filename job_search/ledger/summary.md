@@ -1,10 +1,10 @@
 # Search Ledger Summary
 
-- Generated: 2026-08-06T18:33:17.698728-04:00
-- Total tracked jobs: 420
-- Surfaced: 417
+- Generated: 2026-08-15T12:51:24.536349-04:00
+- Total tracked jobs: 480
+- Surfaced: 475
 - Saved: 0
-- Applied: 3
+- Applied: 5
 - Dismissed: 0
 
 Source of truth: `transactions.jsonl`
@@ -114,6 +114,17 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-07-13T14:13:03.847710-04:00
 - Posting URL: https://www.linkedin.com/jobs/view/4437959260
 
+### Accenture - SAP Edge - AI Lead
+- Location: Detroit, MI, US
+- Last recommendation: apply_first
+- Last score: 16
+- Compensation: $150,900 - $434,000 yearly source: direct_data
+- Sites: indeed
+- Query labels: ai engineer contract
+- First seen: 2026-08-15T12:38:00.857484-04:00
+- Last seen: 2026-08-15T12:38:00.857484-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=dd7affebb095c417
+
 ### Accenture - Sr. Applied AI Engineer (Claude/Codex)
 - Location: Detroit, MI, US
 - Last recommendation: apply_first
@@ -145,6 +156,17 @@ Source of truth: `transactions.jsonl`
 - First seen: 2026-06-26T14:48:55.701606-04:00
 - Last seen: 2026-06-26T14:48:55.701606-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=397f0440e1f41700
+
+### Acuhuman - AI PLATFORM ENGINEER
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 38
+- Compensation: $80 - $90 hourly source: direct_data
+- Sites: indeed
+- Query labels: compliance ai engineer, llm rag engineer
+- First seen: 2026-08-15T12:34:18.315236-04:00
+- Last seen: 2026-08-15T12:34:18.315236-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=682a8152cd81abc9
 
 ### ADENTIS Italia - Generative AI Engineer
 - Last recommendation: review
@@ -216,6 +238,16 @@ Source of truth: `transactions.jsonl`
 - First seen: 2026-07-13T14:13:03.847710-04:00
 - Last seen: 2026-07-13T14:13:03.847710-04:00
 - Posting URL: https://www.linkedin.com/jobs/view/4435001879
+
+### Agiloft - AI Ops Engineer - Professional Services
+- Location: Remote, US
+- Last recommendation: apply_first
+- Last score: 28
+- Sites: indeed
+- Query labels: ai workflow automation engineer, llm rag engineer
+- First seen: 2026-08-15T12:34:18.315236-04:00
+- Last seen: 2026-08-15T12:34:18.315236-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=4dca4a81f7bfdaf9
 
 ### Agree Realty Corporation - AI & Power Platform Developer
 - Location: Royal Oak, MI
@@ -390,38 +422,6 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-06-16T13:45:37.745982-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=8eb52795b3e4a218
 
-### Amgen - Senior Machine Learning Engineer, AI Studio
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 28
-- Compensation: $156,190 - $211,315 yearly source: direct_data
-- Sites: indeed
-- Query labels: ai workflow automation engineer
-- First seen: 2026-08-05T16:48:15.048694-04:00
-- Last seen: 2026-08-05T16:48:15.048694-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=5b420dddcd16bc5e
-
-### Ampstek - Generative AI Engineer
-- Location: County Dublin, Ireland
-- Last recommendation: review
-- Last score: 11
-- Sites: linkedin
-- Query labels: rag engineer contract
-- First seen: 2026-07-24T14:46:50.863192-04:00
-- Last seen: 2026-07-24T14:46:50.863192-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4442661299
-
-### Amway - Sr AI Engineer
-- Location: Ada, MI, US
-- Last recommendation: apply_first
-- Last score: 19
-- Compensation: $115,419 - $142,576 yearly source: direct_data
-- Sites: indeed
-- Query labels: llm rag engineer
-- First seen: 2026-07-24T14:56:59.054181-04:00
-- Last seen: 2026-07-24T14:56:59.054181-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=8fda396b569e01bb
-
 ## Applied Jobs
 
 ### BV Teck / Bright Vision Technologies - Applied AI Engineer
@@ -436,6 +436,31 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-08-05T16:48:15.048694-04:00
 - Last decision: 2026-08-05T17:11:40.842744-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=26738974b8469a72
+
+### GDH - AI Forward Deployed Engineer
+- Location: St. Louis, MO
+- Last recommendation: apply_first
+- Last score: 15
+- Sites: linkedin
+- Query labels: ai solutions engineer contract
+- Note: User confirmed application submitted on 2026-08-15 for the GDH AI Forward Deployed Engineer role.
+- First seen: 2026-08-15T12:38:00.857484-04:00
+- Last seen: 2026-08-15T12:38:00.857484-04:00
+- Last decision: 2026-08-15T12:50:41-04:00
+- Posting URL: https://www.linkedin.com/jobs/view/4454570418
+
+### General Motors (GM) - Senior Data Engineer - Agentic AI, Automation, and Data Platforms
+- Location: Warren, MI, US
+- Last recommendation: apply_first
+- Last score: 40
+- Compensation: $138,700-$173,750 yearly
+- Sites: indeed
+- Query labels: agentic ai engineer, llm rag engineer
+- Note: User confirmed application submitted on 2026-08-15 for the General Motors Senior Data Engineer - Agentic AI, Automation, and Data Platforms role.
+- First seen: 2026-08-15T12:34:18.315236-04:00
+- Last seen: 2026-08-15T12:34:18.315236-04:00
+- Last decision: 2026-08-15T12:44:42-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=25402b211806bc05
 
 ### International Telecommunication Union (ITU) - Roster - Internal AI Strategy, Automation and Agentic AI Enablement Consultant
 - Location: Remote / Home Based
@@ -465,13 +490,13 @@ Source of truth: `transactions.jsonl`
 
 ## Recent Transactions
 
+- `2026-08-15T12:50:41-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260815_125041_gdh]
+- `2026-08-15T12:44:42-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260815_124442_gm]
+- `2026-08-15T12:38:00.857484-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260815_123800_ac6879ee]
+- `2026-08-15T12:34:18.315236-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260815_123418_4e4f7d25]
 - `2026-08-06T18:33:17.681805-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260806_183317_3937d9e3]
 - `2026-08-05T17:11:40.842744-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260805_171140_d612e752]
 - `2026-08-05T17:11:31.074860-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260805_171131_03e2ea15]
 - `2026-08-05T16:52:03.554836-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260805_165203_bcc9ac4f]
 - `2026-08-05T16:48:15.048694-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260805_164815_e22604e3]
 - `2026-07-30T12:59:43.175759-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260730_125943_7e1e525c]
-- `2026-07-30T11:48:45.256828-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260730_114845_4510f39f]
-- `2026-07-30T11:46:08.776785-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260730_114608_086fa3a6]
-- `2026-07-24T14:56:59.054181-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260724_145659_b731cc84]
-- `2026-07-24T14:46:50.863192-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260724_144650_3cea8266]
