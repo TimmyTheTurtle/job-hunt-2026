@@ -1,5 +1,5 @@
 {
-  "profile_name": "applied_ai_systems_v1",
+  "profile_name": "qualification_aware_ai_engineering_v5",
   "default_sites": [
     "linkedin",
     "indeed",
@@ -116,12 +116,6 @@
       "label": "software engineer ai systems",
       "search_term": "\"software engineer\" \"AI systems\"",
       "google_search_term_template": "software engineer AI systems LLM jobs {google_location_phrase}"
-    },
-    {
-      "tier": "C",
-      "label": "software engineer workflow automation",
-      "search_term": "\"software engineer\" \"workflow automation\"",
-      "google_search_term_template": "software engineer workflow automation SaaS integration jobs {google_location_phrase}"
     }
   ]
 }

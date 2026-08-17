@@ -1,8 +1,8 @@
 # Search Ledger Summary
 
-- Generated: 2026-08-15T12:51:24.536349-04:00
-- Total tracked jobs: 480
-- Surfaced: 475
+- Generated: 2026-08-17T11:23:05.339935-04:00
+- Total tracked jobs: 526
+- Surfaced: 521
 - Saved: 0
 - Applied: 5
 - Dismissed: 0
@@ -114,6 +114,18 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-07-13T14:13:03.847710-04:00
 - Posting URL: https://www.linkedin.com/jobs/view/4437959260
 
+### Accenture - Oracle HCM Core HR Delivery Lead
+- Location: Detroit, MI, US
+- Last recommendation: unverified
+- Last score: 70
+- Compensation: $122,700 - $302,400 yearly source: direct_data
+- Sites: indeed
+- Query labels: intelligent automation developer
+- Note: Qualification 70/100; gaps: None; blockers: None; verification: Unparsed required item needs manual review: Certified in Oracle HCM Cloud Global Human Resources; Unparsed required item needs manual review: Demonstrate proficiency in in one or more modules of Oracle Cloud technologies (Oracle ERP Cloud, Oracle HCM Cloud, Oracle CX Cloud, Oracle SCM Cloud, PaaS and OIC); Unparsed required item needs manual review: Support the planning and execution of testing cycles, as well as perform cutover activities as required for go-live preparation.; Unparsed required item needs manual review: Travel may be required for this role. The amount of travel will vary from 0 to 100% depending on business need and client requirements.
+- First seen: 2026-08-17T09:28:11.229642-04:00
+- Last seen: 2026-08-17T09:28:11.229642-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=73a28d02d8962acf
+
 ### Accenture - SAP Edge - AI Lead
 - Location: Detroit, MI, US
 - Last recommendation: apply_first
@@ -124,6 +136,30 @@ Source of truth: `transactions.jsonl`
 - First seen: 2026-08-15T12:38:00.857484-04:00
 - Last seen: 2026-08-15T12:38:00.857484-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=dd7affebb095c417
+
+### Accenture - SAP EWM Consultant - Life Science
+- Location: Detroit, MI, US
+- Last recommendation: unverified
+- Last score: 70
+- Compensation: $59,100 - $205,800 yearly source: direct_data
+- Sites: indeed
+- Query labels: intelligent automation developer
+- Note: Qualification 70/100; gaps: None; blockers: None; verification: Unparsed required item needs manual review: As required by local law, Accenture provides a reasonable range of compensation for roles that may be hired as set forth below.; Unparsed required item needs manual review: Experience delivering EWM programs in at least two of the following industries: pharmaceuticals/life sciences, consumer goods, retail, automotive, or industrial manufacturing; Unparsed required item needs manual review: Minimum 3 full-cycle SAP EWM implementations in a lead or program manager role; Unparsed required item needs manual review: Travel may be required for this role. The amount of travel will vary from 0 to 100% depending on business need and client requirements
+- First seen: 2026-08-17T09:28:11.229642-04:00
+- Last seen: 2026-08-17T09:28:11.229642-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=828f8542df1beaae
+
+### Accenture - SAP EWM Consultant - Products
+- Location: Detroit, MI, US
+- Last recommendation: unverified
+- Last score: 70
+- Compensation: $59,100 - $205,800 yearly source: direct_data
+- Sites: indeed
+- Query labels: intelligent automation developer
+- Note: Qualification 70/100; gaps: None; blockers: None; verification: Unparsed required item needs manual review: As required by local law, Accenture provides a reasonable range of compensation for roles that may be hired as set forth below.; Unparsed required item needs manual review: Experience delivering EWM programs in at least two of the following industries: pharmaceuticals/life sciences, consumer goods, retail, automotive, or industrial manufacturing; Unparsed required item needs manual review: Minimum 3 full-cycle SAP EWM implementations in a lead or program manager role; Unparsed required item needs manual review: Travel may be required for this role. The amount of travel will vary from 0 to 100% depending on business need and client requirements
+- First seen: 2026-08-17T09:28:11.229642-04:00
+- Last seen: 2026-08-17T09:28:11.229642-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=296735297fb50084
 
 ### Accenture - Sr. Applied AI Engineer (Claude/Codex)
 - Location: Detroit, MI, US
@@ -241,12 +277,13 @@ Source of truth: `transactions.jsonl`
 
 ### Agiloft - AI Ops Engineer - Professional Services
 - Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 28
+- Last recommendation: unverified
+- Last score: 70
 - Sites: indeed
 - Query labels: ai workflow automation engineer, llm rag engineer
+- Note: Qualification 70/100; gaps: None; blockers: None; verification: Unparsed required item needs manual review: Ability to independently design, build, and iterate AI solutions.; Unparsed required item needs manual review: Experience with AI-assisted development tools (Claude Code, OpenAI Codex, or similar).; Unparsed required item needs manual review: Experience working across technical and business stakeholders.; Unparsed required item needs manual review: Strong documentation and governance discipline.
 - First seen: 2026-08-15T12:34:18.315236-04:00
-- Last seen: 2026-08-15T12:34:18.315236-04:00
+- Last seen: 2026-08-17T11:23:05.325009-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=4dca4a81f7bfdaf9
 
 ### Agree Realty Corporation - AI & Power Platform Developer
@@ -391,37 +428,6 @@ Source of truth: `transactions.jsonl`
 - Last seen: 2026-07-13T14:06:28.172158-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=ed9c173d869faa67
 
-### Altimetrik Corp - Google Cloud AI Engineer
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 24
-- Sites: indeed
-- Query labels: compliance ai engineer
-- First seen: 2026-08-05T16:48:15.048694-04:00
-- Last seen: 2026-08-05T16:48:15.048694-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=c0924bc8b8d044fd
-
-### AMD - Forward Deployed AI Engineer
-- Location: Santa Clara, CA
-- Last recommendation: review
-- Last score: 8
-- Sites: linkedin
-- Query labels: applied ai systems engineer
-- First seen: 2026-07-14T10:25:13.536835-04:00
-- Last seen: 2026-07-14T10:25:13.536835-04:00
-- Posting URL: https://www.linkedin.com/jobs/view/4434586353
-
-### Amgen - Principal Software Engineer
-- Location: Remote, US
-- Last recommendation: apply_first
-- Last score: 13
-- Compensation: $144,423 - $195,396 yearly source: direct_data
-- Sites: indeed
-- Query labels: software engineer workflow automation
-- First seen: 2026-06-16T13:45:37.745982-04:00
-- Last seen: 2026-06-16T13:45:37.745982-04:00
-- Posting URL: https://www.indeed.com/viewjob?jk=8eb52795b3e4a218
-
 ## Applied Jobs
 
 ### BV Teck / Bright Vision Technologies - Applied AI Engineer
@@ -490,13 +496,13 @@ Source of truth: `transactions.jsonl`
 
 ## Recent Transactions
 
+- `2026-08-17T11:23:05.325009-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_112305_2d7ed5a9]
+- `2026-08-17T11:17:47.736387-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_111747_a49d0a23]
+- `2026-08-17T11:13:44.861975-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_111344_8590aebe]
+- `2026-08-17T09:28:11.229642-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_092811_69f58c81]
+- `2026-08-17T09:21:54.056169-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_092154_bde70092]
 - `2026-08-15T12:50:41-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260815_125041_gdh]
 - `2026-08-15T12:44:42-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260815_124442_gm]
 - `2026-08-15T12:38:00.857484-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260815_123800_ac6879ee]
 - `2026-08-15T12:34:18.315236-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260815_123418_4e4f7d25]
 - `2026-08-06T18:33:17.681805-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260806_183317_3937d9e3]
-- `2026-08-05T17:11:40.842744-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260805_171140_d612e752]
-- `2026-08-05T17:11:31.074860-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260805_171131_03e2ea15]
-- `2026-08-05T16:52:03.554836-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260805_165203_bcc9ac4f]
-- `2026-08-05T16:48:15.048694-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260805_164815_e22604e3]
-- `2026-07-30T12:59:43.175759-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260730_125943_7e1e525c]

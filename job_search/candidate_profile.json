@@ -1,0 +1,248 @@
+{
+  "profile_name": "dorian_klingenberg_2026-08",
+  "evidence_policy": {
+    "professional": "Used in paid professional work with direct evidence in the current resume.",
+    "portfolio": "Hands-on project evidence, but not established paid production experience.",
+    "exposure": "Studied, evaluated, supported indirectly, or used too lightly to claim proficiency.",
+    "none": "No defensible evidence in the current non-archived record."
+  },
+  "source_files": [
+    "resumes/resume_applied_ai_systems_draft_v1.md",
+    "profiles/linkedin_snapshot_2026-06-26.md",
+    "portfolio/projects/legal-tech-debt.md",
+    "portfolio/projects/window-configurator.md",
+    "AGENT_BOOTSTRAP_COMPACT.md"
+  ],
+  "location": {
+    "home": "Troy, Michigan",
+    "onsite_states": ["MI", "Michigan"],
+    "remote_us": true,
+    "relocation": false
+  },
+  "work_authorization": {
+    "us_status": "unknown",
+    "note": "Do not infer citizenship, permanent residence, sponsorship needs, or export-control eligibility."
+  },
+  "education": {
+    "level": "bachelors",
+    "field": "Computer Science - Software Engineering Track",
+    "evidence": "B.Sc. Honors, University of Saskatchewan"
+  },
+  "clearance": {
+    "active": [],
+    "lapsed": ["Canadian Secret"],
+    "note": "No active clearance and no US clearance may be claimed."
+  },
+  "skills": {
+    "software_engineering": {
+      "label": "software engineering",
+      "level": "professional",
+      "years": 18,
+      "aliases": ["software engineering", "software development", "application development", "programming"],
+      "evidence": "Professional programming and software roles at SED Systems, Caribou/Laribon, RenoNerd, and Finys."
+    },
+    "csharp_dotnet": {
+      "label": "C#/.NET",
+      "level": "professional",
+      "years": 7,
+      "aliases": ["c#", ".net", "dotnet", "asp.net", "entity framework"],
+      "evidence": "Paid C#/.NET work at Finys and RenoNerd; earlier .NET report-porting and automation work."
+    },
+    "sql": {
+      "label": "SQL and relational data",
+      "level": "professional",
+      "years": 10,
+      "aliases": ["sql", "sql server", "relational database", "relational databases", "database design"],
+      "evidence": "Transactional SQL work at Finys plus long-running SQL/reporting support at Caribou/Laribon."
+    },
+    "workflow_automation": {
+      "label": "workflow automation",
+      "level": "professional",
+      "years": 6,
+      "aliases": ["workflow automation", "process automation", "business process automation", "reporting automation", "business rules"],
+      "evidence": "RenoNerd configuration/quoting workflows and Areva regulatory reporting automation."
+    },
+    "api_integration": {
+      "label": "APIs and systems integration",
+      "level": "professional",
+      "years": 7,
+      "aliases": ["rest api", "rest apis", "api integration", "systems integration", "system integration", "webhooks", "oauth"],
+      "evidence": "Enterprise and third-party integration at Finys; CRM/e-commerce and deployment integration at RenoNerd."
+    },
+    "customer_implementation": {
+      "label": "customer implementation and technical delivery",
+      "level": "professional",
+      "years": 13,
+      "aliases": ["customer implementation", "client implementation", "technical implementation", "solutions implementation", "customer-facing engineering", "client-facing engineering"],
+      "evidence": "Client deployment, support, integration, and operational delivery at Caribou/Laribon and RenoNerd."
+    },
+    "cloud_platforms": {
+      "label": "cloud deployment and operations",
+      "level": "professional",
+      "years": 5,
+      "aliases": ["cloud platform", "cloud platforms", "cloud deployment", "cloud infrastructure", "cloud services"],
+      "evidence": "Azure/IIS deployment work and AWS VM/S3 operations."
+    },
+    "azure": {
+      "label": "Microsoft Azure",
+      "level": "professional",
+      "years": 4,
+      "aliases": ["azure", "azure web apps"],
+      "evidence": "Azure-hosted deployment work for RenoNerd systems."
+    },
+    "aws": {
+      "label": "AWS operations",
+      "level": "professional",
+      "years": 5,
+      "aliases": ["aws", "amazon web services", "s3", "ec2"],
+      "evidence": "Managed AWS virtual machines and S3 backups for customer environments."
+    },
+    "data_engineering": {
+      "label": "data engineering",
+      "level": "professional",
+      "years": 2,
+      "aliases": ["data engineering", "data engineer", "data pipelines", "data platform", "data platforms", "etl", "data modeling"],
+      "evidence": "Transactional data modeling, SQL optimization, and derived-state reconstruction at Finys; not a long-running data-engineer title."
+    },
+    "python": {
+      "label": "Python",
+      "level": "portfolio",
+      "years": 0,
+      "aliases": ["python"],
+      "evidence": "Current document-intelligence and research tooling; no established paid production Python tenure."
+    },
+    "ai_ml": {
+      "label": "AI/ML engineering",
+      "level": "portfolio",
+      "years": 0,
+      "aliases": ["artificial intelligence", "machine learning", "ai/ml", "ai engineering", "ml engineering", "deep learning"],
+      "evidence": "Applied-AI portfolio and research work; no established professional production AI/ML tenure."
+    },
+    "llm_rag": {
+      "label": "LLM/RAG systems",
+      "level": "portfolio",
+      "years": 0,
+      "aliases": ["llm", "large language model", "large language models", "rag", "retrieval-augmented generation", "vector search", "semantic search"],
+      "evidence": "Legal-Tech-Debt retrieval, evidence-pipeline, embeddings, and LLM-assisted triage work; prototype rather than production SaaS."
+    },
+    "document_intelligence": {
+      "label": "document intelligence",
+      "level": "portfolio",
+      "years": 0,
+      "aliases": ["document intelligence", "document processing", "document ai", "intelligent document processing", "ocr"],
+      "evidence": "Legal-Tech-Debt document/evidence pipeline with provenance and human-reviewable outputs."
+    },
+    "agentic_ai": {
+      "label": "agentic AI",
+      "level": "portfolio",
+      "years": 0,
+      "aliases": ["agentic ai", "ai agents", "agent framework", "agent frameworks", "langgraph", "crewai"],
+      "evidence": "Current prototype, course, and architecture work; no production agent-platform ownership."
+    },
+    "evals": {
+      "label": "AI evaluation",
+      "level": "exposure",
+      "years": 0,
+      "aliases": ["llm evaluation", "ai evaluation", "model evaluation", "evals", "golden dataset", "llm-as-judge"],
+      "evidence": "Active learning and design direction; not established production evaluation experience."
+    },
+    "java": {
+      "label": "Java",
+      "level": "professional",
+      "years": 2,
+      "aliases": ["java", "gwt"],
+      "evidence": "Mission-operations and UI work at SED Systems."
+    },
+    "javascript": {
+      "label": "JavaScript and web UI",
+      "level": "professional",
+      "years": 5,
+      "aliases": ["javascript", "html", "css"],
+      "evidence": "RenoNerd web and MVC application work."
+    },
+    "desktop_dotnet": {
+      "label": "Windows desktop/.NET UI",
+      "level": "exposure",
+      "years": 0,
+      "aliases": ["wpf", "windows forms", "winforms", "desktop application", "desktop applications"],
+      "evidence": "Earlier Windows Forms automation work; no claim of sustained WPF production specialization."
+    },
+    "git_version_control": {
+      "label": "Git/version control",
+      "level": "professional",
+      "years": 7,
+      "aliases": ["git", "version control", "source control", "github"],
+      "evidence": "Professional and portfolio software work uses version control; Git is listed in the current profile."
+    },
+    "agile_delivery": {
+      "label": "Agile software delivery",
+      "level": "professional",
+      "years": 7,
+      "aliases": ["agile", "scrum", "software development lifecycle", "sdlc"],
+      "evidence": "Professional software delivery and SDLC experience; Agile is listed in the current profile."
+    },
+    "testing_debugging": {
+      "label": "testing and debugging",
+      "level": "professional",
+      "years": 10,
+      "aliases": ["debugging", "troubleshooting", "root cause analysis", "integration testing", "deployment testing", "unit testing", "automated testing", "test automation", "xunit"],
+      "evidence": "Long-running production troubleshooting, deployment/integration testing, and current automated-test work."
+    },
+    "postgresql": {
+      "label": "PostgreSQL",
+      "level": "none",
+      "years": 0,
+      "aliases": ["postgresql", "postgres"],
+      "evidence": "The current resume supports SQL Server and relational SQL, not professional PostgreSQL tenure."
+    },
+    "devops": {
+      "label": "DevOps/CI-CD",
+      "level": "exposure",
+      "years": 0,
+      "aliases": ["devops", "ci/cd", "continuous integration", "continuous deployment"],
+      "evidence": "Deployment and operations experience, but no claim of mature DevOps platform ownership."
+    },
+    "docker_kubernetes": {
+      "label": "Docker/Kubernetes",
+      "level": "none",
+      "years": 0,
+      "aliases": ["docker", "kubernetes", "k8s", "container orchestration"],
+      "evidence": "No defensible professional evidence in the current resume."
+    },
+    "gcp": {
+      "label": "Google Cloud Platform",
+      "level": "none",
+      "years": 0,
+      "aliases": ["gcp", "google cloud", "vertex ai"],
+      "evidence": "No defensible professional evidence in the current resume."
+    },
+    "modern_ml_frameworks": {
+      "label": "production ML frameworks",
+      "level": "none",
+      "years": 0,
+      "aliases": ["pytorch", "tensorflow", "jax", "scikit-learn", "mlflow", "kubeflow"],
+      "evidence": "No defensible professional production evidence in the current resume."
+    },
+    "data_platform_stack": {
+      "label": "modern data-platform stack",
+      "level": "none",
+      "years": 0,
+      "aliases": ["databricks", "spark", "snowflake", "kafka", "airflow", "dbt"],
+      "evidence": "No defensible professional evidence in the current resume."
+    },
+    "power_platform_rpa": {
+      "label": "Power Platform/RPA",
+      "level": "exposure",
+      "years": 0,
+      "aliases": ["power automate", "power platform", "powerapps", "robotic process automation", "rpa", "uipath", "automation anywhere"],
+      "evidence": "Evaluated PowerApps and adjacent platforms; no established RPA implementation tenure."
+    },
+    "healthcare_ehr": {
+      "label": "healthcare/EHR systems",
+      "level": "none",
+      "years": 0,
+      "aliases": ["ehr", "electronic health record", "epic", "cerner", "clinical systems", "clinical workflow", "healthcare experience"],
+      "evidence": "No direct healthcare or EHR professional experience in the current record."
+    }
+  }
+}

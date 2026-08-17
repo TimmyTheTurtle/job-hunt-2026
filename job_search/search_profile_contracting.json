@@ -1,5 +1,5 @@
 {
-  "profile_name": "applied_ai_systems_contracting_v1",
+  "profile_name": "qualification_aware_ai_contracting_v5",
   "default_sites": [
     "linkedin",
     "indeed",
@@ -112,9 +112,9 @@
     },
     {
       "tier": "B",
-      "label": "workflow automation contractor",
-      "search_term": "\"workflow automation\" contractor",
-      "google_search_term_template": "workflow automation contractor AI jobs {google_location_phrase}"
+      "label": "ai workflow automation contractor",
+      "search_term": "\"AI workflow automation\" contractor",
+      "google_search_term_template": "AI workflow automation contractor jobs {google_location_phrase}"
     },
     {
       "tier": "B",

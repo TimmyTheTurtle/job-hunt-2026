@@ -2,6 +2,20 @@
 
 Use this before recommending that Dorian apply, prioritize, or invest time in a role.
 
+## Qualification gate
+
+Do not score strategic fit until the posting's actual requirements have been checked against the evidence in `job_search/candidate_profile.json`.
+
+- A title or search-term match is not evidence of qualification.
+- If the full requirements are missing or too thin to evaluate, classify the role as `unverified`; never recommend `Apply First`.
+- Separate professional/production evidence from portfolio work, coursework, and exposure.
+- Treat required years in a specific discipline separately from total software-engineering tenure.
+- Check required clearance, citizenship/work authorization, degree, location, travel, domain experience, and named stack requirements.
+- Any active-clearance requirement, impossible location constraint, required credential Dorian lacks, or large required-tenure gap is a hard blocker unless the posting explicitly allows an equivalent.
+- Directional value and learning value cannot erase a hard qualification mismatch.
+
+The automated runner performs a conservative first pass. A human/agent review should verify ambiguous language before an application is recommended.
+
 ## Primary question
 
 Is this role a sensible move within Dorian's broader plan?

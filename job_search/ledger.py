@@ -80,6 +80,23 @@ def load_transactions() -> list[dict[str, Any]]:
     return transactions
 
 
+def blocking_urls_for_profile(profile_name: str, transactions: list[dict[str, Any]] | None = None) -> set[str]:
+    """Block decisions globally, but suppress surfaced results only within the same search profile."""
+    blocked: set[str] = set()
+    for transaction in (transactions if transactions is not None else load_transactions()):
+        kind = safe_str(transaction.get("kind"))
+        transaction_profile = safe_str(transaction.get("metadata", {}).get("profile_name"))
+        same_search_profile = kind == "search_run" and transaction_profile == profile_name
+        for event in transaction.get("events", []):
+            status = safe_str(event.get("status")) or "surfaced"
+            normalized_url = event.get("normalized_url") or normalize_url(safe_str(event.get("job_url")))
+            if not normalized_url:
+                continue
+            if status in {"saved", "dismissed", "applied"} or (status == "surfaced" and same_search_profile):
+                blocked.add(normalized_url)
+    return blocked
+
+
 def materialize_state(transactions: list[dict[str, Any]]) -> dict[str, Any]:
     jobs: dict[str, dict[str, Any]] = {}
     recent_transactions: list[dict[str, Any]] = []

@@ -45,6 +45,8 @@ The runner covers:
 - Indeed
 - Google Jobs
 
+The runner's qualification gate applies to contract searches too. A recruiter headline without usable requirements is `unverified`, and the system must compare required tenure, stack, location, clearance, and domain constraints against `candidate_profile.json` before treating a contract as plausible.
+
 Manual sweep targets:
 
 - Ashby, Greenhouse, and Lever via search-engine `site:` queries

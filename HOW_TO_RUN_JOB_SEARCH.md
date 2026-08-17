@@ -15,6 +15,8 @@ The search tool:
 - runs from WSL
 - searches selected job boards through `python-jobspy`
 - uses role queries tuned for the Applied AI Systems Engineer direction
+- compares the actual posting requirements with `job_search/candidate_profile.json`
+- separates qualification from search-topic relevance
 - de-dupes against posting URLs already recorded in this repo
 - writes a markdown shortlist and CSV export to `job_search/output/`
 
@@ -116,12 +118,16 @@ Generated files are written to:
 
 The markdown report is the main review artifact.
 It groups results into:
-- `Apply First`
-- `Review`
-- `Low Priority`
+- `Qualified / Apply First`
+- `Plausible / Review`
+- `Stretch / Material Gaps`
+- `Unverified Posting Requirements`
+- `Hard Mismatch`
 
 Normal runs record surfaced jobs in the search ledger for duplicate suppression.
 Dry runs still write markdown and CSV reports, but they do not record a ledger transaction.
+
+Surfaced results suppress repeats only within the same profile. Applied, saved, and dismissed decisions suppress the URL globally. This keeps back-to-back full-time and contracting runs independent while preserving final decisions.
 
 Each entry includes:
 - company
@@ -130,20 +136,24 @@ Each entry includes:
 - salary/hourly range when the source exposes it
 - site source
 - posting URL
-- match notes
+- qualification score and separate search-relevance score
+- matched requirements and partial evidence
+- material gaps, hard blockers, and verification blockers
+- relevance notes
 
 ## How to Review Results
 
 Recommended workflow:
 
 1. Open the newest markdown file in `job_search/output/`.
-2. Skim the `Apply First` section first.
-3. For serious discovery, follow [the ATS and startup sweep workflow](job_search/ATS_SWEEP_WORKFLOW.md) to check Ashby, Greenhouse, Lever, YC, HN, and direct company sources.
-4. For contracting work, follow [the contract search workflow](job_search/CONTRACT_SEARCH_WORKFLOW.md) and capture rate, contract length, W2/1099/C2C status, weekly hours, timezone constraints, and portfolio value.
-5. For serious review, follow [the deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md): open each posting, capture compensation, classify fit, and extract resume implications.
-6. Record `applied`, `dismissed`, or `saved` decisions in the search ledger only after review.
-7. If you decide to pursue one, create the standard application folder and record the exact posting URL in `job_description.md`.
-8. Add or update the row in [master_tracker.md](master_tracker.md) only when you intentionally want that manual/UI-facing record updated.
+2. Review `Qualified / Apply First` first, then inspect its extracted requirements before applying.
+3. Treat `Unverified` as needing the employer/ATS posting; a headline is insufficient.
+4. For serious discovery, follow [the ATS and startup sweep workflow](job_search/ATS_SWEEP_WORKFLOW.md) to check Ashby, Greenhouse, Lever, YC, HN, and direct company sources.
+5. For contracting work, follow [the contract search workflow](job_search/CONTRACT_SEARCH_WORKFLOW.md) and capture rate, contract length, W2/1099/C2C status, weekly hours, timezone constraints, and portfolio value.
+6. For serious review, follow [the deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md): open each posting, capture compensation, verify extracted requirements, classify fit, and extract resume implications.
+7. Record `applied`, `dismissed`, or `saved` decisions in the search ledger only after review.
+8. If you decide to pursue one, create the standard application folder and record the exact posting URL in `job_description.md`.
+9. Add or update the row in [master_tracker.md](master_tracker.md) only when you intentionally want that manual/UI-facing record updated.
 
 See also:
 - [How to use the search ledger](HOW_TO_USE_SEARCH_LEDGER.md)
@@ -284,7 +294,8 @@ Ask separately if you also want [master_tracker.md](master_tracker.md) updated.
 ## Important Notes
 
 - This is a triage tool, not a final decision-maker.
-- The generated `Apply First` bucket is only a heuristic starting point. For serious review, follow [the deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md).
+- `Qualified / Apply First` is a conservative automated gate, not a hiring prediction. Verify its extracted requirements against the live posting through [the deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md).
+- Update [job_search/candidate_profile.json](job_search/candidate_profile.json) only when the current resume or verified project record supports the change.
 - For serious discovery, pair the runner with [the ATS and startup sweep workflow](job_search/ATS_SWEEP_WORKFLOW.md); many applied-AI roles are posted directly on Ashby, Greenhouse, Lever, YC, HN, or company career pages.
 - The ranking is heuristic and will still surface some imperfect results.
 - Google Jobs is included in the profile, but in live testing here LinkedIn and Indeed produced more usable results than Google.
@@ -300,6 +311,8 @@ Edit [job_search/search_profile.json](job_search/search_profile.json) to change:
 - default sites
 - posting age window
 - query wording
+
+Edit [job_search/candidate_profile.json](job_search/candidate_profile.json) when documented qualifications change. Keep paid professional/production evidence separate from portfolio work and exposure.
 
 If the search starts drifting:
 - tighten the search terms
