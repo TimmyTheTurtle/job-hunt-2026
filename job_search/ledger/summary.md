@@ -1,10 +1,10 @@
 # Search Ledger Summary
 
-- Generated: 2026-08-17T11:23:05.339935-04:00
-- Total tracked jobs: 526
+- Generated: 2026-08-17T20:50:28.263475-04:00
+- Total tracked jobs: 527
 - Surfaced: 521
 - Saved: 0
-- Applied: 5
+- Applied: 6
 - Dismissed: 0
 
 Source of truth: `transactions.jsonl`
@@ -481,6 +481,13 @@ Source of truth: `transactions.jsonl`
 - Last decision: 2026-08-06T18:33:17.681805-04:00
 - Posting URL: https://www.linkedin.com/jobs/view/4444879298
 
+### Omada Health, Inc. - Senior Software Engineer, AI Transformation
+- Location: Remote, US
+- Note: User requested the application be marked complete; employer address verified.
+- First seen: 2026-08-17T20:50:28.242056-04:00
+- Last decision: 2026-08-17T20:50:28.242056-04:00
+- Posting URL: https://www.indeed.com/viewjob?jk=955747225308f5e3
+
 ### Provectus - Senior Forward Deployed AI Engineer (GenAI, AWS)
 - Location: Remote, US
 - Last recommendation: apply_first
@@ -496,6 +503,7 @@ Source of truth: `transactions.jsonl`
 
 ## Recent Transactions
 
+- `2026-08-17T20:50:28.242056-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260817_205028_838d45d7]
 - `2026-08-17T11:23:05.325009-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_112305_2d7ed5a9]
 - `2026-08-17T11:17:47.736387-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_111747_a49d0a23]
 - `2026-08-17T11:13:44.861975-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_111344_8590aebe]
@@ -505,4 +513,3 @@ Source of truth: `transactions.jsonl`
 - `2026-08-15T12:44:42-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260815_124442_gm]
 - `2026-08-15T12:38:00.857484-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260815_123800_ac6879ee]
 - `2026-08-15T12:34:18.315236-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260815_123418_4e4f7d25]
-- `2026-08-06T18:33:17.681805-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260806_183317_3937d9e3]

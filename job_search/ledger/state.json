@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-17T11:23:05.339935-04:00",
-  "job_count": 526,
+  "generated_at": "2026-08-17T20:50:28.263475-04:00",
+  "job_count": 527,
   "jobs": [
     {
       "company": "10x National Security",
@@ -12769,6 +12769,26 @@
       "title": "Roster - Internal AI Strategy, Automation and Agentic AI Enablement Consultant"
     },
     {
+      "company": "Omada Health, Inc.",
+      "compensation": "",
+      "first_seen_at": "2026-08-17T20:50:28.242056-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=955747225308f5e3",
+      "last_actor": "chat_update",
+      "last_decision_at": "2026-08-17T20:50:28.242056-04:00",
+      "last_seen_at": "",
+      "last_transaction_id": "tx_20260817_205028_838d45d7",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=955747225308f5e3",
+      "note": "User requested the application be marked complete; employer address verified.",
+      "query_labels": [],
+      "recommendation": "",
+      "score": null,
+      "seen_count": 0,
+      "sites": [],
+      "status": "applied",
+      "title": "Senior Software Engineer, AI Transformation"
+    },
+    {
       "company": "Provectus",
       "compensation": "$120,000 - $180,000 yearly source: direct_data",
       "first_seen_at": "2026-07-30T11:48:45.256828-04:00",
@@ -12794,13 +12814,6 @@
     }
   ],
   "recent_transactions": [
-    {
-      "actor": "job_search_runner",
-      "event_count": 30,
-      "kind": "search_run",
-      "timestamp": "2026-07-14T11:48:10.430163-04:00",
-      "transaction_id": "tx_20260714_114810_9b0988f0"
-    },
     {
       "actor": "job_search_runner",
       "event_count": 30,
@@ -12933,10 +12946,17 @@
       "kind": "search_run",
       "timestamp": "2026-08-17T11:23:05.325009-04:00",
       "transaction_id": "tx_20260817_112305_2d7ed5a9"
+    },
+    {
+      "actor": "chat_update",
+      "event_count": 1,
+      "kind": "decision_update",
+      "timestamp": "2026-08-17T20:50:28.242056-04:00",
+      "transaction_id": "tx_20260817_205028_838d45d7"
     }
   ],
   "status_counts": {
-    "applied": 5,
+    "applied": 6,
     "dismissed": 0,
     "saved": 0,
     "surfaced": 521
