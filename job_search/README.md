@@ -41,6 +41,8 @@ If results are weak, tune the `google_search_term_template` values in `search_pr
   Search profile, role families, locations, and search-site defaults.
 - `search_profile_contracting.json`
   Contracting profile for AI engineering contract, consulting, and fractional searches.
+- `search_profile_azure_foundry_compensated.json`
+  Azure Foundry, agentic-AI, and document-intelligence search that retains only postings with an explicit salary or rate.
 - `candidate_profile.json`
   Structured, evidence-linked candidate qualifications. Professional experience, portfolio work, exposure, and unsupported skills are intentionally distinct.
 - `qualification.py`
@@ -97,6 +99,8 @@ Useful options:
   Restrict the job boards used for a run.
 - `--dry-run` / `--no-ledger`
   Write markdown and CSV reports without recording surfaced jobs in the search ledger.
+
+Profiles can set `"require_compensation": true` to exclude listings whose source does not expose a salary or hourly range.
 
 ## Output
 

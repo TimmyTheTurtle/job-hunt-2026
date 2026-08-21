@@ -380,6 +380,10 @@ def format_compensation(row: dict[str, Any]) -> str:
     return " ".join(pieces)
 
 
+def has_listed_compensation(row: dict[str, Any]) -> bool:
+    return not (is_missing(row.get("min_amount")) and is_missing(row.get("max_amount")))
+
+
 def joined_items(value: Any) -> str:
     if not isinstance(value, list):
         return safe_str(value)
@@ -736,6 +740,7 @@ def main() -> int:
     sites = [item.strip() for item in (args.sites.split(",") if args.sites else profile["default_sites"]) if item.strip()]
     hours_old = args.hours_old if args.hours_old is not None else int(profile["hours_old"])
     results_per_query = args.results_per_query if args.results_per_query is not None else int(profile["results_wanted_per_query"])
+    require_compensation = bool(profile.get("require_compensation", False))
 
     specs = build_search_specs(profile)
     if args.max_searches is not None:
@@ -756,6 +761,8 @@ def main() -> int:
 
         for row in rows:
             if not is_allowed_location(row):
+                continue
+            if require_compensation and not has_listed_compensation(row):
                 continue
 
             relevance_score, relevance_reasons, rejected = classify(row, spec)

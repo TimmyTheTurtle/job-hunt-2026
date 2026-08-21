@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T20:50:28.263475-04:00",
+  "generated_at": "2026-08-20T18:28:33.008872-04:00",
   "job_count": 527,
   "jobs": [
     {
@@ -6552,30 +6552,6 @@
       "title": "Senior AI Engineer"
     },
     {
-      "company": "ISACA",
-      "compensation": "$98,679 - $148,020 yearly source: direct_data",
-      "first_seen_at": "2026-08-05T16:48:15.048694-04:00",
-      "job_url": "https://www.indeed.com/viewjob?jk=0a0766738d796728",
-      "last_actor": "job_search_runner",
-      "last_decision_at": "",
-      "last_seen_at": "2026-08-05T16:48:15.048694-04:00",
-      "last_transaction_id": "tx_20260805_164815_e22604e3",
-      "location": "Remote, US",
-      "normalized_url": "https://www.indeed.com/viewjob?jk=0a0766738d796728",
-      "note": "",
-      "query_labels": [
-        "ai solutions engineer"
-      ],
-      "recommendation": "apply_first",
-      "score": 36,
-      "seen_count": 1,
-      "sites": [
-        "indeed"
-      ],
-      "status": "surfaced",
-      "title": "AI Solutions Engineer"
-    },
-    {
       "company": "ITproposal",
       "compensation": "",
       "first_seen_at": "2026-06-26T14:50:39.772093-04:00",
@@ -12769,6 +12745,30 @@
       "title": "Roster - Internal AI Strategy, Automation and Agentic AI Enablement Consultant"
     },
     {
+      "company": "ISACA",
+      "compensation": "$98,679 - $148,020 yearly source: direct_data",
+      "first_seen_at": "2026-08-05T16:48:15.048694-04:00",
+      "job_url": "https://www.indeed.com/viewjob?jk=0a0766738d796728",
+      "last_actor": "chat_update",
+      "last_decision_at": "2026-08-20T18:28:32.990803-04:00",
+      "last_seen_at": "2026-08-05T16:48:15.048694-04:00",
+      "last_transaction_id": "tx_20260820_182832_64e38763",
+      "location": "Remote, US",
+      "normalized_url": "https://www.indeed.com/viewjob?jk=0a0766738d796728",
+      "note": "Correction: user-confirmed application on 2026-08-20; listed compensation USD 98,679-148,020 yearly.",
+      "query_labels": [
+        "ai solutions engineer"
+      ],
+      "recommendation": "apply_first",
+      "score": 36,
+      "seen_count": 1,
+      "sites": [
+        "indeed"
+      ],
+      "status": "applied",
+      "title": "AI Solutions Engineer"
+    },
+    {
       "company": "Omada Health, Inc.",
       "compensation": "",
       "first_seen_at": "2026-08-17T20:50:28.242056-04:00",
@@ -12814,20 +12814,6 @@
     }
   ],
   "recent_transactions": [
-    {
-      "actor": "job_search_runner",
-      "event_count": 30,
-      "kind": "search_run",
-      "timestamp": "2026-07-24T14:46:50.863192-04:00",
-      "transaction_id": "tx_20260724_144650_3cea8266"
-    },
-    {
-      "actor": "job_search_runner",
-      "event_count": 30,
-      "kind": "search_run",
-      "timestamp": "2026-07-24T14:56:59.054181-04:00",
-      "transaction_id": "tx_20260724_145659_b731cc84"
-    },
     {
       "actor": "job_search_runner",
       "event_count": 30,
@@ -12953,12 +12939,26 @@
       "kind": "decision_update",
       "timestamp": "2026-08-17T20:50:28.242056-04:00",
       "transaction_id": "tx_20260817_205028_838d45d7"
+    },
+    {
+      "actor": "chat_update",
+      "event_count": 1,
+      "kind": "decision_update",
+      "timestamp": "2026-08-20T18:28:01.049605-04:00",
+      "transaction_id": "tx_20260820_182801_681c2b49"
+    },
+    {
+      "actor": "chat_update",
+      "event_count": 1,
+      "kind": "decision_update",
+      "timestamp": "2026-08-20T18:28:32.990803-04:00",
+      "transaction_id": "tx_20260820_182832_64e38763"
     }
   ],
   "status_counts": {
-    "applied": 6,
+    "applied": 7,
     "dismissed": 0,
     "saved": 0,
-    "surfaced": 521
+    "surfaced": 520
   }
 }
