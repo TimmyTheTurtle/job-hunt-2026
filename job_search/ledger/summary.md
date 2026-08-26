@@ -1,10 +1,10 @@
 # Search Ledger Summary
 
-- Generated: 2026-08-20T18:28:33.008872-04:00
-- Total tracked jobs: 527
+- Generated: 2026-08-26T18:13:19.686221-04:00
+- Total tracked jobs: 528
 - Surfaced: 520
 - Saved: 0
-- Applied: 7
+- Applied: 8
 - Dismissed: 0
 
 Source of truth: `transactions.jsonl`
@@ -501,6 +501,13 @@ Source of truth: `transactions.jsonl`
 - Last decision: 2026-08-17T20:50:28.242056-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=955747225308f5e3
 
+### PointClickCare - AI Solution Engineer (Technology Support)
+- Location: Remote; posting headquartered in Mississauga
+- Note: Authoritative correction to tx_20260826_181248_b27b138d and tx_20260826_181259_f828e2db: the posting identifies a CA base-salary range of 115,000-130,000 per year; currency is not asserted. User-confirmed application on 2026-08-26; submission method and resume version not recorded.
+- First seen: 2026-08-26T18:12:48.229838-04:00
+- Last decision: 2026-08-26T18:13:19.669899-04:00
+- Posting URL: https://jobs.lever.co/pointclickcare/56e13d29-7f5e-4c80-b9cf-8f12a17db1a0
+
 ### Provectus - Senior Forward Deployed AI Engineer (GenAI, AWS)
 - Location: Remote, US
 - Last recommendation: apply_first
@@ -516,6 +523,9 @@ Source of truth: `transactions.jsonl`
 
 ## Recent Transactions
 
+- `2026-08-26T18:13:19.669899-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260826_181319_b68a28e5]
+- `2026-08-26T18:12:59.848450-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260826_181259_f828e2db]
+- `2026-08-26T18:12:48.229838-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260826_181248_b27b138d]
 - `2026-08-20T18:28:32.990803-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260820_182832_64e38763]
 - `2026-08-20T18:28:01.049605-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260820_182801_681c2b49]
 - `2026-08-17T20:50:28.242056-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260817_205028_838d45d7]
@@ -523,6 +533,3 @@ Source of truth: `transactions.jsonl`
 - `2026-08-17T11:17:47.736387-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_111747_a49d0a23]
 - `2026-08-17T11:13:44.861975-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_111344_8590aebe]
 - `2026-08-17T09:28:11.229642-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_092811_69f58c81]
-- `2026-08-17T09:21:54.056169-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_092154_bde70092]
-- `2026-08-15T12:50:41-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260815_125041_gdh]
-- `2026-08-15T12:44:42-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260815_124442_gm]

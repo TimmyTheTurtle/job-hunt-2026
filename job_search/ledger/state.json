@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T18:28:33.008872-04:00",
-  "job_count": 527,
+  "generated_at": "2026-08-26T18:13:19.686221-04:00",
+  "job_count": 528,
   "jobs": [
     {
       "company": "10x National Security",
@@ -12789,6 +12789,26 @@
       "title": "Senior Software Engineer, AI Transformation"
     },
     {
+      "company": "PointClickCare",
+      "compensation": "",
+      "first_seen_at": "2026-08-26T18:12:48.229838-04:00",
+      "job_url": "https://jobs.lever.co/pointclickcare/56e13d29-7f5e-4c80-b9cf-8f12a17db1a0",
+      "last_actor": "chat_update",
+      "last_decision_at": "2026-08-26T18:13:19.669899-04:00",
+      "last_seen_at": "",
+      "last_transaction_id": "tx_20260826_181319_b68a28e5",
+      "location": "Remote; posting headquartered in Mississauga",
+      "normalized_url": "https://jobs.lever.co/pointclickcare/56e13d29-7f5e-4c80-b9cf-8f12a17db1a0",
+      "note": "Authoritative correction to tx_20260826_181248_b27b138d and tx_20260826_181259_f828e2db: the posting identifies a CA base-salary range of 115,000-130,000 per year; currency is not asserted. User-confirmed application on 2026-08-26; submission method and resume version not recorded.",
+      "query_labels": [],
+      "recommendation": "",
+      "score": null,
+      "seen_count": 0,
+      "sites": [],
+      "status": "applied",
+      "title": "AI Solution Engineer (Technology Support)"
+    },
+    {
       "company": "Provectus",
       "compensation": "$120,000 - $180,000 yearly source: direct_data",
       "first_seen_at": "2026-07-30T11:48:45.256828-04:00",
@@ -12814,27 +12834,6 @@
     }
   ],
   "recent_transactions": [
-    {
-      "actor": "job_search_runner",
-      "event_count": 30,
-      "kind": "search_run",
-      "timestamp": "2026-07-30T11:46:08.776785-04:00",
-      "transaction_id": "tx_20260730_114608_086fa3a6"
-    },
-    {
-      "actor": "job_search_runner",
-      "event_count": 30,
-      "kind": "search_run",
-      "timestamp": "2026-07-30T11:48:45.256828-04:00",
-      "transaction_id": "tx_20260730_114845_4510f39f"
-    },
-    {
-      "actor": "chat_update",
-      "event_count": 1,
-      "kind": "decision_update",
-      "timestamp": "2026-07-30T12:59:43.175759-04:00",
-      "transaction_id": "tx_20260730_125943_7e1e525c"
-    },
     {
       "actor": "job_search_runner",
       "event_count": 30,
@@ -12953,10 +12952,31 @@
       "kind": "decision_update",
       "timestamp": "2026-08-20T18:28:32.990803-04:00",
       "transaction_id": "tx_20260820_182832_64e38763"
+    },
+    {
+      "actor": "chat_update",
+      "event_count": 1,
+      "kind": "decision_update",
+      "timestamp": "2026-08-26T18:12:48.229838-04:00",
+      "transaction_id": "tx_20260826_181248_b27b138d"
+    },
+    {
+      "actor": "chat_update",
+      "event_count": 1,
+      "kind": "decision_update",
+      "timestamp": "2026-08-26T18:12:59.848450-04:00",
+      "transaction_id": "tx_20260826_181259_f828e2db"
+    },
+    {
+      "actor": "chat_update",
+      "event_count": 1,
+      "kind": "decision_update",
+      "timestamp": "2026-08-26T18:13:19.669899-04:00",
+      "transaction_id": "tx_20260826_181319_b68a28e5"
     }
   ],
   "status_counts": {
-    "applied": 7,
+    "applied": 8,
     "dismissed": 0,
     "saved": 0,
     "surfaced": 520
