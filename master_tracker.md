@@ -28,6 +28,9 @@
 | 2026-08-24 | Pluralsight | Model Context Protocol in Practice | - | - | - | applied_ai_systems_v1 | - | https://app.pluralsight.com/learner/user/courses/v2/89567288-7338-4f83-96cb-b6024f8ce2be/certificate | - |
 | 2026-08-26 | Pluralsight | FastMCP Foundations | - | - | - | applied_ai_systems_v1 | - | https://app.pluralsight.com/learner/user/courses/v2/0d3c2b5e-532e-4342-824f-1de251baba07/certificate | - |
 | 2026-08-26 | PointClickCare | AI Solution Engineer (Technology Support) | A | 8 | 8 | Not recorded | Applied | Remote per posting; direct posting lists a CA base-salary range of $115,000-$130,000. Azure AI Foundry, Azure OpenAI, Copilot Studio, MCP, RAG, integration, evaluation, guardrails, and workflow automation. User-confirmed application; exact submission method, resume version, and Michigan remote eligibility are not recorded. Exact posting: https://jobs.lever.co/pointclickcare/56e13d29-7f5e-4c80-b9cf-8f12a17db1a0 | 2026-09-09 |
+| 2026-08-31 | Pluralsight | Code Review with GitHub Copilot | - | - | - | applied_ai_systems_v1 | - | https://app.pluralsight.com/learner/user/courses/v2/780f49d8-14f8-4c08-a420-f067556a9c7c/certificate | - |
+| 2026-08-31 | Pluralsight | Github Copilot Enterprise | - | - | - | applied_ai_systems_v1 | - | https://app.pluralsight.com/learner/user/courses/v2/3d7f7d7b-3f4c-4828-8d7c-27f863777ed9/certificate | - |
+| 2026-09-01 | Pluralsight | GitHub Copilot: Multi-model Strategy and Agent Mode | - | - | - | applied_ai_systems_v1 | - | https://app.pluralsight.com/learner/user/courses/v2/6e8e9553-52ad-4475-86dc-a3c76190e391/certificate | - |
 
 ## Status Legend
 - Drafting
