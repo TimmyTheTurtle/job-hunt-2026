@@ -33,7 +33,7 @@ Run a deep dive when the user asks for:
 - "what does this teach us about the resume?"
 - "job market research" after a search run
 
-Do not treat the generated `Apply First` bucket as a final recommendation. It is only a heuristic starting point.
+Treat the generated `Qualified / Apply First` bucket as a conservative first pass, not a final recommendation. Verify the extracted requirement lines against the live employer/ATS posting. `Unverified` roles must not be recommended until the full requirements are obtained.
 
 ## Inputs
 
@@ -59,6 +59,7 @@ If the latest run is ambiguous, identify the most recent files by timestamp and 
    - stack and tool requirements
    - AI/workflow/document/eval/retrieval language
    - disqualifying mismatch, if any
+   - whether the automated requirement extraction classified each must-have correctly
 6. Classify each role as one of:
    - strong current target
    - current/stretch target
@@ -138,4 +139,3 @@ Dismiss/archive roles usually include:
 Do not record `applied`, `dismissed`, or `saved` decisions during the deep dive unless the user explicitly asks.
 
 The deep-dive report can recommend a decision batch. Actual ledger updates should be a separate confirmed step through `job_search/record_decisions.py`.
-

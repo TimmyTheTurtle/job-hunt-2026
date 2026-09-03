@@ -125,7 +125,7 @@ role_tiers:
 - Tier 1: applied AI systems, LLM/RAG, document intelligence, AI workflow automation, compliance/legal/insurance AI engineering
 - Tier 2: pragmatic software, C#/.NET/SaaS, solutions, consulting, internal tools, applied reporting, systems/simulation roles with strong technical depth
 - Tier 3: temporary stabilization roles only if needed for runway/UI compliance
-- forward_deployed_balance: forward-deployed AI engineering is the destination/current-stretch lane, not the exclusive current target; keep present searches broad across applied AI application, implementation, integration, document intelligence, workflow automation, and adjacent systems roles
+- forward_deployed_balance: forward-deployed AI engineering is the destination/current-stretch lane, not the exclusive current target; keep active searches AI-engineering focused across applied AI application, implementation, integration, document intelligence, workflow automation, and compliance-sensitive AI, with adjacent systems only when explicitly AI-enabled
 
 cover_letter_rules:
 - specific
@@ -169,6 +169,10 @@ default_workflow:
 8. strategy audit
 
 job_search_deep_dive:
+- automated ranking must use `job_search/candidate_profile.json` and the posting requirements; title/topic relevance alone is never qualification evidence
+- missing or thin requirements are `unverified`, not `Apply First`; hard gaps in tenure, clearance, credentials, location, or required stack override directional fit
+- keep professional/production evidence distinct from portfolio, coursework, and exposure; update the candidate profile only from defensible non-archived evidence
+- paired full-time and contract runs suppress prior `surfaced` URLs only within the same profile; applied/saved/dismissed decisions remain global
 - after a search run, use `job_search/DEEP_DIVE_WORKFLOW.md` when asked to follow links, classify surfaced roles, capture compensation, identify current vs future targets, or extract resume implications
 - for serious discovery, pair the runner with `job_search/ATS_SWEEP_WORKFLOW.md` to check Ashby, Greenhouse, Lever, YC, HN, and direct company career pages
 - for contracting/consulting/fractional searches, use `job_search/CONTRACT_SEARCH_WORKFLOW.md` and the `job_search/search_profile_contracting.json` profile; capture rate, contract length, W2/1099/C2C status, weekly hours, timezone constraints, and portfolio value

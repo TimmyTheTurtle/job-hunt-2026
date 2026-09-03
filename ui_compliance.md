@@ -26,10 +26,15 @@ The reusable process from the March 2026 notes is:
 
 ## Michigan Works / Post Registration Compliance Guidance
 
-### To report timely, you must report between 10-Aug-2026 and 15-Aug-2026
+### To report timely, submit between 07-Sep-2026 and 12-Sep-2026
 
- 1. Go Here (https://miwam.unemployment.state.mi.us/ClmMiWAM/_/)
- 2. Login
+1. Go to [MiWAM](https://miwam.unemployment.state.mi.us/ClmMiWAM/_/).
+2. Sign in through MiLogin.
+3. On the **Talent Dashboard**, find **Weekly Certification** in the **To-do** list.
+4. Select **COMPLETE TASK**.
+5. Complete and submit the certification, then save the confirmation.
+
+If you’re already on the Talent Dashboard, skip steps 1–2 and click **COMPLETE TASK** under **Weekly Certification**.
 
 ## Practical Interpretation
 

@@ -16,11 +16,18 @@ from typing import Any
 from zoneinfo import ZoneInfo
 
 from jobspy import scrape_jobs
-from ledger import BLOCKING_STATUSES, existing_application_urls, normalize_url, record_transaction, state_map
+from ledger import blocking_urls_for_profile, existing_application_urls, normalize_url, record_transaction
+from qualification import (
+    evaluate_qualifications,
+    load_candidate_profile,
+    qualification_recommendation,
+    summarize_items,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PROFILE = ROOT / "job_search" / "search_profile.json"
+DEFAULT_CANDIDATE_PROFILE = ROOT / "job_search" / "candidate_profile.json"
 DEFAULT_OUTPUT_DIR = ROOT / "job_search" / "output"
 TIMEZONE = ZoneInfo("America/New_York")
 
@@ -102,6 +109,9 @@ HARD_REJECT_TITLE_PATTERNS = [
     re.compile(r"\brotational\b"),
     re.compile(r"\bmanager\b"),
     re.compile(r"\bdirector\b"),
+    re.compile(r"\bhead of\b"),
+    re.compile(r"\bchief\b"),
+    re.compile(r"\bvice president\b|\bvp\b"),
     re.compile(r"\barchitect\b"),
     re.compile(r"\brecruiter\b"),
     re.compile(r"\bsales\b"),
@@ -134,7 +144,6 @@ HARD_REJECT_TEXT_PATTERNS = [
     re.compile(r"\baspice\b"),
     re.compile(r"\badas\b"),
     re.compile(r"\bwordpress\b"),
-    re.compile(r"\bcrm\b"),
     re.compile(r"\binsurance sales\b"),
     re.compile(r"\bcommission based\b"),
 ]
@@ -145,6 +154,12 @@ SENIORITY_PENALTIES = [
     (re.compile(r"\blead\b"), -3, "lead"),
     (re.compile(r"\bsenior\b"), -2, "senior"),
 ]
+
+AI_TITLE_PATTERN = re.compile(
+    r"\b(?:ai|a\.i\.|ml|machine learning|llm|rag|agentic|document intelligence|"
+    r"intelligent automation|ai[- /]?ml)\b",
+    re.I,
+)
 
 
 @dataclass
@@ -163,6 +178,7 @@ class SearchSpec:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run one-shot preferred-role job search.")
     parser.add_argument("--profile", default=str(DEFAULT_PROFILE))
+    parser.add_argument("--candidate-profile", default=str(DEFAULT_CANDIDATE_PROFILE))
     parser.add_argument("--output-dir", default=str(DEFAULT_OUTPUT_DIR))
     parser.add_argument("--hours-old", type=int)
     parser.add_argument("--results-per-query", type=int)
@@ -239,6 +255,7 @@ def classify(row: dict[str, Any], spec: SearchSpec) -> tuple[int, list[str], boo
     score = TIER_BONUS.get(spec.tier, 0)
     rejected = False
     title_hits: set[str] = set()
+    relevance_hits: dict[str, int] = {}
 
     for pattern in HARD_REJECT_TITLE_PATTERNS:
         if pattern.search(title_text):
@@ -260,15 +277,17 @@ def classify(row: dict[str, Any], spec: SearchSpec) -> tuple[int, list[str], boo
 
     for pattern, delta, label in POSITIVE_TITLE_PATTERNS:
         if pattern.search(title_text):
-            score += delta
+            relevance_hits[label] = max(relevance_hits.get(label, 0), delta)
             reasons.append(label)
             title_hits.add(label)
 
     for pattern, delta, label in POSITIVE_TEXT_PATTERNS:
         if pattern.search(full_text):
-            score += delta
+            relevance_hits[label] = max(relevance_hits.get(label, 0), delta)
             if label not in reasons:
                 reasons.append(label)
+
+    score += sum(relevance_hits.values())
 
     if spec.location_label == "remote" and safe_str(row.get("is_remote")).lower() in {"true", "1"}:
         score += 2
@@ -286,16 +305,6 @@ def classify(row: dict[str, Any], spec: SearchSpec) -> tuple[int, list[str], boo
         reasons.append("weak_title_match")
 
     return score, sorted(set(reasons)), rejected
-
-
-def recommendation(score: int, rejected: bool) -> str:
-    if rejected:
-        return "skip"
-    if score >= 12:
-        return "apply_first"
-    if score >= 8:
-        return "review"
-    return "low_priority"
 
 
 def date_to_str(value: Any) -> str:
@@ -369,6 +378,10 @@ def format_compensation(row: dict[str, Any]) -> str:
     if source:
         pieces.append(f"source: {source}")
     return " ".join(pieces)
+
+
+def has_listed_compensation(row: dict[str, Any]) -> bool:
+    return not (is_missing(row.get("min_amount")) and is_missing(row.get("max_amount")))
 
 
 def joined_items(value: Any) -> str:
@@ -603,7 +616,17 @@ def key_for_candidate(row: dict[str, Any]) -> str:
 def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
     fieldnames = [
         "recommendation",
-        "score",
+        "qualification_score",
+        "relevance_score",
+        "description_status",
+        "required_count",
+        "substantive_required_count",
+        "role_focus",
+        "matched_requirements",
+        "partial_requirements",
+        "qualification_gaps",
+        "hard_blockers",
+        "verification_blockers",
         "tier",
         "company",
         "company_website",
@@ -615,7 +638,7 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
         "compensation",
         "job_url",
         "query_labels",
-        "reasons",
+        "relevance_notes",
     ]
     with path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
@@ -632,6 +655,7 @@ def write_markdown(
     search_count: int,
     existing_url_count: int,
     ledger_info: dict[str, Any],
+    candidate_profile_name: str,
 ) -> None:
     generated = datetime.now(TIMEZONE).strftime("%Y-%m-%d %H:%M %Z")
     grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
@@ -639,9 +663,11 @@ def write_markdown(
         grouped[row["recommendation"]].append(row)
 
     sections = [
-        ("apply_first", "Apply First"),
-        ("review", "Review"),
-        ("low_priority", "Low Priority"),
+        ("apply_first", "Qualified / Apply First"),
+        ("review", "Plausible / Review"),
+        ("stretch", "Stretch / Material Gaps"),
+        ("unverified", "Unverified Posting Requirements"),
+        ("skip", "Hard Mismatch"),
     ]
 
     lines = [
@@ -649,6 +675,7 @@ def write_markdown(
         "",
         f"- Generated: {generated}",
         f"- Profile: `{profile_name}`",
+        f"- Candidate evidence profile: `{candidate_profile_name}`",
         f"- Sites: `{', '.join(sites)}`",
         f"- Search specs run: {search_count}",
         f"- Existing application URLs known: {existing_url_count}",
@@ -673,7 +700,13 @@ def write_markdown(
             company = row["company"] or "Unknown company"
             title_text = row["title"] or "Unknown title"
             lines.append(f"### {idx}. {company} - {title_text}")
-            lines.append(f"- Score: {row['score']}")
+            lines.append(f"- Qualification score: {row['qualification_score']}/100")
+            lines.append(f"- Search relevance score: {row['relevance_score']}")
+            lines.append(
+                f"- Posting requirements: {row['description_status']}; "
+                f"{row['required_count']} evaluated ({row['substantive_required_count']} substantive)"
+            )
+            lines.append(f"- AI role focus: {row['role_focus']}")
             lines.append(f"- Tier: {row['tier']}")
             lines.append(f"- Location: {row['location'] or 'Unknown'}")
             lines.append(f"- Site(s): {row['sites']}")
@@ -683,7 +716,12 @@ def write_markdown(
                 lines.append(f"- Posted: {row['posted']}")
             lines.append(f"- Compensation: {row['compensation'] or 'Not listed'}")
             lines.append(f"- Query labels: {row['query_labels']}")
-            lines.append(f"- Match notes: {row['reasons']}")
+            lines.append(f"- Matched requirements: {row['matched_requirements']}")
+            lines.append(f"- Partial evidence: {row['partial_requirements']}")
+            lines.append(f"- Qualification gaps: {row['qualification_gaps']}")
+            lines.append(f"- Hard blockers: {row['hard_blockers']}")
+            lines.append(f"- Verification blockers: {row['verification_blockers']}")
+            lines.append(f"- Relevance notes: {row['relevance_notes']}")
             lines.append(f"- Posting URL: {row['job_url']}")
             lines.append("")
 
@@ -693,21 +731,23 @@ def write_markdown(
 def main() -> int:
     args = parse_args()
     profile_path = Path(args.profile)
+    candidate_profile_path = Path(args.candidate_profile)
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     profile = load_profile(profile_path)
+    candidate_profile = load_candidate_profile(candidate_profile_path)
     sites = [item.strip() for item in (args.sites.split(",") if args.sites else profile["default_sites"]) if item.strip()]
     hours_old = args.hours_old if args.hours_old is not None else int(profile["hours_old"])
     results_per_query = args.results_per_query if args.results_per_query is not None else int(profile["results_wanted_per_query"])
+    require_compensation = bool(profile.get("require_compensation", False))
 
     specs = build_search_specs(profile)
     if args.max_searches is not None:
         specs = specs[: args.max_searches]
 
     known_application_urls = existing_application_urls()
-    ledger_jobs = state_map()
-    blocked_ledger_urls = {url for url, job in ledger_jobs.items() if job.get("status") in BLOCKING_STATUSES}
+    blocked_ledger_urls = blocking_urls_for_profile(profile["profile_name"])
     aggregated: dict[str, dict[str, Any]] = {}
     suppressed_by_ledger = 0
     suppressed_by_applications = 0
@@ -722,8 +762,17 @@ def main() -> int:
         for row in rows:
             if not is_allowed_location(row):
                 continue
+            if require_compensation and not has_listed_compensation(row):
+                continue
 
-            score, reasons, rejected = classify(row, spec)
+            relevance_score, relevance_reasons, rejected = classify(row, spec)
+            qualification = evaluate_qualifications(row, candidate_profile)
+            title = safe_str(row.get("title"))
+            role_focus = "explicit" if AI_TITLE_PATTERN.search(title) else "indirect"
+            fit_recommendation = qualification_recommendation(relevance_score, rejected, qualification, role_focus)
+            search_exclusions = [reason for reason in relevance_reasons if reason.startswith("reject:")]
+            combined_blockers = list(qualification["hard_blockers"])
+            combined_blockers.extend(f"Role-title exclusion matched {reason[7:]}" for reason in search_exclusions)
             job_url = normalize_url(safe_str(row.get("job_url")))
             if job_url and job_url in known_application_urls:
                 suppressed_by_applications += 1
@@ -734,8 +783,18 @@ def main() -> int:
 
             key = key_for_candidate(row)
             candidate = {
-                "recommendation": recommendation(score, rejected),
-                "score": score,
+                "recommendation": fit_recommendation,
+                "qualification_score": qualification["qualification_score"],
+                "relevance_score": relevance_score,
+                "description_status": qualification["description_status"],
+                "required_count": qualification["required_count"],
+                "substantive_required_count": qualification["substantive_required_count"],
+                "role_focus": role_focus,
+                "matched_requirements": summarize_items(qualification["matched"]),
+                "partial_requirements": summarize_items(qualification["partial"]),
+                "qualification_gaps": summarize_items(qualification["gaps"]),
+                "hard_blockers": "; ".join(combined_blockers) or "None",
+                "verification_blockers": "; ".join(qualification["verification_blockers"]) or "None",
                 "tier": spec.tier,
                 "company": safe_str(row.get("company")),
                 "company_website": company_website(row),
@@ -747,7 +806,7 @@ def main() -> int:
                 "compensation": format_compensation(row),
                 "job_url": job_url or safe_str(row.get("job_url")),
                 "query_labels": spec.label,
-                "reasons": ", ".join(reasons),
+                "relevance_notes": ", ".join(relevance_reasons),
             }
 
             if key not in aggregated:
@@ -755,30 +814,36 @@ def main() -> int:
                 continue
 
             existing = aggregated[key]
-            if score > existing["score"]:
+            if (candidate["qualification_score"], candidate["relevance_score"]) > (
+                existing["qualification_score"],
+                existing["relevance_score"],
+            ):
                 aggregated[key] = {**candidate, "sites": existing["sites"], "query_labels": existing["query_labels"]}
                 existing = aggregated[key]
 
             merged_sites = {item.strip() for item in (existing["sites"] + ", " + candidate["sites"]).split(",") if item.strip()}
             merged_labels = {item.strip() for item in (existing["query_labels"] + ", " + spec.label).split(",") if item.strip()}
-            merged_reasons = {item.strip() for item in (existing["reasons"] + ", " + ", ".join(reasons)).split(",") if item.strip()}
+            merged_reasons = {
+                item.strip()
+                for item in (existing["relevance_notes"] + ", " + ", ".join(relevance_reasons)).split(",")
+                if item.strip()
+            }
             existing["sites"] = ", ".join(sorted(merged_sites))
             existing["query_labels"] = ", ".join(sorted(merged_labels))
-            existing["reasons"] = ", ".join(sorted(merged_reasons))
-            existing["score"] = max(existing["score"], score)
-            existing["recommendation"] = recommendation(existing["score"], rejected)
+            existing["relevance_notes"] = ", ".join(sorted(merged_reasons))
+            existing["relevance_score"] = max(existing["relevance_score"], relevance_score)
 
     ranked = sorted(
         aggregated.values(),
         key=lambda row: (
-            {"apply_first": 0, "review": 1, "low_priority": 2, "skip": 3}[row["recommendation"]],
-            -row["score"],
+            {"apply_first": 0, "review": 1, "stretch": 2, "unverified": 3, "skip": 4}[row["recommendation"]],
+            -row["qualification_score"],
+            -row["relevance_score"],
             row["company"].lower(),
             row["title"].lower(),
         ),
     )
 
-    ranked = [row for row in ranked if row["recommendation"] != "skip"]
     ranked = ranked[: int(profile["max_report_items"])]
 
     ledger_events = [
@@ -790,9 +855,14 @@ def main() -> int:
             "location": row["location"],
             "sites": [item.strip() for item in row["sites"].split(",") if item.strip()],
             "query_labels": [item.strip() for item in row["query_labels"].split(",") if item.strip()],
-            "score": row["score"],
+            "score": row["qualification_score"],
             "recommendation": row["recommendation"],
             "compensation": row["compensation"],
+            "note": (
+                f"Qualification {row['qualification_score']}/100; "
+                f"gaps: {row['qualification_gaps']}; blockers: {row['hard_blockers']}; "
+                f"verification: {row['verification_blockers']}"
+            ),
         }
         for row in ranked
         if row["job_url"]
@@ -808,6 +878,8 @@ def main() -> int:
                 "profile_name": profile["profile_name"],
                 "sites": sites,
                 "search_specs_run": len(specs),
+                "candidate_profile": candidate_profile["profile_name"],
+                "score_kind": "qualification_score_0_100",
             },
         )
     else:
@@ -831,6 +903,7 @@ def main() -> int:
             "transaction_id": ledger_result["transaction_id"],
             "dry_run": bool(ledger_result.get("dry_run")),
         },
+        candidate_profile["profile_name"],
     )
     write_csv(csv_path, ranked)
 

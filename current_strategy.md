@@ -19,6 +19,8 @@ Applications during this phase are for:
 
 Search-result deep dives are part of the market-research loop. After a search run, the useful question is not only "which jobs should Dorian apply to?" but also "what do these postings teach us about the resume, the proof gaps, and the most legible version of the Applied AI Systems Engineer identity?"
 
+The automated search must rank interview plausibility separately from directional relevance. It loads `job_search/candidate_profile.json`, extracts requirements from the actual posting description, and compares required tenure, skills, credentials, clearance, location, and domain constraints against documented evidence. Missing descriptions are unverified, and hard qualification gaps cannot be promoted by AI keywords or strategic appeal.
+
 ## Target Identity
 
 Primary identity:
@@ -89,6 +91,8 @@ This project supports the claim that Dorian is building toward AI-assisted docum
 ## Role Taxonomy
 
 Forward-deployed AI engineering is a destination lane, not the exclusive present-tense target. The search should keep it as a smaller current/stretch or future/stretch family while prioritizing attainable applied-AI application, implementation, integration, document-intelligence, workflow-automation, and adjacent systems roles that build the proof needed for forward-deployed work.
+
+The active automated search is AI-engineering focused: generic software, data, DevOps, and implementation roles should not dominate the search unless the posting is explicitly AI-enabled, document-intelligence, or AI workflow/automation work.
 
 ### A - Target
 
