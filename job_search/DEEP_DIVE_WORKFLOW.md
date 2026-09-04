@@ -1,8 +1,9 @@
 # Job Search Deep-Dive Workflow
 
-Use this after a search run when the user wants to understand the surfaced jobs, not merely list them.
+Use this after a Gmail alert report when the user wants to understand the
+surfaced jobs, not merely list them.
 
-This workflow turns a raw shortlist into:
+This workflow turns a bounded Gmail alert report into:
 - current-fit targets
 - stretch or future-market-signal roles
 - dismiss/archive candidates
@@ -11,11 +12,12 @@ This workflow turns a raw shortlist into:
 
 ## Skill Decision
 
-The job search functionality is currently a repository workflow, not a Codex skill.
+The active discovery functionality is the repository’s Gmail alert workflow,
+not a separate web-search routine or Codex skill.
 
 That is the right default for now because the job search depends on repo-local state:
-- `job_search/search_profile.json`
-- `job_search/run_search.py`
+- `job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md`
+- `job_search/gmail_job_report.py`
 - `job_search/ledger/`
 - ignored generated reports under `job_search/output/`
 - candidate context and truth constraints in this repository
@@ -25,21 +27,25 @@ A future Codex skill may be useful as a thin launcher or checklist, but the sour
 
 ## When To Run
 
-Run a deep dive when the user asks for:
+Run a deep dive after a Gmail report when the user asks for:
 - "deep dive"
 - "follow the links"
 - "which jobs am I qualified for?"
 - "which ones are future roles?"
 - "what does this teach us about the resume?"
-- "job market research" after a search run
+- "job market research" after a Gmail alert report
 
-Treat the generated `Qualified / Apply First` bucket as a conservative first pass, not a final recommendation. Verify the extracted requirement lines against the live employer/ATS posting. `Unverified` roles must not be recommended until the full requirements are obtained.
+Treat Gmail alerts as leads, not recommendations. Verify the recovered link
+against the live employer/ATS posting. `Unverified` roles must not be
+recommended until the full requirements are obtained.
 
 ## Inputs
 
-Use the newest matching pair in `job_search/output/`:
-- `job_search_YYYY-MM-DD_HHMMSS.md`
-- `job_search_YYYY-MM-DD_HHMMSS.csv`
+Use the newest relevant Gmail report in `job_search/output/`:
+- `gmail_job_report_YYYY-MM-DD.md`
+
+If the user names specific Gmail messages or roles, use those explicit message
+IDs/subjects and do not widen the search window merely to find more roles.
 
 If the latest run is ambiguous, identify the most recent files by timestamp and state which one you used.
 
@@ -47,8 +53,8 @@ If the latest run is ambiguous, identify the most recent files by timestamp and 
 
 1. Bootstrap from `AGENTS.md` and `AGENT_BOOTSTRAP_COMPACT.md`.
 2. Read `ROLE_EVAL_CHECKLIST.md` and `current_strategy.md` if classification or resume implications are part of the request.
-3. Load the latest search report and CSV.
-4. For each surfaced job, open the posting URL or a reliable company/careers page.
+3. Load the latest Gmail job report and its explicit message/link evidence.
+4. For each surfaced job, open the recovered posting URL or a reliable company/careers page.
 5. Capture:
    - current working URL
    - title and company
@@ -86,7 +92,7 @@ Use this structure:
 ```markdown
 # Job Search Deep Dive - YYYY-MM-DD
 
-Source run: `job_search/output/job_search_YYYY-MM-DD_HHMMSS.md`
+Source report: `job_search/output/gmail_job_report_YYYY-MM-DD.md`
 
 ## Executive Summary
 

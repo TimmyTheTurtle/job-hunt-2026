@@ -79,21 +79,17 @@ For search bookkeeping, agents should treat the machine-managed search ledger an
 - `job_search/ledger/` for duplicate suppression and fast decision logging
 - `master_tracker.md` for supervised/manual application logging
 
-For search-result analysis, agents should use [job_search/DEEP_DIVE_WORKFLOW.md](job_search/DEEP_DIVE_WORKFLOW.md) when the user asks to follow links, classify surfaced jobs, compare current fit against future/stretch roles, capture compensation, or extract resume implications. This keeps the deep-dive step separate from the raw search runner and from ledger decision updates.
+For search-result analysis, agents should use [job_search/DEEP_DIVE_WORKFLOW.md](job_search/DEEP_DIVE_WORKFLOW.md) when the user asks to follow links from a Gmail report, classify surfaced jobs, compare current fit against future/stretch roles, capture compensation, or extract resume implications. This keeps the deep-dive step separate from Gmail discovery and ledger decision updates.
 
-For Gmail-led job discovery and application preparation, agents should use [job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md](job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md). It bounds starred-message searches to the later of the last successful run or fourteen days, recovers canonical public posting links from full message bodies, requires full-posting verification, unflags only explicitly reviewed messages, uses visible `Jobs/Reviewed`, `Jobs/Applied`, and `Jobs/Rejections` status labels, and keeps preparation-only folders separate from Applied bookkeeping.
+Gmail job alerts are the sole active discovery channel. Agents should use [job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md](job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md) for the entire active flow: user-configured alerts, bounded starred-message search, canonical public posting-link recovery from full message bodies, full-posting verification, deep dive and user review, explicit reviewed/closed Gmail status updates, and optional preparation-only folders separate from Applied bookkeeping. The report window is the later of the last successful report or fourteen days before the run; do not backfill older alerts to reach a count.
 
 Application history is canonical only when the matching application folder and `master_tracker.md` row both exist. Gmail labels, emails, or one incomplete artifact are not enough to count an application; missing one side is reported as incomplete or unconfirmed.
 
-The raw search runner is qualification-aware. It reads the conservative evidence inventory in [job_search/candidate_profile.json](job_search/candidate_profile.json), extracts explicit requirements from each available posting description, and keeps qualification separate from topic relevance. A missing or thin posting is unverified; it cannot become `Apply First`. Hard gaps such as active-clearance requirements, unsupported specific tenure, required credentials, or an incompatible location override an attractive title or long-term learning value. Candidate-profile claims must come from defensible, non-archived resume and project evidence, with professional experience kept distinct from portfolio work and exposure.
+Qualification remains conservative: agents should read [job_search/candidate_profile.json](job_search/candidate_profile.json), verify explicit requirements from each available full posting, and keep qualification separate from topic relevance. A missing or thin posting is unverified; it cannot become `Apply First`. Hard gaps such as active-clearance requirements, unsupported specific tenure, required credentials, or an incompatible location override an attractive title or long-term learning value. Candidate-profile claims must come from defensible, non-archived resume and project evidence, with professional experience kept distinct from portfolio work and exposure.
 
-The active search is focused on AI-engineering roles: applied AI systems and applications, AI integration/implementation/solutions, LLM/RAG, document intelligence, AI workflow automation, and compliance-sensitive AI. Generic software, data, DevOps, or implementation roles are secondary unless the posting is explicitly AI-enabled.
+The active discovery scope is whatever relevant AI-engineering roles arrive through the user’s configured Gmail alerts: applied AI systems and applications, AI integration/implementation/solutions, LLM/RAG, document intelligence, AI workflow automation, and compliance-sensitive AI. Generic software, data, DevOps, or implementation roles remain secondary unless the alert’s full posting is explicitly AI-enabled.
 
-Full-time and contracting runs maintain separate surfaced-result suppression. A URL surfaced by one profile may still appear in the other profile for an independent evaluation; applied, saved, and dismissed decisions remain global across profiles.
-
-For serious search discovery, agents should pair the normal runner with [job_search/ATS_SWEEP_WORKFLOW.md](job_search/ATS_SWEEP_WORKFLOW.md). That sweep covers Ashby, Greenhouse, Lever, YC Work at a Startup, Hacker News "Who is hiring?", and direct company career pages, which often contain sharper applied-AI roles than the broad job boards.
-
-For contracting, consulting, or fractional work, agents should use [job_search/CONTRACT_SEARCH_WORKFLOW.md](job_search/CONTRACT_SEARCH_WORKFLOW.md) and the dedicated contracting profile at [job_search/search_profile_contracting.json](job_search/search_profile_contracting.json). Contract review should capture rate, duration, W2/1099/C2C status, expected weekly hours, timezone constraints, client-facing load, and whether the work creates useful portfolio evidence.
+The former direct job-board runner, ATS/startup sweep, and contract-search workflow are retired. Their files may be consulted for historical context or diagnostics only when explicitly requested; they must not be used to generate new discovery results.
 
 For article and research work, agents should treat citation integrity as part of the work, not as a cleanup detail. A resolving markdown link is not enough. The source must actually support the article claim, local PDF links must point to the exact named paper, and DOI-only or web-only sources should be marked honestly rather than replaced with a convenient unrelated PDF. When article citations change, the tracked `articles/papers/citations.json` should include the current article-specific truth: title, authors, year, URL/DOI/arXiv ID, local file when present, verification status, and why the source is germane.
 
@@ -120,8 +116,7 @@ Keep in the compact file:
 - truth constraints
 - default workflow
 - search deep-dive trigger and ledger boundary
-- ATS/startup sweep trigger for serious job discovery
-- contract-search trigger and contract-specific review fields
+- Gmail alert-report boundary and visible status-label lifecycle
 - article citation integrity requirements
 - critical recordkeeping requirements like preserving the exact posting URL
 - company watchlist checks for employers Dorian wants to revisit

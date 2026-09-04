@@ -12,7 +12,7 @@ Every agent should bootstrap in this order:
 
 Do not begin by loading every context file in the repo.
 
-Preferred CLI: Use WSL for running repository scripts and the `job_search` runner.
+Preferred CLI: Use WSL for repository scripts, especially the Gmail job-report runner. The old direct job-board/ATS search runners are retired and must not be used for discovery unless the user explicitly asks for legacy diagnostics or a workflow change.
 
 ## Environment & Tool Constraints
 
@@ -62,6 +62,7 @@ This repo was refactored on 2026-06-26 to a single positioning: **Applied AI Sys
 - Do not fabricate employers, titles, certifications, years of experience, clearance, or unsupported domain expertise.
 - Optimize for coherent direction, not application spam.
 - Protect runway, learning time, and the Applied AI Systems Engineer positioning.
+- Gmail job alerts are the sole active job-discovery channel. Do not perform a separate LinkedIn, Indeed, Google Jobs, ATS, startup, or contracting search unless the user explicitly changes this policy.
 - Keep machine-managed search bookkeeping in `job_search/ledger/`; do not auto-update `master_tracker.md` from search runs.
 - Keep company watchlist updates in `company_watchlist.md`; do not fold watchlist checks into `master_tracker.md`.
 - Do not draw from or reference `archive/` in new applications or materials.
@@ -73,7 +74,9 @@ For application work:
 2. record the exact posting URL in the application's `job_description.md`
 3. follow the default workflow in [APPLICATION_WORKFLOW.md](APPLICATION_WORKFLOW.md)
 
-For Gmail-led discovery and application preparation, also follow [job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md](job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md).
+For all active job discovery and application preparation, follow [job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md](job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md). The canonical flow is: user-configured Gmail alerts -> bounded starred-message report -> canonical posting-link recovery -> full-posting verification -> deep dive and user review -> optional review-only application materials -> tracker/application updates only after confirmed submission.
+
+The Gmail report window is the shorter of the two constraints: messages newer than the last successful report, with a maximum lookback of 14 days. Do not backfill older alerts merely to reach a target count. The report is the discovery run; the old direct-search runner, ATS sweep, and contract-search runner are retired.
 
 Canonical application record rule:
 - Count an application as real only when a matching `applications/...` folder and `master_tracker.md` row both exist.

@@ -4,7 +4,7 @@ Canonical strategy as of 2026-06-16.
 
 ## Core Outcome
 
-The current phase is a combined job-search, EA/UI compliance, employer-outreach, and market-research phase.
+The current phase is a Gmail-alert-driven job-discovery, EA/UI compliance, employer-outreach, and market-research phase.
 
 The goal is not simply to get any job quickly. The goal is to establish a truthful, market-legible identity while preserving runway and continuing to build evidence.
 
@@ -17,9 +17,15 @@ Applications during this phase are for:
 - narrative refinement
 - runway protection
 
-Search-result deep dives are part of the market-research loop. After a search run, the useful question is not only "which jobs should Dorian apply to?" but also "what do these postings teach us about the resume, the proof gaps, and the most legible version of the Applied AI Systems Engineer identity?"
+Gmail-alert deep dives are part of the market-research loop. After a bounded Gmail report, the useful question is not only "which jobs should Dorian apply to?" but also "what do these postings teach us about the resume, the proof gaps, and the most legible version of the Applied AI Systems Engineer identity?"
 
-The automated search must rank interview plausibility separately from directional relevance. It loads `job_search/candidate_profile.json`, extracts requirements from the actual posting description, and compares required tenure, skills, credentials, clearance, location, and domain constraints against documented evidence. Missing descriptions are unverified, and hard qualification gaps cannot be promoted by AI keywords or strategic appeal.
+The Gmail workflow must keep interview plausibility separate from directional relevance. It loads `job_search/candidate_profile.json`, recovers the canonical posting URL, verifies the actual full posting, and compares required tenure, skills, credentials, clearance, location, and domain constraints against documented evidence. Missing descriptions are unverified, and hard qualification gaps cannot be promoted by AI keywords or strategic appeal.
+
+## Discovery policy
+
+The user-configured Gmail job-alert stream is the sole active job-discovery channel. The old direct job-board runner, ATS/startup sweep, and contracting search are retired and must not be run for new discovery unless Dorian explicitly changes this policy or requests legacy diagnostics. The active loop is:
+
+`Gmail alert -> bounded starred report -> canonical link recovery -> full-posting verification -> deep dive/user review -> optional application preparation -> confirmed submission record`
 
 ## Target Identity
 
@@ -92,7 +98,7 @@ This project supports the claim that Dorian is building toward AI-assisted docum
 
 Forward-deployed AI engineering is a destination lane, not the exclusive present-tense target. The search should keep it as a smaller current/stretch or future/stretch family while prioritizing attainable applied-AI application, implementation, integration, document-intelligence, workflow-automation, and adjacent systems roles that build the proof needed for forward-deployed work.
 
-The active automated search is AI-engineering focused: generic software, data, DevOps, and implementation roles should not dominate the search unless the posting is explicitly AI-enabled, document-intelligence, or AI workflow/automation work.
+The active Gmail alert review is AI-engineering focused: generic software, data, DevOps, and implementation roles should not dominate review unless the full posting is explicitly AI-enabled, document-intelligence, or AI workflow/automation work.
 
 ### A - Target
 

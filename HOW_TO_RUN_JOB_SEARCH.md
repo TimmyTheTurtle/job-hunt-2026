@@ -1,336 +1,67 @@
-# How to Run the Manual Job Search
+# Gmail Job-Alert Workflow
 
-This repo now includes a manual one-shot job-search tool for preferred roles.
+This is the repository’s only active job-discovery workflow. Configure job
+alerts in Gmail, star the messages worth reviewing, and use the Gmail report
+runner to process only those alerts. Do not run a separate LinkedIn, Indeed,
+Google Jobs, ATS, startup, or contracting search unless the user explicitly
+changes this policy.
 
-It is designed to:
-- run only when you ask for it
-- generate a shortlist for later review
-- include posting URLs for manual follow-up
-- avoid auto-applying
-- feed the machine-managed search ledger without auto-editing `master_tracker.md`
-
-## What It Does
-
-The search tool:
-- runs from WSL
-- searches selected job boards through `python-jobspy`
-- uses role queries tuned for the Applied AI Systems Engineer direction
-- compares the actual posting requirements with `job_search/candidate_profile.json`
-- separates qualification from search-topic relevance
-- de-dupes against posting URLs already recorded in this repo
-- writes a markdown shortlist and CSV export to `job_search/output/`
-
-Current default emphasis:
-- applied AI systems engineer
-- AI solutions engineer
-- LLM / RAG engineer
-- document intelligence engineer
-- AI workflow automation engineer
-- legal/compliance/insurance AI engineering roles
-- software engineering roles around AI systems and workflow automation
-
-There is also a separate contracting profile for AI engineering contract, consulting, and fractional work:
-
-- AI engineer contract
-- LLM / RAG engineer contract
-- AI automation consultant
-- AI solutions engineer contract
-- document intelligence contractor
-- legal/compliance automation consultant
-
-## Where It Lives
-
-- Runner: [job_search/run_search.sh](job_search/run_search.sh)
-- Main script: [job_search/run_search.py](job_search/run_search.py)
-- Search profile: [job_search/search_profile.json](job_search/search_profile.json)
-- Contracting profile: [job_search/search_profile_contracting.json](job_search/search_profile_contracting.json)
-- Detailed subsystem notes: [job_search/README.md](job_search/README.md)
-
-## Quick Start
-
-From WSL:
-
-```bash
-cd /mnt/d/Repos/job-hunt-2026
-./job_search/run_search.sh
-```
-
-On first run, it will create a local virtual environment and install Python dependencies.
-That first run may take a minute.
-
-## Common Commands
-
-Run the normal full search:
-
-```bash
-cd /mnt/d/Repos/job-hunt-2026
-./job_search/run_search.sh
-```
-
-Run the contracting search:
-
-```bash
-cd /mnt/d/Repos/job-hunt-2026
-./job_search/run_contract_search.sh
-```
-
-Run a smaller test pass:
-
-```bash
-cd /mnt/d/Repos/job-hunt-2026
-./job_search/run_search.sh --max-searches 2 --results-per-query 5
-```
-
-Preview results without recording surfaced jobs in the ledger:
-
-```bash
-cd /mnt/d/Repos/job-hunt-2026
-./job_search/run_search.sh --dry-run --max-searches 2 --results-per-query 5
-```
-
-Preview contract results without recording surfaced jobs in the ledger:
-
-```bash
-cd /mnt/d/Repos/job-hunt-2026
-./job_search/run_contract_search.sh --dry-run --max-searches 3 --results-per-query 5
-```
-
-Restrict to specific sites:
-
-```bash
-cd /mnt/d/Repos/job-hunt-2026
-./job_search/run_search.sh --sites linkedin,indeed
-```
-
-Search only more recent postings:
-
-```bash
-cd /mnt/d/Repos/job-hunt-2026
-./job_search/run_search.sh --hours-old 168
-```
-
-## Where Results Go
-
-Generated files are written to:
-
-- `job_search/output/*.md`
-- `job_search/output/*.csv`
-
-The markdown report is the main review artifact.
-It groups results into:
-- `Qualified / Apply First`
-- `Plausible / Review`
-- `Stretch / Material Gaps`
-- `Unverified Posting Requirements`
-- `Hard Mismatch`
-
-Normal runs record surfaced jobs in the search ledger for duplicate suppression.
-Dry runs still write markdown and CSV reports, but they do not record a ledger transaction.
-
-Surfaced results suppress repeats only within the same profile. Applied, saved, and dismissed decisions suppress the URL globally. This keeps back-to-back full-time and contracting runs independent while preserving final decisions.
-
-Each entry includes:
-- company
-- role title
-- location
-- salary/hourly range when the source exposes it
-- site source
-- posting URL
-- qualification score and separate search-relevance score
-- matched requirements and partial evidence
-- material gaps, hard blockers, and verification blockers
-- relevance notes
-
-## How to Review Results
-
-Recommended workflow:
-
-1. Open the newest markdown file in `job_search/output/`.
-2. Review `Qualified / Apply First` first, then inspect its extracted requirements before applying.
-3. Treat `Unverified` as needing the employer/ATS posting; a headline is insufficient.
-4. For serious discovery, follow [the ATS and startup sweep workflow](job_search/ATS_SWEEP_WORKFLOW.md) to check Ashby, Greenhouse, Lever, YC, HN, and direct company sources.
-5. For contracting work, follow [the contract search workflow](job_search/CONTRACT_SEARCH_WORKFLOW.md) and capture rate, contract length, W2/1099/C2C status, weekly hours, timezone constraints, and portfolio value.
-6. For serious review, follow [the deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md): open each posting, capture compensation, verify extracted requirements, classify fit, and extract resume implications.
-7. Record `applied`, `dismissed`, or `saved` decisions in the search ledger only after review.
-8. If you decide to pursue one, create the standard application folder and record the exact posting URL in `job_description.md`.
-9. Add or update the row in [master_tracker.md](master_tracker.md) only when you intentionally want that manual/UI-facing record updated.
-
-See also:
-- [How to use the search ledger](HOW_TO_USE_SEARCH_LEDGER.md)
-- [Job search deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md)
-- [ATS and startup sweep workflow](job_search/ATS_SWEEP_WORKFLOW.md)
-
-## How to Record Decisions
-
-From WSL, you can record review decisions directly into the search ledger.
-
-Mark one or more jobs as applied:
-
-```bash
-cd /mnt/d/Repos/job-hunt-2026
-./job_search/.venv/bin/python job_search/record_decisions.py \
-  --applied "https://example.com/job-1" \
-  --applied "https://example.com/job-2" \
-  --note "applied after review"
-```
-
-Mark jobs as dismissed:
-
-```bash
-cd /mnt/d/Repos/job-hunt-2026
-./job_search/.venv/bin/python job_search/record_decisions.py \
-  --dismissed "https://example.com/job-3" \
-  --dismissed "https://example.com/job-4" \
-  --note "too senior or wrong fit"
-```
-
-Mark jobs as saved for later:
-
-```bash
-cd /mnt/d/Repos/job-hunt-2026
-./job_search/.venv/bin/python job_search/record_decisions.py \
-  --saved "https://example.com/job-5" \
-  --saved "https://example.com/job-6" \
-  --note "interesting, revisit later"
-```
-
-Record a mixed batch in one transaction:
-
-```bash
-cd /mnt/d/Repos/job-hunt-2026
-cat <<'JSON' | ./job_search/.venv/bin/python job_search/record_decisions.py --actor chat_update
-{
-  "metadata": {
-    "source": "manual review session"
-  },
-  "decisions": [
-    {
-      "status": "applied",
-      "job_url": "https://example.com/job-1",
-      "note": "Applied after shortlist review"
-    },
-    {
-      "status": "dismissed",
-      "job_url": "https://example.com/job-2",
-      "note": "Not aligned enough"
-    },
-    {
-      "status": "saved",
-      "job_url": "https://example.com/job-3",
-      "note": "Possible later follow-up"
-    }
-  ]
-}
-JSON
-```
-
-After recording decisions, check:
-
-- [job_search/ledger/summary.md](job_search/ledger/summary.md)
-- [job_search/ledger/transactions.jsonl](job_search/ledger/transactions.jsonl)
-
-## How to Do This Through Chat
-
-Yes, you can tell a chat window to record these updates for you.
-
-If the user names a company that is already on `company_watchlist.md`, "look for a job now" means checking that company for current hiring signals first, even if no application is being prepared.
-
-Good examples:
-
-- `Please mark our current application as applied in the search ledger.`
-- `Please mark these as dismissed in the search ledger:` followed by a list of posting URLs
-- `Please save these for later in the search ledger:` followed by a list of posting URLs
-- `Please mark these three applied and these two dismissed in one ledger update.`
-
-Best practice:
-- if you have the posting URLs, provide them
-- if you are referring to the current application and the context is unambiguous, saying `current application` is fine
-- if there is any ambiguity, include company, role title, or the posting URL
-
-Recommended chat patterns:
-
-Mark the current application as applied:
+## Canonical flow
 
 ```text
-Please mark our current application as applied in the search ledger.
-Do not update master_tracker.md unless I ask separately.
+Gmail alert
+  -> bounded starred-message report
+  -> canonical public posting-link recovery
+  -> full-posting verification
+  -> deep dive and user review
+  -> optional review-only application materials
+  -> confirmed submission and application/tracker records
 ```
 
-Mark a list as dismissed:
+The report window is the shorter of the two constraints: messages newer than
+the last successful Gmail report, with a maximum lookback of 14 days. Do not
+backfill older alerts simply to reach a target number.
 
-```text
-Please mark these as dismissed in the search ledger:
-- https://example.com/job-1
-- https://example.com/job-2
-- https://example.com/job-3
+## Run the report
+
+From WSL at the repository root:
+
+```bash
+cd /mnt/d/Repos/job-hunt-2026
+./job_search/run_gmail_job_report.sh
 ```
 
-Mark a list as saved:
+The runner reads full message bodies, extracts public job links, and writes a
+dated report under `job_search/output/`. Gmail OAuth is cached in
+`secrets/gmail_token.json` after the initial authorization.
 
-```text
-Please save these in the search ledger for later review:
-- https://example.com/job-4
-- https://example.com/job-5
-```
+## Review and status handling
 
-Mixed update:
+For each promising alert:
 
-```text
-Please record this search-ledger update:
-Applied:
-- https://example.com/job-1
+1. Open the recovered public posting or employer/ATS page.
+2. Capture the exact URL, location, compensation, responsibilities, requirements, seniority, domain constraints, and current availability.
+3. Use `job_search/DEEP_DIVE_WORKFLOW.md` for qualification and resume implications.
+4. Apply `Jobs/Reviewed` after the posting has actually been analyzed.
+5. Remove the star only for the explicit message that was reviewed.
+6. Apply `Jobs/Rejections` when the employer rejects the candidate or the posting is confirmed closed/expired/no longer accepting applications.
+7. Apply `Jobs/Applied` only after the user confirms submission.
 
-Dismissed:
-- https://example.com/job-2
-- https://example.com/job-3
+`Jobs/Reviewed`, `Jobs/Applied`, and `Jobs/Rejections` are visible Gmail
+workflow labels. They do not establish application history. An application is
+canonical only when its matching `applications/...` folder and
+`master_tracker.md` row both exist.
 
-Saved:
-- https://example.com/job-4
-```
+## Application preparation
 
-By default, those requests should update the search ledger only.
-Ask separately if you also want [master_tracker.md](master_tracker.md) updated.
+When the user selects a role, follow
+`job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md` and create review-only
+materials with the exact posting URL before drafting. Do not update
+`master_tracker.md` or the Applied ledger state until submission is confirmed.
 
-## Important Notes
+## Retired discovery paths
 
-- This is a triage tool, not a final decision-maker.
-- `Qualified / Apply First` is a conservative automated gate, not a hiring prediction. Verify its extracted requirements against the live posting through [the deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md).
-- Update [job_search/candidate_profile.json](job_search/candidate_profile.json) only when the current resume or verified project record supports the change.
-- For serious discovery, pair the runner with [the ATS and startup sweep workflow](job_search/ATS_SWEEP_WORKFLOW.md); many applied-AI roles are posted directly on Ashby, Greenhouse, Lever, YC, HN, or company career pages.
-- The ranking is heuristic and will still surface some imperfect results.
-- Google Jobs is included in the profile, but in live testing here LinkedIn and Indeed produced more usable results than Google.
-- Search systems handle AI job titles inconsistently, so the profile uses several overlapping phrases rather than assuming one canonical title.
-- Generated output and the local virtual environment are ignored by git.
-- The search ledger is separate from [master_tracker.md](master_tracker.md); the runner should update the ledger, not the manual tracker.
-
-## When You Want to Tune It
-
-Edit [job_search/search_profile.json](job_search/search_profile.json) to change:
-- role families
-- locations
-- default sites
-- posting age window
-- query wording
-
-Edit [job_search/candidate_profile.json](job_search/candidate_profile.json) when documented qualifications change. Keep paid professional/production evidence separate from portfolio work and exposure.
-
-If the search starts drifting:
-- tighten the search terms
-- reduce the number of broad software-engineer queries
-- shorten `hours_old`
-- restrict sites during a run
-
-## Best First File
-
-If you only want one file to remember, use:
-
-- [job_search/output/](job_search/output/)
-
-That folder is the inbox.
-
-If you want the next layer after the inbox, use:
-
-- [job_search/DEEP_DIVE_WORKFLOW.md](job_search/DEEP_DIVE_WORKFLOW.md)
-- [job_search/ATS_SWEEP_WORKFLOW.md](job_search/ATS_SWEEP_WORKFLOW.md)
-
-The ATS sweep widens discovery beyond the runner. The deep-dive workflow turns a run into current targets, future/stretch roles, dismiss/archive recommendations, compensation notes, and resume-positioning guidance.
+The former direct JobSpy search, ATS/startup sweep, and contracting search are
+not active workflows. Their scripts, profiles, reports, and documentation are
+preserved for historical context or explicitly requested diagnostics; agents
+must not invoke them for new discovery.

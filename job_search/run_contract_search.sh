@@ -2,7 +2,10 @@
 
 set -euo pipefail
 
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-cd "$ROOT_DIR"
-
-exec ./job_search/run_search.sh --profile job_search/search_profile_contracting.json "$@"
+cat >&2 <<'EOF'
+The direct contracting search is retired.
+Use ./job_search/run_gmail_job_report.sh after configuring Gmail job alerts.
+If you explicitly need legacy diagnostics, consult the retired workflow only
+with the user’s authorization and do not treat its results as active discovery.
+EOF
+exit 2

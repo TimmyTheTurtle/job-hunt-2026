@@ -14,7 +14,7 @@ The goal is not to spray applications blindly.
 
 The goal is to support Dorian's broader strategy:
 - stay unemployment/UI compliant
-- use the search itself as a learning and market-research process
+- use the Gmail alert stream as a learning and market-research process
 - prioritize roles that strengthen long-term positioning
 - preserve runway as long as possible
 - avoid bad-fit roles that drain energy or stall growth
@@ -38,7 +38,11 @@ Applications should generally optimize for:
 - roles that strengthen applied AI systems, document intelligence, compliance workflow, or technical credibility
 - roles that do not permanently trap him in a weak niche
 
-Search-result deep dives are part of the strategy, not a clerical afterthought. After a search run, agents should use the surfaced postings to classify current targets versus future/stretch roles and to extract resume-positioning lessons. The durable procedure lives in `job_search/DEEP_DIVE_WORKFLOW.md`.
+Gmail-alert deep dives are part of the strategy, not a clerical afterthought. After a bounded Gmail report, agents should use the linked full postings to classify current targets versus future/stretch roles and to extract resume-positioning lessons. The durable procedure lives in `job_search/DEEP_DIVE_WORKFLOW.md`.
+
+## Discovery policy
+
+The user-configured Gmail job-alert stream is the sole active job-discovery channel. Do not run separate LinkedIn, Indeed, Google Jobs, ATS, startup, or contracting searches unless the user explicitly changes this policy. The old direct-search, ATS-sweep, and contract-search files are retained only for historical reference or explicitly requested diagnostics.
 
 ## Company watchlist
 

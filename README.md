@@ -5,7 +5,7 @@ This repository is the canonical record for job-search strategy, applications, r
 ## Start Here
 
 - [How to add a new application](HOW_TO_ADD_A_FOLDER.md)
-- [How to run the manual job search](HOW_TO_RUN_JOB_SEARCH.md)
+- [How to run the Gmail job-alert workflow](HOW_TO_RUN_JOB_SEARCH.md)
 - [Job search deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md)
 - [Gmail job report and application workflow](job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md)
 - [How to use the search ledger](HOW_TO_USE_SEARCH_LEDGER.md)
@@ -36,7 +36,7 @@ This repository is the canonical record for job-search strategy, applications, r
 - `docs/`
   Canonical reference docs for strategy and administrative guidance.
 - `job_search/`
-  Manual one-shot search tooling, generated review lists under `job_search/output/`, the deep-dive review workflow, and the machine-managed search ledger under `job_search/ledger/`.
+  Gmail alert-report tooling, full-posting/deep-dive workflows, generated review reports under `job_search/output/`, and the machine-managed ledger under `job_search/ledger/`. The former direct-search tools and profiles are retained only for historical/diagnostic reference.
 - `company_watchlist.md`
   Durable watchlist for employers to monitor before applying.
 - `master_tracker.md`
@@ -52,10 +52,10 @@ This repository is the canonical record for job-search strategy, applications, r
 
 ## Current Priorities
 
-- Keep job-search administration lightweight and consistent.
+- Keep Gmail-alert job-discovery administration lightweight and consistent.
 - Establish the Applied AI Systems Engineer identity honestly and consistently.
 - Organize portfolio work as production-aligned commercial skeletons, not disposable demos.
-- Use job search as EA/UI compliance, employer outreach, and market research.
+- Use the Gmail alert stream as EA/UI compliance, employer outreach, and market research.
 - Prioritize roles that compound toward applied AI systems, document intelligence, compliance-sensitive workflow automation, RAG/retrieval, evals, and production-minded AI boundaries.
 - Preserve C++/simulation/systems depth as a secondary technical vector, not the default identity.
 

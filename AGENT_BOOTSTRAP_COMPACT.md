@@ -169,19 +169,18 @@ default_workflow:
 8. strategy audit
 
 gmail_job_application_workflow:
-- use job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md for bounded starred-Gmail reports, full-posting verification, canonical-link recovery, explicit reviewed-message unflagging, and review-only application folders
+- Gmail alerts are the sole active job-discovery channel; do not run direct LinkedIn/Indeed/Google Jobs/ATS/startup/contract searches unless the user explicitly changes this policy
+- use job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md as the canonical flow: user-configured alert -> bounded starred-Gmail report -> canonical-link recovery -> full-posting verification -> deep dive/user review -> optional review-only application folders -> tracker/application updates only after confirmed submission
 - search from the later of the last successful report and 14 days ago; do not backfill fewer-than-two results or invent requirements
-- use visible Gmail labels `Jobs/Reviewed`, `Jobs/Applied`, and `Jobs/Rejections` for reviewed, confirmed-submitted, and confirmed-rejected states
+- use visible Gmail labels `Jobs/Reviewed`, `Jobs/Applied`, and `Jobs/Rejections` for reviewed, confirmed-submitted, and confirmed-rejected-or-closed states
 
 job_search_deep_dive:
-- automated ranking must use `job_search/candidate_profile.json` and the posting requirements; title/topic relevance alone is never qualification evidence
+- Gmail deep dives must use `job_search/candidate_profile.json` and the full posting requirements; title/topic relevance alone is never qualification evidence
 - missing or thin requirements are `unverified`, not `Apply First`; hard gaps in tenure, clearance, credentials, location, or required stack override directional fit
 - keep professional/production evidence distinct from portfolio, coursework, and exposure; update the candidate profile only from defensible non-archived evidence
-- paired full-time and contract runs suppress prior `surfaced` URLs only within the same profile; applied/saved/dismissed decisions remain global
-- after a search run, use `job_search/DEEP_DIVE_WORKFLOW.md` when asked to follow links, classify surfaced roles, capture compensation, identify current vs future targets, or extract resume implications
-- for serious discovery, pair the runner with `job_search/ATS_SWEEP_WORKFLOW.md` to check Ashby, Greenhouse, Lever, YC, HN, and direct company career pages
-- for contracting/consulting/fractional searches, use `job_search/CONTRACT_SEARCH_WORKFLOW.md` and the `job_search/search_profile_contracting.json` profile; capture rate, contract length, W2/1099/C2C status, weekly hours, timezone constraints, and portfolio value
-- do not treat generated `Apply First` buckets as final recommendations
+- after a Gmail report, use `job_search/DEEP_DIVE_WORKFLOW.md` when asked to follow links, classify surfaced roles, capture compensation, identify current vs future targets, or extract resume implications
+- the former direct-search, ATS/startup-sweep, and contracting-search workflows are retired; preserve their files only as historical/diagnostic references and do not invoke them for discovery
+- do not treat Gmail alerts or generated reports as final recommendations
 - do not record ledger decisions during a deep dive unless the user explicitly asks
 
 knowledge_graph_pipeline:

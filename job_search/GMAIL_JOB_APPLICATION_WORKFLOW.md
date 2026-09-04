@@ -1,7 +1,10 @@
-# Gmail Job Report and Application Workflow
+# Canonical Gmail Job-Alert and Application Workflow
 
-Use this workflow when job leads arrive through Gmail and the user wants the
-best current leads prepared for review.
+This is the repository’s only active job-discovery workflow. The user creates
+job alerts in Gmail; agents process the starred alert messages, verify the
+actual postings, and prepare only the roles the user chooses to review or
+apply to. Do not run a separate LinkedIn, Indeed, Google Jobs, ATS, startup,
+or contracting search unless the user explicitly changes this policy.
 
 ## 1. Bounded Gmail report
 
@@ -63,11 +66,15 @@ The visible Gmail status-label lifecycle is:
 
 - `Jobs/Reviewed`: the message was opened and the posting was analyzed.
 - `Jobs/Applied`: the user confirmed the application was submitted.
-- `Jobs/Rejections`: the employer or application process produced a rejection.
+- `Jobs/Rejections`: the employer rejected the candidate, or the posting was
+  confirmed closed, expired, or no longer accepting applications.
 
-Use the existing `Jobs/Applied` and `Jobs/Rejections` labels rather than
-creating duplicates. These labels are mutually exclusive outcome states; do
-not mark a message applied or rejected before the outcome is known.
+Use the existing visible labels rather than creating duplicates. `Jobs/Reviewed`
+is the research state; `Jobs/Applied` and `Jobs/Rejections` are outcome states.
+When a posting is confirmed closed, apply `Jobs/Rejections` and remove
+`Jobs/Reviewed` and `STARRED` from that explicit message if present. Do not
+infer closure from an old email alone; verify the current employer/ATS page or
+an explicit expired/no-longer-accepting signal first.
 
 ## 4. Review-only application folders
 

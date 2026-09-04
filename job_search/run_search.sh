@@ -2,17 +2,10 @@
 
 set -euo pipefail
 
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-cd "$ROOT_DIR"
-
-if [ ! -d "job_search/.venv" ]; then
-  python3 -m venv job_search/.venv
-fi
-
-source job_search/.venv/bin/activate
-
-if ! python -c "import jobspy" >/dev/null 2>&1; then
-  pip install -U pip python-jobspy
-fi
-
-python job_search/run_search.py "$@"
+cat >&2 <<'EOF'
+The direct JobSpy job-board search is retired.
+Use ./job_search/run_gmail_job_report.sh after configuring Gmail job alerts.
+If you explicitly need legacy diagnostics, run job_search/run_search.py directly
+with the user’s authorization and do not treat its results as active discovery.
+EOF
+exit 2
