@@ -1,5 +1,7 @@
 # APPLICATION WORKFLOW FOR CODEX
 
+For Gmail-led discovery, first follow [job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md](job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md) to bound the report, recover canonical posting links, verify the full posting, and prepare review-only materials.
+
 Use this workflow whenever helping Dorian with a job application.
 
 ## Step 1: Capture the exact posting reference
@@ -73,3 +75,11 @@ Ask:
 3. resume tailoring suggestions
 4. cover letter draft
 5. optional recruiter/short-form variant
+
+## Canonical application record
+
+Count an application as real only when the matching `applications/...` folder
+and `master_tracker.md` row both exist. Gmail labels, emails, or one incomplete
+artifact do not establish application history. If either side is missing,
+report the record as incomplete/unconfirmed and do not count it as an
+application.

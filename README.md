@@ -7,6 +7,7 @@ This repository is the canonical record for job-search strategy, applications, r
 - [How to add a new application](HOW_TO_ADD_A_FOLDER.md)
 - [How to run the manual job search](HOW_TO_RUN_JOB_SEARCH.md)
 - [Job search deep-dive workflow](job_search/DEEP_DIVE_WORKFLOW.md)
+- [Gmail job report and application workflow](job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md)
 - [How to use the search ledger](HOW_TO_USE_SEARCH_LEDGER.md)
 - [Current strategy](current_strategy.md)
 - [Applied AI engineering learning plan](APPLIED_AI_ENGINEERING_LEARNING_PLAN.md)

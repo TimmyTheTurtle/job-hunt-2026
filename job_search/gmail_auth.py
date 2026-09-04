@@ -17,7 +17,9 @@ from google.auth.exceptions import RefreshError
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
+from google_auth_httplib2 import AuthorizedHttp
 from googleapiclient.discovery import build
+import httplib2
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -50,7 +52,13 @@ def get_gmail_service():
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             try:
-                creds.refresh(Request())
+                request = Request()
+
+                def refresh_request(url, method="GET", body=None, headers=None, **kwargs):
+                    kwargs["timeout"] = 20
+                    return request(url, method=method, body=body, headers=headers, **kwargs)
+
+                creds.refresh(refresh_request)
             except RefreshError:
                 creds = None
         else:
@@ -61,4 +69,5 @@ def get_gmail_service():
             creds = flow.run_local_server(port=0, open_browser=False)
         TOKEN_FILE.write_text(creds.to_json())
 
-    return build("gmail", "v1", credentials=creds)
+    http = AuthorizedHttp(creds, http=httplib2.Http(timeout=20))
+    return build("gmail", "v1", http=http, cache_discovery=False)

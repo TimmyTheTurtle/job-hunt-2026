@@ -73,6 +73,13 @@ For application work:
 2. record the exact posting URL in the application's `job_description.md`
 3. follow the default workflow in [APPLICATION_WORKFLOW.md](APPLICATION_WORKFLOW.md)
 
+For Gmail-led discovery and application preparation, also follow [job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md](job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md).
+
+Canonical application record rule:
+- Count an application as real only when a matching `applications/...` folder and `master_tracker.md` row both exist.
+- Gmail labels, emails, or a single incomplete artifact do not establish application history.
+- If either side is missing, report the record as incomplete/unconfirmed and do not count it as an application.
+
 Mandatory when status is `Applied`:
 - update or create `applications/YYYY-MM_<company>_<role>/job_description.md`
 - update or create `applications/YYYY-MM_<company>_<role>/submission_snapshot.md`

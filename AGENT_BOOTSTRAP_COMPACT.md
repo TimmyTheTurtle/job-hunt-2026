@@ -168,6 +168,11 @@ default_workflow:
 7. truthfulness audit
 8. strategy audit
 
+gmail_job_application_workflow:
+- use job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md for bounded starred-Gmail reports, full-posting verification, canonical-link recovery, explicit reviewed-message unflagging, and review-only application folders
+- search from the later of the last successful report and 14 days ago; do not backfill fewer-than-two results or invent requirements
+- use visible Gmail labels `Jobs/Reviewed`, `Jobs/Applied`, and `Jobs/Rejections` for reviewed, confirmed-submitted, and confirmed-rejected states
+
 job_search_deep_dive:
 - automated ranking must use `job_search/candidate_profile.json` and the posting requirements; title/topic relevance alone is never qualification evidence
 - missing or thin requirements are `unverified`, not `Apply First`; hard gaps in tenure, clearance, credentials, location, or required stack override directional fit
@@ -206,3 +211,7 @@ applied_status_required_artifacts:
 - applications/YYYY-MM_<company>_<role>/notes.md
 - master_tracker.md row update
 - job_search/ledger/transactions.jsonl decision_update with actor chat_update and status applied
+
+canonical_application_record:
+- count an application only when a matching applications folder and master_tracker.md row both exist
+- Gmail labels, emails, or one incomplete artifact do not establish application history
