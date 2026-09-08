@@ -54,9 +54,9 @@ If the user says "look for a job now" and a company is on that watchlist, check 
 
 Dorian's current one-line identity is:
 
-> Applied AI Systems Engineer
+> Forward-Deployed AI Engineer
 
-This is an identity under construction, not a claim of finished expert status. Present him as a systems-oriented software engineer moving deliberately into applied AI systems, especially for document-heavy and compliance-sensitive workflows.
+This is an identity under construction, not a claim of finished expert status. Present him as a systems-oriented software engineer moving deliberately into forward-deployed AI work: hands-on implementation, integration, deployment, debugging, and customer workflow delivery.
 
 Dorian has a strong bias toward:
 - structured thinking
@@ -68,6 +68,9 @@ Dorian has a strong bias toward:
 - traceability, validation, and human-reviewable outputs
 
 Position him as one or more of the following depending on the role:
+- Forward-Deployed AI Engineer
+- Forward-Deployed Engineer
+- Field AI Engineer / Deployment Engineer
 - Applied AI Systems Engineer
 - AI Solutions Engineer
 - AI Workflow / Automation Engineer
@@ -89,7 +92,7 @@ Avoid positioning him primarily as:
 - production LLM platform veteran
 
 Strongest brand:
-> An applied AI systems engineer in transition: a systems-first software engineer with aerospace mission operations roots, strong domain-modeling instincts, and hands-on prototype work in AI-assisted document intelligence, evidence pipelines, and compliance-sensitive workflows.
+> A forward-deployed AI engineer in transition: a systems-first software engineer with customer-delivery experience, strong domain-modeling instincts, and hands-on prototype work in AI-assisted document intelligence, evidence pipelines, and compliance-sensitive workflows.
 
 ## Voice and identity framing
 
@@ -175,6 +178,7 @@ Important implications:
 ## Long-term direction
 
 Primary long-term direction:
+- forward-deployed AI engineering
 - applied AI systems engineering
 - document intelligence
 - RAG / retrieval / evidence pipelines
@@ -281,6 +285,8 @@ review. Saved up to 160 hours per year of on-site engineer time.
 This shows early experience with compliance-sensitive, government-facing automated reporting —
 directly relevant to the document intelligence / compliance pipeline work.
 
+It also establishes relevant field-delivery evidence: on-site mine rotations in isolated operating conditions, where technical work had to accommodate practical field constraints. Use this selectively for engineering-heavy FDE roles; it is evidence of operational resilience and delivery context, not a claim of current mining-domain expertise.
+
 ### RenoNerd Inc.
 
 Dorian co-ran a business and handled a mix of technical and operational work, including:
@@ -378,26 +384,22 @@ Use phrases like:
 
 ## Career target hierarchy
 
-Forward-deployed AI engineering is the intended destination, not the only present-tense target. Keep it in the search as a smaller current/stretch or future/stretch family while building toward it through attainable applied-AI application, implementation, integration, document-intelligence, workflow-automation, and adjacent systems roles.
+Forward-deployed AI engineering is the primary present-tense target. Applied-AI application, implementation, integration, document-intelligence, workflow-automation, and solutions roles are feeder lanes only when they include meaningful coding and customer/workflow delivery ownership.
 
-### Tier 1: strong alignment roles
+### Tier 1: forward-deployed AI roles
 
-- Applied AI Systems Engineer
-- Applied AI Engineer / AI Application Engineer
+- Forward Deployed AI Engineer / Forward Deployed Engineer
+- Field AI Engineer / Deployment Engineer, when hands-on implementation is explicit
+- Deployed Engineer / Professional Services Engineer, when the role owns shipped customer workflows
 - AI Implementation Engineer / AI Integration Engineer
-- AI Solutions Engineer, when the role includes real software delivery
-- LLM / RAG Systems Engineer
-- Document Intelligence Engineer
-- AI Workflow / Automation Engineer
-- Software Engineer, AI Systems
-- AI Engineer for legal, insurance, compliance, or document-heavy workflows
-- AI Governance / Controls Engineer, when the role is implementation/control-system oriented rather than policy-only
-- Forward Deployed AI Engineer / AI Automation Engineer, as a current/stretch or future/stretch target when the work involves building bounded systems in real workflows
+- AI Solutions Engineer or Solutions Architect, when code and deployment ownership are explicit
 
-### Tier 2: pragmatic but useful roles
+### Tier 2: FDE feeder roles
 
-- Software Engineer (general but technical, especially C#/.NET, workflow, SaaS, integrations, or platform)
-- Solutions Engineer / Implementation Engineer
+- Applied AI Systems Engineer / AI Application Engineer
+- LLM / RAG Systems Engineer, Document Intelligence Engineer, or AI Workflow / Automation Engineer
+- Software Engineer on AI-enabled C#/.NET, workflow, SaaS, integration, or platform systems
+- Solutions Engineer / Implementation Engineer with real coding and customer delivery
 - Technical Integration Engineer with real software delivery
 - Technical Consultant
 - Applied Data / Reporting Engineer in compliance or operations contexts
@@ -416,6 +418,18 @@ Acceptable only if needed for runway and UI compliance:
 
 Rule:
 > Do not sabotage the long-term plan for short-term convenience, but do allow practical roles that keep momentum and runway alive.
+
+## FDE delivery screen
+
+Prefer roles where hands-on coding, implementation, integration, deployment, and debugging are explicit; customer work produces shipped workflows; and field learning feeds repeatable engineering or product capability. De-prioritize customer-success, account-management, pre-sales, workshop, renewal, or escalation-heavy roles when engineering ownership is weak. Treat heavy travel as a material energy-cost concern unless justified by strong technical delivery value.
+
+## In-progress learning targets
+
+- AI-103 — Azure AI Apps and Agents Developer: in progress; target Q4 2026.
+- AI-500 — Multi-Agent AI Solutions Expert: in progress; target Q4 2026.
+- GH-600 — GitHub Copilot certification: in progress; target Q4 2026.
+
+List these on the resume and in internal planning context by default. Do not describe them as earned certifications or add them to cover letters or recruiter replies unless Dorian asks.
 
 ## Cover letter guidance
 
@@ -468,7 +482,7 @@ Safe phrasing for growth areas:
 
 ## Default candidate narrative
 
-Dorian Klingenberg is a systems-oriented software engineer building toward applied AI systems engineering. His strongest through-line is turning messy domain workflows into structured, testable software: configuration systems, compliance-sensitive reporting, document/evidence pipelines, and production-minded integration boundaries. He is especially interested in AI roles where LLMs, retrieval, automation, and human review meet real operational constraints, and he should be presented as learning-forward but technically grounded rather than as a finished ML researcher or compliance expert.
+Dorian Klingenberg is a systems-oriented software engineer building toward forward-deployed AI engineering. His strongest through-line is turning messy domain workflows into structured, testable software: configuration systems, compliance-sensitive reporting, document/evidence pipelines, and production-minded integration boundaries. He is especially interested in roles where implementation, deployment, debugging, and customer workflow delivery meet LLMs, retrieval, automation, and human review; he should be presented as learning-forward but technically grounded rather than as a finished ML researcher or compliance expert.
 
 ## AI contractor narrative
 

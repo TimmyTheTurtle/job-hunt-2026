@@ -16,14 +16,15 @@ Responses should be:
 ## Core positioning
 
 Default positioning:
+- forward-deployed AI engineer focused on hands-on implementation, integration, deployment, and debugging
 - systems-oriented software engineer
 - practical builder
 - technically substantive problem solver
-- growing toward more systems- and C++-oriented work
+- building toward applied AI systems through customer workflow delivery
 
 ## Default response template
 
-Thanks for reaching out. I'm most interested in roles that emphasize software engineering, systems thinking, and technically substantive problem solving. My background spans practical software delivery, workflow and configuration systems, and hands-on ownership in real operating environments. I'm currently especially focused on opportunities that can build toward more systems- and C++-oriented work. I'd be glad to take a look if that sounds aligned.
+Thanks for reaching out. I'm most interested in forward-deployed and implementation-heavy AI roles where engineers own real integration, deployment, debugging, and customer workflow outcomes. My background spans practical software delivery, workflow and configuration systems, and hands-on ownership in real operating environments. I'd be glad to take a look if that sounds aligned.
 
 ## Variants by situation
 

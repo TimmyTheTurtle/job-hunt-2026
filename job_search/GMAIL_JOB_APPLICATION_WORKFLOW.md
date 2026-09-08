@@ -28,9 +28,11 @@ files. The generated report is written under `job_search/output/`.
 
 For every candidate, open the employer or ATS posting and capture the complete
 posting context: title, company, location/remote eligibility, compensation,
-responsibilities, requirements, seniority, domain constraints, and current
-availability. Use `candidate_profile.json`, `ROLE_EVAL_CHECKLIST.md`, and
-`current_strategy.md`. Missing or thin postings remain unverified.
+responsibilities, requirements, seniority, domain constraints, current
+availability, and (for FDE-shaped roles) the split between hands-on engineering
+and customer-success/pre-sales work. Use `candidate_profile.json`,
+`ROLE_EVAL_CHECKLIST.md`, and `current_strategy.md`. Missing or thin postings
+remain unverified.
 
 Select the top two only from candidates with usable full-posting evidence. If
 the bounded window contains fewer than two credible roles, report fewer than

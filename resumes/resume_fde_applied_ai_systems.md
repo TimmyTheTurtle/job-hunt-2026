@@ -5,9 +5,15 @@ Troy, Michigan
 LinkedIn: www.linkedin.com/in/dorian-klingenberg  
 GitHub: https://github.com/Dorian-Klingenberg
 
-## Applied AI Systems Engineer
+## Forward-Deployed AI Engineer
 
-I build systems that turn messy domain material into structured, reviewable evidence. My background is in C#/.NET software engineering, workflow systems, data reconstruction, deployment, and compliance-sensitive automation; my current work applies that discipline to document intelligence, evidence pipelines, retrieval, and human-reviewable AI workflows.
+I implement, integrate, deploy, and debug systems for messy domain workflows. My background is in C#/.NET software engineering, customer technical delivery, workflow systems, data reconstruction, deployment, and compliance-sensitive automation; my current work applies that discipline to document intelligence, evidence pipelines, retrieval, and human-reviewable AI workflows.
+
+## In-Progress Learning Targets
+
+- AI-103 — Azure AI Apps and Agents Developer: in progress; target Q4 2026.
+- AI-500 — Multi-Agent AI Solutions Expert: in progress; target Q4 2026.
+- GH-600 — GitHub Copilot certification: in progress; target Q4 2026.
 
 ## Core Strengths
 
@@ -70,6 +76,7 @@ Hinton, Alberta | 2010 to 2019
 - Supported SQL/reporting, estimation, invoicing, work-ticket, cost-analysis, and maintenance-scheduling systems in remote multi-user environments.
 - Managed AWS virtual machines and S3 backups while supporting customer data, remote hosting, and hardware/software integration.
 - Collaborated with client IT staff to support in-house hosting and remote deployment environments.
+- Supported deployment, integration, and troubleshooting for forestry, oilfield, and construction clients from a remote operating environment, including customer systems and field-connected hardware.
 - Ported and tested custom reports from VB6 into .NET Framework workflows.
 - Used SQL, Boolean logic, set reasoning, and structured troubleshooting to reduce complex support investigations from hours to minutes.
 
@@ -91,6 +98,7 @@ Saskatoon, Saskatchewan | 2004 to 2005
 
 - Automated environmental and radiation-protection reporting tools submitted to the Canadian government for monthly, quarterly, and annual licensing review.
 - Used VB, VBA, .NET, Windows Forms, and SQL Server to replace manual reporting work, saving up to 160 hours per year of remote on-site engineer time.
+- Supported reporting work during on-site mine rotations in isolated operating conditions, balancing technical delivery with practical field constraints.
 
 ## Education
 

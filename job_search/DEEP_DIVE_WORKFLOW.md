@@ -68,7 +68,7 @@ If the latest run is ambiguous, identify the most recent files by timestamp and 
    - whether the automated requirement extraction classified each must-have correctly
 6. Classify each role as one of:
    - strong current target
-   - current/stretch target
+   - FDE feeder / current-stretch target
    - future/stretch market signal
    - dismiss/archive
    - noisy/unverified
@@ -99,6 +99,7 @@ Source report: `job_search/output/gmail_job_report_YYYY-MM-DD.md`
 ## Fit Buckets
 
 ### Current Qualified / Worth Deep Application
+### FDE Feeder / Worth Deep Application
 ### Future / Stretch / Resume Direction Signal
 ### Dismiss / Archive / Noisy
 
@@ -114,6 +115,7 @@ Source report: `job_search/output/gmail_job_report_YYYY-MM-DD.md`
 ## Classification Guidance
 
 Strong current targets usually combine several of:
+- engineer-first FDE delivery: coding, integration, deployment, debugging, and shipped customer workflows
 - applied AI implementation
 - workflow automation
 - document intelligence
@@ -137,6 +139,7 @@ Dismiss/archive roles usually include:
 - security red-team specialization
 - pure prompt/content/labeling roles
 - sales/customer-success-heavy roles with little engineering
+- pre-sales, workshop, renewal, or escalation-heavy work with weak implementation ownership
 - location/language mismatch
 - unverified/noisy aggregator results
 

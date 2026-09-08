@@ -61,7 +61,7 @@ This repo was refactored on 2026-06-26 to a single positioning: **Applied AI Sys
 - Prefer the narrower defensible claim over the broader impressive claim.
 - Do not fabricate employers, titles, certifications, years of experience, clearance, or unsupported domain expertise.
 - Optimize for coherent direction, not application spam.
-- Protect runway, learning time, and the Applied AI Systems Engineer positioning.
+- Protect runway, learning time, and the Forward-Deployed AI Engineer positioning.
 - Gmail job alerts are the sole active job-discovery channel. Do not perform a separate LinkedIn, Indeed, Google Jobs, ATS, startup, or contracting search unless the user explicitly changes this policy.
 - Keep machine-managed search bookkeeping in `job_search/ledger/`; do not auto-update `master_tracker.md` from search runs.
 - Keep company watchlist updates in `company_watchlist.md`; do not fold watchlist checks into `master_tracker.md`.
@@ -74,7 +74,7 @@ For application work:
 2. record the exact posting URL in the application's `job_description.md`
 3. follow the default workflow in [APPLICATION_WORKFLOW.md](APPLICATION_WORKFLOW.md)
 
-For all active job discovery and application preparation, follow [job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md](job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md). The canonical flow is: user-configured Gmail alerts -> bounded starred-message report -> canonical posting-link recovery -> full-posting verification -> deep dive and user review -> optional review-only application materials -> tracker/application updates only after confirmed submission.
+For all active job discovery and application preparation, follow [job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md](job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md). The canonical flow is: user-configured Gmail alerts -> bounded starred-message report -> canonical posting-link recovery -> full-posting verification -> FDE delivery-fit screen and user review -> optional review-only application materials -> tracker/application updates only after confirmed submission.
 
 The Gmail report window is the shorter of the two constraints: messages newer than the last successful report, with a maximum lookback of 14 days. Do not backfill older alerts merely to reach a target count. The report is the discovery run; the old direct-search runner, ATS sweep, and contract-search runner are retired.
 

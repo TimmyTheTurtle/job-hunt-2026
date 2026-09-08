@@ -5,14 +5,18 @@ intent:
 - support EA/UI compliance, runway preservation, employer outreach, market research, and applied AI systems identity-building
 
 candidate_default:
-- Applied AI Systems Engineer
-- systems-oriented software engineer moving into applied AI systems
+- Forward-Deployed AI Engineer
+- systems-oriented software engineer moving into forward-deployed AI work
 - practical builder
 - strong debugger
 - business-aware technical problem solver
 - growth path toward document intelligence, compliance-sensitive AI workflows, RAG/retrieval, future eval work, and production-minded AI boundaries
 
 positioning_preferred:
+- forward-deployed AI engineer
+- forward-deployed engineer
+- field AI engineer
+- deployed engineer
 - applied AI systems engineer
 - AI solutions engineer
 - LLM / RAG systems engineer
@@ -66,6 +70,7 @@ portfolio_proof_standard:
 - do not claim live customers, production scale, mature security/compliance, or revenue unless true
 
 long_term_vector:
+- forward-deployed AI engineering
 - applied AI systems engineering
 - document intelligence
 - compliance-sensitive workflow automation
@@ -122,10 +127,15 @@ company_watchlist:
 - do not create an application folder unless the user actually applies
 
 role_tiers:
-- Tier 1: applied AI systems, LLM/RAG, document intelligence, AI workflow automation, compliance/legal/insurance AI engineering
-- Tier 2: pragmatic software, C#/.NET/SaaS, solutions, consulting, internal tools, applied reporting, systems/simulation roles with strong technical depth
+- Tier 1: forward-deployed AI roles with explicit coding, implementation, integration, deployment, debugging, and customer-workflow ownership
+- Tier 2: applied AI systems, LLM/RAG, document intelligence, AI workflow automation, compliance/legal/insurance AI engineering, and solutions/implementation roles with real code ownership
 - Tier 3: temporary stabilization roles only if needed for runway/UI compliance
-- forward_deployed_balance: forward-deployed AI engineering is the destination/current-stretch lane, not the exclusive current target; keep active searches AI-engineering focused across applied AI application, implementation, integration, document intelligence, workflow automation, and compliance-sensitive AI, with adjacent systems only when explicitly AI-enabled
+- forward_deployed_balance: forward-deployed AI engineering is the primary current target; feeder roles must have explicit engineering and customer/workflow-delivery ownership, not merely AI branding
+
+fde_screen:
+- prefer engineer-first roles with hands-on coding, implementation, integration, deployment, debugging, shipped workflows, and product feedback loops
+- reject customer-success, account-management, pre-sales, workshop, renewal, or escalation-heavy roles when engineering ownership is weak
+- treat heavy travel as a material energy-cost concern unless justified by strong technical delivery value
 
 cover_letter_rules:
 - specific
@@ -157,6 +167,12 @@ truth_never_fabricate:
 - AI research depth
 - security clearance
 - unsupported domain expertise
+
+learning_targets:
+- AI-103: Azure AI Apps and Agents Developer; in progress, target Q4 2026
+- AI-500: Multi-Agent AI Solutions Expert; in progress, target Q4 2026
+- GH-600: GitHub Copilot certification; in progress, target Q4 2026
+- employer-facing placement: resume only by default; do not describe either target as an earned certification or include it in cover letters/recruiter replies unless Dorian asks
 
 default_workflow:
 1. capture exact posting URL in job_description.md

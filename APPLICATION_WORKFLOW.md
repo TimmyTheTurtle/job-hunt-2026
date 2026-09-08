@@ -36,6 +36,9 @@ Decide whether the role is:
 ## Step 4: Choose the positioning angle
 
 Pick the most credible identity for this role, such as:
+- forward-deployed AI engineer
+- engineer-first customer implementation and deployment specialist
+- applied AI systems engineer
 - systems-oriented software engineer
 - practical business software engineer
 - implementation/solutions engineer

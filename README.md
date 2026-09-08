@@ -53,10 +53,10 @@ This repository is the canonical record for job-search strategy, applications, r
 ## Current Priorities
 
 - Keep Gmail-alert job-discovery administration lightweight and consistent.
-- Establish the Applied AI Systems Engineer identity honestly and consistently.
+- Establish the Forward-Deployed AI Engineer identity honestly and consistently.
 - Organize portfolio work as production-aligned commercial skeletons, not disposable demos.
 - Use the Gmail alert stream as EA/UI compliance, employer outreach, and market research.
-- Prioritize roles that compound toward applied AI systems, document intelligence, compliance-sensitive workflow automation, RAG/retrieval, evals, and production-minded AI boundaries.
+- Prioritize engineer-first forward-deployed AI roles and feeder roles that compound toward applied AI systems, document intelligence, compliance-sensitive workflow automation, RAG/retrieval, evals, and production-minded AI boundaries.
 - Preserve C++/simulation/systems depth as a secondary technical vector, not the default identity.
 
 ## Notes

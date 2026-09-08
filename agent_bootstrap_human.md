@@ -23,15 +23,15 @@ Company monitoring follows the same layered approach:
 
 ## Current Positioning Paradigm
 
-As of 2026-06-16, the primary job-search identity is:
+As of 2026-09-08, the primary job-search identity is:
 
-> Applied AI Systems Engineer
+> Forward-Deployed AI Engineer
 
 This replaces the earlier simulation/C++-first positioning as the default identity. The older systems, C++, simulation, graphics, and real-time systems vector remains useful technical depth, but it is secondary unless a role directly calls for that background.
 
-The new default story is:
+The default story is:
 
-> A systems-oriented software engineer moving into applied AI systems for document-heavy, compliance-sensitive workflows, with emphasis on traceability, validation, deterministic boundaries, human review, and audit-ready evidence.
+> A systems-oriented software engineer who implements, integrates, deploys, and debugs applied AI systems in real customer workflows, with emphasis on traceability, validation, deterministic boundaries, human review, and audit-ready evidence.
 
 The preferred voice explains this by following the positive pattern rather than defining Dorian by what he is not. A good short version is:
 
@@ -43,7 +43,11 @@ Agents should not overclaim. Dorian should not be presented as a finished ML res
 - Areva as early compliance-sensitive reporting automation evidence
 - SED Systems as the origin of mission/system discipline
 
-Forward-deployed AI engineering is the intended destination, not the exclusive present-tense target. Search should keep it as a smaller current/stretch or future/stretch family while prioritizing attainable applied-AI application, implementation, integration, document-intelligence, workflow-automation, and adjacent systems roles that build the proof needed for that destination.
+Forward-deployed AI engineering is the primary present-tense target. Applied-AI application, implementation, integration, document intelligence, workflow automation, and solutions roles are feeder lanes only when they include meaningful coding and customer/workflow-delivery ownership.
+
+For FDE-shaped roles, agents should prefer engineer-first work: explicit coding, implementation, integration, deployment, debugging, shipped customer workflows, and a product/engineering feedback loop. Customer-success, pre-sales, workshop, renewal, or escalation-heavy roles are poor fits when engineering ownership is weak. Heavy travel is a material energy-cost concern unless justified by strong technical delivery value.
+
+AI-103, AI-500, and GH-600 are in-progress learning targets with a Q4 2026 target. They belong in the resume and internal context by default, must not be presented as earned certifications, and should not be added to cover letters or recruiter replies unless Dorian asks.
 
 Portfolio projects should be evaluated against a production-aligned commercial skeleton standard. The goal is not a toy demo or notebook. The target shape is: deployable app, environment-based configuration, secure secret handling, authentication/authorization, user or tenant boundaries, billing or invoicing path, audit logs, observability, human-review gates for AI outputs, demo-safe data boundaries, and a documented cutover checklist. Project-specific portfolio proof belongs under [portfolio/](portfolio/). Agents should describe this as production-aligned engineering discipline unless live production customers, revenue, scale, or mature compliance controls are actually present.
 
@@ -81,13 +85,13 @@ For search bookkeeping, agents should treat the machine-managed search ledger an
 
 For search-result analysis, agents should use [job_search/DEEP_DIVE_WORKFLOW.md](job_search/DEEP_DIVE_WORKFLOW.md) when the user asks to follow links from a Gmail report, classify surfaced jobs, compare current fit against future/stretch roles, capture compensation, or extract resume implications. This keeps the deep-dive step separate from Gmail discovery and ledger decision updates.
 
-Gmail job alerts are the sole active discovery channel. Agents should use [job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md](job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md) for the entire active flow: user-configured alerts, bounded starred-message search, canonical public posting-link recovery from full message bodies, full-posting verification, deep dive and user review, explicit reviewed/closed Gmail status updates, and optional preparation-only folders separate from Applied bookkeeping. The report window is the later of the last successful report or fourteen days before the run; do not backfill older alerts to reach a count.
+Gmail job alerts are the sole active discovery channel. Agents should use [job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md](job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md) for the entire active flow: user-configured alerts, bounded starred-message search, canonical public posting-link recovery from full message bodies, full-posting verification, FDE delivery-fit screening and user review, explicit reviewed/closed Gmail status updates, and optional preparation-only folders separate from Applied bookkeeping. The report window is the later of the last successful report or fourteen days before the run; do not backfill older alerts to reach a count.
 
 Application history is canonical only when the matching application folder and `master_tracker.md` row both exist. Gmail labels, emails, or one incomplete artifact are not enough to count an application; missing one side is reported as incomplete or unconfirmed.
 
 Qualification remains conservative: agents should read [job_search/candidate_profile.json](job_search/candidate_profile.json), verify explicit requirements from each available full posting, and keep qualification separate from topic relevance. A missing or thin posting is unverified; it cannot become `Apply First`. Hard gaps such as active-clearance requirements, unsupported specific tenure, required credentials, or an incompatible location override an attractive title or long-term learning value. Candidate-profile claims must come from defensible, non-archived resume and project evidence, with professional experience kept distinct from portfolio work and exposure.
 
-The active discovery scope is whatever relevant AI-engineering roles arrive through the user’s configured Gmail alerts: applied AI systems and applications, AI integration/implementation/solutions, LLM/RAG, document intelligence, AI workflow automation, and compliance-sensitive AI. Generic software, data, DevOps, or implementation roles remain secondary unless the alert’s full posting is explicitly AI-enabled.
+The active discovery scope is whatever relevant FDE and AI-engineering roles arrive through the user’s configured Gmail alerts: forward-deployed AI, field/deployment engineering, applied AI systems and applications, AI integration/implementation/solutions, LLM/RAG, document intelligence, AI workflow automation, and compliance-sensitive AI. Generic software, data, DevOps, or implementation roles remain feeder lanes only when the alert’s full posting is explicitly AI-enabled and has real engineering/customer-delivery ownership.
 
 The former direct job-board runner, ATS/startup sweep, and contract-search workflow are retired. Their files may be consulted for historical context or diagnostics only when explicitly requested; they must not be used to generate new discovery results.
 

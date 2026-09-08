@@ -54,6 +54,10 @@ Dorian is strongest when framed as someone who turns messy requirements into wor
 
 He has built real software in real operating environments, not just coursework or toy demos.
 
+### 2a. Forward-deployed delivery
+
+For engineering-heavy FDE roles, emphasize implementation, integration, deployment, debugging, and translating customer workflow ambiguity into shipped software. Do not use this framing for roles that are primarily pre-sales, account management, or customer success.
+
 ### 3. Business-aware engineer
 
 He understands both software and operational/business realities.

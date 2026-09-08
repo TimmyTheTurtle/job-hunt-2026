@@ -28,7 +28,19 @@ Score each from 1 to 5.
 
 Can Dorian credibly get traction here without obvious mismatch?
 
-### 2. Learning value
+### 2. FDE delivery fit
+
+For FDE-shaped roles, score whether the work is engineer-first:
+
+- hands-on coding is explicit
+- implementation, integration, deployment, and debugging ownership are core
+- customer work results in shipped workflows, not only adoption or account management
+- work feeds back into repeatable engineering or product capability
+- travel is moderate and justified by technical delivery
+
+Treat customer-success, pre-sales, presentation, workshop, renewal, and escalation-heavy work as red flags when implementation ownership is weak.
+
+### 3. Learning value
 
 Will this role build skills useful for his applied AI systems direction?
 
@@ -40,25 +52,24 @@ Strong learning value includes:
 - compliance-sensitive or document-heavy systems
 - production software boundaries around nondeterministic AI components
 
-### 3. Runway value
+### 4. Runway value
 
 Would this likely improve financial stability enough to matter?
 
-### 4. Energy cost
+### 5. Energy cost
 
 How likely is this role to drain him, derail learning, or trap him in low-value work?
 
-### 5. Narrative coherence
+### 6. Narrative coherence
 
 Can this role be explained as a sensible step in his broader path?
 
 ## Interpretation
 
-- 22 to 25: strong target
-- 18 to 21: good pragmatic target
-- 14 to 17: situational / backup target
-- 10 to 13: weak target unless needed for compliance or short-term stabilization
-- below 10: avoid unless there is an unusually strong compensating reason
+- 27 to 30: strong FDE target
+- 22 to 26: good FDE feeder or pragmatic target
+- 16 to 21: situational / backup target
+- below 16: avoid unless there is an unusually strong compensating reason
 
 ## Red flags
 
@@ -113,6 +124,7 @@ When evaluating a role, output:
 ### Scores
 
 - Immediate plausibility:
+- FDE delivery fit:
 - Learning value:
 - Runway value:
 - Energy cost:
@@ -138,10 +150,11 @@ State the most credible angle for Dorian if applying.
 
 Default identity to test:
 
-> Applied AI Systems Engineer
+> Forward-Deployed AI Engineer
 
 Use role-specific variants when useful:
 - systems-oriented software engineer moving into applied AI
+- engineer-first customer implementation and deployment specialist
 - AI workflow / automation engineer
 - document intelligence systems engineer
 - AI solutions engineer for compliance-sensitive workflows
