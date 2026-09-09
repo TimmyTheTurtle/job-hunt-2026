@@ -2,16 +2,17 @@
 
 **Company:** CrewAI
 **Role:** Forward Deployed Engineer (East Coast Based)
-**Status:** Draft / Not submitted
-**Role tier:** Tier 1 FDE lead; unverified
+**Status:** Applied / complete per user instruction on 2026-09-08
+**Role tier:** Tier 1 FDE application; current/stretch
 **Resume direction:** `resume_fde_applied_ai_systems`
 **Lead source:** [job_description.md](job_description.md)
+**Canonical posting URL:** https://apply.workable.com/crewai/j/96051E9EDE
 
-## Provisional fit assessment
+## Fit assessment
 
-The reported blend of technical discovery and deployed agentic workflows is directionally relevant. Dorian has defensible systems engineering, integration, workflow, deployment, debugging, customer-delivery, and portfolio-stage AI evidence. Professional Python architecture, production multi-agent orchestration, and production MCP delivery are not documented.
+This is a strategically aligned current/stretch FDE application. The verified role requires customer-facing technical delivery, APIs/integration, custom workflows, implementation troubleshooting, deployment, and product feedback—all areas that connect to Dorian's systems engineering, integration, workflow, deployment, debugging, and customer-delivery evidence.
 
-The East Coast location language may be a hard constraint or may permit remote work from Michigan; it must be verified before application. This remains a future/stretch market signal.
+Material gaps remain: strong professional Python proficiency, production CrewAI or multi-agent deployment, mature AI/ML framework experience, and workshop/pre-sales readiness. The East Coast wording may still require confirmation for a Michigan-based applicant. The application was submitted by user confirmation on 2026-09-08.
 
 ## Positioning and truth guardrails
 
@@ -21,9 +22,8 @@ Do not claim watershed, production CrewAI, professional Python architecture, pro
 
 ## Required follow-up
 
-- Obtain the individual posting URL and full requirements.
 - Verify Michigan eligibility under the East Coast requirement, travel, and compensation source.
-- Confirm that the role includes hands-on implementation and debugging after discovery.
+- Prepare concrete examples of customer-facing troubleshooting, workflow translation, deployment, and technical delivery if CrewAI responds.
 
 ## Materials
 

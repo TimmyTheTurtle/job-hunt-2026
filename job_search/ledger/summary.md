@@ -1,10 +1,10 @@
 # Search Ledger Summary
 
-- Generated: 2026-08-26T18:13:19.686221-04:00
-- Total tracked jobs: 528
+- Generated: 2026-09-08T23:02:17.343220-04:00
+- Total tracked jobs: 530
 - Surfaced: 520
 - Saved: 0
-- Applied: 8
+- Applied: 10
 - Dismissed: 0
 
 Source of truth: `transactions.jsonl`
@@ -443,6 +443,20 @@ Source of truth: `transactions.jsonl`
 - Last decision: 2026-08-05T17:11:40.842744-04:00
 - Posting URL: https://www.indeed.com/viewjob?jk=26738974b8469a72
 
+### CrewAI - Forward Deployed Engineer (East Coast Based)
+- Location: Reported US remote; East Coast requirement unverified
+- Note: User-confirmed submission on 2026-09-08. Available URL is a filtered AI Startup Jobs lead page; individual employer/ATS posting URL, full requirements, Michigan eligibility, compensation, submission method, and resume version remain unverified.
+- First seen: 2026-09-08T23:01:04.610131-04:00
+- Last decision: 2026-09-08T23:01:04.610131-04:00
+- Posting URL: https://aistartupjobs.com/jobs?search=forward+deployed&status=open&geo=country%3AUS&workMode=remote&includeUnspecifiedRemote=1
+
+### CrewAI - Forward Deployed Engineer (East coast based)
+- Location: United States (Remote); title specifies East coast based
+- Note: Correction to tx_20260908_230104_d712f1d0: direct Workable posting was verified on 2026-09-08 after the user-confirmed submission. The posting is full-time, United States remote, and lists no compensation. The original filtered AI Startup Jobs URL is superseded by this exact Workable posting URL; Michigan eligibility and submission method remain unverified.
+- First seen: 2026-09-08T23:02:17.327047-04:00
+- Last decision: 2026-09-08T23:02:17.327047-04:00
+- Posting URL: https://apply.workable.com/crewai/j/96051E9EDE
+
 ### GDH - AI Forward Deployed Engineer
 - Location: St. Louis, MO
 - Last recommendation: apply_first
@@ -523,6 +537,8 @@ Source of truth: `transactions.jsonl`
 
 ## Recent Transactions
 
+- `2026-09-08T23:02:17.327047-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260908_230217_cfcce189]
+- `2026-09-08T23:01:04.610131-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260908_230104_d712f1d0]
 - `2026-08-26T18:13:19.669899-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260826_181319_b68a28e5]
 - `2026-08-26T18:12:59.848450-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260826_181259_f828e2db]
 - `2026-08-26T18:12:48.229838-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260826_181248_b27b138d]
@@ -531,5 +547,3 @@ Source of truth: `transactions.jsonl`
 - `2026-08-17T20:50:28.242056-04:00` `decision_update` by `chat_update`: 1 event(s) [tx_20260817_205028_838d45d7]
 - `2026-08-17T11:23:05.325009-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_112305_2d7ed5a9]
 - `2026-08-17T11:17:47.736387-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_111747_a49d0a23]
-- `2026-08-17T11:13:44.861975-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_111344_8590aebe]
-- `2026-08-17T09:28:11.229642-04:00` `search_run` by `job_search_runner`: 30 event(s) [tx_20260817_092811_69f58c81]

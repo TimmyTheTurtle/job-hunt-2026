@@ -31,6 +31,7 @@
 | 2026-08-31 | Pluralsight | Code Review with GitHub Copilot | - | - | - | applied_ai_systems_v1 | - | https://app.pluralsight.com/learner/user/courses/v2/780f49d8-14f8-4c08-a420-f067556a9c7c/certificate | - |
 | 2026-08-31 | Pluralsight | Github Copilot Enterprise | - | - | - | applied_ai_systems_v1 | - | https://app.pluralsight.com/learner/user/courses/v2/3d7f7d7b-3f4c-4828-8d7c-27f863777ed9/certificate | - |
 | 2026-09-01 | Pluralsight | GitHub Copilot: Multi-model Strategy and Agent Mode | - | - | - | applied_ai_systems_v1 | - | https://app.pluralsight.com/learner/user/courses/v2/6e8e9553-52ad-4475-86dc-a3c76190e391/certificate | - |
+| 2026-09-08 | CrewAI | Forward Deployed Engineer (East Coast Based) | A | 7 | 9 | Not recorded | Applied | User-confirmed submission. Full-time United States remote role; title specifies East coast based. Direct Workable posting verified after submission: API/data-pipeline/custom-workflow integration, Python, multi-agent systems, deployment, troubleshooting, workshops/training, and pre-sales/customer-success collaboration. Compensation not listed. Michigan eligibility and submission method remain unverified. Exact posting: https://apply.workable.com/crewai/j/96051E9EDE | 2026-09-22 |
 
 ## Status Legend
 - Drafting

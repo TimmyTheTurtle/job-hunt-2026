@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T18:13:19.686221-04:00",
-  "job_count": 528,
+  "generated_at": "2026-09-08T23:02:17.343220-04:00",
+  "job_count": 530,
   "jobs": [
     {
       "company": "10x National Security",
@@ -12672,6 +12672,46 @@
       "title": "Applied AI Engineer"
     },
     {
+      "company": "CrewAI",
+      "compensation": "",
+      "first_seen_at": "2026-09-08T23:01:04.610131-04:00",
+      "job_url": "https://aistartupjobs.com/jobs?search=forward+deployed&status=open&geo=country%3AUS&workMode=remote&includeUnspecifiedRemote=1",
+      "last_actor": "chat_update",
+      "last_decision_at": "2026-09-08T23:01:04.610131-04:00",
+      "last_seen_at": "",
+      "last_transaction_id": "tx_20260908_230104_d712f1d0",
+      "location": "Reported US remote; East Coast requirement unverified",
+      "normalized_url": "https://aistartupjobs.com/jobs?search=forward+deployed&status=open&geo=country%3AUS&workMode=remote&includeUnspecifiedRemote=1",
+      "note": "User-confirmed submission on 2026-09-08. Available URL is a filtered AI Startup Jobs lead page; individual employer/ATS posting URL, full requirements, Michigan eligibility, compensation, submission method, and resume version remain unverified.",
+      "query_labels": [],
+      "recommendation": "",
+      "score": null,
+      "seen_count": 0,
+      "sites": [],
+      "status": "applied",
+      "title": "Forward Deployed Engineer (East Coast Based)"
+    },
+    {
+      "company": "CrewAI",
+      "compensation": "",
+      "first_seen_at": "2026-09-08T23:02:17.327047-04:00",
+      "job_url": "https://apply.workable.com/crewai/j/96051E9EDE",
+      "last_actor": "chat_update",
+      "last_decision_at": "2026-09-08T23:02:17.327047-04:00",
+      "last_seen_at": "",
+      "last_transaction_id": "tx_20260908_230217_cfcce189",
+      "location": "United States (Remote); title specifies East coast based",
+      "normalized_url": "https://apply.workable.com/crewai/j/96051E9EDE",
+      "note": "Correction to tx_20260908_230104_d712f1d0: direct Workable posting was verified on 2026-09-08 after the user-confirmed submission. The posting is full-time, United States remote, and lists no compensation. The original filtered AI Startup Jobs URL is superseded by this exact Workable posting URL; Michigan eligibility and submission method remain unverified.",
+      "query_labels": [],
+      "recommendation": "",
+      "score": null,
+      "seen_count": 0,
+      "sites": [],
+      "status": "applied",
+      "title": "Forward Deployed Engineer (East coast based)"
+    },
+    {
       "company": "GDH",
       "compensation": "",
       "first_seen_at": "2026-08-15T12:38:00.857484-04:00",
@@ -12835,20 +12875,6 @@
   ],
   "recent_transactions": [
     {
-      "actor": "job_search_runner",
-      "event_count": 30,
-      "kind": "search_run",
-      "timestamp": "2026-08-05T16:48:15.048694-04:00",
-      "transaction_id": "tx_20260805_164815_e22604e3"
-    },
-    {
-      "actor": "job_search_runner",
-      "event_count": 30,
-      "kind": "search_run",
-      "timestamp": "2026-08-05T16:52:03.554836-04:00",
-      "transaction_id": "tx_20260805_165203_bcc9ac4f"
-    },
-    {
       "actor": "chat_update",
       "event_count": 1,
       "kind": "decision_update",
@@ -12973,10 +12999,24 @@
       "kind": "decision_update",
       "timestamp": "2026-08-26T18:13:19.669899-04:00",
       "transaction_id": "tx_20260826_181319_b68a28e5"
+    },
+    {
+      "actor": "chat_update",
+      "event_count": 1,
+      "kind": "decision_update",
+      "timestamp": "2026-09-08T23:01:04.610131-04:00",
+      "transaction_id": "tx_20260908_230104_d712f1d0"
+    },
+    {
+      "actor": "chat_update",
+      "event_count": 1,
+      "kind": "decision_update",
+      "timestamp": "2026-09-08T23:02:17.327047-04:00",
+      "transaction_id": "tx_20260908_230217_cfcce189"
     }
   ],
   "status_counts": {
-    "applied": 8,
+    "applied": 10,
     "dismissed": 0,
     "saved": 0,
     "surfaced": 520

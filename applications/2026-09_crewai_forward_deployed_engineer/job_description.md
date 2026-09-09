@@ -2,31 +2,50 @@
 
 **Company:** CrewAI
 **Role:** Forward Deployed Engineer (East Coast Based)
-**Employment:** Not independently verified
-**Location:** Reported as US remote through a filtered AI Startup Jobs search; East Coast wording requires verification
-**Compensation reported:** approximately $165,000-$220,000 plus equity; unverified
-**Application status:** Draft / Not submitted
+**Employment:** Full-time
+**Location:** United States (Remote); title specifies East coast based
+**Compensation:** Not listed in the direct posting
+**Application status:** Applied / complete per user instruction
+**Applied:** 2026-09-08
 
-## Lead source URL
+## Posting URL
 
-https://aistartupjobs.com/jobs?search=forward+deployed&status=open&geo=country%3AUS&workMode=remote&includeUnspecifiedRemote=1
+**Exact and canonical URL:**
+https://apply.workable.com/crewai/j/96051E9EDE
 
-This is a filtered listing page, not an individual canonical job posting. The site returned HTTP 403 to automated retrieval on 2026-09-08. Before applying, capture the individual employer or ATS URL and full posting.
+**Apply URL:**
+https://apply.workable.com/crewai/j/96051E9EDE/apply
 
-## Reported role summary
+**Posting date:** 2026-04-09
 
-The user-provided lead summary describes a customer-facing FDE role involving Python architecture, multi-agent orchestration, enterprise tool-calling/MCP, and technical discovery.
+The user confirmed submission on 2026-09-08. The individual Workable posting was verified on 2026-09-08.
 
-## Reported requirements — unverified
+## Role summary
 
-- Python system architecture.
-- Multi-agent orchestration.
-- Enterprise tool-calling and MCP.
-- Client-facing technical discovery.
+CrewAI seeks a customer-facing Forward Deployed Engineer to implement, integrate, deploy, configure, optimize, and troubleshoot CrewAI-powered multi-agent systems in customer environments. The role combines technical delivery with solution design, workshops/training, product feedback, support, pre-sales collaboration, and client-satisfaction accountability.
 
-## Verification required before application
+## Responsibilities captured
 
-- Individual canonical posting URL, current availability, and exact geographic requirement.
-- Whether East Coast-based is compatible with a Michigan-based applicant.
-- Required versus preferred production agent, Python, MCP, and deployment experience.
-- Travel, compensation basis, and implementation-to-discovery split.
+- Lead product integration into customer systems through APIs, data pipelines, and custom workflows.
+- Build and maintain client-specific Python solutions; troubleshoot complex implementation issues.
+- Translate customer objectives into technical specifications, solution designs, and CrewAI-powered agent teams.
+- Deploy, configure, optimize, monitor, and iterate multi-agent systems in production.
+- Conduct technical workshops and training; collaborate with Product, Engineering, Sales, Customer Success, and Support.
+
+## Requirements captured
+
+- Proven customer-facing technical experience, such as Solutions Engineer, Sales Engineer, or Technical Consultant.
+- Strong Python proficiency plus APIs and systems integration experience.
+- Familiarity with AI/ML concepts, AI agent frameworks, and LLMs.
+- Strong communication, presentation, and interpersonal skills.
+- Knowledge of workflow orchestration, multi-agent systems, or distributed computing.
+- GenAI solutions, design patterns, RAG, SQL/NoSQL databases, open-source agent contributions, and human-in-the-loop systems are preferred or bonus qualifications.
+
+## Performance and role-balance notes
+
+Success is measured by project implementations, client satisfaction, technical support/issue resolution, solution-design/documentation quality, and product-improvement feedback. The role is engineering-heavy but includes workshops, training, pre-sales support, and customer-success collaboration.
+
+## Sources
+
+- Direct CrewAI Workable posting, verified 2026-09-08: https://apply.workable.com/crewai/j/96051E9EDE
+- Workable Markdown representation, verified 2026-09-08: https://apply.workable.com/crewai/jobs/view/96051E9EDE.md
