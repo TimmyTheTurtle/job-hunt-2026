@@ -1,6 +1,7 @@
 job_search/.venv/
 job_search/.venv-win/
 job_search/output/
+job_search/input/
 job_search/__pycache__/
 job_search/ledger/__pycache__/
 secrets/

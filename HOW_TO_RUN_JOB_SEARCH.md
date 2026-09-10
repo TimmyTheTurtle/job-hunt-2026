@@ -1,8 +1,9 @@
 # Gmail Job-Alert Workflow
 
 This is the repository’s only active job-discovery workflow. Configure job
-alerts in Gmail, star the messages worth reviewing, and use the Gmail report
-runner to process only those alerts. Do not run a separate LinkedIn, Indeed,
+alerts in Gmail, star the messages worth reviewing, use Gmail MCP to retrieve
+only those alerts, and use the Python report script to process the capture. Do
+not run a separate LinkedIn, Indeed,
 Google Jobs, ATS, startup, or contracting search unless the user explicitly
 changes this policy.
 
@@ -24,16 +25,17 @@ backfill older alerts simply to reach a target number.
 
 ## Run the report
 
-From WSL at the repository root:
+From the repository root:
 
 ```bash
-cd /mnt/d/Repos/job-hunt-2026
-./job_search/run_gmail_job_report.sh
+python job_search/gmail_mcp_triage.py window
+# Run the returned Gmail MCP search/read request, then save its capture.
+python job_search/gmail_mcp_triage.py report --input job_search/input/gmail_mcp_capture.json
 ```
 
-The runner reads full message bodies, extracts public job links, and writes a
-dated report under `job_search/output/`. Gmail OAuth is cached in
-`secrets/gmail_token.json` after the initial authorization.
+Gmail MCP reads full message bodies and performs approved label changes. The
+script applies the exact report boundary, recovers public job links, and writes
+a dated report under `job_search/output/`. It does not use Gmail OAuth.
 
 ## Review and status handling
 

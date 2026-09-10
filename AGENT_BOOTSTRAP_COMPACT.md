@@ -4,6 +4,11 @@ intent:
 - produce honest, tactically strong, strategically coherent job-hunt materials
 - support EA/UI compliance, runway preservation, employer outreach, market research, and applied AI systems identity-building
 
+wsl_lifecycle:
+- before any repository `.sh` runner, start and verify Ubuntu-24.04 with `wsl.exe -d Ubuntu-24.04 -e bash -lc 'cd /mnt/d/Repos/job-hunt-2026 && pwd'`
+- do not replace a blocked Bash runner with PowerShell; report the WSL blocker
+- leave WSL running after the preflight; shutdown is user-managed
+
 candidate_default:
 - Forward-Deployed AI Engineer
 - systems-oriented software engineer moving into forward-deployed AI work
@@ -186,7 +191,8 @@ default_workflow:
 
 gmail_job_application_workflow:
 - Gmail alerts are the sole active job-discovery channel; do not run direct LinkedIn/Indeed/Google Jobs/ATS/startup/contract searches unless the user explicitly changes this policy
-- use job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md as the canonical flow: user-configured alert -> bounded starred-Gmail report -> canonical-link recovery -> full-posting verification -> deep dive/user review -> optional review-only application folders -> tracker/application updates only after confirmed submission
+- use Gmail MCP for every Gmail read/search/label action and `job_search/gmail_mcp_triage.py` for deterministic windowing, link recovery, scoring, state, and report generation
+- canonical flow: user-configured alert -> MCP starred-message capture -> deterministic report -> full-posting/address verification -> deep dive/user review -> optional review-only application folders -> tracker/application updates only after confirmed submission
 - search from the later of the last successful report and 14 days ago; do not backfill fewer-than-two results or invent requirements
 - use visible Gmail labels `Jobs/Reviewed`, `Jobs/Applied`, and `Jobs/Rejections` for reviewed, confirmed-submitted, and confirmed-rejected-or-closed states
 

@@ -64,6 +64,21 @@ The compact bootstrap is meant to solve that by keeping the default startup cont
 - stable
 - derived from canonical source docs
 
+## WSL Lifecycle
+
+Before an agent runs a repository Bash script, it starts and verifies the named
+distribution with:
+
+```powershell
+wsl.exe -d Ubuntu-24.04 -e bash -lc 'cd /mnt/d/Repos/job-hunt-2026 && pwd'
+```
+
+Launching that command starts WSL when it is stopped; no separate background
+startup service is required. A failure is a WSL/environment blocker, not
+permission to run the Bash workflow through PowerShell instead. Agents leave
+WSL running after the preflight; stopping it is user-managed outside the agent
+workflow.
+
 ## Bootstrap Sequence For Agents
 
 Every agent should:
@@ -86,6 +101,16 @@ For search bookkeeping, agents should treat the machine-managed search ledger an
 For search-result analysis, agents should use [job_search/DEEP_DIVE_WORKFLOW.md](job_search/DEEP_DIVE_WORKFLOW.md) when the user asks to follow links from a Gmail report, classify surfaced jobs, compare current fit against future/stretch roles, capture compensation, or extract resume implications. This keeps the deep-dive step separate from Gmail discovery and ledger decision updates.
 
 Gmail job alerts are the sole active discovery channel. Agents should use [job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md](job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md) for the entire active flow: user-configured alerts, bounded starred-message search, canonical public posting-link recovery from full message bodies, full-posting verification, FDE delivery-fit screening and user review, explicit reviewed/closed Gmail status updates, and optional preparation-only folders separate from Applied bookkeeping. The report window is the later of the last successful report or fourteen days before the run; do not backfill older alerts to reach a count.
+
+Gmail MCP is the only active Gmail transport: it performs every Gmail search,
+read, and label change during a manual chat session. The repository's
+cross-platform Python script, [gmail_mcp_triage.py](job_search/gmail_mcp_triage.py),
+has no Gmail credentials or network calls; it deterministically emits the
+bounded MCP request, validates the untracked capture, recovers canonical links,
+scores human-supplied full postings, renders sourced employer-address fields,
+and writes report state. The former direct Gmail OAuth scripts are historical
+only. This boundary preserves reproducible repository artifacts without
+allowing scripts to change Gmail on their own.
 
 Application history is canonical only when the matching application folder and `master_tracker.md` row both exist. Gmail labels, emails, or one incomplete artifact are not enough to count an application; missing one side is reported as incomplete or unconfirmed.
 

@@ -8,21 +8,29 @@ or contracting search unless the user explicitly changes this policy.
 
 ## 1. Bounded Gmail report
 
-Run from the repository root through WSL:
+From the repository root, have the deterministic Python script emit the exact
+Gmail MCP search request:
 
 ```sh
-./job_search/run_gmail_job_report.sh
+python job_search/gmail_mcp_triage.py window
 ```
 
-The runner searches starred messages with `-in:spam -in:trash`. Its exact
-lower bound is the later of the last successful report timestamp and fourteen
-days before the run. Gmail's date query is only a coarse prefilter; message
-`internalDate` is used for the exact boundary. The first run may use
-`--since <ISO-8601 timestamp>` to migrate from the previous report.
+Use the returned `label_ids` and `query` with Gmail MCP search, then use Gmail
+MCP batch/full reads to collect the matching MIME payloads. Save the result as
+an untracked JSON file under `job_search/input/` following
+`gmail_mcp_capture_schema.json`. The Python script has no Gmail credentials and
+never makes a network call:
 
-The report extracts full MIME bodies and records public canonical job URLs.
-Opaque Gmail/Indeed tracking links are not copied into tracked application
-files. The generated report is written under `job_search/output/`.
+```sh
+python job_search/gmail_mcp_triage.py report --input job_search/input/gmail_mcp_capture.json
+```
+
+The exact lower bound is the later of the last successful report timestamp and
+fourteen days before the run. Gmail's date query is only a coarse prefilter;
+the script applies the exact `internal_date` filter. It extracts full MIME
+bodies, records public canonical job URLs, and writes a report under
+`job_search/output/`. Opaque Gmail/Indeed tracking links are not copied into
+tracked application files.
 
 ## 2. Full-posting verification and ranking
 
@@ -34,6 +42,12 @@ and customer-success/pre-sales work. Use `candidate_profile.json`,
 `ROLE_EVAL_CHECKLIST.md`, and `current_strategy.md`. Missing or thin postings
 remain unverified.
 
+Capture verified posting data in `posting_enrichments` in the same MCP capture
+JSON. The report script uses `qualification.py` deterministically to rank only
+the supplied full postings. An employer physical address is rendered only when
+its address type, source URL, and verification date are recorded; otherwise it
+is `Not verified`.
+
 Select the top two only from candidates with usable full-posting evidence. If
 the bounded window contains fewer than two credible roles, report fewer than
 two; do not backfill older messages or invent requirements.
@@ -41,28 +55,12 @@ two; do not backfill older messages or invent requirements.
 ## 3. Review and unflagging
 
 Only messages actually opened and analyzed count as reviewed. After evidence is
-captured, remove only the `STARRED` label from those explicit message IDs:
-
-```sh
-./job_search/run_gmail_job_report.sh \
-  --run-date YYYY-MM-DD \
-  --unflag-reviewed \
-  --reviewed-id MESSAGE_ID
-```
-
-For a previously reviewed message whose ID is not in the current bounded
-report, use an exact subject instead of widening the report window:
-
-```sh
-./job_search/run_gmail_job_report.sh \
-  --run-date YYYY-MM-DD \
-  --unflag-reviewed \
-  --reviewed-subject "Exact message subject"
-```
-
-The command never deletes messages and never removes other labels. Verify the
-message IDs no longer have `STARRED` after the operation. The report state is
-stored separately from `gmail_last_run.json`, which belongs to inbox triage.
+captured, use Gmail MCP to remove only the `STARRED` label from those explicit
+message IDs, then read/search those IDs again to verify the change. For a
+previously reviewed message outside the current window, use Gmail MCP exact
+subject search; do not widen the deterministic report window. Gmail mutations
+never occur through a local script. The report state is stored separately from
+the retired `gmail_last_run.json` inbox-triage state.
 
 The visible Gmail status-label lifecycle is:
 

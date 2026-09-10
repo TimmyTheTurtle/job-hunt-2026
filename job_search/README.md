@@ -8,17 +8,25 @@ postings, and produces research/application-review artifacts.
 ## Active entry points
 
 - [Gmail job report and application workflow](GMAIL_JOB_APPLICATION_WORKFLOW.md)
-- [Gmail report runner](run_gmail_job_report.sh)
+- [Deterministic Gmail MCP report script](gmail_mcp_triage.py)
+- [MCP capture contract](gmail_mcp_capture_schema.json)
 - [Full-posting deep-dive workflow](DEEP_DIVE_WORKFLOW.md)
 - [Candidate evidence profile](candidate_profile.json)
 - [Search bookkeeping ledger](ledger/README.md)
 
-Run from WSL:
+Run the deterministic Python steps from the repository root:
 
 ```bash
-cd /mnt/d/Repos/job-hunt-2026
-./job_search/run_gmail_job_report.sh
+python job_search/gmail_mcp_triage.py window
+# use the returned request with connected Gmail MCP search/read tools
+python job_search/gmail_mcp_triage.py report --input job_search/input/gmail_mcp_capture.json
 ```
+
+Gmail MCP performs all Gmail search, read, and label actions. The Python script
+performs no Gmail authentication or network I/O; it validates the MCP capture,
+applies the exact report window, recovers public posting URLs, scores supplied
+full postings, and writes the report. Capture files are intentionally ignored
+because they contain email content.
 
 The report searches starred Gmail messages newer than the later of the last
 successful report and 14 days before the run. It uses exact message timestamps
@@ -40,7 +48,9 @@ public canonical job URLs. It does not search job boards directly.
 
 ## Retired tools
 
-`run_search.py`, `run_search.sh`, `run_contract_search.sh`, the direct-search
+`gmail_auth.py`, `gmail_job_report.py`, `gmail_triage.py`,
+`run_gmail_job_report.sh`, `run_gmail_triage.sh`, `run_search.py`,
+`run_search.sh`, `run_contract_search.sh`, the direct-search
 profiles, and `ATS_SWEEP_WORKFLOW.md` / `CONTRACT_SEARCH_WORKFLOW.md` are kept
 as historical/diagnostic material only. They must not be invoked for new job
 discovery unless the user explicitly changes the Gmail-only policy.

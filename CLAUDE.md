@@ -14,6 +14,8 @@ Do not begin by loading every context file in the repo.
 
 Preferred CLI: Use WSL for repository scripts, especially the Gmail job-report runner. The old direct job-board/ATS search runners are retired and must not be used for discovery unless the user explicitly asks for legacy diagnostics or a workflow change.
 
+WSL lifecycle: Before running a repository Bash script, explicitly start and verify the named distro with `wsl.exe -d Ubuntu-24.04 -e bash -lc 'cd /mnt/d/Repos/job-hunt-2026 && pwd'`. Once started, leave WSL running. Do not silently substitute PowerShell for a `.sh` runner if that preflight fails; report the WSL blocker. WSL shutdown is user-managed, not part of the agent workflow.
+
 ## Environment & Tool Constraints
 
 - Never use visual or GUI tools (such as File Explorer, native application windows, or browser screenshots) if a command-line alternative is available.
@@ -74,7 +76,7 @@ For application work:
 2. record the exact posting URL in the application's `job_description.md`
 3. follow the default workflow in [APPLICATION_WORKFLOW.md](APPLICATION_WORKFLOW.md)
 
-For all active job discovery and application preparation, follow [job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md](job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md). The canonical flow is: user-configured Gmail alerts -> bounded starred-message report -> canonical posting-link recovery -> full-posting verification -> FDE delivery-fit screen and user review -> optional review-only application materials -> tracker/application updates only after confirmed submission.
+For all active job discovery and application preparation, follow [job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md](job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md). Gmail MCP performs every Gmail search, read, and label action; `job_search/gmail_mcp_triage.py` performs deterministic windowing, link recovery, qualification scoring, address rendering, state, and report generation. The canonical flow is: user-configured Gmail alerts -> MCP bounded starred-message capture -> deterministic report -> full-posting/address verification -> FDE delivery-fit screen and user review -> optional review-only application materials -> tracker/application updates only after confirmed submission.
 
 The Gmail report window is the shorter of the two constraints: messages newer than the last successful report, with a maximum lookback of 14 days. Do not backfill older alerts merely to reach a target count. The report is the discovery run; the old direct-search runner, ATS sweep, and contract-search runner are retired.
 

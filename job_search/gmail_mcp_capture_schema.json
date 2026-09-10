@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Gmail MCP job-triage capture",
+  "description": "Sensitive, untracked handoff from connected Gmail MCP reads to the deterministic local report script.",
+  "type": "object",
+  "required": ["messages"],
+  "properties": {
+    "messages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "internal_date", "payload"],
+        "properties": {
+          "id": {"type": "string"},
+          "thread_id": {"type": "string"},
+          "internal_date": {"description": "Gmail epoch milliseconds or ISO-8601 timestamp", "oneOf": [{"type": "string"}, {"type": "integer"}]},
+          "payload": {"type": "object"}
+        }
+      }
+    },
+    "posting_enrichments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["canonical_url", "description", "source_url"],
+        "properties": {
+          "canonical_url": {"type": "string"},
+          "source_url": {"type": "string"},
+          "company": {"type": "string"},
+          "title": {"type": "string"},
+          "location": {"type": "string"},
+          "description": {"type": "string"},
+          "relevance_score": {"type": "integer", "minimum": 0, "maximum": 10},
+          "role_focus": {"enum": ["explicit", "feeder"]},
+          "rejected": {"type": "boolean"},
+          "employer_address": {
+            "type": "object",
+            "properties": {
+              "status": {"enum": ["verified", "not_verified"]},
+              "address": {"type": "string"},
+              "address_type": {"enum": ["headquarters", "registered_office", "role_office", "other"]},
+              "source_url": {"type": "string"},
+              "verified_at": {"type": "string"}
+            }
+          }
+        }
+      }
+    }
+  }
+}
