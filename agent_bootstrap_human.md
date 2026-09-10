@@ -112,6 +112,8 @@ and writes report state. The former direct Gmail OAuth scripts are historical
 only. This boundary preserves reproducible repository artifacts without
 allowing scripts to change Gmail on their own.
 
+The cross-agent reference, [job_search/DETERMINISTIC_JOB_SEARCH_COMPONENTS.md](job_search/DETERMINISTIC_JOB_SEARCH_COMPONENTS.md), maps each local Python component to the connected-service handoff and output it owns. Use it before invoking a deterministic job-search script. For alert configuration specifically, use [job_search/ALERT_CLEANUP_WORKFLOW.md](job_search/ALERT_CLEANUP_WORKFLOW.md): it keeps Gmail MCP inventory, local planning, temporary browser guidance, and user-approved account changes separate. This applies equally when switching between Codex and Copilot.
+
 Application history is canonical only when the matching application folder and `master_tracker.md` row both exist. Gmail labels, emails, or one incomplete artifact are not enough to count an application; missing one side is reported as incomplete or unconfirmed.
 
 Qualification remains conservative: agents should read [job_search/candidate_profile.json](job_search/candidate_profile.json), verify explicit requirements from each available full posting, and keep qualification separate from topic relevance. A missing or thin posting is unverified; it cannot become `Apply First`. Hard gaps such as active-clearance requirements, unsupported specific tenure, required credentials, or an incompatible location override an attractive title or long-term learning value. Candidate-profile claims must come from defensible, non-archived resume and project evidence, with professional experience kept distinct from portfolio work and exposure.

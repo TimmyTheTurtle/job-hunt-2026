@@ -78,6 +78,8 @@ For application work:
 
 For all active job discovery and application preparation, follow [job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md](../job_search/GMAIL_JOB_APPLICATION_WORKFLOW.md). Gmail MCP performs every Gmail search, read, and label action; `job_search/gmail_mcp_triage.py` performs deterministic windowing, link recovery, qualification scoring, address rendering, state, and report generation. The canonical flow is: user-configured Gmail alerts -> MCP bounded starred-message capture -> deterministic report -> full-posting/address verification -> FDE delivery-fit screen and user review -> optional review-only application materials -> tracker/application updates only after confirmed submission.
 
+Before invoking a deterministic job-search component, read [job_search/DETERMINISTIC_JOB_SEARCH_COMPONENTS.md](../job_search/DETERMINISTIC_JOB_SEARCH_COMPONENTS.md). It is the cross-agent router for the Python/MCP/browser boundary; use [job_search/ALERT_CLEANUP_WORKFLOW.md](../job_search/ALERT_CLEANUP_WORKFLOW.md) when configuring future alerts.
+
 The Gmail report window is the shorter of the two constraints: messages newer than the last successful report, with a maximum lookback of 14 days. Do not backfill older alerts merely to reach a target count. The report is the discovery run; the old direct-search runner, ATS sweep, and contract-search runner are retired.
 
 Canonical application record rule:

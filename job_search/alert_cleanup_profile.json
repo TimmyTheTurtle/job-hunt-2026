@@ -1,0 +1,31 @@
+{
+  "profile_name": "fde_applied_ai_alert_cleanup_v1",
+  "resume_path": "resumes/resume_fde_applied_ai_systems.docx",
+  "location_policy": {
+    "remote_anywhere": true,
+    "onsite_countries": ["Canada", "United States"],
+    "explicit_targets": [
+      "Troy, Michigan",
+      "Alexandria, Virginia",
+      "Toronto, Ontario",
+      "Remote"
+    ]
+  },
+  "target_alerts": [
+    {"id": "full_time_applied_ai_forward_deployed", "label": "Full-time Applied AI Forward-Deployed Engineer", "query": "Applied AI Forward Deployed Engineer", "employment_type": "full-time", "priority": 1, "locations": ["Troy, Michigan", "Alexandria, Virginia", "Toronto, Ontario", "Remote"]},
+    {"id": "forward_deployed", "label": "Forward Deployed Engineer", "query": "Forward Deployed Engineer", "priority": 1},
+    {"id": "forward_deployed_ai", "label": "Forward Deployed AI Engineer", "query": "Forward Deployed AI Engineer", "priority": 1},
+    {"id": "applied_ai", "label": "Applied AI Engineer", "query": "Applied AI Engineer", "priority": 1},
+    {"id": "ai_implementation", "label": "AI Implementation or Integration Engineer", "query": "AI Implementation Engineer OR AI Integration Engineer", "priority": 2},
+    {"id": "llm_rag", "label": "LLM or RAG Engineer", "query": "LLM Engineer OR RAG Engineer", "priority": 2}
+  ],
+  "platforms": {
+    "linkedin": {"sender_domains": ["linkedin.com"], "mode": "retune"},
+    "indeed": {"sender_domains": ["indeed.com"], "mode": "retune"},
+    "dice": {"sender_domains": ["dice.com"], "mode": "replace_legacy"},
+    "ziprecruiter": {"sender_domains": ["ziprecruiter.com"], "mode": "replace_legacy"},
+    "lensa": {"sender_domains": ["lensa.com"], "mode": "replace_legacy"},
+    "cybercoders": {"sender_domains": ["cybercoders.com", "ccjobalerts.com"], "mode": "replace_legacy"}
+  },
+  "legacy_patterns": ["adas", "modeling and simulation", "model based systems engineer", "software systems engineer", "junior c++", "generic software engineer", "java developer", "clearance-eligible", "contract-to-hire"]
+}

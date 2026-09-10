@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Job-alert inventory capture",
+  "description": "Minimal, ignored handoff from Gmail MCP alert searches to deterministic alert-cleanup planning.",
+  "type": "object",
+  "required": ["messages"],
+  "properties": {"messages": {"type": "array", "items": {"type": "object", "required": ["from", "subject"], "properties": {"from": {"type": "string"}, "subject": {"type": "string"}, "received_at": {"type": "string"}}}}}
+}

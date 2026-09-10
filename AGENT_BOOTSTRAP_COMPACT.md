@@ -191,10 +191,12 @@ default_workflow:
 
 gmail_job_application_workflow:
 - Gmail alerts are the sole active job-discovery channel; do not run direct LinkedIn/Indeed/Google Jobs/ATS/startup/contract searches unless the user explicitly changes this policy
+- before using a deterministic job-search script, route through `job_search/DETERMINISTIC_JOB_SEARCH_COMPONENTS.md`; it defines the local-script/MCP/browser boundary for Codex and Copilot alike
 - use Gmail MCP for every Gmail read/search/label action and `job_search/gmail_mcp_triage.py` for deterministic windowing, link recovery, scoring, state, and report generation
 - canonical flow: user-configured alert -> MCP starred-message capture -> deterministic report -> full-posting/address verification -> deep dive/user review -> optional review-only application folders -> tracker/application updates only after confirmed submission
 - search from the later of the last successful report and 14 days ago; do not backfill fewer-than-two results or invent requirements
 - use visible Gmail labels `Jobs/Reviewed`, `Jobs/Applied`, and `Jobs/Rejections` for reviewed, confirmed-submitted, and confirmed-rejected-or-closed states
+- when asked to clean or retune future alerts, follow `job_search/ALERT_CLEANUP_WORKFLOW.md`: Gmail MCP inventories senders, `alert_cleanup.py` generates the review-only plan and temporary overlay, and a human approves each external account change
 
 job_search_deep_dive:
 - Gmail deep dives must use `job_search/candidate_profile.json` and the full posting requirements; title/topic relevance alone is never qualification evidence
