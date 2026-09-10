@@ -86,7 +86,7 @@ class QualificationTests(unittest.TestCase):
         self.assertTrue(any(item["key"] == "skill:llm_rag" for item in result["partial"]))
         self.assertIn(qualification_recommendation(12, False, result), {"apply_first", "review"})
 
-    def test_out_of_state_onsite_role_is_hard_mismatch(self) -> None:
+    def test_us_onsite_role_is_within_the_expanded_search_area(self) -> None:
         description = """
         Requirements:
         5+ years of software development experience.
@@ -94,11 +94,26 @@ class QualificationTests(unittest.TestCase):
         This position is on-site in St. Louis, Missouri.
         """
         result = evaluate_qualifications(row("AI Solutions Engineer", description, "St. Louis, MO", False), PROFILE)
-        self.assertTrue(any("location" in item.lower() for item in result["hard_blockers"]))
-        self.assertEqual("skip", qualification_recommendation(12, False, result))
+        self.assertFalse(any("location" in item.lower() for item in result["hard_blockers"]))
 
-    def test_missing_description_does_not_hide_location_blocker(self) -> None:
-        result = evaluate_qualifications(row("Systems Engineer", "", "Boston, MA", False), PROFILE)
+    def test_canadian_onsite_role_is_within_the_expanded_search_area(self) -> None:
+        result = evaluate_qualifications(row("AI Solutions Engineer", "", "Toronto, Ontario, Canada", False), PROFILE)
+        self.assertFalse(result["hard_blockers"])
+
+    def test_location_outside_canada_and_us_remains_a_hard_mismatch(self) -> None:
+        foreign_role = row("AI Solutions Engineer", "", "London, United Kingdom", False)
+        foreign_role["country"] = "United Kingdom"
+        result = evaluate_qualifications(foreign_role, PROFILE)
+        self.assertTrue(any("location" in item.lower() for item in result["hard_blockers"]))
+
+    def test_international_remote_role_is_within_the_expanded_search_area(self) -> None:
+        result = evaluate_qualifications(row("AI Solutions Engineer", "", "London, United Kingdom", True), PROFILE)
+        self.assertFalse(result["hard_blockers"])
+
+    def test_missing_description_does_not_hide_out_of_scope_location_blocker(self) -> None:
+        foreign_role = row("Systems Engineer", "", "London, United Kingdom", False)
+        foreign_role["country"] = "United Kingdom"
+        result = evaluate_qualifications(foreign_role, PROFILE)
         self.assertTrue(result["hard_blockers"])
         self.assertEqual("skip", qualification_recommendation(8, False, result))
 

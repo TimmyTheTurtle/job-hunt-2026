@@ -350,24 +350,30 @@ def _evaluate_location(row: dict[str, Any], description: str, profile: dict[str,
     )
     remote = _safe_text(row.get("is_remote")).lower() in {"true", "1", "yes"}
     remote = remote or bool(re.search(r"\b(?:fully remote|100% remote|remote within|remote position|remote role)\b", description[:1600], re.I))
-    if remote and location_profile.get("remote_us", False):
-        return [_result_item("location", "location", "match", "Remote US work is within the configured search boundary.")]
-
-    allowed = any(_alias_pattern(marker).search(location) for marker in location_profile.get("onsite_states", []))
+    if remote and location_profile.get("remote_anywhere", False):
+        return [_result_item("location", "location", "match", "Remote work is within the configured search boundary.")]
+    allowed_markers = (
+        location_profile.get("onsite_countries", [])
+        + location_profile.get("onsite_us_states", [])
+        + location_profile.get("onsite_canadian_provinces", [])
+    )
+    allowed = any(_alias_pattern(marker).search(location) for marker in allowed_markers)
+    if remote and allowed:
+        return [_result_item("location", "location", "match", "Remote work is within the configured Canada-and-United-States search boundary.")]
     if allowed:
-        return [_result_item("location", "location", "match", f"{location or 'Michigan'} is within the configured onsite area.")]
+        return [_result_item("location", "location", "match", f"{location} is within the configured Canada-and-United-States onsite area.")]
     if location:
         return [
             _result_item(
                 "location",
                 "location",
                 "gap",
-                f"Posting location is {location}; candidate profile allows remote US or onsite work in Michigan and does not assume relocation.",
+                f"Posting location is {location}; candidate profile is limited to Canada and the United States.",
                 "",
                 True,
             )
         ]
-    return [_result_item("location", "location", "partial", "Posting location/remote eligibility is not clear enough to verify.")]
+    return [_result_item("location", "location", "partial", "Posting location/remote-country eligibility is not clear enough to verify.")]
 
 
 def _unparsed_required_lines(lines: list[tuple[str, str]], profile: dict[str, Any]) -> list[str]:

@@ -20,6 +20,13 @@ class GmailMcpTriageTests(unittest.TestCase):
         links = extract_job_links(plain, rich)
         self.assertEqual("https://www.indeed.com/viewjob?jk=abc", links[0]["canonical_url"])
 
+    def test_linkedin_email_url_becomes_public_job_url(self) -> None:
+        links = extract_job_links(
+            "View job: https://www.linkedin.com/comm/jobs/view/4432728533/?trackingId=opaque",
+            "",
+        )
+        self.assertEqual("https://www.linkedin.com/jobs/view/4432728533/", links[0]["canonical_url"])
+
     def test_verified_employer_address_is_rendered_with_provenance(self) -> None:
         url = "https://jobs.lever.co/example/abc"
         report = render_report(

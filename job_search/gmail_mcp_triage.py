@@ -117,6 +117,9 @@ def canonicalize_url(url: str) -> str:
         return url
     if host.endswith("indeed.com") and parsed.path in {"/rc/clk", "/viewjob"} and query.get("jk"):
         return f"https://www.indeed.com/viewjob?jk={query['jk'][0]}"
+    linkedin_match = re.fullmatch(r"/(?:comm/)?jobs/view/(\d+)/?", parsed.path)
+    if host.endswith("linkedin.com") and linkedin_match:
+        return f"https://www.linkedin.com/jobs/view/{linkedin_match.group(1)}/"
     return url.split("#", 1)[0] if parsed.scheme in {"http", "https"} else ""
 
 
